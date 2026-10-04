@@ -5,7 +5,8 @@ import pandas as pd
 import pytest
 from fastapi.testclient import TestClient
 
-from ffa import nflverse, pipeline, server, snapshot
+from conftest import PROJ, proj_line
+from ffa import nflverse, pipeline, server, sleeper, snapshot
 
 
 @pytest.fixture
@@ -190,3 +191,72 @@ def test_compare_roster_moves():
     assert by["b"]["status"] == "dropped" and by["b"]["adj_new"] is None
     assert by["c"]["status"] == "added" and by["c"]["adj_old"] is None and by["c"]["slot_new"] == "RB"
     assert c["total_delta"] == -1 and [r["player_id"] for r in c["recs_gone"]] == ["c"]
+
+
+@pytest.fixture
+def week4_archive(fake_world, monkeypatch, tmp_path):
+    """An archived week-4 run, reviewed from week 5. Week-5 stats are absurd (999) so any leak is obvious."""
+    sched = nflverse.schedule(2026)
+    wk4 = sched.assign(week=4, game_id=sched["game_id"] + "_4", gameday="2026-09-27")
+    full = pd.concat([sched, wk4], ignore_index=True)
+    monkeypatch.setattr(nflverse, "schedule", lambda s: full)
+    monkeypatch.setattr(sleeper, "stats", lambda s, w: {k: proj_line(999 if w >= 5 else v + w) for k, v in PROJ.items()})
+    mine4 = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "20", "KC"]      # held Waiver Stud, not Juliet WR
+    starters4 = ["1", "2", "3", "5", "6", "8", "20", "9", "KC"]
+    monkeypatch.setattr(sleeper, "matchups", lambda lid, w: [
+        {"roster_id": 1, "players": mine4, "starters": starters4,
+         "players_points": {pid: float(PROJ[pid] + 4) for pid in mine4}},
+        {"roster_id": 2, "players": ["21"], "starters": ["21"], "players_points": {"21": 9.0}},
+    ] if w == 4 else [])
+    app4 = server.create_app("brendan", "Brendobendo", week=4, out_dir=tmp_path)
+    TestClient(app4).post("/api/run", json={})
+    app4.state.job.thread.join(timeout=30)
+    assert app4.state.job.state == "done", app4.state.job.error
+    c = TestClient(server.create_app("brendan", "Brendobendo", out_dir=tmp_path))   # "now" is week 5
+    run = c.get("/api/runs").json()[0]
+    assert run["week"] == 4
+    c.run_id = run["id"]
+    return c
+
+
+def no_999(obj):
+    return "999" not in json.dumps(obj)
+
+
+def test_as_of_player_detail_stops_at_run_week(week4_archive):
+    c, r = week4_archive, week4_archive.run_id
+    d = c.get(f"/api/players/5?run={r}").json()
+    assert d["as_of"] and d["week"] == 4 and d["through"] == 4
+    assert [h["week"] for h in d["history"]] == [1, 2, 3, 4] and no_999(d)
+    assert d["history"][3]["actual"] == 17 and d["actual"] == 17           # week-4 outcome from Sleeper matchups
+    assert d["games"] == 3 and d["season_pts"] == 13 * 3 + 6              # pre-week totals only (weeks 1-3)
+    assert d["eval_source"] == "snapshot" and d["owner"] == "Mine"
+    charlie = c.get(f"/api/players/3?run={r}").json()
+    assert charlie["injury_status"] is None                               # today's designation would leak
+    assert c.get("/api/players/5").json()["as_of"] is False               # latest view unchanged
+
+
+def test_as_of_waiver_pool_uses_that_weeks_rosters(week4_archive):
+    c, r = week4_archive, week4_archive.run_id
+    pool = c.get(f"/api/waivers/pool?run={r}").json()
+    ids = {p["player_id"] for p in pool["players"]}
+    assert pool["as_of"] and pool["week"] == 4 and no_999(pool)
+    assert "10" in ids and not ids & {"20", "21"}                          # Juliet was a FA in week 4
+    juliet = next(p for p in pool["players"] if p["player_id"] == "10")
+    assert juliet["actual"] == 11 and juliet["season_pts"] == 7 * 3 + 6 and juliet["trending_adds"] == 0
+    assert c.get(f"/api/waivers/whatif/10?run={r}").status_code == 200
+    assert c.get(f"/api/waivers/whatif/20?run={r}").status_code == 400
+    assert c.get(f"/api/players/search?q=stud&run={r}").json()[0]["owner"] == "Mine"
+
+
+def test_archived_summary_scores_predictions_against_outcomes(week4_archive):
+    c, r = week4_archive, week4_archive.run_id
+    s = c.get(f"/api/summary?run={r}").json()
+    o = s["outcome"]
+    assert o["week"] == 4 and no_999(o)
+    rec = [row["player_id"] for row in s["lineup"] if row["player_id"]]
+    assert o["lineup"]["recommended"] == round(sum(o["actual"][p] or 0 for p in rec), 2)
+    assert o["lineup"]["played_ids"] == ["1", "2", "3", "5", "6", "8", "20", "9", "KC"]
+    assert o["lineup"]["best"] >= max(o["lineup"]["recommended"], o["lineup"]["played"])
+    assert o["errors"]["n"] > 0 and o["errors"]["mae"] >= 0
+    assert c.get("/api/summary").json()["outcome"] is None

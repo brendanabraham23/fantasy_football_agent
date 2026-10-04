@@ -19,10 +19,12 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from . import nflverse, pipeline, report, sleeper, snapshot, waivers
+from .lineup import best_total, player_positions
 from .news import NewsScorer
 from .ranker import Evaluator, PlayerEval, optimal_lineup, player_name
 
 WEB = Path(__file__).resolve().parent / "web"
+INJURY_KEYS = ("injury_status", "injury_body_part", "injury_notes")
 KEY_STATS = ["pass_yd", "pass_td", "pass_int", "rush_att", "rush_yd", "rush_td", "rec_tgt", "rec", "rec_yd",
              "rec_td", "fgm", "fga", "xpm"]
 
@@ -47,16 +49,67 @@ class Job:
 
 
 class Live:
-    """A Context built from cached network data, plus lazily fetched per-week stats/projections."""
+    """A Context built from cached network data, plus lazily fetched per-week stats/projections.
 
-    def __init__(self, ctx: pipeline.Context):
-        self.ctx, self.ev, self.built = ctx, Evaluator(ctx), time.time()
-        self.owners = ctx.owners()
-        self.mine = {pid for key in ("players", "reserve", "taxi") for pid in (ctx.my_roster.get(key) or [])}
-        self._stats, self._proj, self._evals = {}, {}, {}
+    `as_of=True` means ctx.week is a completed past week (an archived run being reviewed): nothing after
+    that week is shown, rosters come from that week's matchups, and current-only signals (trending adds,
+    injury designations) are blanked so they can't leak into the view. Actual points for ctx.week are shown.
+    """
+
+    def __init__(self, ctx: pipeline.Context, as_of: bool = False):
+        self.ctx, self.as_of, self.built = ctx, as_of, time.time()
+        self._stats, self._proj, self._evals, self._matchups, self._actuals = {}, {}, {}, {}, {}
         self._sched = None
         self._pool = None
         self._lock = threading.Lock()
+        self.warnings: list[str] = []
+        if as_of:
+            self._rewind()
+        self.ev = Evaluator(ctx)
+        self.owners = ctx.owners()
+        self.mine = {pid for key in ("players", "reserve", "taxi") for pid in (ctx.my_roster.get(key) or [])}
+
+    @property
+    def through(self) -> int:
+        """Last week whose actual results may be shown."""
+        return self.ctx.week if self.as_of else self.ctx.week - 1
+
+    def _rewind(self):
+        c = self.ctx
+        c.trending = {}
+        c.players = {pid: ({k: v for k, v in p.items() if k not in INJURY_KEYS}
+                           if any(p.get(k) for k in INJURY_KEYS) else p) for pid, p in c.players.items()}
+        by_rid = {m.get("roster_id"): m for m in self.matchups(c.week)}
+        if not by_rid:
+            print(f"[warn] no week {c.week} matchups; showing current rosters")
+            return
+        for r in c.rosters:
+            m = by_rid.get(r.get("roster_id"))
+            if m:
+                r.update(players=list(m.get("players") or []), starters=list(m.get("starters") or []),
+                         reserve=[], taxi=[])
+
+    def matchups(self, week: int) -> list[dict]:
+        if week not in self._matchups:
+            try:
+                self._matchups[week] = sleeper.matchups(self.ctx.league["league_id"], week)
+            except Exception as exc:
+                print(f"[warn] matchups unavailable for week {week} ({exc})")
+                self._matchups[week] = []
+        return self._matchups[week]
+
+    def actuals(self, week: int) -> dict[str, float]:
+        """player_id -> actual fantasy points in league scoring (Sleeper's own numbers for rostered players)."""
+        if week not in self._actuals:
+            out = {}
+            for pid, line in self.stats(week).items():
+                pos = (self.ctx.players.get(pid) or {}).get("position")
+                if pos and (line.get("gp", 1) or 0) > 0 and (pts := self.points(line, pos)) is not None:
+                    out[pid] = pts
+            for m in self.matchups(week):
+                out.update({pid: round(float(v), 2) for pid, v in (m.get("players_points") or {}).items()})
+            self._actuals[week] = out
+        return self._actuals[week]
 
     def stats(self, week: int) -> dict:
         if week not in self._stats:
@@ -125,27 +178,72 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
             raise HTTPException(404, "No pipeline runs yet. Click Run pipeline to create one.")
         return s
 
-    def live() -> Live:
+    def current() -> tuple[int, int] | None:
+        try:
+            state = sleeper.nfl_state()
+            return int(state["season"]), week or int(state.get("display_week") or state["week"])
+        except Exception as exc:
+            print(f"[warn] nfl state unavailable ({exc})")
+            return None
+
+    def live(run: str | None = None) -> Live:
+        """Live data for now, or rewound to the week of archived run `run` once that week is over."""
+        key, season, wk, as_of = "live", None, week, False
+        if run:
+            m = snap_or_run(run)["meta"]
+            cur = current()
+            if cur and (m["season"], m["week"]) < cur:
+                key, season, wk, as_of = (m["season"], m["week"]), m["season"], m["week"], True
         ttl = ucfg.get("live_ttl_minutes", 15) * 60
         with live_lock:
-            cur = live_box.get("live")
-            if cur is None or time.time() - cur.built > ttl:
+            lv = live_box.get(key)
+            if lv is None or time.time() - lv.built > ttl:
                 try:
-                    ctx = pipeline.build_context(username, team_name, league_id, None, week, copy.deepcopy(cfg))
+                    with snapshot.capture() as lines:
+                        ctx = pipeline.build_context(username, team_name, league_id, season, wk, copy.deepcopy(cfg))
+                        lv = Live(ctx, as_of)
+                except HTTPException:
+                    raise
                 except Exception as exc:
                     raise HTTPException(502, f"Couldn't load live data from Sleeper/nflverse: {exc}")
-                cur = live_box["live"] = Live(ctx)
-            return cur
+                lv.warnings = snapshot.warnings_from(lines)
+                live_box[key] = lv
+            return lv
 
-    def snap_for(lv: Live) -> dict | None:
-        s = snap()
+    def snap_for(lv: Live, run: str | None = None) -> dict | None:
+        s = snap_or_run(run) if run else snap()
         if s and s["meta"]["season"] == lv.ctx.season and s["meta"]["week"] == lv.ctx.week:
             return s
         return None
 
-    def my_evals(lv: Live) -> tuple[list[PlayerEval], set[str]]:
+    def as_of_info(lv: Live) -> dict:
+        return {"as_of": lv.as_of, "season": lv.ctx.season, "week": lv.ctx.week, "through": lv.through}
+
+    def outcome(lv: Live, s: dict) -> dict:
+        """Predictions in snapshot `s` (a completed week) against what actually happened."""
+        w, P = lv.ctx.week, s["players"]
+        act = lv.actuals(w)
+        actual = {pid: act.get(pid) for pid in P}
+        rec_ids = [row["player_id"] for row in s["lineup"] if row["player_id"]]
+        my_m = next((m for m in lv.matchups(w) if m.get("roster_id") == lv.ctx.my_roster.get("roster_id")), None)
+        played = [p for p in ((my_m or {}).get("starters") or s["current_starters"]) if p and p != "0"]
+        roster = set((my_m or {}).get("players") or
+                     [pid for pid, d in P.items() if d.get("group") in ("roster", "reserve")])
+        positions = player_positions(lv.ctx.players)
+        errs = [act[pid] - d["adj"] for pid, d in P.items()
+                if d.get("group") == "roster" and pid in act and not d.get("on_bye")]
+        return {
+            "week": w, "actual": actual,
+            "lineup": {"projected": s["total"], "recommended": round(sum(act.get(p, 0) for p in rec_ids), 2),
+                       "played": round(sum(act.get(p, 0) for p in played), 2), "played_ids": played,
+                       "best": best_total(roster, act, positions, s["meta"]["roster_positions"])},
+            "errors": {"n": len(errs), "mae": round(sum(abs(e) for e in errs) / len(errs), 2) if errs else None,
+                       "bias": round(sum(errs) / len(errs), 2) if errs else None},
+        }
+
+    def my_evals(lv: Live, run: str | None = None) -> tuple[list[PlayerEval], set[str]]:
         """Active roster evals (snapshot when current, with sentiment; else live) and the optimal starters."""
-        s = snap_for(lv)
+        s = snap_for(lv, run)
         if s:
             evals = [snapshot.player_from_dict(d) for d in s["players"].values() if d.get("group") == "roster"]
         else:
@@ -192,17 +290,21 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
     @app.get("/api/summary")
     def summary(run: str | None = None):
         s = snap_or_run(run)
-        current_week = None
-        try:
-            state = sleeper.nfl_state()
-            current_week = week or int(state.get("display_week") or state["week"])
-        except Exception as exc:
-            print(f"[warn] nfl state unavailable ({exc})")
+        cur = current()
+        current_week = cur[1] if cur and cur[0] == s["meta"]["season"] else (99 if cur and cur[0] > s["meta"]["season"] else None)
         gen = datetime.fromisoformat(s["meta"]["generated_at"])
         age_h = (datetime.now(timezone.utc) - gen).total_seconds() / 3600
         stale = age_h > ucfg.get("stale_hours", 24) or (current_week is not None and s["meta"]["week"] < current_week)
-        return {**s, "stale": stale, "age_hours": round(age_h, 1), "current_week": current_week,
-                "run_id": run, "archived": bool(run)}
+        out = {**s, "stale": stale, "age_hours": round(age_h, 1), "current_week": current_week,
+               "run_id": run, "archived": bool(run), "outcome": None}
+        if run and current_week is not None and s["meta"]["week"] < current_week:
+            try:
+                lv = live(run)
+                if lv.as_of:
+                    out["outcome"] = outcome(lv, s)
+            except HTTPException as exc:
+                out["outcome_error"] = exc.detail
+        return out
 
     # ---- archive ----------------------------------------------------------------
     @app.get("/api/runs")
@@ -216,8 +318,8 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
 
     # ---- players ----------------------------------------------------------------
     @app.get("/api/players/search")
-    def search(q: str = "", limit: int = Query(None, ge=1, le=100)):
-        lv = live()
+    def search(q: str = "", limit: int = Query(None, ge=1, le=100), run: str | None = None):
+        lv = live(run)
         limit = limit or ucfg.get("search_limit", 15)
         ql = q.strip().lower()
         if not ql:
@@ -239,8 +341,8 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
                 for _, _, name, pid, p in hits[:limit]]
 
     @app.get("/api/players/{pid}")
-    def player(pid: str):
-        lv = live()
+    def player(pid: str, run: str | None = None):
+        lv = live(run)
         p = lv.ctx.players.get(pid)
         if not p:
             raise HTTPException(404, f"Unknown player {pid}")
@@ -257,22 +359,23 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
                     r = rows.iloc[0]
                     g = ("vs " if r["home_team"] == team else "@ ") + (r["away_team"] if r["home_team"] == team
                                                                       else r["home_team"])
-            line = lv.stats(w).get(pid) if w < lv.ctx.week else None
+            line = lv.stats(w).get(pid) if w <= lv.through else None
             played = bool(line) and (line.get("gp", 1) or 0) > 0
             history.append({
                 "week": w, "opp": g or ("BYE" if team and not sched.empty else None),
                 "bye": bool(team and not sched.empty and g is None),
-                "actual": lv.points(line, pos) if played else None,
+                "actual": (lv.actuals(w).get(pid) if lv.as_of and w == lv.ctx.week else lv.points(line, pos))
+                          if played else None,
                 "projected": lv.points(lv.proj(w).get(pid), pos),
                 "stats": {k: line[k] for k in KEY_STATS if played and isinstance(line.get(k), (int, float))},
                 "current": w == lv.ctx.week,
             })
-        s = snap_for(lv)
+        s = snap_for(lv, run)
         if s and pid in s["players"]:
             ev, source = s["players"][pid], "snapshot"
         else:
             ev, source = snapshot.player_dict(lv.evaluate(pid)), "live"
-        played = [h["actual"] for h in history if h["actual"] is not None]
+        played = [h["actual"] for h in history if h["actual"] is not None and h["week"] < lv.ctx.week]
         return {
             "player_id": pid, "name": player_name(p, pid), "position": pos, "team": team,
             "injury_status": p.get("injury_status"), "injury_detail": p.get("injury_body_part") or p.get("injury_notes"),
@@ -280,16 +383,17 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
             "owner": lv.owner(pid), "trending_adds": lv.ctx.trending.get(pid, 0),
             "season": lv.ctx.season, "week": lv.ctx.week, "history": history,
             "season_pts": round(sum(played), 2), "games": len(played),
-            "eval": ev, "eval_source": source,
+            "eval": ev, "eval_source": source, **as_of_info(lv),
+            "actual": lv.actuals(lv.ctx.week).get(pid) if lv.as_of else None,
         }
 
     # ---- waivers ----------------------------------------------------------------
     @app.get("/api/waivers/pool")
-    def pool():
-        lv = live()
-        if lv._pool is not None:
+    def pool(run: str | None = None):
+        lv = live(run)
+        if lv._pool is not None and lv._pool["run"] == run:
             return lv._pool
-        s = snap_for(lv)
+        s = snap_for(lv, run)
         rec_ids = {r["player_id"] for r in s["waiver_recs"]} if s else set()
         rostered, positions = lv.ctx.rostered, lv.ctx.fantasy_positions
         past = [lv.stats(w) for w in range(1, lv.ctx.week)]
@@ -311,20 +415,21 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
                 "season_pts": round(sum(games), 2), "games": len(games),
                 "ppg": round(sum(games) / len(games), 2) if games else None,
                 "trending_adds": e.trending_adds, "recommended": pid in rec_ids,
+                "actual": lv.actuals(lv.ctx.week).get(pid) if lv.as_of else None,
             })
         rows.sort(key=lambda r: r["adj"], reverse=True)
-        lv._pool = {"week": lv.ctx.week, "players": rows}
+        lv._pool = {"run": run, **as_of_info(lv), "players": rows}
         return lv._pool
 
     @app.get("/api/waivers/whatif/{pid}")
-    def whatif(pid: str):
-        lv = live()
+    def whatif(pid: str, run: str | None = None):
+        lv = live(run)
         if pid not in lv.ctx.players:
             raise HTTPException(404, f"Unknown player {pid}")
         if pid in lv.ctx.rostered:
             raise HTTPException(400, f"{player_name(lv.ctx.players[pid], pid)} is already rostered")
-        evals, starters = my_evals(lv)
-        s = snap_for(lv)
+        evals, starters = my_evals(lv, run)
+        s = snap_for(lv, run)
         cand = snapshot.player_from_dict(s["players"][pid]) if s and pid in s["players"] else lv.evaluate(pid)
         r = waivers.evaluate_add(lv.ctx, evals, starters, cand)
         return {"player_id": pid, "weekly_gain": r.weekly_gain, "ros_gain": r.ros_gain, "bid": r.bid,

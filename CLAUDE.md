@@ -55,7 +55,8 @@ don't hardcode new constants in modules — add a config key and read it from `c
 
 ## UI
 
-Design and page specs: `docs/ui-design.md`. Server tests use FastAPI's `TestClient` over `fake_world`
+Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live data to that run's week
+(`server.Live(as_of=True)`), so nothing after it is shown. Keep new live endpoints `run`-aware. Server tests use FastAPI's `TestClient` over `fake_world`
 (`tests/conftest.py`); the run job is a thread, so tests join `app.state.job.thread`.
 
 ## Roadmap

@@ -83,7 +83,7 @@ latest log line, and reloads the current tab when the run finishes.
 
 | Method & path | Returns |
 |---|---|
-| `GET /api/summary?run=` | the latest snapshot, or the archived run `run` (404 `{detail}` if none) + `stale` flag + `current_week` + `archived` |
+| `GET /api/summary?run=` | the latest snapshot, or the archived run `run` (404 `{detail}` if none) + `stale` flag + `current_week` + `archived`; for a completed archived week also `outcome` (actuals, lineup projected/recommended/played/best, error stats) |
 | `POST /api/run` `{news, weather}` | `202` job status, `409` if running |
 | `GET /api/run` | job status |
 | `GET /api/players/search?q=&limit=` | `[{player_id, name, position, team, owner}]`, fantasy positions only, prefix matches first |
@@ -183,7 +183,20 @@ A segmented control switches between **Recommended** and **Browse all**.
 - Picking one adds `?run=<id>` to the hash (`#roster?run=…`). Tab links and player links keep it, so the choice
   survives navigation, bookmarks and the back button.
 - Summary, Roster, Waivers → Recommended and News render the archived snapshot under an "archived run" banner
-  with a **Back to latest** link. The Player page, Browse all and What if? stay live and say so.
+  with a **Back to latest** link.
+- **No leakage from later weeks.** Once the run's week N is over, the live endpoints (`/api/players/search`,
+  `/api/players/{id}`, `/api/waivers/pool`, `/api/waivers/whatif/{id}`, all taking `?run=`) are served from a
+  `Live` rewound to week N (`as_of`): `build_context(season, N)` (week-N projections, recent form from N-3..N-1,
+  defense ratings from weeks before N), rosters and starters from Sleeper's week-N matchups, and today's trending
+  adds and injury designations blanked. Player history and season totals stop at week N (totals cover weeks
+  1..N-1, what was known at prediction time). Live news lookup is hidden because it can only return today's articles.
+  Known gap: a player's NFL team is today's, so a player traded since week N shows his new team.
+- **Outcomes.** Week N's actual points (Sleeper's `players_points` for rostered players, otherwise league scoring
+  over that week's stats) appear next to the predictions: an Actual column on Roster, Waivers → Recommended and
+  Browse all, the week-N bar and game-log row on the Player page, and a **Prediction vs outcome** card on Summary.
+  The card shows projected vs. actual for the recommended lineup, the lineup actually played (week-N matchup
+  starters), the hindsight-best lineup (`lineup.best_total`), and the mean absolute error and bias across
+  rostered players. If week N isn't over yet, the banner says so and nothing changes.
 - Summary adds a **Compared with latest** card: the change in lineup total (flagged when the weeks differ),
   a table of players whose adjusted points, slot or roster status changed (with an "N unchanged" count), and
   waiver targets that are new, no longer recommended, or still recommended.

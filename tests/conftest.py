@@ -41,10 +41,10 @@ def fake_world(monkeypatch):
           "settings": {"waiver_type": 2, "waiver_budget": 100}}
     users = [{"user_id": "u1", "display_name": "brendan", "metadata": {"team_name": "Brendobendo"}},
              {"user_id": "u2", "display_name": "rival", "metadata": {"team_name": "Rivals"}}]
-    rosters = [{"owner_id": "u1", "players": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "KC"],
+    rosters = [{"roster_id": 1, "owner_id": "u1", "players": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "KC"],
                 "starters": ["1", "2", "4", "5", "6", "8", "3", "9", "KC"],
                 "settings": {"waiver_budget_used": 40}},
-               {"owner_id": "u2", "players": [], "starters": []}]
+               {"roster_id": 2, "owner_id": "u2", "players": [], "starters": []}]
     monkeypatch.setattr(sleeper, "nfl_state", lambda: {"season": "2026", "week": 5})
     monkeypatch.setattr(sleeper, "get_user", lambda u: {"user_id": "u1"})
     monkeypatch.setattr(sleeper, "user_leagues", lambda uid, s: [lg])
@@ -54,6 +54,7 @@ def fake_world(monkeypatch):
     monkeypatch.setattr(sleeper, "projections", lambda s, w: {k: proj_line(v) for k, v in PROJ.items()})
     monkeypatch.setattr(sleeper, "stats", lambda s, w: {k: proj_line(v) for k, v in PROJ.items()})
     monkeypatch.setattr(sleeper, "trending_adds", lambda: {"20": 25000})
+    monkeypatch.setattr(sleeper, "matchups", lambda lid, w: [])
 
     sched = pd.DataFrame([
         dict(game_id="g1", season=2026, game_type="REG", week=5, gameday="2026-10-04", gametime="13:00",

@@ -10,6 +10,15 @@ const S = { summary: null, summaryErr: null, pool: null, news: null, cfg: {}, wa
 const shown = () => (S.run ? S.archived : S.summary);
 const shownErr = () => (S.run ? S.archivedErr : S.summaryErr);
 const runQ = () => (S.run ? `?run=${encodeURIComponent(S.run)}` : "");
+const runAmp = () => (S.run ? `&run=${encodeURIComponent(S.run)}` : "");
+const actualOf = (pid) => { const o = shown() && shown().outcome; return o ? o.actual[pid] : undefined; };
+function actualCell(pid, adj) {
+  const a = actualOf(pid);
+  if (a === undefined) return "";
+  if (a === null) return `<td class="num muted" title="Didn't play">DNP</td>`;
+  const d = a - (adj || 0);
+  return `<td class="num"><b>${f1(a)}</b> <span class="diff small ${dcls(d)}">${signed(d)}</span></td>`;
+}
 const noSnapshot = (what) => (shownErr() && shownErr().status !== 404 ? errorBanner(shownErr()) : S.run ? errorBanner(shownErr() || "Archived run not found") : emptyRun(what));
 
 // ---- utils ---------------------------------------------------------------------
@@ -172,8 +181,31 @@ async function selectRun(run) {
 function archivedBanner() {
   const s = shown();
   if (!S.run || !s) return "";
+  const done = s.outcome || (s.current_week != null && s.meta.week < s.current_week);
   return `<div class="banner info"><b>Viewing an archived run</b> from ${esc(new Date(s.meta.generated_at).toLocaleString())} (week ${s.meta.week}).
-    Player pages, Browse all and What if? always use live data. <a href="#${currentTab()}">Back to latest →</a></div>`;
+    ${done ? `Every page shows data only through the end of week ${s.meta.week}, with that week's actual results next to the predictions.`
+           : `Week ${s.meta.week} isn't over yet, so there are no results to compare.`}
+    <a href="#${currentTab()}">Back to latest →</a></div>`;
+}
+
+function outcomeCard() {
+  const s = shown();
+  if (!S.run || !s) return "";
+  if (s.outcome_error) return `<div class="banner error">Couldn't load week ${s.meta.week} results: ${esc(s.outcome_error)}</div>`;
+  const o = s.outcome;
+  if (!o) return "";
+  const L = o.lineup, eff = L.best ? Math.round((100 * L.recommended) / L.best) : null;
+  const tile = (label, v, hint) => `<div class="tile"><div class="label">${label}</div><div class="value">${f1(v)}</div><div class="hint">${hint}</div></div>`;
+  return `<div class="card"><h2>Prediction vs outcome <span class="muted small">week ${o.week}</span></h2>
+    <div class="tiles" style="margin-bottom:8px">
+      ${tile("Projected (recommended lineup)", L.projected, "what this run predicted")}
+      ${tile("Actual (recommended lineup)", L.recommended, `<span class="diff ${dcls(L.recommended - L.projected)}">${signed(L.recommended - L.projected)}</span> vs projection`)}
+      ${tile("Actual (lineup you played)", L.played, `recommendation scored <span class="diff ${dcls(L.recommended - L.played)}">${signed(L.recommended - L.played)}</span> vs this`)}
+      ${tile("Best possible (hindsight)", L.best, eff != null ? `recommendation captured ${eff}%` : "")}
+    </div>
+    <p class="small muted">${o.errors.n ? `Across ${o.errors.n} rostered players who played: mean absolute error ${f1(o.errors.mae)} pts,
+      bias ${signed(o.errors.bias)} (positive = scored more than predicted).` : "No rostered players had results."}
+      The Actual column on Roster and Waivers shows each player's result.</p></div>`;
 }
 
 function compareCard() {
@@ -286,7 +318,7 @@ function pageSummary() {
       <td class="muted nw">${esc(oppText(e))}</td><td class="hide-sm">${multChips(e)}</td><td class="adj">${f1(e.adj)}</td></tr>`;
   }).join("");
 
-  return `${archivedBanner()}${compareCard()}
+  return `${archivedBanner()}${outcomeCard()}${compareCard()}
     <div class="tiles">
       <div class="tile"><div class="label">Projected total (adjusted)</div><div class="value">${f1(s.total)}</div>
         <div class="hint">recommended lineup</div></div>
@@ -324,13 +356,14 @@ function rosterRow(e, flag, weights) {
     <td class="num">${f1(e.proj)}</td><td class="num hide-sm">${f1(e.recent_avg)}</td>
     <td>${gradePill(e.matchup_grade)}</td><td class="hide-sm small muted">${esc(e.weather || "–")}</td>
     <td class="hide-sm">${sentimentBar(e.sentiment, e.n_articles)}</td><td>${injuryChip(e.injury_status)}</td>
-    <td class="adj">${f1(e.adj)}</td></tr>
-    <tr class="detail" data-detail="${esc(e.player_id)}" hidden><td colspan="11">${whyPanel(e, weights)}
-      <a class="small" href="#player/${encodeURIComponent(e.player_id)}">Open player page →</a></td></tr>`;
+    <td class="adj">${f1(e.adj)}</td>${actualCell(e.player_id, e.adj)}</tr>
+    <tr class="detail" data-detail="${esc(e.player_id)}" hidden><td colspan="12">${whyPanel(e, weights)}
+      <a class="small" href="#player/${encodeURIComponent(e.player_id)}${runQ()}">Open player page →</a></td></tr>`;
 }
 
-const ROSTER_HEAD = `<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>Opp</th><th class="num">Proj</th><th class="num hide-sm">Recent</th>
-  <th>Matchup</th><th class="hide-sm">Weather</th><th class="hide-sm">Sentiment</th><th>Inj</th><th class="num">Adj</th></tr></thead>`;
+const rosterHead = () => `<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>Opp</th><th class="num">Proj</th><th class="num hide-sm">Recent</th>
+  <th>Matchup</th><th class="hide-sm">Weather</th><th class="hide-sm">Sentiment</th><th>Inj</th><th class="num">Adj</th>
+  ${shown() && shown().outcome ? `<th class="num" title="Actual points that week, and the difference from Adj">Actual</th>` : ""}</tr></thead>`;
 
 function pageRoster() {
   const s = shown();
@@ -345,10 +378,10 @@ function pageRoster() {
   const benchRows = bench.map((e) => rosterRow({ ...e, slot: null }, current.has(e.player_id) ? "bench" : "", w)).join("");
   return `${archivedBanner()}
     <div class="card"><h2>Starters <span class="muted small">recommended · total ${f1(s.total)}</span></h2>
-      <div class="table-wrap"><table>${ROSTER_HEAD}<tbody>${startRows}</tbody></table></div></div>
+      <div class="table-wrap"><table>${rosterHead()}<tbody>${startRows}</tbody></table></div></div>
     <div class="card"><h2>Bench</h2>
-      <div class="table-wrap"><table>${ROSTER_HEAD}<tbody>${benchRows || `<tr><td colspan="11" class="muted">Empty</td></tr>`}</tbody></table></div></div>
-    ${reserve.length ? `<div class="card"><h2>IR / Taxi</h2><div class="table-wrap"><table>${ROSTER_HEAD}<tbody>
+      <div class="table-wrap"><table>${rosterHead()}<tbody>${benchRows || `<tr><td colspan="12" class="muted">Empty</td></tr>`}</tbody></table></div></div>
+    ${reserve.length ? `<div class="card"><h2>IR / Taxi</h2><div class="table-wrap"><table>${rosterHead()}<tbody>
       ${reserve.map((e) => rosterRow({ ...e, slot: null }, "", w)).join("")}</tbody></table></div></div>` : ""}
     <p class="small muted"><span class="chip good">START</span> recommended but not in your Sleeper lineup ·
       <span class="chip warn">BENCH</span> in your Sleeper lineup but the model would bench. Click a row for the breakdown.</p>`;
@@ -385,7 +418,7 @@ function searchBox(placeholder, onPick) {
     timer = setTimeout(async () => {
       const my = ++seq;
       try {
-        const r = await api(`/api/players/search?q=${encodeURIComponent(q)}`);
+        const r = await api(`/api/players/search?q=${encodeURIComponent(q)}${runAmp()}`);
         if (my === seq) { items = r; hl = r.length ? 0 : -1; paint(); }
       } catch (e) { box.hidden = false; box.innerHTML = `<div class="banner error" style="margin:6px">${esc(e.message)}</div>`; }
     }, 200);
@@ -418,7 +451,8 @@ function historyChart(h) {
   const x = (i) => L + band * i + band / 2;
   const y = (v) => T + (H - T - B) * (1 - Math.max(0, v) / max);
   const base = y(0);
-  const ticks = [0, max / 4, max / 2, (3 * max) / 4, max];
+  const div = max % 4 === 0 ? 4 : 5;  // keep tick labels whole numbers
+  const ticks = Array.from({ length: div + 1 }, (_, i) => (max * i) / div);
   const bar = (cx, v, cls) => {
     const top = y(v), r = Math.min(4, (base - top) / 2), x0 = cx - bw / 2, x1 = cx + bw / 2;
     if (base - top < 0.5) return "";
@@ -430,7 +464,7 @@ function historyChart(h) {
       <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${Math.round(t)}</text>`;
   });
   h.forEach((d, i) => {
-    if (d.current && d.projected != null) {
+    if (d.current && d.actual == null && d.projected != null) {
       const top = y(d.projected);
       svg += `<rect x="${x(i) - bw / 2}" y="${top}" width="${bw}" height="${Math.max(0, base - top)}" rx="3" fill="none" stroke="var(--series-1)" stroke-width="1.5" stroke-dasharray="4 3"/>`;
     } else if (d.actual != null) {
@@ -448,7 +482,7 @@ function historyChart(h) {
   svg += `<line x1="${L}" x2="${W - R}" y1="${base}" y2="${base}" stroke="var(--border)" stroke-width="1"/></svg>`;
   return `<div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>Actual</span>
     <span><span class="sw line" style="background:var(--series-2)"></span>Projected</span>
-    <span><span class="sw outline"></span>This week (projected)</span></div><div class="chart">${svg}</div>`;
+    ${h.some((d) => d.current && d.actual == null && d.projected != null) ? `<span><span class="sw outline"></span>This week (projected)</span>` : ""}</div><div class="chart">${svg}</div>`;
 }
 
 function bindChart(root, h) {
@@ -459,7 +493,7 @@ function bindChart(root, h) {
       const diff = d.actual != null && d.projected != null ? d.actual - d.projected : null;
       tip.innerHTML = `<div class="tt-h">Week ${d.week} ${d.opp ? "· " + esc(d.opp) : ""}</div>
         ${d.bye ? `<div class="muted">Bye week</div>` : `
-        <div class="tt-r"><span>Actual</span><b>${d.current ? "–" : d.actual == null ? "DNP" : f1(d.actual)}</b></div>
+        <div class="tt-r"><span>Actual</span><b>${d.current && d.actual == null ? "–" : d.actual == null ? "DNP" : f1(d.actual)}</b></div>
         <div class="tt-r"><span>Projected</span><b>${f1(d.projected)}</b></div>
         ${diff != null ? `<div class="tt-r"><span>Diff</span><b class="diff ${diff >= 0 ? "up" : "down"}">${signed(diff)}</b></div>` : ""}`}`;
       tip.hidden = false;
@@ -492,19 +526,20 @@ async function pagePlayer(pid) {
   }
   body.innerHTML = skeleton(8);
   let d;
-  try { d = await api(`/api/players/${encodeURIComponent(pid)}`); }
+  try { d = await api(`/api/players/${encodeURIComponent(pid)}${runQ()}`); }
   catch (e) { body.innerHTML = errorBanner(e); return; }
   const e = d.eval, weights = S.summary && S.summary.meta.weights;
-  const played = d.history.filter((x) => x.actual != null);
   const statKeys = Object.keys(STAT_LABELS).filter((k) => d.history.some((x) => x.stats[k]));
-  const log = d.history.filter((x) => !x.current).map((x) => {
+  const log = d.history.filter((x) => !x.current || x.actual != null).map((x) => {
     const diff = x.actual != null && x.projected != null ? x.actual - x.projected : null;
     return `<tr><td>W${x.week}</td><td class="muted">${esc(x.opp || "–")}</td>
       <td class="num strong">${x.bye ? "BYE" : x.actual == null ? "DNP" : f1(x.actual)}</td><td class="num">${f1(x.projected)}</td>
       <td class="num">${diff == null ? "–" : `<span class="diff ${diff >= 0 ? "up" : "down"}">${signed(diff)}</span>`}</td>
       ${statKeys.map((k) => `<td class="num hide-sm">${statFmt(x.stats[k])}</td>`).join("")}</tr>`;
   }).reverse().join("");
-  body.innerHTML = `
+  const result = d.as_of ? (d.actual == null ? `<span class="chip">didn't play</span>`
+    : `<span class="chip ${dcls(d.actual - e.adj) === "up" ? "good" : dcls(d.actual - e.adj) === "down" ? "bad" : ""}">actual ${f1(d.actual)} (${signed(d.actual - e.adj)})</span>`) : "";
+  body.innerHTML = `${archivedBanner()}
     <div class="phead">
       <div><div class="name">${esc(d.name)}</div>
         <div class="meta">${posTag(d.position)} ${esc(d.team || "FA")}${d.number ? " · #" + esc(d.number) : ""}${d.age ? " · age " + esc(d.age) : ""}
@@ -512,12 +547,13 @@ async function pagePlayer(pid) {
           ${d.trending_adds ? `<span class="chip info">+${d.trending_adds.toLocaleString()} adds (48h)</span>` : ""}</div></div>
       <div class="stat-row">
         <div><div class="k">Week ${d.week} adj</div><div class="v">${f1(e.adj)}</div></div>
-        <div><div class="k">Season pts</div><div class="v">${f1(d.season_pts)}</div></div>
-        <div><div class="k">Pts / game</div><div class="v">${played.length ? f1(d.season_pts / played.length) : "–"}</div></div>
+        ${d.as_of ? `<div><div class="k">Week ${d.week} actual</div><div class="v">${d.actual == null ? "–" : f1(d.actual)}</div></div>` : ""}
+        <div><div class="k">${d.as_of ? `Pts wk 1–${d.week - 1}` : "Season pts"}</div><div class="v">${f1(d.season_pts)}</div></div>
+        <div><div class="k">Pts / game</div><div class="v">${d.games ? f1(d.season_pts / d.games) : "–"}</div></div>
       </div>
     </div>
-    <div class="card"><h2>Weekly points <span class="muted small">${d.season} season</span></h2>${historyChart(d.history)}</div>
-    <div class="card"><h2>This week · ${esc(oppText(e))} ${e.matchup_grade && e.matchup_grade !== "-" ? gradePill(e.matchup_grade) : ""}
+    <div class="card"><h2>Weekly points <span class="muted small">${d.season} season${d.as_of ? ` · through week ${d.week}` : ""}</span></h2>${historyChart(d.history)}</div>
+    <div class="card"><h2>${d.as_of ? `Week ${d.week} prediction` : "This week"} · ${esc(oppText(e))} ${result} ${e.matchup_grade && e.matchup_grade !== "-" ? gradePill(e.matchup_grade) : ""}
         ${d.eval_source === "live" ? `<span class="chip warn" title="Not in the latest pipeline run, so news sentiment isn't included">live estimate · no news</span>` : ""}</h2>
       ${whyPanel(e, weights)}</div>
     <div class="card"><h2>Game log</h2><div class="table-wrap"><table>
@@ -525,10 +561,11 @@ async function pagePlayer(pid) {
         ${statKeys.map((k) => `<th class="num hide-sm">${STAT_LABELS[k]}</th>`).join("")}</tr></thead>
       <tbody>${log || `<tr><td colspan="5" class="muted">No games yet this season.</td></tr>`}</tbody></table></div></div>
     <div class="card"><h2>News <span class="muted small">${e.n_articles ? `sentiment ${signed(e.sentiment, 2)} · ×${e.mult_sentiment.toFixed(2)}` : ""}</span></h2>
-      <div id="pnews">${e.articles && e.articles.length ? articleList(e.articles) : `<p class="muted small">Not scored in the latest run.</p>`}</div>
-      <button class="btn sm" id="fetch-news">Fetch latest news</button></div>`;
+      <div id="pnews">${e.articles && e.articles.length ? articleList(e.articles) : `<p class="muted small">Not scored in ${S.run ? "this" : "the latest"} run.</p>`}</div>
+      ${S.run ? `<p class="small muted">Live news lookup is off while viewing an archived run, because it would show today's articles.</p>`
+              : `<button class="btn sm" id="fetch-news">Fetch latest news</button>`}</div>`;
   bindChart(body, d.history);
-  $("#fetch-news", body).addEventListener("click", async (ev) => {
+  if (!S.run) $("#fetch-news", body).addEventListener("click", async (ev) => {
     const btn = ev.currentTarget;
     btn.disabled = true; btn.textContent = "Fetching…";
     try {
@@ -570,31 +607,31 @@ function waiverRecs() {
       <td class="num"><span class="diff ${r.weekly_gain > 0 ? "up" : ""}">${signed(r.weekly_gain)}</span></td>
       <td class="num"><span class="diff ${r.ros_gain > 0 ? "up" : r.ros_gain < 0 ? "down" : ""}">${signed(r.ros_gain)}</span></td>
       <td class="num hide-sm">${e.trending_adds ? e.trending_adds.toLocaleString() : "–"}</td>
-      <td>${drop ? plink(r.drop_id, drop.name) : "–"}</td><td class="strong">${esc(r.bid)}</td></tr>
-      <tr class="detail" data-detail="${esc(r.player_id)}" hidden><td colspan="12">${whyPanel(e, s.meta.weights)}</td></tr>`;
+      <td>${drop ? plink(r.drop_id, drop.name) : "–"}</td><td class="strong">${esc(r.bid)}</td>${actualCell(r.player_id, e.adj)}</tr>
+      <tr class="detail" data-detail="${esc(r.player_id)}" hidden><td colspan="13">${whyPanel(e, s.meta.weights)}</td></tr>`;
   }).join("");
   const budget = s.meta.faab ? ` · FAAB left $${s.meta.budget_left}` : "";
   return `${archivedBanner()}<div class="card"><h2>Recommended adds <span class="muted small">week ${s.meta.week}${budget}</span></h2>
     <div class="table-wrap" id="recs"><table><thead><tr><th>#</th><th>Player</th><th>Pos</th><th>Team</th><th>Opp</th><th class="num">Adj</th>
       <th class="num hide-sm">Recent</th><th class="num" title="Change in this week's optimal lineup total">Gain (wk)</th>
       <th class="num" title="Avg of projection and recent form vs. the suggested drop">Vs drop</th><th class="num hide-sm">Adds 48h</th>
-      <th>Drop</th><th>Bid</th></tr></thead><tbody>${rows}</tbody></table></div>
+      <th>Drop</th><th>Bid</th>${s.outcome ? `<th class="num" title="Actual points that week, and the difference from Adj">Actual</th>` : ""}</tr></thead><tbody>${rows}</tbody></table></div>
     <p class="small muted">Gain (wk) = change in this week's optimal lineup total. Vs drop compares the average of projection and recent form with the suggested drop.</p></div>`;
 }
 
 async function browse(body) {
-  if (!S.pool) {
+  if (!S.pool || S.pool.run !== S.run) {
     body.innerHTML = skeleton(10);
-    try { S.pool = await api("/api/waivers/pool"); }
+    try { S.pool = await api("/api/waivers/pool" + runQ()); }
     catch (e) { body.innerHTML = errorBanner(e); return; }
   }
   const teams = [...new Set(S.pool.players.map((p) => p.team).filter(Boolean))].sort();
-  body.innerHTML = `<div class="toolbar">
+  body.innerHTML = `${archivedBanner()}<div class="toolbar">
       <input class="input" type="search" id="wq" placeholder="Search name…" value="${esc(W.q)}" style="width:200px">
       ${["QB", "RB", "WR", "TE", "K", "DEF"].map((p) => `<button class="fchip ${W.pos.has(p) ? "on" : ""}" data-pos="${p}">${p}</button>`).join("")}
       <select id="wteam"><option value="">All teams</option>${teams.map((t) => `<option ${t === W.team ? "selected" : ""}>${esc(t)}</option>`).join("")}</select>
       <label><input type="checkbox" id="winj" ${W.hideInj ? "checked" : ""}> Hide injured</label>
-      <label><input type="checkbox" id="wtrend" ${W.trending ? "checked" : ""}> Trending only</label>
+      ${S.pool.as_of ? "" : `<label><input type="checkbox" id="wtrend" ${W.trending ? "checked" : ""}> Trending only</label>`}
     </div><div class="card" id="wtable"></div>`;
   const draw = () => drawPool($("#wtable", body));
   let t = null;
@@ -605,7 +642,7 @@ async function browse(body) {
   }));
   $("#wteam", body).addEventListener("change", (ev) => { W.team = ev.target.value; W.page = 0; draw(); });
   $("#winj", body).addEventListener("change", (ev) => { W.hideInj = ev.target.checked; W.page = 0; draw(); });
-  $("#wtrend", body).addEventListener("change", (ev) => { W.trending = ev.target.checked; W.page = 0; draw(); });
+  if ($("#wtrend", body)) $("#wtrend", body).addEventListener("change", (ev) => { W.trending = ev.target.checked; W.page = 0; draw(); });
   draw();
 }
 
@@ -613,7 +650,7 @@ function drawPool(el) {
   const size = (S.cfg.ui && S.cfg.ui.pool_page_size) || 50;
   const q = W.q.trim().toLowerCase();
   let rows = S.pool.players.filter((p) => (!q || p.name.toLowerCase().includes(q)) && (!W.pos.size || W.pos.has(p.position))
-    && (!W.team || p.team === W.team) && (!W.hideInj || !p.injury_status) && (!W.trending || p.trending_adds > 0));
+    && (!W.team || p.team === W.team) && (!W.hideInj || !p.injury_status) && (S.pool.as_of || !W.trending || p.trending_adds > 0));
   rows.sort((a, b) => ((a[W.sort] ?? -1e9) - (b[W.sort] ?? -1e9)) * W.dir);
   const pages = Math.max(1, Math.ceil(rows.length / size));
   W.page = Math.min(W.page, pages - 1);
@@ -622,18 +659,25 @@ function drawPool(el) {
   const cell = (p, k) => {
     const v = p[k], cls = ["recent_avg", "ppg", "trending_adds"].includes(k) ? "hide-sm" : "";
     if (k === "adj") return `<td class="adj">${f1(v)}</td>`;
+    if (k === "actual") return `<td class="num"><b>${v == null ? "–" : f1(v)}</b></td>`;
     if (k === "trending_adds") return `<td class="num ${cls}">${v ? v.toLocaleString() : "–"}</td>`;
     return `<td class="num ${cls}">${f1(v)}</td>`;
   };
+  const P = S.pool, cols = P.as_of
+    ? BROWSE_COLS.map(([k, l]) => (k === "season_pts" ? [k, `Wk 1–${P.week - 1}`] : k === "trending_adds" ? null : [k, l])).filter(Boolean)
+      .concat([["actual", `Wk ${P.week} actual`]])
+    : BROWSE_COLS;
   el.innerHTML = `<div class="table-wrap"><table><thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>Opp</th><th>Matchup</th>
-      ${BROWSE_COLS.map(th).join("")}<th></th></tr></thead><tbody>
+      ${cols.map(th).join("")}<th></th></tr></thead><tbody>
       ${slice.map((p) => `<tr><td>${plink(p.player_id, p.name)} ${injuryChip(p.injury_status)} ${p.recommended ? `<span class="chip info">rec</span>` : ""}</td>
         <td>${posTag(p.position)}</td><td class="muted">${esc(p.team)}</td><td>${esc(oppText(p))}</td><td>${gradePill(p.matchup_grade)}</td>
-        ${BROWSE_COLS.map(([k]) => cell(p, k)).join("")}
+        ${cols.map(([k]) => cell(p, k)).join("")}
         <td class="whatif" data-wi="${esc(p.player_id)}"><button class="btn sm" data-whatif="${esc(p.player_id)}">What if?</button></td></tr>`).join("")
         || `<tr><td colspan="12" class="muted">No players match these filters.</td></tr>`}
     </tbody></table></div>
-    <div class="pager"><span>${rows.length.toLocaleString()} players · live estimates (no news sentiment)</span>
+    <div class="pager"><span>${rows.length.toLocaleString()} players · ${P.as_of
+      ? `as of week ${P.week}: that week's free agents, projections and matchups (no news, injury or trending data)`
+      : "live estimates (no news sentiment)"}</span>
       <span><button class="btn sm" data-page="-1" ${W.page === 0 ? "disabled" : ""}>‹ Prev</button>
       Page ${W.page + 1} / ${pages}
       <button class="btn sm" data-page="1" ${W.page >= pages - 1 ? "disabled" : ""}>Next ›</button></span></div>`;
@@ -647,7 +691,7 @@ function drawPool(el) {
     const td = b.parentElement;
     td.innerHTML = `<span class="muted">…</span>`;
     try {
-      const r = await api(`/api/waivers/whatif/${encodeURIComponent(b.dataset.whatif)}`);
+      const r = await api(`/api/waivers/whatif/${encodeURIComponent(b.dataset.whatif)}${runQ()}`);
       td.innerHTML = `<span class="diff ${r.weekly_gain > 0 ? "up" : ""}" title="Lineup gain this week">${signed(r.weekly_gain)} wk</span> ·
         <span class="diff ${r.ros_gain > 0 ? "up" : r.ros_gain < 0 ? "down" : ""}" title="Value vs drop">${signed(r.ros_gain)} vs</span>
         ${r.drop ? `${plink(r.drop.player_id, r.drop.name)}` : ""} · <b>${esc(r.bid)}</b>`;
@@ -674,14 +718,14 @@ async function pageNews() {
       <div class="seg"><button data-s="signal" class="${N.sort === "signal" ? "on" : ""}">Strongest signal</button><button data-s="count" class="${N.sort === "count" ? "on" : ""}">Most articles</button></div>
     </div>
     <div class="card" id="nlist"></div>
-    <div class="card"><h2>Look up any player</h2><p class="muted small">Fetches and scores the latest articles live (Google News + NFL feeds).</p>
-      <div id="nsearch"></div><div id="nlive" style="margin-top:12px"></div></div>
+    ${S.run ? "" : `<div class="card"><h2>Look up any player</h2><p class="muted small">Fetches and scores the latest articles live (Google News + NFL feeds).</p>
+      <div id="nsearch"></div><div id="nlive" style="margin-top:12px"></div></div>`}
     <p class="small muted">Sentiment ranges from −1 to +1, weighted toward recent articles and pulled toward 0 when there are only a few. It enters the model as
       multiplier = 1 + ${n.sentiment_weight ?? 0.08} × sentiment.</p>`;
   wrap.querySelectorAll("[data-f]").forEach((b) => b.addEventListener("click", () => { N.filter = b.dataset.f; pageNews(); }));
   wrap.querySelectorAll("[data-s]").forEach((b) => b.addEventListener("click", () => { N.sort = b.dataset.s; pageNews(); }));
   drawNews($("#nlist", wrap));
-  $("#nsearch", wrap).appendChild(searchBox("Player name…", async (p) => {
+  if (!S.run) $("#nsearch", wrap).appendChild(searchBox("Player name…", async (p) => {
     const out = $("#nlive", wrap);
     out.innerHTML = skeleton(3);
     try {
