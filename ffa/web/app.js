@@ -3,12 +3,24 @@
 
 const $ = (sel, root = document) => root.querySelector(sel);
 const view = $("#view");
-const S = { summary: null, summaryErr: null, pool: null, news: null, cfg: {}, waiverMode: "rec", job: null };
+const S = { summary: null, summaryErr: null, pool: null, news: null, cfg: {}, waiverMode: "rec", job: null,
+  run: null, archived: null, archivedErr: null, compare: null, runs: [] };
+
+// The snapshot the snapshot-based pages render: an archived run when one is picked, else the latest.
+const shown = () => (S.run ? S.archived : S.summary);
+const shownErr = () => (S.run ? S.archivedErr : S.summaryErr);
+const runQ = () => (S.run ? `?run=${encodeURIComponent(S.run)}` : "");
+const noSnapshot = (what) => (shownErr() && shownErr().status !== 404 ? errorBanner(shownErr()) : S.run ? errorBanner(shownErr() || "Archived run not found") : emptyRun(what));
 
 // ---- utils ---------------------------------------------------------------------
 const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 const f1 = (v) => (v === null || v === undefined || Number.isNaN(v) ? "–" : Number(v).toFixed(1));
-const signed = (v, d = 1) => (v === null || v === undefined ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d));
+const signed = (v, d = 1) => {
+  if (v === null || v === undefined) return "–";
+  const r = Number(v.toFixed(d));  // no sign on values that round to zero
+  return (r > 0 ? "+" : r < 0 ? "−" : "") + Math.abs(r).toFixed(d);
+};
+const dcls = (v) => (v == null ? "" : Math.round(v * 10) > 0 ? "up" : Math.round(v * 10) < 0 ? "down" : "");
 
 async function api(path, opts = {}) {
   const res = await fetch(path, { headers: { "Content-Type": "application/json" }, ...opts });
@@ -39,7 +51,7 @@ const emptyRun = (what) => `<div class="card empty"><h2>No pipeline runs yet</h2
   <button class="btn primary" data-action="run">Run pipeline</button></div>`;
 
 // ---- shared player components --------------------------------------------------
-const plink = (id, name) => `<a class="pname" href="#player/${encodeURIComponent(id)}">${esc(name)}</a>`;
+const plink = (id, name) => `<a class="pname" href="#player/${encodeURIComponent(id)}${runQ()}">${esc(name)}</a>`;
 const posTag = (p) => `<span class="pos">${esc(p)}</span>`;
 
 function oppText(e) {
@@ -117,7 +129,7 @@ function renderHeader() {
     $("#team-name").textContent = s.meta.team || "Fantasy Analyzer";
     $("#team-sub").textContent = `${s.meta.league || ""} · Week ${s.meta.week}, ${s.meta.season}`;
     const chip = $("#snap-age");
-    chip.hidden = false;
+    chip.hidden = !!S.run;
     chip.className = "chip " + (s.stale ? "warn" : "");
     chip.textContent = (s.stale ? "Stale · " : "Updated ") + ago(s.meta.generated_at);
     chip.title = `Snapshot from ${new Date(s.meta.generated_at).toLocaleString()}` +
@@ -125,6 +137,66 @@ function renderHeader() {
   } else if (S.cfg.team_name) {
     $("#team-name").textContent = S.cfg.team_name;
   }
+  renderPicker();
+}
+
+const runLabel = (r) => `${new Date(r.generated_at).toLocaleString([], { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}` +
+  ` · Wk ${r.week} · ${f1(r.total)}${r.options && r.options.news === false ? " · no news" : ""}`;
+
+function renderPicker() {
+  const sel = $("#run-picker");
+  const past = S.runs.filter((r) => !r.latest);
+  sel.hidden = !past.length && !S.run;
+  sel.innerHTML = `<option value="">Latest run</option>` +
+    (past.length ? `<optgroup label="Archived runs">${past.map((r) => `<option value="${esc(r.id)}">${esc(runLabel(r))}</option>`).join("")}</optgroup>` : "");
+  sel.value = S.run || "";
+  sel.classList.toggle("archived", !!S.run);
+}
+
+async function loadRuns() {
+  try { S.runs = await api("/api/runs"); } catch { S.runs = []; }
+  renderPicker();
+}
+
+async function selectRun(run) {
+  run = run || null;
+  if (run === S.run) return;
+  S.run = run;
+  S.archived = S.archivedErr = S.compare = null;
+  if (!run) return;
+  try {
+    [S.archived, S.compare] = await Promise.all([api(`/api/summary${runQ()}`), api(`/api/compare${runQ()}`).catch(() => null)]);
+  } catch (e) { S.archivedErr = e; }
+}
+
+function archivedBanner() {
+  const s = shown();
+  if (!S.run || !s) return "";
+  return `<div class="banner info"><b>Viewing an archived run</b> from ${esc(new Date(s.meta.generated_at).toLocaleString())} (week ${s.meta.week}).
+    Player pages, Browse all and What if? always use live data. <a href="#${currentTab()}">Back to latest →</a></div>`;
+}
+
+function compareCard() {
+  const c = S.compare;
+  if (!S.run || !c) return "";
+  const changed = c.players.filter((p) => p.status !== "kept" || (p.delta && Math.abs(p.delta) >= 0.05) || p.slot_old !== p.slot_new);
+  const unchanged = c.players.length - changed.length;
+  const cell = (slot, adj) => (adj == null ? `<span class="muted">–</span>` : `<span class="muted small">${esc(slot || "")}</span> ${f1(adj)}`);
+  const names = (list) => list.map((r) => plink(r.player_id, r.name)).join(", ") || `<span class="muted">none</span>`;
+  return `<div class="card"><h2>Compared with latest</h2>
+    <p>Lineup total <b>${f1(c.old.total)}</b> → <b>${f1(c.new.total)}</b>
+      <span class="diff ${dcls(c.total_delta)}">(${signed(c.total_delta)})</span>
+      ${c.same_week ? "" : `<span class="chip warn">different weeks</span> <span class="muted small">week ${c.old.week} vs week ${c.new.week}, so matchups differ</span>`}</p>
+    ${changed.length ? `<div class="table-wrap"><table><thead><tr><th>Player</th><th>Pos</th><th class="num">Then</th><th class="num">Now</th><th class="num">Δ adj</th></tr></thead><tbody>
+      ${changed.map((p) => `<tr><td>${plink(p.player_id, p.name)} ${p.status === "added" ? `<span class="chip good">added</span>` : p.status === "dropped" ? `<span class="chip bad">dropped</span>` : ""}
+        ${p.slot_old && p.slot_new && p.slot_old !== p.slot_new ? `<span class="chip">${esc(p.slot_old)} → ${esc(p.slot_new)}</span>` : ""}</td>
+        <td>${posTag(p.position)}</td><td class="num">${cell(p.slot_old, p.adj_old)}</td><td class="num">${cell(p.slot_new, p.adj_new)}</td>
+        <td class="num">${p.delta == null ? "–" : `<span class="diff ${dcls(p.delta)}">${signed(p.delta)}</span>`}</td></tr>`).join("")}
+      </tbody></table></div>` : `<p class="muted">No roster or lineup changes.</p>`}
+    ${unchanged ? `<p class="small muted">${unchanged} player${unchanged > 1 ? "s" : ""} unchanged.</p>` : ""}
+    <h3>Waiver targets</h3>
+    <p class="small"><b>New:</b> ${names(c.recs_new)}<br><b>No longer recommended:</b> ${names(c.recs_gone)}<br><b>Still recommended:</b> ${names(c.recs_kept)}</p>
+  </div>`;
 }
 
 function renderJob() {
@@ -158,7 +230,8 @@ async function pollJob() {
   } else if (S.job.state === "done" && S.job.finished_at !== S.lastFinished) {
     S.lastFinished = S.job.finished_at;
     S.pool = null; S.news = null;
-    await loadSummary();
+    await Promise.all([loadSummary(), loadRuns()]);
+    if (S.run) { const r = S.run; S.run = null; await selectRun(r); }
     route();
   }
 }
@@ -183,8 +256,8 @@ async function loadSummary() {
 
 // ---- Summary -------------------------------------------------------------------
 function pageSummary() {
-  const s = S.summary;
-  if (!s) return S.summaryErr && S.summaryErr.status !== 404 ? errorBanner(S.summaryErr) : emptyRun("The summary");
+  const s = shown();
+  if (!s) return noSnapshot("The summary");
   const P = s.players;
   const recs = s.waiver_recs;
   const top = recs[0] && P[recs[0].player_id];
@@ -195,8 +268,8 @@ function pageSummary() {
   s.changes.start.forEach((id) => items.push(["START", "good", `${plink(id, P[id].name)} ${posTag(P[id].position)} <span class="muted">${f1(P[id].adj)} adj · ${esc(oppText(P[id]))}</span>`]));
   s.changes.bench.forEach((id) => items.push(["BENCH", "warn", `${plink(id, P[id].name)} ${posTag(P[id].position)} <span class="muted">${f1(P[id].adj)} adj${P[id].notes.length ? " · " + esc(P[id].notes.join(", ")) : ""}</span>`]));
   holes.forEach((l) => items.push(["HOLE", "bad", l.player_id
-    ? `No healthy <b>${esc(l.slot)}</b>: ${plink(l.player_id, P[l.player_id].name)} (${esc(P[l.player_id].notes.join(", ") || "no projection")}). <a href="#waivers">Check waivers</a>`
-    : `Nobody eligible for <b>${esc(l.slot)}</b>. <a href="#waivers">Check waivers</a>`]));
+    ? `No healthy <b>${esc(l.slot)}</b>: ${plink(l.player_id, P[l.player_id].name)} (${esc(P[l.player_id].notes.join(", ") || "no projection")}). <a href="#waivers${runQ()}">Check waivers</a>`
+    : `Nobody eligible for <b>${esc(l.slot)}</b>. <a href="#waivers${runQ()}">Check waivers</a>`]));
   const holeIds = new Set(holes.map((l) => l.player_id));
   s.alerts.filter((id) => !s.changes.bench.includes(id) && !holeIds.has(id)).forEach((id) =>
     items.push(["ALERT", "warn", `${plink(id, P[id].name)} ${posTag(P[id].position)} <span class="muted">${esc(P[id].notes.join(", "))}</span>`]));
@@ -213,7 +286,7 @@ function pageSummary() {
       <td class="muted nw">${esc(oppText(e))}</td><td class="hide-sm">${multChips(e)}</td><td class="adj">${f1(e.adj)}</td></tr>`;
   }).join("");
 
-  return `
+  return `${archivedBanner()}${compareCard()}
     <div class="tiles">
       <div class="tile"><div class="label">Projected total (adjusted)</div><div class="value">${f1(s.total)}</div>
         <div class="hint">recommended lineup</div></div>
@@ -233,7 +306,7 @@ function pageSummary() {
       <div class="card"><h2>Recommended lineup</h2>
         <div class="table-wrap"><table><tbody>${lineupRows}</tbody>
         <tfoot><tr><td></td><td class="strong">Total</td><td></td><td class="hide-sm"></td><td class="adj">${f1(s.total)}</td></tr></tfoot></table></div>
-        <p class="small muted" style="margin:10px 0 0"><a href="#roster">Full roster and breakdowns →</a></p>
+        <p class="small muted" style="margin:10px 0 0"><a href="#roster${runQ()}">Full roster and breakdowns →</a></p>
       </div>
     </div>
     ${s.warnings.length ? `<div class="card"><details class="warnings"><summary>Run warnings (${s.warnings.length})</summary>
@@ -260,8 +333,8 @@ const ROSTER_HEAD = `<thead><tr><th>Player</th><th>Pos</th><th>Team</th><th>Opp<
   <th>Matchup</th><th class="hide-sm">Weather</th><th class="hide-sm">Sentiment</th><th>Inj</th><th class="num">Adj</th></tr></thead>`;
 
 function pageRoster() {
-  const s = S.summary;
-  if (!s) return S.summaryErr && S.summaryErr.status !== 404 ? errorBanner(S.summaryErr) : emptyRun("Your roster view");
+  const s = shown();
+  if (!s) return noSnapshot("Your roster view");
   const P = s.players, w = s.meta.weights;
   const current = new Set(s.current_starters);
   const starterIds = new Set(s.lineup.map((l) => l.player_id).filter(Boolean));
@@ -270,7 +343,7 @@ function pageRoster() {
   const reserve = Object.values(P).filter((e) => e.group === "reserve");
   const startRows = starters.map((e) => rosterRow(e, current.has(e.player_id) ? "" : "start", w)).join("");
   const benchRows = bench.map((e) => rosterRow({ ...e, slot: null }, current.has(e.player_id) ? "bench" : "", w)).join("");
-  return `
+  return `${archivedBanner()}
     <div class="card"><h2>Starters <span class="muted small">recommended · total ${f1(s.total)}</span></h2>
       <div class="table-wrap"><table>${ROSTER_HEAD}<tbody>${startRows}</tbody></table></div></div>
     <div class="card"><h2>Bench</h2>
@@ -484,8 +557,8 @@ function pageWaivers() {
 }
 
 function waiverRecs() {
-  const s = S.summary;
-  if (!s) return S.summaryErr && S.summaryErr.status !== 404 ? errorBanner(S.summaryErr) : emptyRun("Waiver recommendations");
+  const s = shown();
+  if (!s) return noSnapshot("Waiver recommendations");
   const P = s.players;
   if (!s.waiver_recs.length) return `<div class="card empty"><h2>No free agents clear the thresholds</h2>
     <p class="muted">Try <b>Browse all</b> to look through the full pool and run what-ifs.</p></div>`;
@@ -501,7 +574,7 @@ function waiverRecs() {
       <tr class="detail" data-detail="${esc(r.player_id)}" hidden><td colspan="12">${whyPanel(e, s.meta.weights)}</td></tr>`;
   }).join("");
   const budget = s.meta.faab ? ` · FAAB left $${s.meta.budget_left}` : "";
-  return `<div class="card"><h2>Recommended adds <span class="muted small">week ${s.meta.week}${budget}</span></h2>
+  return `${archivedBanner()}<div class="card"><h2>Recommended adds <span class="muted small">week ${s.meta.week}${budget}</span></h2>
     <div class="table-wrap" id="recs"><table><thead><tr><th>#</th><th>Player</th><th>Pos</th><th>Team</th><th>Opp</th><th class="num">Adj</th>
       <th class="num hide-sm">Recent</th><th class="num" title="Change in this week's optimal lineup total">Gain (wk)</th>
       <th class="num" title="Avg of projection and recent form vs. the suggested drop">Vs drop</th><th class="num hide-sm">Adds 48h</th>
@@ -588,13 +661,13 @@ const N = { filter: "roster", sort: "signal" };
 async function pageNews() {
   const wrap = document.createElement("div");
   view.replaceChildren(wrap);
-  if (!S.news) {
+  if (!S.news || S.news.run !== S.run) {
     wrap.innerHTML = skeleton(8);
-    try { S.news = await api("/api/news"); }
+    try { S.news = { ...(await api("/api/news" + runQ())), run: S.run }; }
     catch (e) { wrap.innerHTML = e.status === 404 ? emptyRun("News sentiment") : errorBanner(e); return; }
   }
   const n = S.news;
-  wrap.innerHTML = `${n.news_enabled === false ? `<div class="banner warn">The latest run skipped news. Run the pipeline with <b>News &amp; sentiment</b> checked to score articles.</div>` : ""}
+  wrap.innerHTML = `${archivedBanner()}${n.news_enabled === false ? `<div class="banner warn">${S.run ? "This archived run" : "The latest run"} skipped news. Run the pipeline with <b>News &amp; sentiment</b> checked to score articles.</div>` : ""}
     <div class="toolbar">
       ${[["roster", "My roster"], ["targets", "Waiver targets"], ["all", "All scored"]].map(([k, l]) => `<button class="fchip ${N.filter === k ? "on" : ""}" data-f="${k}">${l}</button>`).join("")}
       <span style="flex:1"></span>
@@ -634,10 +707,25 @@ function drawNews(el) {
 }
 
 // ---- router --------------------------------------------------------------------
+function parseHash() {
+  const [path, query] = location.hash.replace(/^#/, "").split("?");
+  const [tab, arg] = (path || "summary").split("/");
+  return { tab: ["summary", "roster", "player", "waivers", "news"].includes(tab) ? tab : "summary", arg,
+           run: new URLSearchParams(query || "").get("run") };
+}
+const currentTab = () => parseHash().tab;
+
 async function route() {
-  const [tab, arg] = (location.hash.replace(/^#/, "") || "summary").split("/");
-  const name = ["summary", "roster", "player", "waivers", "news"].includes(tab) ? tab : "summary";
-  document.querySelectorAll("#tabs a").forEach((a) => a.classList.toggle("active", a.dataset.tab === name));
+  const { tab: name, arg, run } = parseHash();
+  if ((run || null) !== S.run) {
+    view.innerHTML = skeleton(8);
+    await selectRun(run);
+    renderHeader();
+  }
+  document.querySelectorAll("#tabs a").forEach((a) => {
+    a.classList.toggle("active", a.dataset.tab === name);
+    a.setAttribute("href", `#${a.dataset.tab}${runQ()}`);
+  });
   $("#tooltip").hidden = true;
   if (name === "player") return pagePlayer(arg && decodeURIComponent(arg));
   if (name === "waivers") return pageWaivers();
@@ -652,13 +740,17 @@ document.addEventListener("click", (ev) => {
   else if (!ev.target.closest("#run-menu")) menu.hidden = true;
 });
 $("#run-btn").addEventListener("click", startRun);
+$("#run-picker").addEventListener("change", (ev) => {
+  const v = ev.target.value;
+  location.hash = `#${currentTab() === "player" ? "summary" : currentTab()}${v ? `?run=${encodeURIComponent(v)}` : ""}`;
+});
 bindExpand(view);
 window.addEventListener("hashchange", route);
 
 (async function init() {
   view.innerHTML = skeleton(8);
   try { S.cfg = await api("/api/config"); } catch { /* optional */ }
-  await loadSummary();
+  await Promise.all([loadSummary(), loadRuns()]);
   route();
   try {
     S.job = await api("/api/run");

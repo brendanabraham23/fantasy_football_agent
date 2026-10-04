@@ -108,8 +108,22 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
     app.state.job = job
 
     # ---- helpers ----------------------------------------------------------------
+    archive_dir = cfg.get("archive_dir", "archive")
+
     def snap() -> dict | None:
         return snapshot.load(out_dir)
+
+    def snap_or_run(run: str | None) -> dict:
+        """The latest snapshot, or an archived one when `run` is given (404 if missing)."""
+        if run:
+            s = snapshot.load_run(out_dir, run, archive_dir)
+            if not s:
+                raise HTTPException(404, f"No archived run '{run}'")
+            return s
+        s = snap()
+        if not s:
+            raise HTTPException(404, "No pipeline runs yet. Click Run pipeline to create one.")
+        return s
 
     def live() -> Live:
         ttl = ucfg.get("live_ttl_minutes", 15) * 60
@@ -149,7 +163,7 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
                                    news=opts["news"], wx=opts["weather"])
                 data = snapshot.to_dict(res, snapshot.warnings_from(job.log), opts)
                 md, csv = report.save(res, out_dir)
-                run_dir = snapshot.save(data, out_dir, (md, csv), cfg.get("archive_dir", "archive"))
+                run_dir = snapshot.save(data, out_dir, (md, csv), archive_dir)
                 print(f"Saved report and snapshot; archived to {run_dir}")
             job.state = "done"
         except Exception as exc:
@@ -176,10 +190,8 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
 
     # ---- summary ----------------------------------------------------------------
     @app.get("/api/summary")
-    def summary():
-        s = snap()
-        if not s:
-            raise HTTPException(404, "No pipeline runs yet. Click Run pipeline to create one.")
+    def summary(run: str | None = None):
+        s = snap_or_run(run)
         current_week = None
         try:
             state = sleeper.nfl_state()
@@ -189,7 +201,18 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
         gen = datetime.fromisoformat(s["meta"]["generated_at"])
         age_h = (datetime.now(timezone.utc) - gen).total_seconds() / 3600
         stale = age_h > ucfg.get("stale_hours", 24) or (current_week is not None and s["meta"]["week"] < current_week)
-        return {**s, "stale": stale, "age_hours": round(age_h, 1), "current_week": current_week}
+        return {**s, "stale": stale, "age_hours": round(age_h, 1), "current_week": current_week,
+                "run_id": run, "archived": bool(run)}
+
+    # ---- archive ----------------------------------------------------------------
+    @app.get("/api/runs")
+    def runs():
+        return snapshot.list_runs(out_dir, archive_dir)
+
+    @app.get("/api/compare")
+    def compare(run: str, to: str | None = None):
+        """Diff archived run `run` against `to` (another archived run) or the latest snapshot."""
+        return snapshot.compare(snap_or_run(run), snap_or_run(to))
 
     # ---- players ----------------------------------------------------------------
     @app.get("/api/players/search")
@@ -310,10 +333,8 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
 
     # ---- news -------------------------------------------------------------------
     @app.get("/api/news")
-    def news():
-        s = snap()
-        if not s:
-            raise HTTPException(404, "No pipeline runs yet. Click Run pipeline to create one.")
+    def news(run: str | None = None):
+        s = snap_or_run(run)
         rec_ids = {r["player_id"] for r in s["waiver_recs"]}
         out = []
         for pid, d in s["players"].items():

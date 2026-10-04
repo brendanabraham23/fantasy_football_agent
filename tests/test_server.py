@@ -148,3 +148,45 @@ def test_capture_collects_warnings():
         print("[warn] feed failed")
     assert lines == ["  - progress", "[warn] feed failed"]
     assert snapshot.warnings_from(lines) == ["[warn] feed failed"]
+
+
+def test_archived_runs_list_load_and_compare(client):
+    assert client.get("/api/runs").json() == []
+    run_pipeline(client, news=True, weather=True)
+    run_pipeline(client, news=False, weather=True)
+    runs = client.get("/api/runs").json()
+    assert len(runs) == 2 and runs[0]["latest"] and not runs[1]["latest"]
+    assert runs[0]["options"]["news"] is False and runs[1]["options"]["news"] is True
+    assert runs[1]["week"] == 5 and runs[1]["total"] > 0
+
+    old_id = runs[1]["id"]
+    old = client.get(f"/api/summary?run={old_id}").json()
+    assert old["archived"] and old["run_id"] == old_id and old["meta"]["options"]["news"] is True
+    assert client.get("/api/summary").json()["meta"]["options"]["news"] is False
+    assert client.get(f"/api/news?run={old_id}").json()["news_enabled"] is True
+
+    c = client.get(f"/api/compare?run={old_id}").json()
+    assert c["same_week"] and c["total_delta"] == round(c["new"]["total"] - c["old"]["total"], 2)
+    bravo = next(p for p in c["players"] if p["player_id"] == "2")
+    assert bravo["status"] == "kept" and bravo["delta"] > 0      # negative news no longer applied
+    assert {p["status"] for p in c["players"]} == {"kept"}
+    assert [r["player_id"] for r in c["recs_kept"]] == ["20"]
+
+    assert client.get("/api/summary?run=nope").status_code == 404
+    assert client.get("/api/summary?run=../latest_run.json").status_code == 404
+    assert client.get("/api/compare?run=nope").status_code == 404
+
+
+def test_compare_roster_moves():
+    def snap(players, lineup, recs, total):
+        return {"meta": {"generated_at": "x", "week": 5, "season": 2026}, "total": total, "lineup": lineup,
+                "players": players, "waiver_recs": [{"player_id": r} for r in recs]}
+    p = lambda name, adj, group="roster": {"name": name, "position": "RB", "adj": adj, "group": group}
+    old = snap({"a": p("A", 10), "b": p("B", 5), "c": p("C", 9, "candidate")}, [{"slot": "RB", "player_id": "a"}], ["c"], 10)
+    new = snap({"a": p("A", 12), "c": p("C", 9)}, [{"slot": "RB", "player_id": "c"}], ["d"], 9)
+    c = snapshot.compare(old, new)
+    by = {r["player_id"]: r for r in c["players"]}
+    assert by["a"]["delta"] == 2 and by["a"]["slot_old"] == "RB" and by["a"]["slot_new"] == "BN"
+    assert by["b"]["status"] == "dropped" and by["b"]["adj_new"] is None
+    assert by["c"]["status"] == "added" and by["c"]["adj_old"] is None and by["c"]["slot_new"] == "RB"
+    assert c["total_delta"] == -1 and [r["player_id"] for r in c["recs_gone"]] == ["c"]

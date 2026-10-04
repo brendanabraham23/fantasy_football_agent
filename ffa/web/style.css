@@ -56,6 +56,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { margin: 0; }
 body {
   background: var(--bg); color: var(--text);
@@ -130,6 +131,10 @@ main { max-width: 1200px; margin: 0 auto; padding: 18px 16px 60px; }
 .banner { padding: 10px 14px; border-radius: 8px; margin-bottom: 14px; }
 .banner.error { background: var(--bad-bg); color: var(--bad-ink); }
 .banner.warn { background: var(--warn-bg); color: var(--warn-ink); }
+.banner.info { background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--text); }
+#run-picker { font: inherit; font-size: 12.5px; padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px;
+  background: var(--surface); color: var(--text); max-width: 280px; }
+#run-picker.archived { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 12%, var(--surface)); }
 .empty { text-align: center; padding: 48px 16px; }
 .empty h2 { font-size: 18px; }
 .skeleton { height: 14px; border-radius: 4px; background: linear-gradient(90deg, var(--surface-2), var(--border), var(--surface-2));

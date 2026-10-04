@@ -38,7 +38,7 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `lineup.py` | Hindsight best-lineup solver used by `ledger.py` (separate from `ranker.optimal_lineup`). |
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
 | `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |
-| `server.py` | FastAPI app: background run job, `/api/*` (summary, players, waivers pool/what-if, news), serves `ffa/web/`. |
+| `server.py` | FastAPI app: background run job, `/api/*` (summary, players, waivers pool/what-if, news, archived runs/compare), serves `ffa/web/`. |
 | `web/` | Vanilla JS SPA (hash routing, inline-SVG chart). No build step; edit `app.js`/`style.css` directly. |
 
 All tunable numbers (weights, clips, injury multipliers, news/waiver params) live in `config.json`;

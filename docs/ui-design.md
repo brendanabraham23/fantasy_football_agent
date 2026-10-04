@@ -83,14 +83,16 @@ latest log line, and reloads the current tab when the run finishes.
 
 | Method & path | Returns |
 |---|---|
-| `GET /api/summary` | the snapshot (404 `{detail}` if no run exists yet) + `stale` flag + `current_week` |
+| `GET /api/summary?run=` | the latest snapshot, or the archived run `run` (404 `{detail}` if none) + `stale` flag + `current_week` + `archived` |
 | `POST /api/run` `{news, weather}` | `202` job status, `409` if running |
 | `GET /api/run` | job status |
 | `GET /api/players/search?q=&limit=` | `[{player_id, name, position, team, owner}]`, fantasy positions only, prefix matches first |
 | `GET /api/players/{id}` | profile, owner, `history` per week (opp, actual, projected, key stats), this week's eval (`source: snapshot|live`), snapshot articles |
 | `GET /api/waivers/pool` | every free agent at a fantasy position with a team: live eval + season points/games + trending adds |
 | `GET /api/waivers/whatif/{id}` | `{weekly_gain, ros_gain, drop, bid}` for adding that player (same math as `waivers.recommend`, no thresholds) |
-| `GET /api/news` | scored players from the snapshot with sentiment and articles |
+| `GET /api/news?run=` | scored players from the latest (or archived) snapshot with sentiment and articles |
+| `GET /api/runs` | archived runs, newest first: id, `generated_at`, week, total, options, counts; `latest` flags the current one |
+| `GET /api/compare?run=&to=` | `snapshot.compare` of archived run `run` against `to` (default: latest): total delta, per-player adj/slot changes, added/dropped players, waiver targets new/gone/kept |
 | `GET /api/news/{id}` | live news + sentiment for any player (Google News + generic feeds) |
 
 `waivers.evaluate_add(ctx, my_evals, starters, cand)` is pulled out of `waivers.recommend` so
@@ -173,6 +175,18 @@ A segmented control switches between **Recommended** and **Browse all**.
 - Expanding a row lists the articles: score chip, title (link opens a new tab), source and relative date.
 - A "Look up any player" search runs a live fetch for a player who isn't in the snapshot.
 - A footnote explains how the sentiment score becomes the multiplier (`1 + sentiment_weight × score`).
+
+### 4.6 Archived runs
+
+- A **run picker** in the top bar (hidden until a second run exists) lists "Latest run" and every archived run
+  as `Sun, Oct 4, 1:52 PM · Wk 5 · 93.2` (plus "no news" when news was skipped).
+- Picking one adds `?run=<id>` to the hash (`#roster?run=…`). Tab links and player links keep it, so the choice
+  survives navigation, bookmarks and the back button.
+- Summary, Roster, Waivers → Recommended and News render the archived snapshot under an "archived run" banner
+  with a **Back to latest** link. The Player page, Browse all and What if? stay live and say so.
+- Summary adds a **Compared with latest** card: the change in lineup total (flagged when the weeks differ),
+  a table of players whose adjusted points, slot or roster status changed (with an "N unchanged" count), and
+  waiver targets that are new, no longer recommended, or still recommended.
 
 ## 5. Configuration
 

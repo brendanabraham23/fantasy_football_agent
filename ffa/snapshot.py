@@ -127,3 +127,87 @@ def save(data: dict, out_dir: str | Path, files: tuple[Path, ...] = (), archive_
 def load(out_dir: str | Path) -> dict | None:
     path = Path(out_dir) / LATEST
     return json.loads(path.read_text()) if path.exists() else None
+
+
+# ---- archive -------------------------------------------------------------------
+
+_meta_cache: dict[Path, tuple[float, dict]] = {}
+
+
+def _run_summary(run_dir: Path) -> dict | None:
+    path = run_dir / "run.json"
+    try:
+        mtime = path.stat().st_mtime
+    except OSError:
+        return None
+    hit = _meta_cache.get(path)
+    if hit and hit[0] == mtime:
+        return hit[1]
+    try:
+        data = json.loads(path.read_text())
+    except (OSError, ValueError):
+        return None
+    m = data["meta"]
+    row = {"id": run_dir.name, "generated_at": m["generated_at"], "season": m["season"], "week": m["week"],
+           "team": m.get("team"), "total": data.get("total"), "options": m.get("options", {}),
+           "n_changes": len(data.get("changes", {}).get("start", [])), "n_recs": len(data.get("waiver_recs", []))}
+    _meta_cache[path] = (mtime, row)
+    return row
+
+
+def list_runs(out_dir: str | Path, archive_dir: str = "archive") -> list[dict]:
+    """Archived runs, newest first. The one matching latest_run.json is flagged `latest`."""
+    root = Path(out_dir) / archive_dir
+    rows = [r for d in root.iterdir() if d.is_dir() and (r := _run_summary(d))] if root.is_dir() else []
+    rows.sort(key=lambda r: (r["generated_at"], r["id"]), reverse=True)  # "-2" suffix sorts after its base
+    latest = load(out_dir)
+    gen = latest["meta"]["generated_at"] if latest else None
+    first = next((i for i, r in enumerate(rows) if r["generated_at"] == gen), None)
+    return [{**r, "latest": i == first} for i, r in enumerate(rows)]
+
+
+def load_run(out_dir: str | Path, run_id: str, archive_dir: str = "archive") -> dict | None:
+    root = Path(out_dir) / archive_dir
+    if not root.is_dir() or run_id not in {d.name for d in root.iterdir() if d.is_dir()}:
+        return None
+    path = root / run_id / "run.json"
+    return json.loads(path.read_text()) if path.exists() else None
+
+
+def _slots(data: dict) -> dict[str, str]:
+    return {row["player_id"]: row["slot"] for row in data["lineup"] if row["player_id"]}
+
+
+def compare(old: dict, new: dict) -> dict:
+    """What changed between two snapshots: lineup total, per-player adjusted points/slots, waiver targets."""
+    po, pn = old["players"], new["players"]
+    so, sn = _slots(old), _slots(new)
+    mine = lambda d: {pid for pid, e in d.items() if e.get("group") in ("roster", "reserve")}
+    players = []
+    for pid in mine(po) | mine(pn):
+        a, b = po.get(pid), pn.get(pid)
+        on_old, on_new = a is not None and a.get("group") != "candidate", b is not None and b.get("group") != "candidate"
+        e = b or a
+        adj_old = a["adj"] if on_old else None
+        adj_new = b["adj"] if on_new else None
+        players.append({
+            "player_id": pid, "name": e["name"], "position": e["position"],
+            "adj_old": adj_old, "adj_new": adj_new,
+            "delta": round(adj_new - adj_old, 2) if adj_old is not None and adj_new is not None else None,
+            "slot_old": so.get(pid, "BN" if on_old else None), "slot_new": sn.get(pid, "BN" if on_new else None),
+            "status": "added" if not on_old else "dropped" if not on_new else "kept",
+        })
+    players.sort(key=lambda r: (r["status"] != "kept", -abs(r["delta"] or 0)))
+    ro = [r["player_id"] for r in old["waiver_recs"]]
+    rn = [r["player_id"] for r in new["waiver_recs"]]
+    name = lambda pid: (pn.get(pid) or po.get(pid) or {}).get("name", pid)
+    return {
+        "old": {"generated_at": old["meta"]["generated_at"], "week": old["meta"]["week"], "total": old["total"]},
+        "new": {"generated_at": new["meta"]["generated_at"], "week": new["meta"]["week"], "total": new["total"]},
+        "total_delta": round(new["total"] - old["total"], 2),
+        "same_week": old["meta"]["week"] == new["meta"]["week"] and old["meta"]["season"] == new["meta"]["season"],
+        "players": players,
+        "recs_new": [{"player_id": p, "name": name(p)} for p in rn if p not in ro],
+        "recs_gone": [{"player_id": p, "name": name(p)} for p in ro if p not in rn],
+        "recs_kept": [{"player_id": p, "name": name(p)} for p in rn if p in ro],
+    }
