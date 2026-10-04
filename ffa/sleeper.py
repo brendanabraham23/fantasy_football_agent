@@ -114,7 +114,7 @@ def fantasy_points(stat_line: dict | None, scoring: dict, rec_value: float, posi
 
 # ---- finding your team ---------------------------------------------------------
 
-def _team_name(user: dict) -> str:
+def team_label(user: dict) -> str:
     return ((user.get("metadata") or {}).get("team_name") or user.get("display_name") or "").strip()
 
 
@@ -135,7 +135,7 @@ def find_my_team(username: str, team_name: str, season: int, league_id: str | No
         rosters = league_rosters(lg["league_id"])
         by_owner = {r.get("owner_id"): r for r in rosters}
         for u in users:
-            if team_name and _team_name(u).lower() == team_name.lower() and u["user_id"] in by_owner:
+            if team_name and team_label(u).lower() == team_name.lower() and u["user_id"] in by_owner:
                 return lg, users, rosters, by_owner[u["user_id"]], u
         if fallback is None and me["user_id"] in by_owner:
             mine = next(u for u in users if u["user_id"] == me["user_id"])
@@ -143,6 +143,6 @@ def find_my_team(username: str, team_name: str, season: int, league_id: str | No
 
     if fallback:
         print(f"[warn] No team named '{team_name}' found; using {username}'s roster in "
-              f"'{fallback[0].get('name')}' ({_team_name(fallback[4])}).")
+              f"'{fallback[0].get('name')}' ({team_label(fallback[4])}).")
         return fallback
     raise ValueError(f"Could not find team '{team_name}' or a roster owned by '{username}'")

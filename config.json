@@ -43,5 +43,8 @@
     "show": 10
   },
 
-  "eval": {"max_adds": 3}
+  "eval": {"max_adds": 3},
+
+  "ui": {"host": "127.0.0.1", "port": 8000, "live_ttl_minutes": 15, "stale_hours": 24,
+         "search_limit": 15, "pool_page_size": 50}
 }

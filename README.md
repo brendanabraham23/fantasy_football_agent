@@ -15,6 +15,18 @@ to skip the flag. Python 3.10+.
 Useful flags: `--week 6`, `--league-id 123...`, `--team-name "Other Team"`,
 `--no-news` (fast run), `--no-weather`.
 
+## Web UI
+
+```bash
+python -m ffa ui --username YOUR_SLEEPER_USERNAME    # then open http://127.0.0.1:8000
+```
+
+Five tabs: **Summary** (what to change before kickoff), **Roster** (every player with a breakdown of their
+adjusted points), **Player** (search any player: weekly actual vs. projected chart, game log, news),
+**Waivers** (recommended adds, plus browsing and what-if checks across the full free-agent pool) and **News**
+(sentiment per player with the articles behind it). **Run pipeline** starts a fresh run in the background.
+Every run, from the CLI or the UI, saves `reports/latest_run.json`, which the UI reads. See `docs/ui-design.md`.
+
 ## What it does
 
 | Step | Source | Module |

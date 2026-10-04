@@ -127,5 +127,5 @@ def save(res: Result, out_dir: str | Path) -> tuple[Path, Path]:
     rows += [{**asdict(r.player), "group": "waiver", "weekly_gain": r.weekly_gain,
               "ros_gain": r.ros_gain, "bid": r.bid} for r in res.waiver_recs]
     csv = out / f"{stem}_players.csv"
-    pd.DataFrame(rows).drop(columns=["headlines"]).to_csv(csv, index=False)
+    pd.DataFrame(rows).drop(columns=["headlines", "articles"]).to_csv(csv, index=False)
     return md, csv

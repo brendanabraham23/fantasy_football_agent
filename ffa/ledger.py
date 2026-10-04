@@ -201,7 +201,7 @@ def run(username: str, team_name: str, league_id: str | None, through_week: int 
     players = sleeper.all_players()
     txns, weeks = load_history(lg, through, players)
 
-    names = {u["user_id"]: sleeper._team_name(u) for u in users}
+    names = {u["user_id"]: sleeper.team_label(u) for u in users}
     teams = {int(r["roster_id"]): names.get(r.get("owner_id"), f"Roster {r['roster_id']}") for r in rosters}
     entries = build_ledger(txns, weeks, lg["roster_positions"], player_positions(players))
 

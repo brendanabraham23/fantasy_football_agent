@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy Analyzer</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="team" id="team-name">Fantasy Analyzer</div>
+      <div class="sub" id="team-sub">&nbsp;</div>
+    </div>
+    <div class="run-area">
+      <span class="chip" id="snap-age" hidden></span>
+      <div class="run-status" id="run-status" hidden></div>
+      <div class="run-group">
+        <button class="btn primary" id="run-btn">Run pipeline</button>
+        <button class="btn primary caret" id="run-menu-btn" aria-label="Run options" aria-haspopup="true">▾</button>
+        <div class="menu" id="run-menu" hidden>
+          <label><input type="checkbox" id="opt-news" checked> News &amp; sentiment</label>
+          <label><input type="checkbox" id="opt-weather" checked> Weather</label>
+          <p class="muted small">Skipping news makes the run much faster.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav class="tabs" id="tabs">
+    <a href="#summary" data-tab="summary">Summary</a>
+    <a href="#roster" data-tab="roster">Roster</a>
+    <a href="#player" data-tab="player">Player</a>
+    <a href="#waivers" data-tab="waivers">Waivers</a>
+    <a href="#news" data-tab="news">News</a>
+  </nav>
+  <main id="view" aria-live="polite"></main>
+  <div class="tooltip" id="tooltip" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>

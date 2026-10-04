@@ -65,6 +65,7 @@ class Sentiment:
     score: float = 0.0           # -1 (very negative) .. +1 (very positive), shrunk toward 0
     n_articles: int = 0
     headlines: list[tuple[str, float, str]] = field(default_factory=list)  # (title, score, link)
+    articles: list[dict] = field(default_factory=list)  # every scored article, newest first
 
 
 def _clean(s: str) -> str:
@@ -146,18 +147,20 @@ class NewsScorer:
         half_life = self.cfg.get("half_life_days", 3)
         now = datetime.now(timezone.utc)
         num = den = 0.0
-        scored = []
+        scored, detail = [], []
         for a in articles:
             s = self.score_article(a, name)
             age = (now - a.published).total_seconds() / 86400 if a.published else half_life
             w = math.exp(-math.log(2) * max(age, 0) / half_life)
             num, den = num + w * s, den + w
             scored.append((a.title, round(s, 2), a.link))
+            detail.append({"title": a.title, "score": round(s, 2), "source": a.source, "link": a.link,
+                           "published": a.published.isoformat() if a.published else None})
         n = len(articles)
         k = self.cfg.get("shrinkage", 3)  # few articles -> pull toward neutral
         score = (num / den) * n / (n + k) if den else 0.0
         top = sorted(scored, key=lambda t: abs(t[1]), reverse=True)[:3]
-        return Sentiment(round(score, 3), n, top)
+        return Sentiment(round(score, 3), n, top, detail)
 
     def for_players(self, names: list[str]) -> dict[str, Sentiment]:
         self.generic_articles()

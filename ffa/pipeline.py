@@ -36,7 +36,27 @@ class Context:
     matchups: dict
     implied_avg: float
     trending: dict
+    users: list = field(default_factory=list)
+    rosters: list = field(default_factory=list)
     _wx: dict = field(default_factory=dict)
+
+    @property
+    def rostered(self) -> set[str]:
+        return {pid for r in self.rosters for key in ("players", "reserve", "taxi") for pid in (r.get(key) or [])}
+
+    @property
+    def fantasy_positions(self) -> set[str]:
+        slots = self.league["roster_positions"]
+        positions = {s for s in slots if s in sleeper.FANTASY_POSITIONS}
+        if any("FLEX" in s for s in slots):
+            positions |= {"RB", "WR", "TE"}
+        return positions
+
+    def owners(self) -> dict[str, str]:
+        """player_id -> team name of the roster holding them."""
+        names = {u["user_id"]: sleeper.team_label(u) for u in self.users}
+        return {pid: names.get(r.get("owner_id")) or f"Team {r.get('roster_id', '?')}"
+                for r in self.rosters for key in ("players", "reserve", "taxi") for pid in (r.get(key) or [])}
 
     def weather_for(self, game: dict):
         gid = game["game_id"]
@@ -57,16 +77,17 @@ class Result:
     lineup: list
     current_starters: list[str]
     waiver_recs: list
+    candidates: list = field(default_factory=list)
 
 
 def _log(msg):
     print(f"  - {msg}", flush=True)
 
 
-def run(username: str, team_name: str, league_id: str | None = None, season: int | None = None,
-        week: int | None = None, cfg: dict | None = None, news: bool = True, wx: bool = True) -> Result:
+def build_context(username: str, team_name: str, league_id: str | None = None, season: int | None = None,
+                  week: int | None = None, cfg: dict | None = None) -> Context:
+    """Fetch everything a week's evaluation needs (all network I/O happens here)."""
     cfg = cfg or load_config()
-    cfg["weather"]["enabled"] = cfg["weather"]["enabled"] and wx
     state = sleeper.nfl_state()
     season = season or int(state["season"])
     week = week or int(state.get("display_week") or state["week"])
@@ -98,8 +119,16 @@ def run(username: str, team_name: str, league_id: str | None = None, season: int
     _log(f"Defense ratings for {defense['opponent_team'].nunique() if not defense.empty else 0} teams, "
          f"{len(matchups) // 2} games this week")
 
-    ctx = Context(cfg, season, week, lg, my_roster, my_name, scoring, rec_value, players,
-                  projections, recent, defense, matchups, implied_avg, trending)
+    return Context(cfg, season, week, lg, my_roster, my_name, scoring, rec_value, players,
+                   projections, recent, defense, matchups, implied_avg, trending, users, rosters)
+
+
+def run(username: str, team_name: str, league_id: str | None = None, season: int | None = None,
+        week: int | None = None, cfg: dict | None = None, news: bool = True, wx: bool = True) -> Result:
+    cfg = cfg or load_config()
+    cfg["weather"]["enabled"] = cfg["weather"]["enabled"] and wx
+    ctx = build_context(username, team_name, league_id, season, week, cfg)
+    lg, my_roster = ctx.league, ctx.my_roster
     ev = Evaluator(ctx)
 
     reserve_ids = set(my_roster.get("reserve") or []) | set(my_roster.get("taxi") or [])
@@ -108,11 +137,7 @@ def run(username: str, team_name: str, league_id: str | None = None, season: int
     reserve = [ev.evaluate(pid, with_weather=False) for pid in reserve_ids]
 
     # waiver candidates (evaluated without news first, then news for the top few)
-    rostered = {pid for r in rosters for key in ("players", "reserve", "taxi") for pid in (r.get(key) or [])}
-    positions = {s for s in lg["roster_positions"] if s in sleeper.FANTASY_POSITIONS}
-    if any("FLEX" in s for s in lg["roster_positions"]):
-        positions |= {"RB", "WR", "TE"}
-    pool_ids = waivers.free_agent_pool(ctx, rostered, positions)
+    pool_ids = waivers.free_agent_pool(ctx, ctx.rostered, ctx.fantasy_positions)
     candidates = sorted((ev.evaluate(pid) for pid in pool_ids), key=lambda e: e.adj, reverse=True)
     top_candidates = candidates[: cfg["waivers"]["news_for_top"]]
     _log(f"Evaluated {len(roster)} rostered players and {len(candidates)} free agents")
@@ -131,4 +156,4 @@ def run(username: str, team_name: str, league_id: str | None = None, season: int
         if e:
             e.slot = slot
     recs = waivers.recommend(ctx, ev, roster, starters, candidates)
-    return Result(ctx, roster, reserve, lineup, my_roster.get("starters") or [], recs)
+    return Result(ctx, roster, reserve, lineup, my_roster.get("starters") or [], recs, candidates)

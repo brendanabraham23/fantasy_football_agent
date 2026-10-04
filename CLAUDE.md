@@ -1,7 +1,8 @@
 # CLAUDE.md
 
 Weekly start/sit and waiver recommendations for a Sleeper fantasy league (team "Brendobendo"), plus a
-transaction ledger that scores every add/drop/trade in hindsight. Pure Python package `ffa/`, no web UI.
+transaction ledger that scores every add/drop/trade in hindsight. Python package `ffa/` with a local web UI
+(FastAPI + no-build HTML/JS in `ffa/web/`).
 
 ## Commands
 
@@ -12,6 +13,7 @@ python -m pytest -q                    # all tests, offline. Use `python -m pyte
 python -m ffa --username USER          # weekly report -> reports/weekNN_YYYY_report.md + _players.csv
 python -m ffa --username USER --no-news --no-weather   # fast run, skips RSS scraping and Open-Meteo
 python -m ffa ledger --username USER [--through-week 4] # -> reports/ledger/
+python -m ffa ui --username USER       # local web UI at http://127.0.0.1:8000
 ```
 
 `username` is blank in `config.json`, so live runs need `--username` (ask the user for it).
@@ -20,7 +22,8 @@ python -m ffa ledger --username USER [--through-week 4] # -> reports/ledger/
 
 `cli.py` -> `pipeline.run()` builds a `Context` (league, rosters, projections, recent stats, defense
 ratings, matchups) -> `ranker.Evaluator.evaluate(pid)` returns a `PlayerEval` -> `ranker.optimal_lineup`
--> `waivers.recommend` -> `report.render/save`.
+-> `waivers.recommend` -> `report.render/save` + `snapshot.save` (`reports/latest_run.json`, read by the UI).
+`pipeline.build_context` is the fetch-only half of `run`; the UI server uses it for live (cached) data.
 
 | Module | Role |
 |---|---|
@@ -33,6 +36,9 @@ ratings, matchups) -> `ranker.Evaluator.evaluate(pid)` returns a `PlayerEval` ->
 | `waivers.py` | What-if add of each free agent; weekly gain + ROS gain vs. weakest bench; FAAB bid. |
 | `lineup.py` | Hindsight best-lineup solver used by `ledger.py` (separate from `ranker.optimal_lineup`). |
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
+| `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |
+| `server.py` | FastAPI app: background run job, `/api/*` (summary, players, waivers pool/what-if, news), serves `ffa/web/`. |
+| `web/` | Vanilla JS SPA (hash routing, inline-SVG chart). No build step; edit `app.js`/`style.css` directly. |
 
 All tunable numbers (weights, clips, injury multipliers, news/waiver params) live in `config.json`;
 don't hardcode new constants in modules — add a config key and read it from `cfg`.
@@ -45,6 +51,11 @@ don't hardcode new constants in modules — add a config key and read it from `c
 - Tests in `tests/` monkeypatch every network call with fixture data (see the `fake_world` fixture in
   `tests/test_ffa.py`). New code that fetches data must go through `http.py` / the source module so it can
   be patched; tests must stay offline.
+
+## UI
+
+Design and page specs: `docs/ui-design.md`. Server tests use FastAPI's `TestClient` over `fake_world`
+(`tests/conftest.py`); the run job is a thread, so tests join `app.state.job.thread`.
 
 ## Roadmap
 

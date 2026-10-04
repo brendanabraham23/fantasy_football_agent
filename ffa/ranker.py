@@ -15,6 +15,10 @@ SLOT_ELIGIBILITY = {
 NON_STARTING = {"BN", "IR", "TAXI"}
 
 
+def player_name(p: dict, pid: str) -> str:
+    return p.get("full_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}".strip() or pid
+
+
 @dataclass
 class PlayerEval:
     player_id: str
@@ -37,6 +41,7 @@ class PlayerEval:
     sentiment: float = 0.0
     n_articles: int = 0
     headlines: list = field(default_factory=list)
+    articles: list = field(default_factory=list)
     mult_injury: float = 1.0
     mult_matchup: float = 1.0
     mult_weather: float = 1.0
@@ -68,7 +73,7 @@ class Evaluator:
         c, cfg = self.c, self.c.cfg
         p = c.players.get(pid, {})
         pos = p.get("position") or "?"
-        name = p.get("full_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}".strip() or pid
+        name = player_name(p, pid)
         team = sleeper.norm_team(p.get("team"))
         e = PlayerEval(pid, name, pos, team, injury_status=p.get("injury_status"),
                        injury_detail=p.get("injury_body_part") or p.get("injury_notes"),
@@ -128,7 +133,7 @@ class Evaluator:
 
     def apply_sentiment(self, e: PlayerEval, sent) -> None:
         if sent is not None:
-            e.sentiment, e.n_articles, e.headlines = sent.score, sent.n_articles, sent.headlines
+            e.sentiment, e.n_articles, e.headlines, e.articles = sent.score, sent.n_articles, sent.headlines, sent.articles
         e.mult_sentiment = round(1 + self.c.cfg["sentiment_weight"] * e.sentiment, 3)
         e.adj = round(e.base * e.mult_injury * e.mult_matchup * e.mult_weather * e.mult_sentiment, 2)
 
