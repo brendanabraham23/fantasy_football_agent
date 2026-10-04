@@ -38,7 +38,9 @@ FastAPI app (ffa/server.py)
 ### 3.1 Snapshot (`ffa/snapshot.py`)
 
 `snapshot.to_dict(result, warnings)` serializes a `pipeline.Result` to JSON. It's saved as
-`reports/latest_run.json` and also as `reports/weekNN_YYYY_run.json` for history. Contents:
+`reports/latest_run.json`. Each run is also archived to `reports/archive/<YYYY-MM-DD_HHMMSS>_weekNN_YYYY/`
+(local time; `-2`, `-3`... if two runs share a second), which holds `run.json` plus copies of that run's Markdown
+report and CSV. Archived runs are never overwritten. The folder name comes from `archive_dir` in `config.json`. Contents:
 
 | Key | Contents |
 |---|---|

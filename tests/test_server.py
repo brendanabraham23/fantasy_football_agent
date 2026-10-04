@@ -46,8 +46,15 @@ def test_summary_requires_a_run_then_reflects_it(client):
     assert s["players"]["20"]["group"] == "candidate" and s["players"]["2"]["group"] == "roster"
     assert s["total"] == round(sum(s["players"][l["player_id"]]["adj"] for l in s["lineup"] if l["player_id"]), 2)
     assert s["stale"] is False and s["current_week"] == 5
-    assert (client.tmp_path / "latest_run.json").exists() and (client.tmp_path / "week05_2026_run.json").exists()
-    assert (client.tmp_path / "week05_2026_report.md").exists()
+    assert (client.tmp_path / "latest_run.json").exists() and (client.tmp_path / "week05_2026_report.md").exists()
+    runs = sorted((client.tmp_path / "archive").iterdir())
+    assert len(runs) == 1 and runs[0].name.endswith("_week05_2026")
+    assert {f.name for f in runs[0].iterdir()} == {"run.json", "week05_2026_report.md", "week05_2026_players.csv"}
+
+    run_pipeline(client, news=False, weather=True)            # a second run is archived alongside, not over
+    runs = sorted((client.tmp_path / "archive").iterdir())
+    assert len(runs) == 2
+    assert [json.loads((r / "run.json").read_text())["meta"]["options"]["news"] for r in runs] == [True, False]
 
 
 def test_second_run_while_running_is_rejected(client):

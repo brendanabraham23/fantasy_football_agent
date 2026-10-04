@@ -25,7 +25,9 @@ Five tabs: **Summary** (what to change before kickoff), **Roster** (every player
 adjusted points), **Player** (search any player: weekly actual vs. projected chart, game log, news),
 **Waivers** (recommended adds, plus browsing and what-if checks across the full free-agent pool) and **News**
 (sentiment per player with the articles behind it). **Run pipeline** starts a fresh run in the background.
-Every run, from the CLI or the UI, saves `reports/latest_run.json`, which the UI reads. See `docs/ui-design.md`.
+Every run, from the CLI or the UI, saves `reports/latest_run.json`, which the UI reads, and archives a copy of
+the snapshot, Markdown report and CSV to `reports/archive/<YYYY-MM-DD_HHMMSS>_weekNN_YYYY/`. Nothing is overwritten
+there, so every past run is kept. See `docs/ui-design.md`.
 
 ## What it does
 

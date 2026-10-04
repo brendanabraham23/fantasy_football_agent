@@ -88,8 +88,9 @@ def main(argv=None) -> int:
     print(report.render(res))
     md, csv = report.save(res, args.out)
     opts = {"news": not args.no_news, "weather": not args.no_weather}
-    snap = snapshot.save(snapshot.to_dict(res, snapshot.warnings_from(lines), opts), args.out)
-    print(f"\nSaved {md}, {csv} and {snap}")
+    run_dir = snapshot.save(snapshot.to_dict(res, snapshot.warnings_from(lines), opts), args.out, (md, csv),
+                            cfg.get("archive_dir", "archive"))
+    print(f"\nSaved {md} and {csv}; archived run to {run_dir}")
     return 0
 
 

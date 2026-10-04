@@ -148,9 +148,9 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
                 res = pipeline.run(username, team_name, league_id, None, week, copy.deepcopy(cfg),
                                    news=opts["news"], wx=opts["weather"])
                 data = snapshot.to_dict(res, snapshot.warnings_from(job.log), opts)
-                snapshot.save(data, out_dir)
-                report.save(res, out_dir)
-                print("Saved snapshot and report")
+                md, csv = report.save(res, out_dir)
+                run_dir = snapshot.save(data, out_dir, (md, csv), cfg.get("archive_dir", "archive"))
+                print(f"Saved report and snapshot; archived to {run_dir}")
             job.state = "done"
         except Exception as exc:
             traceback.print_exc()

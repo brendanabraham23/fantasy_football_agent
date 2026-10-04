@@ -22,7 +22,8 @@ python -m ffa ui --username USER       # local web UI at http://127.0.0.1:8000
 
 `cli.py` -> `pipeline.run()` builds a `Context` (league, rosters, projections, recent stats, defense
 ratings, matchups) -> `ranker.Evaluator.evaluate(pid)` returns a `PlayerEval` -> `ranker.optimal_lineup`
--> `waivers.recommend` -> `report.render/save` + `snapshot.save` (`reports/latest_run.json`, read by the UI).
+-> `waivers.recommend` -> `report.render/save` + `snapshot.save` (`reports/latest_run.json`, read by the UI,
+plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekNN_YYYY/`).
 `pipeline.build_context` is the fetch-only half of `run`; the UI server uses it for live (cached) data.
 
 | Module | Role |

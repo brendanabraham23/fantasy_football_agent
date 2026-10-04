@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import io
 import json
+import shutil
 import sys
 import threading
 from contextlib import contextmanager
@@ -102,15 +103,25 @@ def to_dict(res: Result, warnings: list[str] | None = None, options: dict | None
     }
 
 
-def save(data: dict, out_dir: str | Path) -> Path:
+def save(data: dict, out_dir: str | Path, files: tuple[Path, ...] = (), archive_dir: str = "archive") -> Path:
+    """Write latest_run.json and archive this run (snapshot + `files`) under archive/<timestamp>_weekNN/."""
     out = Path(out_dir)
     out.mkdir(parents=True, exist_ok=True)
     text = json.dumps(data, indent=1, default=str)
     m = data["meta"]
-    (out / f"week{m['week']:02d}_{m['season']}_run.json").write_text(text)
+    stamp = datetime.fromisoformat(m["generated_at"]).astimezone().strftime("%Y-%m-%d_%H%M%S")
+    base = out / archive_dir / f"{stamp}_week{m['week']:02d}_{m['season']}"
+    run_dir, n = base, 1
+    while run_dir.exists():
+        n += 1
+        run_dir = base.with_name(f"{base.name}-{n}")
+    run_dir.mkdir(parents=True)
+    (run_dir / "run.json").write_text(text)
+    for f in files:
+        shutil.copy2(f, run_dir / Path(f).name)
     path = out / LATEST
     path.write_text(text)
-    return path
+    return run_dir
 
 
 def load(out_dir: str | Path) -> dict | None:
