@@ -93,7 +93,8 @@ def to_dict(res: Result, warnings: list[str] | None = None, options: dict | None
         "current_starters": current,
         "players": players,
         "waiver_recs": [{"player_id": r.player.player_id, "weekly_gain": r.weekly_gain, "ros_gain": r.ros_gain,
-                         "drop_id": r.drop.player_id if r.drop else None, "bid": r.bid, "score": r.score}
+                         "drop_id": r.drop.player_id if r.drop else None, "bid": r.bid, "score": r.score,
+                         "bid_detail": r.bid_detail}
                         for r in res.waiver_recs],
         "changes": {"start": [p for p in optimal if p not in current and p in known],
                     "bench": [p for p in current if p not in optimal and p in known]},

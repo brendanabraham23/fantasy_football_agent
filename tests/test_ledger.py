@@ -110,7 +110,7 @@ def test_ledger_run_end_to_end(monkeypatch, tmp_path, season):
     monkeypatch.setattr(sleeper, "all_players", lambda: players)
     monkeypatch.setattr(sleeper, "transactions", lambda lid, w: txns.get(w, []))
     monkeypatch.setattr(sleeper, "stats", lambda s, w: {pid: {"rush_yd": v * 10} for pid, v in weeks[w].points.items()})
-    monkeypatch.setattr(sleeper, "matchups", lambda lid, w: [
+    monkeypatch.setattr(sleeper, "matchups", lambda lid, w, **kw: [
         {"roster_id": r, "players": sorted(ps), "players_points": {p: weeks[w].points[p] for p in ps}}
         for r, ps in weeks[w].rosters.items()])
 

@@ -103,7 +103,7 @@ latest log line, and reloads the current tab when the run finishes.
 Global shell: a top bar with the team name, `League · Week N`, a snapshot-age chip (amber when stale:
 older than `ui.stale_hours` or from an earlier week), and the **Run pipeline** button. The button has a
 small menu with *News* and *Weather* checkboxes. Below the bar are the tabs, in order:
-Summary · Roster · Player · Waivers · News. Routing uses the URL hash (`#roster`, `#player/4034`), so
+Summary · Roster · Matchup · Player · Waivers · News. Routing uses the URL hash (`#roster`, `#player/4034`), so
 the back button and bookmarks work. Every player name anywhere links to `#player/{id}`.
 
 Shared visual language:
@@ -165,6 +165,34 @@ A segmented control switches between **Recommended** and **Browse all**.
   - Paged client-side (50 rows) with a count ("312 players").
   - Each row has a **"What if?"** button that calls `/api/waivers/whatif/{id}` and shows the lineup gain,
     value vs. drop, drop and bid inline.
+
+### 4.4a FAAB bids
+
+`waivers.suggest_bid` (all weights in `config.json` → `waivers.bid_*`):
+- **value** = this week's lineup gain + weekly gain vs. the suggested drop × `bid_horizon_weeks` (capped by the
+  regular-season weeks left, from the league's `playoff_week_start`).
+- **share** = `max_bid_pct` × value / (value + `bid_half_value`). It rises smoothly, so different players get
+  different bids instead of all landing on the cap.
+- **demand** = `bid_demand_base` + `bid_competition_weight` × (share of other teams that would start the player,
+  i.e. his projection beats their worst starter at the position, and that still have FAAB) + `bid_trend_weight` ×
+  log(1 + Sleeper adds/1000).
+- bid = budget × min(`bid_cap_pct`, share × demand), never more than the richest interested team's budget + $1.
+- The breakdown (`bid_detail`) is shown in the bid tooltip, the expanded row and What if?.
+
+### 4.4b Matchup
+
+- Scoreboard: both teams' live points (Sleeper `matchups` for the week, refetched every `ui.live_refresh_seconds`),
+  projected final, and win probability (normal approximation; each player's remaining points have an SD of
+  `ui.player_sd_ratio` × projection × √(share of game left)).
+- Starters side by side by slot: points, projected final (points so far + model projection × share of game left),
+  and a game chip (kickoff time / Live · % / Final / BYE). Game progress is estimated from the kickoff time
+  (`ui.game_minutes`), and a game counts as final once nflverse has a score or `ui.final_after_minutes` have passed.
+- Your players use the latest run's adjusted points; the opponent's are live estimates without news. Benches are collapsible.
+- **Lineup check:** compares your live Sleeper starters with the latest run's recommended lineup.
+- **Sync with Summary/Roster:** `/api/live/roster` returns your current Sleeper roster and starters. START/BENCH
+  flags and the "Lineup changes" tile compare against the live lineup, and a banner lists players added or dropped
+  since the run, with a Run pipeline button.
+- Archived runs (`?run=`) show that week's final matchup.
 
 ### 4.5 News
 

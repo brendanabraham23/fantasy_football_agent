@@ -40,6 +40,13 @@
     "min_weekly_gain": 1.5,
     "min_ros_gain": 2.0,
     "max_bid_pct": 0.35,
+    "bid_horizon_weeks": 4,
+    "bid_half_value": 30,
+    "bid_demand_base": 0.5,
+    "bid_competition_weight": 1.0,
+    "bid_trend_weight": 0.15,
+    "bid_cap_pct": 0.5,
+    "season_weeks": 17,
     "show": 10
   },
 
@@ -48,5 +55,6 @@
   "archive_dir": "archive",
 
   "ui": {"host": "127.0.0.1", "port": 8000, "live_ttl_minutes": 15, "stale_hours": 24,
-         "search_limit": 15, "pool_page_size": 50}
+         "search_limit": 15, "pool_page_size": 50, "live_refresh_seconds": 60,
+         "game_minutes": 195, "final_after_minutes": 225, "player_sd_ratio": 0.5}
 }

@@ -5,12 +5,14 @@
 from __future__ import annotations
 
 import copy
+import math
 import threading
 import time
 import traceback
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Query
@@ -19,7 +21,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from . import nflverse, pipeline, report, sleeper, snapshot, waivers
-from .lineup import best_total, player_positions
+from .lineup import best_total, player_positions, starting_slots
 from .news import NewsScorer
 from .ranker import Evaluator, PlayerEval, optimal_lineup, player_name
 
@@ -29,8 +31,34 @@ KEY_STATS = ["pass_yd", "pass_td", "pass_int", "rush_att", "rush_yd", "rush_td",
              "rec_td", "fgm", "fga", "xpm"]
 
 
+ET = ZoneInfo("America/New_York")  # nflverse kickoff times are Eastern
+
+
 def _now() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def now_et() -> datetime:
+    return datetime.now(ET)
+
+
+def game_states(sched: pd.DataFrame, week: int, now: datetime, ucfg: dict) -> dict[str, dict]:
+    """nflverse team -> {state: upcoming|live|final, kickoff, opp, frac (share of the game played)}."""
+    game_min, final_min = ucfg.get("game_minutes", 195), ucfg.get("final_after_minutes", 225)
+    out = {}
+    if sched.empty:
+        return out
+    for _, g in sched[(sched["week"] == week) & (sched["game_type"] == "REG")].iterrows():
+        gametime = g.get("gametime") if isinstance(g.get("gametime"), str) else "13:00"
+        kick = datetime.fromisoformat(f"{g['gameday']}T{gametime}").replace(tzinfo=ET)
+        mins = (now - kick).total_seconds() / 60
+        scored = pd.notna(g.get("home_score")) if "home_score" in g else False
+        state = "final" if scored or mins >= final_min else "live" if mins >= 0 else "upcoming"
+        frac = 1.0 if state == "final" else max(0.0, min(0.99, mins / game_min)) if state == "live" else 0.0
+        for team, opp, home in ((g["home_team"], g["away_team"], True), (g["away_team"], g["home_team"], False)):
+            out[team] = {"state": state, "kickoff": kick.isoformat(), "opp": ("vs " if home else "@ ") + opp,
+                         "frac": round(frac, 3)}
+    return out
 
 
 @dataclass
@@ -306,6 +334,97 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
                 out["outcome_error"] = exc.detail
         return out
 
+    # ---- live matchup ----------------------------------------------------------
+    @app.get("/api/matchup")
+    def matchup(run: str | None = None):
+        """This week's head-to-head (or the archived run's week): live points, projections, win probability."""
+        lv = live(run)
+        c, wk = lv.ctx, lv.ctx.week
+        ttl = 3600 if lv.as_of else ucfg.get("live_refresh_seconds", 60)
+        try:
+            ms = sleeper.matchups(c.league["league_id"], wk, ttl=ttl)
+        except Exception as exc:
+            raise HTTPException(502, f"Couldn't load week {wk} matchups from Sleeper: {exc}")
+        rid = c.my_roster.get("roster_id")
+        me = next((m for m in ms if m.get("roster_id") == rid), None)
+        opp = next((m for m in ms if me and m is not me and me.get("matchup_id") is not None
+                    and m.get("matchup_id") == me.get("matchup_id")), None)
+        now = now_et()
+        states = game_states(lv.schedule(), wk, now, ucfg)
+        s = snap_for(lv, run)
+        names = {u["user_id"]: sleeper.team_label(u) for u in c.users}
+        owner = {r.get("roster_id"): names.get(r.get("owner_id")) for r in c.rosters}
+        sd_ratio = ucfg.get("player_sd_ratio", 0.5)
+        slots = starting_slots(c.league["roster_positions"])
+
+        def row(pid, slot, pts, mine):
+            if not pid or pid == "0":
+                return {"slot": slot, "player_id": None, "points": 0.0, "proj_final": 0.0, "sd": 0.0}
+            p = c.players.get(pid) or {}
+            pos, team = p.get("position") or "?", sleeper.norm_team(p.get("team"))
+            st = states.get(team, {"state": "bye", "frac": 1.0, "opp": "BYE"}) if team else {"state": "none", "frac": 1.0, "opp": "–"}
+            if mine and s and pid in s["players"]:
+                model, source = s["players"][pid]["adj"], "snapshot"
+            else:
+                model, source = lv.evaluate(pid).adj, "live"
+            actual = round(float(pts.get(pid) or 0.0), 2)
+            left = 1 - st["frac"]
+            return {"slot": slot, "player_id": pid, "name": player_name(p, pid), "position": pos, "team": team,
+                    "opp": st["opp"], "state": st["state"], "kickoff": st.get("kickoff"), "frac": st["frac"],
+                    "points": actual, "sleeper_proj": lv.points(lv.proj(wk).get(pid), pos), "model": model,
+                    "model_source": source, "injury_status": p.get("injury_status"),
+                    "proj_final": round(actual + model * left, 2), "sd": round(sd_ratio * model * math.sqrt(left), 2)}
+
+        def team(m, mine):
+            if not m:
+                return None
+            pts = m.get("players_points") or {}
+            starters = list(m.get("starters") or [])
+            rows = [row(pid, slot, pts, mine) for slot, pid in zip(slots, starters + [None] * len(slots))]
+            bench = [row(pid, "BN", pts, mine) for pid in (m.get("players") or []) if pid not in starters]
+            return {"roster_id": m.get("roster_id"), "name": owner.get(m.get("roster_id")) or f"Team {m.get('roster_id')}",
+                    "points": round(sum(r["points"] for r in rows), 2),
+                    "proj_final": round(sum(r["proj_final"] for r in rows), 2),
+                    "var": sum(r["sd"] ** 2 for r in rows), "starters": rows, "bench": bench}
+
+        mine_t, opp_t = team(me, True), team(opp, False)
+        win = None
+        if mine_t and opp_t:
+            var = mine_t["var"] + opp_t["var"]
+            diff = mine_t["proj_final"] - opp_t["proj_final"]
+            win = 0.5 * (1 + math.erf(diff / math.sqrt(2 * var))) if var > 0 else (1.0 if diff > 0 else 0.0 if diff < 0 else 0.5)
+        swaps = None
+        if mine_t and s and not lv.as_of:
+            rec = {row_["player_id"] for row_ in s["lineup"] if row_["player_id"]}
+            live_st = {r["player_id"] for r in mine_t["starters"] if r["player_id"]}
+            on_roster = set(me.get("players") or [])
+            swaps = {"start": sorted((rec - live_st) & on_roster), "bench": sorted(live_st - rec),
+                     "run_generated_at": s["meta"]["generated_at"]}
+        return {**as_of_info(lv), "fetched_at": _now(), "refresh_seconds": None if lv.as_of else ttl,
+                "me": mine_t, "opponent": opp_t, "win_prob": None if win is None else round(win, 3), "swaps": swaps}
+
+    @app.get("/api/live/roster")
+    def live_roster():
+        """Your roster and lineup as Sleeper has them right now, and how they drifted from the latest run."""
+        lv = live()
+        try:
+            rosters = sleeper.league_rosters(lv.ctx.league["league_id"])
+        except Exception as exc:
+            raise HTTPException(502, f"Couldn't load rosters from Sleeper: {exc}")
+        rid = lv.ctx.my_roster.get("roster_id")
+        r = next((r for r in rosters if r.get("roster_id") == rid), lv.ctx.my_roster)
+        players = [p for key in ("players", "reserve", "taxi") for p in (r.get(key) or [])]
+        starters = [p for p in (r.get("starters") or []) if p and p != "0"]
+        s = snap()
+        known = {pid for pid, d in (s or {}).get("players", {}).items() if d.get("group") in ("roster", "reserve")}
+        info = lambda pid: {"player_id": pid, "name": player_name(lv.ctx.players.get(pid) or {}, pid),
+                            "position": (lv.ctx.players.get(pid) or {}).get("position")}
+        same_week = bool(s) and (s["meta"]["season"], s["meta"]["week"]) == (lv.ctx.season, lv.ctx.week)
+        return {"fetched_at": _now(), "week": lv.ctx.week, "players": players, "starters": starters,
+                "snapshot_week": s["meta"]["week"] if s else None, "same_week": same_week,
+                "added": [info(p) for p in players if s and p not in known],
+                "dropped": [info(p) for p in sorted(known - set(players))] if s else []}
+
     # ---- archive ----------------------------------------------------------------
     @app.get("/api/runs")
     def runs():
@@ -433,7 +552,7 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
         cand = snapshot.player_from_dict(s["players"][pid]) if s and pid in s["players"] else lv.evaluate(pid)
         r = waivers.evaluate_add(lv.ctx, evals, starters, cand)
         return {"player_id": pid, "weekly_gain": r.weekly_gain, "ros_gain": r.ros_gain, "bid": r.bid,
-                "score": r.score, "drop": {"player_id": r.drop.player_id, "name": r.drop.name,
+                "bid_detail": r.bid_detail, "score": r.score, "drop": {"player_id": r.drop.player_id, "name": r.drop.name,
                                            "position": r.drop.position} if r.drop else None}
 
     # ---- news -------------------------------------------------------------------

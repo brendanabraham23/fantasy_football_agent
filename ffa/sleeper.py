@@ -54,9 +54,12 @@ def transactions(league_id: str, week: int) -> list[dict]:
     return http.get_json(f"{API}/league/{league_id}/transactions/{week}", ttl=900) or []
 
 
-def matchups(league_id: str, week: int) -> list[dict]:
-    """Per-roster `players`, `starters` and `players_points` (league scoring) for one week."""
-    return http.get_json(f"{API}/league/{league_id}/matchups/{week}", ttl=900) or []
+def matchups(league_id: str, week: int, ttl: int = 900) -> list[dict]:
+    """Per-roster `matchup_id`, `players`, `starters`, `players_points` and `points` (league scoring) for one week.
+
+    Points update live during games, so live views pass a short ttl.
+    """
+    return http.get_json(f"{API}/league/{league_id}/matchups/{week}", ttl=ttl) or []
 
 
 def all_players() -> dict:

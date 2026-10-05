@@ -54,7 +54,7 @@ def fake_world(monkeypatch):
     monkeypatch.setattr(sleeper, "projections", lambda s, w: {k: proj_line(v) for k, v in PROJ.items()})
     monkeypatch.setattr(sleeper, "stats", lambda s, w: {k: proj_line(v) for k, v in PROJ.items()})
     monkeypatch.setattr(sleeper, "trending_adds", lambda: {"20": 25000})
-    monkeypatch.setattr(sleeper, "matchups", lambda lid, w: [])
+    monkeypatch.setattr(sleeper, "matchups", lambda lid, w, **kw: [])
 
     sched = pd.DataFrame([
         dict(game_id="g1", season=2026, game_type="REG", week=5, gameday="2026-10-04", gametime="13:00",

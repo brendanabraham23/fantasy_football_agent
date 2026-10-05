@@ -77,3 +77,23 @@ def test_weather_multiplier():
     windy = {"indoor": False, "wind_mph": 25, "precip_in_hr": 0, "snow_in_hr": 0, "temp_f": 50}
     assert weather.multiplier("QB", windy) < 1 < weather.multiplier("DEF", windy)
     assert weather.multiplier("WR", {"indoor": True}) == 1
+
+
+WCFG = {"max_bid_pct": 0.35, "bid_horizon_weeks": 4, "bid_half_value": 30, "bid_demand_base": 0.5,
+        "bid_competition_weight": 1.0, "bid_trend_weight": 0.15, "bid_cap_pct": 0.5}
+
+
+def test_bids_scale_with_value_and_competition():
+    from ffa.waivers import Market, suggest_bid
+    cand = PlayerEval("x", "X", "RB", "KC", proj=12, trending_adds=0)
+    lonely = Market(True, 100, 10, {2: 80, 3: 80}, {2: {"RB": 20}, 3: {"RB": 20}})   # nobody else would start him
+    crowded = Market(True, 100, 10, {2: 80, 3: 80}, {2: {"RB": 5}, 3: {"RB": 5}})    # everyone would
+    bids = [suggest_bid(WCFG, lonely, cand, w, r)[0] for w, r in ((1, 1), (4, 3), (8, 6))]
+    assert bids[0] < bids[1] < bids[2]                                   # no more identical capped bids
+    hot, detail = suggest_bid(WCFG, crowded, cand, 4, 3)
+    assert hot > bids[1] and detail["rivals"] == 2 and detail["value"] == 16
+    poor = Market(True, 100, 10, {2: 3, 3: 0}, {2: {"RB": 5}, 3: {"RB": 5}})       # one broke rival, one $3 rival
+    capped, detail = suggest_bid(WCFG, poor, cand, 8, 6)
+    assert capped == 4 and detail["rivals"] == 1 and detail["rival_max_budget"] == 3
+    late = Market(True, 100, 1, {}, {})                                  # last regular-season week: no ROS value
+    assert suggest_bid(WCFG, late, cand, 0, 6)[0] == 1

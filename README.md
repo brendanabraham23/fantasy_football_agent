@@ -21,8 +21,8 @@ Useful flags: `--week 6`, `--league-id 123...`, `--team-name "Other Team"`,
 python -m ffa ui --username YOUR_SLEEPER_USERNAME    # then open http://127.0.0.1:8000
 ```
 
-Five tabs: **Summary** (what to change before kickoff), **Roster** (every player with a breakdown of their
-adjusted points), **Player** (search any player: weekly actual vs. projected chart, game log, news),
+Six tabs: **Summary** (what to change before kickoff), **Roster** (every player with a breakdown of their
+adjusted points), **Matchup** (live head-to-head scores, projections and win probability), **Player** (search any player: weekly actual vs. projected chart, game log, news),
 **Waivers** (recommended adds, plus browsing and what-if checks across the full free-agent pool) and **News**
 (sentiment per player with the articles behind it). **Run pipeline** starts a fresh run in the background.
 Every run, from the CLI or the UI, saves `reports/latest_run.json`, which the UI reads, and archives a copy of
@@ -73,8 +73,10 @@ what's left, and lists the moves needed relative to the lineup you currently hav
 **Waivers**: each candidate is added to your roster in a what-if run and scored on
 (a) how much this week's best lineup total goes up, and (b) longer-term value (average of projection
 and recent form) vs. your weakest bench player, who is suggested as the drop. K/DEF are compared
-like-for-like for streaming. The FAAB bid suggestion scales with both gains and Sleeper add volume, capped
-at 35% of your remaining budget. Treat it as a starting point.
+like-for-like for streaming. The FAAB bid grows smoothly with the player's value over the next few weeks,
+goes up with demand (how many other teams in your league would start him and can still pay, plus Sleeper add
+volume), and never exceeds what the richest interested team can bid + $1. See `docs/ui-design.md` §4.4a.
+Treat it as a starting point.
 
 Every number above is in `config.json`, so you can tune them.
 

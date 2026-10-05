@@ -203,7 +203,7 @@ def week4_archive(fake_world, monkeypatch, tmp_path):
     monkeypatch.setattr(sleeper, "stats", lambda s, w: {k: proj_line(999 if w >= 5 else v + w) for k, v in PROJ.items()})
     mine4 = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "20", "KC"]      # held Waiver Stud, not Juliet WR
     starters4 = ["1", "2", "3", "5", "6", "8", "20", "9", "KC"]
-    monkeypatch.setattr(sleeper, "matchups", lambda lid, w: [
+    monkeypatch.setattr(sleeper, "matchups", lambda lid, w, **kw: [
         {"roster_id": 1, "players": mine4, "starters": starters4,
          "players_points": {pid: float(PROJ[pid] + 4) for pid in mine4}},
         {"roster_id": 2, "players": ["21"], "starters": ["21"], "players_points": {"21": 9.0}},
@@ -260,3 +260,55 @@ def test_archived_summary_scores_predictions_against_outcomes(week4_archive):
     assert o["lineup"]["best"] >= max(o["lineup"]["recommended"], o["lineup"]["played"])
     assert o["errors"]["n"] > 0 and o["errors"]["mae"] >= 0
     assert c.get("/api/summary").json()["outcome"] is None
+
+
+@pytest.fixture
+def live_week(client, monkeypatch):
+    """Week 5 in progress: KC@BUF kicked off an hour ago, LA@DET is later, MIA is on bye."""
+    from datetime import datetime
+    monkeypatch.setattr(server, "now_et", lambda: datetime(2026, 10, 4, 14, 0, tzinfo=server.ET))
+    mine = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "KC"]
+    monkeypatch.setattr(sleeper, "matchups", lambda lid, w, **kw: [
+        {"roster_id": 1, "matchup_id": 3, "players": mine, "starters": ["1", "2", "4", "5", "6", "8", "3", "9", "KC"],
+         "players_points": {"1": 12.5, "2": 4.0, "5": 7.0, "6": 3.0, "KC": 2.0}},
+        {"roster_id": 2, "matchup_id": 3, "players": ["20", "21"], "starters": ["0", "20", "21"],
+         "players_points": {"20": 6.0}},
+        {"roster_id": 9, "matchup_id": 4, "players": [], "starters": []},
+    ])
+    return client
+
+
+def test_live_matchup(live_week):
+    c = live_week
+    m = c.get("/api/matchup").json()
+    me, opp = m["me"], m["opponent"]
+    assert me["name"] == "Brendobendo" and opp["name"] == "Rivals" and m["refresh_seconds"] == 60
+    assert [r["slot"] for r in me["starters"]] == ["QB", "RB", "RB", "WR", "WR", "TE", "FLEX", "K", "DEF"]
+    qb = me["starters"][0]
+    assert qb["name"] == "Alpha QB" and qb["state"] == "live" and qb["points"] == 12.5 and 0 < qb["frac"] < 1
+    assert qb["proj_final"] == round(12.5 + qb["model"] * (1 - qb["frac"]), 2)
+    delta = next(r for r in me["starters"] if r["player_id"] == "4")
+    assert delta["state"] == "bye" and delta["proj_final"] == 0
+    charlie = next(r for r in me["starters"] if r["player_id"] == "3")      # LA@DET hasn't kicked off
+    assert charlie["state"] == "upcoming" and charlie["proj_final"] == charlie["model"]
+    assert me["points"] == 28.5 and opp["points"] == 6.0 and opp["starters"][0]["player_id"] is None
+    assert {r["player_id"] for r in me["bench"]} == {"7", "10"}
+    assert 0.5 < m["win_prob"] <= 1 and m["swaps"] is None                   # no run yet, so nothing to compare
+
+    run_pipeline(c)
+    sw = c.get("/api/matchup").json()["swaps"]
+    assert sw["start"] == ["10"] and sw["bench"] == ["4"]                     # Juliet in, Delta (bye) out
+
+
+def test_live_roster_drift(live_week, monkeypatch):
+    c = live_week
+    run_pipeline(c)
+    r = c.get("/api/live/roster").json()
+    assert r["same_week"] and r["added"] == [] and r["dropped"] == [] and "1" in r["starters"]
+    rosters = [{"roster_id": 1, "owner_id": "u1", "players": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "20", "KC"],
+                "starters": ["1", "2", "20", "5", "6", "8", "3", "9", "KC"]},
+               {"roster_id": 2, "owner_id": "u2", "players": []}]
+    monkeypatch.setattr(sleeper, "league_rosters", lambda lid: rosters)
+    r = c.get("/api/live/roster").json()
+    assert [p["name"] for p in r["added"]] == ["Waiver Stud"] and [p["player_id"] for p in r["dropped"]] == ["10"]
+    assert "20" in r["starters"]
