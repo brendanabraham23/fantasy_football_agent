@@ -14,6 +14,7 @@ python -m ffa --username USER          # weekly report -> reports/weekNN_YYYY_re
 python -m ffa --username USER --no-news --no-weather   # fast run, skips RSS scraping and Open-Meteo
 python -m ffa ledger --username USER [--through-week 4] # -> reports/ledger/
 python -m ffa ui --username USER       # local web UI at http://127.0.0.1:8000
+python -m ffa calibrate [--username USER] [--seasons 2025,2026] [--weeks 1-4]  # -> reports/calibration/
 ```
 
 `username` is blank in `config.json`, so live runs need `--username` (ask the user for it).
@@ -37,6 +38,7 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `waivers.py` | What-if add of each free agent; weekly gain + ROS gain vs. weakest bench; FAAB bid. |
 | `lineup.py` | Hindsight best-lineup solver used by `ledger.py` (separate from `ranker.optimal_lineup`). |
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
+| `calibration.py` | Sleeper projection vs. recent/season-average/blend predictors against actual points: bias, MAE, RMSE, Spearman, slope, buckets, best blend weight. |
 | `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |
 | `server.py` | FastAPI app: background run job, `/api/*` (summary, matchup, live roster sync, players, waivers pool/what-if, news, archived runs/compare), serves `ffa/web/`. |
 | `web/` | Vanilla JS SPA (hash routing, inline-SVG chart). No build step; edit `app.js`/`style.css` directly. |
@@ -62,7 +64,8 @@ Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live
 ## Roadmap
 
 `docs/eval-loop-design.md` is the design for the next phase (prediction log, actuals ingestion, evaluation
-metrics, error attribution, backtesting, GitHub Actions schedule). Only the ledger part is implemented.
+metrics, error attribution, backtesting, GitHub Actions schedule). The ledger and a projection calibration report
+(`calibration.py`, the `raw`/`base` rows of §4.5 on historical weeks) are implemented.
 Read it before working on evaluation/backtesting features; planned modules are listed in its §4.11.
 
 ## Repo notes

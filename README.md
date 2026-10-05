@@ -89,6 +89,17 @@ Every number above is in `config.json`, so you can tune them.
   (e.g. 4) later in the year to weight recent form.
 - International/neutral-site games skip the weather forecast.
 
+## Projection calibration
+
+```bash
+python -m ffa calibrate --username YOUR_SLEEPER_USERNAME --seasons 2025,2026
+```
+
+Compares Sleeper's weekly projections, and three alternatives (recent form, season-to-date average, and the
+model's base blend), with what players actually scored. It reports bias, MAE, RMSE, rank correlation, the
+calibration slope (below 1 means projections are too spread out), actual vs. projected in buckets by position,
+and the projection/recent-form blend weight that would have been most accurate. Output: `reports/calibration/`.
+
 ## Transaction ledger
 
 ```bash

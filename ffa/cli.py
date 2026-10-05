@@ -3,6 +3,7 @@
     python -m ffa --username <sleeper_username>          # weekly report
     python -m ffa ledger --username <sleeper_username>   # transaction ledger
     python -m ffa ui --username <sleeper_username>       # local web UI
+    python -m ffa calibrate [--seasons 2025,2026]        # projection calibration report
 """
 from __future__ import annotations
 
@@ -28,6 +29,33 @@ def ledger_main(argv) -> int:
         ap.error("--username is required (or set 'username' in config.json)")
     md, csv = ledger.run(username, args.team_name or cfg.get("team_name", ""),
                          args.league_id or cfg.get("league_id"), args.through_week, cfg, args.out)
+    print(f"\nSaved {md} and {csv}")
+    return 0
+
+
+def calibrate_main(argv) -> int:
+    ap = argparse.ArgumentParser(prog="python -m ffa calibrate",
+                                 description="Compare Sleeper projections (and simple alternatives) with actual points")
+    ap.add_argument("--username", help="Score with your league's settings (otherwise Sleeper PPR totals)")
+    ap.add_argument("--team-name")
+    ap.add_argument("--league-id")
+    ap.add_argument("--seasons", help="Comma-separated, e.g. 2025,2026 (default: current season)")
+    ap.add_argument("--weeks", help="Range like 1-4 (default: all completed weeks)")
+    ap.add_argument("--ppr", type=float, default=1.0, help="Points per reception when no username is given")
+    ap.add_argument("--config")
+    ap.add_argument("--out", default="reports")
+    args = ap.parse_args(argv)
+    cfg = pipeline.load_config(args.config)
+    from . import calibration, sleeper
+    seasons = [int(s) for s in args.seasons.split(",")] if args.seasons else [int(sleeper.nfl_state()["season"])]
+    weeks = None
+    if args.weeks:
+        lo, _, hi = args.weeks.partition("-")
+        weeks = list(range(int(lo), int(hi or lo) + 1))
+    username = args.username or cfg.get("username") or None
+    md, csv = calibration.run(seasons, weeks, cfg, args.out, username, args.team_name or cfg.get("team_name", ""),
+                              args.league_id or cfg.get("league_id"), args.ppr)
+    print(md.read_text())
     print(f"\nSaved {md} and {csv}")
     return 0
 
@@ -59,6 +87,8 @@ def main(argv=None) -> int:
         return ledger_main(argv[1:])
     if argv and argv[0] == "ui":
         return ui_main(argv[1:])
+    if argv and argv[0] == "calibrate":
+        return calibrate_main(argv[1:])
     ap = argparse.ArgumentParser(description="Weekly Sleeper start/sit and waiver analyzer")
     ap.add_argument("--username", help="Sleeper username (or set in config.json)")
     ap.add_argument("--team-name", help="Team name to analyze (default from config: Brendobendo)")
