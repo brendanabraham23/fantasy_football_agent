@@ -198,10 +198,12 @@ function findPlayers(q, { pos = null, limit = 10 } = {}) {
   for (const p of D.players) {
     if (pos && p.pos !== pos) continue;
     const n = p.name.toLowerCase();
-    const hay = `${n} ${p.team} ${p.pos}${p.pos === "DEF" ? " dst d/st defense" : ""}`.toLowerCase();
+    const hay = `${n} ${p.team} ${p.pos} ${p.aka || (p.pos === "DEF" ? "dst d/st defense" : "")}`.toLowerCase();
     if (!s.split(/\s+/).every((t) => hay.includes(t))) continue;
-    const prefix = n.startsWith(s) || n.split(" ").some((w) => w.startsWith(s));
-    out.push([prefix ? 0 : 1, -(proj(p) || 0), p]);
+    const prefix = n.startsWith(s) || n.split(" ").some((w) => w.startsWith(s)) || (p.aka || "").toLowerCase().startsWith(s);
+    // a bare team code ("KC") puts that team's D/ST first, then its players
+    const rank = p.pos === "DEF" && s === p.team.toLowerCase() ? -1 : prefix ? 0 : 1;
+    out.push([rank, -(proj(p) || 0), p]);
   }
   return out.sort((a, b) => a[0] - b[0] || a[1] - b[1]).slice(0, limit).map((x) => x[2]);
 }

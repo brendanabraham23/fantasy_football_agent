@@ -32,6 +32,16 @@ NICKNAMES = {
     "NYJ": "Jets", "PHI": "Eagles", "PIT": "Steelers", "SF": "49ers", "SEA": "Seahawks", "TB": "Buccaneers",
     "TEN": "Titans", "WAS": "Commanders",
 }
+CITIES = {
+    "ARI": "Arizona", "ATL": "Atlanta", "BAL": "Baltimore", "BUF": "Buffalo", "CAR": "Carolina", "CHI": "Chicago",
+    "CIN": "Cincinnati", "CLE": "Cleveland", "DAL": "Dallas", "DEN": "Denver", "DET": "Detroit", "GB": "Green Bay",
+    "HOU": "Houston", "IND": "Indianapolis", "JAX": "Jacksonville", "KC": "Kansas City", "LV": "Las Vegas",
+    "LAC": "Los Angeles", "LA": "Los Angeles", "MIA": "Miami", "MIN": "Minnesota", "NE": "New England",
+    "NO": "New Orleans", "NYG": "New York", "NYJ": "New York", "PHI": "Philadelphia", "PIT": "Pittsburgh",
+    "SF": "San Francisco", "SEA": "Seattle", "TB": "Tampa Bay", "TEN": "Tennessee", "WAS": "Washington",
+}
+ALIASES = {"SF": "niners", "NE": "pats", "TB": "bucs", "JAX": "jags", "MIA": "phins", "PHI": "birds", "GB": "pack",
+           "LAC": "bolts", "WAS": "commies", "LA": "la rams", "LV": "lv"}
 STAT_KEYS = {  # nflverse column -> short key in the data file
     "attempts": "pa", "passing_yards": "py", "passing_tds": "ptd", "passing_interceptions": "int",
     "carries": "car", "rushing_yards": "ry", "rushing_tds": "rtd", "targets": "tgt", "receptions": "rec",
@@ -114,6 +124,7 @@ def dst_players(season: int, cfg: dict, sched: pd.DataFrame, games: dict, implie
         pts = [w["pts"] for w in weeks]
         season_avg, recent_avg = float(np.mean(pts)), float(np.mean(pts[-n_recent:]))
         p = {"id": f"DEF-{team}", "name": f"{NICKNAMES.get(team, team)} D/ST", "pos": "DEF", "team": team, "weeks": weeks,
+             "aka": " ".join(filter(None, [CITIES.get(team), NICKNAMES.get(team), ALIASES.get(team), "defense dst d/st"])),
              "games": len(pts), "total": _r(sum(pts)), "avg": _r(season_avg), "recent": _r(recent_avg)}
         if next_week:
             game = games.get(team)

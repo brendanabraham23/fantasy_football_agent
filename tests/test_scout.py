@@ -62,7 +62,7 @@ def test_scout_data(monkeypatch, tmp_path):
     assert data["teams"]["MIA"]["bye"] == [1, 2, 3, 4, 5] and data["teams"]["KC"]["next_opp"] == "@ BUF"
 
     kc, buf = by["DEF-KC"], by["DEF-BUF"]
-    assert kc["name"] == "Chiefs D/ST" and kc["pos"] == "DEF" and [w["pts"] for w in kc["weeks"]] == [6, 6, 6, 6]
+    assert kc["name"] == "Chiefs D/ST" and kc["aka"].startswith("Kansas City Chiefs") and kc["pos"] == "DEF" and [w["pts"] for w in kc["weeks"]] == [6, 6, 6, 6]
     assert kc["weeks"][0] == {"w": 1, "opp": "@ BUF", "pts": 6, "sk": 3, "int": 1, "fr": 0, "td": 0, "pa": 20}
     assert buf["avg"] == 2 and buf["weeks"][0]["pa"] == 17
     # BUF's offense gives up 6 D/ST pts/game vs a 4 average -> KC's matchup is a plus; KC's offense is the tough one
