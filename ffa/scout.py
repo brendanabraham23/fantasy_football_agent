@@ -24,6 +24,14 @@ import pandas as pd
 from . import nflverse, snapshot
 
 POSITIONS = ["QB", "RB", "WR", "TE", "K"]
+NICKNAMES = {
+    "ARI": "Cardinals", "ATL": "Falcons", "BAL": "Ravens", "BUF": "Bills", "CAR": "Panthers", "CHI": "Bears",
+    "CIN": "Bengals", "CLE": "Browns", "DAL": "Cowboys", "DEN": "Broncos", "DET": "Lions", "GB": "Packers",
+    "HOU": "Texans", "IND": "Colts", "JAX": "Jaguars", "KC": "Chiefs", "LV": "Raiders", "LAC": "Chargers",
+    "LA": "Rams", "MIA": "Dolphins", "MIN": "Vikings", "NE": "Patriots", "NO": "Saints", "NYG": "Giants",
+    "NYJ": "Jets", "PHI": "Eagles", "PIT": "Steelers", "SF": "49ers", "SEA": "Seahawks", "TB": "Buccaneers",
+    "TEN": "Titans", "WAS": "Commanders",
+}
 STAT_KEYS = {  # nflverse column -> short key in the data file
     "attempts": "pa", "passing_yards": "py", "passing_tds": "ptd", "passing_interceptions": "int",
     "carries": "car", "rushing_yards": "ry", "rushing_tds": "rtd", "targets": "tgt", "receptions": "rec",
@@ -50,6 +58,93 @@ def _points(df: pd.DataFrame, ppr: float) -> pd.Series:
 def _home_away(game_id: str, team: str, opp: str) -> str:
     parts = str(game_id).split("_")   # 2026_04_AWAY_HOME
     return ("@ " if len(parts) == 4 and parts[2] == team else "vs ") + str(opp)
+
+
+def dst_points(row: pd.Series, allowed: float | None, sc: dict) -> float:
+    g = lambda c: float(row.get(c) or 0) if pd.notna(row.get(c)) else 0.0
+    pts = (sc["sack"] * g("def_sacks") + sc["int"] * g("def_interceptions") + sc["fum_rec"] * g("fumble_recovery_opp")
+           + sc["td"] * (g("def_tds") + g("special_teams_tds")) + sc["safety"] * g("def_safeties")
+           + sc["blk_kick"] * (g("def_punt_blocks") + g("def_fg_blocks")))
+    if allowed is not None:
+        pts += next(v for cap, v in sc["points_allowed"] if allowed <= cap)
+    return round(pts, 2)
+
+
+def dst_players(season: int, cfg: dict, sched: pd.DataFrame, games: dict, implied_avg: float,
+                next_week: int | None, model: dict, snap: dict | None) -> list[dict]:
+    """Team defenses scored from nflverse team stats + final scores, projected like skill players.
+
+    Matchup = how many D/ST points the opposing offense has given up per game (vs. league average),
+    and the opponent's Vegas implied total (fewer expected points -> better for the defense).
+    """
+    try:
+        ts = nflverse.team_stats(season)
+    except Exception as exc:
+        print(f"[warn] team stats unavailable ({exc}); D/STs skipped")
+        return []
+    sc, rw, n_recent = cfg["scout"]["dst_scoring"], cfg["scout"]["recent_weight"], cfg["recent_weeks"]
+    ts = ts[ts["season_type"] == "REG"]
+    reg = sched[(sched["game_type"] == "REG") & sched["home_score"].notna()] if "home_score" in sched else sched.iloc[0:0]
+    allowed, home = {}, {}
+    for _, g in reg.iterrows():
+        allowed[(g["home_team"], int(g["week"]))] = float(g["away_score"])
+        allowed[(g["away_team"], int(g["week"]))] = float(g["home_score"])
+        home[(g["home_team"], int(g["week"]))] = True
+        home[(g["away_team"], int(g["week"]))] = False
+    rows = []
+    for _, r in ts.iterrows():
+        key = (r["team"], int(r["week"]))
+        rows.append({"team": r["team"], "opp": r["opponent_team"], "w": int(r["week"]), "pa": allowed.get(key),
+                     "pts": dst_points(r, allowed.get(key), sc), "home": home.get(key, True),
+                     "sk": r.get("def_sacks"), "int": r.get("def_interceptions"), "fr": r.get("fumble_recovery_opp"),
+                     "td": (r.get("def_tds") or 0) + (r.get("special_teams_tds") or 0)})
+    df = pd.DataFrame(rows)
+    if df.empty:
+        return []
+    # offense-side view: D/ST points each offense has given up per game, relative to league average
+    offense = df[df["w"] < (next_week or 99)].groupby("opp")["pts"].mean()
+    ratio = (offense / offense.mean()).to_dict() if len(offense) else {}
+    order = sorted(ratio, key=ratio.get)                 # rank 1 = offense that gives up the fewest D/ST points
+    lo, hi = cfg["matchup_clip"]
+    out = []
+    for team, g in df.sort_values("w").groupby("team"):
+        weeks = [{"w": r.w, "opp": ("vs " if r.home else "@ ") + r.opp, "pts": r.pts,
+                  **{k: (int(getattr(r, k)) if pd.notna(getattr(r, k)) else 0) for k in ("sk", "int", "fr", "td")},
+                  **({"pa": int(r.pa)} if r.pa is not None and pd.notna(r.pa) else {})} for r in g.itertuples()]
+        pts = [w["pts"] for w in weeks]
+        season_avg, recent_avg = float(np.mean(pts)), float(np.mean(pts[-n_recent:]))
+        p = {"id": f"DEF-{team}", "name": f"{NICKNAMES.get(team, team)} D/ST", "pos": "DEF", "team": team, "weeks": weeks,
+             "games": len(pts), "total": _r(sum(pts)), "avg": _r(season_avg), "recent": _r(recent_avg)}
+        if next_week:
+            game = games.get(team)
+            proj = {"week": next_week}
+            if not game:
+                proj.update(opp="BYE", value=0.0, bye=True)
+            else:
+                base = rw * recent_avg + (1 - rw) * season_avg
+                opp = game["opp"]
+                m = 1 + cfg["matchup_weight"] * (ratio.get(opp, 1.0) - 1)
+                if game.get("opp_implied") is not None:
+                    m *= 1 - cfg["vegas_weight"] * (game["opp_implied"] / implied_avg - 1)
+                m = max(lo, min(hi, m))
+                proj.update(opp=("vs " if game["is_home"] else "@ ") + opp, kickoff=f"{game['gameday']} {game.get('gametime') or ''}".strip(),
+                            implied=_r(game.get("opp_implied"), 1), base=_r(base), mult_matchup=_r(m, 3), mult_injury=1.0,
+                            value=_r(base * m))
+                if opp in ratio:
+                    rank, n = order.index(opp) + 1, len(order)
+                    pct = rank / n
+                    proj.update(def_rank=rank, def_teams=n, def_ratio=_r(ratio[opp], 2),
+                                grade="A" if pct > 0.8 else "B" if pct > 0.6 else "C" if pct > 0.4 else "D" if pct > 0.2 else "F")
+            p["proj"] = proj
+        mv = model.get(("def", team))
+        if mv:
+            p["model"] = {"week": snap["meta"]["week"], "adj": mv.get("adj"), "sleeper_proj": mv.get("proj"),
+                          "sentiment": None, "n_articles": 0, "mult_sentiment": None, "injury_status": None,
+                          "weather": mv.get("weather"), "notes": mv.get("notes") or [], "articles": []}
+            if mv.get("group") in ("roster", "reserve"):
+                p["mine"] = True
+        out.append(p)
+    return out
 
 
 def build(season: int, cfg: dict, snap: dict | None = None) -> dict:
@@ -79,6 +174,7 @@ def build(season: int, cfg: dict, snap: dict | None = None) -> dict:
     model = {}
     if snap and snap["meta"]["season"] == season:
         model = {(norm_name(d["name"]), d["position"]): d for d in snap["players"].values()}
+        model |= {("def", d.get("team")): d for d in snap["players"].values() if d.get("position") == "DEF"}
 
     players = []
     lo, hi = cfg["matchup_clip"]
@@ -142,7 +238,9 @@ def build(season: int, cfg: dict, snap: dict | None = None) -> dict:
                 p["mine"] = True
         players.append(p)
 
-    for pos in POSITIONS:   # positional rank by next-week projection
+    players += dst_players(season, cfg, sched, games, implied_avg, next_week, model, snap)
+
+    for pos in POSITIONS + ["DEF"]:   # positional rank by next-week projection
         ranked = sorted((p for p in players if p["pos"] == pos and (p.get("proj") or {}).get("value")),
                         key=lambda p: p["proj"]["value"], reverse=True)
         for i, p in enumerate(ranked, 1):

@@ -31,6 +31,12 @@ def fake_nflverse(monkeypatch):
     monkeypatch.setattr(nflverse, "weekly_stats", lambda s: pd.DataFrame(rows))
     monkeypatch.setattr(nflverse, "schedule", lambda s: sched)
     monkeypatch.setattr(nflverse, "injuries", lambda s: inj)
+    # KC defense: 3 sacks + 1 INT a game, allows 20 (tier +1) -> 6 pts; BUF: 1 sack, allows 17 (+1) -> 2 pts
+    teams = pd.DataFrame([dict(season=2026, week=w, season_type="REG", team=t, opponent_team=o, def_sacks=sk,
+                               def_interceptions=i, fumble_recovery_opp=0, def_tds=0, special_teams_tds=0, def_safeties=0,
+                               def_punt_blocks=0, def_fg_blocks=0)
+                          for w in (1, 2, 3, 4) for t, o, sk, i in (("KC", "BUF", 3, 1), ("BUF", "KC", 1, 0))])
+    monkeypatch.setattr(nflverse, "team_stats", lambda s: teams)
 
 
 def test_scout_data(monkeypatch, tmp_path):
@@ -55,6 +61,15 @@ def test_scout_data(monkeypatch, tmp_path):
     assert by["00-3"]["proj"]["bye"] and by["00-3"]["proj"]["value"] == 0            # MIA has no week-5 game
     assert data["teams"]["MIA"]["bye"] == [1, 2, 3, 4, 5] and data["teams"]["KC"]["next_opp"] == "@ BUF"
 
+    kc, buf = by["DEF-KC"], by["DEF-BUF"]
+    assert kc["name"] == "Chiefs D/ST" and kc["pos"] == "DEF" and [w["pts"] for w in kc["weeks"]] == [6, 6, 6, 6]
+    assert kc["weeks"][0] == {"w": 1, "opp": "@ BUF", "pts": 6, "sk": 3, "int": 1, "fr": 0, "td": 0, "pa": 20}
+    assert buf["avg"] == 2 and buf["weeks"][0]["pa"] == 17
+    # BUF's offense gives up 6 D/ST pts/game vs a 4 average -> KC's matchup is a plus; KC's offense is the tough one
+    assert kc["proj"]["opp"] == "@ BUF" and kc["proj"]["def_ratio"] == 1.5 and kc["proj"]["grade"] == "A"
+    assert kc["proj"]["mult_matchup"] > 1 > buf["proj"]["mult_matchup"] and kc["proj"]["pos_rank"] == 1
+    assert scout.dst_points(pd.Series({"def_sacks": 2, "def_tds": 1}), 0, cfg["scout"]["dst_scoring"]) == 2 + 6 + 10
+
 
 def test_scout_merges_latest_run(monkeypatch, tmp_path):
     fake_nflverse(monkeypatch)
@@ -63,7 +78,9 @@ def test_scout_merges_latest_run(monkeypatch, tmp_path):
             "players": {"s1": {"name": "Ace Receiver", "position": "WR", "group": "roster", "adj": 18.2, "proj": 17.0,
                                "sentiment": 0.4, "n_articles": 2, "mult_sentiment": 1.03, "notes": [],
                                "articles": [{"title": "Ace breaks out", "link": "https://x", "score": 0.8,
-                                             "source": "x", "published": None}]}}}
+                                             "source": "x", "published": None}]},
+                        "KC": {"name": "Kansas City Chiefs", "position": "DEF", "team": "KC", "group": "roster",
+                               "adj": 7.5, "proj": 7.0}}}
     (tmp_path / "latest_run.json").write_text(json.dumps(snap))
     out = scout.run(2026, pipeline.load_config(), tmp_path / "scout" / "data.json", tmp_path)
     data = json.loads(out.read_text())
@@ -71,4 +88,6 @@ def test_scout_merges_latest_run(monkeypatch, tmp_path):
     assert ace["mine"] and ace["model"]["adj"] == 18.2 and ace["model"]["articles"][0]["title"] == "Ace breaks out"
     assert ace["weeks"][0]["pts"] == 12.5                                        # league's 0.5 PPR from the run
     assert data["meta"]["model_run"]["team"] == "Brendobendo" and len(data["meta"]["sources"]) == 2
+    kc = next(p for p in data["players"] if p["id"] == "DEF-KC")
+    assert kc["mine"] and kc["model"]["adj"] == 7.5
     assert snapshot.load(tmp_path)["meta"]["week"] == 5

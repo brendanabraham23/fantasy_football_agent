@@ -26,6 +26,11 @@ def weekly_stats(season: int) -> pd.DataFrame:
     return _csv(f"{REL}/stats_player/stats_player_week_{season}.csv", ttl=6 * 3600)
 
 
+def team_stats(season: int) -> pd.DataFrame:
+    """Weekly team stats (sacks, takeaways, defensive/return TDs, blocked kicks) used to score D/STs."""
+    return _csv(f"{REL}/stats_team/stats_team_week_{season}.csv", ttl=6 * 3600)
+
+
 def injuries(season: int) -> pd.DataFrame:
     """Weekly injury reports (report_status: Questionable/Doubtful/Out; practice_status), keyed by gsis_id."""
     return _csv(f"{REL}/injuries/injuries_{season}.csv", ttl=3 * 3600)

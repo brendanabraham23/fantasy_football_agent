@@ -116,6 +116,8 @@ td { padding: 7px 8px; border-bottom: 1px solid var(--line); white-space: nowrap
 td.num, th.num { text-align: right; }
 td.best { color: var(--turf); font-weight: 700; }
 .cmp th.pl { text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--ink); }
+.cmp th.pl, .cmp td { white-space: normal; min-width: 110px; }
+.cmp tbody th { white-space: normal; min-width: 120px; }
 .x { border: 0; background: none; color: var(--muted); cursor: pointer; padding: 0 2px; font-size: 15px; }
 
 /* news */
@@ -186,6 +188,7 @@ const perGame = (p, k) => { const g = p.weeks.length; return g ? p.weeks.reduce(
 const usage = (p) => p.pos === "QB" ? [["Pass att/g", perGame(p, "pa")], ["Rush att/g", perGame(p, "car")]]
   : p.pos === "RB" ? [["Carries/g", perGame(p, "car")], ["Targets/g", perGame(p, "tgt")]]
   : p.pos === "K" ? [["FG att/g", perGame(p, "fga")], ["XP/g", perGame(p, "xpm")]]
+  : p.pos === "DEF" ? [["Sacks/g", perGame(p, "sk")], ["Takeaways/g", (perGame(p, "int") || 0) + (perGame(p, "fr") || 0)]]
   : [["Targets/g", perGame(p, "tgt")], ["Tgt share", (() => { const t = p.weeks.map((w) => w.tshare).filter((v) => v != null); return t.length ? t.reduce((s, v) => s + v, 0) / t.length : null; })()]];
 
 function findPlayers(q, { pos = null, limit = 10 } = {}) {
@@ -195,8 +198,8 @@ function findPlayers(q, { pos = null, limit = 10 } = {}) {
   for (const p of D.players) {
     if (pos && p.pos !== pos) continue;
     const n = p.name.toLowerCase();
-    const hit = n.includes(s) || `${p.team} ${p.pos}`.toLowerCase() === s;
-    if (!hit) continue;
+    const hay = `${n} ${p.team} ${p.pos}${p.pos === "DEF" ? " dst d/st defense" : ""}`.toLowerCase();
+    if (!s.split(/\s+/).every((t) => hay.includes(t))) continue;
     const prefix = n.startsWith(s) || n.split(" ").some((w) => w.startsWith(s));
     out.push([prefix ? 0 : 1, -(proj(p) || 0), p]);
   }
@@ -310,12 +313,15 @@ function formula(p) {
   const cls = (m) => (m > 1.0005 ? "up" : m < 0.9995 ? "down" : "");
   return `<div class="formula">
     <div class="term"><div class="k">Base</div><div class="v">${f1(pr.base)}</div></div><span class="op">×</span>
-    <div class="term ${cls(pr.mult_matchup)}" title="Defense vs ${esc(p.pos)} and Vegas implied total"><div class="k">Matchup</div><div class="v">${pr.mult_matchup.toFixed(2)}</div></div><span class="op">×</span>
+    <div class="term ${cls(pr.mult_matchup)}" title="${p.pos === "DEF" ? "Opposing offense vs D/STs and its Vegas implied total" : `Defense vs ${esc(p.pos)} and Vegas implied total`}"><div class="k">Matchup</div><div class="v">${pr.mult_matchup.toFixed(2)}</div></div><span class="op">×</span>
     <div class="term ${cls(pr.mult_injury)}"><div class="k">Injury</div><div class="v">${pr.mult_injury.toFixed(2)}</div></div><span class="op">=</span>
     <div class="term"><div class="k">Wk ${pr.week}</div><div class="v">${f1(pr.value)}</div></div></div>
     <p class="small muted" style="margin:8px 0 0">Base = ${Math.round(D.meta.recent_weight * 100)}% last-${D.meta.recent_weeks} average (${f1(p.recent)}) + ${Math.round((1 - D.meta.recent_weight) * 100)}% season average (${f1(p.avg)}).
-      ${pr.def_rank ? `${esc(pr.opp.replace(/^(vs|@) /, ""))} ranks ${pr.def_rank} of ${pr.def_teams} against ${esc(p.pos)}s (${pr.def_ratio}× league-average points allowed).` : ""}
-      ${pr.implied != null ? `Team implied total ${f1(pr.implied)} (week average ${f1(D.meta.implied_avg)}).` : ""}</p>`;
+      ${p.pos === "DEF"
+        ? `${pr.def_rank ? `${esc(pr.opp.replace(/^(vs|@) /, ""))}'s offense has given up ${pr.def_ratio}× the average D/ST points per game (rank ${pr.def_rank} of ${pr.def_teams}, higher is better for you).` : ""}
+           ${pr.implied != null ? `Opponent implied total ${f1(pr.implied)} (week average ${f1(D.meta.implied_avg)}); lower is better for a defense.` : ""}`
+        : `${pr.def_rank ? `${esc(pr.opp.replace(/^(vs|@) /, ""))} ranks ${pr.def_rank} of ${pr.def_teams} against ${esc(p.pos)}s (${pr.def_ratio}× league-average points allowed).` : ""}
+           ${pr.implied != null ? `Team implied total ${f1(pr.implied)} (week average ${f1(D.meta.implied_avg)}).` : ""}`}</p>`;
 }
 
 function modelNote(p) {
@@ -331,7 +337,7 @@ function pagePlayer() {
   const body = $("#pbody");
   if (!p) {
     const picks = D.players.filter((x) => x.mine).slice(0, 16);
-    const top = picks.length ? picks : ["QB", "RB", "WR", "TE"].flatMap((pos) => D.players.filter((x) => x.pos === pos && proj(x)).slice(0, 3));
+    const top = picks.length ? picks : ["QB", "RB", "WR", "TE", "DEF"].flatMap((pos) => D.players.filter((x) => x.pos === pos && proj(x)).slice(0, 3));
     body.innerHTML = `<div class="card"><h2>${picks.length ? "Your roster" : `Top projected for week ${nextW()}`}</h2><div class="row" style="margin-top:10px">
       ${top.map((x) => `<button class="pill" data-pick="${esc(x.id)}">${esc(x.name)} <span class="muted">${esc(x.pos)}</span></button>`).join("")}</div></div>`;
     body.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { S.player = b.dataset.pick; store.set("player", S.player); pagePlayer(); }));
@@ -341,6 +347,7 @@ function pagePlayer() {
   const series = [{ label: p.name, color: "var(--series-1)", weeks: p.weeks }];
   const keys = p.pos === "QB" ? [["pa", "Att"], ["py", "Pass yd"], ["ptd", "Pass TD"], ["int", "INT"], ["car", "Car"], ["ry", "Rush yd"], ["rtd", "Rush TD"]]
     : p.pos === "K" ? [["fgm", "FGM"], ["fga", "FGA"], ["xpm", "XPM"]]
+    : p.pos === "DEF" ? [["sk", "Sacks"], ["int", "INT"], ["fr", "Fum rec"], ["td", "TD"], ["pa", "Pts allowed"]]
     : [["car", "Car"], ["ry", "Rush yd"], ["rtd", "Rush TD"], ["tgt", "Tgt"], ["rec", "Rec"], ["recy", "Rec yd"], ["rectd", "Rec TD"]];
   body.innerHTML = `<div class="card">
       <div class="phead"><div><div class="pname">${esc(p.name)}</div>
@@ -394,7 +401,8 @@ function pageCompare() {
     ["Week " + nextW() + " projection", (p) => proj(p), true, (v) => f1(v)],
     ["Position rank", (p) => (p.proj && p.proj.pos_rank) || null, false, (v, p) => (v ? posRank(p) : "–")],
     ["Matchup", (p) => (p.proj && p.proj.mult_matchup) || null, true, (v, p) => (p.proj && p.proj.bye ? "BYE" : p.proj ? `${esc(p.proj.opp)} ${grade(p.proj.grade)}` : "–")],
-    ["Team implied total", (p) => (p.proj && p.proj.implied) || null, true, (v) => f1(v)],
+    [ps.some((p) => p.pos === "DEF") ? "Implied total (opponent's for D/ST)" : "Team implied total", (p) => (p.proj && p.proj.implied) || null,
+      ps.every((p) => p.pos === "DEF") ? false : ps.some((p) => p.pos === "DEF") ? null : true, (v) => f1(v)],
     ["Last " + D.meta.recent_weeks + " avg", (p) => p.recent, true, (v) => f1(v)],
     ["Season avg", (p) => p.avg, true, (v) => f1(v)],
     ["Floor (worst game)", (p) => (pts(p).length ? Math.min(...pts(p)) : null), true, (v) => f1(v)],
@@ -451,20 +459,22 @@ const getSample = () => (samplePromise ||= (window.claude && window.claude.use ?
 const brief = (p) => p && { id: p.id, name: p.name, pos: p.pos, team: p.team, week_proj: proj(p), pos_rank: p.proj?.pos_rank ?? null,
   opp: p.proj?.opp ?? null, matchup_grade: p.proj?.grade ?? null, season_avg: p.avg, last3_avg: p.recent, games: p.games,
   injury: p.injury?.status || null, practice: p.injury?.practice || null, on_my_roster: !!p.mine };
-const detail = (p) => p && { ...brief(p), weekly: p.weeks.map((w) => ({ week: w.w, opp: w.opp, pts: w.pts, tgt: w.tgt, car: w.car, tshare: w.tshare })),
+const detail = (p) => p && { ...brief(p), weekly: p.weeks.map((w) => (p.pos === "DEF"
+    ? { week: w.w, opp: w.opp, pts: w.pts, sacks: w.sk, ints: w.int, fum_rec: w.fr, tds: w.td, pts_allowed: w.pa }
+    : { week: w.w, opp: w.opp, pts: w.pts, tgt: w.tgt, car: w.car, tshare: w.tshare })),
   projection: p.proj, usage: Object.fromEntries(usage(p).map(([k, v]) => [k, v == null ? null : +v.toFixed(2)])),
   my_pipeline: p.model ? { week: p.model.week, model_pts: p.model.adj, sleeper_proj: p.model.sleeper_proj, news_sentiment: p.model.sentiment,
     headlines: (p.model.articles || []).slice(0, 4).map((a) => a.title) } : null };
 
 const TOOLS = [
   { name: "search_players", description: "Find players by (partial) name. Returns up to 8 matches with id, team, position, next-week projection and rank. Use it to resolve names before other tools.",
-    inputSchema: { type: "object", properties: { query: { type: "string" }, position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K"] } }, required: ["query"] },
+    inputSchema: { type: "object", properties: { query: { type: "string" }, position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K", "DEF"] } }, required: ["query"] },
     execute: ({ query, position }) => findPlayers(String(query), { pos: position ? String(position) : null, limit: 8 }).map(brief) },
   { name: "get_player", description: "Full data for one player (id or exact-ish name): weekly points and usage, next-week projection with its components, injury report, and the user's pipeline view and headlines when available.",
     inputSchema: { type: "object", properties: { player: { type: "string" } }, required: ["player"] },
     execute: ({ player }) => { const p = resolve(player); if (!p) throw new Error(`No player matches "${player}"`); return detail(p); } },
   { name: "top_players", description: "Rank players at a position by next-week projection ('proj'), last-3 average ('recent') or season average ('avg'). Optionally only the user's roster.",
-    inputSchema: { type: "object", properties: { position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K", "ALL"] }, sort: { type: "string", enum: ["proj", "recent", "avg"] },
+    inputSchema: { type: "object", properties: { position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K", "DEF", "ALL"] }, sort: { type: "string", enum: ["proj", "recent", "avg"] },
       limit: { type: "integer" }, my_roster_only: { type: "boolean" } } },
     execute: ({ position = "ALL", sort = "proj", limit = 10, my_roster_only = false }) => {
       const key = { proj: proj, recent: (p) => p.recent, avg: (p) => p.avg }[String(sort)] || proj;
@@ -481,6 +491,7 @@ function rules() {
   return `You are the fantasy football assistant inside "Brendobendo Scout", for the manager of team Brendobendo (Sleeper league, ${m.ppr} PPR).
 Data: nflverse stats for the ${m.season} season through week ${m.through_week}; projections are for week ${m.next_week}. Data file built ${m.generated_at}.
 Projection = baseline: ${Math.round(m.recent_weight * 100)}% last-${m.recent_weeks} avg + ${Math.round((1 - m.recent_weight) * 100)}% season avg, times a matchup factor (defense vs position and Vegas implied total) and an injury factor. It's simple and not calibrated; say so when it matters.
+D/STs are position "DEF" (search "<team> D/ST"); they score sacks 1, INT 2, fumble recovery 2, TD 6, safety 2, blocked kick 2, plus points-allowed tiers (0: +10 down to 35+: -4). Their matchup factor uses how many D/ST points the opposing offense gives up and the opponent's implied total (lower is better).
 ${my.length ? `User's roster (from their last pipeline run, week ${m.model_run.week}): ${my.join("; ")}.` : "The user's roster isn't in this data."}
 Use the tools to look players up; never guess stats. You can't browse: for news, trades or injuries after the data date, say what the data shows and what to check. Lead with the answer (a clear start/sit or ranking), then 2-4 short reasons with numbers. Be concise. Use plain text with short "-" bullets; no tables.`;
 }

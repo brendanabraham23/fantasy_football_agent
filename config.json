@@ -56,7 +56,9 @@
 
   "calibration": {"min_proj": 3, "buckets": 5},
 
-  "scout": {"ppr": 1.0, "recent_weight": 0.6, "max_articles": 6},
+  "scout": {"ppr": 1.0, "recent_weight": 0.6, "max_articles": 6,
+            "dst_scoring": {"sack": 1, "int": 2, "fum_rec": 2, "td": 6, "safety": 2, "blk_kick": 2,
+                            "points_allowed": [[0, 10], [6, 7], [13, 4], [20, 1], [27, 0], [34, -1], [999, -4]]}},
 
   "ui": {"host": "127.0.0.1", "port": 8000, "live_ttl_minutes": 15, "stale_hours": 24,
          "search_limit": 15, "pool_page_size": 50, "live_refresh_seconds": 60,
