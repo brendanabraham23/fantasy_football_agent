@@ -15,6 +15,7 @@ python -m ffa --username USER --no-news --no-weather   # fast run, skips RSS scr
 python -m ffa ledger --username USER [--through-week 4] # -> reports/ledger/
 python -m ffa ui --username USER       # local web UI at http://127.0.0.1:8000
 python -m ffa calibrate [--username USER] [--seasons 2025,2026] [--weeks 1-4]  # -> reports/calibration/
+python -m ffa scout-data               # -> reports/scout/data.json for the Scout artifact (nflverse + latest run)
 ```
 
 `username` is blank in `config.json`, so live runs need `--username` (ask the user for it).
@@ -39,6 +40,7 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `lineup.py` | Hindsight best-lineup solver used by `ledger.py` (separate from `ranker.optimal_lineup`). |
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
 | `calibration.py` | Sleeper projection vs. recent/season-average/blend predictors against actual points: bias, MAE, RMSE, Spearman, slope, buckets, best blend weight. |
+| `scout.py` | Data file for the Scout artifact: per-player weekly log, usage, next matchup, injuries, baseline projection, merged pipeline view. nflverse only. |
 | `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |
 | `server.py` | FastAPI app: background run job, `/api/*` (summary, matchup, live roster sync, players, waivers pool/what-if, news, archived runs/compare), serves `ffa/web/`. |
 | `web/` | Vanilla JS SPA (hash routing, inline-SVG chart). No build step; edit `app.js`/`style.css` directly. |
@@ -60,6 +62,16 @@ don't hardcode new constants in modules — add a config key and read it from `c
 Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live data to that run's week
 (`server.Live(as_of=True)`), so nothing after it is shown. Keep new live endpoints `run`-aware. Server tests use FastAPI's `TestClient` over `fake_world`
 (`tests/conftest.py`); the run job is a thread, so tests join `app.state.job.thread`.
+
+## Scout artifact (phone-friendly, claude.ai)
+
+`artifact/scout.html` is published at https://claude.ai/artifact/GHejCcRerJbdxFTxyZ1kdm (Player, Compare, News,
+Ask tabs; Ask uses the `sample` capability with page tools over `data.json`). To refresh it ("refresh Scout"):
+1. `python -m ffa scout-data` (run `python -m ffa --username …` first if Sleeper is reachable, so the latest run
+   with model points and news is merged).
+2. Artifact tool: publish `artifact/scout.html` with `url` = the link above, `files` =
+   `{"data.json": "reports/scout/data.json"}`, and omit `capabilities` (keeps `sample`).
+The page cannot fetch anything itself (artifact CSP), so all data ships in `data.json`.
 
 ## Roadmap
 

@@ -26,11 +26,16 @@ def weekly_stats(season: int) -> pd.DataFrame:
     return _csv(f"{REL}/stats_player/stats_player_week_{season}.csv", ttl=6 * 3600)
 
 
+def injuries(season: int) -> pd.DataFrame:
+    """Weekly injury reports (report_status: Questionable/Doubtful/Out; practice_status), keyed by gsis_id."""
+    return _csv(f"{REL}/injuries/injuries_{season}.csv", ttl=3 * 3600)
+
+
 def _col(df: pd.DataFrame, name: str) -> pd.Series:
     return df[name].fillna(0) if name in df.columns else pd.Series(0, index=df.index)
 
 
-def _kicker_points(df: pd.DataFrame) -> pd.Series:
+def kicker_points(df: pd.DataFrame) -> pd.Series:
     short = sum(_col(df, c) for c in ("fg_made_0_19", "fg_made_20_29", "fg_made_30_39"))
     return (3 * short + 4 * _col(df, "fg_made_40_49")
             + 5 * (_col(df, "fg_made_50_59") + _col(df, "fg_made_60_"))
@@ -57,7 +62,7 @@ def defense_vs_position(stats: pd.DataFrame, before_week: int, rec_value: float,
     # nflverse `fantasy_points` is standard scoring; add the league's per-reception value.
     df["fp"] = _col(df, "fantasy_points") + rec_value * _col(df, "receptions")
     is_k = df["position"] == "K"
-    df.loc[is_k, "fp"] = _kicker_points(df[is_k])
+    df.loc[is_k, "fp"] = kicker_points(df[is_k])
 
     per_game = df.groupby(["opponent_team", "position", "week"])["fp"].sum().reset_index()
     agg = per_game.groupby(["opponent_team", "position"])["fp"].mean().reset_index(name="pts_allowed_pg")

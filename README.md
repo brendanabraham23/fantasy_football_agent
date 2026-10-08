@@ -89,6 +89,17 @@ Every number above is in `config.json`, so you can tune them.
   (e.g. 4) later in the year to weight recent form.
 - International/neutral-site games skip the weather forecast.
 
+## Scout (phone app on claude.ai)
+
+A claude.ai Artifact for player lookups away from your laptop: https://claude.ai/artifact/GHejCcRerJbdxFTxyZ1kdm
+(private to you). Tabs: **Player** (week projection with its breakdown, weekly chart, game log), **Compare** (up to
+four players side by side, plus "who should I start?"), **News** (sentiment from your latest pipeline run), and
+**Ask** (chat with Claude, which looks players up in the page's data).
+
+Its data comes from `python -m ffa scout-data`, which needs only nflverse and merges your latest pipeline run if
+there is one. To update it, ask Claude in any Claude Code session on this repo (phone included) to "refresh Scout";
+the steps are in CLAUDE.md.
+
 ## Projection calibration
 
 ```bash

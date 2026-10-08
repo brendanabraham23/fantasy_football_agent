@@ -88,6 +88,7 @@ def to_dict(res: Result, warnings: list[str] | None = None, options: dict | None
             "faab": faab,
             "budget_left": (settings.get("waiver_budget") or 0) - (rs.get("waiver_budget_used") or 0) if faab else None,
             "sentiment_weight": c.cfg.get("sentiment_weight"), "weights": c.cfg.get("weights"),
+            "rec_value": c.rec_value,
         },
         "lineup": [{"slot": slot, "player_id": e.player_id if e else None} for slot, e in res.lineup],
         "current_starters": current,

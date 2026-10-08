@@ -8,6 +8,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 
 from . import ledger, pipeline, report, snapshot
@@ -60,6 +61,27 @@ def calibrate_main(argv) -> int:
     return 0
 
 
+def scout_main(argv) -> int:
+    ap = argparse.ArgumentParser(prog="python -m ffa scout-data",
+                                 description="Build the data file for the Scout artifact (nflverse + latest run)")
+    ap.add_argument("--season", type=int, help="Default: the season in reports/latest_run.json, else this year")
+    ap.add_argument("--config")
+    ap.add_argument("--reports", default="reports", help="Folder holding latest_run.json")
+    ap.add_argument("--out", default="reports/scout/data.json")
+    args = ap.parse_args(argv)
+    cfg = pipeline.load_config(args.config)
+    from datetime import date
+    from . import scout
+    snap = snapshot.load(args.reports)
+    season = args.season or (snap["meta"]["season"] if snap else date.today().year)
+    out = scout.run(season, cfg, args.out, args.reports)
+    data = json.loads(out.read_text())
+    m = data["meta"]
+    print(f"Saved {out}: {len(data['players'])} players, stats through week {m['through_week']}, "
+          f"projections for week {m['next_week']}" + (" + latest run merged" if m["model_run"] else ""))
+    return 0
+
+
 def ui_main(argv) -> int:
     ap = argparse.ArgumentParser(prog="python -m ffa ui", description="Local web UI for the analyzer")
     ap.add_argument("--username")
@@ -89,6 +111,8 @@ def main(argv=None) -> int:
         return ui_main(argv[1:])
     if argv and argv[0] == "calibrate":
         return calibrate_main(argv[1:])
+    if argv and argv[0] == "scout-data":
+        return scout_main(argv[1:])
     ap = argparse.ArgumentParser(description="Weekly Sleeper start/sit and waiver analyzer")
     ap.add_argument("--username", help="Sleeper username (or set in config.json)")
     ap.add_argument("--team-name", help="Team name to analyze (default from config: Brendobendo)")

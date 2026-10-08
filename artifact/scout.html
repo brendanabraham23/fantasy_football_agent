@@ -1,0 +1,607 @@
+<title>Brendobendo Scout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: a single scouting column; a sticky header carries the four tools, cards stack below at phone width */
+:root {
+  --bg: #f3f6f2; --surface: #ffffff; --surface-2: #e9efe8; --line: #d8e0d6;
+  --ink: #132019; --ink-2: #4a5a50; --muted: #76857b;
+  --turf: #1b7a4c; --turf-ink: #ffffff; --turf-soft: #dcefe3; --chalk: #fbfcfa;
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #c98500;
+  --good: #0f7d34; --good-bg: #dff3e5; --warn: #8a5a00; --warn-bg: #fbefd2; --bad: #b02a2a; --bad-bg: #fbe3e3;
+  --display: "Saira Condensed", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0d1310; --surface: #141c17; --surface-2: #1c2620; --line: #26322b;
+  --ink: #edf3ee; --ink-2: #a9b8ae; --muted: #7d8c82;
+  --turf: #3fae78; --turf-ink: #06140c; --turf-soft: #183a28; --chalk: #141c17;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  --good: #6fd38e; --good-bg: #173322; --warn: #f2b84b; --warn-bg: #362a12; --bad: #ff8f8f; --bad-bg: #3d1c1c;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0d1310; --surface: #141c17; --surface-2: #1c2620; --line: #26322b;
+  --ink: #edf3ee; --ink-2: #a9b8ae; --muted: #7d8c82;
+  --turf: #3fae78; --turf-ink: #06140c; --turf-soft: #183a28; --chalk: #141c17;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  --good: #6fd38e; --good-bg: #173322; --warn: #f2b84b; --warn-bg: #362a12; --bad: #ff8f8f; --bad-bg: #3d1c1c;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 var(--body); font-variant-numeric: tabular-nums; }
+.wrap { max-width: 980px; margin: 0 auto; padding-inline: 16px; padding-block: 0 48px; }
+a { color: var(--turf); }
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--turf); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--display); letter-spacing: .01em; margin: 0; text-wrap: balance; }
+.muted { color: var(--muted); } .small { font-size: 13px; }
+.mono { font-family: var(--mono); font-size: 12.5px; }
+
+header.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg);
+  border-bottom: 1px solid var(--line); }
+.top-in { max-width: 980px; margin: 0 auto; padding-inline: 16px; padding-block: 12px 0; }
+.brand { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.brand h1 { font-size: 28px; font-weight: 800; text-transform: uppercase; line-height: 1; }
+.brand h1 span { color: var(--turf); }
+.fresh { font-size: 12.5px; color: var(--ink-2); }
+nav.tabs { display: flex; gap: 4px; margin-top: 10px; overflow-x: auto; }
+nav.tabs a { padding: 8px 14px 10px; text-decoration: none; color: var(--ink-2); font-family: var(--display);
+  font-weight: 700; font-size: 17px; text-transform: uppercase; letter-spacing: .04em; border-bottom: 3px solid transparent; }
+nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--turf); }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+.stack { display: grid; gap: 14px; margin-top: 16px; }
+.stack > *, .card { min-width: 0; }   /* let wide tables scroll inside their card, not widen the page */
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.chip { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 1px 9px; font-size: 12px;
+  font-weight: 600; background: var(--surface-2); color: var(--ink-2); white-space: nowrap; }
+.chip.good { background: var(--good-bg); color: var(--good); } .chip.warn { background: var(--warn-bg); color: var(--warn); }
+.chip.bad { background: var(--bad-bg); color: var(--bad); } .chip.turf { background: var(--turf-soft); color: var(--turf); }
+.grade { font-family: var(--display); font-weight: 800; font-size: 14px; border-radius: 5px; padding: 0 6px; }
+.grade.A, .grade.B { background: var(--good-bg); color: var(--good); } .grade.C { background: var(--surface-2); color: var(--ink-2); }
+.grade.D, .grade.F { background: var(--bad-bg); color: var(--bad); }
+.btn { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 7px 12px; cursor: pointer; font-weight: 600; }
+.btn:hover { background: var(--surface-2); }
+.btn.primary { background: var(--turf); color: var(--turf-ink); border-color: var(--turf); }
+.btn:disabled { opacity: .55; cursor: default; }
+.pill { border: 1px solid var(--line); background: var(--surface); border-radius: 999px; padding: 4px 11px; font-size: 13px;
+  font-weight: 600; cursor: pointer; color: var(--ink-2); }
+.pill.on { background: var(--turf-soft); border-color: var(--turf); color: var(--turf); }
+.empty { padding: 28px 16px; text-align: center; color: var(--ink-2); }
+.banner { border-radius: 10px; padding: 10px 14px; background: var(--warn-bg); color: var(--warn); }
+
+/* search */
+.search { position: relative; flex: 1 1 260px; min-width: 0; }
+.search input { width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.results { position: absolute; left: 0; right: 0; top: calc(100% + 4px); z-index: 20; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 10px 28px rgba(0,0,0,.18); max-height: 320px; overflow-y: auto; }
+.results button { display: flex; justify-content: space-between; width: 100%; gap: 8px; padding: 8px 12px; border: 0;
+  background: none; text-align: left; cursor: pointer; }
+.results button:hover, .results button.hl { background: var(--surface-2); }
+
+/* player card */
+.phead { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: flex-start; }
+.pname { font-size: 34px; font-weight: 800; line-height: 1.05; text-transform: uppercase; }
+.pos-team { font-family: var(--display); font-weight: 700; font-size: 16px; color: var(--ink-2); letter-spacing: .04em; }
+.projbox { text-align: right; }
+.projbox .num { font-family: var(--display); font-size: 48px; font-weight: 800; line-height: 1; color: var(--turf); }
+.projbox .lbl { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+.formula { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 12px; }
+.term { background: var(--surface-2); border-radius: 8px; padding: 5px 9px; text-align: center; min-width: 0; }
+.term .k { font-size: 10.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+.term .v { font-weight: 700; }
+.term.up .v { color: var(--good); } .term.down .v { color: var(--bad); }
+.op { color: var(--muted); }
+.stats3 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.stat { border-left: 3px solid var(--turf); padding-left: 10px; }
+.stat .k { font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; font-weight: 600; }
+.stat .v { font-family: var(--display); font-size: 24px; font-weight: 700; }
+.model { margin-top: 12px; padding: 10px 12px; border-radius: 10px; background: var(--turf-soft); font-size: 14px; }
+
+/* chart + tables */
+.chart { position: relative; margin-top: 6px; }
+.chart svg { width: 100%; height: auto; display: block; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-2); }
+.sw { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 5px; }
+.sw.line { height: 3px; border-radius: 2px; vertical-align: 3px; }
+.tip { position: fixed; z-index: 50; pointer-events: none; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 8px; padding: 7px 10px; font-size: 12.5px; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; }
+th { font-size: 11.5px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); text-align: left; font-weight: 600;
+  padding: 6px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td { padding: 7px 8px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+td.num, th.num { text-align: right; }
+td.best { color: var(--turf); font-weight: 700; }
+.cmp th.pl { text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--ink); }
+.x { border: 0; background: none; color: var(--muted); cursor: pointer; padding: 0 2px; font-size: 15px; }
+
+/* news */
+.newsrow { border-bottom: 1px solid var(--line); padding: 10px 0; }
+.newsrow:last-child { border-bottom: 0; }
+.sbar { display: inline-block; position: relative; width: 70px; height: 6px; background: var(--surface-2); border-radius: 3px; vertical-align: middle; }
+.sbar i { position: absolute; top: 0; height: 6px; border-radius: 3px; }
+.sbar::after { content: ""; position: absolute; left: 50%; top: -2px; width: 1px; height: 10px; background: var(--muted); }
+.arts { margin: 6px 0 0; padding-left: 18px; }
+.arts li { margin: 3px 0; }
+
+/* chat */
+.chat { display: flex; flex-direction: column; gap: 10px; min-height: 240px; }
+.msg { max-width: 92%; padding: 10px 13px; border-radius: 12px; overflow-wrap: anywhere; }
+.msg.user { align-self: flex-end; background: var(--turf); color: var(--turf-ink); border-bottom-right-radius: 4px; }
+.msg.bot { align-self: flex-start; background: var(--surface-2); border-bottom-left-radius: 4px; }
+.msg.bot p { margin: 0 0 8px; } .msg.bot p:last-child { margin-bottom: 0; }
+.msg.bot ul { margin: 4px 0 8px; padding-left: 18px; }
+.msg .meta { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.composer { display: flex; gap: 8px; margin-top: 12px; align-items: flex-end; }
+.composer textarea { flex: 1; min-width: 0; resize: vertical; min-height: 44px; max-height: 160px; padding: 10px 12px;
+  border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.suggest { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
+
+@media (max-width: 640px) {
+  .pname { font-size: 28px; } .projbox .num { font-size: 40px; }
+  .stats3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .projbox { text-align: left; }
+  nav.tabs a { font-size: 15px; padding-inline: 10px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><h1>Brendobendo <span>Scout</span></h1><span class="fresh" id="fresh">Loading player data…</span></div>
+    <nav class="tabs" id="tabs">
+      <a href="#player" data-t="player">Player</a>
+      <a href="#compare" data-t="compare">Compare</a>
+      <a href="#news" data-t="news">News</a>
+      <a href="#ask" data-t="ask">Ask</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap" id="view"><div class="card empty" style="margin-top:16px">Loading player data…</div></main>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+"use strict";
+const $ = (s, r = document) => r.querySelector(s);
+const view = $("#view");
+const esc = (v) => String(v ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const f1 = (v) => (v == null || Number.isNaN(v) ? "–" : Number(v).toFixed(1));
+const sgn = (v, d = 1) => (v == null ? "–" : (Math.round(v * 10 ** d) > 0 ? "+" : Math.round(v * 10 ** d) < 0 ? "−" : "") + Math.abs(v).toFixed(d));
+const store = { get(k, d) { try { const v = localStorage.getItem("scout:" + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+                set(k, v) { try { localStorage.setItem("scout:" + k, JSON.stringify(v)); } catch { /* storage off */ } } };
+
+let D = null, byId = new Map();
+const S = { player: store.get("player", null), compare: store.get("compare", null), pos: "ALL", turns: store.get("turns", []), newsMine: true };
+
+// ---- data helpers ----------------------------------------------------------------
+const proj = (p) => (p.proj && p.proj.value != null ? p.proj.value : null);
+const nextW = () => D.meta.next_week;
+const posRank = (p) => (p.proj && p.proj.pos_rank ? `${p.pos}${p.proj.pos_rank}` : "–");
+const pts = (p) => p.weeks.map((w) => w.pts).filter((v) => v != null);
+const stdev = (a) => { if (a.length < 2) return null; const m = a.reduce((s, v) => s + v, 0) / a.length; return Math.sqrt(a.reduce((s, v) => s + (v - m) ** 2, 0) / (a.length - 1)); };
+const perGame = (p, k) => { const g = p.weeks.length; return g ? p.weeks.reduce((s, w) => s + (w[k] || 0), 0) / g : null; };
+const usage = (p) => p.pos === "QB" ? [["Pass att/g", perGame(p, "pa")], ["Rush att/g", perGame(p, "car")]]
+  : p.pos === "RB" ? [["Carries/g", perGame(p, "car")], ["Targets/g", perGame(p, "tgt")]]
+  : p.pos === "K" ? [["FG att/g", perGame(p, "fga")], ["XP/g", perGame(p, "xpm")]]
+  : [["Targets/g", perGame(p, "tgt")], ["Tgt share", (() => { const t = p.weeks.map((w) => w.tshare).filter((v) => v != null); return t.length ? t.reduce((s, v) => s + v, 0) / t.length : null; })()]];
+
+function findPlayers(q, { pos = null, limit = 10 } = {}) {
+  const s = String(q || "").toLowerCase().trim();
+  if (!s) return [];
+  const out = [];
+  for (const p of D.players) {
+    if (pos && p.pos !== pos) continue;
+    const n = p.name.toLowerCase();
+    const hit = n.includes(s) || `${p.team} ${p.pos}`.toLowerCase() === s;
+    if (!hit) continue;
+    const prefix = n.startsWith(s) || n.split(" ").some((w) => w.startsWith(s));
+    out.push([prefix ? 0 : 1, -(proj(p) || 0), p]);
+  }
+  return out.sort((a, b) => a[0] - b[0] || a[1] - b[1]).slice(0, limit).map((x) => x[2]);
+}
+const resolve = (key) => byId.get(String(key)) || findPlayers(key, { limit: 1 })[0] || null;
+
+// ---- shared bits ----------------------------------------------------------------------
+function injChip(p) {
+  const st = p.injury && p.injury.status;
+  if (st) return `<span class="chip ${st === "Questionable" ? "warn" : "bad"}">${esc(st)}${p.injury.detail ? " · " + esc(p.injury.detail) : ""}</span>`;
+  const pr = p.injury && p.injury.practice;
+  if (pr && /Did Not/.test(pr)) return `<span class="chip warn" title="${esc(pr)}">DNP practice</span>`;
+  if (pr && /Limited/.test(pr)) return `<span class="chip warn" title="${esc(pr)}">Limited practice</span>`;
+  return "";
+}
+const grade = (g) => (g ? `<span class="grade ${g}">${g}</span>` : "");
+const mine = (p) => (p.mine ? `<span class="chip turf">On your roster</span>` : "");
+
+function searchBox(placeholder, onPick, id) {
+  const w = document.createElement("div");
+  w.className = "search";
+  w.innerHTML = `<input id="${id}" type="search" placeholder="${esc(placeholder)}" autocomplete="off" aria-label="${esc(placeholder)}"><div class="results" hidden></div>`;
+  const inp = $("input", w), box = $(".results", w);
+  let items = [], hl = 0;
+  const paint = () => {
+    box.hidden = !items.length;
+    box.innerHTML = items.map((p, i) => `<button type="button" data-i="${i}" class="${i === hl ? "hl" : ""}">
+      <span><b>${esc(p.name)}</b> <span class="muted small">${esc(p.pos)} · ${esc(p.team)}</span></span>
+      <span class="small muted">${proj(p) != null ? `wk ${nextW()} ${f1(proj(p))}` : ""}</span></button>`).join("");
+  };
+  inp.addEventListener("input", () => { items = findPlayers(inp.value); hl = 0; paint(); });
+  inp.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") { hl = Math.min(hl + 1, items.length - 1); paint(); e.preventDefault(); }
+    else if (e.key === "ArrowUp") { hl = Math.max(hl - 1, 0); paint(); e.preventDefault(); }
+    else if (e.key === "Enter" && items[hl]) { onPick(items[hl]); inp.value = ""; items = []; paint(); }
+    else if (e.key === "Escape") { items = []; paint(); }
+  });
+  box.addEventListener("mousedown", (e) => { const b = e.target.closest("button[data-i]"); if (b) { e.preventDefault(); onPick(items[+b.dataset.i]); inp.value = ""; items = []; paint(); } });
+  inp.addEventListener("blur", () => setTimeout(() => { items = []; paint(); }, 150));
+  return w;
+}
+
+// ---- chart -------------------------------------------------------------------------------
+function niceMax(v) { const step = v <= 10 ? 2 : v <= 25 ? 5 : 10; return Math.max(step * 2, Math.ceil(v / step) * step); }
+
+function weeklyChart(series, { projection = null } = {}) {
+  // series: [{label, color, weeks:[{w, pts, opp}]}]; one series draws bars, several draw lines
+  const W = 720, H = 230, L = 34, R = 10, T = 12, B = 28;
+  const lastW = Math.max(D.meta.through_week, projection ? projection.week : 0, 1);
+  const weeks = Array.from({ length: lastW }, (_, i) => i + 1);
+  const vals = series.flatMap((s) => s.weeks.map((w) => w.pts || 0)).concat(projection ? [projection.value || 0] : []);
+  const max = niceMax(Math.max(5, ...vals));
+  const band = (W - L - R) / weeks.length, x = (w) => L + band * (w - 1) + band / 2, y = (v) => T + (H - T - B) * (1 - Math.max(0, v) / max);
+  const ticks = [0, max / 4, max / 2, (3 * max) / 4, max];
+  let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Weekly fantasy points">`;
+  ticks.forEach((t) => { svg += `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)"/>
+    <text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" font-size="11" fill="var(--muted)">${+t.toFixed(1)}</text>`; });
+  weeks.forEach((w) => { svg += `<text x="${x(w)}" y="${H - 9}" text-anchor="middle" font-size="11" fill="${projection && w === projection.week ? "var(--ink)" : "var(--muted)"}" font-weight="${projection && w === projection.week ? 700 : 400}">W${w}</text>`; });
+  const base = y(0), bw = Math.min(30, band * 0.55);
+  if (series.length === 1) {
+    series[0].weeks.forEach((wk) => {
+      if (wk.pts == null) return;
+      const top = y(wk.pts), r = Math.min(4, (base - top) / 2), x0 = x(wk.w) - bw / 2, x1 = x(wk.w) + bw / 2;
+      if (base - top >= 0.5) svg += `<path fill="${series[0].color}" d="M${x0},${base} V${top + r} Q${x0},${top} ${x0 + r},${top} H${x1 - r} Q${x1},${top} ${x1},${top + r} V${base} Z"/>`;
+    });
+    if (projection && projection.value) {
+      const top = y(projection.value);
+      svg += `<rect x="${x(projection.week) - bw / 2}" y="${top}" width="${bw}" height="${Math.max(0, base - top)}" rx="3" fill="none" stroke="var(--turf)" stroke-width="2" stroke-dasharray="5 3"/>`;
+    }
+  } else {
+    series.forEach((s) => {
+      const pts_ = s.weeks.filter((w) => w.pts != null).map((w) => [x(w.w), y(w.pts)]);
+      let d = "", prevW = null;
+      s.weeks.filter((w) => w.pts != null).forEach((w, i) => { d += (i && prevW === w.w - 1 ? "L" : "M") + x(w.w) + "," + y(w.pts); prevW = w.w; });
+      svg += `<path d="${d}" fill="none" stroke="${s.color}" stroke-width="2" stroke-linejoin="round"/>`;
+      pts_.forEach(([cx, cy]) => { svg += `<circle cx="${cx}" cy="${cy}" r="4" fill="${s.color}" stroke="var(--surface)" stroke-width="2"/>`; });
+    });
+  }
+  weeks.forEach((w) => { svg += `<rect class="hit" data-w="${w}" x="${L + band * (w - 1)}" y="${T}" width="${band}" height="${H - T - B}" fill="transparent"/>`; });
+  svg += `<line x1="${L}" x2="${W - R}" y1="${base}" y2="${base}" stroke="var(--ink-2)" stroke-opacity=".4"/></svg>`;
+  return svg;
+}
+
+function bindChart(root, series, projection) {
+  const tip = $("#tip");
+  root.querySelectorAll(".hit").forEach((r) => {
+    const show = (ev) => {
+      const w = +r.dataset.w;
+      const rows = series.map((s) => { const wk = s.weeks.find((x) => x.w === w);
+        return `<div class="row" style="justify-content:space-between;gap:14px"><span><span class="sw" style="background:${s.color}"></span>${esc(s.label)}</span><b>${wk ? f1(wk.pts) + (series.length === 1 ? ` <span class="muted">${esc(wk.opp)}</span>` : "") : "—"}</b></div>`; }).join("");
+      const pr = projection && projection.week === w ? `<div class="row" style="justify-content:space-between;gap:14px"><span>Projected ${esc(projection.opp)}</span><b>${f1(projection.value)}</b></div>` : "";
+      tip.innerHTML = `<div><b>Week ${w}</b></div>${rows}${pr}`;
+      tip.hidden = false;
+      const px = ev.touches ? ev.touches[0].clientX : ev.clientX, py = ev.touches ? ev.touches[0].clientY : ev.clientY;
+      tip.style.left = Math.min(px + 12, innerWidth - tip.offsetWidth - 8) + "px";
+      tip.style.top = py + 14 + "px";
+    };
+    r.addEventListener("mousemove", show);
+    r.addEventListener("touchstart", show, { passive: true });
+    r.addEventListener("mouseleave", () => { tip.hidden = true; });
+  });
+}
+
+// ---- Player --------------------------------------------------------------------------------
+function formula(p) {
+  const pr = p.proj;
+  if (!pr) return "";
+  if (pr.bye) return `<p class="muted">Bye in week ${pr.week}.</p>`;
+  if (pr.base == null) return `<p class="muted">No games yet this season, so there's no baseline projection.</p>`;
+  const cls = (m) => (m > 1.0005 ? "up" : m < 0.9995 ? "down" : "");
+  return `<div class="formula">
+    <div class="term"><div class="k">Base</div><div class="v">${f1(pr.base)}</div></div><span class="op">×</span>
+    <div class="term ${cls(pr.mult_matchup)}" title="Defense vs ${esc(p.pos)} and Vegas implied total"><div class="k">Matchup</div><div class="v">${pr.mult_matchup.toFixed(2)}</div></div><span class="op">×</span>
+    <div class="term ${cls(pr.mult_injury)}"><div class="k">Injury</div><div class="v">${pr.mult_injury.toFixed(2)}</div></div><span class="op">=</span>
+    <div class="term"><div class="k">Wk ${pr.week}</div><div class="v">${f1(pr.value)}</div></div></div>
+    <p class="small muted" style="margin:8px 0 0">Base = ${Math.round(D.meta.recent_weight * 100)}% last-${D.meta.recent_weeks} average (${f1(p.recent)}) + ${Math.round((1 - D.meta.recent_weight) * 100)}% season average (${f1(p.avg)}).
+      ${pr.def_rank ? `${esc(pr.opp.replace(/^(vs|@) /, ""))} ranks ${pr.def_rank} of ${pr.def_teams} against ${esc(p.pos)}s (${pr.def_ratio}× league-average points allowed).` : ""}
+      ${pr.implied != null ? `Team implied total ${f1(pr.implied)} (week average ${f1(D.meta.implied_avg)}).` : ""}</p>`;
+}
+
+function modelNote(p) {
+  const m = p.model;
+  if (!m) return "";
+  return `<div class="model"><b>Your pipeline (week ${m.week}):</b> ${m.adj != null ? `model ${f1(m.adj)} pts` : ""}${m.sleeper_proj != null ? ` · Sleeper ${f1(m.sleeper_proj)}` : ""}${m.n_articles ? ` · news ${sgn(m.sentiment, 2)} (${m.n_articles} articles)` : ""}${m.weather ? ` · ${esc(m.weather)}` : ""}${m.notes && m.notes.length ? ` · ${esc(m.notes.join(", "))}` : ""}</div>`;
+}
+
+function pagePlayer() {
+  const p = S.player && byId.get(S.player);
+  view.innerHTML = `<div class="stack"><div class="row" id="ptop"></div><div id="pbody" class="stack" style="margin-top:0"></div></div>`;
+  $("#ptop").append(searchBox("Search any player…", (x) => { S.player = x.id; store.set("player", x.id); pagePlayer(); }, "player-search"));
+  const body = $("#pbody");
+  if (!p) {
+    const picks = D.players.filter((x) => x.mine).slice(0, 16);
+    const top = picks.length ? picks : ["QB", "RB", "WR", "TE"].flatMap((pos) => D.players.filter((x) => x.pos === pos && proj(x)).slice(0, 3));
+    body.innerHTML = `<div class="card"><h2>${picks.length ? "Your roster" : `Top projected for week ${nextW()}`}</h2><div class="row" style="margin-top:10px">
+      ${top.map((x) => `<button class="pill" data-pick="${esc(x.id)}">${esc(x.name)} <span class="muted">${esc(x.pos)}</span></button>`).join("")}</div></div>`;
+    body.querySelectorAll("[data-pick]").forEach((b) => b.addEventListener("click", () => { S.player = b.dataset.pick; store.set("player", S.player); pagePlayer(); }));
+    return;
+  }
+  const g = pts(p), sd = stdev(g);
+  const series = [{ label: p.name, color: "var(--series-1)", weeks: p.weeks }];
+  const keys = p.pos === "QB" ? [["pa", "Att"], ["py", "Pass yd"], ["ptd", "Pass TD"], ["int", "INT"], ["car", "Car"], ["ry", "Rush yd"], ["rtd", "Rush TD"]]
+    : p.pos === "K" ? [["fgm", "FGM"], ["fga", "FGA"], ["xpm", "XPM"]]
+    : [["car", "Car"], ["ry", "Rush yd"], ["rtd", "Rush TD"], ["tgt", "Tgt"], ["rec", "Rec"], ["recy", "Rec yd"], ["rectd", "Rec TD"]];
+  body.innerHTML = `<div class="card">
+      <div class="phead"><div><div class="pname">${esc(p.name)}</div>
+        <div class="row" style="margin-top:4px"><span class="pos-team">${esc(p.pos)} · ${esc(p.team)}</span>${injChip(p)}${mine(p)}</div></div>
+        <div class="projbox"><div class="lbl">Week ${nextW()} projection</div><div class="num">${proj(p) != null ? f1(proj(p)) : "–"}</div>
+          <div class="small muted">${p.proj && !p.proj.bye ? `${esc(p.proj.opp)} ${grade(p.proj.grade)} · ${posRank(p)}` : p.proj && p.proj.bye ? "Bye week" : ""}</div></div></div>
+      ${formula(p)}${modelNote(p)}
+      <div class="stats3">
+        <div class="stat"><div class="k">Season avg</div><div class="v">${f1(p.avg)}</div></div>
+        <div class="stat"><div class="k">Last ${D.meta.recent_weeks}</div><div class="v">${f1(p.recent)}</div></div>
+        ${usage(p).map(([k, v]) => `<div class="stat"><div class="k">${k}</div><div class="v">${k === "Tgt share" ? (v == null ? "–" : Math.round(v * 100) + "%") : f1(v)}</div></div>`).join("")}
+      </div>
+      <p class="small muted" style="margin:10px 0 0">${p.games} game${p.games === 1 ? "" : "s"} · ${f1(p.total)} total · range ${g.length ? f1(Math.min(...g)) + "–" + f1(Math.max(...g)) : "–"}${sd != null ? ` · week-to-week swing ±${f1(sd)}` : ""}</p>
+    </div>
+    <div class="card"><div class="row" style="justify-content:space-between"><h2>Weekly points</h2>
+      <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>Actual</span>${proj(p) ? `<span><span class="sw" style="background:transparent;border:2px dashed var(--turf)"></span>Week ${nextW()} projection</span>` : ""}</div></div>
+      <div class="chart" id="pchart">${weeklyChart(series, { projection: p.proj && !p.proj.bye ? p.proj : null })}</div></div>
+    <div class="card"><h2>Game log</h2><div class="tablewrap"><table><thead><tr><th>Wk</th><th>Opp</th><th class="num">Pts</th>${keys.map(([, l]) => `<th class="num">${l}</th>`).join("")}</tr></thead>
+      <tbody>${p.weeks.slice().reverse().map((w) => `<tr><td>W${w.w}</td><td>${esc(w.opp)}</td><td class="num"><b>${f1(w.pts)}</b></td>${keys.map(([k]) => `<td class="num">${w[k] ?? "–"}</td>`).join("")}</tr>`).join("")}</tbody></table></div></div>
+    ${p.model && p.model.articles && p.model.articles.length ? `<div class="card"><h2>Recent news</h2>${articles(p.model.articles)}</div>` : ""}
+    <div class="row"><button class="btn" id="cmpadd">Add to Compare</button><button class="btn primary" id="askabout">Ask about ${esc(p.name)}</button></div>`;
+  bindChart($("#pchart"), series, p.proj && !p.proj.bye ? p.proj : null);
+  $("#cmpadd").addEventListener("click", () => { const c = compareIds(); if (!c.includes(p.id)) c.push(p.id); S.compare = c.slice(-4); store.set("compare", S.compare); location.hash = "compare"; });
+  $("#askabout").addEventListener("click", () => { S.draft = `How do you see ${p.name} in week ${nextW()}? Start or sit?`; location.hash = "ask"; });
+}
+
+function articles(list) {
+  return `<ul class="arts">${list.map((a) => `<li><span class="chip ${a.score > 0.05 ? "good" : a.score < -0.05 ? "bad" : ""}">${sgn(a.score, 2)}</span>
+    ${/^https?:\/\//i.test(a.link || "") ? `<a href="${esc(a.link)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}
+    <span class="small muted">${esc(a.source || "")}</span></li>`).join("")}</ul>`;
+}
+
+// ---- Compare -------------------------------------------------------------------------------
+const COLORS = ["var(--series-1)", "var(--series-2)", "var(--series-3)", "var(--series-4)"];
+function compareIds() {
+  if (S.compare && S.compare.length) return S.compare.filter((id) => byId.has(id));
+  const mineSorted = D.players.filter((p) => p.mine && proj(p)).slice(0, 3);
+  const pool = mineSorted.length >= 2 ? mineSorted : D.players.filter((p) => p.pos === "WR" && proj(p)).slice(0, 3);
+  return pool.map((p) => p.id);
+}
+
+function pageCompare() {
+  const ids = compareIds(), ps = ids.map((id) => byId.get(id));
+  const example = !(S.compare && S.compare.length);
+  view.innerHTML = `<div class="stack"><div class="row" id="ctop"></div><div id="cbody" class="stack" style="margin-top:0"></div></div>`;
+  $("#ctop").append(searchBox(ps.length >= 4 ? "Remove a player to add another" : "Add a player to compare…", (x) => {
+    const c = compareIds().filter((id) => id !== x.id); c.push(x.id); S.compare = c.slice(-4); store.set("compare", S.compare); pageCompare();
+  }, "compare-search"));
+  if (!ps.length) { $("#cbody").innerHTML = `<div class="card empty">Add two to four players to compare them side by side.</div>`; return; }
+  const rows = [
+    ["Week " + nextW() + " projection", (p) => proj(p), true, (v) => f1(v)],
+    ["Position rank", (p) => (p.proj && p.proj.pos_rank) || null, false, (v, p) => (v ? posRank(p) : "–")],
+    ["Matchup", (p) => (p.proj && p.proj.mult_matchup) || null, true, (v, p) => (p.proj && p.proj.bye ? "BYE" : p.proj ? `${esc(p.proj.opp)} ${grade(p.proj.grade)}` : "–")],
+    ["Team implied total", (p) => (p.proj && p.proj.implied) || null, true, (v) => f1(v)],
+    ["Last " + D.meta.recent_weeks + " avg", (p) => p.recent, true, (v) => f1(v)],
+    ["Season avg", (p) => p.avg, true, (v) => f1(v)],
+    ["Floor (worst game)", (p) => (pts(p).length ? Math.min(...pts(p)) : null), true, (v) => f1(v)],
+    ["Ceiling (best game)", (p) => (pts(p).length ? Math.max(...pts(p)) : null), true, (v) => f1(v)],
+    ["Week-to-week swing", (p) => stdev(pts(p)), false, (v) => (v == null ? "–" : "±" + f1(v))],
+    ["Usage", (p) => null, null, (v, p) => usage(p).map(([k, u]) => `${k} ${k === "Tgt share" ? (u == null ? "–" : Math.round(u * 100) + "%") : f1(u)}`).join("<br>")],
+    ["Status", (p) => null, null, (v, p) => injChip(p) || '<span class="muted">No report</span>'],
+    ["Your pipeline", (p) => (p.model && p.model.adj) || null, true, (v, p) => (p.model ? `${f1(v)}${p.model.n_articles ? ` · news ${sgn(p.model.sentiment, 2)}` : ""}` : "–")],
+  ].filter(([label]) => label !== "Your pipeline" || ps.some((p) => p.model));
+  const best = (fn, higher) => { const vs = ps.map(fn).filter((v) => v != null); return vs.length > 1 ? (higher ? Math.max(...vs) : Math.min(...vs)) : null; };
+  const series = ps.map((p, i) => ({ label: p.name, color: COLORS[i], weeks: p.weeks }));
+  $("#cbody").innerHTML = `${example ? `<div class="banner">Example comparison${D.players.some((p) => p.mine) ? " from your roster" : " of top-projected WRs"}. Search above to add your own players.</div>` : ""}
+    <div class="card"><div class="tablewrap"><table class="cmp"><thead><tr><th></th>${ps.map((p, i) => `<th class="num pl"><span class="sw" style="background:${COLORS[i]}"></span>${esc(p.name)} <span class="muted small">${esc(p.pos)} · ${esc(p.team)}</span> <button class="x" data-rm="${esc(p.id)}" aria-label="Remove ${esc(p.name)}">×</button></th>`).join("")}</tr></thead>
+      <tbody>${rows.map(([label, fn, higher, fmt]) => { const b = higher == null ? null : best(fn, higher);
+        return `<tr><th>${label}</th>${ps.map((p) => { const v = fn(p); return `<td class="num ${b != null && v === b ? "best" : ""}">${fmt(v, p)}</td>`; }).join("")}</tr>`; }).join("")}</tbody></table></div>
+      <p class="small muted" style="margin:10px 0 0">Green marks the best value in each row. Projections are the baseline model for week ${nextW()}.</p></div>
+    <div class="card"><div class="row" style="justify-content:space-between"><h2>Weekly points</h2>
+      <div class="legend">${series.map((s) => `<span><span class="sw line" style="background:${s.color}"></span>${esc(s.label)}</span>`).join("")}</div></div>
+      <div class="chart" id="cchart">${weeklyChart(series)}</div></div>
+    <div class="card" id="verdict"><div class="row" style="justify-content:space-between"><h2>Who should I start?</h2>
+      <button class="btn primary" id="ask-verdict">Ask Claude</button></div><div id="verdict-out" class="small muted" style="margin-top:8px">Claude reads the numbers above and gives a start/sit call with reasons.</div></div>`;
+  view.querySelectorAll("[data-rm]").forEach((b) => b.addEventListener("click", () => { S.compare = compareIds().filter((id) => id !== b.dataset.rm); store.set("compare", S.compare); pageCompare(); }));
+  bindChart($("#cchart"), series, null);
+  $("#ask-verdict").addEventListener("click", () => verdict(ps));
+}
+
+// ---- News ----------------------------------------------------------------------------------
+function pageNews() {
+  const run = D.meta.model_run;
+  const withNews = D.players.filter((p) => p.model && p.model.n_articles);
+  if (!run || !run.news || !withNews.length) {
+    view.innerHTML = `<div class="stack"><div class="card empty"><h2>No news in this data yet</h2>
+      <p>News sentiment comes from your pipeline runs, which read Google News and NFL feeds for your roster and top waiver targets.
+      Run <span class="mono">python -m ffa --username …</span> on your laptop, then refresh Scout so the run is included.</p>
+      <p class="small">${run ? `The latest run included here (week ${run.week}) skipped news.` : "No pipeline run is included in this data file."}</p></div></div>`;
+    return;
+  }
+  const list = withNews.filter((p) => !S.newsMine || p.mine).sort((a, b) => Math.abs(b.model.sentiment) - Math.abs(a.model.sentiment));
+  view.innerHTML = `<div class="stack"><div class="row"><button class="pill ${S.newsMine ? "on" : ""}" data-n="1">My roster</button><button class="pill ${S.newsMine ? "" : "on"}" data-n="0">Everyone scored</button>
+    <span class="small muted">From your run on ${esc(new Date(run.generated_at).toLocaleString([], { weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }))}</span></div>
+    <div class="card">${list.length ? list.map((p) => { const s = p.model.sentiment || 0, w = Math.min(Math.abs(s), 1) * 35;
+      return `<div class="newsrow"><div class="row" style="justify-content:space-between"><span><b>${esc(p.name)}</b> <span class="muted small">${esc(p.pos)} · ${esc(p.team)}</span> ${mine(p)}</span>
+        <span class="row"><span class="sbar"><i style="${s >= 0 ? `left:50%;width:${w}px;background:var(--good)` : `left:${35 - w}px;width:${w}px;background:var(--bad)`}"></i></span><b>${sgn(s, 2)}</b>
+        <span class="small muted">×${(p.model.mult_sentiment || 1).toFixed(2)}</span></span></div>${articles(p.model.articles || [])}</div>`; }).join("")
+      : `<p class="empty">No scored articles for your roster in this run.</p>`}</div>
+    <p class="small muted">Sentiment runs from −1 to +1, weighted toward recent articles. The pipeline turns it into a small multiplier on projected points.</p></div>`;
+  view.querySelectorAll("[data-n]").forEach((b) => b.addEventListener("click", () => { S.newsMine = b.dataset.n === "1"; pageNews(); }));
+}
+
+// ---- Ask (chat with page tools) ---------------------------------------------------------
+let samplePromise = null;
+const getSample = () => (samplePromise ||= (window.claude && window.claude.use ? window.claude.use("sample") : Promise.resolve(null)));
+
+const brief = (p) => p && { id: p.id, name: p.name, pos: p.pos, team: p.team, week_proj: proj(p), pos_rank: p.proj?.pos_rank ?? null,
+  opp: p.proj?.opp ?? null, matchup_grade: p.proj?.grade ?? null, season_avg: p.avg, last3_avg: p.recent, games: p.games,
+  injury: p.injury?.status || null, practice: p.injury?.practice || null, on_my_roster: !!p.mine };
+const detail = (p) => p && { ...brief(p), weekly: p.weeks.map((w) => ({ week: w.w, opp: w.opp, pts: w.pts, tgt: w.tgt, car: w.car, tshare: w.tshare })),
+  projection: p.proj, usage: Object.fromEntries(usage(p).map(([k, v]) => [k, v == null ? null : +v.toFixed(2)])),
+  my_pipeline: p.model ? { week: p.model.week, model_pts: p.model.adj, sleeper_proj: p.model.sleeper_proj, news_sentiment: p.model.sentiment,
+    headlines: (p.model.articles || []).slice(0, 4).map((a) => a.title) } : null };
+
+const TOOLS = [
+  { name: "search_players", description: "Find players by (partial) name. Returns up to 8 matches with id, team, position, next-week projection and rank. Use it to resolve names before other tools.",
+    inputSchema: { type: "object", properties: { query: { type: "string" }, position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K"] } }, required: ["query"] },
+    execute: ({ query, position }) => findPlayers(String(query), { pos: position ? String(position) : null, limit: 8 }).map(brief) },
+  { name: "get_player", description: "Full data for one player (id or exact-ish name): weekly points and usage, next-week projection with its components, injury report, and the user's pipeline view and headlines when available.",
+    inputSchema: { type: "object", properties: { player: { type: "string" } }, required: ["player"] },
+    execute: ({ player }) => { const p = resolve(player); if (!p) throw new Error(`No player matches "${player}"`); return detail(p); } },
+  { name: "top_players", description: "Rank players at a position by next-week projection ('proj'), last-3 average ('recent') or season average ('avg'). Optionally only the user's roster.",
+    inputSchema: { type: "object", properties: { position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K", "ALL"] }, sort: { type: "string", enum: ["proj", "recent", "avg"] },
+      limit: { type: "integer" }, my_roster_only: { type: "boolean" } } },
+    execute: ({ position = "ALL", sort = "proj", limit = 10, my_roster_only = false }) => {
+      const key = { proj: proj, recent: (p) => p.recent, avg: (p) => p.avg }[String(sort)] || proj;
+      return D.players.filter((p) => (position === "ALL" || p.pos === position) && (!my_roster_only || p.mine) && key(p) != null)
+        .sort((a, b) => key(b) - key(a)).slice(0, Math.min(25, Number(limit) || 10)).map(brief); } },
+  { name: "team_info", description: "A team's next opponent, Vegas implied total and game total, bye weeks, and its top fantasy players.",
+    inputSchema: { type: "object", properties: { team: { type: "string", description: "nflverse code, e.g. KC, LA, LV, JAX" } }, required: ["team"] },
+    execute: ({ team }) => { const t = String(team).toUpperCase(); const info = D.teams[t]; if (!info) throw new Error(`Unknown team ${t}`);
+      return { team: t, ...info, players: D.players.filter((p) => p.team === t).slice(0, 8).map(brief) }; } },
+];
+
+function rules() {
+  const m = D.meta, my = D.players.filter((p) => p.mine).map((p) => `${p.name} (${p.pos}, ${p.team})`);
+  return `You are the fantasy football assistant inside "Brendobendo Scout", for the manager of team Brendobendo (Sleeper league, ${m.ppr} PPR).
+Data: nflverse stats for the ${m.season} season through week ${m.through_week}; projections are for week ${m.next_week}. Data file built ${m.generated_at}.
+Projection = baseline: ${Math.round(m.recent_weight * 100)}% last-${m.recent_weeks} avg + ${Math.round((1 - m.recent_weight) * 100)}% season avg, times a matchup factor (defense vs position and Vegas implied total) and an injury factor. It's simple and not calibrated; say so when it matters.
+${my.length ? `User's roster (from their last pipeline run, week ${m.model_run.week}): ${my.join("; ")}.` : "The user's roster isn't in this data."}
+Use the tools to look players up; never guess stats. You can't browse: for news, trades or injuries after the data date, say what the data shows and what to check. Lead with the answer (a clear start/sit or ranking), then 2-4 short reasons with numbers. Be concise. Use plain text with short "-" bullets; no tables.`;
+}
+
+function md(text) {  // tiny, safe markdown: paragraphs, "-" bullets, **bold**
+  const blocks = esc(text).split(/\n{2,}/);
+  return blocks.map((b) => {
+    const lines = b.split("\n");
+    const bold = (s) => s.replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+    if (lines.every((l) => /^\s*[-*•] /.test(l))) return `<ul>${lines.map((l) => `<li>${bold(l.replace(/^\s*[-*•] /, ""))}</li>`).join("")}</ul>`;
+    return `<p>${lines.map(bold).join("<br>")}</p>`;
+  }).join("");
+}
+
+const ERR = { not_granted: "Claude access was declined for this page.", sampling_disabled: "Claude isn't available for this account.",
+  rate_limited: "Too many questions at once. Try again in a minute.", session_expired: "Sign in to Claude again, then retry.",
+  refused: "Claude declined that question. Try rephrasing it.", tools_unavailable: "This viewer can't let Claude look up players.",
+  prompt_too_large: "The conversation got too long. Clear it and ask again." };
+
+let ctl = null;
+async function pageAsk() {
+  const sample = await getSample();
+  if (location.hash.replace("#", "") !== "ask") return;
+  const suggestions = [`Who are the top 5 WRs for week ${nextW()}?`, "Which of my players are trending up over the last 3 weeks?",
+    `Which RBs have the easiest matchups in week ${nextW()}?`, "Who should I start at FLEX this week?"];
+  view.innerHTML = `<div class="stack"><div class="card">
+      <div class="chat" id="chat"></div>
+      ${sample ? `<form class="composer" id="composer"><textarea id="ask-input" rows="2" placeholder="Ask about a player, a matchup, start/sit…"></textarea>
+        <button class="btn primary" id="send" type="submit">Send</button><button class="btn" id="stop" type="button" hidden>Stop</button></form>
+        <div class="suggest">${suggestions.map((s) => `<button class="pill" type="button" data-s="${esc(s)}">${esc(s)}</button>`).join("")}</div>`
+      : `<p class="banner">Ask needs Claude, which isn't available in this view. Open the page in Claude while signed in.</p>`}
+    </div><div class="row" style="justify-content:space-between"><span class="small muted">Answers use this page's data (through week ${D.meta.through_week}) and your own Claude usage.</span>
+      <button class="btn" id="clear" type="button">Clear chat</button></div></div>`;
+  const chat = $("#chat");
+  const paint = () => {
+    chat.innerHTML = S.turns.length ? S.turns.map((t) => `<div class="msg ${t.role === "user" ? "user" : "bot"}">${t.role === "user" ? esc(t.content) : md(t.content)}</div>`).join("")
+      : `<div class="empty">Ask anything about players in the data: projections, matchups, recent form, start/sit calls.</div>`;
+  };
+  paint();
+  $("#clear").addEventListener("click", () => { ctl?.abort(); S.turns = []; store.set("turns", []); paint(); });
+  if (!sample) return;
+  const input = $("#ask-input");
+  if (S.draft) { input.value = S.draft; S.draft = null; input.focus(); }
+  view.querySelectorAll("[data-s]").forEach((b) => b.addEventListener("click", () => { input.value = b.dataset.s; $("#composer").requestSubmit(); }));
+  input.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); $("#composer").requestSubmit(); } });
+  $("#stop").addEventListener("click", () => ctl?.abort());
+  $("#composer").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const q = input.value.trim();
+    if (!q || ctl) return;
+    input.value = "";
+    S.turns.push({ role: "user", content: q });
+    paint();
+    const bubble = document.createElement("div");
+    bubble.className = "msg bot";
+    bubble.innerHTML = `<span class="muted">Thinking…</span>`;
+    chat.append(bubble);
+    $("#send").disabled = true; $("#stop").hidden = false;
+    ctl = new AbortController();
+    const looked = [];
+    const tools = TOOLS.map((t) => ({ ...t, execute: (inp, c) => { looked.push(t.name === "get_player" ? String(inp.player) : t.name.replace("_", " ")); bubble.innerHTML = `<span class="muted">Looking up ${esc(looked.slice(-3).join(", "))}…</span>`; return t.execute(inp, c); } }));
+    try {
+      const turns = S.turns.slice(-12);
+      const { text, truncated } = await sample([{ role: "user", content: rules() }, ...turns], {
+        tools, signal: ctl.signal, onText: ({ text }) => { bubble.innerHTML = md(text); chat.lastElementChild?.scrollIntoView({ block: "nearest" }); } });
+      S.turns.push({ role: "assistant", content: text + (truncated ? "\n\n(Answer cut short.)" : "") });
+      store.set("turns", S.turns.slice(-30));
+      paint();
+    } catch (err) {
+      if (err.code !== "cancelled") {
+        bubble.innerHTML = (err.text ? md(err.text) : "") + `<div class="meta">${esc(ERR[err.code] || "Something went wrong reaching Claude. Try again.")}</div>`;
+      } else bubble.innerHTML = err.text ? md(err.text) : `<span class="muted">Stopped.</span>`;
+      if (err.text) { S.turns.push({ role: "assistant", content: err.text }); store.set("turns", S.turns.slice(-30)); }
+    } finally {
+      ctl = null; $("#send") && ($("#send").disabled = false); $("#stop") && ($("#stop").hidden = true);
+    }
+  });
+}
+
+async function verdict(ps) {
+  const out = $("#verdict-out"), btn = $("#ask-verdict");
+  const sample = await getSample();
+  if (!sample) { out.textContent = "Claude isn't available in this view."; return; }
+  btn.disabled = true; out.className = "small"; out.innerHTML = `<span class="muted">Thinking…</span>`;
+  const prompt = `${rules()}
+
+Compare these players for week ${nextW()} and say who to start (rank them if more than two). Lead with the call, then 2-3 bullets of reasons with numbers, and one line on risk.
+
+${JSON.stringify(ps.map(detail))}`;
+  try {
+    await sample(prompt, { onText: ({ text }) => { out.innerHTML = md(text); }, cache: { gcTime: 30 * 60 * 1000 } });
+  } catch (err) { out.innerHTML = (err.text ? md(err.text) : "") + `<div class="muted">${esc(ERR[err.code] || "Couldn't reach Claude. Try again.")}</div>`; }
+  finally { btn.disabled = false; }
+}
+
+// ---- shell -----------------------------------------------------------------------------------
+function route() {
+  const t = ["player", "compare", "news", "ask"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "player";
+  document.querySelectorAll("#tabs a").forEach((a) => (a.dataset.t === t ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));
+  $("#tip").hidden = true;
+  if (t !== "ask") ctl?.abort();
+  ({ player: pagePlayer, compare: pageCompare, news: pageNews, ask: pageAsk })[t]();
+  store.set("tab", t);
+}
+
+(async function init() {
+  try {
+    const r = await fetch("data.json", { cache: "no-store" });
+    if (!r.ok) throw new Error(`data.json returned ${r.status}`);
+    D = await r.json();
+  } catch (e) {
+    $("#fresh").textContent = "";
+    view.innerHTML = `<div class="card empty" style="margin-top:16px"><h2>Player data didn't load</h2><p>${esc(e.message)}. Republish Scout with its data file.</p></div>`;
+    return;
+  }
+  D.players.forEach((p) => byId.set(p.id, p));
+  const m = D.meta, built = new Date(m.generated_at);
+  $("#fresh").textContent = `Stats through week ${m.through_week} · week ${m.next_week} projections · updated ${built.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}${m.model_run ? " · includes your pipeline run" : ""}`;
+  const saved = store.get("tab", "player");
+  if (!location.hash && saved !== "player") { location.hash = saved; return; }   // hashchange renders it
+  route();
+})();
+window.addEventListener("hashchange", route);
+</script>
