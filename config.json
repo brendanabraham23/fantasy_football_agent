@@ -54,6 +54,8 @@
 
   "archive_dir": "archive",
 
+  "export": {"pool_rows": 150, "whatif_top": 40},
+
   "hosting": {"data_branch": "data", "workflow": "predict.yml", "sync_minutes": 5},
 
   "calibration": {"min_proj": 3, "buckets": 5},
