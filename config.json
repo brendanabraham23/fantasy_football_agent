@@ -1,0 +1,66 @@
+{
+  "username": "",
+  "team_name": "Brendobendo",
+  "league_id": null,
+
+  "weights": {"projection": 0.7, "recent_form": 0.3},
+  "recent_weeks": 3,
+  "defense_lookback_weeks": null,
+
+  "matchup_weight": 0.5,
+  "vegas_weight": 0.5,
+  "matchup_clip": [0.8, 1.2],
+  "sentiment_weight": 0.08,
+
+  "injury_multipliers": {
+    "Questionable": 0.85, "Doubtful": 0.25, "Out": 0.0, "IR": 0.0,
+    "PUP": 0.0, "Sus": 0.0, "COV": 0.0, "NA": 1.0
+  },
+
+  "news": {
+    "enabled": true,
+    "lookback_days": 7,
+    "half_life_days": 3,
+    "shrinkage": 3,
+    "max_articles_per_player": 15,
+    "workers": 4,
+    "generic_feeds": [
+      "https://www.espn.com/espn/rss/nfl/news",
+      "https://www.cbssports.com/rss/headlines/nfl/",
+      "https://profootballtalk.nbcsports.com/feed/",
+      "https://sports.yahoo.com/nfl/rss/"
+    ]
+  },
+
+  "weather": {"enabled": true},
+
+  "waivers": {
+    "pool_per_position": 10,
+    "news_for_top": 12,
+    "min_weekly_gain": 1.5,
+    "min_ros_gain": 2.0,
+    "max_bid_pct": 0.35,
+    "bid_horizon_weeks": 4,
+    "bid_half_value": 30,
+    "bid_demand_base": 0.5,
+    "bid_competition_weight": 1.0,
+    "bid_trend_weight": 0.15,
+    "bid_cap_pct": 0.5,
+    "season_weeks": 17,
+    "show": 10
+  },
+
+  "eval": {"max_adds": 3},
+
+  "archive_dir": "archive",
+
+  "calibration": {"min_proj": 3, "buckets": 5},
+
+  "scout": {"ppr": 1.0, "recent_weight": 0.6, "max_articles": 6,
+            "dst_scoring": {"sack": 1, "int": 2, "fum_rec": 2, "td": 6, "safety": 2, "blk_kick": 2,
+                            "points_allowed": [[0, 10], [6, 7], [13, 4], [20, 1], [27, 0], [34, -1], [999, -4]]}},
+
+  "ui": {"host": "127.0.0.1", "port": 8000, "live_ttl_minutes": 15, "stale_hours": 24,
+         "search_limit": 15, "pool_page_size": 50, "live_refresh_seconds": 60,
+         "game_minutes": 195, "final_after_minutes": 225, "player_sd_ratio": 0.5}
+}
