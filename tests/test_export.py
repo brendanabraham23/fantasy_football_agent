@@ -42,3 +42,15 @@ def test_export_records_missing_sections_instead_of_failing(fake_world, tmp_path
     d = export.build("brendan", "Brendobendo", None, None, pipeline.load_config(), tmp_path)
     assert d["summary"] is None and "/api/summary" in d["errors"]
     assert d["matchup"] is not None   # live sections still export without a pipeline run
+
+
+def test_scout_id_falls_back_to_name_and_position(tmp_path):
+    (tmp_path / "scout").mkdir()
+    (tmp_path / "scout" / "data.json").write_text(json.dumps({"players": [
+        {"id": "00-0099", "name": "Bucky Irving", "pos": "RB"}, {"id": "00-0100", "name": "Jalen Coker", "pos": "WR"}]}))
+    by_name = export.scout_names(tmp_path / "scout" / "data.json")
+    assert export.scout_id("11584", {"full_name": "Bucky Irving", "position": "RB"}, by_name) == "00-0099"
+    assert export.scout_id("x", {"first_name": "Jalen", "last_name": "Coker", "position": "WR"}, by_name) == "00-0100"
+    assert export.scout_id("x", {"full_name": "Jalen Coker", "position": "TE"}, by_name) is None   # position must match
+    assert export.scout_id("3163", {"full_name": "Jared Goff", "position": "QB", "gsis_id": " 00-0033106"}, by_name) == "00-0033106"
+    assert export.scout_names(tmp_path / "missing.json") == {}
