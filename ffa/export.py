@@ -13,14 +13,28 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import server, sleeper
+from .scout import norm_name
 
 
-def scout_id(pid: str, p: dict) -> str | None:
-    """The Scout data.json id for a Sleeper player: nflverse gsis id, or DEF-<team> for a D/ST."""
+def scout_names(path: Path) -> dict[tuple[str, str], str]:
+    """(normalized name, position) -> Scout id, from an existing Scout data.json (empty if there is none)."""
+    try:
+        players = json.loads(path.read_text())["players"]
+    except (OSError, ValueError, KeyError):
+        return {}
+    return {(norm_name(p["name"]), p["pos"]): p["id"] for p in players if p.get("pos") != "DEF"}
+
+
+def scout_id(pid: str, p: dict, by_name: dict[tuple[str, str], str] | None = None) -> str | None:
+    """The Scout data.json id for a Sleeper player: DEF-<team> for a D/ST, else the nflverse gsis id, else a
+    name + position match against Scout's data (Sleeper leaves gsis_id blank for many players)."""
     if p.get("position") == "DEF":
         team = sleeper.norm_team(p.get("team") or pid)
         return f"DEF-{team}" if team else None
-    return p.get("gsis_id") or None
+    if p.get("gsis_id"):
+        return str(p["gsis_id"]).strip()
+    name = p.get("full_name") or f"{p.get('first_name', '')} {p.get('last_name', '')}".strip()
+    return (by_name or {}).get((norm_name(name), p.get("position"))) if name else None
 
 
 def build(username: str, team_name: str, league_id: str | None, week: int | None, cfg: dict,
@@ -60,9 +74,9 @@ def build(username: str, team_name: str, league_id: str | None, week: int | None
     players = {pid: d for pid in dict.fromkeys(ids) if (d := get(f"/api/players/{pid}"))}
 
     try:
-        sp = sleeper.all_players()
+        sp, by_name = sleeper.all_players(), scout_names(Path(reports_dir) / "scout" / "data.json")
         scout_ids = {pid: sid for pid in set(players) | {r["player_id"] for r in pool_rows}
-                     if (sid := scout_id(pid, sp.get(pid) or {}))}
+                     if (sid := scout_id(pid, sp.get(pid) or {}, by_name))}
     except Exception as exc:
         print(f"[warn] player id map unavailable ({exc})")
         scout_ids = {}
