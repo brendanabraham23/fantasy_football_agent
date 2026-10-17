@@ -1,0 +1,84 @@
+# Runs the weekly pipeline and commits reports/ to the `data` branch, which the hosted UI reads.
+# Schedule from docs/eval-loop-design.md §4.10 (UTC). Scheduled runs only fire from the repo's default branch.
+# Repository variables: SLEEPER_USERNAME (required), SLEEPER_LEAGUE_ID (optional).
+name: predict
+
+on:
+  schedule:
+    - cron: "30 22 * * 4"   # Thu, before TNF
+    - cron: "45 15 * * 0"   # Sun morning (EDT/EST cover)
+    - cron: "45 16 * * 0"   # Sun, after inactives, before 1 p.m. ET kickoffs
+    - cron: "30 19 * * 0"   # Sun, before late games
+    - cron: "0 22 * * 1"    # Mon, before MNF
+  workflow_dispatch:
+    inputs:
+      news:
+        description: News & sentiment
+        type: boolean
+        default: true
+      weather:
+        description: Weather
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: predict
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ffa
+          key: ffa-http-${{ github.run_id }}
+          restore-keys: ffa-http-
+
+      - name: Check out the data branch
+        env:
+          URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: |
+          if git ls-remote --exit-code --heads "$URL" data >/dev/null; then
+            git clone -q --depth 1 --branch data "$URL" data
+          else
+            mkdir data && git -C data init -q -b data && git -C data remote add origin "$URL"
+            printf '# Generated reports\n\nWritten by the predict workflow; read by the hosted UI. Do not edit.\n' > data/README.md
+          fi
+
+      - name: Run pipeline
+        env:
+          SLEEPER_USERNAME: ${{ vars.SLEEPER_USERNAME }}
+          SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
+          NEWS: ${{ github.event_name != 'workflow_dispatch' || inputs.news }}
+          WEATHER: ${{ github.event_name != 'workflow_dispatch' || inputs.weather }}
+        run: |
+          test -n "$SLEEPER_USERNAME" || { echo "::error::Set the SLEEPER_USERNAME repository variable"; exit 1; }
+          args=(--username "$SLEEPER_USERNAME" --out data/reports)
+          [ -n "$SLEEPER_LEAGUE_ID" ] && args+=(--league-id "$SLEEPER_LEAGUE_ID")
+          [ "$NEWS" = "true" ] || args+=(--no-news)
+          [ "$WEATHER" = "true" ] || args+=(--no-weather)
+          python -m ffa "${args[@]}"
+
+      - name: Commit to the data branch
+        working-directory: data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && { echo "No changes"; exit 0; }
+          git commit -qm "Pipeline run $(date -u +%Y-%m-%dT%H:%MZ) (${{ github.event_name }})"
+          git push -q origin HEAD:data

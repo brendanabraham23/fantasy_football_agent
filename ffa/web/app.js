@@ -894,6 +894,10 @@ window.addEventListener("hashchange", route);
 (async function init() {
   view.innerHTML = skeleton(8);
   try { S.cfg = await api("/api/config"); } catch { /* optional */ }
+  if (S.cfg.hosted) {
+    $(".run-group").hidden = !S.cfg.can_run;
+    $("#run-menu .muted").textContent = "Runs on GitHub Actions and take a few minutes. Skipping news is faster.";
+  }
   await Promise.all([loadSummary(), loadRuns()]);
   route();
   try {

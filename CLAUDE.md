@@ -42,6 +42,7 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `calibration.py` | Sleeper projection vs. recent/season-average/blend predictors against actual points: bias, MAE, RMSE, Spearman, slope, buckets, best blend weight. |
 | `scout.py` | Data file for the Scout artifact: per-player weekly log, usage, next matchup, injuries, baseline projection, merged pipeline view. nflverse only. |
 | `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |
+| `hosting.py` | Hosted mode (`FFA_DATA_REPO` set): shallow clone of the `data` branch synced every `hosting.sync_minutes`; Run pipeline dispatches `predict.yml` via the GitHub API. |
 | `server.py` | FastAPI app: background run job, `/api/*` (summary, matchup, live roster sync, players, waivers pool/what-if, news, archived runs/compare), serves `ffa/web/`. |
 | `web/` | Vanilla JS SPA (hash routing, inline-SVG chart). No build step; edit `app.js`/`style.css` directly. |
 
@@ -62,6 +63,18 @@ don't hardcode new constants in modules — add a config key and read it from `c
 Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live data to that run's week
 (`server.Live(as_of=True)`), so nothing after it is shown. Keep new live endpoints `run`-aware. Server tests use FastAPI's `TestClient` over `fake_world`
 (`tests/conftest.py`); the run job is a thread, so tests join `app.state.job.thread`.
+
+## Hosting (Hugging Face Space + `data` branch)
+
+- `.github/workflows/predict.yml` runs the pipeline on the §4.10 schedule (and on dispatch) and commits
+  `reports/` to the `data` branch. Needs repo variable `SLEEPER_USERNAME` (optional `SLEEPER_LEAGUE_ID`).
+  Scheduled runs only fire from the default branch.
+- `.github/workflows/deploy-space.yml` pushes `ffa/`, `config.json`, `requirements.txt` and the `Dockerfile` to the
+  Space in repo variable `HF_SPACE`, using secret `HF_TOKEN`.
+- Space settings: variables `SLEEPER_USERNAME`, `FFA_DATA_REPO=owner/repo`, optional `FFA_WORKFLOW_REF`;
+  secrets `FFA_GITHUB_TOKEN` (fine-grained, Actions read/write on this repo; without it the UI is read-only)
+  and `FFA_PASSWORD` (HTTP Basic auth, any username).
+- The Space's disk is ephemeral: never write anything there that must survive a restart.
 
 ## Scout artifact (phone-friendly, claude.ai)
 
