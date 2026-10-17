@@ -82,6 +82,31 @@ def scout_main(argv) -> int:
     return 0
 
 
+def export_main(argv) -> int:
+    ap = argparse.ArgumentParser(prog="python -m ffa export",
+                                 description="Export what the web UI shows to one JSON file (for the Scout artifact)")
+    ap.add_argument("--username")
+    ap.add_argument("--team-name")
+    ap.add_argument("--league-id")
+    ap.add_argument("--week", type=int, help="Defaults to the current NFL week")
+    ap.add_argument("--config")
+    ap.add_argument("--reports", default="reports", help="Folder holding latest_run.json and the archive")
+    ap.add_argument("--out", default="reports/league.json")
+    args = ap.parse_args(argv)
+    cfg = pipeline.load_config(args.config)
+    username = args.username or cfg.get("username")
+    if not username:
+        ap.error("--username is required (or set 'username' in config.json)")
+    from . import export  # fastapi/httpx only needed here and for the UI
+    out = export.run(username, args.team_name or cfg.get("team_name", ""), args.league_id or cfg.get("league_id"),
+                     args.week, cfg, args.out, args.reports)
+    data = json.loads(out.read_text())
+    m = data["meta"]
+    print(f"Saved {out}: week {m['week']}, {len(data['players'])} player pages, {m['pool_rows']} waiver rows, "
+          f"{m['whatif_players']} what-ifs" + (f", {len(data['errors'])} errors" if data["errors"] else ""))
+    return 0
+
+
 def ui_main(argv) -> int:
     ap = argparse.ArgumentParser(prog="python -m ffa ui", description="Local web UI for the analyzer")
     ap.add_argument("--username")
@@ -113,6 +138,8 @@ def main(argv=None) -> int:
         return calibrate_main(argv[1:])
     if argv and argv[0] == "scout-data":
         return scout_main(argv[1:])
+    if argv and argv[0] == "export":
+        return export_main(argv[1:])
     ap = argparse.ArgumentParser(description="Weekly Sleeper start/sit and waiver analyzer")
     ap.add_argument("--username", help="Sleeper username (or set in config.json)")
     ap.add_argument("--team-name", help="Team name to analyze (default from config: Brendobendo)")

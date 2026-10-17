@@ -176,6 +176,7 @@ const store = { get(k, d) { try { const v = localStorage.getItem("scout:" + k); 
                 set(k, v) { try { localStorage.setItem("scout:" + k, JSON.stringify(v)); } catch { /* storage off */ } } };
 
 let D = null, byId = new Map();
+let L = null;   // league.json: what the web app shows (matchup, roster, waivers, runs), exported with each data refresh
 const S = { player: store.get("player", null), compare: store.get("compare", null), pos: "ALL", turns: store.get("turns", []), newsMine: true };
 
 // ---- data helpers ----------------------------------------------------------------
@@ -610,8 +611,18 @@ function route() {
     return;
   }
   D.players.forEach((p) => byId.set(p.id, p));
-  const m = D.meta, built = new Date(m.generated_at);
-  $("#fresh").textContent = `Stats through week ${m.through_week} · week ${m.next_week} projections · updated ${built.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" })}${m.model_run ? " · includes your pipeline run" : ""}`;
+  try {
+    const r = await fetch("league.json", { cache: "no-store" });
+    if (r.ok) L = await r.json();
+  } catch { /* published without league data: player tools still work */ }
+  if (L && L.roster && L.scout_ids) {   // your live Sleeper roster decides "mine", not the last pipeline run
+    const mine = new Set([...(L.roster.players || [])].map((pid) => L.scout_ids[pid]).filter(Boolean));
+    D.players.forEach((p) => { if (mine.has(p.id)) p.mine = true; else delete p.mine; });
+  }
+  const m = D.meta, when = (iso) => new Date(iso).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
+  $("#fresh").textContent = `Stats through week ${m.through_week} · week ${m.next_week} projections`
+    + (L ? ` · league data ${when(L.meta.exported_at)}` : ` · updated ${when(m.generated_at)}`)
+    + (m.model_run ? " · includes your pipeline run" : "");
   const saved = store.get("tab", "player");
   if (!location.hash && saved !== "player") { location.hash = saved; return; }   // hashchange renders it
   route();
