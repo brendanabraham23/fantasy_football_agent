@@ -1,17 +1,28 @@
-# Runs the weekly pipeline and commits reports/ to the `data` branch, which the hosted UI reads.
-# Schedule from docs/eval-loop-design.md §4.10 (UTC). Scheduled runs only fire from the repo's default branch.
+# Runs the weekly pipeline and/or refreshes the data exports, and commits reports/ to the `data` branch.
+# Readers: the hosted UI (reports/), and Scout (reports/scout/data.json + reports/league.json).
+# Pipeline schedule from docs/eval-loop-design.md §4.10 (UTC); the other entries only re-export live data
+# (scores, rosters, injuries). Scheduled runs only fire from the repo's default branch.
 # Repository variables: SLEEPER_USERNAME (required), SLEEPER_LEAGUE_ID (optional).
 name: predict
 
 on:
   schedule:
+    # full pipeline runs (keep in sync with FULL below)
     - cron: "30 22 * * 4"   # Thu, before TNF
     - cron: "45 15 * * 0"   # Sun morning (EDT/EST cover)
     - cron: "45 16 * * 0"   # Sun, after inactives, before 1 p.m. ET kickoffs
     - cron: "30 19 * * 0"   # Sun, before late games
     - cron: "0 22 * * 1"    # Mon, before MNF
+    # export-only refreshes
+    - cron: "45 12 * * *"            # every morning (waivers, injuries)
+    - cron: "50 17-23 * * 0"         # Sunday afternoon games, hourly
+    - cron: "50 0-3 * * 1,2,5"       # Sunday, Monday and Thursday night games, hourly
   workflow_dispatch:
     inputs:
+      pipeline:
+        description: Run the full pipeline (off = only refresh the exports)
+        type: boolean
+        default: true
       news:
         description: News & sentiment
         type: boolean
@@ -32,6 +43,8 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      FULL: ${{ (github.event_name == 'workflow_dispatch' && inputs.pipeline) || (github.event_name == 'schedule' && contains(fromJSON('["30 22 * * 4","45 15 * * 0","45 16 * * 0","30 19 * * 0","0 22 * * 1"]'), github.event.schedule)) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -60,6 +73,7 @@ jobs:
           fi
 
       - name: Run pipeline
+        if: env.FULL == 'true'
         env:
           SLEEPER_USERNAME: ${{ vars.SLEEPER_USERNAME }}
           SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
@@ -73,6 +87,18 @@ jobs:
           [ "$WEATHER" = "true" ] || args+=(--no-weather)
           python -m ffa "${args[@]}"
 
+      - name: Export for Scout
+        env:
+          SLEEPER_USERNAME: ${{ vars.SLEEPER_USERNAME }}
+          SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
+        run: |
+          test -n "$SLEEPER_USERNAME" || { echo "::error::Set the SLEEPER_USERNAME repository variable"; exit 1; }
+          league=(); [ -n "$SLEEPER_LEAGUE_ID" ] && league=(--league-id "$SLEEPER_LEAGUE_ID")
+          python -m ffa scout-data --reports data/reports --out data/reports/scout/data.json \
+            || echo "::warning::scout-data failed; keeping the previous data.json"
+          python -m ffa export --username "$SLEEPER_USERNAME" "${league[@]}" --reports data/reports \
+            --out data/reports/league.json
+
       - name: Commit to the data branch
         working-directory: data
         run: |
@@ -80,5 +106,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A
           git diff --cached --quiet && { echo "No changes"; exit 0; }
-          git commit -qm "Pipeline run $(date -u +%Y-%m-%dT%H:%MZ) (${{ github.event_name }})"
+          git commit -qm "$([ "$FULL" = true ] && echo Pipeline run || echo Export) $(date -u +%Y-%m-%dT%H:%MZ) (${{ github.event_name }})"
           git push -q origin HEAD:data
