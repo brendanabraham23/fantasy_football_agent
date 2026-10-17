@@ -1,0 +1,10 @@
+.git
+.github
+.venv
+reports
+tests
+docs
+artifact
+*.zip
+.env
+**/__pycache__

@@ -4,8 +4,11 @@
 """
 from __future__ import annotations
 
+import base64
 import copy
 import math
+import os
+import secrets
 import threading
 import time
 import traceback
@@ -15,11 +18,12 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import pandas as pd
-from fastapi import FastAPI, HTTPException, Query
-from fastapi.responses import JSONResponse
+from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.responses import JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
+from . import hosting as hosting_mod
 from . import nflverse, pipeline, report, sleeper, snapshot, waivers
 from .lineup import best_total, player_positions, starting_slots
 from .news import NewsScorer
@@ -178,15 +182,34 @@ class RunRequest(BaseModel):
 
 
 def create_app(username: str, team_name: str = "", league_id: str | None = None, week: int | None = None,
-               cfg: dict | None = None, out_dir: str | Path = "reports") -> FastAPI:
+               cfg: dict | None = None, out_dir: str | Path = "reports",
+               hosting: hosting_mod.Hosting | None = None, password: str | None = None) -> FastAPI:
+    """`hosting` switches to hosted mode: reports come from the git data branch and runs go to GitHub Actions.
+    `password` puts HTTP Basic auth (any username) in front of everything."""
     cfg = cfg or pipeline.load_config()
     ucfg = cfg.get("ui", {})
-    out_dir = Path(out_dir)
+    out_dir = Path(hosting.reports_dir if hosting else out_dir)
     app = FastAPI(title="Fantasy Football Analyzer", docs_url="/api/docs", openapi_url="/api/openapi.json")
     job = Job()
     live_box: dict = {}
     live_lock = threading.Lock()
     app.state.job = job
+    app.state.hosting = hosting
+
+    if password:
+        @app.middleware("http")
+        async def basic_auth(request: Request, call_next):
+            given = ""
+            scheme, _, cred = request.headers.get("authorization", "").partition(" ")
+            if scheme.lower() == "basic":
+                try:
+                    given = base64.b64decode(cred).decode().partition(":")[2]
+                except Exception:
+                    given = ""
+            if not secrets.compare_digest(given.encode(), password.encode()):
+                return Response("Password required", status_code=401,
+                                headers={"WWW-Authenticate": 'Basic realm="Fantasy analyzer"'})
+            return await call_next(request)
 
     # ---- helpers ----------------------------------------------------------------
     archive_dir = cfg.get("archive_dir", "archive")
@@ -299,9 +322,56 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
             job.finished_at = _now()
             live_box.pop("live", None)
 
+    # ---- hosted mode: data branch + GitHub Actions --------------------------------
+    gh = {"since": None, "view": None, "at": 0.0, "synced_run": None}
+
+    def hosted_status() -> dict:
+        """Latest predict-workflow run as a job view; pulls the data branch once a new run succeeds."""
+        if time.time() - gh["at"] < ucfg.get("gh_poll_seconds", 10) and gh["view"]:
+            return gh["view"]
+        try:
+            run = hosting.latest_run()
+        except Exception as exc:
+            return {"state": "error", "error": f"Couldn't read GitHub Actions status: {exc}", "log": [],
+                    "started_at": gh["since"], "finished_at": None, "options": {}}
+        view = hosting_mod.run_view(run, gh["since"])
+        if gh["since"] and not run_started(run) and \
+                time.time() - datetime.fromisoformat(gh["since"]).timestamp() > ucfg.get("gh_start_timeout", 180):
+            gh["since"] = None
+            view = {**view, "state": "error",
+                    "error": "GitHub Actions never started the run. Check FFA_WORKFLOW_REF and the token's Actions permission."}
+        if view["state"] in ("done", "error") and run_started(run):
+            gh["since"] = None
+            if view["state"] == "done" and gh["synced_run"] != run["id"]:
+                if hosting.sync():
+                    gh["synced_run"] = run["id"]
+                    live_box.clear()
+        gh["view"], gh["at"] = view, time.time()
+        return view
+
+    def run_started(run: dict | None) -> bool:
+        return bool(run) and (not gh["since"] or run["created_at"] >= gh["since"])
+
+    if hosting:
+        hosting.sync()
+        hosting.start_sync_loop(on_change=live_box.clear)
+
     @app.post("/api/run", status_code=202)
     def start_run(req: RunRequest | None = None):
         req = req or RunRequest()
+        if hosting:
+            if not hosting.can_run:
+                raise HTTPException(403, "Runs are disabled: set FFA_GITHUB_TOKEN on the server to start them.")
+            cur = hosted_status()
+            if cur["state"] == "running":
+                return JSONResponse(cur, status_code=409)
+            since = hosting_mod.utc_now()
+            try:
+                hosting.dispatch(req.news, req.weather)
+            except Exception as exc:
+                raise HTTPException(502, f"Couldn't start the GitHub Actions run: {exc}")
+            gh.update(since=since, at=0.0)
+            return hosted_status()
         if job.state == "running":
             return JSONResponse(job.view(), status_code=409)
         job.state, job.started_at, job.finished_at, job.error = "running", _now(), None, None
@@ -312,7 +382,7 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
 
     @app.get("/api/run")
     def run_status():
-        return job.view()
+        return hosted_status() if hosting else job.view()
 
     # ---- summary ----------------------------------------------------------------
     @app.get("/api/summary")
@@ -586,7 +656,8 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
 
     @app.get("/api/config")
     def ui_config():
-        return {"team_name": team_name, "ui": ucfg}
+        return {"team_name": team_name, "ui": ucfg,
+                "hosted": bool(hosting), "can_run": hosting.can_run if hosting else True}
 
     app.mount("/", StaticFiles(directory=WEB, html=True), name="web")
     return app
@@ -597,6 +668,11 @@ def serve(username: str, team_name: str, league_id: str | None, week: int | None
     import uvicorn
     ucfg = cfg.get("ui", {})
     host, port = host or ucfg.get("host", "127.0.0.1"), port or ucfg.get("port", 8000)
+    data_dir = os.environ.get("FFA_DATA_DIR") or str(Path(out_dir).resolve().parent / ".ffa-data")
+    hosting = hosting_mod.Hosting.from_env(cfg, data_dir)
+    if hosting:
+        print(f"Hosted mode: reports from {hosting.repo}@{hosting.branch}; runs via GitHub Actions"
+              + ("" if hosting.can_run else " (disabled: no FFA_GITHUB_TOKEN)"))
     print(f"Fantasy UI on http://{host}:{port}  (Ctrl+C to stop)")
-    uvicorn.run(create_app(username, team_name, league_id, week, cfg, out_dir), host=host, port=port,
-                log_level="warning")
+    uvicorn.run(create_app(username, team_name, league_id, week, cfg, out_dir, hosting,
+                           os.environ.get("FFA_PASSWORD") or None), host=host, port=port, log_level="warning")
