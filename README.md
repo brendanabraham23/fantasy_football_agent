@@ -91,7 +91,7 @@ Every number above is in `config.json`, so you can tune them.
 
 ## Scout (phone app on claude.ai)
 
-A claude.ai Artifact for player lookups away from your laptop: https://claude.ai/artifact/GHejCcRerJbdxFTxyZ1kdm
+A claude.ai Artifact for player lookups away from your laptop: https://claude.ai/artifact/M6VL2iYxFhXrXQw69XyQov
 (private to you). Tabs: **Player** (week projection with its breakdown, weekly chart, game log), **Compare** (up to
 four players side by side, plus "who should I start?"), **News** (sentiment from your latest pipeline run), and
 **Ask** (chat with Claude, which looks players up in the page's data).

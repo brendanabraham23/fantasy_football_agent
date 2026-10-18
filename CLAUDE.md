@@ -80,7 +80,7 @@ Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live
 
 ## Scout artifact (phone-friendly, claude.ai)
 
-`artifact/scout.html` is published at https://claude.ai/artifact/GHejCcRerJbdxFTxyZ1kdm (Player, Compare, News,
+`artifact/scout.html` is published at https://claude.ai/artifact/M6VL2iYxFhXrXQw69XyQov (Player, Compare, News,
 Ask tabs; Ask uses the `sample` capability with page tools over `data.json`). To refresh it ("refresh Scout"):
 1. Get the data: normally clone the `data` branch (`reports/scout/data.json`, `reports/league.json`), which
    `predict.yml` refreshes. Locally: `python -m ffa scout-data` and `python -m ffa export --username …`.
