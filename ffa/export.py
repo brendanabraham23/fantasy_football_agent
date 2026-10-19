@@ -5,12 +5,15 @@
 Every section is the JSON a UI endpoint returns, produced by calling the app in-process, so the export and the
 UI can't drift apart. On-demand pieces (waiver what-ifs, player pages) are precomputed for the players the UI
 would usually show: your roster, your opponent's, the waiver recommendations and the top of the waiver pool.
+The newest archived runs (`export.archived_runs`) ship with their summary, comparison to the latest run and, once
+their week is over, that week's final matchup, so Scout's run picker works like the UI's.
 """
 from __future__ import annotations
 
 import json
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import quote
 
 from . import server, sleeper
 from .scout import norm_name
@@ -81,6 +84,15 @@ def build(username: str, team_name: str, league_id: str | None, week: int | None
         print(f"[warn] player id map unavailable ({exc})")
         scout_ids = {}
 
+    runs = get("/api/runs") or []
+    archived = {}
+    for r in [r for r in runs if not r.get("latest")][: ecfg.get("archived_runs", 6)]:
+        q = f"?run={quote(r['id'])}"
+        if not (s := get(f"/api/summary{q}")):
+            continue
+        archived[r["id"]] = {"summary": s, "compare": get(f"/api/compare{q}"),
+                             "matchup": get(f"/api/matchup{q}") if s.get("outcome") else None}
+
     meta = (summary or {}).get("meta", {})
     return {
         "meta": {"exported_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
@@ -92,7 +104,8 @@ def build(username: str, team_name: str, league_id: str | None, week: int | None
         "summary": summary,
         "matchup": matchup,
         "roster": roster,
-        "runs": get("/api/runs") or [],
+        "runs": runs,
+        "archived": archived,
         "news": get("/api/news"),
         "waivers": {"pool": {**(pool or {}), "players": pool_rows[: ecfg.get("pool_rows", 150)]}, "whatif": whatif},
         "players": players,

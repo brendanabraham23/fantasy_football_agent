@@ -54,3 +54,15 @@ def test_scout_id_falls_back_to_name_and_position(tmp_path):
     assert export.scout_id("x", {"full_name": "Jalen Coker", "position": "TE"}, by_name) is None   # position must match
     assert export.scout_id("3163", {"full_name": "Jared Goff", "position": "QB", "gsis_id": " 00-0033106"}, by_name) == "00-0033106"
     assert export.scout_names(tmp_path / "missing.json") == {}
+
+
+def test_export_includes_archived_runs(reports):
+    cfg = pipeline.load_config()
+    res = pipeline.run("brendan", "Brendobendo", None, None, None, cfg, news=False, wx=False)
+    snapshot.save(snapshot.to_dict(res, [], {"news": False, "weather": False}), reports, report.save(res, reports))
+    d = export.build("brendan", "Brendobendo", None, None, cfg, reports)
+    assert not d["errors"], d["errors"]
+    old = [r["id"] for r in d["runs"] if not r["latest"]]
+    assert len(old) == 1 and set(d["archived"]) == set(old)
+    a = d["archived"][old[0]]
+    assert a["summary"]["archived"] and a["summary"]["lineup"] and a["compare"]["new"]["total"] is not None

@@ -91,14 +91,17 @@ Every number above is in `config.json`, so you can tune them.
 
 ## Scout (phone app on claude.ai)
 
-A claude.ai Artifact for player lookups away from your laptop: https://claude.ai/artifact/M6VL2iYxFhXrXQw69XyQov
-(private to you). Tabs: **Player** (week projection with its breakdown, weekly chart, game log), **Compare** (up to
-four players side by side, plus "who should I start?"), **News** (sentiment from your latest pipeline run), and
-**Ask** (chat with Claude, which looks players up in the page's data).
+A claude.ai Artifact with the web app's views for your phone: https://claude.ai/artifact/M6VL2iYxFhXrXQw69XyQov
+(private to you). Tabs: **Summary** (tiles, before-kickoff checklist, recommended lineup), **Roster** (starters,
+bench and IR with START/BENCH flags and the "why this number" breakdown), **Matchup** (scoreboard, win probability,
+starters side by side), **Player** (adjusted points and breakdown, weekly chart, game log, news, baseline model),
+**Waivers** (recommended adds with drop and FAAB bid, plus the top of the pool with what-ifs), **News**, **Compare**
+and **Ask** (chat with Claude over the page's data). A run picker shows recent archived runs like the web app does.
 
-Its data comes from `python -m ffa scout-data`, which needs only nflverse and merges your latest pipeline run if
-there is one. To update it, ask Claude in any Claude Code session on this repo (phone included) to "refresh Scout";
-the steps are in CLAUDE.md.
+Its data is `python -m ffa scout-data` (nflverse) plus `python -m ffa export` (`league.json`: every UI endpoint's
+JSON), both refreshed by `predict.yml` on the `data` branch. A claude.ai scheduled task republishes Scout from there;
+to do it by hand, ask Claude in any Claude Code session on this repo to "refresh Scout" (steps in CLAUDE.md). Scores
+and lineups are as of the last export, not live.
 
 ## Projection calibration
 
