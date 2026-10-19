@@ -142,7 +142,62 @@ td.best { color: var(--turf); font-weight: 700; }
   border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
 .suggest { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; }
 
+/* league tabs: summary tiles, checklist, roster/waiver tables, matchup scoreboard */
+.banner.info { background: var(--turf-soft); color: var(--ink); }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.tile { display: block; background: var(--surface); border: 1px solid var(--line); border-top: 3px solid var(--line);
+  border-radius: 12px; padding: 10px 14px 12px; color: inherit; text-decoration: none; min-width: 0; }
+a.tile:hover { background: var(--surface-2); }
+.tile.good { border-top-color: var(--good); } .tile.warn { border-top-color: var(--warn); }
+.tile.bad { border-top-color: var(--bad); } .tile.turf { border-top-color: var(--turf); }
+.tile .k { font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); font-weight: 600; }
+.tile .v { font-family: var(--display); font-size: 32px; font-weight: 800; line-height: 1.1; overflow-wrap: anywhere; }
+.tile .v.sm { font-size: 21px; padding-block: 5px 2px; }
+.tile .h { font-size: 12.5px; color: var(--ink-2); }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.checklist { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 9px; }
+.checklist li { display: grid; grid-template-columns: 62px minmax(0, 1fr); gap: 8px; align-items: baseline; }
+.checklist li .chip { justify-content: center; width: 100%; }
+.plink { border: 0; background: none; padding: 0; color: var(--turf); font-weight: 600; cursor: pointer; text-align: left; }
+.plink:hover { text-decoration: underline; }
+.pos { font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: .04em; }
+td.adj, th.adj { text-align: right; } td.adj { font-weight: 700; color: var(--turf); }
+tr.clickable { cursor: pointer; } tr.clickable:hover > td { background: var(--surface-2); }
+tr.flag-start > td:first-child { box-shadow: inset 3px 0 var(--good); }
+tr.flag-bench > td:first-child { box-shadow: inset 3px 0 var(--warn); }
+tr.detail > td { white-space: normal; background: var(--surface-2); padding: 4px 12px 12px; }
+tr.detail .formula { margin-top: 6px; }
+.why-meta { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 8px; font-size: 13px; color: var(--ink-2); }
+.diff.up { color: var(--good); font-weight: 700; } .diff.down { color: var(--bad); font-weight: 700; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 9px; overflow: hidden; }
+.seg button { border: 0; background: var(--surface); padding: 6px 13px; font-weight: 600; cursor: pointer; color: var(--ink-2); }
+.seg button.on { background: var(--turf-soft); color: var(--turf); }
+.chip.live { background: var(--bad-bg); color: var(--bad); }
+.scoreboard { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 12px; align-items: center; }
+.sb-name { font-family: var(--display); font-weight: 800; font-size: 19px; text-transform: uppercase; line-height: 1.1; overflow-wrap: break-word; }
+.sb-pts { font-family: var(--display); font-weight: 800; font-size: 46px; line-height: 1; margin-top: 4px; }
+.sb-team.r { text-align: right; }
+.sb-mid { text-align: center; min-width: 92px; }
+.sb-wp { font-family: var(--display); font-weight: 800; font-size: 28px; color: var(--turf); line-height: 1.1; }
+.wpbar { height: 6px; border-radius: 3px; background: var(--surface-2); overflow: hidden; margin-top: 4px; }
+.wpbar span { display: block; height: 100%; background: var(--turf); }
+.mt { table-layout: fixed; } .mt col.p { width: 58px; } .mt col.s { width: 40px; }
+.mt td { white-space: normal; vertical-align: top; overflow-wrap: anywhere; padding-inline: 5px; }
+.mt td.slot { text-align: center; color: var(--muted); font-size: 11.5px; font-weight: 700; letter-spacing: .04em; vertical-align: middle; }
+.mt td.pts { font-family: var(--display); font-weight: 700; font-size: 19px; line-height: 1.15; white-space: nowrap; }
+.mt td.pts.l { text-align: right; } .mt td.r { text-align: right; }
+.mt td .sub { font-family: var(--body); font-size: 11.5px; font-weight: 400; color: var(--muted); }
+details.card > summary { cursor: pointer; font-family: var(--display); font-weight: 700; font-size: 17px; }
+.more { margin-top: 10px; text-align: center; }
+
 @media (max-width: 640px) {
+  .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid2 { grid-template-columns: minmax(0, 1fr); }
+  .hide-sm { display: none; }
+  .sb-pts { font-size: 36px; } .sb-name { font-size: 14px; } .sb-wp { font-size: 22px; } .sb-mid { min-width: 62px; }
+  .scoreboard { gap: 8px; }
+  .mt td.pts { font-size: 16px; } .mt col.p { width: 46px; } .mt col.s { width: 38px; } .mt td.slot { font-size: 10.5px; padding-inline: 2px; }
+  .mt td .chip { font-size: 10.5px; padding-inline: 6px; }
   .pname { font-size: 28px; } .projbox .num { font-size: 40px; }
   .stats3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .projbox { text-align: left; }
@@ -155,6 +210,10 @@ td.best { color: var(--turf); font-weight: 700; }
   <div class="top-in">
     <div class="brand"><h1>Brendobendo <span>Scout</span></h1><span class="fresh" id="fresh">Loading player data…</span></div>
     <nav class="tabs" id="tabs">
+      <a href="#summary" data-t="summary">Summary</a>
+      <a href="#matchup" data-t="matchup">Matchup</a>
+      <a href="#roster" data-t="roster">Roster</a>
+      <a href="#waivers" data-t="waivers">Waivers</a>
       <a href="#player" data-t="player">Player</a>
       <a href="#compare" data-t="compare">Compare</a>
       <a href="#news" data-t="news">News</a>
@@ -469,6 +528,33 @@ const detail = (p) => p && { ...brief(p), weekly: p.weeks.map((w) => (p.pos === 
   my_pipeline: p.model ? { week: p.model.week, model_pts: p.model.adj, sleeper_proj: p.model.sleeper_proj, news_sentiment: p.model.sentiment,
     headlines: (p.model.articles || []).slice(0, 4).map((a) => a.title) } : null };
 
+const leagueBrief = (pid) => { const e = levalOf(pid) || {};
+  return { name: lname(pid), pos: e.position, team: e.team, opp: e.opp ? oppText(e) : null, model_pts: e.adj, sleeper_proj: e.proj,
+    injury: e.injury_status || null, notes: e.notes && e.notes.length ? e.notes : undefined }; };
+const LEAGUE_TOOLS = [
+  { name: "my_league", description: "The user's Sleeper league at the last export: this week's matchup (score, projected finals, win probability, opponent), the recommended lineup vs. their current Sleeper lineup, injury and bye alerts, and the top waiver recommendations with FAAB bids. Call it for any question about their team, lineup or matchup.",
+    inputSchema: { type: "object", properties: {} },
+    execute: () => { const s = L.summary, m = L.matchup, diff = s ? lineupDiff(s) : null;
+      return { exported_at: L.meta.exported_at, week: m ? m.week : null,
+        matchup: m && m.me ? { me: m.me.name, my_points: m.me.points, my_projected_final: m.me.proj_final, opponent: m.opponent && m.opponent.name,
+          opp_points: m.opponent && m.opponent.points, opp_projected_final: m.opponent && m.opponent.proj_final, win_prob: m.win_prob,
+          my_starters: m.me.starters.map((r) => ({ slot: r.slot, name: r.name, pos: r.position, game: r.state, points: r.points, projected_final: r.proj_final })),
+          opp_starters: m.opponent ? m.opponent.starters.map((r) => ({ slot: r.slot, name: r.name, pos: r.position, game: r.state, points: r.points, projected_final: r.proj_final })) : [] } : null,
+        recommended_lineup: s ? s.lineup.map((l) => ({ slot: l.slot, ...(l.player_id ? leagueBrief(l.player_id) : { name: null }) })) : null,
+        lineup_changes: diff ? { start: diff.start.map(lname), bench: diff.bench.map(lname) } : null,
+        bench: s ? Object.values(s.players).filter((e) => e.group === "roster" && !s.lineup.some((l) => l.player_id === e.player_id)).map((e) => leagueBrief(e.player_id)) : null,
+        alerts: s ? (s.alerts || []).map(lname) : null,
+        waiver_recs: s ? (s.waiver_recs || []).slice(0, 8).map((r) => ({ ...leagueBrief(r.player_id), weekly_gain: r.weekly_gain, ros_gain: r.ros_gain, drop: r.drop_id ? lname(r.drop_id) : null, bid: r.bid })) : null,
+        faab_left: s && s.meta.faab ? s.meta.budget_left : null, pipeline_run_at: s ? s.meta.generated_at : null }; } },
+  { name: "waiver_pool", description: "Free agents in the user's league, best first by model points, with Sleeper projection, recent form, matchup grade and 48-hour Sleeper adds; includes the add/drop what-if (lineup gain, suggested drop, FAAB bid) where it was precomputed.",
+    inputSchema: { type: "object", properties: { position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K", "DEF", "ALL"] }, limit: { type: "integer" } } },
+    execute: ({ position = "ALL", limit = 10 }) => (L.waivers.pool.players || []).filter((p) => position === "ALL" || p.position === position)
+      .slice(0, Math.min(25, Number(limit) || 10)).map((p) => { const w = L.waivers.whatif[p.player_id];
+        return { name: p.name, pos: p.position, team: p.team, opp: oppText(p), model_pts: p.adj, sleeper_proj: p.proj, recent_avg: p.recent_avg, ppg: p.ppg,
+          matchup_grade: p.matchup_grade, injury: p.injury_status, adds_48h: p.trending_adds,
+          what_if: w ? { weekly_gain: w.weekly_gain, ros_gain: w.ros_gain, drop: w.drop && w.drop.name, bid: w.bid } : null }; }) },
+];
+
 const TOOLS = [
   { name: "search_players", description: "Find players by (partial) name. Returns up to 8 matches with id, team, position, next-week projection and rank. Use it to resolve names before other tools.",
     inputSchema: { type: "object", properties: { query: { type: "string" }, position: { type: "string", enum: ["QB", "RB", "WR", "TE", "K", "DEF"] } }, required: ["query"] },
@@ -495,7 +581,8 @@ function rules() {
 Data: nflverse stats for the ${m.season} season through week ${m.through_week}; projections are for week ${m.next_week}. Data file built ${m.generated_at}.
 Projection = baseline: ${Math.round(m.recent_weight * 100)}% last-${m.recent_weeks} avg + ${Math.round((1 - m.recent_weight) * 100)}% season avg, times a matchup factor (defense vs position and Vegas implied total) and an injury factor. It's simple and not calibrated; say so when it matters.
 D/STs are position "DEF" (search "<team> D/ST"); they score sacks 1, INT 2, fumble recovery 2, TD 6, safety 2, blocked kick 2, plus points-allowed tiers (0: +10 down to 35+: -4). Their matchup factor uses how many D/ST points the opposing offense gives up and the opponent's implied total (lower is better).
-${my.length ? `User's roster (from their last pipeline run, week ${m.model_run.week}): ${my.join("; ")}.` : "The user's roster isn't in this data."}
+${my.length ? `User's roster (${L ? `from Sleeper, exported ${L.meta.exported_at}` : `from their last pipeline run, week ${m.model_run.week}`}): ${my.join("; ")}.` : "The user's roster isn't in this data."}
+${L ? `League tools: my_league (matchup, recommended vs. current lineup, alerts, waiver recommendations) and waiver_pool (free agents with add/drop what-ifs). "Model pts" there are the user's own pipeline (Sleeper projection blended with recent form, times injury, matchup, weather and news); prefer them for start/sit calls in this league and say when they differ from the baseline projection.` : ""}
 Use the tools to look players up; never guess stats. You can't browse: for news, trades or injuries after the data date, say what the data shows and what to check. Lead with the answer (a clear start/sit or ranking), then 2-4 short reasons with numbers. Be concise. Use plain text with short "-" bullets; no tables.`;
 }
 
@@ -518,7 +605,8 @@ let ctl = null;
 async function pageAsk() {
   const sample = await getSample();
   if (location.hash.replace("#", "") !== "ask") return;
-  const suggestions = [`Who are the top 5 WRs for week ${nextW()}?`, "Which of my players are trending up over the last 3 weeks?",
+  const suggestions = [...(L ? ["How does my matchup look, and should I change anything?", "Which waiver add helps me most, and what should I bid?"] : []),
+    `Who are the top 5 WRs for week ${nextW()}?`, "Which of my players are trending up over the last 3 weeks?",
     `Which RBs have the easiest matchups in week ${nextW()}?`, "Who should I start at FLEX this week?"];
   view.innerHTML = `<div class="stack"><div class="card">
       <div class="chat" id="chat"></div>
@@ -555,7 +643,7 @@ async function pageAsk() {
     $("#send").disabled = true; $("#stop").hidden = false;
     ctl = new AbortController();
     const looked = [];
-    const tools = TOOLS.map((t) => ({ ...t, execute: (inp, c) => { looked.push(t.name === "get_player" ? String(inp.player) : t.name.replace("_", " ")); bubble.innerHTML = `<span class="muted">Looking up ${esc(looked.slice(-3).join(", "))}…</span>`; return t.execute(inp, c); } }));
+    const tools = (L ? [...TOOLS, ...LEAGUE_TOOLS] : TOOLS).map((t) => ({ ...t, execute: (inp, c) => { looked.push(t.name === "get_player" ? String(inp.player) : t.name.replace("_", " ")); bubble.innerHTML = `<span class="muted">Looking up ${esc(looked.slice(-3).join(", "))}…</span>`; return t.execute(inp, c); } }));
     try {
       const turns = S.turns.slice(-12);
       const { text, truncated } = await sample([{ role: "user", content: rules() }, ...turns], {
@@ -590,13 +678,299 @@ ${JSON.stringify(ps.map(detail))}`;
   finally { btn.disabled = false; }
 }
 
+
+// ---- League tabs (Summary, Matchup, Roster, Waivers): read league.json, the web app's own JSON -----
+const LP = () => (L && L.summary && L.summary.players) || {};
+const lname = (pid) => (LP()[pid] && LP()[pid].name) || (L && L.players[pid] && L.players[pid].name) || pid;
+const levalOf = (pid) => LP()[pid] || (L && L.players[pid] && L.players[pid].eval) || null;
+const sid = (pid) => { const x = L && L.scout_ids && L.scout_ids[pid]; return x && byId.has(x) ? x : null; };
+const plink = (pid, name) => { const x = sid(pid), n = esc(name ?? lname(pid));
+  return x ? `<button type="button" class="plink" data-goto="${esc(x)}">${n}</button>` : `<b>${n}</b>`; };
+const posTag = (pos) => `<span class="pos">${esc(pos || "")}</span>`;
+const signed = (v, d = 1) => (v == null ? "–" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(d));
+const dcls = (v) => (v == null ? "" : v > 0.05 ? "up" : v < -0.05 ? "down" : "");
+const oppText = (e) => (e.on_bye ? "BYE" : !e.opp ? "–" : String(e.opp).match(/^(vs|@) /) ? e.opp : (e.is_home ? "vs " : "@ ") + e.opp);
+const ago = (iso) => { const m = (Date.now() - new Date(iso)) / 60000;
+  return m < 1 ? "just now" : m < 60 ? `${Math.round(m)} min ago` : m < 48 * 60 ? `${Math.round(m / 60)} h ago` : `${Math.round(m / 1440)} days ago`; };
+const atTime = (iso) => new Date(iso).toLocaleString([], { weekday: "short", hour: "numeric", minute: "2-digit" });
+
+function injShort(status) {
+  if (!status) return "";
+  const cls = status === "Questionable" ? "warn" : ["Doubtful", "Out", "IR", "PUP", "Sus", "COV"].includes(status) ? "bad" : "";
+  const short = { Questionable: "Q", Doubtful: "D", Out: "OUT", Suspended: "SUS" }[status] || status;
+  return `<span class="chip ${cls}" title="${esc(status)}">${esc(short)}</span>`;
+}
+
+function needLeague(what) {
+  view.innerHTML = `<div class="card empty" style="margin-top:16px"><h2>${what} needs your league data</h2>
+    <p>This copy of Scout was published without <span class="mono">league.json</span>. It arrives with the next scheduled refresh,
+    after the GitHub <b>predict</b> job has exported your league.</p><p><a href="#player">Open the Player tab →</a></p></div>`;
+}
+
+// The lineup Sleeper has now vs. the one the latest run recommends.
+function lineupDiff(s) {
+  const opt = s.lineup.map((l) => l.player_id).filter(Boolean), optSet = new Set(opt);
+  const synced = !!(L.roster && L.roster.same_week);
+  const live = new Set(synced ? L.roster.starters : s.current_starters);
+  return { live, synced, start: opt.filter((id) => !live.has(id)), bench: [...live].filter((id) => !optSet.has(id) && s.players[id]) };
+}
+
+function runNote(s) {
+  const run = new Date(s.meta.generated_at), stale = L.matchup && L.matchup.week !== s.meta.week;
+  const drift = L.roster && (L.roster.added.length || L.roster.dropped.length);
+  const list = (xs) => xs.map((p) => esc(p.name)).join(", ");
+  return (stale ? `<div class="banner">The latest pipeline run is for week ${s.meta.week}, but it's week ${L.matchup.week} now. The next scheduled run will catch up.</div>` : "")
+    + (drift ? `<div class="banner"><b>Your Sleeper roster changed since the last run</b> (${atTime(run)}).
+      ${L.roster.added.length ? `Added ${list(L.roster.added)}.` : ""} ${L.roster.dropped.length ? `Dropped ${list(L.roster.dropped)}.` : ""}
+      Recommendations still reflect the old roster until the next run.</div>` : "");
+}
+
+const MULTS = [["mult_injury", "injury"], ["mult_matchup", "matchup"], ["mult_weather", "weather"], ["mult_sentiment", "news"]];
+const multChips = (e) => MULTS.filter(([k]) => e[k] != null && Math.abs(e[k] - 1) >= 0.005)   // hide anything that rounds to ×1.00
+  .map(([k, l]) => `<span class="chip ${e[k] > 1 ? "good" : "bad"}">×${e[k].toFixed(2)} ${l}</span>`).join(" ");
+
+function whyPanel(e) {
+  const w = (L.summary && L.summary.meta.weights) || { projection: 0.7, recent_form: 0.3 };
+  const cls = (m) => (m > 1.0005 ? "up" : m < 0.9995 ? "down" : "");
+  const term = (k, v, c = "", title = "") => `<div class="term ${c}" title="${esc(title)}"><div class="k">${k}</div><div class="v">${v}</div></div>`;
+  const meta = [];
+  if (e.proj != null || e.recent_avg != null) meta.push(`Base = ${w.projection} × Sleeper projection ${f1(e.proj)} + ${w.recent_form} × recent ${f1(e.recent_avg)}`);
+  if (e.def_rank) meta.push(`Opponent ranks ${e.def_rank} of ${e.def_teams} vs ${esc(e.position)}s (${e.def_ratio}× average allowed)`);
+  if (e.implied != null) meta.push(`Team implied total ${f1(e.implied)}`);
+  if (e.weather) meta.push(`Weather: ${esc(e.weather)}`);
+  if (e.n_articles) meta.push(`News: ${e.n_articles} articles, sentiment ${signed(e.sentiment, 2)}`);
+  if (e.notes && e.notes.length) meta.push(esc(e.notes.join(", ")));
+  return `<div class="formula">${term("Base", f1(e.base))}<span class="op">×</span>
+    ${term("Injury", (e.mult_injury ?? 1).toFixed(2), cls(e.mult_injury), e.injury_status || "healthy")}<span class="op">×</span>
+    ${term("Matchup", (e.mult_matchup ?? 1).toFixed(2), cls(e.mult_matchup))}<span class="op">×</span>
+    ${term("Weather", (e.mult_weather ?? 1).toFixed(2), cls(e.mult_weather), e.weather || "no forecast")}<span class="op">×</span>
+    ${term("News", (e.mult_sentiment ?? 1).toFixed(2), cls(e.mult_sentiment))}<span class="op">=</span>${term("Adj pts", f1(e.adj))}</div>
+    <div class="why-meta">${meta.map((x) => `<span>${x}</span>`).join("") || "<span>No matchup, weather or news signals.</span>"}</div>
+    ${sid(e.player_id) ? `<p class="small" style="margin:8px 0 0">${plink(e.player_id, "Open player page →")}</p>` : ""}`;
+}
+
+function bidWhy(d) {
+  if (!d || d.value === undefined) return "";
+  return [`${f1(d.value)} pts of value over ${d.horizon + 1} weeks vs. the drop`,
+    d.teams ? `${d.rivals} of ${d.teams} other teams would start him${d.rival_max_budget != null ? ` (richest has $${d.rival_max_budget})` : ""}` : "",
+    d.trending_adds ? `${d.trending_adds.toLocaleString()} Sleeper adds in 48h` : "not trending"].filter(Boolean).join(" · ") + ` → ${Math.round(d.pct * 100)}% of budget`;
+}
+
+function bindLeague(root) {   // player links jump to Scout's Player tab; table rows expand their breakdown
+  root.addEventListener("click", (ev) => {
+    const g = ev.target.closest("[data-goto]");
+    if (g) { S.player = g.dataset.goto; store.set("player", S.player); location.hash = "player"; return; }
+    if (ev.target.closest("a, button, input, select")) return;
+    const row = ev.target.closest("tr[data-expand]");
+    const det = row && root.querySelector(`tr[data-detail="${CSS.escape(row.dataset.expand)}"]`);
+    if (det) det.hidden = !det.hidden;
+  });
+}
+
+// ---- Summary -----------------------------------------------------------------------------
+function pageSummary() {
+  if (!L || !L.summary) return needLeague("The summary");
+  const s = L.summary, P = s.players, recs = s.waiver_recs || [], m = L.matchup;
+  const diff = lineupDiff(s);
+  const holes = s.lineup.filter((l) => !l.player_id || !P[l.player_id] || P[l.player_id].adj <= 0);
+  const items = [];
+  diff.start.forEach((id) => items.push(["START", "good", `${plink(id)} ${posTag(P[id].position)} <span class="muted">${f1(P[id].adj)} adj · ${esc(oppText(P[id]))}</span>`]));
+  diff.bench.forEach((id) => items.push(["BENCH", "warn", `${plink(id)} ${posTag(P[id].position)} <span class="muted">${f1(P[id].adj)} adj${P[id].notes && P[id].notes.length ? " · " + esc(P[id].notes.join(", ")) : ""}</span>`]));
+  holes.forEach((l) => items.push(["HOLE", "bad", l.player_id && P[l.player_id]
+    ? `No healthy <b>${esc(l.slot)}</b>: ${plink(l.player_id)} (${esc((P[l.player_id].notes || []).join(", ") || "no projection")}). <a href="#waivers">Check waivers</a>`
+    : `Nobody eligible for <b>${esc(l.slot)}</b>. <a href="#waivers">Check waivers</a>`]));
+  const seen = new Set([...diff.bench, ...holes.map((l) => l.player_id)]);
+  (s.alerts || []).filter((id) => !seen.has(id) && P[id]).forEach((id) => items.push(["ALERT", "warn", `${plink(id)} ${posTag(P[id].position)} <span class="muted">${esc((P[id].notes || []).join(", "))}</span>`]));
+  recs.slice(0, 3).forEach((r) => items.push(["ADD", "turf", `${plink(r.player_id)} ${posTag(P[r.player_id] && P[r.player_id].position)}
+    <span class="muted">${signed(r.weekly_gain)} this week · ${signed(r.ros_gain)} vs drop</span>${r.drop_id ? ` · drop ${plink(r.drop_id)}` : ""} · <b>${esc(r.bid)}</b>`]));
+
+  const wp = m && m.win_prob != null ? Math.round(m.win_prob * 100) : null, top = recs[0];
+  const lineupRows = s.lineup.map((l) => {
+    const e = l.player_id && P[l.player_id];
+    if (!e) return `<tr><td class="muted">${esc(l.slot)}</td><td colspan="3" class="muted">(empty)</td></tr>`;
+    return `<tr class="${diff.live.has(e.player_id) ? "" : "flag-start"}"><td class="muted small">${esc(l.slot)}</td>
+      <td>${plink(e.player_id, e.name)} ${injShort(e.injury_status)}<div class="small muted">${esc(oppText(e))} <span class="hide-sm">${multChips(e)}</span></div></td>
+      <td class="adj">${f1(e.adj)}</td></tr>`;
+  }).join("");
+  view.innerHTML = `<div class="stack">${runNote(s)}
+    <div class="tiles">
+      <a class="tile ${wp == null ? "" : wp >= 60 ? "good" : wp >= 40 ? "warn" : "bad"}" href="#matchup"><div class="k">Week ${m ? m.week : s.meta.week} matchup</div>
+        <div class="v">${wp == null ? "–" : wp + "%"}</div><div class="h">${m && m.me && m.opponent ? `${f1(m.me.points)}–${f1(m.opponent.points)} vs ${esc(m.opponent.name)}` : "no head-to-head"}</div></a>
+      <a class="tile ${diff.start.length ? "warn" : "good"}" href="#roster"><div class="k">Lineup changes</div><div class="v">${diff.start.length || "✓"}</div>
+        <div class="h">${diff.start.length ? "vs. your Sleeper lineup" : "Sleeper lineup matches"}</div></a>
+      <div class="tile ${(s.alerts || []).length || holes.length ? "bad" : "good"}"><div class="k">Injury / bye alerts</div><div class="v">${(s.alerts || []).length}</div>
+        <div class="h">${holes.length ? `${holes.length} empty slot${holes.length > 1 ? "s" : ""}` : "on your active roster"}</div></div>
+      <a class="tile ${top ? "turf" : ""}" href="#waivers"><div class="k">Top waiver target</div>
+        ${top ? `<div class="v sm">${esc(lname(top.player_id))}</div><div class="h">${signed(top.weekly_gain)} pts this week · ${esc(top.bid)}</div>`
+              : `<div class="v sm muted">None</div><div class="h">nobody clears the thresholds</div>`}</a>
+    </div>
+    <div class="grid2">
+      <div class="card"><h2>Before kickoff</h2>
+        ${items.length ? `<ul class="checklist">${items.map(([t, c, h]) => `<li><span class="chip ${c}">${t}</span><span>${h}</span></li>`).join("")}</ul>`
+                       : `<p class="muted">Nothing to do. Your lineup is set and there are no alerts.</p>`}</div>
+      <div class="card"><div class="row" style="justify-content:space-between"><h2>Recommended lineup</h2><span class="small muted">projected ${f1(s.total)}</span></div>
+        <div class="tablewrap"><table><tbody>${lineupRows}</tbody></table></div>
+        <p class="small muted" style="margin:10px 0 0">Green edge: recommended but not in your Sleeper lineup. <a href="#roster">Full roster and breakdowns →</a></p></div>
+    </div>
+    ${(s.warnings || []).length ? `<details class="card"><summary>Run warnings (${s.warnings.length})</summary><ul class="small">${s.warnings.map((w) => `<li>${esc(w)}</li>`).join("")}</ul></details>` : ""}
+    <p class="small muted">Latest run ${esc(atTime(s.meta.generated_at))} (news ${s.meta.options && s.meta.options.news === false ? "off" : "on"}, weather ${s.meta.options && s.meta.options.weather === false ? "off" : "on"}) ·
+      league data exported ${esc(ago(L.meta.exported_at))}${diff.synced ? " · lineup compared with Sleeper at export time" : ""}.</p></div>`;
+  bindLeague(view);
+}
+
+// ---- Matchup -----------------------------------------------------------------------------
+function gameChip(r) {
+  if (!r.player_id) return "";
+  if (r.state === "final") return `<span class="chip">Final</span>`;
+  if (r.state === "live") return `<span class="chip live">Live · ${Math.round(r.frac * 100)}%</span>`;
+  if (r.state === "bye") return `<span class="chip bad">BYE</span>`;
+  if (r.state === "upcoming" && r.kickoff) return `<span class="chip">${esc(atTime(r.kickoff))}</span>`;
+  return "";
+}
+function mCells(r, side) {
+  if (!r || !r.player_id) return side === "l" ? `<td class="muted">(empty)</td><td class="pts l">–</td>` : `<td class="pts r">–</td><td class="r muted">(empty)</td>`;
+  const who = `<td class="${side === "r" ? "r" : ""}">${plink(r.player_id, r.name)} ${injShort(r.injury_status)}
+    <div class="small muted">${esc(r.position)} · ${esc(r.team || "FA")} ${esc(r.opp && r.opp !== "BYE" ? r.opp : "")}</div><div>${gameChip(r)}</div></td>`;
+  const pts = `<td class="pts ${side}">${f1(r.points)}<div class="sub">${r.state === "final" ? "final" : "proj " + f1(r.proj_final)}</div></td>`;
+  return side === "l" ? who + pts : pts + who;
+}
+function pageMatchup() {
+  if (!L || !L.matchup) return needLeague("The matchup");
+  const m = L.matchup, me = m.me, op = m.opponent;
+  if (!me) { view.innerHTML = `<div class="card empty" style="margin-top:16px"><h2>No matchup for week ${m.week}</h2><p>Sleeper has no head-to-head for your team this week.</p></div>`; return; }
+  const wp = m.win_prob == null ? null : Math.round(m.win_prob * 100), sw = m.swaps;
+  const cols = `<colgroup><col><col class="p"><col class="s"><col class="p"><col></colgroup>`;
+  const rows = me.starters.map((r, i) => `<tr>${mCells(r, "l")}<td class="slot">${esc(r.slot)}</td>${mCells(op && op.starters[i], "r")}</tr>`).join("");
+  const bench = (t) => (t && t.bench.length ? t.bench.map((r) => `<tr>${mCells(r, "l")}</tr>`).join("") : `<tr><td class="muted">Empty</td></tr>`);
+  const anyLive = [...me.starters, ...(op ? op.starters : [])].some((r) => r.state === "live");
+  view.innerHTML = `<div class="stack">
+    <div class="card scoreboard">
+      <div class="sb-team"><div class="sb-name">${esc(me.name)}</div><div class="sb-pts">${f1(me.points)}</div><div class="small muted">proj ${f1(me.proj_final)}</div></div>
+      <div class="sb-mid">${wp == null ? `<span class="muted">vs</span>` : `<div class="small muted">Win prob</div><div class="sb-wp">${wp}%</div><div class="wpbar"><span style="width:${wp}%"></span></div>`}</div>
+      <div class="sb-team r"><div class="sb-name">${esc(op ? op.name : "No opponent")}</div><div class="sb-pts">${op ? f1(op.points) : "–"}</div><div class="small muted">${op ? "proj " + f1(op.proj_final) : ""}</div></div>
+    </div>
+    ${sw && (sw.start.length || sw.bench.length) ? `<div class="banner"><b>Lineup check:</b> the latest run would start ${sw.start.map((id) => plink(id)).join(", ") || "nobody new"}
+      and bench ${sw.bench.map((id) => plink(id)).join(", ") || "nobody"}. Make the change in Sleeper before kickoff.</div>`
+      : sw ? `<div class="banner info">Your Sleeper lineup matches the latest run's recommendation.</div>` : ""}
+    <div class="card"><div class="tablewrap"><table class="mt">${cols}<tbody>${rows}</tbody>
+      <tfoot><tr><td><b>Total</b></td><td class="pts l">${f1(me.points)}</td><td></td><td class="pts r">${op ? f1(op.points) : "–"}</td><td class="r"><b>Total</b></td></tr></tfoot></table></div></div>
+    <div class="grid2">
+      <details class="card"><summary>${esc(me.name)} bench</summary><div class="tablewrap"><table class="mt"><colgroup><col><col class="p"></colgroup><tbody>${bench(me)}</tbody></table></div></details>
+      ${op ? `<details class="card"><summary>${esc(op.name)} bench</summary><div class="tablewrap"><table class="mt"><colgroup><col><col class="p"></colgroup><tbody>${bench(op)}</tbody></table></div></details>` : ""}
+    </div>
+    <p class="small muted">Scores as of ${esc(atTime(m.fetched_at))} (${esc(ago(m.fetched_at))})${anyLive ? ". Games are in progress; scores refresh hourly while games are on" : ""}.
+      Projections are the model's adjusted points (your opponent's without news). Live progress is estimated from kickoff time, and win probability
+      assumes each player's remaining output varies by about ${Math.round(((L.config && L.config.ui && L.config.ui.player_sd_ratio) || 0.5) * 100)}% of the projection.</p></div>`;
+  bindLeague(view);
+}
+
+// ---- Roster ------------------------------------------------------------------------------
+function rosterRow(e, flag, slot) {
+  return `<tr class="clickable ${flag ? "flag-" + flag : ""}" data-expand="${esc(e.player_id)}">
+    <td style="white-space:normal">${slot && slot !== e.position ? `<span class="pos">${esc(slot)}</span> ` : ""}${plink(e.player_id, e.name)} ${injShort(e.injury_status)}
+      ${flag === "start" ? `<span class="chip good">START</span>` : flag === "bench" ? `<span class="chip warn">BENCH</span>` : ""}
+      <div class="small muted">${posTag(e.position)} ${esc(e.team || "FA")} · ${esc(oppText(e))} ${grade(e.matchup_grade && e.matchup_grade !== "-" ? e.matchup_grade : "")}</div></td>
+    <td class="num">${f1(e.proj)}</td><td class="num hide-sm">${f1(e.recent_avg)}</td>
+    <td class="hide-sm" style="white-space:normal">${multChips(e)}</td><td class="adj">${f1(e.adj)}</td></tr>
+    <tr class="detail" data-detail="${esc(e.player_id)}" hidden><td colspan="5">${whyPanel(e)}</td></tr>`;
+}
+function pageRoster() {
+  if (!L || !L.summary) return needLeague("Your roster");
+  const s = L.summary, P = s.players, live = lineupDiff(s).live;
+  const starterIds = new Set(s.lineup.map((l) => l.player_id).filter(Boolean));
+  const head = `<thead><tr><th>Player</th><th class="num" title="Sleeper projection">Proj</th><th class="num hide-sm">Recent</th><th class="hide-sm">Adjustments</th><th class="adj" title="Model points: base × injury × matchup × weather × news">Adj</th></tr></thead>`;
+  const starters = s.lineup.filter((l) => l.player_id && P[l.player_id]).map((l) => rosterRow(P[l.player_id], live.has(l.player_id) ? "" : "start", l.slot)).join("");
+  const bench = Object.values(P).filter((e) => e.group === "roster" && !starterIds.has(e.player_id)).sort((a, b) => b.adj - a.adj)
+    .map((e) => rosterRow(e, live.has(e.player_id) ? "bench" : "", null)).join("");
+  const reserve = Object.values(P).filter((e) => e.group === "reserve").map((e) => rosterRow(e, "", null)).join("");
+  view.innerHTML = `<div class="stack">${runNote(s)}
+    <div class="card"><div class="row" style="justify-content:space-between"><h2>Starters</h2><span class="small muted">recommended · projected ${f1(s.total)}</span></div>
+      <div class="tablewrap"><table>${head}<tbody>${starters}</tbody></table></div></div>
+    <div class="card"><h2>Bench</h2><div class="tablewrap"><table>${head}<tbody>${bench || `<tr><td colspan="5" class="muted">Empty</td></tr>`}</tbody></table></div></div>
+    ${reserve ? `<div class="card"><h2>IR / Taxi</h2><div class="tablewrap"><table>${head}<tbody>${reserve}</tbody></table></div></div>` : ""}
+    <p class="small muted"><span class="chip good">START</span> recommended but not in your Sleeper lineup · <span class="chip warn">BENCH</span> in your Sleeper lineup
+      but the model would bench him. Tap a row for the breakdown: Adj = base × injury × matchup × weather × news.</p></div>`;
+  bindLeague(view);
+}
+
+// ---- Waivers -----------------------------------------------------------------------------
+const W = { mode: store.get("wmode", "rec"), q: "", pos: new Set(), hideInj: false, sort: "adj", n: 30 };
+const WSORT = [["adj", "Adj"], ["proj", "Proj"], ["recent_avg", "Recent"], ["ppg", "Pts/game"], ["trending_adds", "Adds 48h"]];
+function whatifText(pid) {
+  const r = L.waivers.whatif[pid];
+  if (!r) return `<span class="small muted">Not precomputed: what-ifs cover the top ${L.meta.whatif_players} free agents.</span>`;
+  return `<span class="diff ${dcls(r.weekly_gain)}">${signed(r.weekly_gain)}</span> this week · <span class="diff ${dcls(r.ros_gain)}">${signed(r.ros_gain)}</span> vs
+    ${r.drop ? plink(r.drop.player_id, r.drop.name) : "the drop"} · bid <b title="${esc(bidWhy(r.bid_detail))}">${esc(r.bid)}</b>`;
+}
+function pageWaivers() {
+  if (!L || !L.summary) return needLeague("Waivers");
+  const s = L.summary;
+  view.innerHTML = `<div class="stack">${runNote(s)}<div class="row" style="justify-content:space-between">
+      <div class="seg" role="tablist"><button type="button" data-mode="rec" class="${W.mode === "rec" ? "on" : ""}">Recommended</button>
+        <button type="button" data-mode="browse" class="${W.mode === "browse" ? "on" : ""}">Browse free agents</button></div>
+      <span class="small muted">${s.meta.faab ? `FAAB left $${s.meta.budget_left} · ` : ""}week ${s.meta.week}</span></div><div id="wbody" class="stack" style="margin-top:0"></div></div>`;
+  view.querySelectorAll("[data-mode]").forEach((b) => b.addEventListener("click", () => { W.mode = b.dataset.mode; store.set("wmode", W.mode); pageWaivers(); }));
+  if (W.mode === "rec") waiverRecs($("#wbody")); else waiverBrowse($("#wbody"));
+  bindLeague(view);
+}
+function waiverRecs(el) {
+  const s = L.summary, P = s.players, recs = s.waiver_recs || [];
+  if (!recs.length) { el.innerHTML = `<div class="card empty"><h2>No free agents clear the thresholds</h2><p>Browse the pool to look through everyone.</p></div>`; return; }
+  el.innerHTML = `<div class="card"><h2>Recommended adds</h2><div class="tablewrap"><table><thead><tr><th>Player</th><th class="adj">Adj</th>
+      <th class="num" title="Change in this week's best lineup total">Gain</th><th class="num" title="Value vs. the suggested drop, rest of season">Vs drop</th><th>Bid</th></tr></thead><tbody>
+    ${recs.map((r) => { const e = P[r.player_id] || { name: lname(r.player_id) };
+      return `<tr class="clickable" data-expand="${esc(r.player_id)}"><td>${plink(r.player_id, e.name)} ${injShort(e.injury_status)}
+          <div class="small muted">${posTag(e.position)} ${esc(e.team || "")} · ${esc(oppText(e))}${r.drop_id ? ` · drop ${esc(lname(r.drop_id))}` : ""}</div></td>
+        <td class="adj">${f1(e.adj)}</td><td class="num"><span class="diff ${dcls(r.weekly_gain)}">${signed(r.weekly_gain)}</span></td>
+        <td class="num"><span class="diff ${dcls(r.ros_gain)}">${signed(r.ros_gain)}</span></td><td><b>${esc(r.bid)}</b></td></tr>
+        <tr class="detail" data-detail="${esc(r.player_id)}" hidden><td colspan="5">${e.base != null ? whyPanel(e) : ""}
+          ${r.bid_detail && r.bid_detail.value !== undefined ? `<div class="why-meta"><span><b>Why ${esc(String(r.bid).split(" ")[0])}:</b> ${esc(bidWhy(r.bid_detail))}</span></div>` : ""}</td></tr>`; }).join("")}
+    </tbody></table></div>
+    <p class="small muted" style="margin:10px 0 0">Gain is the change in this week's best lineup total. Vs drop compares projection and recent form with the suggested drop. Tap a row for the reasoning behind the bid.</p></div>`;
+}
+function waiverBrowse(el) {
+  const pool = L.waivers.pool.players || [];
+  el.innerHTML = `<div class="row">
+      <div class="search" style="flex:1 1 200px"><input id="wq" type="search" placeholder="Search free agents…" value="${esc(W.q)}" aria-label="Search free agents"></div>
+      ${["QB", "RB", "WR", "TE", "K", "DEF"].map((p) => `<button type="button" class="pill ${W.pos.has(p) ? "on" : ""}" data-pos="${p}">${p}</button>`).join("")}
+    </div><div class="row small">
+      <label for="wsort">Sort</label><select id="wsort">${WSORT.map(([k, l]) => `<option value="${k}" ${W.sort === k ? "selected" : ""}>${l}</option>`).join("")}</select>
+      <label><input type="checkbox" id="winj" ${W.hideInj ? "checked" : ""}> Hide injured</label></div><div class="card" id="wlist"></div>`;
+  const draw = () => {
+    const q = W.q.trim().toLowerCase();
+    const rows = pool.filter((p) => (!q || p.name.toLowerCase().includes(q)) && (!W.pos.size || W.pos.has(p.position)) && (!W.hideInj || !p.injury_status))
+      .sort((a, b) => (b[W.sort] ?? -1e9) - (a[W.sort] ?? -1e9));
+    const shown = rows.slice(0, W.n);
+    $("#wlist").innerHTML = `<div class="tablewrap"><table><thead><tr><th>Player</th><th class="adj">Adj</th><th class="num">Proj</th>
+        <th class="num hide-sm">Recent</th><th class="num hide-sm">Pts/g</th><th class="num hide-sm">Adds 48h</th></tr></thead><tbody>
+      ${shown.map((p) => `<tr class="clickable" data-expand="${esc(p.player_id)}"><td>${plink(p.player_id, p.name)} ${injShort(p.injury_status)}
+          ${p.recommended ? `<span class="chip turf">rec</span>` : ""}<div class="small muted">${posTag(p.position)} ${esc(p.team)} · ${esc(oppText(p))} ${grade(p.matchup_grade && p.matchup_grade !== "-" ? p.matchup_grade : "")}</div></td>
+        <td class="adj">${f1(p.adj)}</td><td class="num">${f1(p.proj)}</td><td class="num hide-sm">${f1(p.recent_avg)}</td><td class="num hide-sm">${f1(p.ppg)}</td>
+        <td class="num hide-sm">${p.trending_adds ? p.trending_adds.toLocaleString() : "–"}</td></tr>
+        <tr class="detail" data-detail="${esc(p.player_id)}" hidden><td colspan="6"><b>What if you add him?</b> ${whatifText(p.player_id)}</td></tr>`).join("")
+        || `<tr><td colspan="6" class="muted">No free agents match these filters.</td></tr>`}</tbody></table></div>
+      ${rows.length > W.n ? `<div class="more"><button type="button" class="btn" id="wmore">Show more (${rows.length - W.n} left)</button></div>` : ""}
+      <p class="small muted" style="margin:10px 0 0">${rows.length} of the top ${pool.length} free agents by adjusted points (live estimates without news).
+        Tap a player for the what-if: the lineup gain, the suggested drop and a FAAB bid.</p>`;
+    const more = $("#wmore"); if (more) more.addEventListener("click", () => { W.n += 30; draw(); });
+  };
+  let t = null;
+  $("#wq").addEventListener("input", (ev) => { clearTimeout(t); t = setTimeout(() => { W.q = ev.target.value; W.n = 30; draw(); }, 120); });
+  el.querySelectorAll("[data-pos]").forEach((b) => b.addEventListener("click", () => { W.pos.has(b.dataset.pos) ? W.pos.delete(b.dataset.pos) : W.pos.add(b.dataset.pos); b.classList.toggle("on"); W.n = 30; draw(); }));
+  $("#wsort").addEventListener("change", (ev) => { W.sort = ev.target.value; draw(); });
+  $("#winj").addEventListener("change", (ev) => { W.hideInj = ev.target.checked; W.n = 30; draw(); });
+  draw();
+}
+
 // ---- shell -----------------------------------------------------------------------------------
 function route() {
-  const t = ["player", "compare", "news", "ask"].includes(location.hash.slice(1)) ? location.hash.slice(1) : "player";
+  const tabs = ["summary", "matchup", "roster", "waivers", "player", "compare", "news", "ask"];
+  const t = tabs.includes(location.hash.slice(1)) ? location.hash.slice(1) : L ? "summary" : "player";
   document.querySelectorAll("#tabs a").forEach((a) => (a.dataset.t === t ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current")));
   $("#tip").hidden = true;
   if (t !== "ask") ctl?.abort();
-  ({ player: pagePlayer, compare: pageCompare, news: pageNews, ask: pageAsk })[t]();
+  ({ summary: pageSummary, matchup: pageMatchup, roster: pageRoster, waivers: pageWaivers,
+     player: pagePlayer, compare: pageCompare, news: pageNews, ask: pageAsk })[t]();
   store.set("tab", t);
 }
 
@@ -623,8 +997,8 @@ function route() {
   $("#fresh").textContent = `Stats through week ${m.through_week} · week ${m.next_week} projections`
     + (L ? ` · league data ${when(L.meta.exported_at)}` : ` · updated ${when(m.generated_at)}`)
     + (m.model_run ? " · includes your pipeline run" : "");
-  const saved = store.get("tab", "player");
-  if (!location.hash && saved !== "player") { location.hash = saved; return; }   // hashchange renders it
+  const home = L ? "summary" : "player", saved = store.get("tab", home);
+  if (!location.hash && saved !== home) { location.hash = saved; return; }   // hashchange renders it
   route();
 })();
 window.addEventListener("hashchange", route);

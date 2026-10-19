@@ -80,12 +80,17 @@ Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live
 
 ## Scout artifact (phone-friendly, claude.ai)
 
-`artifact/scout.html` is published at https://claude.ai/artifact/GHejCcRerJbdxFTxyZ1kdm (Player, Compare, News,
-Ask tabs; Ask uses the `sample` capability with page tools over `data.json`). To refresh it ("refresh Scout"):
+`artifact/scout.html` is published at https://claude.ai/artifact/7bcvvp7CnotW12vqVxho1q in Brendan's personal claude.ai
+account (an older copy in his work account is retired). Tabs: Summary, Matchup, Roster and Waivers read `league.json` (the web
+app's own JSON, so they mirror `ffa/web`); Player, Compare and News read `data.json`; Ask uses the `sample` capability with page
+tools over both (`my_league` and `waiver_pool` when `league.json` is present). The "Refresh Brendobendo Scout" scheduled task
+republishes it from `main` + the `data` branch, so page changes go live only after they merge to `main`. To refresh it by hand ("refresh Scout"):
 1. Get the data: normally clone the `data` branch (`reports/scout/data.json`, `reports/league.json`), which
    `predict.yml` refreshes. Locally: `python -m ffa scout-data` and `python -m ffa export --username …`.
 2. Artifact tool: publish `artifact/scout.html` with `url` = the link above, `files` =
-   `{"data.json": "<...>/scout/data.json", "league.json": "<...>/league.json"}`, and omit `capabilities` (keeps `sample`).
+   `{"data.json": "<...>/scout/data.json", "league.json": "<...>/league.json", "version.json": ...}`, and omit `capabilities`
+   (keeps `sample`). `version.json` = `{"data_commit", "code_commit", "published_at"}`; the scheduled task skips a refresh when both
+   commits match.
 The page cannot fetch anything itself (artifact CSP), so all data ships in those two files. `league.json` is optional
 (the page works without it). claude.ai scheduled tasks republish Scout from the `data` branch on a schedule.
 
