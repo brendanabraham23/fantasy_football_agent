@@ -68,15 +68,28 @@ Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live
 
 ## Hosting (Hugging Face Space + `data` branch)
 
-- `.github/workflows/predict.yml` runs the pipeline on the §4.10 schedule (and on dispatch) and commits
-  `reports/` to the `data` branch. Needs repo variable `SLEEPER_USERNAME` (optional `SLEEPER_LEAGUE_ID`).
-  Scheduled runs only fire from the default branch.
+- `.github/workflows/predict.yml` runs the pipeline (input `pipeline=true`) or only the exports (`pipeline=false`) and
+  commits `reports/` to the `data` branch. Needs repo variable `SLEEPER_USERNAME` (optional `SLEEPER_LEAGUE_ID`).
+  Its only cron is a daily export-only backup; see "Schedule" below for what actually starts it.
 - `.github/workflows/deploy-space.yml` pushes `ffa/`, `config.json`, `requirements.txt` and the `Dockerfile` to the
   Space in repo variable `HF_SPACE`, using secret `HF_TOKEN`.
 - Space settings: variables `SLEEPER_USERNAME`, `FFA_DATA_REPO=owner/repo`, optional `FFA_WORKFLOW_REF`;
   secrets `FFA_GITHUB_TOKEN` (fine-grained, Actions read/write on this repo; without it the UI is read-only)
   and `FFA_PASSWORD` (HTTP Basic auth, any username).
 - The Space's disk is ephemeral: never write anything there that must survive a restart.
+
+## Schedule
+
+GitHub's own cron ran hours late or skipped runs on this repo, so claude.ai scheduled tasks (Brendan's personal account,
+using the GitHub connection, no token) start `predict.yml` by `workflow_dispatch`. Times are Eastern:
+
+| Task | When | What |
+|---|---|---|
+| Start fantasy pipeline (game days) | Sun, Mon, Thu 8:45, then hourly 11:45-23:45 | Full pipeline Thu 18:45, Sun 11:45, 12:45 and 15:45, Mon 17:45; export only otherwise |
+| Start fantasy pipeline (other days) | Tue, Wed, Fri, Sat 8:45 and 18:45 | Full pipeline Tue 18:45 (before waivers); export only otherwise |
+| Refresh Brendobendo Scout | Sun, Mon, Thu 9:07, then hourly 12:07-23:07; other days 9:07 and 19:07 | Republishes Scout when `data` or the page changed |
+
+The refresh times trail the starts by about 20 minutes so each export is on the `data` branch before Scout republishes.
 
 ## Scout artifact (phone-friendly, claude.ai)
 
