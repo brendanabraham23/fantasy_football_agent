@@ -1,5 +1,5 @@
 # Brendobendo - Week 6, 2026
-_Refounders Football League   - generated Tue Oct 20 12:53 AM_
+_Refounders Football League   - generated Tue Oct 20 12:54 AM_
 
 ## Recommended lineup
 
