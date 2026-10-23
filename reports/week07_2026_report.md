@@ -1,29 +1,29 @@
 # Brendobendo - Week 7, 2026
-_Refounders Football League   - generated Thu Oct 22 10:47 PM_
+_Refounders Football League   - generated Fri Oct 23 12:52 AM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| QB | Jared Goff | QB | DET | vs GB | 24.7 | 32.1 | F (5/32) | 28.2 | Indoors | +0.17 (15) | - | **26.4** |
-| RB | Ashton Jeanty | RB | LV | vs LA | 15.9 | 15.0 | D (12/32) | 22.5 | Indoors | +0.01 (15) | - | **15.0** |
+| QB | Jared Goff | QB | DET | vs GB | 25.0 | 32.1 | F (5/32) | 28.2 | Indoors | +0.17 (15) | - | **26.6** |
+| RB | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | +0.01 (15) | - | **15.0** |
 | RB | Bucky Irving | RB | TB | @ CAR | 16.9 | 14.8 | A (28/32) | 20.8 | 67F, wind 8mph | -0.18 (15) | Questionable | **14.4** |
-| WR | Matthew Golden | WR | GB | @ DET | 15.4 | 18.1 | A (31/32) | 25.2 | Indoors | +0.17 (15) | Questionable | **16.7** |
+| WR | Matthew Golden | WR | GB | @ DET | 15.3 | 18.1 | A (31/32) | 25.2 | Indoors | +0.17 (15) | Questionable | **16.7** |
 | WR | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 8mph | +0.10 (15) | - | **16.4** |
 | TE | Tucker Kraft | TE | GB | @ DET | 11.6 | 12.3 | A (32/32) | 25.2 | Indoors | -0.04 (15) | - | **14.2** |
 | FLEX | Breece Hall | RB | NYJ | vs MIA | 14.1 | - | A (30/32) | 22.0 | 66F, wind 3mph | -0.23 (15) | Questionable | **13.4** |
 | K | Jason Myers | K | SEA | vs KC | 8.4 | 11.7 | C (16/32) | 22.8 | 51F, wind 6mph | -0.16 (7) | - | **9.4** |
 | DEF | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 24.0 | 80F, wind 4mph | +0.00 (0) | - | **9.6** |
 
-Projected lineup total (adjusted): **135.6**
+Projected lineup total (adjusted): **135.8**
 
 ### Changes vs. your current Sleeper lineup
 
-- START **Jalen Coker** (WR, 16.4 adj)
-- START **Jared Goff** (QB, 26.4 adj)
+- START **Jared Goff** (QB, 26.6 adj)
 - START **Breece Hall** (RB, 13.4 adj)
-- BENCH Aaron Rodgers (QB, 26.4 adj)
+- START **Jalen Coker** (WR, 16.4 adj)
 - BENCH Denzel Boston (WR, 8.8 adj, Questionable (Foot))
+- BENCH Aaron Rodgers (QB, 26.4 adj)
 - BENCH James Cook III (RB, 0.0 adj, BYE)
 
 ## Injury and bye alerts
@@ -40,14 +40,14 @@ Projected lineup total (adjusted): **135.6**
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jared Goff | QB | DET | vs GB | 24.7 | 32.1 | F (5/32) | 28.2 | Indoors | +0.17 (15) | - | **26.4** |
-| 2 | Aaron Rodgers | QB | PIT | @ NO | 23.5 | 27.9 | C (18/32) | 24.0 | Indoors | +0.01 (15) | - | **26.4** |
+| 1 | Jared Goff | QB | DET | vs GB | 25.0 | 32.1 | F (5/32) | 28.2 | Indoors | +0.17 (15) | - | **26.6** |
+| 2 | Aaron Rodgers | QB | PIT | @ NO | 23.4 | 27.9 | C (18/32) | 24.0 | Indoors | +0.01 (15) | - | **26.4** |
 
 ### RB
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Ashton Jeanty | RB | LV | vs LA | 15.9 | 15.0 | D (12/32) | 22.5 | Indoors | +0.01 (15) | - | **15.0** |
+| 1 | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | +0.01 (15) | - | **15.0** |
 | 2 | Bucky Irving | RB | TB | @ CAR | 16.9 | 14.8 | A (28/32) | 20.8 | 67F, wind 8mph | -0.18 (15) | Questionable | **14.4** |
 | 3 | Breece Hall | RB | NYJ | vs MIA | 14.1 | - | A (30/32) | 22.0 | 66F, wind 3mph | -0.23 (15) | Questionable | **13.4** |
 | 4 | James Cook III | RB | BUF | BYE | 0.0 | 21.1 | - (-) | - | - | -0.02 (15) | - | **0.0** |
@@ -56,7 +56,7 @@ Projected lineup total (adjusted): **135.6**
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Matthew Golden | WR | GB | @ DET | 15.4 | 18.1 | A (31/32) | 25.2 | Indoors | +0.17 (15) | Questionable | **16.7** |
+| 1 | Matthew Golden | WR | GB | @ DET | 15.3 | 18.1 | A (31/32) | 25.2 | Indoors | +0.17 (15) | Questionable | **16.7** |
 | 2 | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 8mph | +0.10 (15) | - | **16.4** |
 | 3 | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.5 | 75F, wind 2mph | -0.07 (15) | Questionable | **8.8** |
 | 4 | Keenan Allen | WR | IND | @ MIN | 8.1 | 12.8 | F (5/32) | 17.5 | Indoors | +0.08 (15) | - | **7.8** |
@@ -84,16 +84,16 @@ Projected lineup total (adjusted): **135.6**
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Kyler Murray | QB | MIN | vs IND | 21.0 | 18.2 | +0.0 | +13.0 | 756184 | Jake Ferguson | $18 of $55 |
-| Brandon McManus | K | LA | @ LV | 7.6 | - | +0.0 | +7.8 | 238208 | - | $14 of $55 |
-| Roschon Johnson | RB | CHI | vs NE | 10.2 | 8.9 | +0.0 | +3.4 | 1971128 | Jake Ferguson | $15 of $55 |
-| Tre Tucker | WR | LV | vs LA | 9.7 | 14.2 | +0.0 | +5.6 | 468210 | Jake Ferguson | $13 of $55 |
-| Tanner McKee | QB | PHI | vs DAL | 15.5 | 5.6 | +0.0 | +6.2 | 340680 | Jake Ferguson | $12 of $55 |
-| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +3.2 | 961776 | Jake Ferguson | $11 of $55 |
-| J.J. McCarthy | QB | NYG | @ HOU | 11.8 | 7.0 | +0.0 | +5.3 | 279126 | Jake Ferguson | $11 of $55 |
-| Ryan Flournoy | WR | DAL | @ PHI | 9.8 | 12.2 | +0.0 | +3.6 | 297872 | Jake Ferguson | $10 of $55 |
+| Brandon McManus | K | LA | @ LV | 7.6 | - | +0.0 | +7.7 | 297016 | - | $14 of $55 |
+| Roschon Johnson | RB | CHI | vs NE | 10.2 | 8.9 | +0.0 | +3.4 | 2131328 | Jake Ferguson | $15 of $55 |
+| Tanner McKee | QB | PHI | vs DAL | 15.5 | 5.6 | +0.0 | +6.2 | 344496 | Jake Ferguson | $12 of $55 |
+| Tre Tucker | WR | LV | vs LA | 9.7 | 14.2 | +0.0 | +5.6 | 455382 | Jake Ferguson | $13 of $55 |
+| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +3.2 | 961146 | Jake Ferguson | $11 of $55 |
+| J.J. McCarthy | QB | NYG | @ HOU | 11.8 | 7.0 | +0.0 | +5.3 | 275607 | Jake Ferguson | $11 of $55 |
+| Ryan Flournoy | WR | DAL | @ PHI | 9.8 | 12.2 | +0.0 | +3.6 | 306944 | Jake Ferguson | $10 of $55 |
 | Michael Penix Jr. | QB | ATL | vs SF | 19.4 | 22.4 | +0.0 | +14.9 | - | Jake Ferguson | $6 of $55 |
-| Tyler Allgeier | RB | ARI | vs DEN | 10.3 | 7.4 | +0.0 | +3.4 | 177825 | Jake Ferguson | $13 of $55 |
+| Tyler Allgeier | RB | ARI | vs DEN | 10.3 | 7.4 | +0.0 | +3.4 | 209345 | Jake Ferguson | $13 of $55 |
+| Jacoby Brissett | QB | ARI | vs DEN | 16.5 | 19.8 | +0.0 | +12.9 | - | Jake Ferguson | $6 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 

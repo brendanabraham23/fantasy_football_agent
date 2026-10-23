@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,CAR,False,False,Questionable,Illness,16.93,14.83,3,28.0,32.0,1.2,20.75,"67F, wind 8mph",-0.178,15,0.85,1.056,1.0,0.986,16.299999999999997,14.43,0,RB,['Questionable (Illness)'],roster,,,
+11646,Jalen Coker,WR,CAR,TB,True,False,,,15.65,15.7,1,20.0,32.0,1.03,23.75,"67F, wind 8mph",0.1,15,1.0,1.042,1.0,1.008,15.665,16.45,0,WR,[],roster,,,
+12501,Matthew Golden,WR,GB,DET,False,False,Questionable,Shoulder,15.3,18.13,3,31.0,32.0,1.26,25.25,Indoors,0.171,15,0.85,1.198,1.0,1.014,16.148999999999997,16.67,0,WR,['Questionable (Shoulder)'],roster,,,
+12527,Ashton Jeanty,RB,LV,LA,True,False,,,15.97,15.03,3,12.0,32.0,0.92,22.5,Indoors,0.006,15,1.0,0.959,1.0,1.0,15.687999999999999,15.04,0,RB,[],roster,,,
+13346,Denzel Boston,WR,CLE,TEN,False,False,Questionable,Foot,10.92,9.67,3,24.0,32.0,1.11,19.5,"75F, wind 2mph",-0.074,15,0.85,0.984,1.0,0.994,10.544999999999998,8.77,0,,['Questionable (Foot)'],roster,,,
+1479,Keenan Allen,WR,IND,MIN,False,False,,,8.13,12.85,2,5.0,32.0,0.84,17.5,Indoors,0.081,15,1.0,0.817,1.0,1.006,9.546,7.85,217004,,[],roster,,,
+2747,Jason Myers,K,SEA,KC,True,False,,,8.36,11.67,3,16.0,32.0,1.02,22.75,"51F, wind 6mph",-0.162,7,1.0,1.015,1.0,0.987,9.353,9.37,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,GB,True,False,,,24.98,32.12,2,5.0,32.0,0.72,28.25,Indoors,0.172,15,1.0,0.969,1.0,1.014,27.122,26.65,0,QB,[],roster,,,
+8110,Jake Ferguson,TE,DAL,PHI,False,False,,,7.91,4.1,3,13.0,32.0,0.84,24.5,"60F, wind 4mph",-0.055,15,1.0,0.96,1.0,0.996,6.7669999999999995,6.47,0,,[],roster,,,
+8138,James Cook III,RB,BUF,,,True,,,0.0,21.13,3,,,,,,-0.018,15,0.0,1.0,1.0,0.999,6.3389999999999995,0.0,0,,['BYE'],roster,,,
+8155,Breece Hall,RB,NYJ,MIA,True,False,Questionable,Quadriceps,14.05,,0,30.0,32.0,1.32,22.0,"66F, wind 3mph",-0.226,15,0.85,1.146,1.0,0.982,14.05,13.44,0,FLEX,['Questionable (Quadriceps)'],roster,,,
+9484,Tucker Kraft,TE,GB,DET,False,False,,,11.64,12.27,3,32.0,32.0,2.29,25.25,Indoors,-0.041,15,1.0,1.2,1.0,0.997,11.828999999999999,14.15,0,TE,[],roster,,,
+96,Aaron Rodgers,QB,PIT,NO,False,False,,,23.44,27.95,3,18.0,32.0,1.06,24.0,Indoors,0.007,15,1.0,1.063,1.0,1.001,24.793,26.38,278676,,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,ARI,False,False,,,8.22,10.67,3,,,,24.0,"80F, wind 4mph",0.0,0,1.0,1.067,1.0,1.0,8.955,9.55,0,DEF,[],roster,,,
+1433,Brandon McManus,K,LA,LV,False,False,,,7.72,,0,7.0,32.0,0.83,26.0,Indoors,0.0,0,1.0,0.985,1.0,1.0,7.72,7.6,297016,,[],waiver,0.0,7.72,$14 of $55
+10235,Roschon Johnson,RB,CHI,NE,True,False,,,9.81,8.93,3,17.0,32.0,0.96,26.75,,0.0,0,1.0,1.072,1.0,1.0,9.546,10.23,2131328,,[],waiver,0.0,3.37,$15 of $55
+9230,Tanner McKee,QB,PHI,DAL,True,False,,,18.83,5.58,3,28.0,32.0,1.26,20.0,"60F, wind 4mph",-0.245,15,1.0,1.066,1.0,0.98,14.854999999999997,15.52,344496,,[],waiver,0.0,6.2,$12 of $55
+10213,Tre Tucker,WR,LV,LA,True,False,,,8.98,14.2,3,4.0,32.0,0.84,22.5,Indoors,0.0,0,1.0,0.919,1.0,1.0,10.546,9.69,455382,,[],waiver,0.0,5.58,$13 of $55
+9482,Michael Mayer,TE,LV,LA,True,False,,,7.1,11.3,3,2.0,32.0,0.6,22.5,Indoors,0.0,0,1.0,0.8,1.0,1.0,8.36,6.69,961146,,[],waiver,0.0,3.19,$11 of $55
+11565,J.J. McCarthy,QB,NYG,HOU,False,False,,,15.64,6.98,3,21.0,32.0,1.09,16.0,"79F, wind 10mph",0.211,15,1.0,0.893,1.0,1.017,13.042,11.84,275607,,[],waiver,0.0,5.31,$11 of $55
+11783,Ryan Flournoy,WR,DAL,PHI,False,False,,,7.05,12.23,3,30.0,32.0,1.19,24.5,"60F, wind 4mph",0.0,0,1.0,1.143,1.0,1.0,8.604,9.83,306944,,[],waiver,0.0,3.64,$10 of $55
+11559,Michael Penix Jr.,QB,ATL,SF,True,False,,,19.47,22.37,3,9.0,32.0,0.86,23.5,"69F, wind 11mph",0.071,15,1.0,0.95,1.0,1.006,20.339999999999996,19.44,0,,[],waiver,0.0,14.92,$6 of $55
+8132,Tyler Allgeier,RB,ARI,DEN,True,False,,,11.44,7.43,3,27.0,32.0,1.15,19.5,"80F, wind 4mph",0.078,15,1.0,1.003,1.0,1.006,10.236999999999998,10.33,209345,,[],waiver,0.0,3.43,$13 of $55
+3257,Jacoby Brissett,QB,ARI,DEN,True,False,,,17.97,19.8,3,12.0,32.0,0.89,19.5,"80F, wind 4mph",0.14,15,1.0,0.881,1.0,1.011,18.519,16.49,0,,[],waiver,0.0,12.88,$6 of $55
