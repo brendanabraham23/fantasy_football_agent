@@ -1,5 +1,5 @@
 # Brendobendo - Week 7, 2026
-_Refounders Football League   - generated Sun Oct 25 07:17 PM_
+_Refounders Football League   - generated Sun Oct 25 07:46 PM_
 
 ## Recommended lineup
 
@@ -19,8 +19,8 @@ Projected lineup total (adjusted): **140.5**
 
 ### Changes vs. your current Sleeper lineup
 
-- START **Jalen Coker** (WR, 16.5 adj)
 - START **Jared Goff** (QB, 28.3 adj)
+- START **Jalen Coker** (WR, 16.5 adj)
 - BENCH Aaron Rodgers (QB, 25.9 adj)
 - BENCH James Cook III (RB, 0.0 adj, BYE)
 
@@ -79,16 +79,16 @@ Projected lineup total (adjusted): **140.5**
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Deshaun Watson | QB | CLE | @ TEN | 14.9 | 14.8 | +0.0 | +16.5 | 60088 | Breece Hall | $15 of $55 |
-| Jaylin Noel | WR | HOU | vs NYG | 11.8 | 15.9 | +1.5 | +12.4 | 64647 | Breece Hall | $16 of $55 |
+| Deshaun Watson | QB | CLE | @ TEN | 14.9 | 14.8 | +0.0 | +16.5 | 59376 | Breece Hall | $15 of $55 |
+| Jaylin Noel | WR | HOU | vs NYG | 11.8 | 15.9 | +1.5 | +12.4 | 63982 | Breece Hall | $16 of $55 |
 | Michael Penix Jr. | QB | ATL | vs SF | 19.3 | 22.4 | +0.0 | +21.0 | - | Breece Hall | $8 of $55 |
-| Tanner McKee | QB | PHI | vs DAL | 15.3 | 5.6 | +0.0 | +12.0 | 75840 | Breece Hall | $14 of $55 |
-| Tre Tucker | WR | LV | vs LA | 9.8 | 14.2 | +0.0 | +11.6 | 81498 | Breece Hall | $16 of $55 |
-| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +9.2 | 217872 | Breece Hall | $19 of $55 |
-| Tyler Allgeier | RB | ARI | vs DEN | 10.3 | 7.4 | +0.0 | +9.4 | 149970 | Breece Hall | $23 of $55 |
-| Ryan Flournoy | WR | DAL | @ PHI | 9.7 | 12.2 | +0.0 | +9.6 | 104920 | Breece Hall | $15 of $55 |
+| Tanner McKee | QB | PHI | vs DAL | 15.3 | 5.6 | +0.0 | +12.0 | 78632 | Breece Hall | $14 of $55 |
+| Tre Tucker | WR | LV | vs LA | 9.8 | 14.2 | +0.0 | +11.6 | 82242 | Breece Hall | $16 of $55 |
+| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +9.2 | 213570 | Breece Hall | $19 of $55 |
+| Tyler Allgeier | RB | ARI | vs DEN | 10.3 | 7.4 | +0.0 | +9.4 | 148110 | Breece Hall | $23 of $55 |
+| Ryan Flournoy | WR | DAL | @ PHI | 9.7 | 12.2 | +0.0 | +9.6 | 101216 | Breece Hall | $15 of $55 |
 | Baker Mayfield | QB | TB | @ CAR | 15.5 | - | +0.0 | +18.3 | - | Breece Hall | $7 of $55 |
-| Justice Hill | RB | BAL | vs CIN | 6.7 | 6.1 | +0.0 | +6.9 | 287667 | Breece Hall | $17 of $55 |
+| Justice Hill | RB | BAL | vs CIN | 6.7 | 6.1 | +0.0 | +6.9 | 287262 | Breece Hall | $17 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
