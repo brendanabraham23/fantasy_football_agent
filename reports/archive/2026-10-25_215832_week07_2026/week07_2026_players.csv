@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,CAR,False,False,,,16.43,14.83,3,28.0,32.0,1.2,20.75,"68F, wind 9mph",0.041,15,1.0,1.059,1.0,1.003,15.95,16.94,0,RB,[],roster,,,
+11646,Jalen Coker,WR,CAR,TB,True,False,,,15.65,15.7,1,20.0,32.0,1.03,23.75,"68F, wind 9mph",0.112,15,1.0,1.045,1.0,1.009,15.665,16.52,0,WR,[],roster,,,
+12501,Matthew Golden,WR,GB,DET,False,False,,,15.53,18.13,3,31.0,32.0,1.26,26.0,Indoors,0.006,15,1.0,1.2,1.0,1.0,16.31,19.57,0,WR,[],roster,,,
+12527,Ashton Jeanty,RB,LV,LA,True,False,,,16.16,15.03,3,12.0,32.0,0.92,22.5,Indoors,0.036,15,1.0,0.962,1.0,1.003,15.820999999999998,15.27,0,RB,[],roster,,,
+13346,Denzel Boston,WR,CLE,TEN,False,False,,,10.89,9.67,3,24.0,32.0,1.11,19.0,"75F, wind 3mph",0.059,15,1.0,0.974,1.0,1.005,10.524000000000001,10.3,0,FLEX,[],roster,,,
+1479,Keenan Allen,WR,IND,MIN,False,False,,,9.31,12.85,2,5.0,32.0,0.84,17.5,Indoors,0.139,15,1.0,0.819,1.0,1.011,10.372,8.59,88904,,[],roster,,,
+2747,Jason Myers,K,SEA,KC,True,False,,,8.65,11.67,3,16.0,32.0,1.02,22.75,"52F, wind 5mph",-0.05,3,1.0,1.017,1.0,0.996,9.556,9.68,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,GB,True,False,,,26.7,32.12,2,5.0,32.0,0.72,29.5,Indoors,0.14,15,1.0,0.996,1.0,1.011,28.325999999999997,28.52,0,QB,[],roster,,,
+8110,Jake Ferguson,TE,DAL,PHI,False,False,,,7.84,4.1,3,13.0,32.0,0.84,24.0,"55F, wind 5mph",0.0,15,1.0,0.952,1.0,1.0,6.717999999999999,6.4,0,,[],roster,,,
+8138,James Cook III,RB,BUF,,,True,,,0.0,21.13,3,,,,,,-0.148,15,0.0,1.0,1.0,0.988,6.3389999999999995,0.0,0,,['BYE'],roster,,,
+8155,Breece Hall,RB,NYJ,MIA,True,False,Questionable,Quadriceps,0.0,,0,30.0,32.0,1.32,21.5,"68F, wind 3mph",-0.242,15,0.85,1.136,1.0,0.981,0.0,0.0,0,,['Questionable (Quadriceps)'],roster,,,
+9484,Tucker Kraft,TE,GB,DET,False,False,,,11.77,12.27,3,32.0,32.0,2.29,26.0,Indoors,0.07,15,1.0,1.2,1.0,1.006,11.919999999999998,14.39,0,TE,[],roster,,,
+96,Aaron Rodgers,QB,PIT,NO,False,False,,,22.79,27.95,3,18.0,32.0,1.06,23.25,Indoors,0.203,15,1.0,1.049,1.0,1.016,24.337999999999997,25.94,86600,,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,ARI,False,False,,,8.25,10.67,3,,,,24.0,"80F, wind 3mph",0.0,0,1.0,1.065,1.0,1.0,8.975999999999999,9.56,0,DEF,[],roster,,,
+4017,Deshaun Watson,QB,CLE,TEN,False,False,,,18.15,14.82,3,11.0,32.0,0.88,19.0,"75F, wind 3mph",-0.001,15,1.0,0.868,1.0,1.0,17.150999999999996,14.89,60056,,[],waiver,0.0,16.48,$15 of $55
+12536,Jaylin Noel,WR,HOU,NYG,True,False,,,8.82,15.93,3,14.0,32.0,0.97,26.25,"82F, wind 10mph",0.058,15,1.0,1.069,1.0,1.005,10.953,11.77,61735,,[],waiver,1.47,12.38,$16 of $55
+11559,Michael Penix Jr.,QB,ATL,SF,True,False,,,19.71,22.37,3,9.0,32.0,0.86,23.5,"69F, wind 10mph",-0.12,15,1.0,0.952,1.0,0.99,20.508000000000003,19.33,0,,[],waiver,0.0,21.04,$8 of $55
+9230,Tanner McKee,QB,PHI,DAL,True,False,,,18.36,5.58,3,28.0,32.0,1.26,19.5,"55F, wind 5mph",-0.027,15,1.0,1.056,1.0,0.998,14.525999999999998,15.31,83656,,[],waiver,0.0,11.97,$14 of $55
+10213,Tre Tucker,WR,LV,LA,True,False,,,9.06,14.2,3,4.0,32.0,0.84,22.5,Indoors,0.0,0,1.0,0.921,1.0,1.0,10.602,9.76,78666,,[],waiver,0.0,11.63,$16 of $55
+9482,Michael Mayer,TE,LV,LA,True,False,,,7.17,11.3,3,2.0,32.0,0.6,22.5,Indoors,0.0,0,1.0,0.801,1.0,1.0,8.408999999999999,6.74,200250,,[],waiver,0.0,9.23,$19 of $55
+8132,Tyler Allgeier,RB,ARI,DEN,True,False,,,11.44,7.43,3,27.0,32.0,1.15,19.5,"80F, wind 3mph",0.0,0,1.0,1.005,1.0,1.0,10.236999999999998,10.29,136735,,[],waiver,0.0,9.43,$23 of $55
+11783,Ryan Flournoy,WR,DAL,PHI,False,False,,,7.03,12.23,3,30.0,32.0,1.19,24.0,"55F, wind 5mph",0.0,0,1.0,1.133,1.0,1.0,8.59,9.73,95912,,[],waiver,0.0,9.63,$15 of $55
+4892,Baker Mayfield,QB,TB,CAR,False,False,Questionable,Thumb,18.33,,0,20.0,32.0,1.07,20.75,"68F, wind 9mph",0.018,15,0.85,0.996,1.0,1.001,18.33,15.53,0,,['Questionable (Thumb)'],waiver,0.0,18.33,$7 of $55
+13294,Makai Lemon,WR,PHI,DAL,True,False,,,8.93,6.63,3,26.0,32.0,1.12,19.5,"55F, wind 5mph",0.0,0,1.0,0.991,1.0,1.0,8.239999999999998,8.17,190760,,[],waiver,0.0,7.78,$14 of $55
