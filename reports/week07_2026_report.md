@@ -1,36 +1,31 @@
 # Brendobendo - Week 7, 2026
-_Refounders Football League   - generated Fri Oct 23 12:52 AM_
+_Refounders Football League   - generated Sun Oct 25 03:46 PM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| QB | Jared Goff | QB | DET | vs GB | 25.0 | 32.1 | F (5/32) | 28.2 | Indoors | +0.17 (15) | - | **26.6** |
-| RB | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | +0.01 (15) | - | **15.0** |
-| RB | Bucky Irving | RB | TB | @ CAR | 16.9 | 14.8 | A (28/32) | 20.8 | 67F, wind 8mph | -0.18 (15) | Questionable | **14.4** |
-| WR | Matthew Golden | WR | GB | @ DET | 15.3 | 18.1 | A (31/32) | 25.2 | Indoors | +0.17 (15) | Questionable | **16.7** |
-| WR | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 8mph | +0.10 (15) | - | **16.4** |
-| TE | Tucker Kraft | TE | GB | @ DET | 11.6 | 12.3 | A (32/32) | 25.2 | Indoors | -0.04 (15) | - | **14.2** |
-| FLEX | Breece Hall | RB | NYJ | vs MIA | 14.1 | - | A (30/32) | 22.0 | 66F, wind 3mph | -0.23 (15) | Questionable | **13.4** |
-| K | Jason Myers | K | SEA | vs KC | 8.4 | 11.7 | C (16/32) | 22.8 | 51F, wind 6mph | -0.16 (7) | - | **9.4** |
-| DEF | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 24.0 | 80F, wind 4mph | +0.00 (0) | - | **9.6** |
+| QB | Jared Goff | QB | DET | vs GB | 26.4 | 32.1 | F (5/32) | 29.5 | Indoors | +0.26 (15) | - | **28.6** |
+| RB | Bucky Irving | RB | TB | @ CAR | 16.4 | 14.8 | A (28/32) | 20.8 | 67F, wind 10mph | -0.04 (15) | - | **16.8** |
+| RB | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | -0.02 (15) | - | **15.1** |
+| WR | Matthew Golden | WR | GB | @ DET | 15.6 | 18.1 | A (31/32) | 26.0 | Indoors | +0.08 (15) | - | **19.8** |
+| WR | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 10mph | +0.08 (15) | - | **16.5** |
+| TE | Tucker Kraft | TE | GB | @ DET | 11.8 | 12.3 | A (32/32) | 26.0 | Indoors | +0.02 (15) | - | **14.3** |
+| FLEX | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.0 | 74F, wind 3mph | +0.10 (15) | - | **10.3** |
+| K | Jason Myers | K | SEA | vs KC | 8.7 | 11.7 | C (16/32) | 22.8 | 51F, wind 5mph | -0.05 (3) | - | **9.7** |
+| DEF | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 23.5 | 80F, wind 3mph | +0.00 (0) | - | **9.6** |
 
-Projected lineup total (adjusted): **135.8**
+Projected lineup total (adjusted): **140.7**
 
 ### Changes vs. your current Sleeper lineup
 
-- START **Jared Goff** (QB, 26.6 adj)
-- START **Breece Hall** (RB, 13.4 adj)
-- START **Jalen Coker** (WR, 16.4 adj)
-- BENCH Denzel Boston (WR, 8.8 adj, Questionable (Foot))
-- BENCH Aaron Rodgers (QB, 26.4 adj)
+- START **Jared Goff** (QB, 28.6 adj)
+- START **Jalen Coker** (WR, 16.5 adj)
 - BENCH James Cook III (RB, 0.0 adj, BYE)
+- BENCH Aaron Rodgers (QB, 26.1 adj)
 
 ## Injury and bye alerts
 
-- Bucky Irving (RB, TB): Questionable (Illness)
-- Matthew Golden (WR, GB): Questionable (Shoulder)
-- Denzel Boston (WR, CLE): Questionable (Foot)
 - James Cook III (RB, BUF): BYE
 - Breece Hall (RB, NYJ): Questionable (Quadriceps)
 
@@ -40,126 +35,126 @@ Projected lineup total (adjusted): **135.8**
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jared Goff | QB | DET | vs GB | 25.0 | 32.1 | F (5/32) | 28.2 | Indoors | +0.17 (15) | - | **26.6** |
-| 2 | Aaron Rodgers | QB | PIT | @ NO | 23.4 | 27.9 | C (18/32) | 24.0 | Indoors | +0.01 (15) | - | **26.4** |
+| 1 | Jared Goff | QB | DET | vs GB | 26.4 | 32.1 | F (5/32) | 29.5 | Indoors | +0.26 (15) | - | **28.6** |
+| 2 | Aaron Rodgers | QB | PIT | @ NO | 22.8 | 27.9 | C (18/32) | 23.2 | Indoors | +0.30 (15) | - | **26.1** |
 
 ### RB
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | +0.01 (15) | - | **15.0** |
-| 2 | Bucky Irving | RB | TB | @ CAR | 16.9 | 14.8 | A (28/32) | 20.8 | 67F, wind 8mph | -0.18 (15) | Questionable | **14.4** |
-| 3 | Breece Hall | RB | NYJ | vs MIA | 14.1 | - | A (30/32) | 22.0 | 66F, wind 3mph | -0.23 (15) | Questionable | **13.4** |
-| 4 | James Cook III | RB | BUF | BYE | 0.0 | 21.1 | - (-) | - | - | -0.02 (15) | - | **0.0** |
+| 1 | Bucky Irving | RB | TB | @ CAR | 16.4 | 14.8 | A (28/32) | 20.8 | 67F, wind 10mph | -0.04 (15) | - | **16.8** |
+| 2 | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | -0.02 (15) | - | **15.1** |
+| 3 | James Cook III | RB | BUF | BYE | 0.0 | 21.1 | - (-) | - | - | -0.12 (15) | - | **0.0** |
+| 4 | Breece Hall | RB | NYJ | vs MIA | 0.0 | - | A (30/32) | 22.0 | 66F, wind 4mph | -0.18 (15) | Questionable | **0.0** |
 
 ### WR
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Matthew Golden | WR | GB | @ DET | 15.3 | 18.1 | A (31/32) | 25.2 | Indoors | +0.17 (15) | Questionable | **16.7** |
-| 2 | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 8mph | +0.10 (15) | - | **16.4** |
-| 3 | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.5 | 75F, wind 2mph | -0.07 (15) | Questionable | **8.8** |
-| 4 | Keenan Allen | WR | IND | @ MIN | 8.1 | 12.8 | F (5/32) | 17.5 | Indoors | +0.08 (15) | - | **7.8** |
+| 1 | Matthew Golden | WR | GB | @ DET | 15.6 | 18.1 | A (31/32) | 26.0 | Indoors | +0.08 (15) | - | **19.8** |
+| 2 | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 10mph | +0.08 (15) | - | **16.5** |
+| 3 | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.0 | 74F, wind 3mph | +0.10 (15) | - | **10.3** |
+| 4 | Keenan Allen | WR | IND | @ MIN | 9.3 | 12.8 | F (5/32) | 17.5 | Indoors | +0.17 (15) | - | **8.6** |
 
 ### TE
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Tucker Kraft | TE | GB | @ DET | 11.6 | 12.3 | A (32/32) | 25.2 | Indoors | -0.04 (15) | - | **14.2** |
-| 2 | Jake Ferguson | TE | DAL | @ PHI | 7.9 | 4.1 | C (13/32) | 24.5 | 60F, wind 4mph | -0.06 (15) | - | **6.5** |
+| 1 | Tucker Kraft | TE | GB | @ DET | 11.8 | 12.3 | A (32/32) | 26.0 | Indoors | +0.02 (15) | - | **14.3** |
+| 2 | Jake Ferguson | TE | DAL | @ PHI | 7.8 | 4.1 | C (13/32) | 24.0 | 54F, wind 4mph | +0.00 (15) | - | **6.4** |
 
 ### K
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jason Myers | K | SEA | vs KC | 8.4 | 11.7 | C (16/32) | 22.8 | 51F, wind 6mph | -0.16 (7) | - | **9.4** |
+| 1 | Jason Myers | K | SEA | vs KC | 8.7 | 11.7 | C (16/32) | 22.8 | 51F, wind 5mph | -0.05 (3) | - | **9.7** |
 
 ### DEF
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 24.0 | 80F, wind 4mph | +0.00 (0) | - | **9.6** |
+| 1 | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 23.5 | 80F, wind 3mph | +0.00 (0) | - | **9.6** |
 
 ## Waiver wire targets
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Brandon McManus | K | LA | @ LV | 7.6 | - | +0.0 | +7.7 | 297016 | - | $14 of $55 |
-| Roschon Johnson | RB | CHI | vs NE | 10.2 | 8.9 | +0.0 | +3.4 | 2131328 | Jake Ferguson | $15 of $55 |
-| Tanner McKee | QB | PHI | vs DAL | 15.5 | 5.6 | +0.0 | +6.2 | 344496 | Jake Ferguson | $12 of $55 |
-| Tre Tucker | WR | LV | vs LA | 9.7 | 14.2 | +0.0 | +5.6 | 455382 | Jake Ferguson | $13 of $55 |
-| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +3.2 | 961146 | Jake Ferguson | $11 of $55 |
-| J.J. McCarthy | QB | NYG | @ HOU | 11.8 | 7.0 | +0.0 | +5.3 | 275607 | Jake Ferguson | $11 of $55 |
-| Ryan Flournoy | WR | DAL | @ PHI | 9.8 | 12.2 | +0.0 | +3.6 | 306944 | Jake Ferguson | $10 of $55 |
-| Michael Penix Jr. | QB | ATL | vs SF | 19.4 | 22.4 | +0.0 | +14.9 | - | Jake Ferguson | $6 of $55 |
-| Tyler Allgeier | RB | ARI | vs DEN | 10.3 | 7.4 | +0.0 | +3.4 | 209345 | Jake Ferguson | $13 of $55 |
-| Jacoby Brissett | QB | ARI | vs DEN | 16.5 | 19.8 | +0.0 | +12.9 | - | Jake Ferguson | $6 of $55 |
+| Deshaun Watson | QB | CLE | @ TEN | 14.9 | 14.8 | +0.0 | +16.5 | 54904 | Breece Hall | $15 of $55 |
+| Jaylin Noel | WR | HOU | vs NYG | 11.8 | 15.9 | +1.5 | +12.4 | 61596 | Breece Hall | $16 of $55 |
+| Michael Penix Jr. | QB | ATL | vs SF | 19.8 | 22.4 | +0.0 | +21.2 | - | Breece Hall | $8 of $55 |
+| Tanner McKee | QB | PHI | vs DAL | 15.3 | 5.6 | +0.0 | +12.0 | 68600 | Breece Hall | $13 of $55 |
+| Tre Tucker | WR | LV | vs LA | 9.8 | 14.2 | +0.0 | +11.6 | 81258 | Breece Hall | $16 of $55 |
+| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +9.2 | 231939 | Breece Hall | $19 of $55 |
+| Tyler Allgeier | RB | ARI | vs DEN | 10.2 | 7.4 | +0.0 | +9.4 | 146325 | Breece Hall | $23 of $55 |
+| Ryan Flournoy | WR | DAL | @ PHI | 9.7 | 12.2 | +0.0 | +9.6 | 115984 | Breece Hall | $15 of $55 |
+| Baker Mayfield | QB | TB | @ CAR | 15.3 | - | +0.0 | +18.3 | - | Breece Hall | $7 of $55 |
+| Mike Gesicki | TE | CIN | @ BAL | 8.1 | 10.2 | +0.0 | +9.2 | 71788 | Breece Hall | $18 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
 ## News driving sentiment
 
-**Breece Hall** (-0.23)
-- [Commanders could fix two major offensive weaknesses with bold Breece Hall and Jerry Jeudy trade deadline moves - A to Z Sports](https://news.google.com/rss/articles/CBMirwFBVV95cUxOa3NfR1hqZDdtejViZVNHTkwwbkNCX1BjT1p4cmVwRVVRdklCQnllVi1YRGg0bWctd0xLY05fajdoRWVmUE90MXQwS0xyNl9FSHE1alc2dzYzdUk1a3U2aVAzZm5jdVlVUG9DbDhWSnhwTVhWb0Juem14Vk1PSGVqX2x5RHhhdk9XbW1WUzNGVmNCT1IyRzl3T1FsQ1d3SG5IQmV3UlhEdVpobU9zSlBR?oc=5) (-0.79)
-- [NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant - CBS Sports](https://news.google.com/rss/articles/CBMinwFBVV95cUxOd25CdUM0eXV3YkxiVUR6T1VyanFlMnEtUDUtRTBhT19KLThMQktodElzNm5kUGJHUEtnQTVFbjNGMmRnRTBMeHowU0tUUUZmS05jUFJFUkE3UXBZbUV5ZnlHd0swb0dOMkZ6TV96VVhwTFBjQmNqdlBJNE01emc4NUtiSUVwYXR6dm5QYldheEp3dmFESnpFLUh4am1ubkE?oc=5) (-0.77)
-- [NFL Week 7 injury report: Ravens' Lamar Jackson limited, Jets' Breece Hall a non-participant - thepress.net](https://news.google.com/rss/articles/CBMiiwJBVV95cUxNcGxWRkdWalc5UURxUkxvdU5CbFRFR29GOTdOTkFtbG5BQmRPN2xCT3lBWG5FX3gycm9MQmJ3Q1FBRDZfcElyZGhhQWdQR0lMX193dGpqVGdlYnRNeFBtQWxVNEhyakhFQmVqVllzU0JMZXREbEt6NklvT1VncjVCTzlDZUR6Q0tIcVRMdzFFS3VQdmZIMC1LbnE1VDZuSTh3alV2anllM2xBelktWEJNbWhOZWM5VDhIQm5MQkdzYXBNNjVTZWhpNkJPZXk3dHlQVmNOZVJPUWZLbUY4LWFySmw1X0pWeTVZbnA3WXluTVpTR1RSTWtDREdjbW1QOVg5YWx1OW92bHhRWVE?oc=5) (-0.77)
+**Aaron Rodgers** (+0.30)
+- [NFL Paris 2026: Aaron Rodgers and his magnificent obsession ready for more NFL history in final season of storied career - Sky Sports](https://news.google.com/rss/articles/CBMi9gFBVV95cUxNSTJsV1oza2lFMm5wTVFRVEFkalJjMmN2c3NEVHNaWF9KQ0NuQWpmT2RMVXRfQTNOSGFpTExMZ2hfek9YYXloOGxtRzlySjZrRC1ISnJyS0lEb0lJM21QVHBJTVNWNmc5QkM3dXdGU2lQV3ZYSXNTVURWR1l6QmFHMlp4RHVSa2RZRVBuczItWS1YdU9lQXZyRExEaTBWVWdfSDY1YnBWbFFfdHlrMkg2aDVZZGlYbFpPd2N2YW1vWXlEcUwwU19JQ01zOHVUZVFRMHFHQU40bUloWmpBZnEteFlER3Bsd0JQVWJZOXc0MkFYQ2t2YVE?oc=5) (+0.84)
+- [Aaron Rodgers throws 540th career touchdown, passing Peyton Manning on all-time list - Yahoo Sports](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPVXExM1NPY3RCVGV5Q0t1SU5xSlZKczVZWkpmRTdVRUM4Y1JDQWhyLTZuc2p6MHpfa3NPQmc4M2kxNTFkcm16UFExdk5GZ09PbTF1ZUZZWXBCLXhCMnZWYVFrSjFjVkNzTmlmRm5SWlZaLVhULWxHQWhlNUFoZTNuNUdraFdlQ0Jtb1dSWGZ2ZWdFN1Rqc1BNcE1xNkF3SlktaFFhOUNuVHhRS2NHdTRFM3JZUXFWOHQ0MDBjT3JLWmdyaC1UbS1iRG82ZmJkVkhtc1F6elljRG13cjlfR2JLeHZ4MA?oc=5) (+0.61)
+- [Aaron Rodgers passes Peyton Manning on all-time touchdowns list - Yahoo Sports](https://news.google.com/rss/articles/CBMijAFBVV95cUxQYVVWdWNBMzVGQnYtSnJob1hrVUEtR1VDalBxcEdvX3Y1bUtDQjgwbnNXYndXQ2NOeHBkeUowMG1FWUNGcmd3V3N0aGx3M0xFcVZ3YnM4RTNQOVJxNlFDWHQ3Nm1lZ0w1VGh0dWhXWUtXY19QVGNkNFNTRUJZT00yUE5PX191ZDZvSlJaVg?oc=5) (+0.61)
 
-**Bucky Irving** (-0.18)
-- [Bucky Irving (illness) practices Thursday - FantasyPros](https://news.google.com/rss/articles/CBMikAFBVV95cUxQOGdtRjlDNzkyRzJrQS1YVlZfVU9LWlBpeFlTVGltOXV6dU9oTG1LQWRtQWxsYUJZWU1tR0pyVTJIcGt1WDZzT1N5c2djX1lobEpVTXdlMEVKbkctc0Uta0JCaHZkdzNrYUpyZml2SjJtcVFuUy04UThBNDYxMTBvQUdsU3plVGlfXzNfeTR2bW3SAZYBQVVfeXFMTXVaQUFVeXpXSHM3M1ZjMGxmdDlJTWdKakxRb0pxLVY5UXBTejJJaTNHdThkYzZ2LVBSUHlsVElvRGVXdU9WMjdnSFAwZFJIUTRZRW05WVp1VXg0T3VHRkJVMEJOcURPWGliM3cydzZOZFNMYU40dmd6WHluQzc4Qzg3MkI1ZHZGOWdRVklLUW5qVUNVMjN3?oc=5) (-0.66)
-- [Bucky Irving (illness) not practicing on Wednesday - NBC Sports](https://news.google.com/rss/articles/CBMitAFBVV95cUxPQ2dxaXFOREkyUFhXclRZT1lOV2dsQWV6UHRDSVY4UzZzNTNPbnBZRG9iWkJpb2N1aVdpMFJFMnZXM1JEejFBSEhFWnVnclg3eHFkeW45RXNrR2g1eWRVQ3lpTGhUbk5acWU5M0ZwRHpoRG1wcDF2SG5MUUc1N1laenJPR3Ixa1V1OEdRQ3NROWstcEV4bWxCeTl0MkhWZFl6T2ZiUHV5LVFCNE5BbHYxd3VsNHg?oc=5) (-0.66)
-- [Bucky Irving Logs limited practice Thursday - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMimgFBVV95cUxQSzRVOWVuYjRNYXlVeGd3eHRzSkRrT2V1cGdZVHVmb0JOcFIzRlRtcVZxYjNJS2ZCU09BeXBXQ2x5OWFEaFMtWHV1RmFTaHZyOW55YXFoTzFfNW5EZkpGaWVJYUdMZFQyUDlzUjBjVFdpNDc0THUyM1FRY0JyeldRUkFPanFMMkMzY1NmWUpnSTE4cmJmOGxIOXdB?oc=5) (-0.62)
+**Jared Goff** (+0.26)
+- [Jonathan Gannon has found new gear with Packers defense, and it’s perfectly built to beat Jared Goff’s Lions - Yahoo Sports](https://news.google.com/rss/articles/CBMiiwFBVV95cUxNZzhKWndCaDV0MzhVMnFTSmxqek1kWlpUREtzY25lY1lwdmFTMno4dlpNbkk3S0dqR3JPN0hVcGgtN3pjVXBmSW1memw3bGhSUDhSNklLMm1yeG9mSUEwa0RfaFhzLVhWSUlUYW8yNjM1Mk1RUFF0SlNQaENiWm9ZTHh3Yy10aGVReE9F?oc=5) (+0.89)
+- [Who Should I Start for Fantasy Football Week 7? Jared Goff, Dak Prescott, Jordan Love, Matthew Stafford, Joe Burrow, Patrick Mahomes, Tanner McKee, Deshaun Watson, Sam Darnold - RotoBaller](https://news.google.com/rss/articles/CBMikgJBVV95cUxNeXBSSHJHVlBnZ3dDQ1BoTHhocTljU3BBN3MtYnBUajJKYzFJWHc4V2p5azBvbUMtNElsX01TMi1QTUdLV0Rsc1g5blRwTkxpU0h4M3NGU3UwbU82dE05QnE2WGgzaDhQRE9XMnlFc05XcjN3Y3FSOW50S014ME5sbW9pUWRybmxUenI2QnppRWkwVk5wNW8ySXpFSE4wck1xYXladERKTDZYdVFrRUd5ZzNvcWVtWHFDMFRwb1oxR3o4NlNVNVRUdU9adkxvbW4xbFVVbDBDNEdOZ2lJTFBPQ3dWa3ZMQ2VUbVFsSTVteGF1WHE4WDVlUnZYdmpPeUxrS0dFTmFDdkNHMTVfVThCODVR?oc=5) (+0.86)
+- [Best NFL Week 7 Player Prop Bets: Goff, Smith and Corum - FTN (For the Numbers)](https://news.google.com/rss/articles/CBMiggFBVV95cUxNd3NvWHczLUE0SGpGVEkzQ1lIT1p2VmVtaTkySkZqLWNEcmItU0Z4WUVTQ1Z2SERkNnBOUGo5MHdCRE9NaHBWUGwxa1FBQjJEY3laWnV3UVBidlJabjFsWmh1M016d2xUSnNveXlhUzNRRkVjMk4ybWtBT2ZxZUpkVmln?oc=5) (+0.86)
 
-**Jared Goff** (+0.17)
-- [7 key predictions for fantasy football Week 7: Goff, Love both go off - USA Today](https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSzZpZFBITGlnMlVBQmF5OUFHcVAzamVLbHpyVW0xeWhyYU9PdzFuMm94aEt5MUh6RmVLTUZsT3hyQmVIUnNfeWN4dng5ckxnaWhGeEJzVDZXMHJsOFRlbHFORHRiRDVaRXhaM3pDbkdzYkc0NUU4N09VTWowU0J1NVk1VkZPMlFPWG1kT2lZQlZNdW9lWlVTMjlSQ2pHQTVvZEsxTjFxTDdIWDVMQkZjSzJLRVBKNjZUQmZr?oc=5) (+0.86)
-- [Who Should I Start for Fantasy Football Week 7? Aaron Rodgers, C.J. Stroud, Kyler Murray, Jared Goff, Tyler Shough, Dak Prescott, Bryce Young, Bo Nix, Jordan Love, Kirk Cousins, Joe Burrow - RotoBaller](https://news.google.com/rss/articles/CBMinwJBVV95cUxPbDdNdFBFcFFOaUhPWGNtUWFCZDJTbXNZTzVONUVLLWh5amV2ek5NSGtsMlBLWGhZSGdoQU9uVEh6MGc3Z1dDTWpjZTVVMi01Y1ZkUFpIV2ZSU0hRQWd2R1hZZ3NobVVwOGh3dmN6bEtBRHhCeUFMNmluYnJpRkxqUk5HUE9mSVVPMFpDMUhnWXUzdFQtS2dzWUJ5S1Q1X0VTSlBVeURwcWh5LVRocVJuZEx0M1pXaUJBUk1hNVJMMnAyYmFvYzV6d3NnemdQZVNldWlBN3JjcC1ObmVVQk95ZFd1aXpWNXlreGVVdlFuOS1SaURRMnBXNG12WnRrdU5zU2trbkFSQV9HNWE4WmlMd1lpN0ZNLW1TOGl2N3Y4dw?oc=5) (+0.86)
-- [Jared Goff is making NFL history, and the Lions should be terrifying everyone - Yahoo Sports](https://news.google.com/rss/articles/CBMihAFBVV95cUxOZnVsbDA4VnFtZkxkR012NlVxOGdSb0RVOHdNT0ZjQWtYblJDWFc4VmtHN2ZDMml0V2lULTY1Z2tsUUVncXJOdkJHQUR2QUdpSmZneUlaZjN5OU1ucVQ2TVBuUGpzV3VaamVTTkdybU54UHQ4MllHelZjUFRLTHdkWnhBbWs?oc=5) (-0.81)
+**Breece Hall** (-0.18)
+- [Jets' Breece Hall inactive for Week 7 vs. Dolphins, despite return to practice](https://sports.yahoo.com/articles/jets-breece-hall-inactive-week-153310553.html) (-0.81)
+- [Jets get bad news amid 'unlikely' Breece Hall update for Week 7 - Yahoo Sports](https://news.google.com/rss/articles/CBMiggFBVV95cUxQYkY4QUZlT3pNaVJxQjJQR1M0YUFhbk1ZcUtMQzVxZ0tuaWk4Q21Wb3V4U3ZMcGtWcjItVnZ1YTdEZXppam1vZUtUdWlzUmFwNG13RDFzWldlZzBRcDJTZ01DUHpJaTRJRURlaEVOZUlpQnQ4bWo3eHY5UW1xTWhvMVFR?oc=5) (-0.79)
+- [New York Jets Announce Unfortunate Breece Hall News Before Dolphins Game - Heavy.com](https://news.google.com/rss/articles/CBMimwFBVV95cUxObWQ0SUtxY1ZNZE1rVUstTk5oS0tXU0Fld1lGM1lLa3QwWmhPaFJlSklRMnhFZnIxZHBEVGhJQlBBWmhWTXF6dV9DNDFQZnl2RWdGaGlWMVlYOGZ2SWwwTjkwbkRVUTF6SDdYVXRRSTNCYWRtRWNPNjcxYVlzdkI4OGpzTEMwQXVDM3hMYmJOanRKWWRtRGc2NDNlYw?oc=5) (-0.72)
 
-**Matthew Golden** (+0.17)
-- [Jordan Love, Christian Watson, Matthew Golden all dealing with injuries before Packers-Lions game - Yahoo Sports](https://news.google.com/rss/articles/CBMijgFBVV95cUxNaHRzTnlmUDY5UXMwRnc2eWxxZ09sblpaeURmMlpmM2ZMTTlLaDRLX3JqRUNLOHBPcHppWm5wQm9QYzhLWlJ6Mk5Vc3Q4dVE5dy1kV2k4Mk1WaEo0bjlUNlJxNE1PZmdaTzR4YjRmS2c3LXItS1dRemo1S214WUJtRWlUZU42Nm0zWElCcVB3?oc=5) (+0.86)
-- [Green Bay Packers share Jordan Love, Christian Watson and Matthew Golden injury updates - Yahoo Sports](https://news.google.com/rss/articles/CBMihgFBVV95cUxON0lEVmx5YVJUR0VVdmlNbGVIS1czekdZcF9aemtHNi1pZVJRaXI2R3A0RkZ0TkhVMV9CV2ljSEQybW9pZFJuaUtrbDRNM3dzZGZ0QVhzRGVLQjZZNmpJT0tTekhsRmlyajNQQWd0cTM3Z3ZOdmY3ZVFXSWhtZ1lPRlFtRGpSQQ?oc=5) (+0.84)
-- [Matthew Golden (shoulder) will be good to go Sunday - FantasyPros](https://news.google.com/rss/articles/CBMingFBVV95cUxQNmw1LVpTc2E3UUIzVFVISXNPTkFUZDdIeFFXNnFUZXp4U1pVNjUyaUxWMEFwaERhM2hqV2dQVUZONmF0a0VRc1NydFlER0c0UkpMdE1ld1pSbFJuREpaMTdWMXZqd2hJWEhheEp4dEtjM1l2MjMwUE45ZXNDWVZHUjhWRHhQZDhMdktUVjZGUGxmUWw2LTVGM0tQcDl4d9IBowFBVV95cUxQeDNwVVktbmFMTk5zZkZsTENIMmx2aGRWX29iX0dlRUVWaERxR0NheVh3VWxncEZGc0lWXzdoSFJWUThtSEFRSTRTLW5TcUQtRHo0dU04SFoxUEtEeTJ2bTFKU0tkLVN1X1VwakVZc3ltb0FfZ0VLM0NxbTBZVU1PWjBac25Bdzg5ZXdYZ1ZpM2lyNUdLNjRsR2RYN19OQng0d1ZN?oc=5) (+0.70)
-
-**Jason Myers** (-0.16)
-- [Jason Myers Critical miss in overtime loss - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMimAFBVV95cUxNQldPVVBqeGhQOEU1Z0F0bzVFeDY0aHFLd0ZwVWh1LWFBRU12UUQ3a1pPWThDQmRtS05WR1l1dW9NbS1JZ2h1QXdXMVdiQjgwN0ZDRm5GdGJNVGpiZ3FuMHQxMVJsMklHUHlYR0tiODF1d3ZTS1NVUlRVVVhmN0hHN0d6eHRTcU8yQmJ4ZVdDMmlOVE1qNEJxeQ?oc=5) (-0.86)
-- [Jason Myers has big miss in loss to Denver - FantasyPros](https://news.google.com/rss/articles/CBMikAFBVV95cUxQSlFXandfdWZPeWZFYkxjQlVxUGZVYVp6NWpIMlVaamd4R3lHM3lFNTFnSjhMR0VBT1ZsSzdRX1VOWFo5NlYwWHl0dmNwMnJUSC1oUXpScE5uMGFOdUNRc3hUQm5YMVdtMEdwZU0xcmxNUlVSWThkbDUyQ2VuSHYtajNPcHJZUkF0Y0dqeThOUXXSAZYBQVVfeXFMUDVWYnB2cmMtWXNNOEc1dDJ1U0g2MXVna2RKNEh1SFlOSEwxNjlMTWNTYWtZTVFtTlFXaWR0ZVN4ZmtMYTkydzB2emdaU0FVMHo2VG1JWjBYMzhoSVc3eVR1RlB2TzQ4OGhjTGtTa0lTQWY1QWZMTV93akhvbmRaMGl4eFpHaEdRVzVEeGl0TXFWQ3J0S293?oc=5) (-0.70)
-- [Dallas Goedert or Jason Myers - FantasySP](https://news.google.com/rss/articles/CBMifEFVX3lxTE9MdVAwdmlfYWRsMnRRRXRSWG15Nmt4RC1vT0x5RDNPM1NseUF2dEJRTU45REotci1ZcHRCNUlMd2xoeHJHZVBSY0VEYVNkREV2V25mUGZzdDlVMW9RZm1zQTVDM1FyQUhKNlBxcDRORFJaZXhBWVJ3TTBlMmQ?oc=5) (+0.00)
-
-**Jalen Coker** (+0.10)
-- [Bryce Young Finds Jalen Coker for Huge Gain Stream of National Football League - CBS Sports](https://news.google.com/rss/articles/CBMijgFBVV95cUxPQlBJQklpSFpSTi1wRGloSUFaQTI2S1FRTWsxN3FTV01GcDJNaTlJSWhJY3R0bnp5MHZ6TUVDdUE4MXk1ZE9VUFNjUVlRcWgyVEZPem84Sjd0OGtseE90Q0pDSXZtVVhkM3l2cG9vSVU4RklINGpsemd5eXZJYzk4c2paNFFIdnlsb1JFbFpn?oc=5) (+0.89)
-- [Jalen Coker Deserves More Respect in Fantasy Football - TWSN](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNdTZVbExhYkFiUFJrQzdCWkI2U3FFRG9IUjRqWjJDRmxIQkdJeF9jTFZPSkJMVi1jcjRadUotOTg2Yl9lSDM5Sy1WMGQ0ODZDUlI2azB4NmpJTWtUdGhDcnlNcXlsQzJqVHJhR09vVjJOOWVobDg2VmNrd3VRTWlRTW5Tbk5xM2g4?oc=5) (+0.78)
-- [Jalen Coker’s new wrinkle gives Panthers a mismatch worth exploiting - Cat Crave](https://news.google.com/rss/articles/CBMimgFBVV95cUxOalc0Z05RaXpFdUVsbjljZlNQSm9zbEo3c0E0ODdzWGoyOVpJcnJ2SHpNV1kybEJrbUJIb3V0V1hfYXZxUkVPVUoxTFFINjU4VTI3VHNBS01mY2FJMTZ6QXItNHVaYjZQRDdJcTBVSWJ2T3VUZGRwM05GdDd5WFhxRTdONjVmU2EtSm9EalJISHRQcERERVFqZ1lB?oc=5) (-0.46)
-
-**Keenan Allen** (+0.08)
-- [Keenan Allen (rest) sidelined at practice Wednesday - FantasyPros](https://news.google.com/rss/articles/CBMimgFBVV95cUxPcVZ1MUhOazhNbEY5cURuU3RkMjRyYXZVZTNqbGpFWlpsUkxiQWg2WUhpemhBeEJvZnY4TGROd2ZtY1BMYUI4ZmFxZmgzVVZfWXBMX2ZfQUZ6d1dlM1g5ZlBpVlhMaUwxdTZaSTltUDlJSFVFdjJza2JQeEY3bGZlUzFHN1Qxejh3TDd5TWlrT25uU256elVDRkRR0gGfAUFVX3lxTE9lNGVWRUVVMEFZU1prNkF1SV9sd1dwSjF4QmxUUE9fcjV2NThCVS1Jc19xNXV0YUJ4VG1IQWxHWm50M2VncHh4RExweVNSdU53WUlGZlRJLWF3aU9YN1FfSmNlWGxRc0xxcWo3MUFzYWV5TUZPODluYklOamVWUEpRbkE5Q29KbWZXSWJHUmphNkhPSTRTZ2RqdFl6NDlQUQ?oc=5) (-0.72)
+**Keenan Allen** (+0.17)
+- [Keenan Allen or Jeremiyah Love - FantasySP](https://news.google.com/rss/articles/CBMifkFVX3lxTFBqZWRZZ2tfQ2V2UmRvTnFTaXZpU2R4bmk0aXZnbGk3SXpFTjd2ZS1ScHBBM0tia1dqRldCRFFRTVBFMklxX09ObEZLRHJ3andPYTA2Rnk4OUVDQlVUVDVkTHRoWVBBY1lWeGxIZzR0R2xCM2ZpQjVYcVZtX2V5Zw?oc=5) (+0.86)
+- [Who Should I Start for Fantasy Football Week 7? Braelon Allen, Jameson Williams, Keenan Allen, Ollie Gordon, Kendrick Bourne, Xavier Worthy, DK Metcalf, George Pickens, Malik Washington - RotoBaller](https://news.google.com/rss/articles/CBMiowJBVV95cUxQQ2RLSERmRHdLNFhkX0czX0hPMnlPU0lBVENkTG9MbFhsYVpIQVV0TGJJSzBqVGdYWDRlZFpwS1NkVUdLWS1WeXRET3VJcUF4UG1XR1VLSGFTdHo4WlE3ZF9Za19pdDZpRTgtUFExMWJ5U1E2ZFJVSHJhVEtHS21BeHlDamJiUzhwSG9mRFBfcGR4MUl3Y25BRktaRGZubnZQQURTMlVremE2RVhGZjNpMjdLekZZRmU0d29TMGFRV1lBdS12NHFIeEx1SFdPVVEzWEZoX1ltaW5lUW5MbnhnMmdmV2VZQ2NGZEFZTndFOUhFVDVpaUxYREEzOUtOdk9EVjFEc0ZDeVhueVNRaVZHVV9ycGFOR29TT29QMWd3RDRBU3c?oc=5) (+0.70)
 - [Week 7 fantasy football WR start-sit: Worthy, Wicks, Douglas, Allen - The Big Lead](https://news.google.com/rss/articles/CBMivgFBVV95cUxOWVpINDNPdEpSWTNJaVdNNjNWMjhmQjdLeUVuMXFqZVZvWTFQd0ZiZS1mbU5MQ0hTSWJzUURLMFliUkZBRkJlZmFLS1FUMjNteUxtVTVUT2FIaG5IaHhLM0ViWS1fT2VIWThJNFVaMl83LUN5QmNmb1VLZzlBRzZvUHdHQTZtZlZSRFdvMVF1MnJ4aHBzUDBNV2k4RXlUdFZnX1RTalhiRm5pZ005czRTRzdaTk5zbU9yOUk1LTVR?oc=5) (+0.70)
-- [Who Should I Start for Fantasy Football Week 7? Bam Knight, Jordan Addison, Keenan Allen, George Pickens, Xavier Worthy, Chuba Hubbard, Courtland Sutton, Aaron Jones, DeVonta Smith - RotoBaller](https://news.google.com/rss/articles/CBMinAJBVV95cUxNT0lfSnhkRGltY0dGbGMxRzBudUtxMXRRaGNTaDRTWldHZGQzT2FWeTBucVBVUGJPM3BQUGhCZWEtR2lEVlBCMHc0Z3o3RS1kLWI5T3NDaDRnY1I2MFBtVEFDd2xLRzBtZW1BeG5QRkd6WlR1cWlFem1mTjZKeDVKY1phZVU0akN1dkpzNHAzVGNZWFNDamlnblNFbUdXV1J5dExxcFNHSkc0Sm94MmFDTUdBNE4wNVh1VzNiX2gwYTBzbjNNU2Z0VXkzcHJjS0FydEJDUW8yN3M1X1RnV0N5d1RTYWNDRzZIWUsxYjNBeTcxZFROTWJzTzdjZTEyN1lqdzE4QUFfY2xjS21kVlBXbklHOW5hZXcyUDBwNg?oc=5) (+0.70)
 
-**Denzel Boston** (-0.07)
-- [Denzel Boston (foot) limited at practice on Wed. - NBC Sports](https://news.google.com/rss/articles/CBMisAFBVV95cUxQR0M1WkNOcXVYZTMwREY3c0FYUEs3Mk0xWXQwdXk5OFlNbnhxNFRTenZDNktCM2UtcTBxeDZJQ3VGd3gtMXlHdlJVekQwaUY2bWJOTkJPQTFXUVFFTjlMcnJrQUpTWEJUVmVjM2tDVWxBNWZMd0xuODllbUFmQzZJV2dwZ0s3SXJVdFJnMW12WTRnOEJOQlpSSkZVMUhSQWRTUkc5MFlDMUVNQktwb3JNSw?oc=5) (-0.42)
-- [Denzel Boston Limited by foot issue - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMijwFBVV95cUxQN2FyMmdlNVZTeFBqOEhSOHFUOEIxWWlmZ2dPTy1CUlBlZnR6M0JyVVJxRjJTYzVCSkpMRHdLVHNsRTdzMTRhNXJWSlQ0b0hINnRpQ2VsY1Y0TlhZRGNNRmcyMVRRN2NoWjh5cFZicVFSZEh0dUs2ekF2OWsta3dnQThDV3oydnBwTTBQdE5oOA?oc=5) (-0.42)
-- [Denzel Boston (foot) limited Wednesday - FantasyPros](https://news.google.com/rss/articles/CBMijAFBVV95cUxOVEoxZWtOckZ1LW9qSW1RZEdnWDlnU2daYWZvWHQyajk3Qm9IVXZFTE5meHJBVUlNSml6SExEVTN1TUU1Qi1aVTZRalA3UUpBbTQ0NFpfTE8xSWRGLW9oU1VaMkZhTWliYmY4Ty1EYUtldlVDX2R1QlBhVGF4NmkxNlg0N0NVS1VWaDZFX9IBkgFBVV95cUxQeFhxclZndFdYYmQ3R1N3cWpFMEtKYTQ5cUdLOFRwNWpnU1EwbGdfeHkzY3E0OHNzS09oOW1kdlJpUmRsSGlyQ09xYWZIcWhqdk4yR1ExbWlsNkcyYkkwa1ppeXNNd2hHbVFlNHByZFJGM05wWjRyNi1BR2JCSUpsZ0pkODRDdlRBaENPSm1ad2Nhdw?oc=5) (-0.42)
-
-**Jake Ferguson** (-0.06)
-- [NFL Week 6 player props picks, best bets: Nico Collins, Jake Ferguson are poised for big games - New York Post](https://news.google.com/rss/articles/CBMiqwFBVV95cUxObFNQXzlVZEJpZFE1NzRRU1RESEZ4R1hVSGtlVDllWnhtZUVzblI2eml4U0ZoLVVZd0NwYmQ0Q2piTXlKa1RZX0NGaU5qWTJvam11RFVlZHlSblhWcFZRMG1vSUR1OGtXQUE2Q2RaeE1YQUxLblk4amVJbE1IUHN2UVhzSFA3SXhMUVUyZ0ZGWTFjTWJJS3RJemduMFNJaW8wVXRkSFNFaHE5V2M?oc=5) (+0.91)
-- [Cowboys vs Packers Player Props for Jordan Love, Christian Watson, Jake Ferguson - Action Network](https://news.google.com/rss/articles/CBMisgFBVV95cUxNbFZJM2xscHN3aVlvc2lPejJUT3VxQW9kcEg4YlZDSGgxa2JIU2g4OEdJMHRyUlhTZWtvVTh2YVY2U0QxaG5oX1MxM19hTWxRQ2xZNHF2Wm1uWms2eFltRjJJZGNRdXVWRDFUUkxURlh3dmVmMDJMcWQ3SlJVRGxVVURBMDREN0g0ZTVmX2lhdHIwaUNTVnlQa2RLMmZjREZQZDNzQnZsc1RrWDlpN01JV1d3?oc=5) (+0.86)
-- [Disappointing homecoming for Jake Ferguson - Yahoo Sports](https://news.google.com/rss/articles/CBMikAFBVV95cUxQNmgyMUpHMmd3SkpDUU1HVmlzNWtraE5YV0lQZmlWa3M0MzdMd3ZZWkQ4WThHNjBiMGFWRWFRWlprbElnUUMzUEhFOGNlLURPejRXSkZSQnRjdU5Bd1hnM2hiakkzLUV3a3dTcjgwYjJuODJ1SzEzV2JlMEpDREZablpBU0YtaVhJTWhaLUxRU18?oc=5) (-0.75)
-
-**Tucker Kraft** (-0.04)
-- [Tucker Kraft shakes off injury scare for 5-37 line - NBC Sports](https://news.google.com/rss/articles/CBMitwFBVV95cUxOSXNLWlNCbFp6akFPTnAyN0d3ZzQwdUJiNUROOV8zR1FwOFBTa1d0dUJhTnV0SmhfMDZnNjd1LUdOYVhCcGR3eVJRc3NqRWRLc2JJWDJuemRnRGVWSldTdEJzSGJ0S2hFNDFONWExZXFTVTRyQTRHbTNYWUVvNzY3UXIwZi1LUWpXaW1DODRFSjFoTEpEbE1vRzBoU2QtWVlkaEJ2ZmlkbUdRMUU3Sk1PUkE4ck81X2s?oc=5) (-0.88)
-- [Tucker Kraft Five more catches in Week 6 win - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMimwFBVV95cUxPajIwU1ZqVmZQenBiNThmMXQ0aGJCcE1qeFVQVk1KR0hBaE9VQUhHMG9lYjhLcDdZMlVMeVV6VnotYU1OU3R1QXA3M05JVGxaVURkcnlFMkM0cmVPSF9DQUdrOUhpTlRocjJ0NlFwSzNTeGpfeDRUMzA5VXdVTTZ1bGZVdTZVQkcxUVJCZUdlMk45eHhyUXNpSExjYw?oc=5) (+0.82)
-- [Tucker Kraft dodges knee injury to finish with five receptions - Yahoo Sports](https://news.google.com/rss/articles/CBMihwFBVV95cUxQbzlSdXVuRWlMcGw5dEZOUVZBd1ZJYlZZZEdHSDlsM1NacUdNOFpuTFlLbFVxMEo4TXFfX3JqVmlqbGRqSzdJWmNLVFJUaVRGWUZKVVZNX3pTWTZWSmhmSWZkdXRCYk52ZG4yT0I0ai0yRnZybEJDNy1CQkxhLWdDeWoyVjBUMVk?oc=5) (-0.77)
-
-**James Cook III** (-0.02)
+**James Cook III** (-0.12)
 - [James Cook has improved efficiency from 2025, even against heavier boxes - Yahoo Sports](https://news.google.com/rss/articles/CBMijAFBVV95cUxQcGZMbXVVSVJuQXdUWVZJenZTYnVTZTNRN0NWQ2dKSkZBWXJreWYyM1AxNlJoUGFxdFMzaDU5WUQwWTVMX2RHb0cxR2lta3FKUnE2M3RpMUdndm1TZ3pTazZRb1ctbjBEZlFTNWx0anpHOFJNSlVZQko5SWpSNHdoWC1tWnZtNEtNUklZQg?oc=5) (+0.88)
 - ["James Cook is owed an apology" "fire Joe Brady right now": NFL fans blast Bills HC for "stupid comment" while discussing CJ Gardner-Johnson's future - Sportskeeda](https://news.google.com/rss/articles/CBMi9gFBVV95cUxORWFrUXV5SlZuS1RiNEdOeTBiVFpkTnIyaUEteVFNeGJ2UEZydWk2dzlNRzhjaDJoWkNvUTh3UURpQ0VJSkdNb2x0cUR3aURwYmp4WG5fUVlQVVBXOVhveE9mbS1mRTBISV9UTzVVbFpLWDZWaEQzUVoxVlM4bzc5ZHFsOHZsOFE5azZzOXlJYlVxVEY5MDhLakpod2tEWkZnRjVMYXAxVDJlamhqVXZtTHAzQ3RfRXByendJb2V6MlZiLURhT1NVQ2tNd3RlYThnNHVib1BURk5pWnM3c1FHVVAwM1FTLTBNeEFBeG84cjdtbUlEZnc?oc=5) (-0.88)
 - [Bills' James Cook has best receiving game of 2026 vs. Raiders - Bills Wire](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOVXlJVHI3RVBaZDhKMlRpdzB1NW5VcGw0ZnV6R0tkWkw2bHpYVlRoUnROb2dva1hSTl9tRWE2eFFSX1pFRzZUVy1xQjU0LTNNRUllcWdmWnRYc2ZIVFlXdGdRNGt2TnFEcHFwYWswcDduN1ZWNndQaUZkNWI4YkM1Sm0xdGZWRGZ5bkx4VmZSR3RjLXV4dlY2N0tHcE1MallRZ19ncVV1YnNNSXRVZkdkd0N6ZTdYN3N2RXUtVVFUU2hkcExpZUltWTI4YkpVOEhwN3E4?oc=5) (+0.86)
 
-**Aaron Rodgers** (+0.01)
-- [Aaron Rodgers' 11-TD Tear and 3 Other Things That Should Scare the Saints About the Steelers - Athlon Sports](https://news.google.com/rss/articles/CBMivAFBVV95cUxQUUc2QnNHdTh0dGJ0YTZ5d1paU2dwQ0g4RDJmY2tibVR6SlBITUU4X1V1Zm5RZFBNQUpDXzJjRmtWTnkwUkFORzVFNUZNM0tsVERTTVBlc2IwY1l4YTN3djNzTEdVTGE1RlhnRUdNNFl6TGhiUDlINjdhYXg1OXhIVUF3ZDhpenF3S3hUWDFYWE5OY19lLUhxSzFKaGNWdmtTQk9DSWtySEtfVGJWS3A0YnBhekFWYnF4R05rZw?oc=5) (-0.75)
-- [Charles Barkley takes shot at Aaron Rodgers: ‘I’m not gonna burn every bridge’ - Awful Announcing](https://news.google.com/rss/articles/CBMigwFBVV95cUxQb3Z6TkZJLWkzTTJDX2k2WFZVZ0NyRjBxVDl3SXhURFFpQkVrMUhXVWNCa0MxaFJIcnpCUlFLbEQxenItZUZuQ0dOeXhhMEZIYjFEUHljRE02OWFlYzQ5V3VfRE5vejNsNS1ob1FPZTJwOE05X1c2SFlIQkZNWTVpSE5icw?oc=5) (-0.72)
-- [Bold Predictions For Week 7: Aaron Rodgers To Finish As A QB1 - FantasyLife](https://news.google.com/rss/articles/CBMikwFBVV95cUxQbEpoMHNITV82VUZ1U2Q5bGJuR1d3SEdZMkRUdjg5WmdVOWNiUF9BNGJneXlEMlRnVlNndEFVcWVQVFJGbk84b2xoNVJVRzFGa2xiU1JscFVVdG5neU1vck9NY3kxQnk4WVJXaWF1OWFacGQzeHNJVTE5amY1aTlIZ2syU2tkcU43MTVveFZKeGd6cjQ?oc=5) (+0.64)
+**Denzel Boston** (+0.10)
+- [Denzel Boston on track to play in Week 7 - Yahoo Sports](https://news.google.com/rss/articles/CBMihAFBVV95cUxQNkZfNU05aExmb051TGQtNERCcDVGeW9LQmRJZExYeFRyaU0zd3ZuRmMyZVhyTnFuRDNMQ0JBYndCUGk1VEpvc2pMSFVWNmxkU0drS0E3TFN4WWRfaEJMM3VTQU41cUY2QjloNUE3MlVsRlprVmJXZ00xemxsSmVKYUtWbWM?oc=5) (+1.00)
+- [Will Denzel Boston have a breakout performance against the Titans? - Yahoo Sports](https://news.google.com/rss/articles/CBMisAFBVV95cUxPX19fa2YzNHBzbVBMU21CSXR1TUs2RlEyOEZ5QVIxaERVcVhqTVA4YzVEM3RoRV91eHVHYlJvMmhORkpEMm9YcjdERXBZeFhnVF9WdHhzVzJDUTZ4Z1p3R3QyZzI3a1JObVZBUDJrQnBwYXM0TVg0VTk3LWw3TVBFWGpPM3l1RTNVWUQ5WExHbG1zLTNFZzRzSWwwRDVoTUxvQktlR3BTcWhIbFZMRkd2cQ?oc=5) (+0.75)
+- [Xavier Worthy or Denzel Boston | Who Should I Start Week 7 - FantasySP](https://news.google.com/rss/articles/CBMifkFVX3lxTE5XM1hEc2M2anRTMUJfV2V1anAxY0hjeDZXbzJ1c0V3UFlJMmFHb0JTUUhIckgya3FEUFVjaVBLRUJLM29nbEF6bXZfLURubXIweWRnd2ZaeHRmUXc0cVBYRHRsVGhyLUFxT0ZWb25lbHBLaFRNc2hjVXpMLTJXdw?oc=5) (+0.70)
 
-**Ashton Jeanty** (+0.01)
+**Jalen Coker** (+0.08)
+- [Jalen Coker Gets Strong Prediction Before Panthers-Buccaneers Week 7 - roundtable.io](https://news.google.com/rss/articles/CBMitgFBVV95cUxPaHhELUNpM3pYWGpUaTFaVVEzdWxINDQyMjdROHNIZk1tMk8tZ1QyU1dGVWd1TllEVXNkNDFCWG8zdGtBVnJLUV9CSzE2ckhJMGpDbGNMZnA5T2lkdmpDSkNmRldVSTJaX0hBTmYyOVVLMi1QUDF5dXF4MDBTUnZaTjZZRGpObWU3NFlKSWhzNG56SXFaVjBFMXRKVzhKZWJ6LWVrR0l3U19ZLXhYeExvNTRBVXoyUQ?oc=5) (+0.77)
+- [Fantasy Football Trade Value Risers: Analyzing A Jalen Coker-Germie Bernard Trade - FantasyLife](https://news.google.com/rss/articles/CBMikAFBVV95cUxPNGl6VmJMaFVwRmgxdkt1bzUtaEhXZUxTUFMtd2R4SDlTMW5FbzZGNElERXpSdmxTYUhRUHFYMFhZcDRWeXRuc3hDMlV0bjVxNFV3R1NGOHdPQWhNWGVxSEF0dzZYYVJxTk5zbHJjNGV6U1VhTFNXX2g3UXJmcmpxazZpaHNNWFp3azJuTGJJMUY?oc=5) (+0.59)
+- [Fantasy Football Start or Sit: Jalen Coker, Chuba Hubbard & Darren Waller - Sports Illustrated](https://news.google.com/rss/articles/CBMipgFBVV95cUxObS1wSmFFX1ZIX2dBQjFlSk1PUHEtZ1l4UFV6TVBMZ2ZNSHlvRDhnMkFVTjBnLWFCUnBsMWVBUzgtanFnUUg2NFQtcjhiUXpMRXc4Q3JJTDhta1Rid0pSRFFPNnBOZjJnMEdveW9lZXRSaE9xUTdvMDgtNGF2QlNkdUpiMGdtdTZWU2RxR1JsQ3FzTGNwaWd3WGUxUWEwRm1hbWNxc2hB?oc=5) (+0.00)
+
+**Matthew Golden** (+0.08)
+- [Christian Watson, Matthew Golden cleared to play - NBC Sports](https://news.google.com/rss/articles/CBMiswFBVV95cUxOemJWWlE1NU5WVzVFdjNXUHhxa0NpeDhVQzhHT0pwNmpvYWhqQ0tuaXV4QTQxajBLZEU3YThkbWR4SThFQlZUVFBybElwM0tFTzQxYllLVGdGRE13ZTFfUng2b0xTYUtGN1hRYXkzeFRzZExmVHVJWjJReWVtN2wzeWVGR3dpVS1ycDlSOHd3SlZQZHFTeTNDenRucm9lbVp3S01zZGhSb181SWczNnhJWDdmNA?oc=5) (+1.00)
+- [Matthew Golden Set to play Sunday - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMijAFBVV95cUxQLTVBMTVqeTVSVTg3NU00NE1IVktwQmVLT3BDa0NueDlxUmxVc0NoSi11OHQzZDVGeUIxTlFwc3B1VVVLczNZaGNTd1BtdE44QVFWNHdncTlEYVBzWmhsY2ZqMWJITzNrN2pHcjFCbW5pUWlFOUVtTnpJdGFMam5rb1YwMEctdEJNdDlkUA?oc=5) (+1.00)
+- [Will Jordan Love, Christian Watson and Matthew Golden play vs. Lions? - Packers Wire](https://news.google.com/rss/articles/CBMi7AFBVV95cUxOYUF3R0NiWWRaYVJfNzRCVi12MzBNOS1nY0NRNTBXNDFTeDdIRThhTWpTSmQ0Z285SUc1UGlfTVlhZDRVNUo1M0hvZUdyVUc0UXNYU0ozS0JOZHV3ZWduMF9qMk4tMVhMNFg2cjRSTmVjOFBKQXZZWlBtUWdCRExZbTRMMjRUYmdXUHBXdFF5UU9GY2QtOFBManA5WV9KaUR4SWlnYVZNNWk5dm1abE9tMjA5YXR3ZnVKQ2k2dXgyQkFwVDVjWGhNczNVeVFMOVJKWnVmS2pKZjZHM0pIVDhaV3VqZU4tcHdhQVpLMA?oc=5) (+0.92)
+
+**Jason Myers** (-0.05)
+- [Jason Myers has big miss in loss to Denver - FantasyPros](https://news.google.com/rss/articles/CBMikAFBVV95cUxQSlFXandfdWZPeWZFYkxjQlVxUGZVYVp6NWpIMlVaamd4R3lHM3lFNTFnSjhMR0VBT1ZsSzdRX1VOWFo5NlYwWHl0dmNwMnJUSC1oUXpScE5uMGFOdUNRc3hUQm5YMVdtMEdwZU0xcmxNUlVSWThkbDUyQ2VuSHYtajNPcHJZUkF0Y0dqeThOUXXSAZYBQVVfeXFMUDVWYnB2cmMtWXNNOEc1dDJ1U0g2MXVna2RKNEh1SFlOSEwxNjlMTWNTYWtZTVFtTlFXaWR0ZVN4ZmtMYTkydzB2emdaU0FVMHo2VG1JWjBYMzhoSVc3eVR1RlB2TzQ4OGhjTGtTa0lTQWY1QWZMTV93akhvbmRaMGl4eFpHaEdRVzVEeGl0TXFWQ3J0S293?oc=5) (-0.70)
+- [Jason Myers Week 7 Outlook for Fantasy Football (2026) - RotoBaller](https://news.google.com/rss/articles/CBMimgFBVV95cUxNZGJfMTE4T0o1eFptdkR5MDRaT1JHRENBUEpLbWZ1aFJkUE0zMUdyeWlSQUxEMlZxc0lhdnpCN1BkdDc0V1h1Qy1VbW1CQnFEYlVjNU4taHRLNkZDeWdtQXctUTFqZGM1OXpvQncxd1lhM3M4d2xFWTREQ3Faa211UEFfb0lnWTRGaTkyMUhEdFBtN01UOFM2eEFB?oc=5) (+0.00)
+- [Jason Myers Stats, Props & Recent Performance - PrizePicks](https://news.google.com/rss/articles/CBMia0FVX3lxTE5jeFM1Z2lYbTFMRl9Da3p3SWlGM3VlYXRWVjJMbzgxakZwMVVkZTVJNjF6MUJDbktabEJkTXhLY1BKbmhyZWdNc29iSDNYSGVhQTM1dFZkV1pMdjh1Qlk5d2VlMG53R3hSd0Vr?oc=5) (+0.00)
+
+**Bucky Irving** (-0.04)
+- [Bucky Irving Avoids injury designation - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMikwFBVV95cUxQR2xHR3FzS0lhcHVxa1FkR2NyNFNXWi10bmFMZlRELXYwSHdNUjhDV3UtUzZaa2xjcTZPT0Jwckl4Y3RqdUcxRmhTdzNRck94emZnOGN3eDRUX1NGQThUNHY2ZmRzcXJPaUVQYVNvQ2lqT1praGpxNFA3dzMxc05zRnhweFVNU05CYjhwVlo5UWxpeEE?oc=5) (-0.74)
+- [Bucky Irving has big opportunity vs Carolina - Yahoo Sports](https://news.google.com/rss/articles/CBMihwFBVV95cUxOSUNFdm8wak5teklvN1VORGM3TENJVjYwR1lNZHQyMkRuaFl5TktTcWNTUzZzWVhZbUlDbm5kVUwxMExWM0M2VlFhR0tiRURralRxLUV0OUFxcUU4NFdBLUdFM1lQd1NfWUw5TWh5OGtzQ29DWENfcHJiYWZFOHJ2Y3B4Y2hkNGs?oc=5) (+0.68)
+- [Bucky Irving (illness) practices Thursday - FantasyPros](https://news.google.com/rss/articles/CBMikAFBVV95cUxQOGdtRjlDNzkyRzJrQS1YVlZfVU9LWlBpeFlTVGltOXV6dU9oTG1LQWRtQWxsYUJZWU1tR0pyVTJIcGt1WDZzT1N5c2djX1lobEpVTXdlMEVKbkctc0Uta0JCaHZkdzNrYUpyZml2SjJtcVFuUy04UThBNDYxMTBvQUdsU3plVGlfXzNfeTR2bW3SAZYBQVVfeXFMTXVaQUFVeXpXSHM3M1ZjMGxmdDlJTWdKakxRb0pxLVY5UXBTejJJaTNHdThkYzZ2LVBSUHlsVElvRGVXdU9WMjdnSFAwZFJIUTRZRW05WVp1VXg0T3VHRkJVMEJOcURPWGliM3cydzZOZFNMYU40dmd6WHluQzc4Qzg3MkI1ZHZGOWdRVklLUW5qVUNVMjN3?oc=5) (-0.66)
+
+**Tucker Kraft** (+0.02)
+- [Week 7 Tight End Preview: It's Tucker Kraft Breakout Week - Draft Sharks](https://news.google.com/rss/articles/CBMigwFBVV95cUxPVVMyUjdyaDdQWlhrUFZnUDFOMGNlS1hXeXRtb2tKREZqWTNjS05NVEZZaVo1dVF6RDZFdjg2ZDh1bWcyRGRTNEJGZUhlQXYwdFF0RXZxNlpCeTRCR3ZJTThVeU1Ebmc4RnNqRklNNXdVODVYQkdKN0J5alQzVUJudHpxNA?oc=5) (+0.72)
+- [Packers Rumors: CONFLICTING REPORTS From NFL Insiders On Tucker Kraft And The Green Bay Packers Manchester United (VeFXNoszvj) - Unisba Media](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5BbnR3clVoVS1pR1d1M3VRMmV2YTNxa3g5cnZ6VnJDLWVzNjBhcUNJVld4UlZ2N0EtTUlyTURoaDZVNDV0UkQ5ai1mY3JGR1M4NlhncFk4dzdLd21wYk5aTTJLa3V2Zw?oc=5) (-0.31)
+- [Will Tucker Kraft have a monster fantasy day against the Lions? - Yahoo Sports](https://news.google.com/rss/articles/CBMirAFBVV95cUxPdF92STF3emo2SklHeWtOQ2dCZkxCeW5ZYU5pTjJYMC1fejhveW5JMmI2UU80RkZOWDJlVzVkT0k1ajdtYXRRZFlYcTlBM1hickFGU0dHckR5cmNFMm50dTBwSEIxVUdyQnhHR0g1QU1zYWYwN0Z5N1R6cUpEMWFnWlEwN1FuOHNDb0ZEZ2R0c0pTNUlNdGhXTi1XclFmN2RBNHN3Ukk4c2lxUERf?oc=5) (+0.00)
+
+**Ashton Jeanty** (-0.02)
 - [Raiders Stock Up, Stock Down: Ashton Jeanty is Getting Worse - Yahoo Sports](https://news.google.com/rss/articles/CBMihwFBVV95cUxPcXhpQmRiaVpZTTQ1enF0RWZzOFFXSkRFSkgtUWhuZWZ4NS1MRXhYUE16NmNsbTNoSTFJcnRMb0NzbnpVdXJOYUhrNUxiTzhJUW5WTDRCZDhhUXJtYWNFMC02VHFMd1hnUHd1aXFtR1JyNjRpZDhMbWhGVGNhdERWNnZTLVRqbjQ?oc=5) (-0.74)
-- [Raiders GM says Ashton Jeanty in 'good spot' with recovery - ABC7 Bay Area](https://news.google.com/rss/articles/CBMi5ApBVV95cUxQUnF2X3VKanNmOFFOeXRsZXFMaS1oeXpDWVgxUGpqbVkwUTgweG5vTnBraGo2X0hta2FmbkRXVVFObU1PMENQenRoUWtLelhMcUxBSkdPSWZoa0lhVXJzWHpHZXMwSmJlVS1LSGg0dng3VXRwdVlDa0JPbk1uN29TQ01CZm9ncGRlNDl0YkVZY1BnQnZOQkFRUmk3VUI1bnRkNGRWb1A3NnZIcnRycElFQ3ltdE03Ql93a01XeFFVWExQeklZN1pXXy1XM043X1I1bW9KTWdwbjFoN0prSUphQ2ZXTHhGYnNXMFcyM2Q3TU96MDRVU0N1QmhpMDJlLThxY2w2MWFQY0hZRFZsV0NkVFBoLTVQTGlreHIzOTdBXzJNZ1Z6VllraVNBaTdlVUFPbVkwYS0xeXNldm9IbmxPMXJDVVBBXzNSOGR2SnN2MzFDd1hIZzJNakVMeHRvXzBSdldKR1JvTDZTNGJQTTY3NmxaQlp1VjVHci1TWEpuMF9GalRvUjltYm5RTHBQWDBhU2htYkE5VnhvR3lIbmJJNkU2MWF2RS16c1J2REkxc2Z5emtMSzNoMy1WTG5xNVhiSlNhbHMxNnZSNVNsVmRSR0d0TkJUN19xUE40bnQ0Y3U4alk4NUU2QUZEcTFEaHhVeTdfaFVJalhKNHJRaWtFbmNzN3p2TnF1VkxMdmxhcjY3WmdndWt4UVF6OWNGeFZleW01dWp5VFN5cXN3RmlmWEJmaVYzZEJzOGtxX1FZeXV3a2ladmxmTEwteW9mRDJKRlJmbWhCZW13Mlgya29TQVZoVHhmbHMzQ2NyQV92aWhqX3JZNUdFX0lSaFl0VnRpcmFnWUlfRE9hRVV1a0xxZXB4dlV3TzBpbTNrMUhTVGV1LXBSM3V4Z1BGNUhhUUhVelRfemhUVlpsbFAxSlEwZEtQQ0FhYVhaZFA1NU84QzBIYVVpeW5qVVA1SmhDUkVfMGRVQjMxWm83Tm5FbVNCajdCNEJUY2lRNWtKN2JHRkoyUWZ1YmFMQnpSXzR0YURYR1A5OHBBSy03dGN1UmtSS2RLZUlyS0lRY3NqRG5FWjNSUHNFZXA1QkNRdUVSWmNrZmFialFsUWs2YkRCcngzZGExb3RKVjBNdWF2UV9HX2ZoM0RNbGEwLWxiVXlFYU40YkpFZDJZM1JLYzQtRWwxS1RPOXFVeUZpcV93YVplUi1ueGdzaXZkS2k3ZWdGYmdnVndWLWt6bnk3MU1UWHhJV3M5WXFMcVpuMDZfSnFSVXJkSWVjYTJ3aFJkczlCNG0zZ1o2OW9rLU5DZHZPcjVQVjV5OTA4TFhTd09VZDA0RGlOekIyT0M5Y1dyaEIyUUM5NlhUTk9FSm1TNWVsU0JwNnhWazkzUG0tLWFZenVYSHJpYjdOYVo1LVJjWnVZTmZicEZHNXBPLS1zQXlvVWFHdmNoYWpqSml4dlpBT0dtZEd4QjhmcmJsVlJ2Z0FZSW1FNWJRbDB4LU43T1FvSWZaVEg0OUc4alllbHAxSWRRLUNtbmwxeXE0Xy1wdHl4M0VPUVhpV0RHWGpfY3U5Z0V3VjhMdDN2OWFnSWNZVk9QbnozTmY5MXNJWXh4alFvdVphQzZ1Y1ZpUTVLUEtiRGZRSkw0V2FPU3VheV9YUW9NdWprWlR4b2NBem1ib1ZORGNDMW1CeFdMcWFOcENVeENacmdmMmFGQklrUEJWZWJPUEYwSEZGUW1IX2pNX2hXQlJ1V1g4ZVV1NWc3ZnI5MmRsN3NPTkdNZlZuTzVITnBLYjkyZ3RTSVNWTXNrOWwzcndibldNWkZ2U3dsMzdrNVpKM01MZFo?oc=5) (+0.70)
-- [Upon Further Review: Just How Off We Were On Rams, Chargers; Ashton Jeanty A Bust? - FOX Sports](https://news.google.com/rss/articles/CBMisAFBVV95cUxQZF8xczh6S2J1ZU1jSUJnQjlTc2lOLUFCUzAzZVBkb1NMb2E5cHJmSjZKbDJHT3RFUHdzaC13WjFJMGRQQWdrQ0FuZTBpRmNaTDhSSHcyczAtYUQyUE1vNUI0aU4wSkYzUGx5Z1J1TFVCRnk5OXR2WEtFRzlXWjdocWQyZ2hrZlZKOWhKTHQ0clI3bzZRN0ExMHFKUE9meXItT2lnWXNGSTFKeXBfVlduU9IBsAFBVV95cUxNWnczMHdUWUszNDRzaUItdDg2dHZhaFAzdVlsdFVpdlVweDE4bGFoRmhZU2xqWlFsRERZdTA2Mml2elhJUkhjaTBNLWQwbmR2Tk9GVjNyczlSdG5aVnlwMzh2XzJDdElUZW9WdXhqNFJ5Sm15NW0yTlZtdlN1dTdubnpQSHN6bjh0MzN1X09jWktrSkktTHhEQy0ta21pVVo4azdVR0Z4eTV5b2t3b3lTUw?oc=5) (-0.66)
+- [Klint Kubiak says Mike Washington’s Role Could Grow for Raiders as Ashton Jeanty Struggles - Athlon Sports](https://news.google.com/rss/articles/CBMirAFBVV95cUxOWi0wME9FZjY1X2dreGhGallrdXRwd2dkTkdaU0RTZjNOeVZEcUZCRGFYdDd0RTBEcEJHTE82YkNKYXRkWjRLeS1mRmt0SHRma3kyYmhOZmxWLVh4UHhyYmZrckZ4bkFLckpMbWpLUDZGMXFWSUhnVkc4MVRHQnlieHpKeXVldmRsYWVsVm5NU3NJNkZhcGR2Z1lTUDdEODlOSVdoWk0xOG8xYnVG?oc=5) (-0.61)
+- [Ashton Jeanty Still Highly Rated Despite Indifferent Season - roundtable.io](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQbkNlM1g4TXBNeko5MTY3dHh3anpHb3c1aXluRmcwemlDM2pQdnhieV9LdjcycWxWZkdlZUFXWW5TUjlnYVU0YlBsSzJPcmFQREZIQ3lxZWx3T3J5elYyVU9nLVBiQmtoTHA4NHZQdTJma1FFbTBhNWRTQWxXVkJJRGFHMGx5WkVndGp1NXc1Mi1XcmNXOWpFX0FXMW5zemRkakk2LVM3VTU?oc=5) (+0.40)
+
+**Jake Ferguson** (+0.00)
+- [Jake Ferguson or Andrew Armstrong: Who Should I Start in Week 7? Fantasy Football - RotoBaller](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQVDRPc0FfYWU3RFdfdjRuVzIyVXFGWHBEamkwaVhVdmxOUDhOZUJlYlF5emwtSEdsSDZWYXdfMGlXYll6aGpoVVhHeE5IMVdNSmdSM0VpNklTXzFfVjAySFFwSm5zbk1yRlpuT3NTUW1sTVAtYmxlWVl4TE1vbGNlVk9QSzVpM3R6MlNIWlcxdFQyVzVLNlVVaVpRSEI1bkUtdnFQdkQ5NGlGR1FOdHhyaFpQMEtHdXVq?oc=5) (+0.00)
+- [Jake Ferguson or Myles Price: Who Should I Start in Week 7? Fantasy Football - RotoBaller](https://news.google.com/rss/articles/CBMisgFBVV95cUxNR0xqTkZRMmlhVTRIbkl0aF9mQXpKR0NWSHI5bm5LMnNUWmRWek1vSE5qdFl3TkF4VG02UHVKTmJIVjdpNUNzT3JodDk5bEtXQjNaOTlUX1EtU0tWcTBodTBVa0Y4TU9jV2JDZTBEd2kwdjVJQmdVV2NYeklscTZsYkJyZkRnSE1SOUQwUHlBd29hanBaTF9vQ1ZuMVYzS0F0NWVQaTFnenJRelVPajFIY2J3?oc=5) (+0.00)
+- [Jake Ferguson or Michael Penix Jr.: Who Should I Start in Week 7? Fantasy Football - RotoBaller](https://news.google.com/rss/articles/CBMitwFBVV95cUxQVU9janpHdUpSeFRkWHF6ME9VLUZqNGhQX20wSFdnRXlEZkhhb2RoNjJUeldUcFJiQkc2WGVUQlYtQWVaLXlBNWcwNmdJU1ZmZklHS1BlYlNPR2w0allRX3NGYWFVVVI4Q3ZMUFhoalowMkxqTWRIbXMzNnhCSHFvZzhyYlB5enFlTEVjVGd6Y0FGVDNtV0VGRVFmbnJ2a21qSEExdTF2QTRIbFRteXBSeU4zZ1F6ME0?oc=5) (+0.00)
