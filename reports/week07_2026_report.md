@@ -1,26 +1,26 @@
 # Brendobendo - Week 7, 2026
-_Refounders Football League   - generated Sun Oct 25 03:46 PM_
+_Refounders Football League   - generated Sun Oct 25 04:47 PM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | QB | Jared Goff | QB | DET | vs GB | 26.4 | 32.1 | F (5/32) | 29.5 | Indoors | +0.26 (15) | - | **28.6** |
-| RB | Bucky Irving | RB | TB | @ CAR | 16.4 | 14.8 | A (28/32) | 20.8 | 67F, wind 10mph | -0.04 (15) | - | **16.8** |
-| RB | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | -0.02 (15) | - | **15.1** |
+| RB | Bucky Irving | RB | TB | @ CAR | 16.4 | 14.8 | A (28/32) | 20.8 | 67F, wind 11mph | -0.04 (15) | - | **16.8** |
+| RB | Ashton Jeanty | RB | LV | vs LA | 16.1 | 15.0 | D (12/32) | 22.5 | Indoors | -0.02 (15) | - | **15.2** |
 | WR | Matthew Golden | WR | GB | @ DET | 15.6 | 18.1 | A (31/32) | 26.0 | Indoors | +0.08 (15) | - | **19.8** |
-| WR | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 10mph | +0.08 (15) | - | **16.5** |
+| WR | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 11mph | +0.08 (15) | - | **16.5** |
 | TE | Tucker Kraft | TE | GB | @ DET | 11.8 | 12.3 | A (32/32) | 26.0 | Indoors | +0.02 (15) | - | **14.3** |
-| FLEX | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.0 | 74F, wind 3mph | +0.10 (15) | - | **10.3** |
-| K | Jason Myers | K | SEA | vs KC | 8.7 | 11.7 | C (16/32) | 22.8 | 51F, wind 5mph | -0.05 (3) | - | **9.7** |
-| DEF | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 23.5 | 80F, wind 3mph | +0.00 (0) | - | **9.6** |
+| FLEX | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.0 | 73F, wind 2mph | +0.10 (15) | - | **10.3** |
+| K | Jason Myers | K | SEA | vs KC | 8.7 | 11.7 | C (16/32) | 22.8 | 52F, wind 6mph | -0.05 (3) | - | **9.7** |
+| DEF | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 23.5 | 81F, wind 2mph | +0.00 (0) | - | **9.6** |
 
-Projected lineup total (adjusted): **140.7**
+Projected lineup total (adjusted): **140.8**
 
 ### Changes vs. your current Sleeper lineup
 
-- START **Jared Goff** (QB, 28.6 adj)
 - START **Jalen Coker** (WR, 16.5 adj)
+- START **Jared Goff** (QB, 28.6 adj)
 - BENCH James Cook III (RB, 0.0 adj, BYE)
 - BENCH Aaron Rodgers (QB, 26.1 adj)
 
@@ -42,18 +42,18 @@ Projected lineup total (adjusted): **140.7**
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Bucky Irving | RB | TB | @ CAR | 16.4 | 14.8 | A (28/32) | 20.8 | 67F, wind 10mph | -0.04 (15) | - | **16.8** |
-| 2 | Ashton Jeanty | RB | LV | vs LA | 16.0 | 15.0 | D (12/32) | 22.5 | Indoors | -0.02 (15) | - | **15.1** |
+| 1 | Bucky Irving | RB | TB | @ CAR | 16.4 | 14.8 | A (28/32) | 20.8 | 67F, wind 11mph | -0.04 (15) | - | **16.8** |
+| 2 | Ashton Jeanty | RB | LV | vs LA | 16.1 | 15.0 | D (12/32) | 22.5 | Indoors | -0.02 (15) | - | **15.2** |
 | 3 | James Cook III | RB | BUF | BYE | 0.0 | 21.1 | - (-) | - | - | -0.12 (15) | - | **0.0** |
-| 4 | Breece Hall | RB | NYJ | vs MIA | 0.0 | - | A (30/32) | 22.0 | 66F, wind 4mph | -0.18 (15) | Questionable | **0.0** |
+| 4 | Breece Hall | RB | NYJ | vs MIA | 0.0 | - | A (30/32) | 22.0 | 68F, wind 3mph | -0.18 (15) | Questionable | **0.0** |
 
 ### WR
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Matthew Golden | WR | GB | @ DET | 15.6 | 18.1 | A (31/32) | 26.0 | Indoors | +0.08 (15) | - | **19.8** |
-| 2 | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 10mph | +0.08 (15) | - | **16.5** |
-| 3 | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.0 | 74F, wind 3mph | +0.10 (15) | - | **10.3** |
+| 2 | Jalen Coker | WR | CAR | vs TB | 15.7 | 15.7 | B (20/32) | 23.8 | 67F, wind 11mph | +0.08 (15) | - | **16.5** |
+| 3 | Denzel Boston | WR | CLE | @ TEN | 10.9 | 9.7 | B (24/32) | 19.0 | 73F, wind 2mph | +0.10 (15) | - | **10.3** |
 | 4 | Keenan Allen | WR | IND | @ MIN | 9.3 | 12.8 | F (5/32) | 17.5 | Indoors | +0.17 (15) | - | **8.6** |
 
 ### TE
@@ -61,34 +61,34 @@ Projected lineup total (adjusted): **140.7**
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Tucker Kraft | TE | GB | @ DET | 11.8 | 12.3 | A (32/32) | 26.0 | Indoors | +0.02 (15) | - | **14.3** |
-| 2 | Jake Ferguson | TE | DAL | @ PHI | 7.8 | 4.1 | C (13/32) | 24.0 | 54F, wind 4mph | +0.00 (15) | - | **6.4** |
+| 2 | Jake Ferguson | TE | DAL | @ PHI | 7.8 | 4.1 | C (13/32) | 24.0 | 54F, wind 5mph | +0.00 (15) | - | **6.4** |
 
 ### K
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jason Myers | K | SEA | vs KC | 8.7 | 11.7 | C (16/32) | 22.8 | 51F, wind 5mph | -0.05 (3) | - | **9.7** |
+| 1 | Jason Myers | K | SEA | vs KC | 8.7 | 11.7 | C (16/32) | 22.8 | 52F, wind 6mph | -0.05 (3) | - | **9.7** |
 
 ### DEF
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 23.5 | 80F, wind 3mph | +0.00 (0) | - | **9.6** |
+| 1 | Denver Broncos | DEF | DEN | @ ARI | 8.2 | 10.7 | - (-) | 23.5 | 81F, wind 2mph | +0.00 (0) | - | **9.6** |
 
 ## Waiver wire targets
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Deshaun Watson | QB | CLE | @ TEN | 14.9 | 14.8 | +0.0 | +16.5 | 54904 | Breece Hall | $15 of $55 |
-| Jaylin Noel | WR | HOU | vs NYG | 11.8 | 15.9 | +1.5 | +12.4 | 61596 | Breece Hall | $16 of $55 |
-| Michael Penix Jr. | QB | ATL | vs SF | 19.8 | 22.4 | +0.0 | +21.2 | - | Breece Hall | $8 of $55 |
-| Tanner McKee | QB | PHI | vs DAL | 15.3 | 5.6 | +0.0 | +12.0 | 68600 | Breece Hall | $13 of $55 |
-| Tre Tucker | WR | LV | vs LA | 9.8 | 14.2 | +0.0 | +11.6 | 81258 | Breece Hall | $16 of $55 |
-| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +9.2 | 231939 | Breece Hall | $19 of $55 |
-| Tyler Allgeier | RB | ARI | vs DEN | 10.2 | 7.4 | +0.0 | +9.4 | 146325 | Breece Hall | $23 of $55 |
-| Ryan Flournoy | WR | DAL | @ PHI | 9.7 | 12.2 | +0.0 | +9.6 | 115984 | Breece Hall | $15 of $55 |
+| Deshaun Watson | QB | CLE | @ TEN | 15.0 | 14.8 | +0.0 | +16.5 | 60096 | Breece Hall | $15 of $55 |
+| Jaylin Noel | WR | HOU | vs NYG | 11.8 | 15.9 | +1.5 | +12.4 | 65282 | Breece Hall | $16 of $55 |
+| Michael Penix Jr. | QB | ATL | vs SF | 19.7 | 22.4 | +0.0 | +21.1 | - | Breece Hall | $8 of $55 |
+| Tanner McKee | QB | PHI | vs DAL | 15.3 | 5.6 | +0.0 | +12.0 | 71352 | Breece Hall | $14 of $55 |
+| Tre Tucker | WR | LV | vs LA | 9.8 | 14.2 | +0.0 | +11.6 | 84552 | Breece Hall | $16 of $55 |
+| Michael Mayer | TE | LV | vs LA | 6.7 | 11.3 | +0.0 | +9.2 | 248094 | Breece Hall | $19 of $55 |
+| Tyler Allgeier | RB | ARI | vs DEN | 10.2 | 7.4 | +0.0 | +9.4 | 157580 | Breece Hall | $23 of $55 |
+| Ryan Flournoy | WR | DAL | @ PHI | 9.7 | 12.2 | +0.0 | +9.6 | 117312 | Breece Hall | $15 of $55 |
 | Baker Mayfield | QB | TB | @ CAR | 15.3 | - | +0.0 | +18.3 | - | Breece Hall | $7 of $55 |
-| Mike Gesicki | TE | CIN | @ BAL | 8.1 | 10.2 | +0.0 | +9.2 | 71788 | Breece Hall | $18 of $55 |
+| Justice Hill | RB | BAL | vs CIN | 6.7 | 6.1 | +0.0 | +6.9 | 274266 | Breece Hall | $17 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
