@@ -31,6 +31,10 @@ on:
         description: Weather
         type: boolean
         default: true
+      week:
+        description: NFL week (blank = Sleeper's current week, which only rolls over on Wednesday)
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -79,10 +83,12 @@ jobs:
           SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
           NEWS: ${{ github.event_name != 'workflow_dispatch' || inputs.news }}
           WEATHER: ${{ github.event_name != 'workflow_dispatch' || inputs.weather }}
+          WEEK: ${{ inputs.week }}
         run: |
           test -n "$SLEEPER_USERNAME" || { echo "::error::Set the SLEEPER_USERNAME repository variable"; exit 1; }
           args=(--username "$SLEEPER_USERNAME" --out data/reports)
           [ -n "$SLEEPER_LEAGUE_ID" ] && args+=(--league-id "$SLEEPER_LEAGUE_ID")
+          [ -n "$WEEK" ] && args+=(--week "$WEEK")
           [ "$NEWS" = "true" ] || args+=(--no-news)
           [ "$WEATHER" = "true" ] || args+=(--no-weather)
           python -m ffa "${args[@]}"
@@ -91,9 +97,11 @@ jobs:
         env:
           SLEEPER_USERNAME: ${{ vars.SLEEPER_USERNAME }}
           SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
+          WEEK: ${{ inputs.week }}
         run: |
           test -n "$SLEEPER_USERNAME" || { echo "::error::Set the SLEEPER_USERNAME repository variable"; exit 1; }
           league=(); [ -n "$SLEEPER_LEAGUE_ID" ] && league=(--league-id "$SLEEPER_LEAGUE_ID")
+          [ -n "$WEEK" ] && league+=(--week "$WEEK")
           python -m ffa scout-data --reports data/reports --out data/reports/scout/data.json \
             || echo "::warning::scout-data failed; keeping the previous data.json"
           python -m ffa export --username "$SLEEPER_USERNAME" "${league[@]}" --reports data/reports \
