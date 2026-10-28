@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,ATL,True,False,,,16.55,20.8,3,28.0,32.0,1.18,24.0,"84F, wind 11mph",0.265,15,1.0,1.113,1.0,1.021,17.825,20.26,0,RB,[],roster,,,
+11646,Jalen Coker,WR,CAR,GB,False,False,Questionable,Shoulder,16.02,8.8,2,24.0,32.0,1.12,22.0,"48F, wind 8mph",-0.062,15,0.85,1.036,1.0,0.995,13.854,12.14,0,WR,['Questionable (Shoulder)'],roster,,,
+12501,Matthew Golden,WR,GB,CAR,True,False,Questionable,Shoulder,13.76,17.53,3,7.0,32.0,0.88,25.5,"48F, wind 8mph",-0.244,15,0.85,0.99,1.0,0.98,14.891,12.28,0,WR,['Questionable (Shoulder)'],roster,,,
+12527,Ashton Jeanty,RB,LV,NYJ,False,False,,,16.6,16.03,3,17.0,32.0,0.97,22.0,"64F, wind 8mph",-0.154,15,1.0,0.963,1.0,0.988,16.429000000000002,15.63,0,FLEX,[],roster,,,
+13346,Denzel Boston,WR,CLE,PIT,False,False,,,10.31,7.27,3,14.0,32.0,0.96,18.0,"67F, wind 5mph",0.116,15,1.0,0.873,1.0,1.009,9.398,8.28,0,,[],roster,,,
+1479,Keenan Allen,WR,IND,JAX,False,False,,,9.28,10.6,3,29.0,32.0,1.2,18.5,"81F, wind 14mph",0.007,15,1.0,0.992,1.0,1.001,9.675999999999998,9.61,0,,[],roster,,,
+2747,Jason Myers,K,SEA,CHI,True,False,,,8.6,12.67,3,2.0,32.0,0.61,24.75,"46F, wind 4mph",0.297,8,1.0,0.835,1.0,1.024,9.821,8.4,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,MIN,True,False,,,21.31,31.35,2,1.0,32.0,0.45,24.75,Indoors,0.147,15,1.0,0.8,1.0,1.012,24.321999999999996,19.69,0,,[],roster,,,
+8110,Jake Ferguson,TE,DAL,ARI,True,False,,,9.71,2.73,3,26.0,32.0,1.18,30.5,"78F, wind 1mph",0.227,15,1.0,1.2,1.0,1.018,7.6160000000000005,9.3,0,,[],roster,,,
+8138,James Cook III,RB,BUF,BAL,True,False,,,16.21,23.55,2,5.0,32.0,0.84,29.0,"67F, wind 4mph",-0.099,11,1.0,1.039,1.0,0.992,18.412,18.98,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,LV,True,False,Out,Quadriceps,11.26,,0,26.0,32.0,1.15,23.5,"64F, wind 8mph",-0.283,15,0.0,1.086,1.0,0.977,11.26,0.0,0,,['Out (Quadriceps)'],roster,,,
+9484,Tucker Kraft,TE,GB,CAR,True,False,,,10.76,11.7,3,18.0,32.0,0.95,25.5,"48F, wind 8mph",0.142,15,1.0,1.027,1.0,1.011,11.041999999999998,11.46,0,TE,[],roster,,,
+96,Aaron Rodgers,QB,PIT,CLE,True,False,,,21.41,23.37,3,8.0,32.0,0.87,21.5,"67F, wind 5mph",0.173,15,1.0,0.904,1.0,1.014,21.997999999999998,20.16,0,QB,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,KC,True,False,,,6.74,11.0,3,,,,20.0,"65F, wind 5mph",0.0,0,1.0,1.033,1.0,1.0,8.018,8.28,0,DEF,[],roster,,,
+11559,Michael Penix Jr.,QB,ATL,TB,False,False,,,18.98,26.23,3,6.0,32.0,0.81,21.5,"84F, wind 11mph",0.156,15,1.0,0.875,1.0,1.012,21.155,18.73,87186,,[],waiver,0.0,16.38,$15 of $55
+8161,Malik Willis,QB,MIA,NE,True,False,,,16.47,27.18,2,9.0,32.0,0.9,18.75,"84F, wind 10mph",0.437,15,1.0,0.862,1.0,1.035,19.683,17.56,118573,,[],waiver,0.0,15.6,$16 of $55
+TB,Tampa Bay Buccaneers,DEF,TB,ATL,True,False,,,6.75,13.0,3,,,,24.0,"84F, wind 11mph",0.0,0,1.0,1.033,1.0,1.0,8.625,8.91,350135,,[],waiver,0.63,9.88,$21 of $55
+13296,Caleb Douglas,WR,MIA,NE,True,False,,,6.87,21.0,1,20.0,32.0,1.01,18.75,"84F, wind 10mph",0.0,0,1.0,0.912,1.0,1.0,11.109,10.13,1704760,,[],waiver,0.0,7.71,$19 of $55
+10213,Tre Tucker,WR,LV,NYJ,False,False,,,10.46,18.5,3,15.0,32.0,0.97,22.0,"64F, wind 8mph",-0.027,15,1.0,0.963,1.0,0.998,12.872,12.37,373314,,[],waiver,0.23,8.26,$21 of $55
+WAS,Washington Commanders,DEF,WAS,PHI,True,False,,,8.41,7.0,2,,,,23.0,"59F, wind 7mph",0.0,0,1.0,1.12,1.0,1.0,7.987,8.95,310373,,[],waiver,0.67,7.71,$21 of $55
+JAX,Jacksonville Jaguars,DEF,JAX,IND,True,False,,,8.92,1.5,2,,,,28.0,"81F, wind 14mph",0.0,0,1.0,1.098,1.0,1.0,6.694,7.35,1214052,,[],waiver,0.0,5.21,$19 of $55
+13276,Omar Cooper Jr.,WR,NYJ,LV,True,False,,,9.83,14.93,3,17.0,32.0,0.99,23.5,"64F, wind 8mph",0.0,0,1.0,1.005,1.0,1.0,11.36,11.42,381792,,[],waiver,0.0,6.16,$17 of $55
+9480,Brenton Strange,TE,JAX,IND,True,False,,,10.55,11.6,2,20.0,32.0,0.98,28.0,"81F, wind 14mph",-0.186,8,1.0,1.097,1.0,0.985,10.865,11.74,511722,,[],waiver,0.28,4.85,$18 of $55
+11783,Ryan Flournoy,WR,DAL,ARI,True,False,,,8.48,13.33,3,21.0,32.0,1.05,30.5,"78F, wind 1mph",0.225,15,1.0,1.191,1.0,1.018,9.934999999999999,12.05,369568,,[],waiver,0.0,4.69,$13 of $55
