@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,ATL,True,False,,,16.7,20.8,3,28.0,32.0,1.18,23.0,"74F, wind 9mph",0.043,15,1.0,1.093,1.0,1.003,17.93,19.66,0,RB,[],roster,,,
+11646,Jalen Coker,WR,CAR,GB,False,False,,,15.93,8.8,2,24.0,32.0,1.12,22.0,,0.108,15,1.0,1.039,1.0,1.009,13.791,14.46,0,WR,[],roster,,,
+12501,Matthew Golden,WR,GB,CAR,True,False,,,13.73,17.53,3,7.0,32.0,0.88,25.5,,0.16,15,1.0,0.994,1.0,1.013,14.87,14.97,0,WR,[],roster,,,
+12527,Ashton Jeanty,RB,LV,NYJ,False,False,,,16.03,16.03,3,17.0,32.0,0.97,22.5,"61F, wind 5mph",0.1,15,1.0,0.977,1.0,1.008,16.03,15.79,0,FLEX,[],roster,,,
+13346,Denzel Boston,WR,CLE,PIT,False,False,,,10.5,7.27,3,14.0,32.0,0.96,18.0,"69F, wind 6mph",0.005,15,1.0,0.875,1.0,1.0,9.530999999999999,8.34,0,,[],roster,,,
+1479,Keenan Allen,WR,IND,JAX,False,False,,,9.28,10.6,3,29.0,32.0,1.2,18.25,"77F, wind 9mph",-0.018,15,1.0,0.988,1.0,0.999,9.675999999999998,9.55,62184,,[],roster,,,
+2747,Jason Myers,K,SEA,CHI,True,False,,,8.6,12.67,3,2.0,32.0,0.61,24.75,"50F, wind 2mph",0.09,7,1.0,0.838,1.0,1.007,9.821,8.29,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,MIN,True,False,,,20.59,31.35,2,1.0,32.0,0.45,24.75,Indoors,0.166,15,1.0,0.8,1.0,1.013,23.817999999999998,19.3,0,,[],roster,,,
+8110,Jake Ferguson,TE,DAL,ARI,True,False,,,9.12,2.73,3,26.0,32.0,1.18,30.75,"77F, wind 3mph",-0.024,15,1.0,1.2,1.0,0.998,7.202999999999999,8.63,0,,[],roster,,,
+8138,James Cook III,RB,BUF,BAL,True,False,,,17.71,23.55,2,5.0,32.0,0.84,29.0,"70F, wind 8mph",-0.132,15,1.0,1.043,1.0,0.989,19.462,20.08,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,LV,True,False,Questionable,Quadriceps,0.0,,0,26.0,32.0,1.15,24.0,"61F, wind 5mph",0.056,15,0.85,1.101,1.0,1.004,0.0,0.0,0,,['Questionable (Quadriceps)'],roster,,,
+9484,Tucker Kraft,TE,GB,CAR,True,False,,,10.88,11.7,3,18.0,32.0,0.95,25.5,,-0.061,15,1.0,1.031,1.0,0.995,11.126,11.41,0,TE,[],roster,,,
+96,Aaron Rodgers,QB,PIT,CLE,True,False,,,21.28,23.37,3,8.0,32.0,0.87,21.5,"69F, wind 6mph",-0.053,15,1.0,0.907,1.0,0.996,21.907,19.79,0,QB,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,KC,True,False,,,6.83,11.0,3,,,,19.5,"65F, wind 11mph",0.0,0,1.0,1.041,1.0,1.0,8.081,8.41,0,DEF,[],roster,,,
+TB,Tampa Bay Buccaneers,DEF,TB,ATL,True,False,,,7.61,13.0,3,,,,23.0,"74F, wind 9mph",0.0,0,1.0,1.052,1.0,1.0,9.227,9.71,189595,,[],waiver,1.3,10.3,$20 of $55
+11783,Ryan Flournoy,WR,DAL,ARI,True,False,,,9.09,13.33,3,21.0,32.0,1.05,30.75,"77F, wind 3mph",0.178,15,1.0,1.2,1.0,1.014,10.361999999999998,12.61,370328,,[],waiver,0.0,11.21,$18 of $55
+13296,Caleb Douglas,WR,MIA,NE,True,False,,,6.78,21.0,1,20.0,32.0,1.01,18.25,"76F, wind 5mph, rain 38%",0.0,0,1.0,0.903,1.0,1.0,11.046,9.97,85152,,[],waiver,0.0,13.89,$17 of $55
+11559,Michael Penix Jr.,QB,ATL,TB,False,False,,,18.44,26.23,3,6.0,32.0,0.81,20.5,"74F, wind 9mph",0.035,15,1.0,0.858,1.0,1.003,20.777,17.88,0,,[],waiver,0.0,22.34,$7 of $55
+8161,Malik Willis,QB,MIA,NE,True,False,,,15.95,27.18,2,9.0,32.0,0.9,18.25,"76F, wind 5mph, rain 38%",0.106,15,1.0,0.854,1.0,1.008,19.319,16.63,0,,[],waiver,0.0,21.56,$7 of $55
+WAS,Washington Commanders,DEF,WAS,PHI,True,False,,,8.51,7.0,2,,,,23.5,"49F, wind 4mph",0.0,0,1.0,1.129,1.0,1.0,8.057,9.1,297899,,[],waiver,0.69,7.75,$19 of $55
+12498,Mason Taylor,TE,NYJ,LV,True,False,,,8.03,12.63,3,29.0,32.0,1.4,24.0,"61F, wind 5mph",-0.019,15,1.0,1.2,1.0,0.998,9.41,11.27,162440,,[],waiver,0.0,10.33,$22 of $55
+11637,Keon Coleman,WR,BUF,BAL,True,False,,,8.27,11.8,2,26.0,32.0,1.12,29.0,"70F, wind 8mph",0.129,15,1.0,1.2,1.0,1.01,9.329,11.31,139860,,[],waiver,0.0,10.04,$16 of $55
+4943,Sam Darnold,QB,SEA,CHI,True,False,,,20.1,14.87,3,23.0,32.0,1.15,24.75,"50F, wind 2mph",0.08,15,1.0,1.119,1.0,1.006,18.531,20.86,0,,[],waiver,1.07,17.48,$7 of $55
+11647,Kimani Vidal,RB,LAC,LA,False,False,,,6.98,9.8,2,14.0,32.0,0.94,19.5,Indoors,0.0,0,1.0,0.898,1.0,1.0,7.8260000000000005,7.03,127735,,[],waiver,0.0,8.39,$17 of $55

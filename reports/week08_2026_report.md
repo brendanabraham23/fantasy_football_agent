@@ -1,12 +1,12 @@
 # Brendobendo - Week 8, 2026
-_Refounders Football League   - generated Sun Nov 01 04:47 PM_
+_Refounders Football League   - generated Sun Nov 01 05:47 PM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| QB | Aaron Rodgers | QB | PIT | vs CLE | 21.2 | 23.4 | D (8/32) | 21.5 | 69F, wind 6mph | -0.05 (15) | - | **19.8** |
-| RB | James Cook III | RB | BUF | vs BAL | 17.3 | 23.6 | F (5/32) | 29.0 | 70F, wind 8mph | -0.13 (15) | - | **19.8** |
+| QB | Aaron Rodgers | QB | PIT | vs CLE | 21.3 | 23.4 | D (8/32) | 21.5 | 69F, wind 6mph | -0.05 (15) | - | **19.8** |
+| RB | James Cook III | RB | BUF | vs BAL | 17.7 | 23.6 | F (5/32) | 29.0 | 70F, wind 8mph | -0.13 (15) | - | **20.1** |
 | RB | Bucky Irving | RB | TB | vs ATL | 16.7 | 20.8 | A (28/32) | 23.0 | 74F, wind 9mph | +0.04 (15) | - | **19.7** |
 | WR | Matthew Golden | WR | GB | vs CAR | 13.7 | 17.5 | D (7/32) | 25.5 | - | +0.16 (15) | - | **15.0** |
 | WR | Jalen Coker | WR | CAR | @ GB | 15.9 | 8.8 | B (24/32) | 22.0 | - | +0.11 (15) | - | **14.5** |
@@ -15,7 +15,7 @@ _Refounders Football League   - generated Sun Nov 01 04:47 PM_
 | K | Jason Myers | K | SEA | vs CHI | 8.6 | 12.7 | F (2/32) | 24.8 | 50F, wind 2mph | +0.09 (7) | - | **8.3** |
 | DEF | Denver Broncos | DEF | DEN | vs KC | 6.8 | 11.0 | - (-) | 19.5 | 65F, wind 11mph | +0.00 (0) | - | **8.4** |
 
-Projected lineup total (adjusted): **132.5**
+Projected lineup total (adjusted): **132.9**
 
 Your current Sleeper lineup already matches the recommendation.
 
@@ -29,14 +29,14 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Aaron Rodgers | QB | PIT | vs CLE | 21.2 | 23.4 | D (8/32) | 21.5 | 69F, wind 6mph | -0.05 (15) | - | **19.8** |
+| 1 | Aaron Rodgers | QB | PIT | vs CLE | 21.3 | 23.4 | D (8/32) | 21.5 | 69F, wind 6mph | -0.05 (15) | - | **19.8** |
 | 2 | Jared Goff | QB | DET | vs MIN | 20.6 | 31.4 | F (1/32) | 24.8 | Indoors | +0.17 (15) | - | **19.3** |
 
 ### RB
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | James Cook III | RB | BUF | vs BAL | 17.3 | 23.6 | F (5/32) | 29.0 | 70F, wind 8mph | -0.13 (15) | - | **19.8** |
+| 1 | James Cook III | RB | BUF | vs BAL | 17.7 | 23.6 | F (5/32) | 29.0 | 70F, wind 8mph | -0.13 (15) | - | **20.1** |
 | 2 | Bucky Irving | RB | TB | vs ATL | 16.7 | 20.8 | A (28/32) | 23.0 | 74F, wind 9mph | +0.04 (15) | - | **19.7** |
 | 3 | Ashton Jeanty | RB | LV | @ NYJ | 16.0 | 16.0 | C (17/32) | 22.5 | 61F, wind 5mph | +0.10 (15) | - | **15.8** |
 | 4 | Breece Hall | RB | NYJ | vs LV | 0.0 | - | A (26/32) | 24.0 | 61F, wind 5mph | +0.06 (15) | Questionable | **0.0** |
@@ -73,16 +73,16 @@ Your current Sleeper lineup already matches the recommendation.
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Tampa Bay Buccaneers | DEF | TB | vs ATL | 9.7 | 13.0 | +1.3 | +10.3 | 166935 | - | $19 of $55 |
-| Ryan Flournoy | WR | DAL | vs ARI | 12.6 | 13.3 | +0.0 | +11.2 | 336984 | Breece Hall | $18 of $55 |
-| Caleb Douglas | WR | MIA | vs NE | 10.0 | 21.0 | +0.0 | +13.9 | 86680 | Breece Hall | $17 of $55 |
+| Tampa Bay Buccaneers | DEF | TB | vs ATL | 9.7 | 13.0 | +1.3 | +10.3 | 189595 | - | $20 of $55 |
+| Ryan Flournoy | WR | DAL | vs ARI | 12.6 | 13.3 | +0.0 | +11.2 | 370328 | Breece Hall | $18 of $55 |
+| Caleb Douglas | WR | MIA | vs NE | 10.0 | 21.0 | +0.0 | +13.9 | 85152 | Breece Hall | $17 of $55 |
 | Michael Penix Jr. | QB | ATL | @ TB | 17.9 | 26.2 | +0.0 | +22.3 | - | Breece Hall | $7 of $55 |
-| Samaje Perine | RB | CIN | vs TEN | 11.4 | 11.7 | +0.0 | +10.4 | 355284 | Breece Hall | $23 of $55 |
 | Malik Willis | QB | MIA | vs NE | 16.6 | 27.2 | +0.0 | +21.6 | - | Breece Hall | $7 of $55 |
-| Mason Taylor | TE | NYJ | vs LV | 11.3 | 12.6 | +0.0 | +10.3 | 151230 | Breece Hall | $22 of $55 |
-| Washington Commanders | DEF | WAS | vs PHI | 9.1 | 7.0 | +0.7 | +7.8 | 262304 | - | $19 of $55 |
-| Keon Coleman | WR | BUF | vs BAL | 11.2 | 11.8 | +0.0 | +10.0 | 131139 | Breece Hall | $16 of $55 |
+| Washington Commanders | DEF | WAS | vs PHI | 9.1 | 7.0 | +0.7 | +7.8 | 297899 | - | $19 of $55 |
+| Mason Taylor | TE | NYJ | vs LV | 11.3 | 12.6 | +0.0 | +10.3 | 162440 | Breece Hall | $22 of $55 |
+| Keon Coleman | WR | BUF | vs BAL | 11.3 | 11.8 | +0.0 | +10.0 | 139860 | Breece Hall | $16 of $55 |
 | Sam Darnold | QB | SEA | vs CHI | 20.9 | 14.9 | +1.1 | +17.5 | - | Breece Hall | $7 of $55 |
+| Kimani Vidal | RB | LAC | @ LA | 7.0 | 9.8 | +0.0 | +8.4 | 127735 | Breece Hall | $17 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
