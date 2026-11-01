@@ -5,7 +5,7 @@
   "league_id": "1389327094277767168",
   "season": 2026,
   "week": 8,
-  "generated_at": "2026-11-01T20:46:59+00:00",
+  "generated_at": "2026-11-01T20:50:19+00:00",
   "options": {
    "news": true,
    "weather": true
@@ -1673,7 +1673,7 @@
    "def_ratio": 1.12,
    "implied": 28.75,
    "weather": "70F, wind 7mph",
-   "sentiment": 0.129,
+   "sentiment": 0.206,
    "n_articles": 15,
    "headlines": [
     [
@@ -1687,12 +1687,26 @@
      "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOEhyQlNQeldpYjJjMjZpenNTUEdNcnJnZWtKQ1NtLUc3NGMxMmVzcndUVnZ3M0JudEFuUm4xajdieVZfZS1zejhTUHI0aHJlY0hXUVpFSURuczVjMkhlSDNqS251aEozRk1VUnlDclZMTmtPMklVblFCYlFOcXA2cGFEaEFlU2tEQnNjdGMzXzhkNXF0a2hzRWFVWXBqUDdTcG1qTDBZMFpWNkdCWEVRbjBGdw?oc=5"
     ],
     [
-     "Who Should I Start for Week 8? Stefon Diggs, DJ Moore, Ladd McConkey, Keon Coleman, Bhayshul Tuten, Bucky Irving, Kendrick Bourne, RJ Harvey, Tyler Allgeier, JK Dobbins - RotoBaller",
-     0.64,
-     "https://news.google.com/rss/articles/CBMingJBVV95cUxPVGstOHRLUHB1OVpfRjlGMFE1TlE4TS1lT1VuRHl1Q3pRSGtad0JtX3JpMUlReXdDWlM1TFl0RnVTQzF3WHU1YWdqb0FsWkRiME95cTJaV3Y1RjE0Um5Ka19ORXkwaVh2RFlLSlNDd1N0Vk1hc3d5UDc1YUFkdWx5Rkl2U25kNHpYMDNpUk54bnhYUXJMbV9lT0hhNjFLcjJPTXdXRkhKMWtmRjJIUkRvLXp6UGlOQ2lEcDBJVjNNMmR4RDZEckM1MVk1dHhqZHZndFR6N2NESDJaQWo1X1dXT2tndWY5TUhDel9XT0xYR2RWYVNaLUQ4WmViQ05GRF9GZ3RFTjBmZkJHX01lbE1JN3hYb01VMzVTN3J5WmVR?oc=5"
+     "Who Should I Start for Fantasy Football Week 8? Jonah Coleman, Caleb Douglas, Ollie Gordon II, Efton Chism III, Demario Douglas, Blake Corum, Xavier Worthy, Ladd McConkey - RotoBaller",
+     0.7,
+     "https://news.google.com/rss/articles/CBMijAJBVV95cUxOSHR3cE9lYVhHYUdQenRLYmZqN195TmVLY0J0ZDYwdlFQRHRGcTVqZ1JXVms0dHNDSEl2a0JCZkduQlFJX1lMT3pVcXlkbjZGMk9GUENadTdjazhiUFhEV3d1ZTJmRTBSRnh2ckFtVnRCaXR4a21iLUw1eXF4SEVRd1RSRnBXM19sU0JVczdHdXd3eFVjOHFPdmtMMm01SFl4NjFDRUNrb1JiRUpZNmx5N0F6Snl4V09CQzJyX2pEd1VpRTk5QjNvdlMxNmJ4UC1ESjB0U2pIODFJLVJoeUpkbHkxYVFEZnFlQ2hUY2dJNEdub0xlUFluNzEyTjhucmY3V1ZzM2VCaUZ5Nzdj?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Josh Allen and Keon Coleman miss out on golden opportunity for 74-yard TD vs. Ravens - NFL.com",
+     "score": 0.53,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbHk1U0ExMHNLY1JkLVJub0JCb2F5b3A0OW9XSTlmMUV2N0U5eUxmd25yZWhGUFpWYnM0ejEyakNZSzE1blpkZlNuSHU3SEdnWEFRSmMwWGJya1YyRGY5WVI5TnkzVjNhODlfMXVVTGVsN296TEo1X1piZHpaMVBvMW13OFlKMG5td1M3SG4wOU45ek02VjdPLVFpaVRTT3lyVEwtRTU0Wnd5bXhBUzdj?oc=5",
+     "published": "2026-11-01T19:30:07+00:00"
+    },
+    {
+     "title": "Who Should I Start for Fantasy Football Week 8? Jonah Coleman, Caleb Douglas, Ollie Gordon II, Efton Chism III, Demario Douglas, Blake Corum, Xavier Worthy, Ladd McConkey - RotoBaller",
+     "score": 0.7,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxOSHR3cE9lYVhHYUdQenRLYmZqN195TmVLY0J0ZDYwdlFQRHRGcTVqZ1JXVms0dHNDSEl2a0JCZkduQlFJX1lMT3pVcXlkbjZGMk9GUENadTdjazhiUFhEV3d1ZTJmRTBSRnh2ckFtVnRCaXR4a21iLUw1eXF4SEVRd1RSRnBXM19sU0JVczdHdXd3eFVjOHFPdmtMMm01SFl4NjFDRUNrb1JiRUpZNmx5N0F6Snl4V09CQzJyX2pEd1VpRTk5QjNvdlMxNmJ4UC1ESjB0U2pIODFJLVJoeUpkbHkxYVFEZnFlQ2hUY2dJNEdub0xlUFluNzEyTjhucmY3V1ZzM2VCaUZ5Nzdj?oc=5",
+     "published": "2026-11-01T11:09:08+00:00"
+    },
     {
      "title": "Keandre Lambert-Smith or Keon Coleman: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
      "score": 0.0,
@@ -1743,11 +1757,32 @@
      "published": "2026-10-29T15:39:14+00:00"
     },
     {
+     "title": "Fantasy football waiver wire Week 8: Add Jonah Coleman, Omar Cooper while you still can - The Athletic - The New York Times",
+     "score": 0.0,
+     "source": "The New York Times",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPWTNjM2t5eXBMOW9nQWtGWmFGZElYeDJSMF9nQlNGSTJWeHNBX0VXLVhGSTBNOHpvNHJjRTNtZWFuOXV2djhtcWZrZ2hqdmx4NkxtMjlqQU9YdVNiNHFZZENSMlZwY2MyTW1icE4yQ1pacXdjSC1yY3c5dVFrRjFVV3hmd1Vxb2o3ay1BeVpoNUtSejh6ZzFLaktzYnJ2SElUYXV2ZU9YOHVNdzZiUXhzaVgzWQ?oc=5",
+     "published": "2026-10-28T21:55:10+00:00"
+    },
+    {
      "title": "Keon Coleman or Xavier Worthy: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
      "score": 0.73,
      "source": "RotoBaller",
      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNOEhyQlNQeldpYjJjMjZpenNTUEdNcnJnZWtKQ1NtLUc3NGMxMmVzcndUVnZ3M0JudEFuUm4xajdieVZfZS1zejhTUHI0aHJlY0hXUVpFSURuczVjMkhlSDNqS251aEozRk1VUnlDclZMTmtPMklVblFCYlFOcXA2cGFEaEFlU2tEQnNjdGMzXzhkNXF0a2hzRWFVWXBqUDdTcG1qTDBZMFpWNkdCWEVRbjBGdw?oc=5",
      "published": "2026-10-28T20:02:34+00:00"
+    },
+    {
+     "title": "Who Should I Start for Week 8? Jakobi Meyers, Keon Coleman, Rachaad White, Jordan Addison, A.J. Brown, Keenan Allen, Rico Dowdle, Michael Wilson, D'Andre Swift - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPQ2xHQXkyRXJxY2lHRTRVd09WY29wUU9zSXp4OGgzM2JOMHFxVjVxRWEyemRQeWdHTXFRTTk5VjZtWGFRWWZUZTMwRzJoQmZQV0lPVHpGTnowYXlIb3dtZFVGRUZkdmFCR0lPQ2NGZXhkSVBYLWNHQXgwdW53cE9nUnUyVU1UQkQ1Z29NNV9uS19hLWFFMmJtQThTaVJQaTdlSFRxRGNFWVV6dkh1ak1KbUNJS3FhX2NrLUNJU3NrU29ObkZ5Y2lUeW9uU3hyN0Y5RmpramstQlYwc3NMRkRZUDZYc3V3dVlNbF94MUlhV0M4enBpdVFhSmkxdFhuaV9Jc2VjRGZIQW1vUGh1OGxiXw?oc=5",
+     "published": "2026-10-28T14:18:30+00:00"
+    },
+    {
+     "title": "Eli Raridon or Keon Coleman: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPd3RfbW1rSzBBSzVwRzJYYkVEZlAyTmdxWnBLY1RSLTBub3RQRkZCbjBIckdZRDdZWU4xRHBocWNqcHpYTnlOVmNhbHY0dFRrcEdfRXg0T25Rdjh6dmlQUVFKYUFma2IxVWNyM25fY2tmRFBBNnZmTkdzTzdOTzNnWTY5ZXlLQVRLaHJ4TXdVQy0xZW1FLVFKV21POVpudE5RTThkQ1RjdmhfYjNnbG1Ndg?oc=5",
+     "published": "2026-10-28T12:07:38+00:00"
     },
     {
      "title": "Cooper Kupp or Keon Coleman: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
@@ -1757,54 +1792,19 @@
      "published": "2026-10-28T10:48:35+00:00"
     },
     {
-     "title": "Bam Knight or Keon Coleman: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
+     "title": "Keon Coleman or Tutu Atwell: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
      "score": 0.0,
      "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNbkQwMHZTMjhyVHhNV2d2WjV2YWRNT0xYZEduM1N6V0I2TnNMaWhXWkF5c3RBbFhmX3pNVGtxaUhhT0xaZkdnNkRVQ3N0Tkktc21CM1RsVXJ5UU0zdkpFUXBRRmRTX3YxTUJaRnhkdGRfV1NERUlVOFRQUDNZSjY1TkthYndOTnVGUG5DS0ZZcGFtMUFHTllLT2tVTGRxMmlWQnYwNjVEYktzVzNxbDZ2NnlBVXU?oc=5",
-     "published": "2026-10-28T09:42:51+00:00"
-    },
-    {
-     "title": "Keon Coleman or Tyler Allgeier: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVTBTUlRRNjVfRDhWN2hBODhwbHpHUnNhdUs2UGNhWGg5SFFtV2JuRm9BeTVBQmlWZnRfQnZKTHZJNl8yRUlrNHN5OUY1TGY1aWZjMTRNTjdMckVOT0M1WVBSRTg4NEJMam1BOTZCUG5FU0xQNlRPMHFlQ3Bad2M3ckYwYUhUc3p0ZzdRSlZoRkkwZTRrbTRvdmRydDRNVUl4VU50OWdSbktaak5FamgzQzdrVlU?oc=5",
-     "published": "2026-10-28T06:55:57+00:00"
-    },
-    {
-     "title": "Brian Robinson or Keon Coleman: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdjV5dVdtTXNVZzVhOFVEQlUtaGNxS0NQYzJiOEZ4SU5JTmdSVW9iTmZ4ZFBLTVp1Mkp6bWgzcjVWQV9FRXJsVlN6ZXpxNXkxRm9oLVI3RGtmY05tTkJ6X0xtMXVwak8xc204Mmg4UHJpdG5fdlM5NmxIZUNiLTJGQXpLdlhCNjRQVUxFcnFsZEd0dEs4RjJkNnJtbm5UM2Z4UjMya0lrRmZzY3BzblFzZEtkZlRZbE4xZnRrRw?oc=5",
-     "published": "2026-10-28T00:52:06+00:00"
-    },
-    {
-     "title": "Keon Coleman or Andrew Armstrong: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMDdDZkhxLXRrMEZtclZtdGIxMFlVQ0VqQkV1LUpuejRZcXRtSjIxRDBFNFNENkFPbVA2bzhqLWQwWVkzUUV2U09Na1VHUVQtckVVSzhZWmpWSW1yS0trQ25rX3dwczRGZXpHRWQyS09MeExkcDZvSlhPMWd6NXNPcGhHajA0R0ZSX0dRLXJyM0xIS1BEb1hXQWNaUThYMk5hUHdaczUtVzEwQ2M1TUJ1Y3I0amZmMjg?oc=5",
-     "published": "2026-10-27T21:08:03+00:00"
-    },
-    {
-     "title": "Surprising Stat Shows How Clutch Bills' WR Keon Coleman Has Been in 2026 - Sports Illustrated",
-     "score": 0.49,
-     "source": "Sports Illustrated",
-     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMklLYm5GYnJ3dDFFUGxZYS1jUjVhdDZBZG4xRDBrWkJjUl9zcTF1R3RDR2gwQjBHdFdYZ0lYSVF4SmY4Q2pDSjJiejF0bko4Q0hxQWc5UHV5U0dLSElIQTZsX2VMSVlQd2tOYV9BU0l0eUtjREN1WnFXZVN5b1VUeXZMRURRcUdsVEVjT1A2a0tCUWUyLXM1cUtsZjlldw?oc=5",
-     "published": "2026-10-27T14:30:00+00:00"
-    },
-    {
-     "title": "Keon Coleman or Zay Flowers: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWDN2eGVMUFJvaG4xNC1FNS0yb2FLTDlEQkdJbWNrYlZNTm5HYXJaVDFXSkZKZVJ2Sjh4ZF93ZFNGT2xNWTZDazNwSk4yVlA1R3UyakhrRjFiLWVjTzdYWHQ5Skt1NlFfOHhGUllrRURYdGxKUVluUGVXa282WE9Nenl5ZUMwTUpPUzd4eFNrMklESDRoX3ZHY01tUHBNVk9PdXZzRldkUGFGNXNmZFI0Sg?oc=5",
-     "published": "2026-10-26T17:48:35+00:00"
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOcXh2YnozOFA2aUFpU3J6b0UzWjBfVG56bXhqYmVkNjUzT1pPUWJmZndublAtUnU0Yi1NSkxad1NEMl9sNHdDRmo4S0ZyM1dJZFpzWExDWEszWThRREVoeTVpX1Q4blNadC1TcWRmQ1BIa1VDWmFEUVVtTUdsVE1BcDh6aVhLWkVESWduZFBvUkVRSGpwVFJPZFlyTXVFN3NLV0FmZURoM05jVFh1ZldCQ0pReFY1UQ?oc=5",
+     "published": "2026-10-28T09:54:57+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.2,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.01,
+   "mult_sentiment": 1.016,
    "base": 9.329,
-   "adj": 11.31,
+   "adj": 11.37,
    "trending_adds": 132363,
    "slot": null,
    "notes": [],

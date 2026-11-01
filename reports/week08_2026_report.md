@@ -1,5 +1,5 @@
 # Brendobendo - Week 8, 2026
-_Refounders Football League   - generated Sun Nov 01 08:46 PM_
+_Refounders Football League   - generated Sun Nov 01 08:50 PM_
 
 ## Recommended lineup
 
@@ -80,7 +80,7 @@ Your current Sleeper lineup already matches the recommendation.
 | Malik Willis | QB | MIA | vs NE | 16.4 | 27.2 | +0.0 | +21.6 | - | Breece Hall | $7 of $55 |
 | Mason Taylor | TE | NYJ | vs LV | 11.3 | 12.6 | +0.0 | +10.3 | 154810 | Breece Hall | $22 of $55 |
 | Washington Commanders | DEF | WAS | vs PHI | 9.0 | 7.0 | +0.5 | +7.7 | 323771 | - | $19 of $55 |
-| Keon Coleman | WR | BUF | vs BAL | 11.3 | 11.8 | +0.0 | +10.0 | 132363 | Breece Hall | $16 of $55 |
+| Keon Coleman | WR | BUF | vs BAL | 11.4 | 11.8 | +0.0 | +10.0 | 132363 | Breece Hall | $16 of $55 |
 | Sam Darnold | QB | SEA | vs CHI | 20.9 | 14.9 | +0.8 | +17.5 | - | Breece Hall | $7 of $55 |
 | Kimani Vidal | RB | LAC | @ LA | 7.0 | 9.8 | +0.0 | +8.4 | 161050 | Breece Hall | $17 of $55 |
 
