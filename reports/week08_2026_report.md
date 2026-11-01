@@ -1,5 +1,5 @@
 # Brendobendo - Week 8, 2026
-_Refounders Football League   - generated Sun Nov 01 07:54 PM_
+_Refounders Football League   - generated Sun Nov 01 08:46 PM_
 
 ## Recommended lineup
 
@@ -73,16 +73,16 @@ Your current Sleeper lineup already matches the recommendation.
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Tampa Bay Buccaneers | DEF | TB | vs ATL | 9.8 | 13.0 | +1.2 | +10.3 | 196820 | - | $21 of $55 |
-| Ryan Flournoy | WR | DAL | vs ARI | 12.6 | 13.3 | +0.0 | +11.3 | 386024 | Breece Hall | $18 of $55 |
-| Caleb Douglas | WR | MIA | vs NE | 9.8 | 21.0 | +0.0 | +13.9 | 80528 | Breece Hall | $17 of $55 |
+| Tampa Bay Buccaneers | DEF | TB | vs ATL | 9.8 | 13.0 | +1.2 | +10.3 | 193170 | - | $21 of $55 |
+| Ryan Flournoy | WR | DAL | vs ARI | 12.6 | 13.3 | +0.0 | +11.3 | 382048 | Breece Hall | $18 of $55 |
+| Caleb Douglas | WR | MIA | vs NE | 9.8 | 21.0 | +0.0 | +13.9 | 71968 | Breece Hall | $17 of $55 |
 | Michael Penix Jr. | QB | ATL | @ TB | 17.8 | 26.2 | +0.0 | +22.3 | - | Breece Hall | $7 of $55 |
-| Malik Willis | QB | MIA | vs NE | 16.3 | 27.2 | +0.0 | +21.6 | - | Breece Hall | $7 of $55 |
-| Mason Taylor | TE | NYJ | vs LV | 11.3 | 12.6 | +0.0 | +10.3 | 162750 | Breece Hall | $22 of $55 |
-| Washington Commanders | DEF | WAS | vs PHI | 8.9 | 7.0 | +0.4 | +7.7 | 325311 | - | $19 of $55 |
-| Keon Coleman | WR | BUF | vs BAL | 11.3 | 11.8 | +0.0 | +10.0 | 139599 | Breece Hall | $16 of $55 |
+| Malik Willis | QB | MIA | vs NE | 16.4 | 27.2 | +0.0 | +21.6 | - | Breece Hall | $7 of $55 |
+| Mason Taylor | TE | NYJ | vs LV | 11.3 | 12.6 | +0.0 | +10.3 | 154810 | Breece Hall | $22 of $55 |
+| Washington Commanders | DEF | WAS | vs PHI | 9.0 | 7.0 | +0.5 | +7.7 | 323771 | - | $19 of $55 |
+| Keon Coleman | WR | BUF | vs BAL | 11.3 | 11.8 | +0.0 | +10.0 | 132363 | Breece Hall | $16 of $55 |
 | Sam Darnold | QB | SEA | vs CHI | 20.9 | 14.9 | +0.8 | +17.5 | - | Breece Hall | $7 of $55 |
-| Kimani Vidal | RB | LAC | @ LA | 7.0 | 9.8 | +0.0 | +8.4 | 149625 | Breece Hall | $17 of $55 |
+| Kimani Vidal | RB | LAC | @ LA | 7.0 | 9.8 | +0.0 | +8.4 | 161050 | Breece Hall | $17 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
