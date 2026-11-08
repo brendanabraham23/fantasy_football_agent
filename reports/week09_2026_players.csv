@@ -1,25 +1,25 @@
 player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
-11584,Bucky Irving,RB,TB,CHI,False,False,,,17.53,17.3,3,3.0,32.0,0.8,20.75,"54F, wind 7mph",0.341,15,1.0,0.859,1.0,1.027,17.461000000000002,15.4,0,RB,[],roster,,,
-11646,Jalen Coker,WR,CAR,DEN,True,False,,,13.96,9.07,3,7.0,32.0,0.87,21.0,"64F, wind 5mph",0.019,15,1.0,0.898,1.0,1.002,12.493,11.24,0,,[],roster,,,
-12501,Matthew Golden,WR,GB,NE,False,False,,,14.89,17.73,3,23.0,32.0,1.07,20.75,"50F, wind 11mph",0.159,15,1.0,0.988,1.0,1.013,15.742,15.76,0,WR,[],roster,,,
-12527,Ashton Jeanty,RB,LV,SF,False,False,,,12.17,15.9,3,21.0,32.0,1.04,20.75,"71F, wind 7mph",-0.053,15,1.0,0.974,1.0,0.996,13.289,12.89,0,FLEX,[],roster,,,
-13346,Denzel Boston,WR,CLE,NO,False,False,Questionable,Calf,10.72,5.97,3,13.0,32.0,0.95,19.75,Indoors,-0.207,15,0.85,0.909,1.0,0.983,9.295,7.06,0,,['Questionable (Calf)'],roster,,,
-1479,Keenan Allen,WR,IND,DAL,True,False,,,11.35,12.0,3,26.0,32.0,1.13,23.0,"59F, wind 9mph",-0.049,15,1.0,1.069,1.0,0.996,11.544999999999998,12.29,232772,WR,[],roster,,,
-2747,Jason Myers,K,SEA,ARI,True,False,,,8.75,5.33,3,18.0,32.0,1.07,24.0,"54F, wind 11mph",-0.249,9,1.0,1.062,1.0,0.98,7.724,8.04,0,K,[],roster,,,
-3163,Jared Goff,QB,DET,MIA,False,False,,,26.44,18.93,2,28.0,32.0,1.2,28.75,"83F, wind 11mph",0.153,15,1.0,1.2,1.0,1.012,24.186999999999998,29.37,0,QB,[],roster,,,
-8110,Jake Ferguson,TE,DAL,IND,False,False,Questionable,Ankle,8.34,1.1,3,21.0,32.0,1.03,28.5,"59F, wind 9mph",0.093,15,0.85,1.141,1.0,1.007,6.167999999999999,6.02,0,,['Questionable (Ankle)'],roster,,,
-8138,James Cook III,RB,BUF,MIN,False,False,,,14.88,21.2,2,5.0,32.0,0.83,23.75,Indoors,0.128,15,1.0,0.934,1.0,1.01,16.776,15.83,0,RB,[],roster,,,
-8155,Breece Hall,RB,NYJ,KC,False,False,Questionable,Quadriceps,8.38,,0,13.0,32.0,0.91,18.75,"66F, wind 9mph",0.02,15,0.85,0.87,1.0,1.002,8.38,6.21,0,,['Questionable (Quadriceps)'],roster,,,
-9484,Tucker Kraft,TE,GB,NE,False,False,,,11.61,13.6,3,10.0,32.0,0.85,20.75,"50F, wind 11mph",-0.039,15,1.0,0.883,1.0,0.997,12.206999999999999,10.75,0,TE,[],roster,,,
-96,Aaron Rodgers,QB,PIT,,,True,,,0.0,15.45,3,,,,,,0.142,15,0.0,1.0,1.0,1.011,4.635,0.0,0,,['BYE'],roster,,,
-DEN,Denver Broncos,DEF,DEN,CAR,False,False,,,7.48,6.67,3,,,,23.5,"64F, wind 5mph",0.0,0,1.0,1.04,1.0,1.0,7.237,7.53,0,DEF,[],roster,,,
-8161,Malik Willis,QB,MIA,DET,True,False,,,21.92,26.43,2,32.0,32.0,1.49,21.75,"83F, wind 11mph",0.045,15,1.0,1.2,1.0,1.004,23.273,28.04,737331,,[],waiver,0.0,19.46,$25 of $55
-2020,Cairo Santos,K,CHI,TB,True,False,,,8.05,11.0,3,25.0,32.0,1.16,26.75,"54F, wind 7mph",0.0,0,1.0,1.173,1.0,1.0,8.934999999999999,10.48,711893,,[],waiver,2.44,9.53,$19 of $55
-NO,New Orleans Saints,DEF,NO,CLE,True,False,,,8.11,8.5,2,,,,22.75,Indoors,0.0,0,1.0,1.067,1.0,1.0,8.227,8.78,722980,,[],waiver,1.25,8.3,$23 of $55
-11565,J.J. McCarthy,QB,NYG,PHI,False,False,,,19.7,16.73,2,24.0,32.0,1.14,21.0,"59F, wind 10mph",0.013,15,1.0,1.027,1.0,1.001,18.808999999999997,19.34,124482,,[],waiver,0.0,13.5,$12 of $55
-4993,Mike Gesicki,TE,CIN,ATL,False,False,,,10.16,12.6,2,17.0,32.0,0.99,27.75,Neutral site (Bernabeu) - check manually,0.105,15,1.0,1.103,1.0,1.008,10.892,12.11,456924,,[],waiver,1.36,6.66,$22 of $55
-TB,Tampa Bay Buccaneers,DEF,TB,CHI,False,False,,,5.31,16.67,3,,,,20.75,"54F, wind 7mph",0.0,0,1.0,0.914,1.0,1.0,8.718,7.97,108220,,[],waiver,0.44,10.99,$14 of $55
-11625,Adonai Mitchell,WR,NYJ,KC,False,False,,,8.33,13.6,2,2.0,32.0,0.79,18.75,"66F, wind 9mph",0.0,0,1.0,0.815,1.0,1.0,9.911,8.08,1634552,,[],waiver,0.0,6.25,$16 of $55
-CHI,Chicago Bears,DEF,CHI,TB,True,False,,,8.41,8.0,3,,,,26.75,"54F, wind 7mph",0.0,0,1.0,1.045,1.0,1.0,8.286999999999999,8.66,185182,,[],waiver,1.13,8.21,$21 of $55
-6011,Gardner Minshew II,QB,ARI,SEA,False,False,,,14.1,9.13,3,2.0,32.0,0.65,15.5,"54F, wind 11mph",0.0,0,1.0,0.8,1.0,1.0,12.609,10.09,480772,,[],waiver,0.0,6.9,$13 of $55
-6130,Devin Singletary,RB,NYG,PHI,False,False,,,8.73,9.4,2,16.0,32.0,0.97,21.0,"59F, wind 10mph",0.0,0,1.0,0.946,1.0,1.0,8.931,8.45,1372248,,[],waiver,0.0,4.35,$14 of $55
+11584,Bucky Irving,RB,TB,CHI,False,False,,,17.62,17.3,3,3.0,32.0,0.8,20.75,"47F, wind 8mph",0.223,15,1.0,0.86,1.0,1.018,17.524,15.34,0,RB,[],roster,,,
+11646,Jalen Coker,WR,CAR,DEN,True,False,,,13.83,9.07,3,7.0,32.0,0.87,21.0,"66F, wind 9mph",0.0,15,1.0,0.898,1.0,1.0,12.402,11.14,0,,[],roster,,,
+12501,Matthew Golden,WR,GB,NE,False,False,,,14.89,17.73,3,23.0,32.0,1.07,20.75,"47F, wind 7mph",0.072,15,1.0,0.989,1.0,1.006,15.742,15.66,0,WR,[],roster,,,
+12527,Ashton Jeanty,RB,LV,SF,False,False,,,12.15,15.9,3,21.0,32.0,1.04,21.0,"67F, wind 6mph",0.12,15,1.0,0.98,1.0,1.01,13.274999999999999,13.14,0,FLEX,[],roster,,,
+13346,Denzel Boston,WR,CLE,NO,False,False,,,10.72,5.97,3,13.0,32.0,0.95,19.75,Indoors,-0.038,15,1.0,0.91,1.0,0.997,9.295,8.43,0,,[],roster,,,
+1479,Keenan Allen,WR,IND,DAL,True,False,,,11.42,12.0,3,26.0,32.0,1.13,23.0,"56F, wind 12mph",0.134,15,1.0,1.07,1.0,1.011,11.594,12.54,75912,WR,[],roster,,,
+2747,Jason Myers,K,SEA,ARI,True,False,,,8.75,5.33,3,18.0,32.0,1.07,24.0,"55F, wind 9mph",-0.251,7,1.0,1.063,1.0,0.98,7.724,8.05,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,MIA,False,False,,,26.42,18.93,2,28.0,32.0,1.2,28.5,"84F, wind 6mph",0.126,15,1.0,1.2,1.0,1.01,24.173,29.3,0,QB,[],roster,,,
+8110,Jake Ferguson,TE,DAL,IND,False,False,Questionable,Ankle,8.3,1.1,3,21.0,32.0,1.03,28.5,"56F, wind 12mph",-0.022,15,0.85,1.142,1.0,0.998,6.140000000000001,5.95,0,,['Questionable (Ankle)'],roster,,,
+8138,James Cook III,RB,BUF,MIN,False,False,,,14.9,21.2,2,5.0,32.0,0.83,23.25,Indoors,0.158,15,1.0,0.924,1.0,1.013,16.79,15.72,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,KC,False,False,,,10.34,,0,13.0,32.0,0.91,19.5,"60F, wind 5mph",-0.031,15,1.0,0.886,1.0,0.998,10.34,9.14,0,,[],roster,,,
+8161,Malik Willis,QB,MIA,DET,True,False,,,21.95,26.43,2,32.0,32.0,1.49,22.0,"84F, wind 6mph",0.14,15,1.0,1.2,1.0,1.011,23.293999999999997,28.26,151998,,[],roster,,,
+9484,Tucker Kraft,TE,GB,NE,False,False,,,11.22,13.6,3,10.0,32.0,0.85,20.75,"47F, wind 7mph",0.042,15,1.0,0.884,1.0,1.003,11.934000000000001,10.58,0,TE,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,CAR,False,False,,,7.24,6.67,3,,,,23.5,"66F, wind 9mph",0.0,0,1.0,1.039,1.0,1.0,7.068999999999999,7.34,0,DEF,[],roster,,,
+2020,Cairo Santos,K,CHI,TB,True,False,,,8.05,11.0,3,25.0,32.0,1.16,26.75,"47F, wind 8mph",0.0,0,1.0,1.174,1.0,1.0,8.934999999999999,10.49,122479,,[],waiver,2.44,9.53,$17 of $55
+NO,New Orleans Saints,DEF,NO,CLE,True,False,,,8.14,8.5,2,,,,22.75,Indoors,0.0,0,1.0,1.067,1.0,1.0,8.248000000000001,8.8,228120,,[],waiver,1.46,8.32,$22 of $55
+TB,Tampa Bay Buccaneers,DEF,TB,CHI,False,False,,,5.61,16.67,3,,,,20.75,"47F, wind 8mph",0.0,0,1.0,0.913,1.0,1.0,8.928,8.15,37675,,[],waiver,0.81,11.14,$12 of $55
+11625,Adonai Mitchell,WR,NYJ,KC,False,False,,,10.26,13.6,2,2.0,32.0,0.79,19.5,"60F, wind 5mph",0.0,0,1.0,0.831,1.0,1.0,11.262,9.36,385840,,[],waiver,0.0,7.23,$17 of $55
+4993,Mike Gesicki,TE,CIN,ATL,False,False,,,10.08,12.6,2,17.0,32.0,0.99,27.75,Neutral site (Bernabeu) - check manually,0.042,15,1.0,1.103,1.0,1.003,10.835999999999999,11.99,96504,,[],waiver,1.41,6.64,$19 of $55
+11783,Ryan Flournoy,WR,DAL,IND,False,False,,,8.68,13.7,3,6.0,32.0,0.87,28.5,"56F, wind 12mph",0.064,15,1.0,1.052,1.0,1.005,10.186,10.77,120240,,[],waiver,0.0,6.49,$13 of $55
+3161,Carson Wentz,QB,MIN,BUF,True,False,,,18.75,0.0,2,23.0,32.0,1.11,20.25,Indoors,0.038,15,1.0,0.996,1.0,1.003,13.125,13.11,192834,,[],waiver,0.0,4.67,$10 of $55
+13296,Caleb Douglas,WR,MIA,DET,True,False,,,8.68,14.65,2,30.0,32.0,1.19,22.0,"84F, wind 6mph",0.0,15,1.0,1.076,1.0,1.0,10.471,11.27,57728,,[],waiver,0.0,6.96,$13 of $55
+11579,Audric Estime,RB,NO,CLE,True,False,,,8.37,7.9,1,15.0,32.0,0.95,22.75,Indoors,0.0,0,1.0,0.974,1.0,1.0,8.229,8.02,281922,,[],waiver,0.0,3.43,$11 of $55
+13337,Emmett Johnson,RB,KC,NYJ,True,False,,,6.43,11.13,3,18.0,32.0,0.98,29.0,"60F, wind 5mph",0.0,0,1.0,1.125,1.0,1.0,7.84,8.82,122310,,[],waiver,0.0,4.08,$11 of $55
