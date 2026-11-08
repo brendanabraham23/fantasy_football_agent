@@ -5,7 +5,7 @@
   "league_id": "1389327094277767168",
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-08T20:46:56+00:00",
+  "generated_at": "2026-11-08T22:59:37+00:00",
   "options": {
    "news": true,
    "weather": true
@@ -102,8 +102,8 @@
    "def_teams": 32,
    "def_ratio": 1.21,
    "implied": 23.5,
-   "weather": "57F, wind 12mph",
-   "sentiment": 0.126,
+   "weather": "59F, wind 12mph",
+   "sentiment": 0.037,
    "n_articles": 15,
    "headlines": [
     [
@@ -112,23 +112,51 @@
      "https://news.google.com/rss/articles/CBMimwFBVV95cUxOQ01UNnRkTHdaeFN3OTNseFV0N1hxd0JzRGR6QlBJZWRxbnJNTm00bE5YQllaTElyV1Q0dnpURWJITFNNdmdzZGV0RmJ0ck5VTjB1Z2NPWVBiY084dVRINjRzVDl3QmZERF9lcG82aVFlSVF4VVlUYnlaZVFGRlcxRWk3ZWwwQ3BIY3ExN2Z2bGFfekVGbUd3WXdlTdIBoAFBVV95cUxNQU1oTHdudWZJS1VBWlRVRXZEVXVfSU9FakZ6YUdQdnZMX3dHd204OGZyN0U3dHo1b3JkSE1OdHgzbGNCOWRxcEpYLTNxLWFHQk5wbTRxS1hPX1dQOTRvbWg0emkyVlk2cDhFcTdLbGJSOUxxVWV1YkhNQ1Z1NWtJcmNDV3JRTWR3VVp0M0dhcXc5aE83Y2xjRUIyRV9MTzZW?oc=5"
     ],
     [
-     "Colts | Colts engaged in Daniel Jones trade talks as \u2018multiple teams inquire\u2019 - Fantasy Guru",
-     0.66,
-     "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaTVsWGdSSmhKb2lvTlo1cjMxRmFhdlBGQkZyYXlxOF9wS0YzV1JkSDJIUG8zNVVIU2R4clgzbTJudkFHeFBQbUJmN2R4d1FyUkVwd3hLS1NMUFoxUnVPQmRBWnV4YXpWaEtoaFBoRFp5M1kyU054SUFCUml5cXVxdVVMRFEyMkpfNXNLckV2bmRoTk8wWFhFNktwb1BoUV9sMC1N?oc=5"
+     "Indianapolis Colts\u2019 Daniel Jones Trade Pitch Cements Him in NFC North - Heavy.com",
+     -0.87,
+     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZ3R1Z210YUVvQ3JhaU0tWkRVR3d5WDZqT3Bzd24zN1g3ZGpfaGotQTlEdW5wRXBWRG42djhEdkVOTUhoR3VIVmkyRllXREN5NExGeHoyWThiazh1dUlOX2dWSU1ETnprSlVvS1B6X2xVdEhkRDl0R3VqcFQ1WEI0bV9nd2hlRjdjWDlF?oc=5"
     ],
     [
-     "Indianapolis Colts fielding multiple calls for QB Daniel Jones - Touchdown Wire",
-     0.61,
-     "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMlpWNzhJVkxhVTdIY3RBQ3NSTEk3RU1XMkdTazRneWZ4Z1VPcUs4MmJqVFBDUFlrMDlUT2JOVkpaWjZ2bE94SkVpcGNwc0syYlpKN2FJc2JzS3hjLWNSUkRmRGx2VnpnLVBRMjM0WjRhY1E3RktlaEFUTTNZMnRfOWdSQWo0MnoxdHJxWU1vbVVHRjdpVDlQVjNoMElIREJZVzFHU1ZDZU4zUmVpNTdGWkxhN2s1VW94Znhxc0E1TnFXSzlVb3pOU1hnUXVMeWpMdVZ5U3pXWHo2T0NObC1sVW5R?oc=5"
+     "Daniel Jones Connects With Ashton Dulin For 55-Yard TD, Trimming Colts' Deficit vs Cowboys | NFL Highlights - FOX Sports",
+     -0.66,
+     "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SeVdfbHVncTJ0RUxLd0R0SGo1c3lKZEQ5bXhaX2N5d1dKVUNCTXBnMEctcW9fVnBOdXphc05kTGZaaHpSNTJLSFlmcUVaQm5MSk5xdzVEWWRVQXVjb1BoYzRteFpZNmNra2lRSzZ3?oc=5"
     ]
    ],
    "articles": [
     {
-     "title": "Cowboys lead struggling Colts 17-7 at halftime",
-     "score": -0.46,
-     "source": "profootballtalk.nbcsports.com",
-     "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/cowboys-lead-struggling-colts-17-7-at-halftime",
-     "published": "2026-11-08T19:49:40+00:00"
+     "title": "Daniel Jones Addresses If He's Considered Requesting Colts Trade Amid NFL Rumors - Bleacher Report",
+     "score": 0.0,
+     "source": "Bleacher Report",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORlBnbE9kRVVYMXpDdHRpdG5jVk5VN3BhdjNpdVpQaHBHYXd2X0xiOEtvV29FNXRYRzJ4ckpBNXphUE1QOUJlNTZRblJhZ1N6UEk4c1didG9MRWZpS2tIRnR0b2Y0M1NsN2xadzhqNTlFSUUtYVF5TjRhLTFvRnFuODl5RExrd2JnSlNhS3VzYnl4WUtlTFJBVW9yem5PeFpXUUNZbHk5d3g1b0tlUGdZZl9IdGFvMmhFS1VNU3djRjk1dw?oc=5",
+     "published": "2026-11-08T22:38:14+00:00"
+    },
+    {
+     "title": "Daniel Jones\u2019 potential final pass as a Colt sums up his Indy career - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVkpOaF90aHZKc0dsMXdaT2pRSU9GR0lRSWVOVjZqci1jd1Joc0FVbUZocWczYUMzOXVMZnBYSmRqWkp4UVlmazVwVHdJSFFIMzBmSHM4SnlJVjFvVUVZOG5tNk9WTmltUHBaaDJqYUhycG12QzB6RHRRd2U0RURQTWk5UXRZV2Y1WFE?oc=5",
+     "published": "2026-11-08T22:08:11+00:00"
+    },
+    {
+     "title": "Daniel Jones Connects With Ashton Dulin For 55-Yard TD, Trimming Colts' Deficit vs Cowboys | NFL Highlights - FOX Sports",
+     "score": -0.66,
+     "source": "FOX Sports",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9SeVdfbHVncTJ0RUxLd0R0SGo1c3lKZEQ5bXhaX2N5d1dKVUNCTXBnMEctcW9fVnBOdXphc05kTGZaaHpSNTJLSFlmcUVaQm5MSk5xdzVEWWRVQXVjb1BoYzRteFpZNmNra2lRSzZ3?oc=5",
+     "published": "2026-11-08T20:39:32+00:00"
+    },
+    {
+     "title": "Trade Deadline Buzz: Daniel Jones, Brian Thomas, Jadeveon Clowney, Tony Pollard, Colts, Jaguars, Texans, Titans - NFLTradeRumors.co",
+     "score": 0.0,
+     "source": "NFLTradeRumors.co",
+     "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbjdVMExXcE9ScE56WVBaanl2VS1kUWVYaE1Sai05N1VJMEk1RlhBekVZMGxHMEFRb2ozelFnQlJYczJIdzRoSWNQTHJHbWdTVm5fOHlTeURMMXcxNUZ5SVVoTXlMX2VKTmdzb2VvbTVfeUdhSzZjeWhfUUFJcjhfcDV6dl9uYWVCd0loZVZGMENsYURTQjY3dktzRG9qbmE5RnRma1ZaeXYyYmdMemY3SWVaLTBBZkNFZEtnUnU3bTB6dDh2bWl2cDdB?oc=5",
+     "published": "2026-11-08T20:35:51+00:00"
+    },
+    {
+     "title": "Indianapolis Colts\u2019 Daniel Jones Trade Pitch Cements Him in NFC North - Heavy.com",
+     "score": -0.87,
+     "source": "Heavy.com",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPZ3R1Z210YUVvQ3JhaU0tWkRVR3d5WDZqT3Bzd24zN1g3ZGpfaGotQTlEdW5wRXBWRG42djhEdkVOTUhoR3VIVmkyRllXREN5NExGeHoyWThiazh1dUlOX2dWSU1ETnprSlVvS1B6X2xVdEhkRDl0R3VqcFQ1WEI0bV9nd2hlRjdjWDlF?oc=5",
+     "published": "2026-11-08T20:16:52+00:00"
     },
     {
      "title": "Caleb Downs sneaks up on Daniel Jones for blind-side sack in Indianapolis - NFL.com",
@@ -145,11 +173,18 @@
      "published": "2026-11-08T18:45:19+00:00"
     },
     {
-     "title": "Vikings Facing Quarterback Decision After Daniel Jones Trade Report - Athlon Sports",
+     "title": "Vikings Facing Quarterback Decision After Daniel Jones Trade Report - Yardbarker",
      "score": 0.0,
-     "source": "Athlon Sports",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUkpqMm5wdndhTlAxdmZhQ1B3S250M1c3SVBWbzM4VXdlN0psdTAyTkpJRENCRWlLNUZ5Yl9FUzd5cjE4dFhudjBMYU5DXzd6WGhqLUF5UFVQbENyZnNEYXByYTBKMHpKcjExZTRWNTJ3LUxmXzhIZTFCdTh3M0ljQmtMSVNLaERsbWh5Q3hhZHJNY0dac0tmQVRzOVV4WkFkUkdn?oc=5",
-     "published": "2026-11-08T17:03:00+00:00"
+     "source": "Yardbarker",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOWHZycndHNWtSd1o4RXdyRFhPMUJtSUw1clk0QjRrVGY1MWlqc0Nac0k3SFItdG9vMi1RUFdSXzIxeE0yb0VQbEpXMW5jeEhGbGphWkJjZC1mV3gyNk5SN2tXX2tyalo2b1NnWU51RVdFTU11cG1CTjNPZm5pUVEycXczdmx3dEpIOFdhQW41emRRQlF5Y0VmaTRxQXVZYWhOSnpKTkl5Vk9SYUlvMFFWbV85TlduMVNtWVNrVTZvczlZVUU?oc=5",
+     "published": "2026-11-08T18:08:54+00:00"
+    },
+    {
+     "title": "Vikings Receive Insider Update on Colts\u2019 Jonathan Taylor, Daniel Jones - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNVVM2TVRaZmc2andKZUJSMmhHcGNUOE9QNWVPZExkQy1OMkpoY3hLd2ZFZDJMbmp4TlVmYVBFTVlEX2hqY0l4QWpkNER3WE9CSlFwTXZOdGEtTzQybzloVHRJaGtTSEZLMFBTOXJRY3Y1V21kUkNuRXJkdk9UaWVWaHNzMjVma3N4bTlGNWRkLVU?oc=5",
+     "published": "2026-11-08T17:21:17+00:00"
     },
     {
      "title": "Indianapolis Colts quarterback Daniel Jones attracting trade interest ahead of NFL deadline - The Mirror US",
@@ -159,11 +194,11 @@
      "published": "2026-11-08T16:49:00+00:00"
     },
     {
-     "title": "Cowboys vs. Colts score, live updates: Dak Prescott, Dallas off to 17-7 lead after Daniel Jones struggles in first half",
-     "score": -0.36,
-     "source": "Yahoo Sports",
-     "link": "https://sports.yahoo.com/nfl/live/cowboys-colts-score-live-updates-inactives-highlights-stats-where-to-watch-154318801.html",
-     "published": "2026-11-08T15:43:18+00:00"
+     "title": "Rap: Vikings a \"team to watch\" for Daniel Jones - NBC Sports",
+     "score": 0.0,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNV0xmTDA1N1h1bks3YUQ5VExnbDdVZTBvWVhxU3hLemxfQXVvRTZudTlfQ3Y2WExKRzFwa09TZlhfZk1GWWZlTWlfcC1SeTI3QW5ub04waHh3cDZkVk94SnhZVlpzd1BCU3pRN0RWNUtOMERXWXpKRlBUd0VnRWpES2lpS1Vla1ZfeEFFMHRsYlVoblpOQzgzaGZlVkZoemdoRVAzc1VEcnM5aHlMaHVN?oc=5",
+     "published": "2026-11-08T16:35:35+00:00"
     },
     {
      "title": "Ian Rapoport's Latest Daniel Jones Trade Update Names Top Suitor for Potential Move - Yahoo Sports",
@@ -180,18 +215,11 @@
      "published": "2026-11-08T14:47:07+00:00"
     },
     {
-     "title": "Daniel Jones, Derrick Henry lead latest NFL trade deadline rumors - Yahoo Sports",
+     "title": "Daniel Jones, Derrick Henry lead latest NFL trade deadline rumors - SB Nation",
      "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZDd3UGhpRnFQYWY0dEpVTVN1RWRTVjlPaEhsQzhta01Sd2VTV0VaOW1hdjk3b2VIOWVFZDNnazZ5TnNBeUltZF8zVnJaSXk1ZS1FdmVZRmJfMW5LT19zSDQtMEFfQzNEenMzcF9HMUEzcFpyOEZIVnBsV015d25iWFRONjViZ2c?oc=5",
+     "source": "SB Nation",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOdzJWNkZCNmZEQVlmSURHTmUzZmFqc0xtaGpCaG9Dcm9NWkJFSzNLOFhVbjVxaUo5YjBZUy12dWtCVzBUNmR0QURlU28wVUtMYk1KVmlCTU95aEpYb3RCX1VoQmY0RThJMnF1UjA2QkFRcEFnc0xIQkxkclZJakdCVw?oc=5",
      "published": "2026-11-08T14:42:01+00:00"
-    },
-    {
-     "title": "Vikings Receive Insider Update on Colts\u2019 Jonathan Taylor, Daniel Jones - Heavy.com",
-     "score": 0.0,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPRTgybXZPcE01cHBteUdrbUtaTmlLLUwtbW1IUXFqamxEeF9UNDVOXzJBNUN2bGloTkR3a1NiaV9zaldlZTZNMVRicktfM2R1U2ZrTHBVZkVZX1RHbkMta2xZUzRkZ1ZIYUYxM3dBb2Zaci1SNDVLTXgyTzYwd1lkbmNnbUhtTUVHMUFvSUJVUk5aNXJEZGc?oc=5",
-     "published": "2026-11-08T14:24:40+00:00"
     },
     {
      "title": "Indianapolis Colts fielding multiple calls for QB Daniel Jones - Touchdown Wire",
@@ -199,42 +227,14 @@
      "source": "Touchdown Wire",
      "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMlpWNzhJVkxhVTdIY3RBQ3NSTEk3RU1XMkdTazRneWZ4Z1VPcUs4MmJqVFBDUFlrMDlUT2JOVkpaWjZ2bE94SkVpcGNwc0syYlpKN2FJc2JzS3hjLWNSUkRmRGx2VnpnLVBRMjM0WjRhY1E3RktlaEFUTTNZMnRfOWdSQWo0MnoxdHJxWU1vbVVHRjdpVDlQVjNoMElIREJZVzFHU1ZDZU4zUmVpNTdGWkxhN2s1VW94Znhxc0E1TnFXSzlVb3pOU1hnUXVMeWpMdVZ5U3pXWHo2T0NObC1sVW5R?oc=5",
      "published": "2026-11-08T14:17:00+00:00"
-    },
-    {
-     "title": "Colts Have Path to Trade Jonathan Taylor, Daniel Jones to Same Team - Heavy.com",
-     "score": 0.0,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQVFZyOXBrTDYxVkVlSlJmTXN2Vmg5M3RwWHlpMjVYdTVVRmhJYVdxN1p0MjdVOGV0ZTlnTUlzU2huVzJoRFA4U2NHQklIeTJJY0xOcDlxMmhSOGxpSVYyVFhzaGJwWEN2V2pqQW5ySkZRTWdZcEZrRFRYTV9sSmVpaUhSQV9iWlN2VGV4S2FGY3dPdnF5Qm1wU1BYWmx6Z2hzNmVTSnlMQQ?oc=5",
-     "published": "2026-11-08T11:34:47+00:00"
-    },
-    {
-     "title": "Colts | Colts engaged in Daniel Jones trade talks as \u2018multiple teams inquire\u2019 - Fantasy Guru",
-     "score": 0.66,
-     "source": "Fantasy Guru",
-     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPaTVsWGdSSmhKb2lvTlo1cjMxRmFhdlBGQkZyYXlxOF9wS0YzV1JkSDJIUG8zNVVIU2R4clgzbTJudkFHeFBQbUJmN2R4d1FyUkVwd3hLS1NMUFoxUnVPQmRBWnV4YXpWaEtoaFBoRFp5M1kyU054SUFCUml5cXVxdVVMRFEyMkpfNXNLckV2bmRoTk8wWFhFNktwb1BoUV9sMC1N?oc=5",
-     "published": "2026-11-08T08:48:48+00:00"
-    },
-    {
-     "title": "Daniel Jones or Stefon Diggs - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBoWUR4bkcydHdBUG9aOGdwZmM1NW5KN1JDS19LeGZzTUNwQUZJR0xYY1hlWkdoeC14bS11V1VJczM4RHNkRzQ2RGZmUnRYbmJ5QXl5OE1lSjNPOV9IdmJKXy00XzhER3NoUjRIakp1ZWNDa0tIM3h5cHVWTQ?oc=5",
-     "published": "2026-11-08T06:03:13+00:00"
-    },
-    {
-     "title": "Daniel Jones' $10.51 Million Guarantee Looms As Colts Take Calls Before Cowboys Game - Yardbarker",
-     "score": 0.2,
-     "source": "Yardbarker",
-     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaWZIX0diNEJ1Rk1fUW5kMTB5ZDRLMkdXb20yVnhFMHEyZ05KOGZXMTBBQ0xXU1ZLTTRYazROQTZnNWRLRTM2ZGZKOFBYdGZpTFI4dkVmN2h6dkhOOG9XTWFPc2xQU25UYmdKaWh2OWh4MWxZVnhyOXZCU0Z3enJ1UEFWSUowVzNVdEFCUkZLZlZ1b0ZFbHoybUFENEZYTzh2b1BjVks5NnZuUWdsbk1fMll6d1lhSHVvdEEtZ0VpX1pwTHQ1eE53N0lyNVVvWndTbWxTaTVn?oc=5",
-     "published": "2026-11-08T04:58:37+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.122,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.01,
+   "mult_sentiment": 1.003,
    "base": 16.718,
-   "adj": 18.95,
+   "adj": 18.81,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -259,8 +259,8 @@
    "def_teams": 32,
    "def_ratio": 1.32,
    "implied": 24.0,
-   "weather": "56F, wind 8mph",
-   "sentiment": 0.09,
+   "weather": "56F, wind 9mph",
+   "sentiment": 0.165,
    "n_articles": 15,
    "headlines": [
     [
@@ -269,22 +269,36 @@
      "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdjF1VmJ2MnBwU1NCalJoRGtmcXBvbzkxMkplYjRmM3o4Y2xTdDI1MWszV0RZMVBjRkhyU3ZLUkxQZGdlRkpwak8tQk5mUnJDRTZvQ0VNNE1wTnBhakpDMzhqck1iSzhTVmJRMXM0RGFNNVhrMTZXNEpiUjdmZkgxRm93QmlhMjdNRFF0cDNDVjJKaU8zM01Ca3l3?oc=5"
     ],
     [
+     "Drew Lock's 15-yard dime lands perfectly inside Jadarian Price's piggybank - NFL.com",
+     0.86,
+     "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSjM3WFBjeUpvWThhc09iSTFyT0RaV0ozRmkxdEYyRVNqZUNqdHJTam14R3Eyb294dV9IcGZnQlNERWowZk1paXpkU1ZxRHNnMDM5UjgycmNzWl9leG5BYjBVc0lNVE9XSjRCQlRrNnowVXpGMnduS0FxTXBDaWs2SDlDQW9OVkJ6d2JzT1BTSWFhU1NYcEZVbS0xVWU4N1czWFh3?oc=5"
+    ],
+    [
      "Drew Lock ready to play in Week 9 - Yahoo Sports",
      0.83,
      "https://news.google.com/rss/articles/CBMif0FVX3lxTFBPbUV1eVdWSnFlMUlOUUxmcW5SQmF1bXdaaFZfX3hncXdNUFNsbkxzLWF4bFJuUktQYXBUQ2hfZThJNjE2T0VVbE8tTi1SdTdRVzR0a2hJb2pGVHhVQVBKbERPOGNnT3pyeVhQTGhDYThXR3BfaUNIakdTeG5KZkE?oc=5"
-    ],
-    [
-     "Seahawks QB Drew Lock Battling Elbow Injury Ahead of Cardinals Game: Report - Heavy.com",
-     -0.79,
-     "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUGRMMjhMb3Q1ZV9ScEZnZVZUWmotbXNQd3A4TFJ6YWhMdl95YWFjMEh3SGFfbnZzUnlrUUlyZmpncHdBMlpZdG9weVFjMGtMb2U5cTRwZUlESDdJbV9yR2F6VWx2cTVKNDJKNGc5Tms2b3h3SEZ4Y28tV0NNbGtZdnRfUVBaN2NQSWtSb2ZKZzZuN3M?oc=5"
     ]
    ],
    "articles": [
     {
-     "title": "The week of the backup QB in the NFL kicks off as Sanders, Milton, Minshew, Lock, and Wentz start - Fox News",
+     "title": "Drew Lock's 15-yard dime lands perfectly inside Jadarian Price's piggybank - NFL.com",
+     "score": 0.86,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSjM3WFBjeUpvWThhc09iSTFyT0RaV0ozRmkxdEYyRVNqZUNqdHJTam14R3Eyb294dV9IcGZnQlNERWowZk1paXpkU1ZxRHNnMDM5UjgycmNzWl9leG5BYjBVc0lNVE9XSjRCQlRrNnowVXpGMnduS0FxTXBDaWs2SDlDQW9OVkJ6d2JzT1BTSWFhU1NYcEZVbS0xVWU4N1czWFh3?oc=5",
+     "published": "2026-11-08T22:10:13+00:00"
+    },
+    {
+     "title": "Who is Drew Lock? This is the Seahawks starting quarterback - Diario AS",
      "score": 0.0,
-     "source": "Fox News",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRE5pdkp6bEtZQ2w0ZlM4Qy1HcGhvcE5aRVVwVTFPc2FzSkd1YmViZ3dzTnRBZzcxYXczT0xpX1FOdWNyNDF2aFd4SndscGpvTFBfaEV4U2JQYW80VTJwZjItVGV6U3hYVE5qV05hcnRFanNsTFdfMG5FVGZRdkh4dFVpWVc2d09LQ1FUZ2FZR3NaUmJFZnRmd2YwOUJQZGhudlVWQS1rT0NPaGM?oc=5",
+     "source": "Diario AS",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNDF3Xy1udG5QTUxNOGtidnFCck5JQUxPbUFmd2VxekRQbjVfX1Y0OTNhbEZ2YmNSV0ZqcDdFbjl6THNpS3hyYWhUUmxHQWxjSzNZN2QxYS1Mcjhld0FOdldGN2pRdDd0OTRHX2NsUk4yLWRRZmh5d19Jc3VUdlRhNENOeVVmd3llT1A2SUhhMlB0QlZJMHfSAaoBQVVfeXFMT0NrN0UwdEJ4TTFhVzhlZS1rRXVDb3FEQTk1QXBZY3paZEozUG53eVdlVmx1bWctemc4d1NKLUtEWDNqYlVZY3pGdlNJcV9kaFEzSGIzckZIdGZzWF9wRE5IS243RndmUHBOUXp4eGs0VE56VUU0Y2tjdE9yaHpPT0VuYjNmVlNWcDZFMVN6WUUyYmNwWnVnUUg2MzVxem1BS2NkRDA0T3JKWkE?oc=5",
+     "published": "2026-11-08T20:45:00+00:00"
+    },
+    {
+     "title": "The week of the backup QB in the NFL kicks off as Sanders, Milton, Minshew, Lock, and Wentz start - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFMU5WM3NpejY4YjNKcmxYVFo1ZkxXR1dWUWl4LUo4ZWFGZm5neTVuNWNWVnozbEdFcXdaU1l1UHRxZVdTTXR6czBZc2h5bnd5Q3BmSnRWa09uZTNBNGQ2bGdhcDVtQVdZRnVRLWcwQS1TWkNESC1YZEd4X0tpUQ?oc=5",
      "published": "2026-11-08T17:13:00+00:00"
     },
     {
@@ -293,6 +307,13 @@
      "source": "Sports Illustrated",
      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdjF1VmJ2MnBwU1NCalJoRGtmcXBvbzkxMkplYjRmM3o4Y2xTdDI1MWszV0RZMVBjRkhyU3ZLUkxQZGdlRkpwak8tQk5mUnJDRTZvQ0VNNE1wTnBhakpDMzhqck1iSzhTVmJRMXM0RGFNNVhrMTZXNEpiUjdmZkgxRm93QmlhMjdNRFF0cDNDVjJKaU8zM01Ca3l3?oc=5",
      "published": "2026-11-08T16:47:02+00:00"
+    },
+    {
+     "title": "Report gives clarity to Seahawks QB Drew Lock\u2019s injury - Seattle Sports",
+     "score": 0.15,
+     "source": "Seattle Sports",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeTFjMmwtTWNHTXFQZkU5SlVuTTBDdlRINjlldlhuNUlLVnAzWFJMc1pHLXdxc0hqcmdzTkJxYVVhdmFpckpvRjlxRllvLU9XM3BQS2ZOclE2NDluS0lmN0FQVjgxY051R2pfc1B1THYtVTd0aUtKT25ibkR0c3liY1RMMFR5ZEdoV0xmVXJ4NTgzSUlSTmdIMTJPTUZrZlhxSHNkUzIwNnM0Zw?oc=5",
+     "published": "2026-11-08T03:05:08+00:00"
     },
     {
      "title": "Seahawks QB Drew Lock worth a start in fantasy football vs Cardinals - Seahawks Wire",
@@ -316,18 +337,18 @@
      "published": "2026-11-07T19:16:23+00:00"
     },
     {
+     "title": "Seahawks QB Drew Lock Battling Elbow Injury Ahead of Cardinals Game: Report - Yahoo Sports",
+     "score": -0.79,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNOHNzZjZ3MGJkVlVSdm1SUTJEMlNYVnFJaVpLcFpYYzdDNm1oQjhXQjJFWElTVEtHOGF1dDdfb1V3ekcwaXczOVRHMnV0TS1OT0xwVHpvV2NrUlN5UWxPem1pWkx4c25oOVBqTm0xNGg1LTdWd0ZyTEFhS3pIYmhZZ2tiQUE4UQ?oc=5",
+     "published": "2026-11-07T18:12:23+00:00"
+    },
+    {
      "title": "Pelissero: Drew Lock (elbow) has severe tendonitis - NBC Sports",
      "score": -0.64,
      "source": "NBC Sports",
      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMnhNN3draHdRaFJNeHZXOXdmem9BOUU3NUtOZ2FlLWhCWW4zN3NvWndLTjQwd1pvTmVPT2RoYzVibDY3Zlpsb3liYldpVFBNdzJ6TENZbWR6NXdOVlp5ZmVuTjdIUHltak1sUWxEdXZYMDVsZnJkVkdKZmhfWWJ0Vmo1Y2xEMHFCbFpmWnBPVm5UY05yd1h3OVQ4R3Y3Q3lrejg2ZTd1Y0ZCX3MzN0hlZ2NEMA?oc=5",
-     "published": "2026-11-07T17:22:09+00:00"
-    },
-    {
-     "title": "Seahawks QB Drew Lock Battling Elbow Injury Ahead of Cardinals Game: Report - Heavy.com",
-     "score": -0.79,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNUGRMMjhMb3Q1ZV9ScEZnZVZUWmotbXNQd3A4TFJ6YWhMdl95YWFjMEh3SGFfbnZzUnlrUUlyZmpncHdBMlpZdG9weVFjMGtMb2U5cTRwZUlESDdJbV9yR2F6VWx2cTVKNDJKNGc5Tms2b3h3SEZ4Y28tV0NNbGtZdnRfUVBaN2NQSWtSb2ZKZzZuN3M?oc=5",
-     "published": "2026-11-07T15:12:23+00:00"
+     "published": "2026-11-07T17:21:00+00:00"
     },
     {
      "title": "Drew Lock\u2019s Start vs. Cardinals Could Shape His Free Agency Future - Athlon Sports",
@@ -363,35 +384,14 @@
      "source": "Yahoo Sports",
      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQbjAtX1R2Yk5MamhrU2N6YlA2QnNPWEFpaV9XSmhRVmc3VXJoQ2QycEJvOU84b3FYelVDeHczdHJhdWxFWjBTdmZQUUpoRmhqdlJtN3d4My1QMTFIZE1vcmpYb0tCdkZobkdleWtNcFZFaldLYXlwaWhKWllnS2p2SUVrSHBvdw?oc=5",
      "published": "2026-11-07T00:36:00+00:00"
-    },
-    {
-     "title": "Drew Lock Confirmed to Start Against Cardinals in Week 9 - NFL News | Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQNzVZWG1OeVdjS05CemFGLUNsb3pmNkx6cVVEQmFoVU80VTZaejBOajNySDU2emZuLXRrQ3FnYXBwbnJvVnFRWlJETkxlLS1aZ2dMdVZIOFE4dTlXWV9YZG9ycHhaQ2RnMldtUDU4QUtXcVZtcjQ2NUtDY3haWElDaWctYjJ4ZGRaU1E?oc=5",
-     "published": "2026-11-06T23:12:00+00:00"
-    },
-    {
-     "title": "Drew Lock reveals why Week 9 start against Cardinals means so much more - Yardbarker",
-     "score": 0.0,
-     "source": "Yardbarker",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQ3llZ0kyTWEwa0piTFhPM2hiSW11ZDItSm00NWctMURsTXNHaGlrd2xwU2J2RnM1c0NIVmNyVlhMd0tXVU1CcF9tcURGNU1YOXZDSTh5VG9hVGRzNHA4ZnFmTTNxM2VaaWczSjZILW5jZjZJWFg5TVc0MnI3TzR5d3k3am92VlVfOEdCSkUwOTFRdDYtQWIwcU5QREhDcXIzZG9yRDh6Y05RUFR3ZkhQUWp3dkVsVk5zSXQ1SlpjV0xDR1g1NWpwOA?oc=5",
-     "published": "2026-11-06T21:27:12+00:00"
-    },
-    {
-     "title": "Seahawks quarterback Drew Lock uses interesting analogy to explain how he knew Sam Darnold was hurt - Yahoo Sports",
-     "score": -0.34,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNMzFMU2tGQjFGazVfVTkzdklvRTVVN2k5Y0wzTFZkWE9JVG5wZXE0REVXSzNOVjllSXBhRHktX05aRXhKRTZGTFN3WGdEMnhCZ1ZfODY0U0xYdGo5aTRsQldlTXFfLWJwalJOcnlvSWVOZDM3WEVQbjdHMGEySG04QW1BVng5NlVCR0k5VA?oc=5",
-     "published": "2026-11-06T20:48:34+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.191,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.007,
+   "mult_sentiment": 1.013,
    "base": 15.588999999999999,
-   "adj": 18.7,
+   "adj": 18.81,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -416,139 +416,139 @@
    "def_teams": 32,
    "def_ratio": 1.14,
    "implied": 20.75,
-   "weather": "58F, wind 10mph",
-   "sentiment": 0.145,
+   "weather": "59F, wind 10mph",
+   "sentiment": -0.182,
    "n_articles": 15,
    "headlines": [
     [
-     "Jalen Carter Delivers JJ McCarthy Compliment Before Eagles-Giants - Yahoo Sports",
-     0.89,
-     "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR1IwMzhnQUZVWHdIcFFqTEpXcXdBREduTExWenZxSy1CT1V5cGRLa2YwcmpNV2xwWk4yU19XYklHbFpEVF9ZcGZlWE9lOFF1NHBOeUw3RWpBNldxM0ZwTzZjTzZ2a1J5S19fdTlNeTFvN253VXFiRklORGo3TXVaaGNHQWtPQkZzYmc?oc=5"
+     "J.J. McCarthy injury: QB returns to game after suffering hip injury - Yahoo Sports",
+     -0.93,
+     "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ibDBLd0lqV2JrejNfcDlyc0gyTjN6TUF2bXZLbmw3Z2hwSmJxOXkybUJSZjl5QTMzcUNINE5TVzFXanhHa0VldVIwb2plMTJUYTNvdlJvODFLbFpNQV82ckRFQnpYcmUtZU10WlhLWjJ1dVhHbTB0NEVOYw?oc=5"
     ],
     [
-     "NFL picks: J.J. McCarthy prop among SportsLine expert PropBetGuy's best bets for Week 9 of 2026 season - SportsLine",
-     0.86,
-     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNG0tWFZybW01R1g3NlQ1OGZzUE12TTIwU0RraUFQZjRKMzN0NzJnNjJ0Vldod2RFb1lVS05DbW44MElXQ3VjSlZvSFM5end6OEhUU2R5ZFVha0VkOG4ycFBKS19yRVpURHJjZ2JmNU9ZUExncWlYTWY2cnhfcHZwNjRfaUFWQ29BaGFiQ1NJMXBPalJ1QUJLbFdrMFRubE5HVlNwNWRYcW8yYzJSQzUzLXhMYzNjdkJCNjlKR2gwQUlKdDJYY1Vya1Y1cmx2T1BBTWc?oc=5"
+     "Winston, McCarthy combine to lead Giants to 19-11 win and hand Eagles 7th straight loss - Times Union",
+     0.92,
+     "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWGVGQk45ZDh2dnVTUU9QYVE0SnpMeXB1VERTQ3M2RFpTb1BySmIwbkxyejQzTG5nVjJkeTdFUnE0aGVaWXVucXNqV3NoUklWcHhnMmFKVkZxN2pXeVZCYm9LckxxcGUtczlvVmNZZmU1YjB1WDdxb2pFSTR6NlNsNXVQWnU3aHA5dnNJNHhEbjZtNl9sbHF1dkluNEZhWndaZTZIZURn?oc=5"
     ],
     [
-     "Giants QB JJ McCarthy Shares Memory Of Eagles\u2019 Joe Milton Before Clash - Heavy.com",
-     0.83,
-     "https://news.google.com/rss/articles/CBMioAFBVV95cUxPejZ2M1pncUhubTdrVkVmekVlSkNJNHlWc0pGVnpxNjlkZGlGUGJrU282TTdEWENyQktrd1gtQ1JGOFhuN2ozamRwcGtCRXJYQVRjLUJvOGx0ZGdYSGZmSnpSUjREUHFxWXdTbzIwTnJad1FNV014STF3eVdlODM5UmNJZjgyZHh5X3FMREZUWmd1OWU2RXBkZi0tX3ZQTURM?oc=5"
+     "Giants' J.J. McCarthy returns from injury scare vs. Eagles after Jameis Winston TD pass grabs lead - ClutchPoints",
+     -0.88,
+     "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWUNSbUpvOEJ5MTRUZ3BXRzVnSE1HVi1QbGdPMzdtY0NaRVpGb1dMOFJNTlBJcTRQU0ZFYnRFbzBlY3UtN2luXy16WllzUE5aSUZ1NThBYnY3Q043NDBEWUc2RmF5VDhXSmxRRmxEVHJJOURKVnM5bVU2MWlkVkdWN2xLT0FLM0xfamtseG16WmswMHRYZmc5RXk5Wm5aZ3ZpWHRhekI4QmRtY0J4R3ZCTVkzMmlPaHZ2TTNfeE9R?oc=5"
     ]
    ],
    "articles": [
     {
-     "title": "Chris Mara: J.J. McCarthy\u2019s Maturity Shift Is The Real Story - Yahoo Sports",
+     "title": "\u2018That Just Shook His Soul,\u2019 \u2018Something Is Clearly Off\u2019 \u2014 Greg Olsen, Fans React As Big Hit Sends Giants QB J.J. McCarthy to Locker Room vs. Eagles - Pro Football Network",
      "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBEM2dSQnhIWGswQm8wTXRIVVgtY1FZY3RxUWdyVlZVMm5pSjNZeWJ4Qkx5SHUxZXNMX25GenA2Qi00ZW1yZzg4eGJMNk5BSkFKTjRfWlZQRGJrQmo3YlV3MG9EVzlMb1hyNTJ5aGdCLW8tcHRBNW84eUM4QTU?oc=5",
-     "published": "2026-11-08T19:30:56+00:00"
+     "source": "Pro Football Network",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5QanpIS2ZpTWQwZkMzai1KVHRuNEdxN0ZzNFVKbWRhNEIta2p1OTNWa1pjRHNCQU13QUJjQkdxUFVNWFFnSHk5NGxMZ0lScXllbXhNeUhDQ0g5VGE4WHZ3WU93LVZVelJjNFFrZjNnU1g3RUl5TU9kNUJR?oc=5",
+     "published": "2026-11-08T21:55:44+00:00"
     },
     {
-     "title": "Giants\u2019 Chris Mara drops J.J McCarthy revelation after initially passing on him for Malik Nabers - ClutchPoints",
-     "score": -0.46,
+     "title": "Winston, McCarthy combine to lead Giants to 19-11 win and hand Eagles 7th straight loss - Times Union",
+     "score": 0.92,
+     "source": "Times Union",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWGVGQk45ZDh2dnVTUU9QYVE0SnpMeXB1VERTQ3M2RFpTb1BySmIwbkxyejQzTG5nVjJkeTdFUnE0aGVaWXVucXNqV3NoUklWcHhnMmFKVkZxN2pXeVZCYm9LckxxcGUtczlvVmNZZmU1YjB1WDdxb2pFSTR6NlNsNXVQWnU3aHA5dnNJNHhEbjZtNl9sbHF1dkluNEZhWndaZTZIZURn?oc=5",
+     "published": "2026-11-08T21:45:39+00:00"
+    },
+    {
+     "title": "Fantasy Football Injury Ramifications: J.J. McCarthy Injury Opens Door For Jameis Winston Return - Sports Illustrated",
+     "score": -0.59,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPMGhZY0prRWRUVGxXZGxIbW5kd09ndFZMWmFsNWZ1di04d0J2bFFTLWZaR0hja0dETm9WQzU5bVBTTVJ2d2l6Yl9CTElzNHpEM3RKY3J6MTZfSmJiTzVpRGU1SWhWdDlTRnBPYW1qM1ppMmpYeGo5UmxiaXp6NmZsdUhnNml6Z2xGVGJvVkozVm1zeTBuTVNvTDNYSTJsYzdnSFBxY1FkTUJsTnh4R2RBeEQ0MGdEWEZPN0pTck5YdDZ4Wm5INW91QjBZNA?oc=5",
+     "published": "2026-11-08T21:34:08+00:00"
+    },
+    {
+     "title": "Giants QB J.J. McCarthy returns to win over Eagles after apparent hip injury after taking shot to his side - Yahoo Sports",
+     "score": 0.59,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNLTdWVF92ZnBQdEt1aUdQOV9JMjg3dUltMmxqNUNJNmEzZzNudUh4c2RGcFIyV1RIQ056Ymh0V2hUT21femlHaFdzeVRHYldoR0hadlVoSHJkajlHQlZRVEhNTkthak1sU2JyVF91UU9oWkt2bWREU3RYVHYxOWh5VUdCZ0JpZFVlLW4xaVV6R2QyaTU4MEhaZ2FLeFJIQXdWSUMzbWthc1ZJRU9rZEdvcUY4M1h3cmh1elFYdVdRQ0gwajlsZVVfUWVVUklvTFFzXy1NMTVqN2RDVlpHSFhkaWY3OXM1LWtpR0hCUE5neTJha0FUQTJMSFJlRU9nTWc?oc=5",
+     "published": "2026-11-08T21:18:47+00:00"
+    },
+    {
+     "title": "J.J. McCarthy (hip) questionable after huge hit - NBC Sports",
+     "score": 0.15,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOdmpBRFRpN2N4cnNCcEM3blZGNjJNa250U0MzWFVkVzNtZUNOeGRId090T0QxZUh4YW04dWFEdE9jaFZNSG1Va2RDNXl6eFpxeTdHSVBvd2tua2dxSU5kbjgwUlpqUDFfSUlFeUdnNTFSbk1hZkE4aFdPM2JEbVRlRi1kSFZBa0VVb2hWTjdjYXY1cmZZVmhsM3dCY1d0ZlhZcXlwY0VHMXRVVlVPM0Mw?oc=5",
+     "published": "2026-11-08T21:04:00+00:00"
+    },
+    {
+     "title": "Giants' J.J. McCarthy returns from injury scare vs. Eagles after Jameis Winston TD pass grabs lead - ClutchPoints",
+     "score": -0.88,
      "source": "ClutchPoints",
-     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSlJSNnotZURoRi1LVDBsLTYtV05VTjBnYUo1ZG9XMDVQSV9NMmhZdGVZSURacmU3WFR4Njh0RmlHUTY5VGZGbHM4T2ZDdHZBT2Q3MWxoYlBNRmU2dVJ1eGpqcjJPeG11SGIwVVpuTDFxVFM2eU5rQlVBVmpWekh2MzA5V3ZxM20zOTFzTjBBRVhxUFhTbDBwSzNFUFJHTUF3eEhHb0lR?oc=5",
-     "published": "2026-11-08T19:18:45+00:00"
+     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWUNSbUpvOEJ5MTRUZ3BXRzVnSE1HVi1QbGdPMzdtY0NaRVpGb1dMOFJNTlBJcTRQU0ZFYnRFbzBlY3UtN2luXy16WllzUE5aSUZ1NThBYnY3Q043NDBEWUc2RmF5VDhXSmxRRmxEVHJJOURKVnM5bVU2MWlkVkdWN2xLT0FLM0xfamtseG16WmswMHRYZmc5RXk5Wm5aZ3ZpWHRhekI4QmRtY0J4R3ZCTVkzMmlPaHZ2TTNfeE9R?oc=5",
+     "published": "2026-11-08T21:00:00+00:00"
     },
     {
-     "title": "J.J. McCarthy runs right into him and Jonathan Greenard has his first sack as an Eagle - FOX Sports",
-     "score": 0.0,
-     "source": "FOX Sports",
-     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XYmZ6RnhKdW1SY3EzWnhFMFJVeTZ5UUVyRkZZelVpTWtYYUhZN3hoN2FJRHowUWZWT2hFRWRFRUlMRWJsN2hvRTUybG4yWmp4ekdoM0NhNjJBcVVNYVJpWDJuQS1SM0d4MmxDNkJB?oc=5",
-     "published": "2026-11-08T18:57:27+00:00"
-    },
-    {
-     "title": "New York Giants quarterback J.J. McCarthy and wide receiver Darnell Mooney connect for a long third-down conversion - NFL.com",
-     "score": 0.0,
+     "title": "New York Giants quarterback J.J. McCarthy scampers for an 11-yard gain on third-and-10 - NFL.com",
+     "score": 0.78,
      "source": "NFL.com",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNTNVVHBNOVhhV2lIYlkzdGRFcThQRmdocUpya2dLdVNhTENTN0Nfdi1YRVFnUV81em80ZmtVUlNSMzNSQ04yZTFmbHRnQ0JYZkljN19Vc1VuRmFqYnVUaW80RzA0THljc3k3c092WWFEOWlzamFtOVZibWctQS1JNVVuQ1ppUFBicTRvYVZfQU4?oc=5",
-     "published": "2026-11-08T18:24:01+00:00"
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOamxHQi0xRnowMFlGUkFRSXFqVkdkNGIyZlgtSTlLV1FieE51bldjbms5R3RSMnFKY1hOZzBFQVRPRklTMDBTVFZmaWZfZmF6VlNUV3htbl9kRUhNcmppeUNISmtyd2U0QWtaWDJMdWFPODhFaWxsYkV6OUxsRlg0ZThJTk1qaDA?oc=5",
+     "published": "2026-11-08T20:50:08+00:00"
     },
     {
-     "title": "Jalen Carter Delivers JJ McCarthy Compliment Before Eagles-Giants - Yahoo Sports",
-     "score": 0.89,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQR1IwMzhnQUZVWHdIcFFqTEpXcXdBREduTExWenZxSy1CT1V5cGRLa2YwcmpNV2xwWk4yU19XYklHbFpEVF9ZcGZlWE9lOFF1NHBOeUw3RWpBNldxM0ZwTzZjTzZ2a1J5S19fdTlNeTFvN253VXFiRklORGo3TXVaaGNHQWtPQkZzYmc?oc=5",
-     "published": "2026-11-08T17:42:22+00:00"
+     "title": "Giants' J.J. McCarthy returns against Eagles after hip injury sent QB to locker room",
+     "score": 0.18,
+     "source": "www.cbssports.com",
+     "link": "https://www.cbssports.com/nfl/news/giants-j-j-mccarthy-hip-injury-update-vs-eagles/",
+     "published": "2026-11-08T20:41:40+00:00"
     },
     {
-     "title": "Giants QB JJ McCarthy Shares Memory Of Eagles\u2019 Joe Milton Before Clash - Heavy.com",
-     "score": 0.83,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPejZ2M1pncUhubTdrVkVmekVlSkNJNHlWc0pGVnpxNjlkZGlGUGJrU282TTdEWENyQktrd1gtQ1JGOFhuN2ozamRwcGtCRXJYQVRjLUJvOGx0ZGdYSGZmSnpSUjREUHFxWXdTbzIwTnJad1FNV014STF3eVdlODM5UmNJZjgyZHh5X3FMREZUWmd1OWU2RXBkZi0tX3ZQTURM?oc=5",
-     "published": "2026-11-08T17:01:16+00:00"
+     "title": "Shannon Sharpe Warns J.J. McCarthy About Dangerous Playing Style Sunday - The Spun",
+     "score": -0.56,
+     "source": "The Spun",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOWmJ3MGRQTWY3eFZmS0FJWWF4Q3ZFM3ZiNGprV2VDUFk0aUZURm1wQllRYVFHaXpsZFo5WDhVZDZTX29LVFpvMU9XMkdDaFBrRnpTeXM5MnE0cmY3U2YtRGwzbEpKUF8yVmpDbGtWcXBCOGVnb1hpN3pYajRwSFZ3R0pWWXEyV1lEd3l2QWZiZDU3azlsQXV2ZlFn?oc=5",
+     "published": "2026-11-08T20:40:11+00:00"
     },
     {
-     "title": "NY Giants should keep J.J. McCarthy aggressive in Philadelphia - Yahoo Sports",
-     "score": 0.38,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE01SHh6TVhRUjg2ajRBQ0ZHVkN2VGp5VkdESHFBSWtsZjgxQXBlUHJKWmJ0RHBleTBuWVNKOVlDM1dBR0tYS1JmUTVJQWQ4OHB3eExoXy1IUTRIcEd1bXhSWHZfcUw4T3RiVVk0VFU2SXpIZ0lCLWc?oc=5",
-     "published": "2026-11-08T16:40:52+00:00"
-    },
-    {
-     "title": "Former Vikings QB J.J. McCarthy Breaks With Longtime Tradition as Giants QB - Heavy.com",
-     "score": 0.0,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE45UXNoSlpSeHVGdFN0dnJtYXJlR0MwdHV5Q29tamFuU0hnM2dpNUJXMUJsb3NkNGRPeUN1RFJyMFA4WVJfWWUtTjlCSTJRMmRBSlpWcElSeUhKekkxZXRlT0FMQUhfdFk5RG9yNERXMTJGUllrLUxkQU9jcHFUQQ?oc=5",
-     "published": "2026-11-08T16:39:49+00:00"
-    },
-    {
-     "title": "NFL picks: J.J. McCarthy prop among SportsLine expert PropBetGuy's best bets for Week 9 of 2026 season - SportsLine",
-     "score": 0.86,
-     "source": "SportsLine",
-     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPNG0tWFZybW01R1g3NlQ1OGZzUE12TTIwU0RraUFQZjRKMzN0NzJnNjJ0Vldod2RFb1lVS05DbW44MElXQ3VjSlZvSFM5end6OEhUU2R5ZFVha0VkOG4ycFBKS19yRVpURHJjZ2JmNU9ZUExncWlYTWY2cnhfcHZwNjRfaUFWQ29BaGFiQ1NJMXBPalJ1QUJLbFdrMFRubE5HVlNwNWRYcW8yYzJSQzUzLXhMYzNjdkJCNjlKR2gwQUlKdDJYY1Vya1Y1cmx2T1BBTWc?oc=5",
-     "published": "2026-11-08T16:03:16+00:00"
-    },
-    {
-     "title": "Giants VP Makes Blunt J.J. McCarthy Admission After Vikings Trade - Heavy.com",
-     "score": 0.0,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSUFfb3BsNmlKUUl6dmhtNmEtY013MjlxRVRYT0tRaTd6SWlqRXVuOFRicGh6LVVSNS1ZdVh1eFJPbVdja3BEODNERkpSandwTERXeTgzc1VSYmI5Wms5aXFiUjl3clBBTVdodEdUZlhNQjBxNVlqeDNaVk1OUi1tcG1EWmJtblU4dC0ydFo4R3E0QQ?oc=5",
-     "published": "2026-11-08T15:26:41+00:00"
-    },
-    {
-     "title": "J.J. McCarthy Has Giants VP 'In Awe' After Concerns About 'Maturity Level' Before NFL Draft 2024 - Bleacher Report",
-     "score": 0.0,
+     "title": "J.J. McCarthy Injured, Latest Updates on Giants QB After Concerning Video vs. Eagles - Bleacher Report",
+     "score": -0.68,
      "source": "Bleacher Report",
-     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQS3JrSGNXNTZXcFlmN0U5dmtVcUF4bE1MdE0zX0FaUHllQkkxT0NFT0YybUNzN1B0RHkxTi1oMDU4UXJ1VjVrRFNpbDMwaUVRa3pNRzBvbFZwUHd5NmRyeURyWmFJMTlCSjZpVTN0MVpNV191VU9qMktTTlNxV3c0STBjM0M5X0xpUGQ0UlN3RTR2SUNfVWVzeWpEN28wYl9naEFIeVRuUW9CQXBjaHVHUlUzclhFUnJkOWtIeHhrYW1hTzA?oc=5",
-     "published": "2026-11-08T15:09:58+00:00"
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQVEtuMmdSZHZMbHI0cm9WRVl3dTVMb1A5Z2cyTmdTYWdwNUhlSkllNVVHdVhoYXVycHl0dnVHMDJfb3JZSVhHeDNKX0NOVzB2UTRzaVNvWFE2NEZFbUcyNkJvM0ZLaFBTZ0swdE9fMFJkdEQxUUxOSHhUdUc1SXVKN1FBazRUdlRkaWxlNnFEVExBTHFyWEhpZkNmby1jTDhuUTREM094UjlnMlRBdGVFUEdldldQTzVvWXBvLW81RQ?oc=5",
+     "published": "2026-11-08T20:37:57+00:00"
     },
     {
-     "title": "J.J. McCarthy wowing Giants after initial concerns over QB's 'maturity,' VP says - ESPN",
-     "score": 0.79,
-     "source": "ESPN",
-     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNc1BYZVVuYXpWX0JNbmpUcEExWHFwU0h5YjdFb2ljRG45ZkVEMlU5ME9xc2IzaW9HZkZGMDAxWWFUbnVpRHc3SUdHZzAySEt5REZ0VmlFbXAxUi1QSnRELUdTRXR1YXd3dlVDQXJQT0NaaGtIdy1rVVIta2w1MVVGalNEQnNWamszczduUnRBekxuUQ?oc=5",
-     "published": "2026-11-08T13:55:00+00:00"
+     "title": "Giants QB J.J. McCarthy Returns to Game After Suffering Rib Injury vs. Eagles - Sports Illustrated",
+     "score": -0.88,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNUzR3OFo2NFFzbUtkUHEzZWJJS3MyeHEwWU5tX3NSUmFveU9yWWpjeGoyMm9iR25wZDQ3a1otQWRpeWZZZXFUZU1fTTBoUmhWUHloaDE1dEZZUHFheloxLUJiTzdzZTdHakp1M25jOHpBZ1ZhRl8yWG4xdHIzdXcyNU5TbkREWHBFeWd3ZA?oc=5",
+     "published": "2026-11-08T20:36:21+00:00"
     },
     {
-     "title": "Giants VP Reveals Concern About J.J. McCarthy - Heavy.com",
+     "title": "Giants QB J.J. McCarthy (hip) exits, returns vs. Eagles - Wichita Eagle",
      "score": 0.0,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUm02NV9zTVZJenRyakVtdjVjaVh3enJzVURySEpXUngyRkZmVWtVUGJyRGdzLTBWQ1U1bmJ6YTlQR244bGZBVlIzT1A3bTIzcEViUmR1OUdSYjNSSzVnek11OFE1bi16QVpHalV1MnV1NHNHQVVMUUxqa2cwLTdBcE5IWk92YVB6R01pVw?oc=5",
-     "published": "2026-11-08T12:47:53+00:00"
+     "source": "Wichita Eagle",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBaZ1NnQ3lpYko3Y0V0dWFEQTJpVld0NFJTNzlGdW5Zd2xxZmJxanE0OXZWSGF3QzFsREN5UFRrdFd3cjFPaWJjR2I0ZGdmRFRkSmp2RTJNTDFGLWFfWDhfX2lGTWpUUQ?oc=5",
+     "published": "2026-11-08T20:31:00+00:00"
     },
     {
-     "title": "J.J. McCarthy gets latest Giants road test in Philadelphia house of horrors - New York Post",
-     "score": -0.81,
-     "source": "New York Post",
-     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNT3Z1bEF0YkUzQnc2NVdsbXJLNEw5NlRmUm5qWnZHeGpsVXNZMkNiQzZyNGlTd0VqMHV5OTZkSGNMNXlfWFVuMWU1dEZYQ1BBR3ZCTmItNGJBSUctc1ZqU1NZSFBkVDloUWFXalhIdWQ3OS1sRUFKMUFuM2ZkX2x3bkNuM2RrbmNQc1N3Ml9UVzQ3VzR5TFExWXQyMA?oc=5",
-     "published": "2026-11-08T01:28:00+00:00"
+     "title": "J.J. McCarthy returns; Giants up 13-8 in fourth quarter",
+     "score": -0.53,
+     "source": "profootballtalk.nbcsports.com",
+     "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/j-j-mccarthy-returns-giants-up-13-8-in-fourth-quarter",
+     "published": "2026-11-08T20:30:09+00:00"
     },
     {
-     "title": "Exclusive | Chris Mara tells The Post what\u2019s changed with J.J. McCarthy \u2014 two years after Giants passed on QB in draft - New York Post",
-     "score": 0.0,
-     "source": "New York Post",
-     "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNWEFRSEkweTNScEZwc012S3ZPWW1VQk5yZmJCLU0zZExNN1JkZ29rZ2ZDZ0VHbUNPdFp2bWdiNXVCVExRQ3FXS0dxaFpnODUtZHg0bFNyUDROejlJQXRlMDJlYmxqSTJEaWMyV3dvR1lrb1pGV3h3RmxWR2pZRmpocDhObVF3Z0lqWUJNTWtXNlBfM2xXclRTb3FQclN1S0ZGYXBRaA?oc=5",
-     "published": "2026-11-08T00:10:00+00:00"
+     "title": "J.J. McCarthy injury: QB returns to game after suffering hip injury - Yahoo Sports",
+     "score": -0.93,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ibDBLd0lqV2JrejNfcDlyc0gyTjN6TUF2bXZLbmw3Z2hwSmJxOXkybUJSZjl5QTMzcUNINE5TVzFXanhHa0VldVIwb2plMTJUYTNvdlJvODFLbFpNQV82ckRFQnpYcmUtZU10WlhLWjJ1dVhHbTB0NEVOYw?oc=5",
+     "published": "2026-11-08T20:26:51+00:00"
+    },
+    {
+     "title": "Giants QB J.J. McCarthy suffers hip injury vs. Eagles - NFL.com",
+     "score": -0.88,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE8zbGRRc2JxZVYtVlZTcTdnZ2U5WGtRQ1NIOUVIZUpqb1JvMVpua3lFbXVzVzU3YnowQzBYWkFwM2hYQTZfcm1MSDZzMUtwQlNKMmgySlhDc1oyVmRPT0xPMFotUHFPdmFTZUFnRGtia29yZw?oc=5",
+     "published": "2026-11-08T20:20:30+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.022,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.012,
+   "mult_sentiment": 0.985,
    "base": 17.787,
-   "adj": 18.4,
+   "adj": 17.91,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -573,8 +573,8 @@
    "def_teams": 32,
    "def_ratio": 1.15,
    "implied": 20.75,
-   "weather": "46F, wind 7mph",
-   "sentiment": 0.033,
+   "weather": "45F, wind 8mph",
+   "sentiment": 0.044,
    "n_articles": 15,
    "headlines": [
     [
@@ -651,6 +651,13 @@
      "published": "2026-11-06T21:48:13+00:00"
     },
     {
+     "title": "Baker Mayfield Fantasy Football Draft Rankings | Tampa Bay Buccaneers - FantasyPros",
+     "score": 0.0,
+     "source": "FantasyPros",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUVg3R0prVHRzMUd5Y3pUcnFramhZUnhsVTRFYkttZXZmUzlqUUpIRm1fWmQza2drVUdpUEVxaE4xVmRzcUFURkZkZGZURE5WajRlY0dMeGR3YlVmNGRtUHZhX0Z0N2VGc25aYjZWdlc5QlJuc2xpRElfMkdoTGtQTjRLUnJUWG1wMkpV?oc=5",
+     "published": "2026-11-06T21:40:21+00:00"
+    },
+    {
      "title": "The Chicago Bears Have the Blueprint to Shut Down Baker Mayfield - TWSN",
      "score": 0.0,
      "source": "TWSN",
@@ -679,11 +686,11 @@
      "published": "2026-11-05T23:45:00+00:00"
     },
     {
-     "title": "Tampa Bay Buccaneers quarterback Baker Mayfield on Chicago Bears defensive tackle Jeffery Simmons - NFL.com",
-     "score": 0.05,
-     "source": "NFL.com",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeC1lQlJKcjE0NTE5SlV1enh3NG12VmxURl96S05KOVBpUldkdFE2dmc1clNFZGg2akpKTUNaOVFMQXVVVDFjTmsxNXpBMFFyN090Zml4aTJNc29mQ3o1ZFdRQzFPYlN6ZzhUb0tWcDVxaE1TZVI3M296OWNOLXc3NFN2bFVpUlB1Q0hV?oc=5",
-     "published": "2026-11-04T23:36:53+00:00"
+     "title": "Baker Mayfield a full participant Wednesday - Yahoo Sports",
+     "score": 0.4,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbHQyT1pKWGdfdWtfS1E3bkllbV9NWnNnY0I1clpTRVpUQVJ4VEFvQ2QyZFIzSG1DM1VLcE9ZY2hUUE9MT3RyUGVyRTFsRk5CaUd3UUVRcnhNMVBjS0dVS1RLMDFZaVNMY2tWT2d0SUwwSlFZVlY4RklpbmZ0UDZDbmlmOHNsaVRZWWVSa21Vb0U0eEpi?oc=5",
+     "published": "2026-11-05T03:21:00+00:00"
     },
     {
      "title": "Baker Mayfield's completionless game, Justin Herbert's 300-yard drought and more unreal NFL QB stats - FanSided",
@@ -691,21 +698,14 @@
      "source": "FanSided",
      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNTThxNUVOZ3VoR3g3NmVzZUtaQ25nRFpzUFVzUlk5UGtpZ3NneUxsajFrQi1KR1lEQ2owb3lyTThaTzZYMFRJdnVLZzNOYWhOTE1OVjBJeWowZGlrb2hIN3VzYXN2TENaTHE3MU5fc05xck5IalFIQ1I5S01fc1Y3ZGdGaXFfbDA1OUpaX0dJcWkteXZ5QVhjYkxxUzNXOXlhal9CdWRSUEtQd0N5MS1vS0NNRXdfb1lPREZJZTl6eWlZdw?oc=5",
      "published": "2026-11-04T20:04:49+00:00"
-    },
-    {
-     "title": "CALEB WILLIAMS AND CHICAGO BEARS HOST BAKER MAYFIELD AND TAMPA BAY BUCCANEERS IN WEEK 9 EDITION OF SUNDAY NIGHT FOOTBALL ON NBC, PEACOCK AND UNIVERSO - NBC Sports",
-     "score": 0.0,
-     "source": "NBC Sports",
-     "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQZUFUQnpZRXRqN0RXMUJ1aE80YW9BRlJtNEJDUjFsNXFTblYyV21jeS1iUlpSSHdBMmlKSU1LLTFJTzIzWDB0YmdQZTV1UVl2aFE2d3VjVUlzOElvS2JBbC0tY0MwRmNaQjBZaUVDaGVRYVFwNnp6c0Z0d3F5T1g2cXBiQkRKME5yUzJ5R3lmb1VsSjFvRXJwaVpPdDRoc3pGZWZUeVBzYTRXenl5NzlUcFN5NnhvT2UwNllZSG52QzkxWEg2T2xfSGVXdERUblVCaHdMNl9YNGVBcmpfZ1BxdzM2Vi15dVpPNUpRNGxEQXNMU2VVcGZLdldjUm1rNDZVWldBSjZRN2dzRXFyeVoyR2VaUDlxQUZYb3JCQ1VxTDU1VWlY?oc=5",
-     "published": "2026-11-04T15:55:36+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.027,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.003,
+   "mult_sentiment": 1.004,
    "base": 15.254999999999999,
-   "adj": 15.71,
+   "adj": 15.73,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -731,14 +731,9 @@
    "def_ratio": 1.09,
    "implied": 17.5,
    "weather": "Indoors",
-   "sentiment": 0.078,
+   "sentiment": 0.109,
    "n_articles": 15,
    "headlines": [
-    [
-     "Justin Herbert's Future Takes A Turn As Los Angeles Chargers Reject Trade Offers Amid 0-7 Collapse - NDTV Sports",
-     -0.9,
-     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZC02bnd3SURoYjVUd1BnMnNNbnkzVDh0ODhHSVNLekVNZjF4dktjUVJzLTc1NVJuamM1NFF2a0UyRmZyNmRvUGdMQkZqMkxmc3hLMmN4bW9DRjZBWS0xY20wUUFpTDRSMC1RbHd1dENOaUNZLWJPRzNjbkR3bDgwWk5wQnhIR1NDVTh3Z1VZYkVITjNKLVFVaDYzWjhxa3VSaVNoNVdUdnM0ZFZ6OGwxdWpQT2N4bHJfMGdEQi00LXFkTjdtdW55NjJnZW9VTTFYUl9Z?oc=5"
-    ],
     [
      "Russell Wilson shared a pointed review of Justin Herbert's baffling Chargers play - Yahoo Sports",
      0.82,
@@ -748,9 +743,21 @@
      "Rams\u2019 Quentin Lake Apologizes For Inflammatory Justin Herbert Comments - Yahoo Sports",
      0.61,
      "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdV9jY2lSWWZaeFQzSzREcUpsemtqbmZFd0F0UHZJLU5icnNZYXg5X2JYMEhuYlB5QkZmMm5EbldtLTJtVk5uMmlSelB6MFJIc1p2TGtFa1JwSUo5OThqNnZYNldVSmVZTFhia1RGQ18zZ0VfUjZTdGgxX0kwdWNZSEwtV3VRWC1XS1ZXU0FBcU0wT21X?oc=5"
+    ],
+    [
+     "Rams Star Apologizes to Justin Herbert Over Disrespectful Remarks After Chargers Game - EssentiallySports",
+     0.61,
+     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOVzV4LXlPX3JVbTFWVUJpRGoxaDlPSGlnYllBbkpzTm5vZjV5QWNLOW9jV2JJWVd1V1FhNmR1TldDM0tsRnVIbm0yR2FZY3h3WTBwbWdsSmdSVWdoakFuYkt4TVF3Zi1pam91ejBsNzhobXJ4dV9fbGQ2TG1vSE1mNVdJRks1dEx2TFA4RHUyTmFLdWEzMy1WVVA0dnVTM09XZl9tNUlickNXSk8wS3EycERxbXYwYmhjVDcxTzNqTGVLdEJIOUlTYXdSR2p4V3JXWFE?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Justin Herbert hopes to reverse struggles against DeMeco Ryans defenses",
+     "score": -0.2,
+     "source": "profootballtalk.nbcsports.com",
+     "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/justin-herbert-hopes-to-reverse-struggles-against-demeco-ryans-defenses",
+     "published": "2026-11-08T20:39:33+00:00"
+    },
     {
      "title": "Russell Wilson shared a pointed review of Justin Herbert's baffling Chargers play - Yahoo Sports",
      "score": 0.82,
@@ -759,11 +766,11 @@
      "published": "2026-11-08T19:13:18+00:00"
     },
     {
-     "title": "NFL Trade Deadline Speculation Wonders About Justin Herbert to Vikings - Sports Illustrated",
+     "title": "NFL Trade Deadline Speculation Wonders About Justin Herbert to Vikings - Yahoo Sports",
      "score": 0.0,
-     "source": "Sports Illustrated",
-     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTGRlTkxROXJSZ1RIYkR1MkVKNV9OZzU4QmpzWEptS0pIc0F2cFc3UjVHMXRsX0NoODFzTjd5OTZCeEROQXRab3B2Z094RVlKbURZWHEtRHhIdHcyWE05dmVZR2E3c0dvbjFaMTVhRmpHVW8yWlJ6cm1PdmhNU25kM0lobDZjaXJlUEpVRVZDQXdhSTdvcDFmdlFNWk03QjVkRUt3dTd6T0dyY19kQ1dSZFdJQjNCTVN2dVpRNw?oc=5",
-     "published": "2026-11-08T18:00:00+00:00"
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNek4tcUVNRzlsMjdSNWhZbVlmTzNwT19YZ2RmLXV4bVlSMVBWdHktOXhvQTlIYmhCdHRXQ2dBRms1dVU1QzBKbWw1bzM3OEJUZGg1d3hpMlR3ZkNLa2F5UktRbkZHMURKQndrZm1BMjJwMEdaS0U5TUNpalpfSnRpY1QtUU5LQ09fREl1ZjlDbmo?oc=5",
+     "published": "2026-11-08T18:00:02+00:00"
     },
     {
      "title": "Chargers\u2019 Justin Herbert receives apology from Rams player over comments - Yahoo Sports",
@@ -801,10 +808,10 @@
      "published": "2026-11-08T16:33:14+00:00"
     },
     {
-     "title": "Quentin Lake Apologized to Justin Herbert After Making \u2018Deli Meat\u2019 Comment - Yahoo Sports",
+     "title": "Quentin Lake Apologized to Justin Herbert After Making \u2018Deli Meat\u2019 Comment - Athlon Sports",
      "score": 0.56,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUXg5SUJzaHZBUkZPWTlYOTVQNEFaN3h6dFRKRUJMaXZXZ1dwdFY2SmhzZTJ1RWgzeEJzZndNbE4zNzE0Yi1EWTNOTVpERmlsTktZcl83MHBnMnZqMjVyY2VlSHEzc3BjUU53WllmOEVYWk9yZ1BaRW9kZS10SnBBa1IzQTQwUjRDLWJmRW9STG8?oc=5",
+     "source": "Athlon Sports",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNemZDTXdHQTI3MzhiV0NmRFlob05qeUhRQ3RuX0FuSXRuODJwSUxoazVmUVZtTkIweXhfd2lsVDRjLWFRcDRxSWJhUmh1VE8xOFF2d3R6Mlh0bVlXR0dlRW5RcUdLRGtmTGcxTThqTXpVa1J0ZHM2UVBZNFRoS3M4M3lTVk9PZm1jWVJ0OWViSTZCLV9lWlp4SmNvWmN6Y2M?oc=5",
      "published": "2026-11-08T15:00:00+00:00"
     },
     {
@@ -848,21 +855,14 @@
      "source": "Sports Illustrated",
      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZGdZdkN4a2Zkb1FQV2psc1Jyc1ExajZzZkRITE1BY0EtRXBPMWVMbWVrWUFKeUNsamw2LThaRzI0ZkhGcTZMOU5jdG0waTBIM3F2S0dlYTNuSUVhVWtoMm1VU3dYa0ZTT3FJWWJybFhDa1daOVBLZEVsR3dhT1NUQlRoVlhjd01MZ18zUTF5UnhlQ3RhSzk5NHJvYWYzSEYxbS1QYy1n?oc=5",
      "published": "2026-11-08T03:00:00+00:00"
-    },
-    {
-     "title": "Justin Herbert's Future Takes A Turn As Los Angeles Chargers Reject Trade Offers Amid 0-7 Collapse - NDTV Sports",
-     "score": -0.9,
-     "source": "NDTV Sports",
-     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQZC02bnd3SURoYjVUd1BnMnNNbnkzVDh0ODhHSVNLekVNZjF4dktjUVJzLTc1NVJuamM1NFF2a0UyRmZyNmRvUGdMQkZqMkxmc3hLMmN4bW9DRjZBWS0xY20wUUFpTDRSMC1RbHd1dENOaUNZLWJPRzNjbkR3bDgwWk5wQnhIR1NDVTh3Z1VZYkVITjNKLVFVaDYzWjhxa3VSaVNoNVdUdnM0ZFZ6OGwxdWpQT2N4bHJfMGdEQi00LXFkTjdtdW55NjJnZW9VTTFYUl9Z?oc=5",
-     "published": "2026-11-08T01:01:43+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.924,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.006,
+   "mult_sentiment": 1.009,
    "base": 14.846999999999998,
-   "adj": 13.8,
+   "adj": 13.84,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -888,7 +888,7 @@
    "def_ratio": 1.11,
    "implied": 20.25,
    "weather": "Indoors",
-   "sentiment": 0.024,
+   "sentiment": 0.084,
    "n_articles": 15,
    "headlines": [
     [
@@ -897,29 +897,36 @@
      "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPMFBTUlN5SHlGaUZHdFIza0NvMFR2cXo4dE9uMUpUVXJnVWtMY2ZYTS1fUFkxM2M3TTlRcF9SV3lZLWphaGRRTmJocTRjbVNETlMtd2NhaFdvSlllOW5WdGhEYllVUVdjamM3MnBLeTFHOHN6bWFyZnh4LWR6cjIxR0o3Uk1NZUVsc1dKZjdZOTBwUGp6S1JCYXYtYUltQjdSVXRzX2huOC16ZU0?oc=5"
     ],
     [
+     "This is Carson Wentz\u2019s chance to save the Vikings - Pioneer Press",
+     0.86,
+     "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUnpnZ1BmMW1Sb3FrV0w2bURoZlBWTTQ2OEQtTXlLNnZmSnZUTFMzNkJVdlhqMU96bE1nbEs3eXVxRzBsemlfcGl4enNqSHdCY0QtamtJUTBzaElWZThSWUluU3d6MEgzSzNjTWNMLUdDeHpoUVRpc3pnMW0zbkNpXzhNSlk1YnBZRlBJMTRRV3o?oc=5"
+    ],
+    [
      "Stephen A. Smith drops head-turning Carson Wentz declaration ahead of Vikings\u2019 Josh Allen, Bills matchup - Yahoo Sports",
      -0.46,
      "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOZ1dvbkg3aThhTmNFMjE0bm91TTFyTENMY1h4WjB4blBCb3R6S1RVQW1iVzY0eENIRWJLcWY2VHhLS0VUWDJtUnE4QUM4V3ZzMVlmSjhlU05DbXFJZzBfcV9UcVVWMGxrRF82aWFlSEx4QWZfRGJmN1RJX3FZS3dZLWtKZmE2cEJz?oc=5"
-    ],
-    [
-     "Why Kyler Murray's dynasty value might be lower than Carson Wentz's - Yahoo Sports",
-     0.1,
-     "https://news.google.com/rss/articles/CBMihwFBVV95cUxNbVB1bllRUzRRLU1MRmFyNnhrRXQ5Ylg4a1RTenNiM1B4ZHh1V1Y5SDBxV0hBNFliaWU0Zld0cTQwV3hxVmRrdmNDbXpZanJlV1VqbmMwLS1GalYzWnJsWVprdGM0STlvbzFETnhYOTZ1YW95MXFYMXZXMXBZQ1VGbDN5NjdMZnc?oc=5"
     ]
    ],
    "articles": [
     {
-     "title": "The week of the backup QB in the NFL kicks off as Sanders, Milton, Minshew, Lock, and Wentz start - Fox News",
-     "score": 0.0,
-     "source": "Fox News",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRE5pdkp6bEtZQ2w0ZlM4Qy1HcGhvcE5aRVVwVTFPc2FzSkd1YmViZ3dzTnRBZzcxYXczT0xpX1FOdWNyNDF2aFd4SndscGpvTFBfaEV4U2JQYW80VTJwZjItVGV6U3hYVE5qV05hcnRFanNsTFdfMG5FVGZRdkh4dFVpWVc2d09LQ1FUZ2FZR3NaUmJFZnRmd2YwOUJQZGhudlVWQS1rT0NPaGM?oc=5",
-     "published": "2026-11-08T17:13:00+00:00"
+     "title": "This is Carson Wentz\u2019s chance to save the Vikings - Pioneer Press",
+     "score": 0.86,
+     "source": "Pioneer Press",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPUnpnZ1BmMW1Sb3FrV0w2bURoZlBWTTQ2OEQtTXlLNnZmSnZUTFMzNkJVdlhqMU96bE1nbEs3eXVxRzBsemlfcGl4enNqSHdCY0QtamtJUTBzaElWZThSWUluU3d6MEgzSzNjTWNMLUdDeHpoUVRpc3pnMW0zbkNpXzhNSlk1YnBZRlBJMTRRV3o?oc=5",
+     "published": "2026-11-08T20:52:38+00:00"
     },
     {
      "title": "The week of the backup QB in the NFL kicks off as Sanders, Milton, Minshew, Lock, and Wentz start - Yahoo Sports",
      "score": 0.0,
      "source": "Yahoo Sports",
      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBFMU5WM3NpejY4YjNKcmxYVFo1ZkxXR1dWUWl4LUo4ZWFGZm5neTVuNWNWVnozbEdFcXdaU1l1UHRxZVdTTXR6czBZc2h5bnd5Q3BmSnRWa09uZTNBNGQ2bGdhcDVtQVdZRnVRLWcwQS1TWkNESC1YZEd4X0tpUQ?oc=5",
+     "published": "2026-11-08T17:13:00+00:00"
+    },
+    {
+     "title": "The week of the backup QB in the NFL kicks off as Sanders, Milton, Minshew, Lock, and Wentz start - Fox News",
+     "score": 0.0,
+     "source": "Fox News",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRE5pdkp6bEtZQ2w0ZlM4Qy1HcGhvcE5aRVVwVTFPc2FzSkd1YmViZ3dzTnRBZzcxYXczT0xpX1FOdWNyNDF2aFd4SndscGpvTFBfaEV4U2JQYW80VTJwZjItVGV6U3hYVE5qV05hcnRFanNsTFdfMG5FVGZRdkh4dFVpWVc2d09LQ1FUZ2FZR3NaUmJFZnRmd2YwOUJQZGhudlVWQS1rT0NPaGM?oc=5",
      "published": "2026-11-08T17:13:00+00:00"
     },
     {
@@ -1005,22 +1012,15 @@
      "source": "Yahoo Sports",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNOXlvSEVXN1dqNlg5eENOYzVhNlVpYW9XNzhhOTJMai10YzRrMmVZbzYwcnJlSjc2aXZveF9FTVJ5aUV6UkRSVlMzOXZqNUlsVkFRcDQzVDdRRWVCUEZiMXltYzgwUm5wSVVoNmk3a0NOSkQzWDZSdkFRdkVkSGtpXzMzbDl3cnM?oc=5",
      "published": "2026-11-06T18:30:00+00:00"
-    },
-    {
-     "title": "Vikings QB Carson Wentz Gets Massive Message Ahead of Week 9 Start - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPUnphOVJrNmFadXQ2YTRBRjlmcEo4aWw1TWtIcm4wV0M4ODRNUm9ublRkQnBxb0ljOFI4WHdDSU5fdEZLX2NSVW1EMnE1Wl9ZV0ZFbFItZ0RmaHJBXzc5SjBoZW1tS2R3NEI4empPTGF2Y1RTN0J4MmpZdV9FUFV1M01CWQ?oc=5",
-     "published": "2026-11-06T17:39:12+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.996,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.002,
+   "mult_sentiment": 1.007,
    "base": 13.125,
-   "adj": 13.1,
-   "trending_adds": 197454,
+   "adj": 13.16,
+   "trending_adds": 189624,
    "slot": null,
    "notes": [],
    "matchup_grade": "B",
@@ -1045,7 +1045,7 @@
    "def_ratio": 0.99,
    "implied": 27.75,
    "weather": "Indoors",
-   "sentiment": 0.043,
+   "sentiment": 0.042,
    "n_articles": 15,
    "headlines": [
     [
@@ -1108,6 +1108,13 @@
      "published": "2026-11-04T22:35:29+00:00"
     },
     {
+     "title": "Brandon Aiyuk or Mike Gesicki: Who Should I Pick Up? Fantasy Football (2026) - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQdGpVdFIzeVZtdHREdE1DNjVNNU5KSC1LbnFJWGdmRHRremt4bWFrdGVFUTd3ZVVhM00xNWNwSXFwdjRxcW9Mel9RV2R3TlpsVjJFblI0NmdrUGt3b3NjLTVBMTZ6WWVnRmhxcHJLWlF2RlJvQkw1bkMxMkdkdW9JMU12d3BfLUZldHNKUzRvV0k0bzYzWmFVMUR1V1dvWkw5MEVPZkpjM0wyUQ?oc=5",
+     "published": "2026-11-04T22:16:52+00:00"
+    },
+    {
      "title": "Fantasy Football Start/Sit: Antonio Williams, Caleb Douglas, Mike Gesicki - FantasyPros",
      "score": 0.0,
      "source": "FantasyPros",
@@ -1161,14 +1168,7 @@
      "score": -0.25,
      "source": "Nittany Central",
      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPNnVZU19NdTlNZ2ZnLURlQmNOLTRpYW9EV2VuOXpGOVU4czl0VktXelExVXhvOVFwd0RKT3JxVUt1anVFMjkzNUtrY1E3OHh5WHdOT2hNaXFUMjZEVVBwNXVlRFhidENwOEVDQTdRbkd6enM5VTlTZ25JX042Qk9kQW05Wlg2OWlBejFjX1QyTEVGMTQ?oc=5",
-     "published": "2026-11-02T20:53:44+00:00"
-    },
-    {
-     "title": "DeeJay Dallas or Mike Gesicki: Who Should I Pick Up? Fantasy Football (2026) - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQT1hTN3N1M3ozRTRBYzRPZnN2Z2lHUTdIZ0ZqTTlEb0pWS2ZjMzFjUV9SUEt3enlNTjVsVXdTZFVpdy0xYVZBd2JZZXBWWlNZT0JpSTBCdXgzRE9KY0ppQTBQcWlKWW5ZOVRmc1AwOWg5UDhmcFBJWTZ0VEhabGFGNnlGREs1dFFjdVBXdWtJclVpcV9tT0NSem9XNE5yODY1dzZheHduS3FPQQ?oc=5",
-     "published": "2026-11-02T11:38:12+00:00"
+     "published": "2026-11-02T20:55:12+00:00"
     }
    ],
    "mult_injury": 1.0,
@@ -1177,7 +1177,7 @@
    "mult_sentiment": 1.003,
    "base": 10.835999999999999,
    "adj": 11.99,
-   "trending_adds": 84964,
+   "trending_adds": 76244,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
@@ -1201,47 +1201,47 @@
    "def_teams": 32,
    "def_ratio": 1.19,
    "implied": 21.5,
-   "weather": "84F, wind 5mph",
-   "sentiment": -0.015,
+   "weather": "84F, wind 6mph",
+   "sentiment": 0.01,
    "n_articles": 15,
    "headlines": [
+    [
+     "Caleb Douglas shakes off injury, goes 4/43 in loss - NBC Sports",
+     -0.81,
+     "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcDdBUGRUZjBkSHBuM2xEWkY3OXJpcHdmeWN4QkY1UkFoUmZhQ3ZkRHFBM1pscGtzZFFHa0diOXlrQWYtWXNmelZ3MDVPNTEyMVFkU1dxZzA0N2hWTnY4dURGY1M2S1FGb1BBRkowZHlNTEo3S2F3MnkzcVZCaDUtMEZaOUY3c2VWclJiU3YwNm9xSmp5VHJJaHB1cm1hTXAtWHQya254S3hVaktnVjNVQUcxR0I5QQ?oc=5"
+    ],
     [
      "Dolphins' Caleb Douglas: Four grabs in defeat - CBS Sports",
      -0.72,
      "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNTlfY0o0NkZpeVRYbTNUeVhkN25YamVENlk1V2tvNXluZ1pQYko3bkdqNkxHeGhaUUhUY09SWm94aThVRW9hbW9SX2NsUkc4VkxrazdURENkYy1Fd0Naanl2UC00U3NlZk9WazI1R25ScTdrUFk4RS1vVUhrMWF4Y25Ud0VyNGgtb1B3T0ZOSjFWYkU0MlNV?oc=5"
     ],
     [
-     "Miami Dolphins wide receiver Caleb Douglas snatches a 20-yard laser out of the sky - NFL.com",
-     0.0,
-     "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV1BNMHhUM3NUSDFXZWxjNnZVdnl2YUg2RzN0bV8wOUJfUE4ycVIwVHc4RFBiQ0VBNklVUndjN2xibWI3SHZmVDhXTEVPenp1WmdhLXJtdXc5aGxxNG50N3pJQ3JMRzlkdktVUHZGQzQzbXBVakNrb0RTUHZ3bDV3QkJzb3VMbzA?oc=5"
-    ],
-    [
-     "Caleb Douglas or Chig Okonkwo: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     0.0,
-     "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaTA3Y09Pb0lsZGIwMkNxUkVWVS1sS0dUQTB5QjNDcG5qTU44ZVZ2ZVZad0tDSi1weWYtMWFVWXdrSEw1RWJYS2c0YnhxRW40RndiRmpVN2NRd1NlYUhqbm8yT3FQVFctY2Zxem1MWGNnVllJSnlvY3dNLVcxWW91T0JmUVVBZ3NhUzdUcFJya1hMTXJ6blg4X2tRZHJFQjIxNUR1ZjFKR3ZBWjFNZXlCRWFCRQ?oc=5"
+     "Caleb Douglas drops easy first down catch for Dolphins - ESPN",
+     0.42,
+     "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTzdXTGxPOUsxcDlSNUR6QWZnSDdadllwbm9Od2Y5MVlZTndIVWlHZ1ZMLWpHZkxRLXFEeEhxZ3drR2hiR19LY2tnVHZ2MXBGdkh1TFByNTgyU2RGcml3dDRqNHloLUxLQUttWDgwZnpOVnNtTXBGSEQyeDVscGtoeDVwYU9mbXRuSHJYU0lRLTBRbE1hWVE?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Caleb Douglas catches six passes in Week 9 - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPS25ZMEZiNC1FZ204MVJWaFRiWDFZR2VuNUxlSktXNXVQUnhOWWpkSHNOemY1NXBvaTZuRWo5UC1obWxyYTcxbkNzUkREUjZYSHdOWjRrR0JVM0dYckc1T0NBb3FIaktpVnBBeXp0NGJrZnRUSm1GemlUSUdrMHpXbk5yNFhfbFR2?oc=5",
+     "published": "2026-11-08T22:46:11+00:00"
+    },
+    {
+     "title": "Caleb Douglas drops easy first down catch for Dolphins - ESPN",
+     "score": 0.42,
+     "source": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTzdXTGxPOUsxcDlSNUR6QWZnSDdadllwbm9Od2Y5MVlZTndIVWlHZ1ZMLWpHZkxRLXFEeEhxZ3drR2hiR19LY2tnVHZ2MXBGdkh1TFByNTgyU2RGcml3dDRqNHloLUxLQUttWDgwZnpOVnNtTXBGSEQyeDVscGtoeDVwYU9mbXRuSHJYU0lRLTBRbE1hWVE?oc=5",
+     "published": "2026-11-08T21:00:49+00:00"
+    },
     {
      "title": "Miami Dolphins wide receiver Caleb Douglas snatches a 20-yard laser out of the sky - NFL.com",
      "score": 0.0,
      "source": "NFL.com",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOV1BNMHhUM3NUSDFXZWxjNnZVdnl2YUg2RzN0bV8wOUJfUE4ycVIwVHc4RFBiQ0VBNklVUndjN2xibWI3SHZmVDhXTEVPenp1WmdhLXJtdXc5aGxxNG50N3pJQ3JMRzlkdktVUHZGQzQzbXBVakNrb0RTUHZ3bDV3QkJzb3VMbzA?oc=5",
      "published": "2026-11-08T18:50:11+00:00"
-    },
-    {
-     "title": "Caleb Douglas or Chig Okonkwo: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNaTA3Y09Pb0lsZGIwMkNxUkVWVS1sS0dUQTB5QjNDcG5qTU44ZVZ2ZVZad0tDSi1weWYtMWFVWXdrSEw1RWJYS2c0YnhxRW40RndiRmpVN2NRd1NlYUhqbm8yT3FQVFctY2Zxem1MWGNnVllJSnlvY3dNLVcxWW91T0JmUVVBZ3NhUzdUcFJya1hMTXJ6blg4X2tRZHJFQjIxNUR1ZjFKR3ZBWjFNZXlCRWFCRQ?oc=5",
-     "published": "2026-11-08T04:07:19+00:00"
-    },
-    {
-     "title": "Caleb Douglas or Jordan Addison | Who Should I Start Week 9 - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1KMnRJbDVScWp5dnhreDVhU1EwZHJ5OWZjbG5VbEFlRmQyQXptU015cG5TcVNFT1l0dHRJWFIzQTlqNy1EUS00cVd6QWpDNW5QcVdfZEVEcGhBZ1V3X3lOOUZaM2ptSnRzbjYwVExjNnB6UzlXcjhQaEhQOWVwczg?oc=5",
-     "published": "2026-11-07T16:47:49+00:00"
     },
     {
      "title": "Caleb Douglas Week 9 Outlook for Fantasy Football (2026) - RotoBaller",
@@ -1279,13 +1279,6 @@
      "published": "2026-11-06T17:56:56+00:00"
     },
     {
-     "title": "Jordan Mason or Caleb Douglas - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5RXzFOaDNfYmNCUXdqVUU0ZHJpaXluUVpBcmQ5Mmg1QmM3Ml9mcW9HRDJsMERZaVlESnp5ejlwbXVrQlFqajFDVU5wc2pHV1o2ZVdfd0d6QWpxc0k5VFhFRF9BMTJ2TDdsUVF1WF9GWDdtdmc2ZXFTaldyYUs?oc=5",
-     "published": "2026-11-05T17:08:45+00:00"
-    },
-    {
      "title": "Elijah Mitchell or Caleb Douglas - FantasySP",
      "score": 0.0,
      "source": "FantasySP",
@@ -1318,7 +1311,7 @@
      "score": 0.0,
      "source": "Yahoo Sports",
      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNUWc0VzREbE42VjlDZWRWVnV1LVZ5Y2NHNU1jd3pxVXZNbTItV3hqdnNDMkpaSl9wV1J1bnEwTGtsSnJMRVRjT2VkbmxJUklCZnpzUWFlbHppa25JZHZzZ0lJYlUyeG1OcE9LaDdEaFFobndKQ2g5OEpEcUkzWXJHV3UtZlFLaVFiVnc?oc=5",
-     "published": "2026-11-02T04:02:00+00:00"
+     "published": "2026-11-02T04:02:16+00:00"
     },
     {
      "title": "Dolphins' Caleb Douglas: Four grabs in defeat - CBS Sports",
@@ -1326,15 +1319,22 @@
      "source": "CBS Sports",
      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNTlfY0o0NkZpeVRYbTNUeVhkN25YamVENlk1V2tvNXluZ1pQYko3bkdqNkxHeGhaUUhUY09SWm94aThVRW9hbW9SX2NsUkc4VkxrazdURENkYy1Fd0Naanl2UC00U3NlZk9WazI1R25ScTdrUFk4RS1vVUhrMWF4Y25Ud0VyNGgtb1B3T0ZOSjFWYkU0MlNV?oc=5",
      "published": "2026-11-02T03:41:00+00:00"
+    },
+    {
+     "title": "Caleb Douglas shakes off injury, goes 4/43 in loss - NBC Sports",
+     "score": -0.81,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcDdBUGRUZjBkSHBuM2xEWkY3OXJpcHdmeWN4QkY1UkFoUmZhQ3ZkRHFBM1pscGtzZFFHa0diOXlrQWYtWXNmelZ3MDVPNTEyMVFkU1dxZzA0N2hWTnY4dURGY1M2S1FGb1BBRkowZHlNTEo3S2F3MnkzcVZCaDUtMEZaOUY3c2VWclJiU3YwNm9xSmp5VHJJaHB1cm1hTXAtWHQya254S3hVaktnVjNVQUcxR0I5QQ?oc=5",
+     "published": "2026-11-02T02:27:00+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.064,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.999,
+   "mult_sentiment": 1.001,
    "base": 10.617999999999999,
-   "adj": 11.29,
-   "trending_adds": 65960,
+   "adj": 11.31,
+   "trending_adds": 65696,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -1358,10 +1358,15 @@
    "def_teams": 32,
    "def_ratio": 1.11,
    "implied": 23.75,
-   "weather": "48F, wind 7mph",
-   "sentiment": -0.013,
+   "weather": "49F, wind 7mph",
+   "sentiment": 0.053,
    "n_articles": 15,
    "headlines": [
+    [
+     "Maye locates Douglas deep downfield for 36-yard gain vs. Packers - NFL.com",
+     0.78,
+     "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSmFxTVBpNjNsbWNadnZRUF9ZWTNXSFdIVkoxX3EwZV95Nlh0eHRPRXRrbGVPTjN2ZTlrbmVXdDJyNHNpdVcxeFJiVEdsdmhEdDFuX1ExU25kWXl5all6WUtlb0E2WkpEVmVGbk9URDhBb3laZER0TUcxblJPa0FvcFUwT0RIOTctY0hQRFI5d1h6a0JI?oc=5"
+    ],
     [
      "DeMario Douglas Is a Risky Week 9 Fantasy Start - TWSN",
      -0.38,
@@ -1371,14 +1376,16 @@
      "Week 9 Best And Worst WR, TE Matchups: DeMario Douglas, Adonai Mitchell get downgrades - NBC Sports",
      0.05,
      "https://news.google.com/rss/articles/CBMiywFBVV95cUxNT3NCYmVFSUVkb0FMNEVPVnViLWtmMENqbXYzTWRZVEloX2t2ZE1scU5NR1huZy1MRTNJaFE2ZzFrMkdOb1U4LXMyckY5YTFqdzA5OHZsTEhHQlE0a1dSREVkWlEteVNLOG5Sd3hHazd2NzBiR1d4TWhoNTFUNHBKUWl3WmVvWE85WTBKaW9aZmJSY2dPRXNraTh5NVZ1ZWoteVpXUkdpMGJ5S041djlmOWgyYU9yeUV1WW1FRW5GMmlBeXRlY2s5cFlXbw?oc=5"
-    ],
-    [
-     "DeMario Douglas - Fantasy Football Waiver Wire Pickups for Week 9 (2026) - NFL News - RotoBaller",
-     0.0,
-     "https://news.google.com/rss/articles/CBMinwFBVV95cUxPb2g5TTdQd1d0dHhWeE9uSHN5amZ0OWl1SFYxYld1b2ZfWVUzT25aWVVneEwzaTlpZ3dwSy00UGZhaEFrV1dETkFsa2lxRUxuVkZzQU9XSGhqQ3A0WGlDamlJMFhuWlV6dGw2cGhNblJNa3BfQ0ktTUtmYklfY25mYTFwa3RCdXBGQWNYeFFhX0ZzUjBuWTBac1prVTNCUG8?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Maye locates Douglas deep downfield for 36-yard gain vs. Packers - NFL.com",
+     "score": 0.78,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSmFxTVBpNjNsbWNadnZRUF9ZWTNXSFdIVkoxX3EwZV95Nlh0eHRPRXRrbGVPTjN2ZTlrbmVXdDJyNHNpdVcxeFJiVEdsdmhEdDFuX1ExU25kWXl5all6WUtlb0E2WkpEVmVGbk9URDhBb3laZER0TUcxblJPa0FvcFUwT0RIOTctY0hQRFI5d1h6a0JI?oc=5",
+     "published": "2026-11-08T22:38:45+00:00"
+    },
     {
      "title": "DeMario Douglas - Fantasy Football Waiver Wire Pickups for Week 9 (2026) - NFL News - RotoBaller",
      "score": 0.0,
@@ -1476,21 +1483,14 @@
      "source": "TWSN",
      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQlNmTGxQbTV4b0QyVFZZYmhDaXIwU1JEdjA4cTh5MXhKTU5vdk80dUh2VU5rdlJzSEFhS0hoRUpWYUFVVFhmWDBaWnQ3cUtzeHdOYkVtVTBGVFNJb1pCanZOaGNyMXhZWnBTVFhsazUtLS1KZGFidlV4UEJiVlhxLQ?oc=5",
      "published": "2026-11-05T14:20:22+00:00"
-    },
-    {
-     "title": "Week 9 fantasy football WR start-sit: Allen, Addison, Douglas, Vele - The Big Lead",
-     "score": 0.0,
-     "source": "The Big Lead",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNX19HRnUtY2ozUG9meHRTZnhtSXpYbW1WVnA4UjZqaHVwTzY1X29seUxwNXVmSHl4eVozZEdzdXItTzlJRzd5TzZTU1RMZEUwWHhSWDVGNUVQTDduRDdJeUdnUW5PNlNUXzR2LXdjQm9HbUs3VlZ0ZFRzb2hBdkEteXJEYktteC03M2hUMlZFMk1fUTFNY3BWVEsweFl5dGY2bW9aMmxwaUFtTjU1azU1Y0wzZURpUzA3WTJNYW5STQ?oc=5",
-     "published": "2026-11-05T14:00:05+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.077,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.999,
+   "mult_sentiment": 1.004,
    "base": 10.280999999999999,
-   "adj": 11.06,
+   "adj": 11.12,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -1515,8 +1515,8 @@
    "def_teams": 32,
    "def_ratio": 2.0,
    "implied": 21.5,
-   "weather": "84F, wind 5mph",
-   "sentiment": 0.052,
+   "weather": "84F, wind 6mph",
+   "sentiment": 0.05,
    "n_articles": 15,
    "headlines": [
     [
@@ -1558,6 +1558,13 @@
      "published": "2026-11-07T12:46:12+00:00"
     },
     {
+     "title": "Who Should I Start for Fantasy Football Week 9? Dallas Goedert, T.J. Hockenson, Dalton Kincaid, Hunter Henry, AJ Barner, George Kittle, Chig Okonkwo, Greg Dulcich, Isaiah Likely - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxNRDJremJreS00T2tTeGo5Q3JlZm5DbjlaZ3Etc1VyVXRvS3MxRkRfZHU2UERwVGxMR1NKN1Fqc3dUSEh5MC1NQTEydVlINnlCYkdhcXVIeEQ2OEN6M0J5NG9MaG9mN2g5Q2dRSklka2F2dUFtUW9ERm4taHJwalV6VWZBdjltUlF3SmlneWxNMHN3UXdLVnJENXJqQUFJSk1ocjBJcFBHYm1HZE1Dbkk3NlNYMm9wd3drMU9aa2QyRVUtQnhfdmU3c3RDSmFlMjFCUTBPWWlMXzAyakplbVMyMURHcVhYTFJMOGxlZ0ZCY25OS2lQRU5KNHM2dUNXNENMVW9IeEg2aFV3OS1DOE05MnBkWQ?oc=5",
+     "published": "2026-11-07T11:13:07+00:00"
+    },
+    {
      "title": "Fantasy Football Week 9 QB & TE Streamers: J.J. McCarthy, Greg Dulcich are Top Options - Roto Street Journal",
      "score": 0.38,
      "source": "Roto Street Journal",
@@ -1591,13 +1598,6 @@
      "source": "Yahoo",
      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQY3hjc0k4TS1wQjQzU0lMWjltTlBnUkRSa3hXeEdUMU1PZjBfcVlVaGFzYjRXWXZycC1EdFd5UHpHMEl1N1J5OTdSbFFvNWw3TXVtOFZPall4Rk5ObzBKVDJrVWtTd18tWDVqMHhMWTBmdnJTS0hMWFVrenMtLXdialJn?oc=5",
      "published": "2026-11-05T00:05:00+00:00"
-    },
-    {
-     "title": "Erick all Jr. or Greg Dulcich: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPOUwzNS11QlQ0TGNlaFFXTGl0YUxyOFIyZ2cwR01sMG1rWGViLVlOQ0d6MlN6akdNeFNMYmNKRnA4aDRlTUJwdjVKSkRNUFgxRDR5bG1oQ3N4Qk5JVTJDWFJmc0VBT01NUjZXRGVjUFpRTUlmOVdTeEtXSVQtT3JVVWF0c085MlNnVGM5OVpZNmZUVEdMNFpHUWxWX1ZsOUcya0NKTk1mcS14TXBtLVlSRw?oc=5",
-     "published": "2026-11-04T12:43:42+00:00"
     },
     {
      "title": "Greg Dulcich or J.J. McCarthy: Who Should I Pick Up? Fantasy Football (2026) - RotoBaller",
@@ -1673,139 +1673,139 @@
    "def_ratio": 1.03,
    "implied": 19.5,
    "weather": "Indoors",
-   "sentiment": 0.104,
+   "sentiment": -0.014,
    "n_articles": 15,
    "headlines": [
     [
-     "Browns vs. Saints score, live updates: Scoring hard to come by in Week 9 as Cleveland pulls ahead 6-3 with Andre Szmyt field goal",
-     -1.0,
-     "https://sports.yahoo.com/nfl/live/browns-saints-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-shedeur-sanders-deshaun-watson-153658228.html"
+     "Browns HC praises Shedeur Sanders after first 2026 start: 'Really proud' - Yahoo Sports",
+     0.93,
+     "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbVAxNnFfT3dZRTUwdnBHZkt2T1Z5T0JmdldiekpvLVdMMjZTS0RrNFdNV1o3S2ZVR19CcEQtQzRCOFJialhvaDgxUlhOUHVPT2I5bjhfTHJURlZEemhVZHBKclZtLUJYMnh3RXRZcEFGSFlZdlU3MVQ2c3VxRjUxNU11a1FCTEdWYXc?oc=5"
     ],
     [
-     "\u2018How Weird Is This?\u2019 \u2014 2-Time Super Bowl Champion Calls Out Browns HC Todd Monken\u2019s Bizarre Deshaun Watson-Shedeur Sanders Decision - Yahoo Sports",
-     0.9,
-     "https://news.google.com/rss/articles/CBMifEFVX3lxTE9zV0NxNG1Pd2F5bnpYR2Y0bEpiYW9TTk5XT0xnTTMyR2ZEZVFITmdLWlF3b3RiV2ozaDVoQkhHNXQ1OTIyR3RSTVB6cHhUR3ZSUk1GWkh5N3U0Y0M1am8tb2Y2TExmR0xZcTA1NFB4QmNBQjJVVng1dEZzZ1M?oc=5"
+     "Shedeur Sanders' best plays from 325-yard game vs. Saints Week 9 - Yahoo Sports",
+     0.91,
+     "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYmZlV0paRXdfYnJxRThQSzR1S2p1VV92eGFQNWZoY0RGaWFDclA1WWRxVEgtVExFdkdISTc4a1hscUdMdzMxemwzYk1NYy13cWRydkt5WmxQOGs5d0JPRTQzNW15dUdRQW9jMnExZ3I2R2pSZ1NaTnRHRXNSLUdrZmx6OA?oc=5"
     ],
     [
-     "Browns' Shedeur Sanders claims 'smiling' comment about Saints defense was taken out of context - CBS Sports",
-     0.79,
-     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWFFvczdFdUVtU3o4X0NjZVJ4ejdCYXh6NHdaY01JTU5GM3BIZE02ZjVoQ0xOUS14OU1ndGpGcjdSN2k0Zkhlbm9JcjhvYTkwRTNBZlJOR3gwMGdPVkd0bjBsRjJmeHFMUklqbDFaUG15dUxzVjBOdlRCaTRBbzdLT0hrSy1ncjlnTFFv?oc=5"
+     "Shedeur Sanders\u2019 failed two-point conversion seals Browns\u2019 OT loss to Saints - Yahoo Sports",
+     -0.88,
+     "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNejVsanhMSjBaNWF2b3FVMU9pcUxtbGwydlZOWHJGM08xSWU3bnMyUDZlNF9OOUFOTlZrMk5MRHJtS2c5UUFtN0FmQk10VHFDSWhidzdDY0NoR2Nnc0I3bHI5NzhMdkI2bEJJQWM1WHBuY29PZDV3cGhOaHlPM09TUGV5NnF0dTZQ?oc=5"
     ]
    ],
    "articles": [
     {
-     "title": "Carl Granderson boosts his 2026 sack total to 6.5 via takedown of Shedeur Sanders - NFL.com",
-     "score": 0.56,
+     "title": "'He flashed franchise quarterback'... Skip Bayless would love to see Shedeur Sanders traded to one NFL team - www.hitc.com",
+     "score": 0.86,
+     "source": "www.hitc.com",
+     "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdXI1SkJjbkxZellhRXh4YnNZVkVUYjdVbG5waTFDai1mSjN1S2p0YkYyck9wY0E5alNZdGNGSkh2OWRjaFU4OHRjTjA3a3ZJQzNGMlktVjNsMmlqTVpiWGxEM0ptdXF6S3JSUlNsV0lRVUQ3UE05bTJYOXRfWXdoSUNrNUxBX2ZjY1h6SVEzdzA5cnVRSzlTdGh2Qm5pN3ZrU1pNSlh6cklIOVBsenVoRUw4QWxTNnlvN1ZDLUtiRF9oUQ?oc=5",
+     "published": "2026-11-08T22:51:09+00:00"
+    },
+    {
+     "title": "Browns HC praises Shedeur Sanders after first 2026 start: 'Really proud' - Yahoo Sports",
+     "score": 0.93,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNbVAxNnFfT3dZRTUwdnBHZkt2T1Z5T0JmdldiekpvLVdMMjZTS0RrNFdNV1o3S2ZVR19CcEQtQzRCOFJialhvaDgxUlhOUHVPT2I5bjhfTHJURlZEemhVZHBKclZtLUJYMnh3RXRZcEFGSFlZdlU3MVQ2c3VxRjUxNU11a1FCTEdWYXc?oc=5",
+     "published": "2026-11-08T22:42:58+00:00"
+    },
+    {
+     "title": "\u2018He\u2019s gonna be the future\u2019: What a former Steelers coach said about Shedeur Sanders after Browns\u2019 OT loss to Saints - Cleveland.com",
+     "score": -0.56,
+     "source": "Cleveland.com",
+     "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNN0h0MXN4clMtNFlNNUtOeUN5Vmg0U2gyVGlSZThYNHVLT2wtMXE1TDU0NGFabWp4bzdqQkJaek9fdnpqRGJodDFJUFQwdVN4NU5vWEdvcDdaUHVxM1VTbGRtUHpYY2pyOGQ4bG95dV9kLTkxTWN2eDhtZEcxMHQwSkFNTnFMazI3YlZpSE5kT3JRSHpVQ0tMSVlYcktDMjJVc0ZqamdaeUlXckJleXJWMUk1N1dvV3U3Ty04dk9mWUZOei1jZEpzbjVGeFItUnlnY1ZLbW1jeXNKVEFMR3czRFRJNzFjbl9yWUpXag?oc=5",
+     "published": "2026-11-08T22:39:00+00:00"
+    },
+    {
+     "title": "Shedeur Sanders' best plays from 325-yard game vs. Saints Week 9 - Yahoo Sports",
+     "score": 0.91,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPYmZlV0paRXdfYnJxRThQSzR1S2p1VV92eGFQNWZoY0RGaWFDclA1WWRxVEgtVExFdkdISTc4a1hscUdMdzMxemwzYk1NYy13cWRydkt5WmxQOGs5d0JPRTQzNW15dUdRQW9jMnExZ3I2R2pSZ1NaTnRHRXNSLUdrZmx6OA?oc=5",
+     "published": "2026-11-08T22:25:59+00:00"
+    },
+    {
+     "title": "Deion Sanders Jr hits back at haters after Shedeur Sanders\u2019 first 2026 start for Cleveland Browns - Yahoo Sports",
+     "score": -0.75,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNR3ZSSFBTdFhfUkNwZDR6NXlRX2dCMDVNVElLa1BJTVJZX0pWdHVnOTN0eXB4ajQtdVBLYWpTdXU4YTJodGdKTXBfWTdPWTNzTmFFM2NFZGs3Y1FrZWpzNEh1Nm9aZThfODdRRVVjR1N1dDFFUnJycTNvLUFWYVE5Vg?oc=5",
+     "published": "2026-11-08T22:12:06+00:00"
+    },
+    {
+     "title": "How Did Shedeur Sanders Do vs. Saints? His Best NFL Passer Rating Wasn't the Whole Story - Athlon Sports",
+     "score": 0.0,
+     "source": "Athlon Sports",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ21wU09ySVFndDRYbm9udUhCSlhlcDFic0Jlek9nZFphRkV2clFjdDNiTTMxSHFTdzQ0anhKYTAweHhVRDJVYmE5UU9DMDlGRllmVG5QQzQ1TDNsXzVvY09DbTFjMjRFU0xkRXN0NnJ1RG8zUWtDYmlRZmVBOTNrSXhXT1RBc3FDOFBDb3VIZk5CWTg0MXYxQXBPOWs?oc=5",
+     "published": "2026-11-08T22:08:00+00:00"
+    },
+    {
+     "title": "Shedeur Sanders\u2019 failed two-point conversion seals Browns\u2019 OT loss to Saints - Yahoo Sports",
+     "score": -0.88,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNejVsanhMSjBaNWF2b3FVMU9pcUxtbGwydlZOWHJGM08xSWU3bnMyUDZlNF9OOUFOTlZrMk5MRHJtS2c5UUFtN0FmQk10VHFDSWhidzdDY0NoR2Nnc0I3bHI5NzhMdkI2bEJJQWM1WHBuY29PZDV3cGhOaHlPM09TUGV5NnF0dTZQ?oc=5",
+     "published": "2026-11-08T21:59:20+00:00"
+    },
+    {
+     "title": "Browns vs. Saints: Takeaways from Week 9\u2019s loss include lots of Todd Monken questions",
+     "score": -0.32,
+     "source": "SB Nation",
+     "link": "https://sports.yahoo.com/articles/browns-vs-saints-takeaways-week-215702712.html",
+     "published": "2026-11-08T21:57:02+00:00"
+    },
+    {
+     "title": "Inside Shedeur Sanders\u2019 First Start of the 2026 Season: What Went Right and Wrong - Sports Illustrated",
+     "score": -0.74,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNYkZDUVlUX09Da2JsUHBGc20zcXZsTlJZMmtCVVhud3BHcDdGdUxSN1BRby00RGJCclc5Qkx6c3hiRHY3cVdRSTBOclVkaHFQd0UxdDlwWmFzNlpPR0dOMldhdVdRejlmbGZvdmlvd0g4LVlOY21lM080eWVvT1pNQm05d0ZOLUthanVKMTFWdm94MkRMOE9ZM0JiSW1EMUJOVnRBSkxzb04xRHNWWFZqT3pHcUpTNzB0Z3o1dS1qdGozclJvYmc?oc=5",
+     "published": "2026-11-08T21:49:09+00:00"
+    },
+    {
+     "title": "Shedeur Sanders' Comeback Falls Short in Browns-Saints, Box Score Stats, Highlights for Shough, More - Bleacher Report",
+     "score": 0.0,
+     "source": "Bleacher Report",
+     "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPV0ltQlVjQ3FxS1VsX1ljODhfTkhiMzR3ZC1oaWsxZG1SUmFBZ0RnTFQ5eVU3OVF6bHNXRWNMYU5BaVNJbHpMQmx3YVBOV0VQbExXSmJDZU5qdmtfSk14eF9RZGVaYUEzQm43dGxseVpYbXd5SjB4cmpLNlhRWTlJLWx0R0tFUUNxc0FZQ19DNkstYWZRYUZMNjRMV2Ywbm93U1N5am1STktpbGpHQTZRMXc2Zmx0UjJ6WlQ2VEx6RENqUVg4RG82bFZ5TW0yaDg?oc=5",
+     "published": "2026-11-08T21:45:00+00:00"
+    },
+    {
+     "title": "Cleveland Browns vs. New Orleans Saints recap: Shedeur Sanders comes close, but can\u2019t get the final play in overtime - Yahoo Sports",
+     "score": 0.74,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQLW9nQ2xKQzN0ZTZlbTVYbGJDNGY5UVZ4dDVSVVlWWk9zYk1vU3NfckdTVncxMDZRbnlNeVBZUkJfRHZ2UllLZTVSOTFzdy1GRTRLRUhaZkR5cWNrV1lhbUNBRE9OVXdWcU55dU9NaFB6WG9uM0xSTVNEUTFsWVEzZVUxa0VOb1FkcGJF?oc=5",
+     "published": "2026-11-08T21:39:15+00:00"
+    },
+    {
+     "title": "What did we learn from Shedeur Sanders' start vs. Saints? Instant reaction - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNam1zUlVDUlRWZWtjOElwS3l1aElWTTBkU2cyY180ODdFODg4MUhFczVqaU9BWUVRRkVKOWtZR0tkWVBpaGtqQktaZkJjYUczUFp6MjhIM2FwSklnek9UMGdUbVFZM3VxTGdveU1sckNmdDlfQWI1Vmo0aVoySFRjMWZMRDAzZXc?oc=5",
+     "published": "2026-11-08T21:38:22+00:00"
+    },
+    {
+     "title": "Khristian Boyd drops Shedeur Sanders deep in Browns territory with 8-yard sack - NFL.com",
+     "score": -0.46,
      "source": "NFL.com",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPcWNXN1JiRC1PbFJ4eE5OektpaGFfMlhIOE9kV1h1dzBRYmxTYkVqUmdPSmdELXdBaVNXVGI5bkh4TVFNRzJ6aG5jQWZZNk9HYWlwSlQ2aHRkZm5OcXFqNUNfMGxWWmVmVThBZkhrbUFTbFZZM1hfOUVNM2hHNXd4cTZ0ZndnZi1nRjRMbGRVai1yX21GVzdFa2tHWVh3UnZ4YVd0UDZ4ck1FeEhY?oc=5",
-     "published": "2026-11-08T19:28:01+00:00"
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHJQTEhQMzZQWDJIcjh3Q1FuQW5oZFpiNFk5ZWZIUDNYWEVFRDdNRjItLXpvZExtTUt4S05HN0FCcVRqVnNRZXoxMjJTOEUtQTFiSlM4eHBJU09OX2s4SGYyRGMxQkNRbmdNa2NMZG9ZSkI2UjRORDRmNi1yczhvS0k3ZHVTaUZ6Sm1XY25FWFpGbHpteHlwcGtrVlowV2dKb2NCSUQ2dEc?oc=5",
+     "published": "2026-11-08T21:07:59+00:00"
     },
     {
-     "title": "Browns' Shedeur Sanders claims 'smiling' comment about Saints defense was taken out of context",
-     "score": 0.33,
-     "source": "www.cbssports.com",
-     "link": "https://www.cbssports.com/nfl/news/saints-motivated-to-face-browns-shedeur-sanders/",
-     "published": "2026-11-08T18:58:34+00:00"
-    },
-    {
-     "title": "Browns' Shedeur Sanders claims 'smiling' comment about Saints defense was taken out of context - CBS Sports",
-     "score": 0.79,
-     "source": "CBS Sports",
-     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWFFvczdFdUVtU3o4X0NjZVJ4ejdCYXh6NHdaY01JTU5GM3BIZE02ZjVoQ0xOUS14OU1ndGpGcjdSN2k0Zkhlbm9JcjhvYTkwRTNBZlJOR3gwMGdPVkd0bjBsRjJmeHFMUklqbDFaUG15dUxzVjBOdlRCaTRBbzdLT0hrSy1ncjlnTFFv?oc=5",
-     "published": "2026-11-08T18:58:00+00:00"
-    },
-    {
-     "title": "Browns Make Dillon Gabriel Decision as Shedeur Sanders Starts - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOUUdsRXJrU0Q2aHNCcXBVZ1RCNThxcHUzNDQ1U1dYQTQ1enJYdFZQSkg0clVBdEVJTWhCY1ZXWDlUQTFzQU1BX29zbUN0MzNXb05EV2wzSVhNMFpJa3c2YUdzcFhwUHpILS1GYVVDeF9PdVNZNGRMRVpZSHJCdC1aWUFreHlkeFpUN2ZJUnlHSnk?oc=5",
-     "published": "2026-11-08T18:49:15+00:00"
-    },
-    {
-     "title": "Kaden Elliss takes down Shedeur Sanders for first sack of 2026 - NFL.com",
+     "title": "Can't-Miss Play: 64-yard TD! Shedeur Sanders and KC Concepcion stun Saints in fourth quarter - NFL.com",
      "score": 0.0,
      "source": "NFL.com",
-     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPS1k2NmtLVXQ2c1p2MGcwVEdEekEzSjM1eWdzaTM5NmdlTklvd3p1emFVSjdBWVVOV3JMaVp5MGswODhyOWtUMlA5MzVDSnViMUNuZUJCWkgtWS1JSkZfSjg3anRMbkF4aWtoNDFSa2RZNHpFVVhMSFhoRUJfRm1nSVdlVmhmZmh6ZTdtT3Y2czAyT3c?oc=5",
-     "published": "2026-11-08T18:25:14+00:00"
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPM0EtbDRQYnpCUVJDZFl1dkRBTEljWTR6dWZVSnc3QU1HbS10QXV0ZDI2ekY5OVJOU1VjbTIwMmxEUWI0cm5UVTgySHlTVWNsUWJkRjYyVWFPRWxyVlpUYi1FcHFuWVRjbXlyamsxeTRKaTFHcXgtOTVqc1g0MmVFcVctTTRxMlNPTmI5ZzJhdEJSRFZzUk5tQVlNcXJVNVJEbllFLV9XLWxCQ085WEJrOXBpT3R1WUZf?oc=5",
+     "published": "2026-11-08T20:54:29+00:00"
     },
     {
-     "title": "Shedeur Sanders gets first start of 2026 season in Browns vs. Saints. Photos - Akron Beacon Journal",
+     "title": "Nike Announces Shedeur Sanders' Sneakers Before First NFL Start - Sports Illustrated",
      "score": 0.0,
-     "source": "Akron Beacon Journal",
-     "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQMTVZLUVCX2R2ajBOZXN1QnZicDRCZU41UkNiaURLTFhVYkdpVTFIOHFsR2Zkc0EzUGg0Zlhqb0VMTnl6dVVYS3owM3E2dHg1ZHQ1S0hxVEU3LU5YTTVtTl8tMHlOVjRsZEp3aFdVZmUxMUMtOHc1SW9RU0Y2akJQX01OMkkya1NTSC1ubjhQR3hZc2NhdG1CZndBTWJfTlQ0XzlBU3NoVVhPektwQ2pMZjc5MjBRQTZSYTU1dW14cTZSTzI5RU5fR0JLLVQxeVhocHVJQXNqUG5rd28?oc=5",
-     "published": "2026-11-08T18:04:00+00:00"
-    },
-    {
-     "title": "Shedeur Sanders Is Proving That He Doesn't Get It - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQ2hPcXZ1Vm14SEJ5a3pFaEhWYjVzOTNMRHNXQXo2RjRwQjBKQ29uUVJERWV3MVBQZkRfZnUzSlNBR29CVUdGTnNSdzY1VTkybENUTEtNR2ctQmE3UUYyb2Y0aFJZeUpIMG8yV0p4QTc0aTgySWNQSFhreVFWcEprRUx4Tk9Fdw?oc=5",
-     "published": "2026-11-08T18:00:46+00:00"
-    },
-    {
-     "title": "\u2018How Weird Is This?\u2019 \u2014 2-Time Super Bowl Champion Calls Out Browns HC Todd Monken\u2019s Bizarre Deshaun Watson-Shedeur Sanders Decision - Yahoo Sports",
-     "score": 0.9,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9zV0NxNG1Pd2F5bnpYR2Y0bEpiYW9TTk5XT0xnTTMyR2ZEZVFITmdLWlF3b3RiV2ozaDVoQkhHNXQ1OTIyR3RSTVB6cHhUR3ZSUk1GWkh5N3U0Y0M1am8tb2Y2TExmR0xZcTA1NFB4QmNBQjJVVng1dEZzZ1M?oc=5",
-     "published": "2026-11-08T17:18:32+00:00"
-    },
-    {
-     "title": "Why Shedeur Sanders is Playing QB Today, not Deshaun Watson - Heavy.com",
-     "score": 0.38,
-     "source": "Heavy.com",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRXJXUFZWUFV2VzVkWTZId3BqaXJxUkI1UlUwN1JhVEEzYVQ1YkJsWnpHWnBVR2FCVE5TOXNxcTgxWWFUOWY3ODNlRmxBR1pHNzhPT29iTG4wSl9Da2l2Y0dIN0VJUnZEUEg0MFVNaXJvQjRoVzdTbXM4RHpjc2lqLWdGVFFtY0xCeGRETWhSLU53ZFRBV1hXX0hhbXEyVUF6N29hMXNUcw?oc=5",
-     "published": "2026-11-08T17:14:21+00:00"
-    },
-    {
-     "title": "The week of the backup QB in the NFL kicks off as Sanders, Milton, Minshew, Lock, and Wentz start - Fox News",
-     "score": 0.0,
-     "source": "Fox News",
-     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRE5pdkp6bEtZQ2w0ZlM4Qy1HcGhvcE5aRVVwVTFPc2FzSkd1YmViZ3dzTnRBZzcxYXczT0xpX1FOdWNyNDF2aFd4SndscGpvTFBfaEV4U2JQYW80VTJwZjItVGV6U3hYVE5qV05hcnRFanNsTFdfMG5FVGZRdkh4dFVpWVc2d09LQ1FUZ2FZR3NaUmJFZnRmd2YwOUJQZGhudlVWQS1rT0NPaGM?oc=5",
-     "published": "2026-11-08T17:13:00+00:00"
-    },
-    {
-     "title": "Deshaun Watson is inactive for the Browns",
-     "score": -0.55,
-     "source": "profootballtalk.nbcsports.com",
-     "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/deshaun-watson-is-inactive-for-the-browns",
-     "published": "2026-11-08T16:33:52+00:00"
-    },
-    {
-     "title": "Shedeur Sanders to make first 2026 NFL start in matchup against Saints - News 5 Cleveland WEWS",
-     "score": 0.0,
-     "source": "News 5 Cleveland WEWS",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdzRSX1BNMEFFRGlvRFZhZ2o3RE5sQmJBOWZOWXZ0V0NnN2tqU21SVzJ0dUJGOUl3aUI2WVhxVC16T1pXb0lqR1F3ZDRxblh0RTIzZHA3b2tFYWcxY1lhemtjY3FkWHVHa1FOa09meXFfMW9SLWVhMzJBUjNESERIMXBEQXpJbWFXaEh6MzRTMkhyaHljUVVEa0wtdHpNTldUYWNaSmx3SUNkcWVqams4S2ZLYkx2R1lh?oc=5",
-     "published": "2026-11-08T15:56:02+00:00"
-    },
-    {
-     "title": "Browns vs. Saints score, live updates: Scoring hard to come by in Week 9 as Cleveland pulls ahead 6-3 with Andre Szmyt field goal",
-     "score": -1.0,
-     "source": "Yahoo Sports",
-     "link": "https://sports.yahoo.com/nfl/live/browns-saints-score-live-updates-inactives-highlights-stats-where-to-watch-week-9-shedeur-sanders-deshaun-watson-153658228.html",
-     "published": "2026-11-08T15:36:58+00:00"
-    },
-    {
-     "title": "Deshaun Watson Concussion Update: Browns QB Will Play, Shedeur Sanders Will Start - Yahoo Sports",
-     "score": -0.3,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNaXdqS3pHeGJSNE9qU2hDbjRwYzd2d1NKOURQXzQyN3hGaWNmSjFhN1dkQ1RGb1BJU3FFZmVTaWYwdnhvT09xYWtVd2p2WExxejJxRmpIcnE1MDM2V3FxeGdpRUZMbFg3RmYzdmdkbGItbVJIcVJUWnBPbml4WHZIUW9xUGN3cmEwemVaSg?oc=5",
-     "published": "2026-11-08T15:31:46+00:00"
-    },
-    {
-     "title": "Saints using Shedeur Sanders\u2019 smiling video as bulletin board material - Yahoo Sports",
-     "score": 0.72,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQWXFiY0hnUHAzdmZEclI1S3I1ZWI3VWIydUJDbW50OFNSMDUwbjdBWHZ2aERSaXQtMjN0empfVHJWRkdWTTNtcjA3OXZFZU5kdHNoR1M3QnBjN0xvb19TR2NJbVZaa0Nobnp4WGZFc2FoQ2tnTzRKMHRMMUpkZzQwRmtqcGtkZWtXSzlkVWxB?oc=5",
-     "published": "2026-11-08T15:18:49+00:00"
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQd0J1bV9GeFlnXzM1dlZtb1RiajdNdTBOMUdaSl81MEV6dzBtbjZhbEVOeUtyWHRrV3E1WUw1UXhWSXZDOG04VENncExTbEFxWkRhSklSOHVacGtCbHRzVC1kcV9QMWRKQWRYMlR2YWJDNWNkdjlVQXJLNDk5cmxRQmd2Y0lLal9LYjcwWHdlZDBOT1FyNk1YeDEyWTlVVTJRYjNoTjdjQ3Y?oc=5",
+     "published": "2026-11-08T20:15:16+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.942,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.008,
+   "mult_sentiment": 0.999,
    "base": 11.678,
-   "adj": 11.09,
-   "trending_adds": 80984,
+   "adj": 10.99,
+   "trending_adds": 83160,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
@@ -1829,7 +1829,7 @@
    "def_teams": 32,
    "def_ratio": 1.16,
    "implied": 26.75,
-   "weather": "46F, wind 7mph",
+   "weather": "45F, wind 8mph",
    "sentiment": 0.208,
    "n_articles": 15,
    "headlines": [
@@ -1962,7 +1962,7 @@
    "mult_sentiment": 1.017,
    "base": 8.934999999999999,
    "adj": 10.67,
-   "trending_adds": 144116,
+   "trending_adds": 141995,
    "slot": null,
    "notes": [],
    "matchup_grade": "B",
@@ -1986,7 +1986,7 @@
    "def_teams": 32,
    "def_ratio": 1.18,
    "implied": 17.75,
-   "weather": "58F, wind 10mph",
+   "weather": "59F, wind 10mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -1997,7 +1997,7 @@
    "mult_sentiment": 1.0,
    "base": 10.703,
    "adj": 10.38,
-   "trending_adds": 43820,
+   "trending_adds": 40740,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -2021,7 +2021,7 @@
    "def_teams": 32,
    "def_ratio": 0.65,
    "implied": 15.5,
-   "weather": "56F, wind 8mph",
+   "weather": "56F, wind 9mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2091,7 +2091,7 @@
    "def_teams": 32,
    "def_ratio": 1.2,
    "implied": 22.0,
-   "weather": "62F, wind 9mph",
+   "weather": "63F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2137,7 +2137,7 @@
    "mult_sentiment": 1.0,
    "base": 9.114999999999998,
    "adj": 9.7,
-   "trending_adds": 71673,
+   "trending_adds": 61965,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
@@ -2161,7 +2161,7 @@
    "def_teams": 32,
    "def_ratio": 1.27,
    "implied": 19.0,
-   "weather": "61F, wind 4mph",
+   "weather": "63F, wind 2mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2207,7 +2207,7 @@
    "mult_sentiment": 1.0,
    "base": 8.366999999999999,
    "adj": 9.16,
-   "trending_adds": 121130,
+   "trending_adds": 113685,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -2242,7 +2242,7 @@
    "mult_sentiment": 1.0,
    "base": 8.79,
    "adj": 9.01,
-   "trending_adds": 86796,
+   "trending_adds": 86697,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -2277,46 +2277,11 @@
    "mult_sentiment": 1.0,
    "base": 8.338999999999999,
    "adj": 8.94,
-   "trending_adds": 254525,
+   "trending_adds": 241585,
    "slot": null,
    "notes": [],
    "matchup_grade": "-",
    "ros_value": 8.38,
-   "group": "candidate"
-  },
-  "13414": {
-   "player_id": "13414",
-   "name": "Kaelon Black",
-   "position": "RB",
-   "team": "SF",
-   "opp": "LV",
-   "is_home": true,
-   "on_bye": false,
-   "injury_status": null,
-   "injury_detail": null,
-   "proj": 7.06,
-   "recent_avg": 7.8,
-   "recent_games": 2,
-   "def_rank": 24,
-   "def_teams": 32,
-   "def_ratio": 1.14,
-   "implied": 30.0,
-   "weather": "65F, wind 6mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 1.0,
-   "mult_matchup": 1.2,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 7.281999999999999,
-   "adj": 8.74,
-   "trending_adds": 75929,
-   "slot": null,
-   "notes": [],
-   "matchup_grade": "B",
-   "ros_value": 7.43,
    "group": "candidate"
   },
   "13337": {
@@ -2336,7 +2301,7 @@
    "def_teams": 32,
    "def_ratio": 0.98,
    "implied": 28.5,
-   "weather": "61F, wind 4mph",
+   "weather": "63F, wind 2mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2347,11 +2312,46 @@
    "mult_sentiment": 1.0,
    "base": 7.84,
    "adj": 8.73,
-   "trending_adds": 113436,
+   "trending_adds": 103923,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
    "ros_value": 8.78,
+   "group": "candidate"
+  },
+  "13414": {
+   "player_id": "13414",
+   "name": "Kaelon Black",
+   "position": "RB",
+   "team": "SF",
+   "opp": "LV",
+   "is_home": true,
+   "on_bye": false,
+   "injury_status": null,
+   "injury_detail": null,
+   "proj": 7.05,
+   "recent_avg": 7.8,
+   "recent_games": 2,
+   "def_rank": 24,
+   "def_teams": 32,
+   "def_ratio": 1.14,
+   "implied": 30.0,
+   "weather": "65F, wind 6mph",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 1.0,
+   "mult_matchup": 1.2,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 7.2749999999999995,
+   "adj": 8.73,
+   "trending_adds": 72828,
+   "slot": null,
+   "notes": [],
+   "matchup_grade": "B",
+   "ros_value": 7.42,
    "group": "candidate"
   },
   "KC": {
@@ -2371,7 +2371,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 28.5,
-   "weather": "61F, wind 4mph",
+   "weather": "63F, wind 2mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2452,7 +2452,7 @@
    "mult_sentiment": 1.0,
    "base": 8.292000000000002,
    "adj": 8.3,
-   "trending_adds": 352608,
+   "trending_adds": 386229,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
@@ -2476,7 +2476,7 @@
    "def_teams": 32,
    "def_ratio": 1.48,
    "implied": 26.5,
-   "weather": "62F, wind 9mph",
+   "weather": "63F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2487,46 +2487,11 @@
    "mult_sentiment": 1.0,
    "base": 6.857999999999999,
    "adj": 8.23,
-   "trending_adds": 44568,
+   "trending_adds": 44307,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
    "ros_value": 5.85,
-   "group": "candidate"
-  },
-  "12634": {
-   "player_id": "12634",
-   "name": "Jordan Watkins",
-   "position": "WR",
-   "team": "SF",
-   "opp": "LV",
-   "is_home": true,
-   "on_bye": false,
-   "injury_status": null,
-   "injury_detail": null,
-   "proj": 7.21,
-   "recent_avg": 5.9,
-   "recent_games": 2,
-   "def_rank": 22,
-   "def_teams": 32,
-   "def_ratio": 1.07,
-   "implied": 30.0,
-   "weather": "65F, wind 6mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 1.0,
-   "mult_matchup": 1.199,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 6.817,
-   "adj": 8.17,
-   "trending_adds": 98028,
-   "slot": null,
-   "notes": [],
-   "matchup_grade": "B",
-   "ros_value": 6.55,
    "group": "candidate"
   },
   "TB": {
@@ -2546,7 +2511,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 20.75,
-   "weather": "46F, wind 7mph",
+   "weather": "45F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2557,11 +2522,46 @@
    "mult_sentiment": 1.0,
    "base": 8.928,
    "adj": 8.15,
-   "trending_adds": 44930,
+   "trending_adds": 46540,
    "slot": null,
    "notes": [],
    "matchup_grade": "-",
    "ros_value": 11.14,
+   "group": "candidate"
+  },
+  "12634": {
+   "player_id": "12634",
+   "name": "Jordan Watkins",
+   "position": "WR",
+   "team": "SF",
+   "opp": "LV",
+   "is_home": true,
+   "on_bye": false,
+   "injury_status": null,
+   "injury_detail": null,
+   "proj": 7.16,
+   "recent_avg": 5.9,
+   "recent_games": 2,
+   "def_rank": 22,
+   "def_teams": 32,
+   "def_ratio": 1.07,
+   "implied": 30.0,
+   "weather": "65F, wind 6mph",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 1.0,
+   "mult_matchup": 1.199,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 6.782,
+   "adj": 8.13,
+   "trending_adds": 90204,
+   "slot": null,
+   "notes": [],
+   "matchup_grade": "B",
+   "ros_value": 6.53,
    "group": "candidate"
   },
   "1433": {
@@ -2581,7 +2581,7 @@
    "def_teams": 32,
    "def_ratio": 1.13,
    "implied": 26.5,
-   "weather": "62F, wind 9mph",
+   "weather": "63F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2651,7 +2651,7 @@
    "def_teams": 32,
    "def_ratio": 0.9,
    "implied": 28.5,
-   "weather": "61F, wind 4mph",
+   "weather": "63F, wind 2mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2686,7 +2686,7 @@
    "def_teams": 32,
    "def_ratio": 1.06,
    "implied": 24.0,
-   "weather": "56F, wind 8mph",
+   "weather": "56F, wind 9mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2714,7 +2714,7 @@
    "on_bye": false,
    "injury_status": null,
    "injury_detail": null,
-   "proj": 7.99,
+   "proj": 8.0,
    "recent_avg": 11.0,
    "recent_games": 3,
    "def_rank": 9,
@@ -2730,9 +2730,9 @@
    "mult_matchup": 0.899,
    "mult_weather": 1.0,
    "mult_sentiment": 1.0,
-   "base": 8.893,
-   "adj": 7.99,
-   "trending_adds": 62775,
+   "base": 8.899999999999999,
+   "adj": 8.0,
+   "trending_adds": 63288,
    "slot": null,
    "notes": [],
    "matchup_grade": "D",
@@ -2756,7 +2756,7 @@
    "def_teams": 32,
    "def_ratio": 1.1,
    "implied": 24.0,
-   "weather": "56F, wind 8mph",
+   "weather": "56F, wind 9mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -2819,7 +2819,7 @@
    "on_bye": false,
    "injury_status": null,
    "injury_detail": null,
-   "proj": 8.52,
+   "proj": 8.46,
    "recent_avg": 2.5,
    "recent_games": 2,
    "def_rank": 12,
@@ -2835,13 +2835,13 @@
    "mult_matchup": 1.129,
    "mult_weather": 1.0,
    "mult_sentiment": 1.0,
-   "base": 6.7139999999999995,
-   "adj": 7.58,
+   "base": 6.672000000000001,
+   "adj": 7.53,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
    "matchup_grade": "D",
-   "ros_value": 5.51,
+   "ros_value": 5.48,
    "group": "candidate"
   },
   "9754": {
@@ -2872,7 +2872,7 @@
    "mult_sentiment": 1.0,
    "base": 7.634,
    "adj": 7.36,
-   "trending_adds": 38276,
+   "trending_adds": 0,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -2966,7 +2966,7 @@
    "def_teams": 32,
    "def_ratio": 0.75,
    "implied": 22.0,
-   "weather": "62F, wind 9mph",
+   "weather": "63F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3001,7 +3001,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 20.75,
-   "weather": "48F, wind 7mph",
+   "weather": "49F, wind 7mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3071,7 +3071,7 @@
    "def_teams": 32,
    "def_ratio": 1.16,
    "implied": 20.75,
-   "weather": "58F, wind 10mph",
+   "weather": "59F, wind 10mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3087,41 +3087,6 @@
    "notes": [],
    "matchup_grade": "B",
    "ros_value": 6.06,
-   "group": "candidate"
-  },
-  "3286": {
-   "player_id": "3286",
-   "name": "Demarcus Robinson",
-   "position": "WR",
-   "team": "SF",
-   "opp": "LV",
-   "is_home": true,
-   "on_bye": false,
-   "injury_status": null,
-   "injury_detail": null,
-   "proj": 7.96,
-   "recent_avg": 0.0,
-   "recent_games": 2,
-   "def_rank": 22,
-   "def_teams": 32,
-   "def_ratio": 1.07,
-   "implied": 30.0,
-   "weather": "65F, wind 6mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 1.0,
-   "mult_matchup": 1.199,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 5.572,
-   "adj": 6.68,
-   "trending_adds": 827826,
-   "slot": null,
-   "notes": [],
-   "matchup_grade": "B",
-   "ros_value": 3.98,
    "group": "candidate"
   },
   "13545": {
@@ -3141,7 +3106,7 @@
    "def_teams": 32,
    "def_ratio": 0.98,
    "implied": 20.75,
-   "weather": "48F, wind 7mph",
+   "weather": "49F, wind 7mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3157,6 +3122,41 @@
    "notes": [],
    "matchup_grade": "C",
    "ros_value": 6.74,
+   "group": "candidate"
+  },
+  "3286": {
+   "player_id": "3286",
+   "name": "Demarcus Robinson",
+   "position": "WR",
+   "team": "SF",
+   "opp": "LV",
+   "is_home": true,
+   "on_bye": false,
+   "injury_status": null,
+   "injury_detail": null,
+   "proj": 7.91,
+   "recent_avg": 0.0,
+   "recent_games": 2,
+   "def_rank": 22,
+   "def_teams": 32,
+   "def_ratio": 1.07,
+   "implied": 30.0,
+   "weather": "65F, wind 6mph",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 1.0,
+   "mult_matchup": 1.199,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 5.537,
+   "adj": 6.64,
+   "trending_adds": 794826,
+   "slot": null,
+   "notes": [],
+   "matchup_grade": "B",
+   "ros_value": 3.96,
    "group": "candidate"
   },
   "13424": {
@@ -3176,7 +3176,7 @@
    "def_teams": 32,
    "def_ratio": 1.19,
    "implied": 23.5,
-   "weather": "57F, wind 12mph",
+   "weather": "59F, wind 12mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3187,7 +3187,7 @@
    "mult_sentiment": 1.0,
    "base": 5.920999999999999,
    "adj": 6.58,
-   "trending_adds": 42832,
+   "trending_adds": 50736,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -3211,7 +3211,7 @@
    "def_teams": 32,
    "def_ratio": 0.8,
    "implied": 20.75,
-   "weather": "46F, wind 7mph",
+   "weather": "45F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3222,7 +3222,7 @@
    "mult_sentiment": 1.0,
    "base": 7.638,
    "adj": 6.57,
-   "trending_adds": 80392,
+   "trending_adds": 87600,
    "slot": null,
    "notes": [],
    "matchup_grade": "F",
@@ -3257,7 +3257,7 @@
    "mult_sentiment": 1.0,
    "base": 7.084999999999999,
    "adj": 6.29,
-   "trending_adds": 51210,
+   "trending_adds": 52180,
    "slot": null,
    "notes": [],
    "matchup_grade": "B",
@@ -3281,7 +3281,7 @@
    "def_teams": 32,
    "def_ratio": 1.15,
    "implied": 23.75,
-   "weather": "48F, wind 7mph",
+   "weather": "49F, wind 7mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3292,7 +3292,7 @@
    "mult_sentiment": 1.0,
    "base": 5.707,
    "adj": 6.27,
-   "trending_adds": 233208,
+   "trending_adds": 206892,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -3316,7 +3316,7 @@
    "def_teams": 32,
    "def_ratio": 1.0,
    "implied": 17.75,
-   "weather": "58F, wind 10mph",
+   "weather": "59F, wind 10mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3327,7 +3327,7 @@
    "mult_sentiment": 1.0,
    "base": 6.869,
    "adj": 6.11,
-   "trending_adds": 207235,
+   "trending_adds": 186851,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
@@ -3351,7 +3351,7 @@
    "def_teams": 32,
    "def_ratio": 0.9,
    "implied": 22.0,
-   "weather": "62F, wind 9mph",
+   "weather": "63F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3362,7 +3362,7 @@
    "mult_sentiment": 1.0,
    "base": 6.537,
    "adj": 6.11,
-   "trending_adds": 80116,
+   "trending_adds": 76324,
    "slot": null,
    "notes": [],
    "matchup_grade": "D",
@@ -3386,7 +3386,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 28.0,
-   "weather": "57F, wind 12mph",
+   "weather": "59F, wind 12mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3421,7 +3421,7 @@
    "def_teams": 32,
    "def_ratio": 0.65,
    "implied": 23.75,
-   "weather": "48F, wind 7mph",
+   "weather": "49F, wind 7mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3456,7 +3456,7 @@
    "def_teams": 32,
    "def_ratio": 0.9,
    "implied": 17.75,
-   "weather": "58F, wind 10mph",
+   "weather": "59F, wind 10mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3467,7 +3467,7 @@
    "mult_sentiment": 1.0,
    "base": 6.84,
    "adj": 5.78,
-   "trending_adds": 110223,
+   "trending_adds": 98640,
    "slot": null,
    "notes": [],
    "matchup_grade": "D",
@@ -3491,7 +3491,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 17.75,
-   "weather": "58F, wind 10mph",
+   "weather": "59F, wind 10mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3596,7 +3596,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 20.75,
-   "weather": "67F, wind 8mph",
+   "weather": "68F, wind 6mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3631,7 +3631,7 @@
    "def_teams": 32,
    "def_ratio": 1.11,
    "implied": 23.75,
-   "weather": "48F, wind 7mph",
+   "weather": "49F, wind 7mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3642,7 +3642,7 @@
    "mult_sentiment": 1.0,
    "base": 5.39,
    "adj": 4.93,
-   "trending_adds": 60069,
+   "trending_adds": 59757,
    "slot": null,
    "notes": [
     "Questionable (Calf)"
@@ -3668,7 +3668,7 @@
    "def_teams": 32,
    "def_ratio": 0.86,
    "implied": 20.75,
-   "weather": "46F, wind 7mph",
+   "weather": "45F, wind 8mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3749,48 +3749,11 @@
    "mult_sentiment": 1.0,
    "base": 6.004999999999999,
    "adj": 4.8,
-   "trending_adds": 51489,
+   "trending_adds": 52443,
    "slot": null,
    "notes": [],
    "matchup_grade": "F",
    "ros_value": 5.97,
-   "group": "candidate"
-  },
-  "11729": {
-   "player_id": "11729",
-   "name": "Sione Vaki",
-   "position": "RB",
-   "team": "DET",
-   "opp": "MIA",
-   "is_home": false,
-   "on_bye": false,
-   "injury_status": "Questionable",
-   "injury_detail": "Ankle",
-   "proj": 4.61,
-   "recent_avg": 4.25,
-   "recent_games": 2,
-   "def_rank": 28,
-   "def_teams": 32,
-   "def_ratio": 1.19,
-   "implied": 28.0,
-   "weather": "84F, wind 5mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 0.85,
-   "mult_matchup": 1.2,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 4.502,
-   "adj": 4.59,
-   "trending_adds": 37569,
-   "slot": null,
-   "notes": [
-    "Questionable (Ankle)"
-   ],
-   "matchup_grade": "A",
-   "ros_value": 4.43,
    "group": "candidate"
   },
   "12492": {
@@ -3810,7 +3773,7 @@
    "def_teams": 32,
    "def_ratio": 0.95,
    "implied": 23.75,
-   "weather": "67F, wind 8mph",
+   "weather": "68F, wind 6mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3821,7 +3784,7 @@
    "mult_sentiment": 1.0,
    "base": 5.124,
    "adj": 4.34,
-   "trending_adds": 47104,
+   "trending_adds": 59288,
    "slot": null,
    "notes": [
     "Questionable (Ankle)"
@@ -3858,11 +3821,46 @@
    "mult_sentiment": 1.0,
    "base": 3.1289999999999996,
    "adj": 3.05,
-   "trending_adds": 93177,
+   "trending_adds": 92826,
    "slot": null,
    "notes": [],
    "matchup_grade": "D",
    "ros_value": 2.83,
+   "group": "candidate"
+  },
+  "9502": {
+   "player_id": "9502",
+   "name": "Tank Dell",
+   "position": "WR",
+   "team": "HOU",
+   "opp": "LAC",
+   "is_home": false,
+   "on_bye": false,
+   "injury_status": null,
+   "injury_detail": null,
+   "proj": 2.82,
+   "recent_avg": 2.75,
+   "recent_games": 2,
+   "def_rank": 16,
+   "def_teams": 32,
+   "def_ratio": 0.97,
+   "implied": 23.0,
+   "weather": "Indoors",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 1.0,
+   "mult_matchup": 0.99,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 2.7989999999999995,
+   "adj": 2.77,
+   "trending_adds": 65672,
+   "slot": null,
+   "notes": [],
+   "matchup_grade": "C",
+   "ros_value": 2.79,
    "group": "candidate"
   },
   "13603": {
@@ -3882,7 +3880,7 @@
    "def_teams": 32,
    "def_ratio": 0.97,
    "implied": 20.75,
-   "weather": "58F, wind 10mph",
+   "weather": "59F, wind 10mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -3893,48 +3891,11 @@
    "mult_sentiment": 1.0,
    "base": 2.8069999999999995,
    "adj": 2.64,
-   "trending_adds": 229336,
+   "trending_adds": 217368,
    "slot": null,
    "notes": [],
    "matchup_grade": "C",
    "ros_value": 2.0,
-   "group": "candidate"
-  },
-  "12487": {
-   "player_id": "12487",
-   "name": "Terrance Ferguson",
-   "position": "TE",
-   "team": "LA",
-   "opp": "WAS",
-   "is_home": false,
-   "on_bye": false,
-   "injury_status": "IR",
-   "injury_detail": "Ankle",
-   "proj": 0,
-   "recent_avg": 0.0,
-   "recent_games": 3,
-   "def_rank": 31,
-   "def_teams": 32,
-   "def_ratio": 1.48,
-   "implied": 26.5,
-   "weather": "62F, wind 9mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 0.0,
-   "mult_matchup": 1.2,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 0.0,
-   "adj": 0.0,
-   "trending_adds": 37056,
-   "slot": null,
-   "notes": [
-    "IR (Ankle)"
-   ],
-   "matchup_grade": "A",
-   "ros_value": 0.0,
    "group": "candidate"
   },
   "11584": {
@@ -3954,8 +3915,8 @@
    "def_teams": 32,
    "def_ratio": 0.8,
    "implied": 20.75,
-   "weather": "46F, wind 7mph",
-   "sentiment": 0.297,
+   "weather": "45F, wind 8mph",
+   "sentiment": 0.251,
    "n_articles": 15,
    "headlines": [
     [
@@ -3975,6 +3936,13 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Bucs-Bears game today: Bucky Irving and Tampa Bay Buccaneers visit D'Andre Swift and Chicago Bears at Soldier Field - ABC7 Chicago",
+     "score": 0.38,
+     "source": "ABC7 Chicago",
+     "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQWUxOc0NGYXBIQXY0dGhyd3ExTTVIY1I0U2RXZHRPbkRGMWt2dVoxdENiNXB2YW90NllGVVUyYUl0Mml0YmJ6a0c2X1NtV2xIVndLbW50cVM2VlJYckJoVmMzMmtrbEZTTFVXZTA2d2h6dVAwUWlXQWdfNDM0bmRBalNPeVctWWVza2c3V0pqUVNUNlZWeDFTYWZNeUZORDJUQm9XWHVub2dISTcyOGdNS0k0TjhvNU5SNng5QmdoYVh2T3FVVllhUmU1VW45aHNN0gHWAUFVX3lxTFBFZkdxSzFYUUNZczR0RkJzV2dveU1XQ1FIZG93ZXpCSEtCd0NDaGhvZXpfOFYxdkxGSjZYMWpJY0FqYXJFX01EakRXZGpTc0VFVVBWQVp2WklpM2hta0tlOXpkN1VwLWhrY0syWHlpVklEWDM2VW9vQlhuc01pWXJXTGJTWkkwaVVoU1pLWGttTm1IdTlSb0x4NWpQSXFULVc3a2xCUGp0VXhoelA1S09Td0tGNU9tYnV5ai1kd2YwZ3ZNS0ZybzBZcGp5S3FnRDFJTzRqNEE?oc=5",
+     "published": "2026-11-08T20:28:31+00:00"
+    },
     {
      "title": "Best Bucky Irving Bet for Buccaneers at Bears on Sunday 11/8/26 - DraftKings Network",
      "score": 0.86,
@@ -4039,13 +4007,6 @@
      "published": "2026-11-06T08:00:00+00:00"
     },
     {
-     "title": "Irving and the Buccaneers visit Swift and the Bears in a matchup of the NFL's top rushing teams - Newsday",
-     "score": 0.64,
-     "source": "Newsday",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSWdXTWF0ckFQVThWRFlUUV82X25OVnlhWW1SRHFjVFkyZzhYM3NRU2NWMk9ELU45LVBLaUdrWEdxRVAzNjU3ZUh1MGc1MVVKcWxMdEwtbmZ3dGJtLUdLNW1Pb0VYNFJfM0xBaW5USDE1R2NFenQtSmFrUEx0YjRabDkxZng1a2tIYUE?oc=5",
-     "published": "2026-11-05T20:10:54+00:00"
-    },
-    {
      "title": "Week 9 Running Back Usage Report: Fantasy Football Impact for Bucky Irving, Mike Washington Jr., and More! - Sports Illustrated",
      "score": 0.0,
      "source": "Sports Illustrated",
@@ -4060,6 +4021,13 @@
      "published": "2026-11-04T07:37:39+00:00"
     },
     {
+     "title": "Can Bucky Irving, Buccaneers\u2019 Defense Pull Off Upset of Bears? - Athlon Sports",
+     "score": -0.55,
+     "source": "Athlon Sports",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdFk2VHFyMWFnRUNjWWdZRnFGcnF0VGZRUzVkdG41c1Z6VUxfUHBmelNlcFVrbHNDUHZXOGgzMDVEWTZWN2VRd2ZheDFkY2FNYnl0bWkzQ1RVQzVEOW9rRDgwdVZPRGstMzE1MWpnR2V5TEtVZU1aYk14bHFObFpkRDlFa2pDTXJuX0ZyRldydWpiNms3ei1Iaw?oc=5",
+     "published": "2026-11-04T05:16:20+00:00"
+    },
+    {
      "title": "ESPN NFL analyst has high hopes for Buccaneers RB Bucky Irving - Yardbarker",
      "score": 0.68,
      "source": "Yardbarker",
@@ -4072,21 +4040,14 @@
      "source": "FantasyLife",
      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUW1qdVpwNDR3NHhjd0lmQ3ZUaE9JRWNLNGNSWEp4eHlRS1FvbXhVaXF3S3VScFR0LUt3WG5wXzVTX3l3Sk5rYU5mbHZYVlRId3k2M1hSZHZDSVRxMUFLRHZtcFBXRFRQamQ5Qnp5YmFOUjhGUmVmenhsWTI3Qk00aWhoUmVscXFiVm1keUNDYm1yQQ?oc=5",
      "published": "2026-11-03T16:25:34+00:00"
-    },
-    {
-     "title": "Bucky Irving looks like a top 5 running back, Sean Tucker needs reps - Yahoo Sports",
-     "score": 0.77,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Za2ZMT01OSlNyWUU4cTU5MXR3S1V2WUVZcUVOY05GNHVmWTNnY2FiaTBSQW5nc0xCTzFrdUNOQTJTY1NHbFZMRDhkVmF4RkJRb0g1QlJTc3Vpb3gxUjBXUzRtZlZhQ1ZKVFhKMWFoTmtQcHVoWElNREdGakNDUQ?oc=5",
-     "published": "2026-11-03T15:55:18+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.86,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.024,
+   "mult_sentiment": 1.02,
    "base": 17.524,
-   "adj": 15.43,
+   "adj": 15.37,
    "trending_adds": 0,
    "slot": "RB",
    "notes": [],
@@ -4111,33 +4072,47 @@
    "def_teams": 32,
    "def_ratio": 0.87,
    "implied": 20.75,
-   "weather": "67F, wind 8mph",
-   "sentiment": 0.032,
+   "weather": "68F, wind 6mph",
+   "sentiment": -0.034,
    "n_articles": 15,
    "headlines": [
+    [
+     "Darren Waller, Jalen Coker Among Panthers' Winners, Losers From Disappointing Loss to Broncos - Athlon Sports",
+     -0.89,
+     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYWNYN29NOURpQ1N6dm5hQlJlMWNPeUNGVFlLU1hZdkcxTXJRaDNEZmIteU9wTERPZnBIS1ZhdFc5UTRtaUt5YkZSY1dack14SURkNnNBUk9SYnA2V0JvMlZZUThLUEM5eElOS0xCYV9UX3VTdGwyWFpMblk2YUhPaXpSa0x1RURhbWppQlc2LXpCUVhMNnpLY1BBb2dqMDIyVE9ZUXMwTG5YOTIzUExLQU0wZC1WblZFWXZqZlVQdjVqZ2xpbFVfeWM0aXJGdXVtNU1R?oc=5"
+    ],
     [
      "Jalen Coker Fantasy Trade Value (Standard) - FantasyPros",
      0.59,
      "https://news.google.com/rss/articles/CBMihAFBVV95cUxPekFOYVdMM0Y3dzBobEwzcVk5MGpoM0szZmlJRWdnTHhvdlk5OGNDRzRINmMyQTVnWmV6UGdOQkh2NzJXZDhRUkdUODIwRWd2eEdpT1hEdDlFRHlPamRnMkZTOFNOS051aVEyYTNSeGJIU2FzVUZmNVluRFpHaEtYSmx2NzY?oc=5"
     ],
     [
-     "Jalen Coker Stats, News, Video, Bio, Highlights on TSN - TSN",
+     "Jalen Coker or Seth McGowan - FantasySP",
      0.0,
-     "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBoSXA0VDZVaDJCSGNVVWZNcW50RE9ETnc0RTROQVpmM1I3amFpV2I5eXhPUi1xUVlvLS1KelJSWThMTU9MSDYtYWZrTW9Cc2dWMVQ1VjB4bFJUWTRhUFE?oc=5"
-    ],
-    [
-     "Malik Nabers or Jalen Coker - FantasySP",
-     0.0,
-     "https://news.google.com/rss/articles/CBMiekFVX3lxTE1zcHRaYU1iTGZBekNJTTBzTmJENFVqQTNFWEt4QTdDZmFxMTJ2SFBpal90Ukg3WXU4NUl0M21BZW1fNDFIZjlIeTgtM2pXZzhCdE1ZVGpMU1NsZ0dWSVhmODItdHUyNGFDLXZWelVPcnZEbHBGNGVmT2hR?oc=5"
+     "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGeE9CWVVNUzhDdnlLcUFiMkI3RGxVNkh1Zm5LU0xONlkzRmRDT2toSzhWb2ltZmwtVlZZaWY2RHVscWt5dHZDa0NLM0hEWEU2NGtnQXg4Tm1VNEtYTEhqR1NSNEtjdGFGbGh2QWZjWlRkeUstMEVKX3F3?oc=5"
     ]
    ],
    "articles": [
     {
-     "title": "Jalen Coker Stats, News, Video, Bio, Highlights on TSN - TSN",
+     "title": "Darren Waller, Jalen Coker Among Panthers' Winners, Losers From Disappointing Loss to Broncos - Athlon Sports",
+     "score": -0.89,
+     "source": "Athlon Sports",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOYWNYN29NOURpQ1N6dm5hQlJlMWNPeUNGVFlLU1hZdkcxTXJRaDNEZmIteU9wTERPZnBIS1ZhdFc5UTRtaUt5YkZSY1dack14SURkNnNBUk9SYnA2V0JvMlZZUThLUEM5eElOS0xCYV9UX3VTdGwyWFpMblk2YUhPaXpSa0x1RURhbWppQlc2LXpCUVhMNnpLY1BBb2dqMDIyVE9ZUXMwTG5YOTIzUExLQU0wZC1WblZFWXZqZlVQdjVqZ2xpbFVfeWM0aXJGdXVtNU1R?oc=5",
+     "published": "2026-11-08T22:35:04+00:00"
+    },
+    {
+     "title": "Jalen Coker or Seth McGowan - FantasySP",
      "score": 0.0,
-     "source": "TSN",
-     "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBoSXA0VDZVaDJCSGNVVWZNcW50RE9ETnc0RTROQVpmM1I3amFpV2I5eXhPUi1xUVlvLS1KelJSWThMTU9MSDYtYWZrTW9Cc2dWMVQ1VjB4bFJUWTRhUFE?oc=5",
-     "published": "2026-11-08T11:18:03+00:00"
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBGeE9CWVVNUzhDdnlLcUFiMkI3RGxVNkh1Zm5LU0xONlkzRmRDT2toSzhWb2ltZmwtVlZZaWY2RHVscWt5dHZDa0NLM0hEWEU2NGtnQXg4Tm1VNEtYTEhqR1NSNEtjdGFGbGh2QWZjWlRkeUstMEVKX3F3?oc=5",
+     "published": "2026-11-08T16:30:46+00:00"
+    },
+    {
+     "title": "Amon-Ra St. Brown or Jalen Coker | Who Should I Start Week 9 - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FenN5MDZKSFVuMWlYU1l2d2VlRW9ya1NuRVhxNnF2b0dkaWMzbVpvb2lmU2J3TFFtd3JyOW55UkhjZHhJQTVpZW1VVFJSdC0yTENDRWNMYk83dG9HSnRnVFZoSkNqZVJNY1pKdHFlX0NkNlBMUGZIamJOVmJQa1U?oc=5",
+     "published": "2026-11-08T16:13:57+00:00"
     },
     {
      "title": "Malik Nabers or Jalen Coker - FantasySP",
@@ -4222,28 +4197,14 @@
      "source": "FantasySP",
      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1TcDVyZTh4cmhsblNKcXY5WEgzTEhOV2JxTERmYmdYT1UzeUMwVFlicVRVUG80bG55S1NLTjVydGYyLS1LcFlSUWwwd3JQT21EUmJjY2x2MUdSQXZ5RHotRFNOd25wZUYwYlZ4MDdhdnRTMmlRbFpr?oc=5",
      "published": "2026-11-06T19:09:57+00:00"
-    },
-    {
-     "title": "Elijah Mitchell or Jalen Coker - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1oTTRmb3htRzNPYVFaRUZIX3RNZkt1SkxoejRaQnl2UXJxZnN5UzE4Uk1vc05Ka1VCSXpOTlJpbnIyVEJsdUZraElFNVFZdjJrcXJ4ZWtBb1AyckNYUDVLRHNUWmM1MFA3VF9PM1UzNGdtODRETDl3bTQ1Yl9Ldw?oc=5",
-     "published": "2026-11-06T17:02:01+00:00"
-    },
-    {
-     "title": "Baker Mayfield or Jalen Coker | Who Should I Start Week 9 - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5SMFZza3JRd2FhLS1oajhyZDEzRmJXZldqUUdtYlhzVVJCT25RZ1ktNW1SZGNDV3I0Xzc2WXhWbzB1SklhM2M2bGFKZUloRUNHcnRkUF9rX3ViTjFHTDRienFBTnhjOTV3ZVZRdno4SGh4TlJBUXZDNXhGQ2E?oc=5",
-     "published": "2026-11-06T16:31:25+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.893,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.003,
+   "mult_sentiment": 0.997,
    "base": 12.353,
-   "adj": 11.06,
+   "adj": 11.0,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -4268,8 +4229,8 @@
    "def_teams": 32,
    "def_ratio": 1.07,
    "implied": 20.75,
-   "weather": "48F, wind 7mph",
-   "sentiment": 0.083,
+   "weather": "49F, wind 7mph",
+   "sentiment": 0.207,
    "n_articles": 15,
    "headlines": [
     [
@@ -4283,12 +4244,40 @@
      "https://news.google.com/rss/articles/CBMixAFBVV95cUxPeDBFbmpwc0xoZnNHdi1FVmlvLUQtMnRfUWdldFg3d1drcG1UV0l0X2pxOHJJVjd1TEZvQ1M1ZXJxR0Znay14dXdNSENHNkllaFVIelhYLUJFX0sxbVp3MEl6bXZIdEJ4ZGhjQi1BLU9vdExtR3lUZFc3YUo0cXFpWUJzQkNLd2hIb2hfZHFya0hycm5zT0ZvQlJ4Y3Myek9nUHM1VWJDemxodTNONG9yOFE2YTNualVaaFlXRTZiZ1g0eENS?oc=5"
     ],
     [
-     "Green Bay's Matthew Golden is asserting himself as one of the best deep ball targets in the NFL - Dairyland Express",
+     "Jordan Love finds Matthew Golden for five-yard TD, extending Packers' lead over Patriots | NFL Highlights - FOX Sports",
      0.86,
-     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQdGhHWjdGWVllOEJXRFkxalpMdXR0SXNPYklib0U2ZTlJS25HUmVMajF2UnJFVl9nSkJSRTRrTVBQNzd5Uk9zNGdXUVV6VXdjZko3bmV4NXI4QnFmRmtqY1JHOGxyTW51cC1Ydk5FeTlPOEtYVTFzMVVDNFo2Q2FUZlRlMnZLcFY3UTZ4STBvaUZtRXZ4cy1vYm1iS3ZLbE41eUhud3FaVmVSUXBmVHQ0M1gxOVVMSzllZy1rUnU4MUFfdmFycjhISlZDNkp5bFJJaGo0?oc=5"
+     "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0TXJyM2ZyM1E0aHhrVkRMN1VIOXJLY3IwRXNZUER0dFR3a3FSZHlOdnVzd3FiMzdNV1BxTDBZSFpsUzhNalV2bXQxZU5uQ0xYY29QZjQyLTNhdm8tVzZzZURn?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Matthew Golden sets career high for receiving yards in a game in first half against Patriots",
+     "score": 0.3,
+     "source": "profootballtalk.nbcsports.com",
+     "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/matthew-golden-sets-career-high-for-receiving-yards-in-a-game-in-first-half-against-patriots",
+     "published": "2026-11-08T22:48:21+00:00"
+    },
+    {
+     "title": "Matthew Golden's 5-yard TD grab elevates Packers' lead to 13-0 vs. Patriots - NFL.com",
+     "score": 0.0,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPay1wZVUzV0JnaExYU3RRRkZGd1dicXNERnpaamdSdjBjRjFvS09LbzV1b0xyRjhrb1RzWnNiSDE3UlhxNHJHdkhqWnVDbmQtRnp0ZzRuMDlLTGtVcHFDWEx0SWRrSXRmLWRYT1lYbFNwb2lQTVVRb1lqaDVxUGdBRjZ4WURlMHBfWHR4dUZwTXItMWQ1aUhoZl90bnBtMk4tekE?oc=5",
+     "published": "2026-11-08T22:20:56+00:00"
+    },
+    {
+     "title": "Jordan Love's 100th career touchdown pass goes to Matthew Golden - Yahoo Sports",
+     "score": 0.61,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOZHRreE9FVUwwZlRVcE1nUHdBd0I3QktETUM0OXlKYUxRTkpXOVFWY0FQNWZvVWNpNUNDTGFld1VXb1BQX1RwM2VhakFYN29IWW1WSGQxcUJZejRiUV9LOURoNVJMemZPVk1VbUR1UGhOZllsRTd5MGZUV2dKT2NPX1JDdE9lamFvU1BRUQ?oc=5",
+     "published": "2026-11-08T21:52:40+00:00"
+    },
+    {
+     "title": "Jordan Love finds Matthew Golden for five-yard TD, extending Packers' lead over Patriots | NFL Highlights - FOX Sports",
+     "score": 0.86,
+     "source": "FOX Sports",
+     "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB0TXJyM2ZyM1E0aHhrVkRMN1VIOXJLY3IwRXNZUER0dFR3a3FSZHlOdnVzd3FiMzdNV1BxTDBZSFpsUzhNalV2bXQxZU5uQ0xYY29QZjQyLTNhdm8tVzZzZURn?oc=5",
+     "published": "2026-11-08T21:51:55+00:00"
+    },
     {
      "title": "Gimme Him: Matthew Golden would help depleted Patriots WR room - Yahoo Sports",
      "score": 0.66,
@@ -4365,42 +4354,14 @@
      "source": "RotoBaller",
      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa1dXbWJ0Mk9PeXVmeDdYSlR5TUhiUjZUcTRwMW9WZzRpbXdMY3k0bmc3YjE0YVlWLTNVRDMyU25iZGdmZWxlejkyTnFKRWExWmdneEhuSFBIMi1MenNFSlRyeTgyZmJvT0h6SlczQXZObm9CZWh5QlN0b0hKdjlvbi0xRi1wcW1lYUc5a3F1RmF6UHVDNEJfOVltT3RyeVFmNUY4RjdnTVJIV0ZGQnc?oc=5",
      "published": "2026-11-06T21:32:09+00:00"
-    },
-    {
-     "title": "Lamb, JSN, Golden lead Week 9 fantasy football wide receiver rankings - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9xSzVwVmxXNWQtaFlndHJvYVd0b203NkZ5TExKbGtMNEFRMDlyTHhub0tYRThQSnFaSWdMY1lUVVEzdEtrUHJRaGkzaTNHaTlPR3JqQUR5bHlMbTBkZVM0N1VYcmNvVlFJckNCcy15YnhDeVcwUEM2ZVliWm9FeWs?oc=5",
-     "published": "2026-11-06T17:48:36+00:00"
-    },
-    {
-     "title": "Week 9 WR/CB Matchups For Fantasy Football: Luther Burden, Matthew Golden & More - FantasyLife",
-     "score": -0.7,
-     "source": "FantasyLife",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPYk5jLXdUZUlKOTktM3VWaXpnaFRQQ2pqbU9OaThwYW9MREVhSXlrVVFUWFU3dWtLOTJ3TG5Zb240VjZTSEVmVzhUM1JwdVpDLUd5UjZiNWJaeVdLYmdBdXRUN1NoUkxRV0ZjZjhIWDByamJOTVBTUEFRWFZpZTNZOHBqdk1hWTZvQU5sSEhhb1k?oc=5",
-     "published": "2026-11-06T09:00:00+00:00"
-    },
-    {
-     "title": "Patriots\u2019 Christian Gonzalez embracing \u2018fun challenge\u2019 of shutting down Christian Watson, Matthew Golden - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdUltcThrX1ZsX1NkdGRhNVpzZEE1SGhDOWNzc3gxbFcwNkdpSXJBeXR5akRQRDVLU3BmQWp1dVFDZWdiUDdSTkNkcFFPTVRfVXpqVzJpNjk2a29YVElZeDVpWXB0anVnYmhMMkRnLXBYZ3BBVnF6bm1YTzA0V1N3T01xU1FkZnRsNjk0WXJlMXJBQ1F6?oc=5",
-     "published": "2026-11-06T00:03:00+00:00"
-    },
-    {
-     "title": "Week 9 Matthew Golden Fantasy Start or Sit 2026 - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQV3Z6bzM2N0QyN0VTVWxFSldsLVJ0cEZKa0k2YjlxNHc5QUp4NEJDOC1kcThvMWZvSjJ2aDVpRDJDUGRMbGc5OHRFckZQNlJrN1VJNjF2bl9XWmphN2FIVUZjdHFpbmNRQmZ0TTZLc1Mzd3FGbm9GVUtoZzdKTEFCemFB?oc=5",
-     "published": "2026-11-05T16:59:02+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.989,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.007,
+   "mult_sentiment": 1.017,
    "base": 15.742,
-   "adj": 15.68,
+   "adj": 15.83,
    "trending_adds": 0,
    "slot": "WR",
    "notes": [],
@@ -4418,7 +4379,7 @@
    "on_bye": false,
    "injury_status": null,
    "injury_detail": null,
-   "proj": 12.15,
+   "proj": 12.29,
    "recent_avg": 15.9,
    "recent_games": 3,
    "def_rank": 21,
@@ -4426,7 +4387,7 @@
    "def_ratio": 1.04,
    "implied": 21.5,
    "weather": "65F, wind 6mph",
-   "sentiment": 0.116,
+   "sentiment": 0.099,
    "n_articles": 15,
    "headlines": [
     [
@@ -4435,9 +4396,9 @@
      "https://news.google.com/rss/articles/CBMikwFBVV95cUxOaTVkMmVQY3pFczNiZXc3Y2hSbzFEa0VCeERtTEFHbGpNRTdRX0p5N0ZicFlWVTVqTnBZOG5GeERpeFVNYWN2NXlZTmZXanNwallFY3FHUzRpc3drdkk2UndOYWpiTzB4N2RiSmtmRWg0djlBeVMzLUE1c1pfa2czU0tmajY3d182cVJ3b3g3bVdwSzA?oc=5"
     ],
     [
-     "Raiders Hoping Ashton Jeanty's Demotion Is 'Wake-Up Call' - Yahoo Sports",
+     "Raiders Hoping Ashton Jeanty's Demotion Is 'Wake-Up Call' - roundtable.io",
      0.68,
-     "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSFBFR1N5elU5UGV4MHpqbFZpY2dBRnNQY0M3SUhkYURabUhGTGFTZGZtN0hyakYtYThQQ3luNjFwNGhVRDY2SnF1dXFETXVEMHFSLXhYeWdNNHlDUHZuZHROeW91aTdxNUNDLTI5S0VvWFFqbkpHTmZ5dE96QkJ0ZEliQ1NLVzJ6Uzg4cS0yMVk?oc=5"
+     "https://news.google.com/rss/articles/CBMiogFBVV95cUxNN1NySllDbnhUVTF1NC1DcnI4eEppczVneHdqVElHWDdJbnVjZnFGUzZ1Z2FpUDdxd3p6QXRuT05JNHdTYXV1Z3pRYm5jX0xPc3NGVlppTC1jNXR1emlscnpVR0JfY3RIVEFzX3lrY3BSS2txbC1CMTdIYlo4U3lUb3VGQmZvUzU2VXJmRUMzNHpudFBzNV9EY1JseHZHWjRlR0E?oc=5"
     ],
     [
      "NFL Week 9 Touchdown Picks: Willis & Jeanty TD Bets - Lineups",
@@ -4454,13 +4415,6 @@
      "published": "2026-11-08T17:27:45+00:00"
     },
     {
-     "title": "NFL Week 9 odds, Brinson's best bets: Best player props, anytime touchdown scorers picks for Sunday matchups",
-     "score": 0.3,
-     "source": "www.cbssports.com",
-     "link": "https://www.cbssports.com/betting/news/nfl-week-9-odds-brinsons-best-bets-best-player-props-anytime-touchdown-scorers-picks-for-sunday-matchups/",
-     "published": "2026-11-08T16:14:59+00:00"
-    },
-    {
      "title": "Fantasy football start-sit Week 9: Ashton Jeanty, Omarion Hampton, Tyler Allgeier - Yahoo Sports",
      "score": 0.0,
      "source": "Yahoo Sports",
@@ -4468,11 +4422,11 @@
      "published": "2026-11-08T14:37:48+00:00"
     },
     {
-     "title": "Raiders Hoping Ashton Jeanty's Demotion Is 'Wake-Up Call' - Yahoo Sports",
+     "title": "Raiders Hoping Ashton Jeanty's Demotion Is 'Wake-Up Call' - roundtable.io",
      "score": 0.68,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSFBFR1N5elU5UGV4MHpqbFZpY2dBRnNQY0M3SUhkYURabUhGTGFTZGZtN0hyakYtYThQQ3luNjFwNGhVRDY2SnF1dXFETXVEMHFSLXhYeWdNNHlDUHZuZHROeW91aTdxNUNDLTI5S0VvWFFqbkpHTmZ5dE96QkJ0ZEliQ1NLVzJ6Uzg4cS0yMVk?oc=5",
-     "published": "2026-11-08T12:30:29+00:00"
+     "source": "roundtable.io",
+     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNN1NySllDbnhUVTF1NC1DcnI4eEppczVneHdqVElHWDdJbnVjZnFGUzZ1Z2FpUDdxd3p6QXRuT05JNHdTYXV1Z3pRYm5jX0xPc3NGVlppTC1jNXR1emlscnpVR0JfY3RIVEFzX3lrY3BSS2txbC1CMTdIYlo4U3lUb3VGQmZvUzU2VXJmRUMzNHpudFBzNV9EY1JseHZHWjRlR0E?oc=5",
+     "published": "2026-11-08T12:35:40+00:00"
     },
     {
      "title": "NFL Week 9 Touchdown Picks: Willis & Jeanty TD Bets - Lineups",
@@ -4550,19 +4504,26 @@
      "source": "Yahoo Sports",
      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQVzdicTd3N000Sk5iaF9wcGtab084QUszNGdPS2hSdGNkakt1RjRJS19OSVZPb1VGa3BES1pBNmpfSDBnd2tqa1VLR3pDOVRrZVdRWjBsOW9pSFoxRFNzTjU1Wms0cExBOGhBeERuV25xeUNZb1lsX3Y3bW1TMnh1Y2k2bUo3MXc?oc=5",
      "published": "2026-11-06T23:35:00+00:00"
+    },
+    {
+     "title": "Why Ashton Jeanty is Primed for a Bounce Back Week vs 49ers - Raiders Beat",
+     "score": 0.0,
+     "source": "Raiders Beat",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZTkxZTVQMGtrZ2xlbFlYeVJzc0dwdWQwZV9lRE9vQncyZ0hNbW1XLVZEWDRRMThyYk9zNXRfbE1Tb28xbXZiZ0dGZ1d5U25rc0gtV1FwM1JNX1FNQ3lZWkoxazBiSXZXR3VsVUxrSk9jXzA1TDE0MkFIdm9rSXlGcE9mdENkT2dMTVRTMVhPYmJyUQ?oc=5",
+     "published": "2026-11-06T18:48:59+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.991,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.009,
-   "base": 13.274999999999999,
-   "adj": 13.27,
+   "mult_sentiment": 1.008,
+   "base": 13.372999999999998,
+   "adj": 13.36,
    "trending_adds": 0,
    "slot": "FLEX",
    "notes": [],
    "matchup_grade": "B",
-   "ros_value": 14.03,
+   "ros_value": 14.09,
    "group": "roster"
   },
   "13346": {
@@ -4583,7 +4544,7 @@
    "def_ratio": 0.95,
    "implied": 19.5,
    "weather": "Indoors",
-   "sentiment": -0.037,
+   "sentiment": -0.069,
    "n_articles": 15,
    "headlines": [
     [
@@ -4592,37 +4553,37 @@
      "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOYjBTYWNJV3paUkIybzBBdTNlNDZWcGVuTFJVbW9GOWxGakxFN0sweG9vWkphZEI3anVTWFpGNlZld0tBQ00xTkRMUXZPQlZCNnZrZUxuMndFelctRGxqRzBNN2tSU1d2SU5udkhjOGo2YXY4cXFlTl9lT3VyeExaV3AxajM2SV9l?oc=5"
     ],
     [
+     "Sanders hits it DEEP: Browns rookie WR Denzel Boston hauls in a bomb from Shedeur Sanders - 247Sports",
+     -0.75,
+     "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSTVKUWtJa1c0WjRjb2xnTkRjcHA4RExDa1Z4cXpfTk1aNU1mY05PbllSOFFIMTVhOE9EZi1nSmc4SXdTOXZZZWlqX0tKVWEzeTd5RU1zMjZpcXF5bzJtc1RjYk9EY3VQMm9PXzlHMGdEbDhGUnV1Nk9kLWFPelM2Rk5qTjEyRmRlSWhvYjZMUG9WNGRmQk1wZkc5T3V1V1lZRWt1dHNudFZxV2NoQ1dEQmdVc0ZIRHk1T29NQzZiOUkzcVJQZWNwZVpocUxDYlhjblZneWI4Ul9CYVVUOTRV?oc=5"
+    ],
+    [
      "Denzel Boston Cleared for Sunday - Fantasy Footballers Podcast",
      0.64,
      "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOdzlXOHo0WWVkaW5ab2pRclFRa3dhMHk3Y0pyOWhrTTNwMk5FYm9jVUozU0RGdjlnZ3JSX1dxcGNaajUweFFzbGNfcVJYLW1KaVU5QjhNMVNhS1lHSkZSOHBoQ2pzWldMdDAyNXpIQ0EzSWpSZ1Z6Um1MdHk0ZVZuQk1DNmpucENkQ1JR?oc=5"
-    ],
-    [
-     "Denzel Boston a limited participant Thursday - Yahoo Sports",
-     -0.62,
-     "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZ1RvSEZ4VkFEM3dEMmtXZFgtY1FMMW53ZTY5T3BkNmFvWHowdDlNc2JFcHhYZXpaQXBIWHMwdFIzWTdQdTVlbGVLTU5LZTVnUnN5dUx2LTlXZ2U3b19lbjA2LXpqdTkzeFpSWFpVR1Fka25VVDhLak1XQ0tIaWpBdlpWMXJCcldYN3NtZTVjZVg0aGs2TlE?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Denzel Boston's Incredible Catch Over Kool-Aid McKinstry Stream of National Football League - CBS Sports",
+     "score": 0.0,
+     "source": "CBS Sports",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPLUo3bElMWmlrTU83MkNpXzZoRFVRc2JFeWgzVmhLam9CaHRoSmwzQXZLenFNMDRZV29IaVA0WDdmTEFtdURCM0xPNVdsR3hxMllzNTJmaFFWeGpBZ0Q1bF91VGJ4aUlYR3Y4THdHVnZ4SGg1cEc0MVA1QVl1cUF2ckFuZERVUkFaY2YxSExiRHN0V1JuSndmTXNORXNkWm5GbEdR?oc=5",
+     "published": "2026-11-08T21:53:39+00:00"
+    },
+    {
+     "title": "Sanders hits it DEEP: Browns rookie WR Denzel Boston hauls in a bomb from Shedeur Sanders - 247Sports",
+     "score": -0.75,
+     "source": "247Sports",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSTVKUWtJa1c0WjRjb2xnTkRjcHA4RExDa1Z4cXpfTk1aNU1mY05PbllSOFFIMTVhOE9EZi1nSmc4SXdTOXZZZWlqX0tKVWEzeTd5RU1zMjZpcXF5bzJtc1RjYk9EY3VQMm9PXzlHMGdEbDhGUnV1Nk9kLWFPelM2Rk5qTjEyRmRlSWhvYjZMUG9WNGRmQk1wZkc5T3V1V1lZRWt1dHNudFZxV2NoQ1dEQmdVc0ZIRHk1T29NQzZiOUkzcVJQZWNwZVpocUxDYlhjblZneWI4Ul9CYVVUOTRV?oc=5",
+     "published": "2026-11-08T19:58:00+00:00"
+    },
     {
      "title": "Browns injury update: Is Denzel Boston playing in Week 9? - Yahoo Sports",
      "score": -0.37,
      "source": "Yahoo Sports",
      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYmltbUxuMkZqTmhSQVN0NUNRWERYdG80Z1g2d0l2S242NWozbGUyOTBDb0d1TU1zcEdsN19wQm9oUzVRNGNMMnhwTHRkMWdEUlQzRXA2WWVaTlpxbGlvRDdscklheUxWc3gxNHdibmVpZmVZdElfZzMzWlRjVGpNRl9SSkpHR0pIYTgyaA?oc=5",
-     "published": "2026-11-08T15:22:39+00:00"
-    },
-    {
-     "title": "Denzel Boston or Blake Corum | Who Should I Start Week 9 - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE84bnAxeHNMTDd4eTJKUXFRakRUV093QWxRVmN6SWtwNXhuZE1aYlU3ZmRNMmpySXpuOHE1YUl0ZWYtT1JrZm1wUlNSdGVxT2I3dDIzQ1FEamlJLWFvdWpxdzZlaVpCajlncFFjX3B3UUNIQnh1RVlndE5YQQ?oc=5",
-     "published": "2026-11-07T17:10:41+00:00"
-    },
-    {
-     "title": "Denzel Boston or Bucky Irving - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5SUnd5UkRHWjIydnhkX2xmcFpzR2RWQkkzWHlvbUJHUXg5bFJzMGdPX29ra05zUmppMk1XYllIU0dzZlhnYU13azV6djJwd2hVMHlIS3lrX3ZCMm1rX3I0d2w2eGE0WncwTnBOTnVJRXRXUUdWazRYYUViUzg?oc=5",
-     "published": "2026-11-07T16:30:11+00:00"
+     "published": "2026-11-08T15:16:07+00:00"
     },
     {
      "title": "Browns\u2019 Denzel Boston Gets Candid About What He Loves About Shedeur Sanders - Yahoo Sports",
@@ -4681,6 +4642,13 @@
      "published": "2026-11-06T20:01:49+00:00"
     },
     {
+     "title": "Can't-Miss Play: Shedeur Sanders dials launch codes to Denzel Boston for 60-yard gain in New Orleans - Cleveland Browns",
+     "score": 0.58,
+     "source": "Cleveland Browns",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNSGpDci1VY09SdTB1eXlLUlVqMFZ0X0RHeFc1ZnJaUmNXQXVjZFhDajNTdHpZMUYzRDdFaXhSd0RmYV9VbERmUTAwYkw4aWY0X0lPZDY1c2M4Zmd2ajhKdDAyWkd4TGdIaEthVkJpY3Qzb2ExbGpHUDY5RTVxTnlRMFdaRjJmOGFVeDdvS2JSRVlCUklKZ1RWRzBBVktoaU5SdmhmU3FzU19zRmVSaXhuR3VZd3NTeUh0cmRKN2FLeGFlWGU2eXRkM2tYaGJZczhzbVlV?oc=5",
+     "published": "2026-11-06T08:00:00+00:00"
+    },
+    {
      "title": "Denzel Boston a limited participant Thursday - Yahoo Sports",
      "score": -0.62,
      "source": "Yahoo Sports",
@@ -4695,13 +4663,6 @@
      "published": "2026-11-05T22:16:48+00:00"
     },
     {
-     "title": "Denzel Boston or Jameson Williams: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPeU9qS3B1SEhmMUw2NTdyOTF0SFVObi1kT01UWURUVXNQMUlhUWZnVnFrX1VBQXZpMlBtMmNfWl9iNGZ3Q05KYXRSUExVRlYzMEEwMXFGTHprb2gweFBwUEc2N1hfN2VQTndfX21BQ3BoYlN4M3ZRWFh6MFhfWElZSDN0blAyWUFMNnlQTnUxMk9iSjJSQ3RTakE5SkZXU0I1TFdvN2tkVDZNWUt6MFg3cXhybWw0YUdN?oc=5",
-     "published": "2026-11-05T21:34:12+00:00"
-    },
-    {
      "title": "Browns' Denzel Boston: Remains limited Thursday - CBS Sports",
      "score": -0.42,
      "source": "CBS Sports",
@@ -4712,9 +4673,9 @@
    "mult_injury": 1.0,
    "mult_matchup": 0.905,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.997,
+   "mult_sentiment": 0.994,
    "base": 9.315999999999999,
-   "adj": 8.41,
+   "adj": 8.38,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -4739,8 +4700,8 @@
    "def_teams": 32,
    "def_ratio": 1.13,
    "implied": 23.5,
-   "weather": "57F, wind 12mph",
-   "sentiment": 0.134,
+   "weather": "59F, wind 12mph",
+   "sentiment": 0.034,
    "n_articles": 15,
    "headlines": [
     [
@@ -4749,17 +4710,24 @@
      "https://news.google.com/rss/articles/CBMitwFBVV95cUxPUGRwLVRqZ0FYQ2YyQ09HS1ZBYm1KZ0I0NW1jVUJSY1JhWjd3MXNNY0NRRnM2MWxQMWhUeVVGc2ZlWFdOSk5XSV9WX3ZyOFNkRlFzNFNicVhwYU1fV3BueGxFelZCRk5HTzducXUyZjM5d2dxdlRreUEtUFR1eGtpbjFzbHBFYm00M1RnanBVRmxzeVM1NXQ0RU84S19vYUJBWnRHS05NSFNpR3pEUHVZNEZROXV1eHc?oc=5"
     ],
     [
-     "Who Should I Start for Fantasy Football Week 9? Braelon Allen, Breece Hall, Jaylen Waddle, DeVaughn Vele, Ashton Jeanty, Keenan Allen, Jameson Williams, Emeka Egbuka, JK Dobbins - RotoBaller",
-     0.64,
-     "https://news.google.com/rss/articles/CBMilAJBVV95cUxOaGJNUTRsek9HYkpZYmdteThpMW1JaGZoX0d5bWx5c1NRTXVCZF9Ub0dKdHMyWXNPUTA2MFNUX0p0RTRQNmxVWmlYVGJacThNdzBlNl93QmdNLVZBRGxhMXdLcmxzXzZySFdOd2VuRENFYzJoSmtQNTlIU2FhUUhUU094amtteG1kUkNSbDVzOFBQd09EZVN0bWNmLW41S1NKQ0hxSHU0SGxueUpPem1KU0VLbHNrajZoc3MtUUtqLUdiQTZEZ2Z1bTlUNFpETUIwMTJ1RGJ1SHJuWHljSkdjTWUxQlpFTGRtRGNmVjJ6MkJsS2R0NlVDbUJpTVUwTDlGRUZ0cF9zVmJSVGhuQTI3NC1MRjk?oc=5"
-    ],
-    [
      "Keenan Allen practices full, ready for Week 9 - Yahoo Sports",
      0.61,
      "https://news.google.com/rss/articles/CBMiigFBVV95cUxPbkdFV09yWGd4bGIzX28wZTFhdktMejZBbWdTeWpFMHlxQlFaaDU1U2Y1QkZkazRVTkZHRUdWanAybWk1Zjd5NDFqMjJlQUFNbE9OMnBtUmZaRU9VOFhWMFRKZlZYektibXJ5T0FMbUh6aDNWVGdrd1h1YXcwcVVwbnJNbGVYdzRYLXc?oc=5"
+    ],
+    [
+     "Keenan Allen goes 4-26 on eight looks in loss - NBC Sports",
+     -0.56,
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYXBvTVhwNExNTUZ0TUxINmRBbXA2SlAwSW5vOUVCa1R2eS1Mb1I4cExaYVBjOENYNFF1b1U2RkNLNmdib3lVN3ExMEtEOGxoWG1veVBVZkVwWWY4djlMcGphQkYtYU9OTjlwb1NpZkFBTWVRREpabU4wUjRoV3lfdFQxNlV6QlJYU0dpRV9USGRJQnBzM1ZTVUxZOC13allrV1I2THFLenBWdTZ5RFVXWg?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Keenan Allen goes 4-26 on eight looks in loss - NBC Sports",
+     "score": -0.56,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOYXBvTVhwNExNTUZ0TUxINmRBbXA2SlAwSW5vOUVCa1R2eS1Mb1I4cExaYVBjOENYNFF1b1U2RkNLNmdib3lVN3ExMEtEOGxoWG1veVBVZkVwWWY4djlMcGphQkYtYU9OTjlwb1NpZkFBTWVRREpabU4wUjRoV3lfdFQxNlV6QlJYU0dpRV9USGRJQnBzM1ZTVUxZOC13allrV1I2THFLenBWdTZ5RFVXWg?oc=5",
+     "published": "2026-11-08T22:30:04+00:00"
+    },
     {
      "title": "Colts Have Fourth-Round Offer For Josh Downs; Keenan Allen Drawing Interest - ProFootballRumors.com",
      "score": 0.72,
@@ -4796,13 +4764,6 @@
      "published": "2026-11-06T23:54:30+00:00"
     },
     {
-     "title": "Who Should I Start for Fantasy Football Week 9? Braelon Allen, Breece Hall, Jaylen Waddle, DeVaughn Vele, Ashton Jeanty, Keenan Allen, Jameson Williams, Emeka Egbuka, JK Dobbins - RotoBaller",
-     "score": 0.64,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOaGJNUTRsek9HYkpZYmdteThpMW1JaGZoX0d5bWx5c1NRTXVCZF9Ub0dKdHMyWXNPUTA2MFNUX0p0RTRQNmxVWmlYVGJacThNdzBlNl93QmdNLVZBRGxhMXdLcmxzXzZySFdOd2VuRENFYzJoSmtQNTlIU2FhUUhUU094amtteG1kUkNSbDVzOFBQd09EZVN0bWNmLW41S1NKQ0hxSHU0SGxueUpPem1KU0VLbHNrajZoc3MtUUtqLUdiQTZEZ2Z1bTlUNFpETUIwMTJ1RGJ1SHJuWHljSkdjTWUxQlpFTGRtRGNmVjJ6MkJsS2R0NlVDbUJpTVUwTDlGRUZ0cF9zVmJSVGhuQTI3NC1MRjk?oc=5",
-     "published": "2026-11-06T16:20:43+00:00"
-    },
-    {
      "title": "Keenan Allen practiced fully on Thursday - Yahoo Sports",
      "score": 0.0,
      "source": "Yahoo Sports",
@@ -4810,18 +4771,11 @@
      "published": "2026-11-05T21:02:42+00:00"
     },
     {
-     "title": "Week 9 fantasy football WR start-sit: Allen, Addison, Douglas, Vele - The Big Lead",
+     "title": "Best Week 9 WR Waiver Wire Pickups: Top 5 Must-Add Players ft. Keenan Allen - Yahoo Sports",
      "score": 0.0,
-     "source": "The Big Lead",
-     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNX19HRnUtY2ozUG9meHRTZnhtSXpYbW1WVnA4UjZqaHVwTzY1X29seUxwNXVmSHl4eVozZEdzdXItTzlJRzd5TzZTU1RMZEUwWHhSWDVGNUVQTDduRDdJeUdnUW5PNlNUXzR2LXdjQm9HbUs3VlZ0ZFRzb2hBdkEteXJEYktteC03M2hUMlZFMk1fUTFNY3BWVEsweFl5dGY2bW9aMmxwaUFtTjU1azU1Y0wzZURpUzA3WTJNYW5STQ?oc=5",
-     "published": "2026-11-05T14:00:05+00:00"
-    },
-    {
-     "title": "Best Week 9 WR Waiver Wire Pickups: Top 5 Must-Add Players ft. Keenan Allen - AOL.com",
-     "score": 0.0,
-     "source": "AOL.com",
-     "link": "https://news.google.com/rss/articles/CBMic0FVX3lxTE42ckpMZC02a1pTMmxWa3hubk9DMlh5ZzNQbzlnODRYN25MUGpMWGtUMTF4NHJlSWNIZHVQdFNzbjVWZWJaZzdYcnQ2eV9VWnVOcHc3M3ZmLUFfSEpjSmN4d1ZxN2JGcWFPbXVxQXRaRWNzMkE?oc=5",
-     "published": "2026-11-05T07:59:00+00:00"
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0ycHBBdFJ3SDlvM0c4bElZb3dSWDVhT2lFaER3MUJaM3VHSkdOS3V5YnR4VDkzejZjdkIxb3dIWEt4azF5bE5PQ0N6WlVoYy1MamJ4S1g3NHJNX2tGY3pmLUt0WWpPdDJJS2dBcW0yTnZvTXJtdFZ0Wmh3?oc=5",
+     "published": "2026-11-04T22:40:20+00:00"
     },
     {
      "title": "Day off for Keenan Allen - Yahoo Sports",
@@ -4864,15 +4818,22 @@
      "source": "Fantasy Footballers Podcast",
      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPaW16NF9seWhKbmdGODFzM1JHRTNEQU1zeG5BNk1MOHV0bE9HblVrajZPN3RQYlFRSmJkVEFSWmsxak0yaW5MNE1NblFCNmRheGM5RUo0Nlo2ZU1HeFVtY2ZuWVp5ZlI3S3c0aEVEMThpQngzZU9BZ25fa1pjZmNmbkROZElzOEZBbHU5X1lQcm1yWFcwM09DTEhSdw?oc=5",
      "published": "2026-11-02T04:06:14+00:00"
+    },
+    {
+     "title": "Keenan Allen totals seven grabs in Week 8 vs. Jaguars - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQLXNUaEtzd1BycWJha2VselFQeXVsWXR5ay1ZdFpTMFdXOHpaYlpqOHBjZV8wYWVITWVQWnl5TFVaTlkwREkzYUNIYkZ1RUlPRUpQS0xLbkkwMERPQTdaWlZ6M290bnNkN1ZzZVVIZzVzSjBFTDAwUE9pSS12cnhWTWx4MzlDQTg?oc=5",
+     "published": "2026-11-02T02:17:00+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.082,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.011,
+   "mult_sentiment": 1.003,
    "base": 11.552,
-   "adj": 12.64,
-   "trending_adds": 76460,
+   "adj": 12.54,
+   "trending_adds": 69116,
    "slot": "WR",
    "notes": [],
    "matchup_grade": "A",
@@ -4896,8 +4857,8 @@
    "def_teams": 32,
    "def_ratio": 1.07,
    "implied": 24.0,
-   "weather": "56F, wind 8mph",
-   "sentiment": -0.21,
+   "weather": "56F, wind 9mph",
+   "sentiment": -0.206,
    "n_articles": 6,
    "headlines": [
     [
@@ -4953,19 +4914,19 @@
      "published": "2026-11-03T03:45:12+00:00"
     },
     {
-     "title": "Deion Burks or Jason Myers: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "title": "Blake Grupe or Brayden Narveson or Cairo Santos or Jason Myers: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
      "score": 0.0,
      "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbnRzRzlHc0hQLVBqd2Nhd3N5SzFIU3ZFTUFaVHFzZDYwQS1YSmxEVTE5Z09UaDV2MHRCTXFjdUZRTXI3WWd0SThWWUxDOHpVck9yZTc4SjAxUF9RTi1IbXZkU2RDbnZCVG1QZEwwbE8tbllFdmNCUUsza2NiM1RSUmFlYnQtREttQURRT1hQN2RnUnFYdzY4NF9Ud2VjWDdJRmhURWpzOWVEY21HSGNv?oc=5",
-     "published": "2026-11-01T21:44:31+00:00"
+     "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPYjJwejNEeVNNU3ZZdTNXaVBpRV9SQjY5NHhzZlV0LVZaTEFlY2tSUVhVd29ldGxpOUw0YVUtNE0zWi1GYzB2RE9Wb29JS1poQnlMQmpyTVNfUTM4OG5hcm00TklGaVlNZkNlQnpReWdrUHdGcnp0d2RPVDhCalZ4MVM3Y0ptdHVqZ2ZTWHdKZjRuZlVzMDMtT3lyRElqV1pOLW9fOHpSLVBIYWxRM01sRHhjLUF2SEwwZHQyZHZCeklsMTM5MVFoTWhfaHdFcHB6bEY2eW1NUQ?oc=5",
+     "published": "2026-11-02T15:23:53+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.063,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.983,
+   "mult_sentiment": 0.984,
    "base": 7.724,
-   "adj": 8.07,
+   "adj": 8.08,
    "trending_adds": 0,
    "slot": "K",
    "notes": [],
@@ -4990,14 +4951,14 @@
    "def_teams": 32,
    "def_ratio": 1.2,
    "implied": 28.0,
-   "weather": "84F, wind 5mph",
-   "sentiment": 0.165,
+   "weather": "84F, wind 6mph",
+   "sentiment": 0.157,
    "n_articles": 15,
    "headlines": [
     [
-     "\u201cSo Much Bigger Than Just Football\u201d: Jared Goff Says the Lions Will Honor Jack Campbell by Chasing a Fourth Straight Win This Week - Athlon Sports",
-     0.95,
-     "https://news.google.com/rss/articles/CBMiigFBVV95cUxPU3lGeWhNdVhkUzE5djdjMXNCVXlyNVlIb3QtUXJCdy1UVFRmQjdVekNVRXRNMVlUakRzQXlDXzhSTlR0bFAwcDltdEpjTDJVRU56c3VxZFZDM1QydmM4cVc0eTB6REpRVVhtaElNT1c4cHlLWVFPT0ExXzVzSmlDNDRfdHpwTHRJY0E?oc=5"
+     "Jared Goff's best plays from 170-yard game vs. Dolphins | Week 9 - NFL.com",
+     0.91,
+     "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMjRjYUtrSU44SmFKaGl5ZmpoTnoteVJkMThvLVE4eDNOdjJKWGxaeDNYUk5oZ1JTTmtLSDktM0RFU1FkUFhzZmI1SjhoajEwOWk1OGkxcE5qLWxEUU5taVdZWlpNeVZRQTl1NC1fTDRWWTFSamZGVWQ0Tk5Wa3JfbDc3VnhpUmVHS01ZeHlpYzk2QQ?oc=5"
     ],
     [
      "Jared Goff Holds Steady Among NFL\u2019s Best QBs After Lions Spoil Vikings\u2019 Undefeated Quest - Athlon Sports",
@@ -5011,6 +4972,48 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Lions vs. Dolphins: Jared Goff Prop and Game Preview - SportsGrid",
+     "score": 0.0,
+     "source": "SportsGrid",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMFdydHk0cDhrXzVITHFTbXFNc25zWEVZTk1VeDRKeWVjZWR0cXl2Y1hLcmVwa18za0JDNVhTbDN2RW5MNEZ1Z2x4VWhuS2xKLXdzb0VpRWFXbXBSckZqZHRJZ2VlSl90Zk1mTXNMeDdqNXZKdkxNWmE1MmNxa01JU05qdEVBSjNiZWRlWXUxUHA?oc=5",
+     "published": "2026-11-08T22:22:21+00:00"
+    },
+    {
+     "title": "Jared Goff throws for 170 yards in Week 9",
+     "score": 0.36,
+     "source": "USA TODAY Sports",
+     "link": "https://sports.yahoo.com/articles/jared-goff-throws-170-yards-212608553.html",
+     "published": "2026-11-08T21:26:08+00:00"
+    },
+    {
+     "title": "Jared Goff's best plays from 170-yard game vs. Dolphins | Week 9 - NFL.com",
+     "score": 0.91,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNMjRjYUtrSU44SmFKaGl5ZmpoTnoteVJkMThvLVE4eDNOdjJKWGxaeDNYUk5oZ1JTTmtLSDktM0RFU1FkUFhzZmI1SjhoajEwOWk1OGkxcE5qLWxEUU5taVdZWlpNeVZRQTl1NC1fTDRWWTFSamZGVWQ0Tk5Wa3JfbDc3VnhpUmVHS01ZeHlpYzk2QQ?oc=5",
+     "published": "2026-11-08T21:22:39+00:00"
+    },
+    {
+     "title": "Jared Goff\u2019s Record Streak Comes to End vs. Dolphins - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSzJXVGQ5M0pzd3ZLTW1fMHBQTlFjeXA0b0xLU1hzVzg5cXUza0Y4SEsxaG5wQkFHSDBOYWV4OFBWb3VtcW1xRjd5cXAxX2hwV25SWlhYTlZUeGxfMk5aQTlFNlZXQzNtZzByN0NqeUtWdGVKb1BON09GVmxMajBsRUJIdGZodw?oc=5",
+     "published": "2026-11-08T20:54:29+00:00"
+    },
+    {
+     "title": "Jared Goff's 31-yard completion to Jameson Williams gets Lions into Dolphins' territory - NFL.com",
+     "score": 0.0,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTnA3T2ZJNXJiZFQxaWpONkEwSl94VG9HYjQtR1RsX1lEZ09ocV9hdno5RXRMVENFb21xcUZqVkMyQ21vNnVoVHRqZFhKTGRGcnUteXN5SlpSblBHdkN3V3lLODNfdkFsT1VZWG9GVFUwMWVsMFlRYWUtNkdUUFRXX2pzVTdUYnBjNDlpRHc2M2wySG9ZenNtWGpNY01SSlVOZzNwQW1FN0RMajZFT0t0blpGZw?oc=5",
+     "published": "2026-11-08T20:16:15+00:00"
+    },
+    {
+     "title": "Lions QB Jared Goff Shares Update on Injured Player Jack Campbell - Yahoo Sports",
+     "score": -0.3,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPX3UzNGhVUXRoM3JkTDNQcnRUclQtdHExQjRnME9waHNGQnVLRVhhbmVaN3NHY3YwY2hTXzNfd0MxQndXendzTDQwb3hDaURDZGQ0V2NYaThNQ0pjaDZqb2lIVDBMTk9QbXVYbmY3N0gzblE4RE1HeGVJVXMwUDNvQg?oc=5",
+     "published": "2026-11-08T19:39:58+00:00"
+    },
     {
      "title": "Carhartt Skilled Trades NFL Week 9: Patrick Mahomes or Jared Goff? Stream of Fantasy Football - CBS Sports",
      "score": 0.0,
@@ -5054,13 +5057,6 @@
      "published": "2026-11-08T17:24:44+00:00"
     },
     {
-     "title": "Lions vs. Dolphins: Jared Goff Prop and Game Preview - SportsGrid",
-     "score": 0.0,
-     "source": "SportsGrid",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOMFdydHk0cDhrXzVITHFTbXFNc25zWEVZTk1VeDRKeWVjZWR0cXl2Y1hLcmVwa18za0JDNVhTbDN2RW5MNEZ1Z2x4VWhuS2xKLXdzb0VpRWFXbXBSckZqZHRJZ2VlSl90Zk1mTXNMeDdqNXZKdkxNWmE1MmNxa01JU05qdEVBSjNiZWRlWXUxUHA?oc=5",
-     "published": "2026-11-08T16:30:21+00:00"
-    },
-    {
      "title": "Jared Goff is walking into a dream matchup against Dolphins' struggling defense - SideLion Report",
      "score": -0.15,
      "source": "SideLion Report",
@@ -5075,46 +5071,11 @@
      "published": "2026-11-07T15:30:47+00:00"
     },
     {
-     "title": "Jared Goff Week 9 Outlook for Fantasy Football (2026) - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcnZ5SklGWXJQSjlwT2FobGJwNWhTQy0zaXpoWjRWN3RBaDJZS2FiYld1a01yRVBZN0Nmak8xMk8tU2Jud1lLOHFUTzF3S3lEeVN1dDhPSTZPeGVHZ0RKSGRVZWNKYWpmazgybDJHcTVZcHVWd1BqMzFhT2lCMVpnbTh1ZXNLZ3dNMm15RkxhZDNiWGRNTV90SGkyMUpZNy0zTFNQTnplUQ?oc=5",
-     "published": "2026-11-07T15:05:09+00:00"
-    },
-    {
      "title": "Jared Goff Holds Steady Among NFL\u2019s Best QBs After Lions Spoil Vikings\u2019 Undefeated Quest - Athlon Sports",
      "score": 0.86,
      "source": "Athlon Sports",
      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPSnJGQ0xFb1daN09BeHRaVThhT215emhHS0tLSkdxaHE0WXBSY0N4VmZBbXZITERKclVCdl9udTM0OFZZM3FwbC1tYm1PY2V2UmhJLVpfTm9sNlFhRzBxTXhQMm5xYU5uZ1dDX0o0YURCcTdDVF9HTEZfbEFyaGgyMHIyZUJ4dXhLVm1qa3p0YVdoRkZLSEdOb1NmNDhqMUpnOEYwMlh0MjZ0Zk4ybmJxRlJMdmZHUGh6Z0RSSDUtRVlkZHZ6dExiMA?oc=5",
      "published": "2026-11-06T01:39:00+00:00"
-    },
-    {
-     "title": "Burrow, Goff, Purdy top Week 9 fantasy football quarterback rankings - UPI.com",
-     "score": 0.38,
-     "source": "UPI.com",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOZGhZb0U5ZGU3b0NCUHRvTFhUVjFqYm8ydDkzOVd5eklrMmFCVTgxbGM1blZuSWVmUHFrN3g4V1M1ZE9aVWI1Nzl3RHlNU2lOam1PUUNtUTBrWHdVUVdGQXJNNmhTQVFMWnBYU1BHckJJQjczM1d1bUVvMzllVmN1VzhVdVY1ZXZKdDgxYnZ0TExvODA2Qjc4ZWp1WmpuUXNkVFpjVEtReHY?oc=5",
-     "published": "2026-11-05T17:46:32+00:00"
-    },
-    {
-     "title": "\u201cSo Much Bigger Than Just Football\u201d: Jared Goff Says the Lions Will Honor Jack Campbell by Chasing a Fourth Straight Win This Week - Athlon Sports",
-     "score": 0.95,
-     "source": "Athlon Sports",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPU3lGeWhNdVhkUzE5djdjMXNCVXlyNVlIb3QtUXJCdy1UVFRmQjdVekNVRXRNMVlUakRzQXlDXzhSTlR0bFAwcDltdEpjTDJVRU56c3VxZFZDM1QydmM4cVc0eTB6REpRVVhtaElNT1c4cHlLWVFPT0ExXzVzSmlDNDRfdHpwTHRJY0E?oc=5",
-     "published": "2026-11-05T17:23:11+00:00"
-    },
-    {
-     "title": "Fantasy Football Start \u2019em, Sit \u2019em: Week 9 QBs Include Jared Goff - FlurrySports",
-     "score": 0.0,
-     "source": "FlurrySports",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNMnlVN3VNRVplbkFJNHRIVDltejQ3OVVTNnhYNlQ5N3pmV3ZjZmljbkhodkFVSVQtOU9Sa0h0al9EbnkwVzBjcFFxNjBhNjU5OTl3dkYtV04xTVZUMDdqQXhpX05WSmMxa0U2ZkxjSnBCeWNlbWJZekN6enZxMUVQeHhB?oc=5",
-     "published": "2026-11-05T15:18:34+00:00"
-    },
-    {
-     "title": "Fantasy Football Week 9 QB Start 'Em, Sit 'Em: Target Jared Goff, Fade Bryce Young - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUDJUd05HUVJnQ0htOGpKMTlnUVBrR3ZEb0xaZE5seHdsWnAwaG9DMndUMDItS3lMVDcxbW5ENEUxa1N1aXRUeVM2R2k4SFJidDdLSFNMQVhXTDFSbXFhNWdJNXpCRkZHOEg3QkExaVo3MVBxYU1RZ091TjVKLXlqbQ?oc=5",
-     "published": "2026-11-05T13:13:52+00:00"
     }
    ],
    "mult_injury": 1.0,
@@ -5147,27 +5108,76 @@
    "def_teams": 32,
    "def_ratio": 1.03,
    "implied": 28.0,
-   "weather": "57F, wind 12mph",
-   "sentiment": 0.089,
+   "weather": "59F, wind 12mph",
+   "sentiment": -0.04,
    "n_articles": 15,
    "headlines": [
     [
-     "Dallas Cowboys nominate tight end Jake Ferguson for 2026 Salute to Service Award - NBC 5 Dallas-Fort Worth",
-     0.87,
-     "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNWVTQUZfN2c2V3JuZjVSWHBueElsemlTQjFOZlFleF9ONmpzTk05Z2VLdUt2aTZ0YV9maHoxbE9PUHNMQkhXNGJsVFdRNGo0Q0YyNHVDY0hnOUxWaTFZSUdNak9pbXZ3aUJ0SUk4T3JCV2NIc0x6N2NScFE1UjVsdHBiS2tJd3c5b2w5Z2llRU5kNjJYUnFfam9hOFp1VWE4MHQzVG12ellNOWFWaTlhN1hQX1pHM3hXQVHSAcIBQVVfeXFMTUpzR2VjWTlvaVJUUlFiSXh6Y0FTWEpYU0oyb0NyWDgwWWJuSWo3MnhjeXRocGh1Yy04ZERZRm15VEJnczBtdlRmSXJjbzBWNlJXUm1iRnp3VHVDY2xUSkhsckpCZzNXMlRtU3hTeWpILUdEdXRQdTlyOUNMSzF3cU50Y09tUnQ0RnFLYmZqT2p2NWFnc213c3dreS15VlkzRHhmVXFERlBiTll0T2pfNDRoSTVzdXEtSGFjVjY1WTVYMHc?oc=5"
+     "Jake Ferguson Suffers knee injury in Week 9 - Fantasy Footballers Podcast",
+     -0.92,
+     "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaHVhSUQtR3ZGb0JFeGhNbUppTGNYRmJJQUU2UHhUbVFISmxLZzE0TG85bDd4OFNTalVBc01EaVZ6eVVDQ3Q2Sm8tMldSUVlkbG5OZG9RZWF6X2FwTkZzM0tteXM5YUlmemlSNFJNdE9QQUpDUDlZRkg5SHhsLUgxUEFlQ2Y2QS1RQmtJWVNYUGRxZzhDVjFDSnd3?oc=5"
     ],
     [
-     "Jake Ferguson Questionable After Missing Week 9 Practices - NFL News | Fantasy Football - RotoBaller",
-     -0.75,
-     "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMm54WEZIckdKbzYxLTMzRnlZal8wTmhubHVYUVU1QlZFSmM3NXltU191WHNpLWc2eFk0VS1kbW9ndHNtejFTUmtzN1JCcUxReEFrZVdVUkJibVAwTWh5T1VweHpaYU85c3NGYW5CQmJYTTI5RTJQX2c5TVAwSUs3bUlxeUFrang3MkNtSExFc2tsWGp6QkF3UVk0Ykw5Y0UwLUZIb1RVUQ?oc=5"
+     "An amazing catch by Jake Ferguson for a Cowboys touchdown - FOX Sports",
+     0.91,
+     "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DTVF5cDFKcW9rQkxLNHFjUzdrX1hnX3JMV2g4YUdYVVlkaGtZV05HM0MzT21MSTdPeXdVd2N2M241TG42c256UmZKUDNJa0ZUaEgyUW1ZZVRiVjZkZTQ3RFVBRy1LSGsyaHNDU193?oc=5"
     ],
     [
-     "Jake Ferguson Active for Week 9 - NFL News | Fantasy Football - RotoBaller",
+     "Jake Ferguson Active in Week 9 - Fantasy Footballers Podcast",
      0.66,
-     "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOVVKTjlnUzcyRV8tQk0zSG9yTG1raUJ3QjFNQWt5ZzliVVdOS2pSb19HaVNsTE1ub0MzNDBURThGUjVPZFdrUndlN0dkd05WSHdVRUtqakhPTmxESThNZUVtVUx4bWtyV2NUa3RYa1hvR3ZIMTdYQkhQZXNDejVfYXFoZEs?oc=5"
+     "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0tFYkwtNm5ndGx6Ul9iSnQ5ek9aQ29SRk93QkVsWWd4VmYzTm1nWlpEMFIyMS05N0pUbEtYd2xKV3Izb01DcjQ4RDdldGdmYlpUSENKTFF5dTlLUFo4QU55NnVXcTVtU1ZIU0xYUjVjS21lOWx0eWk2eTEtN2plTDhPNnJsbVF2?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Jake Ferguson Active in Week 9 - Fantasy Footballers Podcast",
+     "score": 0.66,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0tFYkwtNm5ndGx6Ul9iSnQ5ek9aQ29SRk93QkVsWWd4VmYzTm1nWlpEMFIyMS05N0pUbEtYd2xKV3Izb01DcjQ4RDdldGdmYlpUSENKTFF5dTlLUFo4QU55NnVXcTVtU1ZIU0xYUjVjS21lOWx0eWk2eTEtN2plTDhPNnJsbVF2?oc=5",
+     "published": "2026-11-08T22:52:30+00:00"
+    },
+    {
+     "title": "Cowboys' TE Jake Ferguson, S P.J. Locke go down with injuries vs. Colts - Dallas News",
+     "score": 0.0,
+     "source": "Dallas News",
+     "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaXVXMWFrZVZWTXkwdkM4VUVoUUM1Uk15MzJ4a0g1ZGVVWjFybzFtektxZmdnWkZQSnRRVTdBcS02Q1E2Z3RKaEptT29mUVVKLVdfZHIwTnUtZjRGMTA1WDZVQkFsS2dTSWw1WVFuNjEyUlp0QnpIZHg5ajBUSFJCaG1abVlwdUlHc2dxYmlPZ1ZJSUREcWV3UVc1ZUVUaWpCTklldm5EQTRiUQ?oc=5",
+     "published": "2026-11-08T22:05:06+00:00"
+    },
+    {
+     "title": "Jake Ferguson Questionable to Return Against Colts - NFL News | Fantasy Football - RotoBaller",
+     "score": -0.46,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQWVNJSEExRU94dm5qRVZOZ1ZKT25fZ19wcUlGYldQNGMzX25MT2REZ1h4TjRobXVmZTR0cEdqS052VFBXMEhYTXBycXpPQzZva1Jsand5aWEtWDFsRS1rdXpnLVR2UlhpbWU4eTR0T0Z1ODhjcHNVR1hDX3c0ZHdNNmZtYjFUSE15ZzNn?oc=5",
+     "published": "2026-11-08T20:55:00+00:00"
+    },
+    {
+     "title": "Jake Ferguson Suffers knee injury in Week 9 - Fantasy Footballers Podcast",
+     "score": -0.92,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaHVhSUQtR3ZGb0JFeGhNbUppTGNYRmJJQUU2UHhUbVFISmxLZzE0TG85bDd4OFNTalVBc01EaVZ6eVVDQ3Q2Sm8tMldSUVlkbG5OZG9RZWF6X2FwTkZzM0tteXM5YUlmemlSNFJNdE9QQUpDUDlZRkg5SHhsLUgxUEFlQ2Y2QS1RQmtJWVNYUGRxZzhDVjFDSnd3?oc=5",
+     "published": "2026-11-08T20:49:11+00:00"
+    },
+    {
+     "title": "Jake Ferguson Takes Hit to Left Knee Against Colts - NFL News | Fantasy Football - RotoBaller",
+     "score": -0.42,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdl9OaVZHem9KUF9Ka3FST3l1Qm1Zc1VIZ3hWaVpKYjB2a1d6LXZlWW94azNZSnU1SVlCcWpJY1VrODZRejI0dXpya3pxdFgtNGF5MTNWRldISVEzVDgzYU9ZSGNkaFNyRUQyWHdMZnctelV6UVdHV0lHdUJRbVdfeXhFQTdURGcxYmlaTHJjbDUySTFJS0Z3Tk9lS0xONk8xUnFHM3l0NFdCN3hacS0wcXdqS3RsUQ?oc=5",
+     "published": "2026-11-08T20:46:00+00:00"
+    },
+    {
+     "title": "Cowboys TE Jake Ferguson, Colts CB Charvarius Ward exit in third quarter - Miami Herald",
+     "score": 0.0,
+     "source": "Miami Herald",
+     "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SX21nTWRiS25kZWVjeTRGZ29JdnlwSnNxd2MzMGJudjNEOVVMckthOFJtZmdMYUh2Z0h4TDN5OEpiSVNmNUJZWVlDTklDVVpFSEw2Q2JqN2I0TkhjMklIODlkZFdVXy0tTkVkYQ?oc=5",
+     "published": "2026-11-08T20:38:00+00:00"
+    },
+    {
+     "title": "Jake Ferguson Injury Update: Latest News on Cowboys TE's Status in Week 9 Game - Sports Illustrated",
+     "score": -0.59,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNX3JNQUJyWm9LMm5aMV8yUFN6ajlRcldIMHdkejNQOUtpMm04MWRzcE5NVkxfUGJ2U3V2b3k1YWk5NHpvaXcycmRFSGk4N3E2dVl0LThjWkJUb1RsLVNRNFFvVlBmT2RVS0lpT1dsQUEzcjJETGtIblBhc1h2QllCcXFOaW0yZGt5U29qeGhJQ3QtekJaSEx4cjlSaw?oc=5",
+     "published": "2026-11-08T20:26:12+00:00"
+    },
     {
      "title": "Jake Ferguson Returns Against Colts - NFL News | Fantasy Football - RotoBaller",
      "score": 0.0,
@@ -5190,6 +5200,20 @@
      "published": "2026-11-08T19:11:38+00:00"
     },
     {
+     "title": "Jake Ferguson Mosses a Colts defender to snag Prescott's 10-yard TD pass - Dallas Cowboys | Official Site of the Dallas Cowboys",
+     "score": 0.2,
+     "source": "Dallas Cowboys | Official Site of the Dallas Cowboys",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQMDIwajNSczl2T0FOUGZfXzc1X1lSdUVZdTVLazU2aTVLRnozWFZIalRENzNYTW5WWlFBeHpWS0pxanBObm9rY3dBRXg4Wm5Ma0ZscnF3aHp3WGZvcldxWkFXeHJQbG5zWkt4MVpvMlVkaG1PSko4UncxbTkzOU9pV25MeWJxX2RubTFrN2pETUZzLWt5eVJwaWRXamlUM0dOTlF0eVNnaEZLOXVa?oc=5",
+     "published": "2026-11-08T19:07:01+00:00"
+    },
+    {
+     "title": "An amazing catch by Jake Ferguson for a Cowboys touchdown - FOX Sports",
+     "score": 0.91,
+     "source": "FOX Sports",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5DTVF5cDFKcW9rQkxLNHFjUzdrX1hnX3JMV2g4YUdYVVlkaGtZV05HM0MzT21MSTdPeXdVd2N2M241TG42c256UmZKUDNJa0ZUaEgyUW1ZZVRiVjZkZTQ3RFVBRy1LSGsyaHNDU193?oc=5",
+     "published": "2026-11-08T19:04:45+00:00"
+    },
+    {
      "title": "Dallas Cowboys tight end Jake Ferguson Mosses a Colts defender to snag Prescott's 10-yard TD pass - NFL.com",
      "score": 0.2,
      "source": "NFL.com",
@@ -5204,82 +5228,19 @@
      "published": "2026-11-08T18:52:46+00:00"
     },
     {
-     "title": "Dallas Cowboys nominate tight end Jake Ferguson for 2026 Salute to Service Award - NBC 5 Dallas-Fort Worth",
-     "score": 0.87,
-     "source": "NBC 5 Dallas-Fort Worth",
-     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNWVTQUZfN2c2V3JuZjVSWHBueElsemlTQjFOZlFleF9ONmpzTk05Z2VLdUt2aTZ0YV9maHoxbE9PUHNMQkhXNGJsVFdRNGo0Q0YyNHVDY0hnOUxWaTFZSUdNak9pbXZ3aUJ0SUk4T3JCV2NIc0x6N2NScFE1UjVsdHBiS2tJd3c5b2w5Z2llRU5kNjJYUnFfam9hOFp1VWE4MHQzVG12ellNOWFWaTlhN1hQX1pHM3hXQVHSAcIBQVVfeXFMTUpzR2VjWTlvaVJUUlFiSXh6Y0FTWEpYU0oyb0NyWDgwWWJuSWo3MnhjeXRocGh1Yy04ZERZRm15VEJnczBtdlRmSXJjbzBWNlJXUm1iRnp3VHVDY2xUSkhsckpCZzNXMlRtU3hTeWpILUdEdXRQdTlyOUNMSzF3cU50Y09tUnQ0RnFLYmZqT2p2NWFnc213c3dreS15VlkzRHhmVXFERlBiTll0T2pfNDRoSTVzdXEtSGFjVjY1WTVYMHc?oc=5",
-     "published": "2026-11-08T18:00:00+00:00"
-    },
-    {
-     "title": "Jake Ferguson Active for Week 9 - NFL News | Fantasy Football - RotoBaller",
-     "score": 0.66,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOVVKTjlnUzcyRV8tQk0zSG9yTG1raUJ3QjFNQWt5ZzliVVdOS2pSb19HaVNsTE1ub0MzNDBURThGUjVPZFdrUndlN0dkd05WSHdVRUtqakhPTmxESThNZUVtVUx4bWtyV2NUa3RYa1hvR3ZIMTdYQkhQZXNDejVfYXFoZEs?oc=5",
-     "published": "2026-11-08T17:06:00+00:00"
-    },
-    {
-     "title": "Jake Ferguson Active in Week 9 - Fantasy Footballers Podcast",
-     "score": 0.66,
-     "source": "Fantasy Footballers Podcast",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0tFYkwtNm5ndGx6Ul9iSnQ5ek9aQ29SRk93QkVsWWd4VmYzTm1nWlpEMFIyMS05N0pUbEtYd2xKV3Izb01DcjQ4RDdldGdmYlpUSENKTFF5dTlLUFo4QU55NnVXcTVtU1ZIU0xYUjVjS21lOWx0eWk2eTEtN2plTDhPNnJsbVF2?oc=5",
-     "published": "2026-11-08T16:53:15+00:00"
-    },
-    {
-     "title": "Is Jake Ferguson Playing Today? (Injury Update, Betting Impact for Cowboys vs. Colts in NFL Week 9) - Sports Illustrated",
-     "score": 0.45,
-     "source": "Sports Illustrated",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORklkQUhqNDZjUFR2Y25sTnhOTzFYc0VFQXpjMkpjajM3VnpxMFkxUlpTQmE2UGdSNm9NaXgxSFJxZ0ZKaUxoOWlvWVB6bGlPcEp6Z24xRjBJS3FJSThlamJBazhQNjNiem15VDRRX1lCaVQtRVM4U25YU0NmUThEODIyNENRZXdQblhQSHU5OXYzN0pXN1IyaE5GUkpfUnotWEdrVEZoTEJ1SG9hVVE?oc=5",
-     "published": "2026-11-08T10:35:00+00:00"
-    },
-    {
-     "title": "Jake Ferguson Week 9 Outlook for Fantasy Football (2026) - RotoBaller",
+     "title": "Jake Ferguson hauls in a Cowboys TD - ESPN",
      "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOX3dXWVM1dHlsclVvcmNsdmhZRENJbjZDaGZiekR0VDluMjRtV0lBc3NPMWlfNDFNQ3pTVnhmc2VXQ18wWnI5c0dBTGVtcVJaaHdHcmRKcDNKX2NxTjB5cElPVjYyRWprLWhSeUZVNEVQQmtLcE1ZMmtIS1J2eDlVUF94SVA1WVZsMU1jVmVR?oc=5",
-     "published": "2026-11-08T02:55:10+00:00"
-    },
-    {
-     "title": "Jake Ferguson Fantasy Football Injury Update: Is Cowboys TE Playing This Week? - Complex",
-     "score": -0.37,
-     "source": "Complex",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNT2NMd0VXSmVPejdKbHVtU2t3VWFsSmxwMkFSRS1zSmZaWmpUWEFvZ0cwMU8zZGMwaW1YT0Y3ZU5YY3Q5LWgzMWVEY295a2VJVWxPVFNacl9HT091bWx3LTRhVG5oQmZ6SEo2TV8yemcyNkxXRGVyYzNvNW5qTjREMk5zVUk1SUw1UHh0Rmtjbw?oc=5",
-     "published": "2026-11-07T16:38:26+00:00"
-    },
-    {
-     "title": "Jake Ferguson Could practice Friday - Fantasy Footballers Podcast",
-     "score": 0.0,
-     "source": "Fantasy Footballers Podcast",
-     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPREVJNGMxTUJJWG5jamx3OHRPbUdER2dJczkxSmwzdTBhQnlfNzdKZWZKRG9KS0VEN0xUb2tpUEF1dnFud2xCZ2VUeXVlbmRnaEJTNmp6XzE1WkFuSjBZanh4bEFLN2pUMS13ZTZ4SnlsdmgwWjFPdzVCMHZ4RTJ3Q3lKU2ptQUxEZ2MyVnM1VQ?oc=5",
-     "published": "2026-11-06T22:44:39+00:00"
-    },
-    {
-     "title": "Jake Ferguson Questionable After Missing Week 9 Practices - NFL News | Fantasy Football - RotoBaller",
-     "score": -0.75,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMm54WEZIckdKbzYxLTMzRnlZal8wTmhubHVYUVU1QlZFSmM3NXltU191WHNpLWc2eFk0VS1kbW9ndHNtejFTUmtzN1JCcUxReEFrZVdVUkJibVAwTWh5T1VweHpaYU85c3NGYW5CQmJYTTI5RTJQX2c5TVAwSUs3bUlxeUFrang3MkNtSExFc2tsWGp6QkF3UVk0Ykw5Y0UwLUZIb1RVUQ?oc=5",
-     "published": "2026-11-06T20:41:09+00:00"
-    },
-    {
-     "title": "Jake Ferguson Listed as questionable for Sunday - Fantasy Footballers Podcast",
-     "score": -0.46,
-     "source": "Fantasy Footballers Podcast",
-     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZkpOSlBCVnVrMDl5OS05SFlHYndDYzY5YjhXeXRINV9vdWRaWUpKb1RwemtvU3N1QXpILXRjQWR0d2VjUV81TmtmemltaWJSUVczLXR1WlBNYmJtR1RuRkd2VzBLNEhSUjd2ZC1zcjNoeHV4TEc3WWtnZUkxTEkxaUdCUmNMM2ZDbkdhejZEdzdBZUctTVNKMEpXdUZUbzA?oc=5",
-     "published": "2026-11-06T20:23:49+00:00"
-    },
-    {
-     "title": "Jake Ferguson Remains unavailable Thursday - Fantasy Footballers Podcast",
-     "score": 0.0,
-     "source": "Fantasy Footballers Podcast",
-     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPblZUalktQlVVWFpBMGZJeHZwS3ZuTndyS3o2cnQza1JKYmI3Z2UxQ3RrV2VoQW5yVHZqaTRiVy1pdzFLcWhheEt6Y1RuUXhJRVpJZjFyei1hWVlHSTlnOGV5d3U1dTdGT0ZmYTNNVml1a0MyZGFPYkJZQUc5LVQ1WTFSZUxkMEpsdHJ5UjloblFYaTFqNkZEdw?oc=5",
-     "published": "2026-11-06T10:30:00+00:00"
+     "source": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPWDFCOHBydTcxalBKbWJDekxVQUFWcjlQTXowanczSEtiMGRJQjQ4MDR4b3EydDc0YWdSZ3d0LVItVmpzODVvTjZ2UlYyUlR3QnJ2R1pMdVBWQlBoNGdmeENqQzRLd0JpczBUTHZvRWRjS2lDcEZNN2VBOFJTZmZOaTVB?oc=5",
+     "published": "2026-11-08T18:50:51+00:00"
     }
    ],
    "mult_injury": 0.85,
    "mult_matchup": 1.131,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.007,
+   "mult_sentiment": 0.997,
    "base": 6.140000000000001,
-   "adj": 5.94,
+   "adj": 5.88,
    "trending_adds": 0,
    "slot": null,
    "notes": [
@@ -5307,18 +5268,18 @@
    "def_ratio": 0.83,
    "implied": 23.25,
    "weather": "Indoors",
-   "sentiment": 0.114,
+   "sentiment": 0.146,
    "n_articles": 15,
    "headlines": [
-    [
-     "James Cook Injury Outlook After Bills-Ravens Scare - SportsGrid",
-     -0.88,
-     "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc0RTeU82aEhYTjdGN1YzSlBzWXkycGo3akd6R0w0eHdla1ktUGcxX3FxbmJKN1o4OHpUT0xNb1l6WFlHWHo2SlNaSTAzaXZKaEhEZVdCdUl0WjZXeUp2Y2NFRU5HaE4wWm03b1ozOFAxdkZ4SXhGaW9aUFJDYkUyLWJwSGJ4LUlQeVlPcm9OMmI?oc=5"
-    ],
     [
      "Bold running back predictions in NFL Week 9: Jonathan Taylor, James Cook & more - The Big Lead",
      0.64,
      "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaHVmU2JUSy15ekd0OGt0ck1oQVJyZ1liVUltcXQ2cFFsQm4yOWREcWJQRTNkOVBiS19xYllLeHhBYlFKWDF3VUVpeWNzQ2JjLUZWT2JGNTMtaU5pMElxU2hFSG53V3ByN29pZVMyajlBclpZS19iUVBBOHZXNExjdVVBUWQ4VU1OOUM5dDU2ZDA2UTluSWtBT0ZDRzhrZlZLd2c?oc=5"
+    ],
+    [
+     "James Cook Scores Bills Touchdown vs. Ravens Stream of National Football League - CBS Sports",
+     0.61,
+     "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOXVBVTVib294Z2ZFc1J4V1BNX1ptNEJ2WjZPNXIwTXRhcHhaUVhMNjBINDZvS0xQUkRnMHlkWEZhdWItVEE0RlFTNzU0RUl6X3RvTUtYOGYwX1BGaUgzc3R3V0ZaS09idjRDOVg3YjB6ZmVWcm1vaHhCb08wcVpTRDRhdXJaU096aTZ1UWp3?oc=5"
     ],
     [
      "Bills' Josh Allen, James Cook set NFL touchdown history - Yahoo Sports",
@@ -5335,11 +5296,32 @@
      "published": "2026-11-08T19:03:11+00:00"
     },
     {
+     "title": "Should I Trade (Half PPR) James Cook III for Malik Nabers (2026)? - FantasyPros",
+     "score": 0.0,
+     "source": "FantasyPros",
+     "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVGJDZzVGeEcwMEFMSVNtcmRub3hPMkVfYkhZMGMzeHhXSG54eEJTOFZ4ZXFYR1pZX3FDZ2VIeHZkY1NFd0w3SEQ3MmQzN1pDdm9EUHgyUVBwM01wVVpaS1pMd1BZUnZicTh6NVQ2UzVoNnViTHRmVTBpRjNkX0k1ZGY3Mks?oc=5",
+     "published": "2026-11-08T18:31:34+00:00"
+    },
+    {
+     "title": "James Cook Scores Bills Touchdown vs. Ravens Stream of National Football League - CBS Sports",
+     "score": 0.61,
+     "source": "CBS Sports",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOXVBVTVib294Z2ZFc1J4V1BNX1ptNEJ2WjZPNXIwTXRhcHhaUVhMNjBINDZvS0xQUkRnMHlkWEZhdWItVEE0RlFTNzU0RUl6X3RvTUtYOGYwX1BGaUgzc3R3V0ZaS09idjRDOVg3YjB6ZmVWcm1vaHhCb08wcVpTRDRhdXJaU096aTZ1UWp3?oc=5",
+     "published": "2026-11-07T00:11:56+00:00"
+    },
+    {
      "title": "Bold running back predictions in NFL Week 9: Jonathan Taylor, James Cook & more - The Big Lead",
      "score": 0.64,
      "source": "The Big Lead",
      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNaHVmU2JUSy15ekd0OGt0ck1oQVJyZ1liVUltcXQ2cFFsQm4yOWREcWJQRTNkOVBiS19xYllLeHhBYlFKWDF3VUVpeWNzQ2JjLUZWT2JGNTMtaU5pMElxU2hFSG53V3ByN29pZVMyajlBclpZS19iUVBBOHZXNExjdVVBUWQ4VU1OOUM5dDU2ZDA2UTluSWtBT0ZDRzhrZlZLd2c?oc=5",
      "published": "2026-11-06T15:16:14+00:00"
+    },
+    {
+     "title": "James Cook Fantasy Outlook & Stats - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9mbUltX2hjdnNPZjZXTlFDU2pXeGtDV1BYcnNGQkhIWExDcnhtYmtCUmdneUVFU2h2c3RYQWJvbVdFek80dUJSYmhDeE9Jc0puTlFMRnBFMkdlNXVnQWRuWHZoMA?oc=5",
+     "published": "2026-11-06T11:11:38+00:00"
     },
     {
      "title": "Josh Allen and James Cook can both top 5,000 career rushing yards on Monday night - NBC Sports",
@@ -5405,40 +5387,19 @@
      "published": "2026-11-04T08:00:00+00:00"
     },
     {
-     "title": "Bills' Week 9 Injury Outlook: What We Know About DJ Moore, James Cook, Spencer Brown - Yahoo Sports",
+     "title": "Bills' Week 9 Injury Outlook: What We Know About DJ Moore, James Cook, Spencer Brown - Sports Illustrated",
      "score": -0.59,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQYjNybnJIZ29iR1Y2amYxSGtTQnZreHZoQnUtbDkwaUlhMGU1UnppdHVUclBTRkZDQlB2V1NIdFE1SE12aE1JOU9XaFFxWlRzZ0ZZa3VMSkdpS3pkX2h0Z3BNWC1hYkJXYkVCeXQ0REZxX1lMMWdybFpTRFVyMkgyazh3?oc=5",
-     "published": "2026-11-03T12:06:15+00:00"
-    },
-    {
-     "title": "James Cook Injury Outlook After Bills-Ravens Scare - SportsGrid",
-     "score": -0.88,
-     "source": "SportsGrid",
-     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNc0RTeU82aEhYTjdGN1YzSlBzWXkycGo3akd6R0w0eHdla1ktUGcxX3FxbmJKN1o4OHpUT0xNb1l6WFlHWHo2SlNaSTAzaXZKaEhEZVdCdUl0WjZXeUp2Y2NFRU5HaE4wWm03b1ozOFAxdkZ4SXhGaW9aUFJDYkUyLWJwSGJ4LUlQeVlPcm9OMmI?oc=5",
-     "published": "2026-11-03T02:32:13+00:00"
-    },
-    {
-     "title": "Bills' Josh Allen, James Cook, etch their names into the history books - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeTRKamZjVHcxVlJEQjBwRUVwOXhPcGFydkNoVnduUGx2dDhRb0dNd3FBYzU2ekFyMGFJUXc0MkNMdzlEVzFlaHNPV010bFJRWmZYRGNKYmtiMDhoYWlGY3VVb0FlNGtqY204ZFVzdVozOThMZS16LVZLTEl5X1JxVzR3?oc=5",
-     "published": "2026-11-02T16:40:40+00:00"
-    },
-    {
-     "title": "James Cook Scores Bills Touchdown vs. Ravens Stream of National Football League - CBS Sports",
-     "score": 0.61,
-     "source": "CBS Sports",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOXVBVTVib294Z2ZFc1J4V1BNX1ptNEJ2WjZPNXIwTXRhcHhaUVhMNjBINDZvS0xQUkRnMHlkWEZhdWItVEE0RlFTNzU0RUl6X3RvTUtYOGYwX1BGaUgzc3R3V0ZaS09idjRDOVg3YjB6ZmVWcm1vaHhCb08wcVpTRDRhdXJaU096aTZ1UWp3?oc=5",
-     "published": "2026-11-02T08:10:31+00:00"
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPV1FhZ3FFRnBFUUprOWtYNWF3dVpQUnJuMlVCWHBmX3N6VXBMWklpTnFGWkpWSXpBNXZqMFhoSUpPek9VLUVpTDh5bTJweGlFbjVUeW1paDBCem1feG82YnJHZDY1UmZuVndZaGpncXh4aE1ldDZHajBCdDA1cFZtblVCOFcyeURva18zNGlfb1dURkk4NHhFczZPNndzb01XMGZCRFkyTVk0VkVnaVFBLUFSZldod3M?oc=5",
+     "published": "2026-11-03T12:06:14+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.924,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.009,
+   "mult_sentiment": 1.012,
    "base": 16.79,
-   "adj": 15.65,
+   "adj": 15.7,
    "trending_adds": 0,
    "slot": "RB",
    "notes": [],
@@ -5463,8 +5424,8 @@
    "def_teams": 32,
    "def_ratio": 0.91,
    "implied": 19.0,
-   "weather": "61F, wind 4mph",
-   "sentiment": 0.13,
+   "weather": "63F, wind 2mph",
+   "sentiment": 0.109,
    "n_articles": 15,
    "headlines": [
     [
@@ -5484,6 +5445,34 @@
     ]
    ],
    "articles": [
+    {
+     "title": "Fantasy Football Week 9 RB Report: Breece Hall returns for Jets, sends Braelon Allen back to secondary role - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeGZoWndRTUN4Q1BodTVaalZRa29LWDJkcjdmWXZKeU16RWxzRzA2UU1xckdJZFE3WUV2b2padHcwXzV0OExraUJxbE1DcXRERXNLc3RxZmNnQmhPX1dpb2xpenFfUW51WEJpWUpTaTRRWFM3TWt4R1BhV19oUUFJTU1BUWUwT1ppZ0U3ajVMb3lZR25NMnN3X004MlEtRkFocC1Bb29lTkRxelRlM09yd2l4cTc2SGR0YVptTlhCUnA5Z3ZhS2JJRmJxak52emNlNjAtTmliZkdKN1lkbThVWnU3SUxJb3hLQVowUmJZUjF1b1U?oc=5",
+     "published": "2026-11-08T22:48:22+00:00"
+    },
+    {
+     "title": "Breece Hall sees 18 touches in Week 9 - NBC Sports",
+     "score": 0.0,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV2xabjRJTklXdzZrZURqVDR3MnZqRGxCZ3NmcU9NaFFzTEh6REJfUllFTVd5dnRDQmROQkRFTlp2dXJYYTdlUll5cnNfdVhIMzY3T0xkVUNyVDdURTdhUVduYllrODVzUFZWNjA2Z004RTNsQW53dWlNMVZFVFhiNTljWHcwMWFFdklhMlpDcnMtMkZtdVc5dE1HbUF0eU90aVQxVUlR?oc=5",
+     "published": "2026-11-08T22:05:35+00:00"
+    },
+    {
+     "title": "Breece Hall Gets 18 touches in return - Fantasy Footballers Podcast",
+     "score": 0.0,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOb0pCWEN4TGJYUV9maUZkYnFZSzlMNVI3SjF0OFRHSDBTeGVrR2tWeW1BYllrcFRNSm1TTm5GM2hoR0ZwZFhJUzY2VWtpVllrcEZZT1I0bXFGd28tdmI1TlRFYW5fSmNFYkt3UVExdXZNODdXd2dNblcyRlhrX0tUOThWTGhfdEs5b3B2cTlqQ0h3UQ?oc=5",
+     "published": "2026-11-08T21:56:15+00:00"
+    },
+    {
+     "title": "NY Jets reportedly make their final decision on Breece Hall ahead of NFL trade deadline - Bolavip US",
+     "score": 0.0,
+     "source": "Bolavip US",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcW40NlFLNVBreEhUSmlQR2k4SHBjN3llN0ZkUGdRMlFfMWN2OXBRLVBrQlNBSnFzbTdUMkh3WkZ3TFBSNDhmZnRTZHNwVUlXU3FfcFVOTDlnR1pWSjBwLVhNdVYwcUNtM1d6WEI3bEVyaU9QcjBZSWhSVDZIQjlqR2VCYnF0Vjc4ZExRNDJfaXVQNmxuZVFNNl82OFZudWxRU1BOaE1WcEwyRU16SkktTzl4TTDSAboBQVVfeXFMTXJvSUh4SGtGTXlUSlNqTF9nMzlrMmtOQUtDU0tjNWNfZi1Pd3BwcnExN3IwWjdsekdYQkZDSE5CSnM4NFl3QTItUDZZTFNEOXJtOF9XYkVXNlREdnVzUlJlWUFmaXBaR2I4VWlFMHZ3X3BzbEhHWXlXenRieDM2ZFFDRkpIRG5LM2x6TDBrUUxaZ0hOWjBZSHdVZGxmdWlZUFQzdHYxWTZ5ZkZ4MS1JN2FrZjE4Y3hueDhn?oc=5",
+     "published": "2026-11-08T20:41:41+00:00"
+    },
     {
      "title": "Adam Schefter Provides Major Update on Jets\u2019 Possible Breece Hall Trade - Heavy.com",
      "score": 0.0,
@@ -5517,7 +5506,7 @@
      "score": 0.61,
      "source": "Fantasy Footballers Podcast",
      "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbVhWd205TXQ3dVhVdWF3LWY2T3kwYldpWEhKdHE2Znd1VzhkenVVRGRyakktZkl0UFF3bkxOU3lTejBkd0NFbEp4OFc1ekUxMWxnTHRzQVNJQkZ0cUtIUG9raldGelR5RW84Y3FoYllCbXA5NFlfN0hWMnZXc1ZKcEJCVjZLWE9rQTFsbHU0X1Npdw?oc=5",
-     "published": "2026-11-08T17:59:50+00:00"
+     "published": "2026-11-08T18:13:40+00:00"
     },
     {
      "title": "New Breece Hall Trade Rumors Update Jets Stance Ahead of 2026 NFL Deadline - Bleacher Report",
@@ -5560,42 +5549,14 @@
      "source": "roundtable.io",
      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaXBFZ0tyMUdZRXpRVk53WlhTVzE4UTYtMlNVdmRkM1lCRHh5ZFVXeVFXSWEtaDRLUGhaVEtLSVlCQTFYVTR4T1VKS0xpYU9Zb2oxUEgzYWZweC01SnRnV0hUSmhGSVJGNHdBZ0NUV2t0SkhXNHlCMWZ5MWhsS1VsdlJPNFRnUkJzRjNtTHZJS2xiTVJIR2hJYmtyWEtuTF9aMkU2eldLUQ?oc=5",
      "published": "2026-11-08T16:12:55+00:00"
-    },
-    {
-     "title": "Why the Jets should hold on to Garrett Wilson, Breece Hall - Yardbarker",
-     "score": 0.0,
-     "source": "Yardbarker",
-     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUE1FSko1TUpoZWNncE9Qelk4bTAxTm5iT1VQXzFpSmRDLWRnUkJCRVFMc2lYYmdmY2czb2VZVURycG5HZlRuOF9kV1lMMnF0aGIyclJ5QU9lQzNFOFhCeDFiSkNjRU9OdlRKSnZvb25MNkFqalBoVnZudmFCTndwNmhyNU5CNWlEbjZLUFZUMzJGYzhrWVQwaXhPTWRPdzhITGJ3dTJ4NGdPVmx1RW9SeDhGNHRmQQ?oc=5",
-     "published": "2026-11-08T14:12:38+00:00"
-    },
-    {
-     "title": "The Athletic: Jets not trading RB Breece Hall - NBC Sports",
-     "score": 0.0,
-     "source": "NBC Sports",
-     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOakJoU2tFMzVMWUs0dzduRG4tTXdCek5fS3VMUmhYdzdiM2JNbkF0Wm9uUEFHVG53N1IzTEpkSDNSMjZLak5kWEtmblBGeU51SHhFN3pPV1B1WEdKaDNHNEllYlBQeUtrTWY1MU9nUXNLMkIwaW5QV21JT2JmVWVSOGg3YWZsaWFBMGNad0dVaTV4QTJwXzYwaUtuMVZiaUJ2MHEzZkFpQjY3LWF5anU0?oc=5",
-     "published": "2026-11-08T11:03:11+00:00"
-    },
-    {
-     "title": "Is Breece Hall Playing Today? (Injury Update, Betting Impact for Jets vs. Chiefs in NFL Week 9) - Sports Illustrated",
-     "score": 0.45,
-     "source": "Sports Illustrated",
-     "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNnJwb2RPRUp0WG8zWDJBbFpfWWlWbEpIOW96LVRDaHh1V0NZMkxXZ0V1WWtabXJEb3FIel93ZHlmTW5pZWdmaUVNUXNuc1VpZzdrazV3c1RZUEpNUkxWb2w0SWRLMVZyS3YwX3dnZkxneHZ4WXNCVWFQa1NDa1loTlV5VVhKci1UX1J4MzF0NDJXa3ZNYTJVRmw3U2VybVZYZ1F6TFZZU3g?oc=5",
-     "published": "2026-11-08T10:55:13+00:00"
-    },
-    {
-     "title": "Jets RB Breece Hall ready to return, addresses social media threats - Jets Wire",
-     "score": -0.15,
-     "source": "Jets Wire",
-     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNYlF0TUFBTU1CNDA4LUxkSUw3Y3htMXlManF5WjJPaVZ6YlNUb0k1SjFlbWlJT2p6Ml9mQzBxUHVaNWpheGNteW1QTHFERjlFSlloZG5JcllRMzRuekFJcmZmMEhhcXNTZE92eG9WRVM5QXhHR281SWRHMk9vQ1pJZTdZVldadU9kMnRhQ3dHbWZySDBVXzNDbGgzUG9Ja2hsajAxeGhvRVNCRG1PYVp3aW9WcmtlX1hZU01iOXRsRjN0Y3Vnc3dYRW9UdmU4MHlhcU1FWUdCcVA3UQ?oc=5",
-     "published": "2026-11-07T20:20:00+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.876,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.01,
+   "mult_sentiment": 1.009,
    "base": 10.68,
-   "adj": 9.45,
+   "adj": 9.44,
    "trending_adds": 0,
    "slot": null,
    "notes": [],
@@ -5620,8 +5581,8 @@
    "def_teams": 32,
    "def_ratio": 1.49,
    "implied": 21.5,
-   "weather": "84F, wind 5mph",
-   "sentiment": 0.14,
+   "weather": "84F, wind 6mph",
+   "sentiment": 0.077,
    "n_articles": 15,
    "headlines": [
     [
@@ -5630,17 +5591,45 @@
      "https://news.google.com/rss/articles/CBMihwFBVV95cUxNNkhhRnFvb3lEMnlUV3VJMGUwWlJKX1JKYUR2a1FjMjZQeVJoUzRIWEpjeDJ4TG95b1JxWVh2X1lkZ2VSYlBYUnI2dnhYdDNvdGNtWTBpSlUwcE56dy05cmtmM3VkdWRiVmtHXzdsT1VObEZTbWl5bHVUMDUxdVJoM3E3VWYwenc?oc=5"
     ],
     [
+     "Malik Willis Called Out After Dolphins Loss: \u2018Just Won\u2019t Cut It\u2019 - Heavy.com",
+     -0.78,
+     "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTXNraXNCRDZTNndjdXUtYy1lNW5VYzFpYmx0YmZ3b0xJcVhXVlllMEdoMGR4RXVqZGpzNExZS3pYVjl3VGVBeUhzemhOdHdvaXdzYTNTdktZdFJpWUZHRjEwVlk5a2VKTVN6UUZ3RU9EWUhYS0dRRHVhcGNWSnZRUWlZbjRla1VPZnc?oc=5"
+    ],
+    [
      "NFL Week 9 player props picks, predictions: Malik Willis and Drake London break free - New York Post",
      0.77,
      "https://news.google.com/rss/articles/CBMiowFBVV95cUxObEpHVUxPbUI2SU1KN1RzNFM0MTlCWVJyMU5Ld3R5MUhMb3l2bktseWE2b291THRMWE9BS1k5WVQ5Y2JVQ2M4NncybnBEc3paaG9LNFRJakFhb0tsX1B5dXpUVlJ4TmtmZUw1bUZ1TkY5UUNDMDBkU25lUm5vaElOdEREdWdLNlBfd3RyYUl0OXcxVl9vTFR2UEx4THhfTTNPa2VJ?oc=5"
-    ],
-    [
-     "NFL Week 9 Touchdown Picks: Willis & Jeanty TD Bets - Lineups",
-     0.61,
-     "https://news.google.com/rss/articles/CBMipgFBVV95cUxOc3ZEODhkdVZQSmNFNnBIMjdYSjVkeTFzZUVWamp2MmhzVHExYm5rVWFZSzdfSWZVSFFSMmFxLThHZm1JRmRzTVlKLUNJeHhubnZFU29RMHRLUWhJWTduUlhic19TbEVLcFRNUlRmbGxicTVMNjNfbFYzaE9NUGxLRGswYXR1UGtLNDhWMXFGVEpXX2p3LWRKOFZIb0ZBR1Bjb1RSWEJR?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Malik Willis Called Out After Dolphins Loss: \u2018Just Won\u2019t Cut It\u2019 - Heavy.com",
+     "score": -0.78,
+     "source": "Heavy.com",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPTXNraXNCRDZTNndjdXUtYy1lNW5VYzFpYmx0YmZ3b0xJcVhXVlllMEdoMGR4RXVqZGpzNExZS3pYVjl3VGVBeUhzemhOdHdvaXdzYTNTdktZdFJpWUZHRjEwVlk5a2VKTVN6UUZ3RU9EWUhYS0dRRHVhcGNWSnZRUWlZbjRla1VPZnc?oc=5",
+     "published": "2026-11-08T21:42:21+00:00"
+    },
+    {
+     "title": "Derrick Moore spins Willis to the turf on 10-yard sack - NFL.com",
+     "score": 0.0,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNb3k2N29iQWNsRHEtdFNWMkVDWEtlOGljTjhha1RVQWZvbDJKaFlTNGtrRkV0Vmx4TVRMQl94N3NiMk5TSWRtRERrT0FDYjNiR05XVmFlRzhNWlhrNUFWY0hycDNWaHJjb2tTUDFJM0JIc2tCanFEMVBOMk9HQW5nSnNGTDVNTXdB?oc=5",
+     "published": "2026-11-08T21:18:15+00:00"
+    },
+    {
+     "title": "Lions' defense shuts down Malik Willis and the Dolphins in 19-9 win",
+     "score": 0.65,
+     "source": "profootballtalk.nbcsports.com",
+     "link": "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/lions-defense-shuts-down-malik-willis-and-the-dolphins-in-19-9-win",
+     "published": "2026-11-08T20:50:41+00:00"
+    },
+    {
+     "title": "Miami Dolphins QB Malik Willis grades: Key INT in loss to Lions - The Palm Beach Post",
+     "score": -0.56,
+     "source": "The Palm Beach Post",
+     "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdkg1ek1LN2lJYXVvNngzb0xlYi16RWpOcWxwcF9aVU9UWlp6VlpQLURpNlZmekJ5N1FIbUxwYVZnWXNkSS1xR043eERQSjRZbTd3VGp1NGFpVVBsN2syMm03a05YSUtCdnV5amZ4dU9jeUtXRHFOcllCNDlhQzNES3d6MnN4Nk1MekJmSEJLZWxUVGlCUjhVeXhVMkVwSEd1c0c5RG9TRnlfV0tjQmx5ZWxIUDMwVkFfSE9ZRmY4cElsR2c?oc=5",
+     "published": "2026-11-08T20:49:00+00:00"
+    },
     {
      "title": "Malik Willis Passing Yards Pick for Dolphins vs. Lions - DraftKings Network",
      "score": 0.0,
@@ -5670,13 +5659,6 @@
      "published": "2026-11-07T21:11:32+00:00"
     },
     {
-     "title": "Malik Willis Trade Rumors: Could the Baltimore Ravens Target Him? - Chat Sports",
-     "score": 0.0,
-     "source": "Chat Sports",
-     "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNExrTmpaNUVDR0pfZGVKb3R5X0NXbmxQVFdVMTBRN0xOUk95Tld0RExCV3lFbHdNYWFFRzhQNjVocm5NX3JDbGY2LVN0al9RY0dfN3FRTmVDdmNJS3laY3paZXd1M2hZVjAtR0tBLWlFY1VwbmpVWjg3SzJuelNpdTM5eTdOVDBNdGlTTGpGdmh1ejJvZzg0dlhxLTFGU2NhMktnTnZaQ3ZoYUxSRmc?oc=5",
-     "published": "2026-11-07T16:40:04+00:00"
-    },
-    {
      "title": "Fantasy football last-minute pickups: Kaelon Black and Malik Willis lead the way - ESPN",
      "score": 0.0,
      "source": "ESPN",
@@ -5689,13 +5671,6 @@
      "source": "RotoBaller",
      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPb0tBbW8zTkJHd0pDUWVtSGw5Mlh0dXktd2FZbnVvQmRObDFtY0kxbXhyVmRweGlfbnhOQXFxdFgtb3ZfSzFGSVMwcXVPLXQwQ2tyX0RxMXVNZDdRZHE5WTJVVUttQ2RxdFFuQkFPaEt3QXdlZ2lCbldVTVE0YmFwX0czNHJqcTZzbDVYRFcwMGFiMEZQQ1NKeXRkcw?oc=5",
      "published": "2026-11-07T11:53:10+00:00"
-    },
-    {
-     "title": "Who Should I Start for Fantasy Football Week 9? Kirk Cousins, Jayden Daniels, Gardner Minshew, Malik Willis, Dak Prescott, Jared Goff, Bryce Young, Geno Smith, C.J. Stroud, Shedeur Sanders - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMipAJBVV95cUxQSFVkaG52dnlqTi1PNDE0eWZMZUlENDFqZS15aWZ1dFlBdVZ4VFEwRVpkRGM5N0FRTFE5OFYyMG5BcjRTMjdJSUZXQnlhS3VqWFBUOGpDeWV4R21jOVQyRUw0TTM1SENvLXg5cy1pd0xVaUhKOE5PWVZ3VnBsTi1XT01kNHk2NVZRQi1WSlZuN3N1V2NGQjlxR2tDU3Y5R2dJTklqWmhCT2paNUVfMEdvbkdOX29JcWNOUWtRU245OExKLXNkbXlmUFF4a25MNVRYRk5CcGQxMmRjOHQzYlNscGVlblotX0tfVVJCb2FhNmxqeXhqQ1VVMXAxRzh3dzlSZVNkVlFpUHJRWUEyanFLbHZjd3JxVjRsSE1PdVBNbUNQQ3pM?oc=5",
-     "published": "2026-11-07T11:12:05+00:00"
     },
     {
      "title": "DraftKings NFL DFS Picks For Week 9 Main Slate: Believe In Malik Willis - FantasyLife",
@@ -5731,29 +5706,15 @@
      "source": "Sun Sentinel",
      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY0VzZTlaQng1R0tQdXotUDVVM2tTTWJtaTd2UGY1WlpqclMydWNUUXBJajFpUVNZZDF1ZTlSWFowX011aVlyVUw2WEdVOFoxM3c2MUlqVE5tQUswS2U5cjhpSDNQUVZpU1JGeTB4OWN4dUJXVF81c3k0TUp4OUJYZ3hGVGRXVzhtWmRJYmdPWVFYTHh0dGgzQm1iNE9aZFk?oc=5",
      "published": "2026-11-06T18:07:10+00:00"
-    },
-    {
-     "title": "Fantasy Football Start/Sit Week 9: Malik Willis, Patrick Mahomes, Quinshon Judkins, Breece Hall, and More - Pro Football Network",
-     "score": 0.0,
-     "source": "Pro Football Network",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE91UzNnUFJzR0Q0TWhxd2F1VHhmWl9tNkE2eG11YzB0QWQ0M2hkSGxGcW1oMTZndFBCZmstUzBQUmtqZmlFbEI1VWhYRUg2RGVNZUFWNUp6VWItY0V2VlpON2J6WDZJaTJ2b1hrMjc2YXFWTV9CVTNuS3JXYnFBV28?oc=5",
-     "published": "2026-11-06T18:05:20+00:00"
-    },
-    {
-     "title": "Week 9 Fantasy Football Expert Picks: Malik Willis, Harold Fannin, and More - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOWFUxWURvVWVNaF9zTlZBbE1OMDlJblkzR0poRlc4Y2RGcUg1N0pXUlBIQThBaGE1VEdOQS1jSkNCVVdPOUxzcWxWV1c3cTdOZ0VLaUxwSUpfMVlWZVdYYU5DWk9IMHBGZWs2YnRXcVhpS0FPZ3pEWHExLUpxSVdTNHcxNG5sdw?oc=5",
-     "published": "2026-11-06T12:34:29+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.2,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.011,
+   "mult_sentiment": 1.006,
    "base": 23.293999999999997,
-   "adj": 28.26,
-   "trending_adds": 159502,
+   "adj": 28.12,
+   "trending_adds": 149576,
    "slot": null,
    "notes": [],
    "matchup_grade": "A",
@@ -5777,27 +5738,55 @@
    "def_teams": 32,
    "def_ratio": 0.85,
    "implied": 20.75,
-   "weather": "48F, wind 7mph",
-   "sentiment": 0.0,
+   "weather": "49F, wind 7mph",
+   "sentiment": 0.04,
    "n_articles": 15,
    "headlines": [
     [
-     "Fantasy Football Start 'Em, Sit 'Em Picks: Justin Jefferson, Jonathan Taylor, Woody Marks, Tucker Kraft - RotoBaller",
-     0.0,
-     "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQk4tcEdqVmtzUV9Qdi14TloxWTQwcW9RVURIWXF5MGpzQzZBREZQRFY4SkNGVE1jNS0tX1ROSXd1ZzNkbDJ3Y2J6TWpEQUFTNUt0ZmIzcU03N3pEQzdYNHJmdnhjNklHNk4xMy1QT1J5Z3QwQmhQSk9ra01oSjU1TTFLRGRPb1VYUE1KakI3Q3RzdFR4VGFjMUk5V1JQVnVDUk9SVFU5RFd0Vm43dWRqNEFGWFp5LS1EZEZWanFXeFVUZzRrcFV4a2JEZw?oc=5"
+     "Week 9 sell-high trade targets: Purdy, Pollard, Wilson, Kraft at peak fantasy value - The Big Lead",
+     0.59,
+     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeDJ4b0JJMHB4Ui1FcTRIRnFCZ1NrTDJPblBLVno3WjZpM3JBZ25MTVY5bG55X2RPekdiazdxXzdTUEEzUmR1UHBvdXJsN1FyTFIzdWZ1NzdHSGtJYk1ILU1BdTRlQmVwQW5MbEZWQ2FZS3Z5alhWLXQ3SkNuY040T0Y5dGdNV2Zua3dfZ1ljOGxJZk10MUZQNzhxalFFbDhxa1NOZ3hacXZTNXUwamNSTHZHTkZMVU1PMmhMUHZqS29qaXp6OV8zSUd3SHNMd05jWHlsdVpR?oc=5"
     ],
     [
-     "Foster Moreau or Tucker Kraft: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "Seth McGowan or Tucker Kraft: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
      0.0,
-     "https://news.google.com/rss/articles/CBMiuAFBVV95cUxORE42cFMtTnZzNE1pTDdyY3hWVE1BV3JBRmxqM1hSUWg5dVpyY21Yc2dlVjNKbFQ0ajA0N255NFFsZVB0cW5XZ0MtelRZU0d0RS1ITEtMV2x2NG41Zjl4UjVoa0VQTW9xeTFZZF8taGhJSVhhS25CazI2S1JKa2NTTDR5Rm44X3U2emNkbWMxRDJGMmtoYzNwdV9HYkJKZXpSUTlSWG5Fb214UEVnOUhJWVQzNVBFM29o?oc=5"
+     "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcGp1dTljMnRYYktDTHBKYW1UQ2JodW10eUFzdzVvWTd6Zk9sdnpnektVZC0tcXFvMDd6LU1nTVNnN3o1UVphYTZaUG1EVEtWYVlKMDJBRmdoVGdDSWJnYUEwTk82RzVuV2hHVnEzME5GX3NSbnhEMWd3djhoY2twdnVRU2ZUc1ZUREhJeXNMRW5LQlFVckdPcWlHcTlXQUY0aUo2R0pfOHpxRnBYUXdZMjB3?oc=5"
     ],
     [
-     "Tucker Kraft Week 9 Outlook for Fantasy Football (2026) - RotoBaller",
+     "Aaron Jones Sr. or Tucker Kraft | Who Should I Start Week 9 - FantasySP",
      0.0,
-     "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbk1WaE9qU0o4SHdlczFHdjVkYVNWcXRoUDJCN3lEZUtpbWp2SVBjMW9ZamlHb1NMTVdWYndfc0pZSUFCb05zTEFQQUNGS2dLQ21MR1E1TktjME5UN3dsVGRvbGZkTERXUzRYNU9vdERkbEQyUm1FbWRBVWtFMlp4Xy03VHhNUEpfOHh4TlBta01pOGpZUUd1QUtrcXVzeEI2X3d0YU5idGh3NVQzbTN3TlJ4YURIMXFRdlIwNDFoRQ?oc=5"
+     "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sRzFnMHhTWG1vU0lJSUpPblZxRG9SYkVPR2tiR3huM3dqbVA5VnFkeEU2NWVPeGx0OGZFS296NUo0OEt6NWRhYWhFaUYxbzllaklrTVN6cHZFMWNlVkc4MkVWRFd4M19XWlBWZTV5NktRbi1BN0wwNVRIQlNaUQ?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Seth McGowan or Tucker Kraft: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcGp1dTljMnRYYktDTHBKYW1UQ2JodW10eUFzdzVvWTd6Zk9sdnpnektVZC0tcXFvMDd6LU1nTVNnN3o1UVphYTZaUG1EVEtWYVlKMDJBRmdoVGdDSWJnYUEwTk82RzVuV2hHVnEzME5GX3NSbnhEMWd3djhoY2twdnVRU2ZUc1ZUREhJeXNMRW5LQlFVckdPcWlHcTlXQUY0aUo2R0pfOHpxRnBYUXdZMjB3?oc=5",
+     "published": "2026-11-07T18:04:10+00:00"
+    },
+    {
+     "title": "Aaron Jones Sr. or Tucker Kraft | Who Should I Start Week 9 - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sRzFnMHhTWG1vU0lJSUpPblZxRG9SYkVPR2tiR3huM3dqbVA5VnFkeEU2NWVPeGx0OGZFS296NUo0OEt6NWRhYWhFaUYxbzllaklrTVN6cHZFMWNlVkc4MkVWRFd4M19XWlBWZTV5NktRbi1BN0wwNVRIQlNaUQ?oc=5",
+     "published": "2026-11-07T16:26:55+00:00"
+    },
+    {
+     "title": "Kendre Miller or Tucker Kraft: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNblppQVV3Y2RqOTQzcXRDZWROcVlOdjl0V1dPc3h6Q1VsTXBWbExDS3ZIdDRvaVlfU0ktdkRaS0EtUU5vTUhsN2NsRlNETXU2cXJwRGxSMnIzYjlUY0pvako1eVJiUGZKNWs1ZEdGWUJOaEVQVHNGTlR4S1I3elpDMEZfZ2xoWmthcTd4M2Jrd1F2bklZNVlfeWhaQlZkTl9vNFRtaS1hVTFPRmVYNkE2TXNpZ3V0YWE0?oc=5",
+     "published": "2026-11-07T15:42:20+00:00"
+    },
+    {
+     "title": "Week 9 sell-high trade targets: Purdy, Pollard, Wilson, Kraft at peak fantasy value - The Big Lead",
+     "score": 0.59,
+     "source": "The Big Lead",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQeDJ4b0JJMHB4Ui1FcTRIRnFCZ1NrTDJPblBLVno3WjZpM3JBZ25MTVY5bG55X2RPekdiazdxXzdTUEEzUmR1UHBvdXJsN1FyTFIzdWZ1NzdHSGtJYk1ILU1BdTRlQmVwQW5MbEZWQ2FZS3Z5alhWLXQ3SkNuY040T0Y5dGdNV2Zua3dfZ1ljOGxJZk10MUZQNzhxalFFbDhxa1NOZ3hacXZTNXUwamNSTHZHTkZMVU1PMmhMUHZqS29qaXp6OV8zSUd3SHNMd05jWHlsdVpR?oc=5",
+     "published": "2026-11-07T15:02:08+00:00"
+    },
     {
      "title": "Fantasy Football Start 'Em, Sit 'Em Picks: Justin Jefferson, Jonathan Taylor, Woody Marks, Tucker Kraft - RotoBaller",
      "score": 0.0,
@@ -5874,42 +5863,14 @@
      "source": "RotoBaller",
      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTXN0NGNOMEMxV3FxNjlKMjQwZ2dmdXFlbGF5Z0xBTjQzZ0NCeWlKNjlqVkh1TDNESlNHVnlvNGswdkh4QThwYk53WFBIQU1kRjJqVkhaN0ZoUndCeXBpbk5KeWJBbWc4bUFDN21qcVI3TG9ld0ZTcWpQMzlBelllV3RVTzBqaENBS0FvZTZwUUo1QUNlMUp4cng5RDJ2ZXRJN1lqNEl6eDM1NW5PQ1VnbFViN00wRXc?oc=5",
      "published": "2026-11-04T17:01:33+00:00"
-    },
-    {
-     "title": "Tucker Kraft Prop Bets: Receiving Over/Under Lines vs. Patriots - sports.betmgm.com",
-     "score": 0.0,
-     "source": "sports.betmgm.com",
-     "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5wcmY4SnJRbTZYc0xKQmNjbEFmTVVxRFRtZDFlTDNCY0xScEhZOG8zS3BSemNXbUZLM0FkYmtQWk1tdFV1MDVVMDV4MkhodW03QnJHdHNlWElyZUdjY28tNXNwaHJvRFhuS1l4STVzUGF2TUNj?oc=5",
-     "published": "2026-11-04T08:00:00+00:00"
-    },
-    {
-     "title": "Seth McGowan or Tucker Kraft: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQRk16QmhSMTJ5cjRjMFZKamFKTGEtNWF2VnBhb3JLMlliZUNvNG8taThxY1AwakVkZ1NiS2N6N19yUVJwRlFjc243bEU5aEI0UzRqNl9tcGdWOV9MMXVDWHZjWWMwT1I5Z1hNNWhIWGlWdXZTZ0dlbWIzdWRPc1l5RmdrUnh4RVNnQkR5VGxOLW1oRDI3MnNpSVJnQzBva1FjemZOUE4yTkFrbzAxMXdGNEdyd0ZNY0U?oc=5",
-     "published": "2026-11-04T01:40:52+00:00"
-    },
-    {
-     "title": "George Kittle & Tucker Kraft Headline Week 9 Fantasy Football Must-Start Tight Ends - Sports Illustrated",
-     "score": 0.0,
-     "source": "Sports Illustrated",
-     "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxON0xZcDdWT1pnTkVyMUZGejUxY084N19waDBXdTdSVXhBQlZra3czTjRPU3A2WmY1XzNXanozRUZISkVxQUZKQWdUNWxaUjMtMWIxRFIxVFJ3bXRFa1VMSFhiaEJKYkZEOVZmSHR0MDNmbnE1TVRhakxoeWgwVXZDY3ktV01SVmtrZkZoUTBrTHAtOWRjNTVRSVN5NEViUVU4WTlNTFdTeHN0UzZ2elJ4QXFLSGdCQWs3Q25NVk1DRGdoTkVJLUhHTg?oc=5",
-     "published": "2026-11-03T18:39:00+00:00"
-    },
-    {
-     "title": "Kyle Pitts or Mark Andrews or Tucker Kraft: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPUF9IMzVXUTk1NkhKSW5jSERKYmdPdXVWRWN6dTdSVXh4N09SWWJfQXpLZ3RsRlhsUEF2OUMtQm9uc0J2RVAyNURkN2VDU2VRRVloTU5FTE9lOGdXNWJpMzNLLXN0LVVYSmd0OTVoVWtQc0ZpNnNqVm5KNF84NWcyUldDSUZsWmxmdHhGcV8tdmJfNUl5bngyLVBfZDNOOGJGcEp5MnNUT2dnSS11NUpLa25ISjFKNWo4OXF4R04tenE?oc=5",
-     "published": "2026-11-03T00:25:36+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.884,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
+   "mult_sentiment": 1.003,
    "base": 11.975999999999999,
-   "adj": 10.59,
+   "adj": 10.62,
    "trending_adds": 0,
    "slot": "TE",
    "notes": [],
@@ -5934,7 +5895,7 @@
    "def_teams": null,
    "def_ratio": null,
    "implied": 23.75,
-   "weather": "67F, wind 8mph",
+   "weather": "68F, wind 6mph",
    "sentiment": 0.0,
    "n_articles": 0,
    "headlines": [],
@@ -5956,18 +5917,18 @@
  "waiver_recs": [
   {
    "player_id": "2020",
-   "weekly_gain": 2.6,
+   "weekly_gain": 2.59,
    "ros_gain": 9.53,
    "drop_id": null,
    "bid": "$17 of $55",
-   "score": 12.34,
+   "score": 12.32,
    "bid_detail": {
     "value": 40.7,
     "horizon": 4,
     "rivals": 3,
     "teams": 11,
     "rival_max_budget": 74,
-    "trending_adds": 144116,
+    "trending_adds": 141995,
     "pct": 0.306
    }
   },
@@ -5977,15 +5938,15 @@
    "ros_gain": 8.38,
    "drop_id": null,
    "bid": "$22 of $55",
-   "score": 10.53,
+   "score": 10.48,
    "bid_detail": {
     "value": 34.3,
     "horizon": 4,
     "rivals": 9,
     "teams": 11,
     "rival_max_budget": 100,
-    "trending_adds": 254525,
-    "pct": 0.401
+    "trending_adds": 241585,
+    "pct": 0.4
    }
   },
   {
@@ -5994,32 +5955,32 @@
    "ros_gain": 11.14,
    "drop_id": null,
    "bid": "$12 of $55",
-   "score": 9.41,
+   "score": 9.44,
    "bid_detail": {
     "value": 44.6,
     "horizon": 4,
     "rivals": 0,
     "teams": 11,
     "rival_max_budget": null,
-    "trending_adds": 44930,
-    "pct": 0.225
+    "trending_adds": 46540,
+    "pct": 0.226
    }
   },
   {
    "player_id": "4993",
-   "weekly_gain": 1.4,
+   "weekly_gain": 1.37,
    "ros_gain": 6.64,
    "drop_id": "8110",
    "bid": "$19 of $55",
-   "score": 9.17,
+   "score": 9.04,
    "bid_detail": {
-    "value": 28.0,
+    "value": 27.9,
     "horizon": 4,
     "rivals": 10,
     "teams": 11,
     "rival_max_budget": 100,
-    "trending_adds": 84964,
-    "pct": 0.351
+    "trending_adds": 76244,
+    "pct": 0.348
    }
   },
   {
@@ -6035,25 +5996,8 @@
     "rivals": 3,
     "teams": 11,
     "rival_max_budget": 100,
-    "trending_adds": 65960,
+    "trending_adds": 65696,
     "pct": 0.238
-   }
-  },
-  {
-   "player_id": "3161",
-   "weekly_gain": 0.0,
-   "ros_gain": 4.67,
-   "drop_id": "8110",
-   "bid": "$10 of $55",
-   "score": 7.63,
-   "bid_detail": {
-    "value": 18.7,
-    "horizon": 4,
-    "rivals": 0,
-    "teams": 11,
-    "rival_max_budget": null,
-    "trending_adds": 197454,
-    "pct": 0.174
    }
   },
   {
@@ -6062,41 +6006,41 @@
    "ros_gain": 3.48,
    "drop_id": "8110",
    "bid": "$11 of $55",
-   "score": 7.61,
+   "score": 7.7,
    "bid_detail": {
     "value": 13.9,
     "horizon": 4,
     "rivals": 5,
     "teams": 11,
     "rival_max_budget": 100,
-    "trending_adds": 352608,
-    "pct": 0.204
+    "trending_adds": 386229,
+    "pct": 0.205
    }
   },
   {
-   "player_id": "13337",
+   "player_id": "3161",
    "weekly_gain": 0.0,
-   "ros_gain": 4.08,
+   "ros_gain": 4.67,
    "drop_id": "8110",
-   "bid": "$11 of $55",
-   "score": 6.78,
+   "bid": "$10 of $55",
+   "score": 7.59,
    "bid_detail": {
-    "value": 16.3,
+    "value": 18.7,
     "horizon": 4,
-    "rivals": 4,
+    "rivals": 0,
     "teams": 11,
-    "rival_max_budget": 100,
-    "trending_adds": 113436,
-    "pct": 0.194
+    "rival_max_budget": null,
+    "trending_adds": 189624,
+    "pct": 0.173
    }
   },
   {
    "player_id": "13968",
-   "weekly_gain": 1.87,
+   "weekly_gain": 1.86,
    "ros_gain": 9.71,
    "drop_id": null,
    "bid": "$12 of $55",
-   "score": 6.73,
+   "score": 6.72,
    "bid_detail": {
     "value": 40.7,
     "horizon": 4,
@@ -6108,20 +6052,37 @@
    }
   },
   {
-   "player_id": "8119",
+   "player_id": "13337",
    "weekly_gain": 0.0,
-   "ros_gain": 4.75,
+   "ros_gain": 4.08,
    "drop_id": "8110",
    "bid": "$11 of $55",
-   "score": 6.66,
+   "score": 6.69,
    "bid_detail": {
-    "value": 19.0,
+    "value": 16.3,
     "horizon": 4,
-    "rivals": 3,
+    "rivals": 4,
     "teams": 11,
     "rival_max_budget": 100,
-    "trending_adds": 71673,
-    "pct": 0.192
+    "trending_adds": 103923,
+    "pct": 0.193
+   }
+  },
+  {
+   "player_id": "9482",
+   "weekly_gain": 0.0,
+   "ros_gain": 4.8,
+   "drop_id": "8110",
+   "bid": "$14 of $55",
+   "score": 6.56,
+   "bid_detail": {
+    "value": 19.2,
+    "horizon": 4,
+    "rivals": 8,
+    "teams": 11,
+    "rival_max_budget": 100,
+    "trending_adds": 63288,
+    "pct": 0.253
    }
   }
  ],
@@ -6136,6 +6097,6 @@
  "alerts": [
   "8110"
  ],
- "total": 128.85,
+ "total": 129.02,
  "warnings": []
 }
