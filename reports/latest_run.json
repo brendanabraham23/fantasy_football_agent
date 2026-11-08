@@ -5,7 +5,7 @@
   "league_id": "1389327094277767168",
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-08T19:58:45+00:00",
+  "generated_at": "2026-11-08T20:46:12+00:00",
   "options": {
    "news": true,
    "weather": true
@@ -4897,8 +4897,8 @@
    "def_ratio": 1.07,
    "implied": 24.0,
    "weather": "56F, wind 8mph",
-   "sentiment": -0.2,
-   "n_articles": 7,
+   "sentiment": -0.21,
+   "n_articles": 6,
    "headlines": [
     [
      "Jason Myers Misses pair of kicks in MNF loss - Fantasy Footballers Podcast",
@@ -4958,21 +4958,14 @@
      "source": "RotoBaller",
      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNbnRzRzlHc0hQLVBqd2Nhd3N5SzFIU3ZFTUFaVHFzZDYwQS1YSmxEVTE5Z09UaDV2MHRCTXFjdUZRTXI3WWd0SThWWUxDOHpVck9yZTc4SjAxUF9RTi1IbXZkU2RDbnZCVG1QZEwwbE8tbllFdmNCUUsza2NiM1RSUmFlYnQtREttQURRT1hQN2RnUnFYdzY4NF9Ud2VjWDdJRmhURWpzOWVEY21HSGNv?oc=5",
      "published": "2026-11-01T21:44:31+00:00"
-    },
-    {
-     "title": "Jason Myers or Spencer Shrader: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN19faEZ6Qjc4MDRURDNlVWJVOWdUY2tPX2xRVmR5dEZ4UnhoM1VzWUcxVmxkblFDZEk5ZW9aRkdSZHhFZmE2QlJZSnhKM21Jb0ZjekUyRkU3WEtZdVh4b0xKUlQzdy0xNnRCUk04ODFZWlV1WngybmlzMXJXanZJb1Q3QWZ3Y19FZ3VkUFpvYWdtV1J5R2hDMkpDVmJiQi1hd2Z4QVdQSHZKU3htWjVZbDBCemU?oc=5",
-     "published": "2026-11-01T20:19:25+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 1.063,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.984,
+   "mult_sentiment": 0.983,
    "base": 7.724,
-   "adj": 8.08,
+   "adj": 8.07,
    "trending_adds": 0,
    "slot": "K",
    "notes": [],
@@ -5963,11 +5956,11 @@
  "waiver_recs": [
   {
    "player_id": "2020",
-   "weekly_gain": 2.63,
+   "weekly_gain": 2.64,
    "ros_gain": 9.53,
    "drop_id": null,
    "bid": "$17 of $55",
-   "score": 12.36,
+   "score": 12.37,
    "bid_detail": {
     "value": 40.8,
     "horizon": 4,
@@ -6099,11 +6092,11 @@
   },
   {
    "player_id": "13968",
-   "weekly_gain": 1.86,
+   "weekly_gain": 1.87,
    "ros_gain": 9.71,
    "drop_id": null,
    "bid": "$12 of $55",
-   "score": 6.72,
+   "score": 6.73,
    "bid_detail": {
     "value": 40.7,
     "horizon": 4,
@@ -6143,6 +6136,6 @@
  "alerts": [
   "8110"
  ],
- "total": 128.82,
+ "total": 128.81,
  "warnings": []
 }

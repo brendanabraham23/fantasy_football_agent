@@ -1,5 +1,5 @@
 # Brendobendo - Week 9, 2026
-_Refounders Football League   - generated Sun Nov 08 07:58 PM_
+_Refounders Football League   - generated Sun Nov 08 08:46 PM_
 
 ## Recommended lineup
 
@@ -12,7 +12,7 @@ _Refounders Football League   - generated Sun Nov 08 07:58 PM_
 | WR | Keenan Allen | WR | IND | vs DAL | 11.4 | 12.0 | A (26/32) | 23.5 | 57F, wind 12mph | +0.13 (15) | - | **12.6** |
 | TE | Tucker Kraft | TE | GB | @ NE | 11.2 | 13.6 | D (10/32) | 20.8 | 48F, wind 7mph | +0.00 (15) | - | **10.6** |
 | FLEX | Ashton Jeanty | RB | LV | @ SF | 12.2 | 15.9 | B (21/32) | 21.5 | 65F, wind 6mph | +0.12 (15) | - | **13.3** |
-| K | Jason Myers | K | SEA | vs ARI | 8.8 | 5.3 | C (18/32) | 24.0 | 56F, wind 8mph | -0.20 (7) | - | **8.1** |
+| K | Jason Myers | K | SEA | vs ARI | 8.8 | 5.3 | C (18/32) | 24.0 | 56F, wind 8mph | -0.21 (6) | - | **8.1** |
 | DEF | Denver Broncos | DEF | DEN | @ CAR | 8.3 | 6.7 | - (-) | 23.8 | 67F, wind 8mph | +0.00 (0) | - | **8.1** |
 
 Projected lineup total (adjusted): **128.8**
@@ -64,7 +64,7 @@ Projected lineup total (adjusted): **128.8**
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jason Myers | K | SEA | vs ARI | 8.8 | 5.3 | C (18/32) | 24.0 | 56F, wind 8mph | -0.20 (7) | - | **8.1** |
+| 1 | Jason Myers | K | SEA | vs ARI | 8.8 | 5.3 | C (18/32) | 24.0 | 56F, wind 8mph | -0.21 (6) | - | **8.1** |
 
 ### DEF
 
@@ -96,7 +96,7 @@ _Lineup gain = change in this week's optimal lineup total. Value vs drop compare
 - [Bucky Irving, Fueled by Tragedy, Pushes Forward One Missed Tackle at a Time - Tampa Bay Buccaneers](https://news.google.com/rss/articles/CBMingFBVV95cUxQS1p1M25YcWgwM29STXQ0di1MMDhtTFVvT29PekFnMlgxV2Uycm1mWlFwSHNuejF5cXpJV3ZpbWtWNGV6N05IMG0tNG5IaVlESTFOWTR2XzlnZ3pTb3JTOU5HdExuU3R5RXFPWWZZT3NtdGNITlpuQ2RobE9NdTA3bWY5NU5Jeml6SndVVktYOTJPSzBkTjBPZ3pQaVZBdw?oc=5) (-0.92)
 - [Best Bucky Irving Bet for Buccaneers at Bears on Sunday 11/8/26 - DraftKings Network](https://news.google.com/rss/articles/CBMirAFBVV95cUxNRkFCNjltd1lFbEE1U0F6TDNlUUczM2U4QVhBRzBJM3k3cndTNmNoVlhnVWF2SUQyQ2R5eUVSMkRKM1VmZ3FxMDV3LUE4Z1VOMUg3ZnM0TDcyUi1wSUhlTlEwM0dIYlBwajdmTlRHV29nMHc2SGpYX0EzeDJYNDJpY1pQanE2a2l2VDlUS2F3UlFjOUpaTE5rQXdLRHVWSXpVOURkc0JiSGRYVjNq?oc=5) (+0.86)
 
-**Jason Myers** (-0.20)
+**Jason Myers** (-0.21)
 - [Jason Myers Misses pair of kicks in MNF loss - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMimwFBVV95cUxPb3pEa2NnS0NYZ09KaGVxbmExaGVDSS1aaHJVRnhUWUFpYXZudjlQb1JRcjlDazBmeFhwSkFpQXVzMl9TTDVZZG9XVDhlY2FKMTNIck5INWo5SHNZaHV1bXZGQkF5N3FGVXkxdWtTUENYbU5WZ0lMSVdTTmViQU1iZG9xMHNSV0xybGVJNEVGWkNhYnVVSWdUbnF1Zw?oc=5) (-0.75)
 - [Seahawks' Jason Myers: Misses pair of kicks in MNF loss - CBS Sports](https://news.google.com/rss/articles/CBMipAFBVV95cUxOVzg5cnVXQmlzT0J5TlRnU3ZYdG1abmExLVlYa0QybmRuQmk3UDI3akFRVWs5QzluNXRoenU1c05hRmZ0UnRGV1BhUlJ5VlVqVjhSczJ2cWwxdFlwTUI1emVIRlRxcmYyZFpDUzNrQ2xIb3hMSl9GdVZfUU5mMzBmMlVoam5fLXd0bHBsb3ViVzR3RjNOSDk3V3hmVFRLWFE4WnlNNg?oc=5) (-0.75)
 - [Jason Myers misses two kicks in loss Monday - FantasyPros](https://news.google.com/rss/articles/CBMikgFBVV95cUxNVmFsUlV4cVRKT0hPT3RhUC01RExub2RFbm1NM0NNZm9sb3Y4TzNVQ0djZlV6dTBWaXE4OElZVXViZG1MQXV6NzMtazhyRExKWHRzcVFBSlU2NThsZkRCeUpNVUVWQ1BKV0JuQjF3SldhWDNXbXhIakpXUDE2U0s4bjJLS2haTkFuXzZCQnBDeUh1d9IBlwFBVV95cUxQMFFyR2FNTVdqNWJxcjBNc0Z0RUxqMXhHWHYwdUVabTRBWVd4Y2FIZk1HSWdUbkY5dGo4RzlwaEVncWZOWWd3aEpleV9QN3RqZFhnU2h5aHlXcjNFMVA3d2E1anF1R3FGcmFBandVVEIzbVlCTUpLRG5GelpuNzhmMTN6dmhMSENUN0tfWXZPMDBOZlVxOFgw?oc=5) (-0.75)
