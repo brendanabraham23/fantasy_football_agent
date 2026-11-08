@@ -10,7 +10,7 @@ _Refounders Football League   - generated Sun Nov 08 08:46 PM_
 | RB | Bucky Irving | RB | TB | @ CHI | 17.6 | 17.3 | F (3/32) | 20.8 | 46F, wind 7mph | +0.30 (15) | - | **15.4** |
 | WR | Matthew Golden | WR | GB | @ NE | 14.9 | 17.7 | B (23/32) | 20.8 | 48F, wind 7mph | +0.08 (15) | - | **15.7** |
 | WR | Keenan Allen | WR | IND | vs DAL | 11.4 | 12.0 | A (26/32) | 23.5 | 57F, wind 12mph | +0.13 (15) | - | **12.6** |
-| TE | Tucker Kraft | TE | GB | @ NE | 11.2 | 13.6 | D (10/32) | 20.8 | 48F, wind 7mph | +0.00 (15) | - | **10.6** |
+| TE | Tucker Kraft | TE | GB | @ NE | 11.3 | 13.6 | D (10/32) | 20.8 | 48F, wind 7mph | +0.00 (15) | - | **10.6** |
 | FLEX | Ashton Jeanty | RB | LV | @ SF | 12.2 | 15.9 | B (21/32) | 21.5 | 65F, wind 6mph | +0.12 (15) | - | **13.3** |
 | K | Jason Myers | K | SEA | vs ARI | 8.8 | 5.3 | C (18/32) | 24.0 | 56F, wind 8mph | -0.21 (6) | - | **8.1** |
 | DEF | Denver Broncos | DEF | DEN | @ CAR | 8.3 | 6.7 | - (-) | 23.8 | 67F, wind 8mph | +0.00 (0) | - | **8.1** |
@@ -57,7 +57,7 @@ Projected lineup total (adjusted): **128.8**
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Tucker Kraft | TE | GB | @ NE | 11.2 | 13.6 | D (10/32) | 20.8 | 48F, wind 7mph | +0.00 (15) | - | **10.6** |
+| 1 | Tucker Kraft | TE | GB | @ NE | 11.3 | 13.6 | D (10/32) | 20.8 | 48F, wind 7mph | +0.00 (15) | - | **10.6** |
 | 2 | Jake Ferguson | TE | DAL | @ IND | 8.3 | 1.1 | B (21/32) | 28.0 | 57F, wind 12mph | +0.09 (15) | Questionable | **5.9** |
 
 ### K
@@ -76,16 +76,16 @@ Projected lineup total (adjusted): **128.8**
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cairo Santos | K | CHI | vs TB | 10.7 | 11.0 | +2.6 | +9.5 | 142422 | - | $17 of $55 |
-| New Orleans Saints | DEF | NO | vs CLE | 8.9 | 8.5 | +0.8 | +8.4 | 258270 | - | $22 of $55 |
-| Tampa Bay Buccaneers | DEF | TB | @ CHI | 8.2 | 16.7 | +0.0 | +11.1 | 43395 | - | $12 of $55 |
-| Mike Gesicki | TE | CIN | @ ATL | 12.0 | 12.6 | +1.4 | +6.6 | 86900 | Jake Ferguson | $19 of $55 |
-| Caleb Douglas | WR | MIA | vs DET | 11.3 | 14.7 | +0.0 | +7.1 | 62752 | Jake Ferguson | $13 of $55 |
-| Carson Wentz | QB | MIN | vs BUF | 13.1 | 0.0 | +0.0 | +4.7 | 196188 | Jake Ferguson | $10 of $55 |
-| Audric Estime | RB | NO | vs CLE | 8.3 | 7.9 | +0.0 | +3.5 | 347760 | Jake Ferguson | $11 of $55 |
-| Emmett Johnson | RB | KC | vs NYJ | 8.7 | 11.1 | +0.0 | +4.1 | 117198 | Jake Ferguson | $11 of $55 |
+| Cairo Santos | K | CHI | vs TB | 10.7 | 11.0 | +2.6 | +9.5 | 144116 | - | $17 of $55 |
+| New Orleans Saints | DEF | NO | vs CLE | 8.9 | 8.5 | +0.8 | +8.4 | 254525 | - | $22 of $55 |
+| Tampa Bay Buccaneers | DEF | TB | @ CHI | 8.2 | 16.7 | +0.0 | +11.1 | 44930 | - | $12 of $55 |
+| Mike Gesicki | TE | CIN | @ ATL | 12.0 | 12.6 | +1.4 | +6.6 | 84964 | Jake Ferguson | $19 of $55 |
+| Caleb Douglas | WR | MIA | vs DET | 11.3 | 14.7 | +0.0 | +7.1 | 65960 | Jake Ferguson | $13 of $55 |
+| Carson Wentz | QB | MIN | vs BUF | 13.1 | 0.0 | +0.0 | +4.7 | 197454 | Jake Ferguson | $10 of $55 |
+| Audric Estime | RB | NO | vs CLE | 8.3 | 7.9 | +0.0 | +3.5 | 352608 | Jake Ferguson | $11 of $55 |
+| Emmett Johnson | RB | KC | vs NYJ | 8.7 | 11.1 | +0.0 | +4.1 | 113436 | Jake Ferguson | $11 of $55 |
 | Drew Stevens | K | WAS | vs LA | 9.9 | 11.0 | +1.9 | +9.7 | - | - | $12 of $55 |
-| Jahan Dotson | WR | ATL | vs CIN | 9.7 | 10.3 | +0.0 | +4.8 | 73866 | Jake Ferguson | $11 of $55 |
+| Jahan Dotson | WR | ATL | vs CIN | 9.7 | 10.3 | +0.0 | +4.8 | 71673 | Jake Ferguson | $11 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
