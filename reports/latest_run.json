@@ -5,7 +5,7 @@
   "league_id": "1389327094277767168",
   "season": 2026,
   "week": 9,
-  "generated_at": "2026-11-08T16:47:27+00:00",
+  "generated_at": "2026-11-08T17:46:49+00:00",
   "options": {
    "news": true,
    "weather": true
@@ -1812,163 +1812,6 @@
    "ros_value": 9.59,
    "group": "candidate"
   },
-  "11783": {
-   "player_id": "11783",
-   "name": "Ryan Flournoy",
-   "position": "WR",
-   "team": "DAL",
-   "opp": "IND",
-   "is_home": false,
-   "on_bye": false,
-   "injury_status": null,
-   "injury_detail": null,
-   "proj": 8.68,
-   "recent_avg": 13.7,
-   "recent_games": 3,
-   "def_rank": 6,
-   "def_teams": 32,
-   "def_ratio": 0.87,
-   "implied": 28.5,
-   "weather": "56F, wind 12mph",
-   "sentiment": 0.064,
-   "n_articles": 15,
-   "headlines": [
-    [
-     "Week 9 Fantasy Football Sleepers Featuring Devin Singletary, Ryan Flournoy, and a Super Bowl-Winning Quarterback - Sports Illustrated",
-     0.83,
-     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdnZYQmtkSTRUWk5LTnJWcXFrZlFnWElMLUpYWE9DUGxEb0Vib1Jfak1xOThfVWxrbXpQUjhGYjZOalE5QnVBTVdTNDY2RUt3UFJJMi1fWWp5ZWZ5SnpmQlk1ZFZtYTM2T1dhQ0VlTk1xcXZOMHZsZHZZMHl4WHkwc3J6cFkyVFp2RnRwaU1GY0p0dFB4aEhmdlgzQ2ktLThrNWdKRE9TT1dkX2JIam5MVGRhb0paZ010MUVRR3RlNlhhcUZDcnZUR2VTUXV1SjRZdmJsQmdn?oc=5"
-    ],
-    [
-     "NFL Week 9 fantasy sleepers: Giants QB J.J. McCarthy, Cowboys WR Ryan Flournoy offer upside - NFL.com",
-     0.53,
-     "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY0lqd2hIZFRScXZLSFJZc25nYjBpQVN6UE8wN05aSHZ4UWxJVDhNRmdNSFRHYm5MY1RDbkFiZ1F3ZlpHVGV6T1RxSW1EUjVqT1pKdzEyT1FpNndOWmxEV1RUWVJSZXpaTG5PaWFBTWZhS1pQcUhPaFlrckxhLVpVNzgyN011eWV0MEpTZE1ZTFNNTUtIdDhUeEtzTEMxeElxdEYzbWs2QWlwMFc2ODhRNXBaOA?oc=5"
-    ],
-    [
-     "Ryan Flournoy Week 9 Outlook for Fantasy Football (2026) - RotoBaller",
-     0.0,
-     "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVZOaEladWtWZmxscFRsT3FXVVE5Q1ZPRGE1ZWhEel8wU0tHNjg1M2tUOHg0X0xoR25mNHRKWjNoOEV3Q3BDOGdFLU5pRE5YSC1kaWRJaVlJcjY1U0tyUnNSMEFpb3Z6dE1Hc2F6R19HVzdKTWROb2Z6U1VfVW40cG5vQ2JlS2I3RzkxZXdOc0RvT29lRlVHVGVpR1NFeGFDdHc?oc=5"
-    ]
-   ],
-   "articles": [
-    {
-     "title": "Ryan Flournoy Week 9 Outlook for Fantasy Football (2026) - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPMVZOaEladWtWZmxscFRsT3FXVVE5Q1ZPRGE1ZWhEel8wU0tHNjg1M2tUOHg0X0xoR25mNHRKWjNoOEV3Q3BDOGdFLU5pRE5YSC1kaWRJaVlJcjY1U0tyUnNSMEFpb3Z6dE1Hc2F6R19HVzdKTWROb2Z6U1VfVW40cG5vQ2JlS2I3RzkxZXdOc0RvT29lRlVHVGVpR1NFeGFDdHc?oc=5",
-     "published": "2026-11-08T02:46:10+00:00"
-    },
-    {
-     "title": "NFL Week 9 Player Props: Ryan Flournoy, Harold Fannin Jr. and Jaxon Smith-Njigba Best Bets - Lineups",
-     "score": 0.0,
-     "source": "Lineups",
-     "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc3BjbFJNNG1QWU5BdUgxMGt4MmlKWldYMGVodXJPemtPV3dGVlRWQlJEd3l1Z1I0RHlVcmdmdUFQME5ldHBSSTZJY2o3cVdxa0d1RXRUV01QajZ4WlVRdGJseWpfaXA1MTdaYUxVUkw4bjZlU3Z3aXliUG9tRVhSZ2w5STVHRFVUMjd3d05DcjRERXJOalROWE1ia1h1djlvS1Z3a3FXaEM4ZVdZTUYwNDdpczQxR1NYZ1JCZVJ3?oc=5",
-     "published": "2026-11-07T21:00:09+00:00"
-    },
-    {
-     "title": "Ryan Flournoy or Kaelon Black - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TTmpOQVpNckMwUEVJeDdFcW9GckpqZk45TE1sWkdxQUpXcWY2RjBvMmlIUjNzX2t0TzY5RjRLTHJ0YmRXYlZwM3YzS0k3UE9hc0VtM1BKYXd3RkdrYndSLTVIX1pLOFBQNWZqMmlaODM3bktUclhUbXpYTWg?oc=5",
-     "published": "2026-11-07T16:52:41+00:00"
-    },
-    {
-     "title": "Ryan Flournoy or Emmett Johnson - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9FSTljWXl2ZU0tUkstS3g0THdFRXRSMjZiVGExYlQ5SzZBMzBxUDkybjV0T1NOY0FhN0lzMW5NZDY2aDVVVkJsYUtTMUdScHVMY0U5YVNEd3o3YWNkRVJLOHNiWkNtTlpPckZQN29kS2ZlWE1kRlRFTWVpcU1mMkE?oc=5",
-     "published": "2026-11-07T16:51:20+00:00"
-    },
-    {
-     "title": "Ryan Flournoy or Trey McBride - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1kTDd2OGdxLXpjV2gtLWVONXlRcU8zSXdQN00zYTZyMHZYNGl3Y3pwZ2RwVmFQeE56bHpTT1lNZ3FpTmt1Ymc1RWxlWE9fWG90VW5hVWxvYUJPY0V1blJ6a0VDY25JQVVGRXE3RW5FWWpEOU9XaTVtTmhXQ2I?oc=5",
-     "published": "2026-11-07T16:29:14+00:00"
-    },
-    {
-     "title": "Who Should I Start for Fantasy Football Week 9? Khalil Shakir, Nico Collins, Austin Ekeler, Matthew Golden, Ryan Flournoy, Stefon Diggs, Malik Nabers, Kendre Miller, James Cook III - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNUDhIVzRSRjlvVWIxbGktYmpNNkIwVXl6c0dZek5rMnZWdVRTbVRnT1VESkotLThWek55djBpbWl5ZE1zSDBaWFl2SkRwbU8wZ3BHZUVpM0dBTENkRmhPUjl2SlJXZlN5TXhlR1ZlQ2d0elFTYXY2NDFxSHJYc204eld2MEVCTy1hQkN5SzVaZHBrX21zQ2FXbWNXbkRQZzJVM1pLc0g0YWJ3a0R6SDlvQlBLc0lkOTh4aUhTWHZwMF96WU45X25hZ2ZydnUtbG1VR2pNMDNEdXhlUDJISEF2ZGsycmRGWnp3OF8yNVU1Z2ptbGJPVXJjTlUzby00UnJROFV2R2xlNV81cHJ1QjRvYVJQVFFSZ1FE?oc=5",
-     "published": "2026-11-07T11:11:10+00:00"
-    },
-    {
-     "title": "NFL Week 9 fantasy sleepers: Giants QB J.J. McCarthy, Cowboys WR Ryan Flournoy offer upside - NFL.com",
-     "score": 0.53,
-     "source": "NFL.com",
-     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY0lqd2hIZFRScXZLSFJZc25nYjBpQVN6UE8wN05aSHZ4UWxJVDhNRmdNSFRHYm5MY1RDbkFiZ1F3ZlpHVGV6T1RxSW1EUjVqT1pKdzEyT1FpNndOWmxEV1RUWVJSZXpaTG5PaWFBTWZhS1pQcUhPaFlrckxhLVpVNzgyN011eWV0MEpTZE1ZTFNNTUtIdDhUeEtzTEMxeElxdEYzbWs2QWlwMFc2ODhRNXBaOA?oc=5",
-     "published": "2026-11-06T19:49:08+00:00"
-    },
-    {
-     "title": "Week 9 Ryan Flournoy Fantasy Start or Sit 2026 - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOMEtFN09oVG55Nm9kUHlQaGNjYWtUR3JRZE0wckRNRkVIQ042NHQxTWNkN3VyYlpEdjllWEN4SkxWWHppWnpOLWN5WEdhdVdtQjI2dGpfMEVxZ2ZLNDRIVm5uS0ZiaW9VdXk2bXFOVTczM3BRaUM5QmhKaUdaSE5YWA?oc=5",
-     "published": "2026-11-06T18:18:16+00:00"
-    },
-    {
-     "title": "Ryan Flournoy or Seth McGowan - FantasySP",
-     "score": 0.0,
-     "source": "FantasySP",
-     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5IOWYzZWc3Tk1RNmR2NU1wVlg1bjFCQ01XYjE2a2dVMGJmQk5Ca2EwQ183Vy1CUlp3LXY3Y3VYMDZIOWtld1doSE1iSFBOcjNDYTBHN2FGalIxbDdsTVBlbkdkbEVqR1ZnV3FuOW9UVzliR0xFaWxiWjFCM0s?oc=5",
-     "published": "2026-11-06T16:44:51+00:00"
-    },
-    {
-     "title": "Should I Trade (Half PPR) Ryan Flournoy for Travis Kelce (2026)? - FantasyPros",
-     "score": 0.0,
-     "source": "FantasyPros",
-     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUkpKQVBKUmJzSW1UTjl6Z0JMSGZoS0RHZlRteHhBdExIVFBEMFVjNXE4MzhJcVY0QjUzNVhZYjY2X2hNTDhxa2pYX3VRZFdnVGZBXzd0T2czLTM1d0t5S3RkeXB0SDBEUlJadFUwSmZ3eVRVVV9Fc0ljYlV3QWhiWTlQN1FlR21G?oc=5",
-     "published": "2026-11-06T07:27:40+00:00"
-    },
-    {
-     "title": "Ryan Flournoy Week 9 Outlook - Cowboys at Colts - FantasyPros",
-     "score": 0.0,
-     "source": "FantasyPros",
-     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWEg2U1ljYjBjcVYtZTZycFpqMFdGOEhjQTdBZXh0QlpUZTlyWFVneDFVaGlZUnd0WGUzM0ExVldvLW5mcGRfWjRxdlZxdTJBRjlBMXZPMHR4Zm5Vb1prVVlmMXZFMHpJbUtKM2pfR3o0anR2VUoxZU5Db0ZtUVlhWVUwRUlUSWdIMWfSAY8BQVVfeXFMTmg1dTJidTNJcTg2cmFyXzJCbnJ2RFVmeTE5UC13NS1EOWtua05TYTNvN1FJdTdhQ2RHUzFDN1llVXU1cGhVeTQxaEdkaFloRGJWRGpoZzJJMS16eV9lZGR2ZnFEbFFUNVcxVjNMeGdKM21MWnpYTXdUUU5PUDktV2RuV0Z2SGlrd2Z3WVliMFU?oc=5",
-     "published": "2026-11-05T18:35:00+00:00"
-    },
-    {
-     "title": "Week 9 Fantasy Football Sleepers Featuring Devin Singletary, Ryan Flournoy, and a Super Bowl-Winning Quarterback - Sports Illustrated",
-     "score": 0.83,
-     "source": "Sports Illustrated",
-     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQdnZYQmtkSTRUWk5LTnJWcXFrZlFnWElMLUpYWE9DUGxEb0Vib1Jfak1xOThfVWxrbXpQUjhGYjZOalE5QnVBTVdTNDY2RUt3UFJJMi1fWWp5ZWZ5SnpmQlk1ZFZtYTM2T1dhQ0VlTk1xcXZOMHZsZHZZMHl4WHkwc3J6cFkyVFp2RnRwaU1GY0p0dFB4aEhmdlgzQ2ktLThrNWdKRE9TT1dkX2JIam5MVGRhb0paZ010MUVRR3RlNlhhcUZDcnZUR2VTUXV1SjRZdmJsQmdn?oc=5",
-     "published": "2026-11-05T14:00:04+00:00"
-    },
-    {
-     "title": "Who Should I Start for Fantasy Football Week 9? Caleb Douglas, Ladd McConkey, Chris Olave, Josh Downs, Matthew Golden, KC Concepcion Jr., Ryan Flournoy, Kyle Monangai, Kimani Vidal - RotoBaller",
-     "score": 0.0,
-     "source": "RotoBaller",
-     "link": "https://news.google.com/rss/articles/CBMilwJBVV95cUxQRTdyZHYzWnRQeWJ6VnhqZDdoVE1lXzdEQnFrdm5NOTE2MHhvd1dNTV84d2hDWnNqbDhFd05aMlZOUENIQUxfUnk5VVE3ekJ3dDNuSmxfSUNvVEtaYXZ6VXZmT1VJX0lXemYxc1dFSEh4MUpaanY5ZmZCM0o5anpidElNaFhFZXFDenYzZlR5QVJlNXZ2dmhyckdSQlF0WUVNTmFRLVNSVDhuWEtRbm1JbnI2QjlBNy02VVJuR016UE1PZC1LcDJZOG1JYTlRR1JDRkxfNmpnMm1jUzJCek55RTNhX21DUUcwODRRdUFYcU9LVzlrTDFfZE9mdnZHNG9DZEhiRnhTUzF2em0tUkJ4V3UyLXIyMVk?oc=5",
-     "published": "2026-11-05T12:55:12+00:00"
-    },
-    {
-     "title": "Ryan Flournoy Fantasy Football News, Rankings, Projections | Dallas Cowboys - FantasyPros",
-     "score": 0.0,
-     "source": "FantasyPros",
-     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1FU3pkU0dZVmI3U25qUHo0VTZ1czBnTVp4S0tmaUFIUzR2aFNHT19neFk5b2xreVlCYmlsNDl0VHl5YUJkc2pkckVySzJvajRuWHZvb3kyMi14MjJRWVYtQzNhWDUtd0o2VzRyd1Bpd3NoM193YnN1aw?oc=5",
-     "published": "2026-11-05T08:00:00+00:00"
-    },
-    {
-     "title": "Ryan Flournoy Over 33.5 vs. Colts is an official play - NewsBreak: Local News & Alerts",
-     "score": 0.0,
-     "source": "NewsBreak: Local News & Alerts",
-     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNaW80a0RZa2hvUlJ3cmpuWTFpd05qc280Y2FWeHBTaU5LdzdTT0dJNGw0QVpBS2pWMjJiMm92RkdtQlJvR2g2ZmtoYllpMjJqSXJtYjctOG5WWHhlT2RScDBkSnZOek1uOWNYaUtiWXdWSktmcl9sSzJLQ0tPOWJfRFZaRWNOVU9Vam1saFREUlg0YW5PYjIya2puemFjeF93NTlEOXBXYm8wZm5x?oc=5",
-     "published": "2026-11-04T18:27:50+00:00"
-    }
-   ],
-   "mult_injury": 1.0,
-   "mult_matchup": 1.052,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.005,
-   "base": 10.186,
-   "adj": 10.77,
-   "trending_adds": 120240,
-   "slot": null,
-   "notes": [],
-   "matchup_grade": "F",
-   "ros_value": 11.19,
-   "group": "candidate"
-  },
   "2020": {
    "player_id": "2020",
    "name": "Cairo Santos",
@@ -1987,16 +1830,138 @@
    "def_ratio": 1.16,
    "implied": 26.75,
    "weather": "47F, wind 8mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
+   "sentiment": 0.262,
+   "n_articles": 15,
+   "headlines": [
+    [
+     "Cairo Santos Tops The 3 Best Kicker Streamers in Week 9 Fantasy Football - Sports Illustrated",
+     0.94,
+     "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS0Y3ankydmVrM3VxWTlZaWRJLVk1MDhCY2dtbElOTzhfMG5xVlV0QTlRcEdGWk5OQU9zWmpic2x0MUx1Mzg0a2VFdV85ZUIwcnhvWllMbG9VWHY2OUhRNC1Ia002NWczOE5IUXlwRjRrbnBMSTRWc2ZfSjVRck1EMDNoUDRkTFJuWVdNdzljUm91WlhJaVdqdVAycTZleGtBMUVBSG9WMmRmQjlIb2JvWUU0eVBMZzRIZldXOA?oc=5"
+    ],
+    [
+     "Patrick Mannelly talks heart health, Bears season, Cairo Santos & more - Bears Wire",
+     0.86,
+     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVnFqNjM3eVQ0aFM2c24wUFlHYlVqbEI1MGZES0t6d2lLY2Q3UkxmZW5XTDN2RUgyRUhZMXlqQTBiR19haXIwdHl6VXBZUjhXWkNMNjg4UmV1V092Qm1lUTBqNnJrZENUYVhNM3RST1RkN1dxLUR1U21sUGRoWFpWQjAzVUdzZVItQU9VdHBrSzJWLUFuamg0MDBoSXdpMThDakV5Y0FEbVRLelRIdk9QUVBabk1oeHdJSUZPdHJ2SEZhRjY4NENhSWtaUy12NGtDSUhLY19n?oc=5"
+    ],
+    [
+     "Cairo Santos Converts all six kicks in MNF win - Fantasy Footballers Podcast",
+     0.82,
+     "https://news.google.com/rss/articles/CBMingFBVV95cUxQZ2VCc055ak9Tclhlb1RwVFNtN2VydWk5dHlmQ2QxZjZzYW1JbFlpQzN6TnR0a2pFeGdhTjV5TXJBMWVTTUU4c2s5aktHd3V2UHdjaHNJQ3hNVXlLc3M3Z0JOTFpTc25GeDJHUGR6MGgtS2lCdENEd2EyYW5QMU5NNFlzdHV4bzJmQ2k5RjVYeVJPMzdGOTM3RzFMVWdwUQ?oc=5"
+    ]
+   ],
+   "articles": [
+    {
+     "title": "Patrick Mannelly talks heart health, Bears season, Cairo Santos & more - Bears Wire",
+     "score": 0.86,
+     "source": "Bears Wire",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNVnFqNjM3eVQ0aFM2c24wUFlHYlVqbEI1MGZES0t6d2lLY2Q3UkxmZW5XTDN2RUgyRUhZMXlqQTBiR19haXIwdHl6VXBZUjhXWkNMNjg4UmV1V092Qm1lUTBqNnJrZENUYVhNM3RST1RkN1dxLUR1U21sUGRoWFpWQjAzVUdzZVItQU9VdHBrSzJWLUFuamg0MDBoSXdpMThDakV5Y0FEbVRLelRIdk9QUVBabk1oeHdJSUZPdHJ2SEZhRjY4NENhSWtaUy12NGtDSUhLY19n?oc=5",
+     "published": "2026-11-08T16:24:00+00:00"
+    },
+    {
+     "title": "Cairo Santos or Harold Fannin Jr.: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWFNINHBPVXgtSFlqdGhST3R4eHM0aUVQNTQ2WUliMVotTldLSl9aS3pYdWdIUzBFMV9ORUhJdFFtR2lNdEZSV0UyMHRvVXUzN09iOGZGay0xcTByWE83NmtTa1RhaXdUQ0JBR1FjSlV0a3pYSVBiWjA1emUyZ2xlS0xNQVR2TVNFSTk2NEJvSHFKYXlJU25zVDI5VkZPRHdmWFUwWWVVdDZUdWNpYmYzVTg1aUFuZw?oc=5",
+     "published": "2026-11-08T03:08:46+00:00"
+    },
+    {
+     "title": "Andre Szmyt or Cairo Santos: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdlhPX0N6TjEwVFRuTTg3X0JMMU41ZlkzRzRXUExSLUY0cFZsZjBjVloteS11eEFVWDhfQTB1R1padnN4bG5veldvbXlaM1l1U19EMVRmWHFWQXN0WWpjNjdya1l4S2R1aGNuRkZqNUs0bVE5S2tQMlZuSUtkNjRkdEt4WWp0UTVQMGdCdHJHdW1VOHFaRExUSG0xdzFpSlRYekVlQmFidW56aWZ3aEJ6Sw?oc=5",
+     "published": "2026-11-07T21:58:02+00:00"
+    },
+    {
+     "title": "Cairo Santos Tops The 3 Best Kicker Streamers in Week 9 Fantasy Football - Sports Illustrated",
+     "score": 0.94,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS0Y3ankydmVrM3VxWTlZaWRJLVk1MDhCY2dtbElOTzhfMG5xVlV0QTlRcEdGWk5OQU9zWmpic2x0MUx1Mzg0a2VFdV85ZUIwcnhvWllMbG9VWHY2OUhRNC1Ia002NWczOE5IUXlwRjRrbnBMSTRWc2ZfSjVRck1EMDNoUDRkTFJuWVdNdzljUm91WlhJaVdqdVAycTZleGtBMUVBSG9WMmRmQjlIb2JvWUU0eVBMZzRIZldXOA?oc=5",
+     "published": "2026-11-05T01:14:16+00:00"
+    },
+    {
+     "title": "Cairo Santos Fantasy Football News, Rankings, Projections | Chicago Bears - FantasyPros",
+     "score": 0.0,
+     "source": "FantasyPros",
+     "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOU1JadDRJYWh3b1RyNmxJdkljMER2MmVCWTFXd2g5T0J3ai1vQ0dIWHZNc3hZWUxpRnctR2JJMldaVDJMTmdGQV8yQzdJTnBxY051WE1fNWVkd29OendKYXg5a1RZazRpNmg2cVdmS1RGc05WcTlvOFpzR3k1dG9IZ0l1NkppVnZHSkVfbjFhcVFfMlIwbzBr?oc=5",
+     "published": "2026-11-04T08:00:00+00:00"
+    },
+    {
+     "title": "Cairo Santos or Kyle Pitts Sr.: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkFVMTE4clV2dVk4WXhnMF9nRTJHRUEwZWgtWXBNd3UzV3ZxamlGQmU4TkpBLTJUNldHY0xNMDU5c1RxN1Y2c1RpZXd4VE5fM2w5azYwckt5MzZESGlrNldnenRXdm9wVDBCTE52YXh4RllRdmtnTnhLcWZWaW1rV0I5ZVREbWpPR0lSdWx5M1NSVEhsaEVod0JGY3hGcmRGRXFsM3E0S09SUWZXN01OSUVB?oc=5",
+     "published": "2026-11-03T19:05:49+00:00"
+    },
+    {
+     "title": "Cairo Santos, Jake Elliott, and 3 More Must-Sit Kickers in Week 9 Fantasy Football Leagues - Sports Illustrated",
+     "score": 0.0,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNb3VBSUduMjF3dk1qWDVGV2dRbXdVN3N4Z0hDd05Jb3J1aEpSd1RVVmYzZEZybUM4RzMyMkktdGZHRGRaX3VDSmlhd1B5UzlUWWtneEExMnNDcTk0YmZjd014MG5zbXBuU25aMThCcFIyN29NX2djRnNDMGhVOWdITnhPb0RJTnRNMDJJWGJtZjhmLUV1WWR1cHZSWERDMVJiR29pSEJ6VGF0MjdXTWFlQk5hcHdaUTN6TEo5R25qX3RXNTdOQUM2dm00d3VLYUVwRFE?oc=5",
+     "published": "2026-11-03T18:26:45+00:00"
+    },
+    {
+     "title": "Cairo Santos Converts all six kicks in MNF win - Fantasy Footballers Podcast",
+     "score": 0.82,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZ2VCc055ak9Tclhlb1RwVFNtN2VydWk5dHlmQ2QxZjZzYW1JbFlpQzN6TnR0a2pFeGdhTjV5TXJBMWVTTUU4c2s5aktHd3V2UHdjaHNJQ3hNVXlLc3M3Z0JOTFpTc25GeDJHUGR6MGgtS2lCdENEd2EyYW5QMU5NNFlzdHV4bzJmQ2k5RjVYeVJPMzdGOTM3RzFMVWdwUQ?oc=5",
+     "published": "2026-11-03T05:24:45+00:00"
+    },
+    {
+     "title": "Bears' Cairo Santos: Converts all six kicks in MNF win - CBS Sports",
+     "score": 0.82,
+     "source": "CBS Sports",
+     "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTXdSSlJYZzZsUGFnSlVpMXNjU2JaMnNQY2tCMFlwcnZyeTFvVU9GQ1lqa0V4eWw3N19CendaVFFjdzU3a1BTOGl0b1k2cDdwQXdTaldwNkpGbGFYeVhtQ3VjQTR0MW1nb21oejVYREdxbzl0NmhtcHJhUmdSLWEzNjlYeEtxRnJyVG1yaWUzT000WDVHakVnQ092TmNWdDJ3bnc0?oc=5",
+     "published": "2026-11-03T05:14:44+00:00"
+    },
+    {
+     "title": "Cairo Santos scores ten points in win Monday - FantasyPros",
+     "score": 0.82,
+     "source": "FantasyPros",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPelZRSzAyV1JBTm5la2lDNUVIbnlGb1BqbmNRN0hjNkx5LWtHRFVNaDd0NXRtejJjaFIwNEgzd0N1LXJwX0pOaFRDbEczTjV0dWZvdGtERUlZYUNWUUJ2SW5iSG8wTjlOUnNNTWt4dTRFSXVlTlN5OVNRRzM5N2tZQUZMek9RQ3hSQTQ0dE5jd0tQeEXSAZgBQVVfeXFMT09reF9MM2EydTJqbEttX3RpYVJpWWJlSGx6VnlCTTN6WkY1YUhKOFktRHVzRkc2N0h1V2JYZnhyaUNoeFBsSGtWMHJJZU9MckdPSUpLb01IZDA2T1NrMC1sQXdmLXNUd0Z3X0lNajdYSVM4bHFjazFoU2lKemlrQ0JzTkgzbWlHYjdncVFRSmJzZnp1dS0tR2k?oc=5",
+     "published": "2026-11-03T04:47:00+00:00"
+    },
+    {
+     "title": "Cairo Santos or Nikko Remigio: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWGVFVWkwa2hodXRtTkZJTk9hOEVrR1hZb0ptajF3Q2pFamVYeVN3MGZhRzVaREt5Q0dsamVBZzlTcFBjRGZ2RkpYNWQ3Zkc4aTBxNTR4Sk1tUFNRdC0xd054RFhYVlNmSS1OT2JkRFd2aWcweEcwaDJkaTJWSmJkcHFoeDlpWkhKblVTVDFFUTlxWnEwMUd5TkZxN1pXTTJlVkUxTkRuLUllNHpXNlpvQnlNRQ?oc=5",
+     "published": "2026-11-02T22:05:58+00:00"
+    },
+    {
+     "title": "Cairo Santos or Tai Felton: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMl9fLU1uZkprcTl4d1pIODNyV05WU3VmVGlTdkNQQXdFQjZNMmJLQk0zcUY2SzYtWmFKQTlRZFJoTWhlQVpDRmtSTFpSNGhkeUdsRlhNOVJBT0RWdGVfXzdwMDkxMlhjY3J0NlhxZldxZVpSd1l0TWdKLXVYN3B0MlY2RmdkTDY0RFIzMkV1TzR0X3Z5RTZMczBfZzJCZXNRUmtuVFdYaEpiSkpCcWZR?oc=5",
+     "published": "2026-11-02T21:44:20+00:00"
+    },
+    {
+     "title": "Brayden Narveson or Cairo Santos or Cameron Dicker or Nick Folk: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSXdtaWgteW1sZmhlZlQ0OFg4SF9Va3h0LTBpczNUQ1RUbi1EcHZLa0dXNFBXQjZQTGQzVFo2ZUlGbzFsMUtTdzRUSXBrdlFRdnJCQjAwYU1BbmU4TFg0dFBUTlJaaXhfTUJUQV9VMlVoWW16Z1J0UmtFcWkzem9ZMmk3UEpacGZBV1pqRUYwdVJVb3NFMEt4VFEwcUgyMGo2dnRMRldaTmpTeWRCTzhwVlpIaUFHUjBoc1NRT0JVTGphSjVPVXRVcHRObUpfYlY3dm1pYWxjb3g?oc=5",
+     "published": "2026-11-02T17:49:20+00:00"
+    },
+    {
+     "title": "Cairo Santos or Dylan Drummond: Who Should I Start in Week 9? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPY2M4Mm9tSGVXa1BlMThlSGFEWDBRNkpDanQ5Yk4yN2ZGT0VLZ01KWTZBOGhmUFgyTHA3Y0hVdXN2U0ZsRnlYNERPM1l5blo0cXotTGxMQk5zZ1A0NVc3eUJkcDVOUUFuLWR5TUJDWTAwZW02ZHdKQ0J5UDY1U3lPWDRBbnJHRjI1X3hqWUJ5U2V6a1VEcFZQaDlMV2d3QTJ4TkNQcUd6bF9oSXhkSjRXUFdEbG8?oc=5",
+     "published": "2026-11-02T04:41:55+00:00"
+    },
+    {
+     "title": "Cairo Santos or Jared Wayne: Who Should I Start in Week 8? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSm54UG04MndwR2FYMEV5UXZQSUdXaTRzNXRHU2ltRnhjRHhYeUtfdXlLak5iZ095TWc4TWtHTHhmWktoWFZuMGp0VGM0cWZ3T0hRYXhmb3FkUHhpd1NDdTdKVXZuOGdZWTZCNVY1X0RtWFQ4RTNKYXJrMnlhUnRCVE5abXNPVGU2R1lEakhkZzliT3Z0dlVMeC1kRHI0bDNGZEVoZlhONHM3aFdSWUQ5Sw?oc=5",
+     "published": "2026-11-02T04:33:09+00:00"
+    }
+   ],
    "mult_injury": 1.0,
    "mult_matchup": 1.174,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
+   "mult_sentiment": 1.021,
    "base": 8.934999999999999,
-   "adj": 10.49,
+   "adj": 10.71,
    "trending_adds": 122479,
    "slot": null,
    "notes": [],
@@ -2212,41 +2177,6 @@
    "notes": [],
    "matchup_grade": "A",
    "ros_value": 10.04,
-   "group": "candidate"
-  },
-  "11625": {
-   "player_id": "11625",
-   "name": "Adonai Mitchell",
-   "position": "WR",
-   "team": "NYJ",
-   "opp": "KC",
-   "is_home": false,
-   "on_bye": false,
-   "injury_status": null,
-   "injury_detail": null,
-   "proj": 10.26,
-   "recent_avg": 13.6,
-   "recent_games": 2,
-   "def_rank": 2,
-   "def_teams": 32,
-   "def_ratio": 0.79,
-   "implied": 19.5,
-   "weather": "60F, wind 5mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 1.0,
-   "mult_matchup": 0.831,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 11.262,
-   "adj": 9.36,
-   "trending_adds": 385840,
-   "slot": null,
-   "notes": [],
-   "matchup_grade": "F",
-   "ros_value": 11.93,
    "group": "candidate"
   },
   "12469": {
@@ -3299,6 +3229,41 @@
    "ros_value": 7.95,
    "group": "candidate"
   },
+  "13424": {
+   "player_id": "13424",
+   "name": "Seth McGowan",
+   "position": "RB",
+   "team": "IND",
+   "opp": "DAL",
+   "is_home": true,
+   "on_bye": false,
+   "injury_status": null,
+   "injury_detail": null,
+   "proj": 6.83,
+   "recent_avg": 3.8,
+   "recent_games": 3,
+   "def_rank": 27,
+   "def_teams": 32,
+   "def_ratio": 1.19,
+   "implied": 23.0,
+   "weather": "56F, wind 12mph",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 1.0,
+   "mult_matchup": 1.1,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 5.920999999999999,
+   "adj": 6.51,
+   "trending_adds": 39168,
+   "slot": null,
+   "notes": [],
+   "matchup_grade": "A",
+   "ros_value": 5.31,
+   "group": "candidate"
+  },
   "11647": {
    "player_id": "11647",
    "name": "Kimani Vidal",
@@ -3367,6 +3332,41 @@
    "notes": [],
    "matchup_grade": "A",
    "ros_value": 5.11,
+   "group": "candidate"
+  },
+  "13150": {
+   "player_id": "13150",
+   "name": "Darius Cooper",
+   "position": "WR",
+   "team": "PHI",
+   "opp": "NYG",
+   "is_home": true,
+   "on_bye": false,
+   "injury_status": null,
+   "injury_detail": null,
+   "proj": 8.6,
+   "recent_avg": 2.83,
+   "recent_games": 3,
+   "def_rank": 18,
+   "def_teams": 32,
+   "def_ratio": 1.0,
+   "implied": 17.75,
+   "weather": "59F, wind 10mph",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 1.0,
+   "mult_matchup": 0.89,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 6.869,
+   "adj": 6.11,
+   "trending_adds": 189182,
+   "slot": null,
+   "notes": [],
+   "matchup_grade": "C",
+   "ros_value": 5.71,
    "group": "candidate"
   },
   "DAL": {
@@ -5963,13 +5963,13 @@
  "waiver_recs": [
   {
    "player_id": "2020",
-   "weekly_gain": 2.44,
+   "weekly_gain": 2.66,
    "ros_gain": 9.53,
    "drop_id": null,
    "bid": "$17 of $55",
-   "score": 12.02,
+   "score": 12.24,
    "bid_detail": {
-    "value": 40.6,
+    "value": 40.8,
     "horizon": 4,
     "rivals": 3,
     "teams": 11,
@@ -6013,23 +6013,6 @@
    }
   },
   {
-   "player_id": "11625",
-   "weekly_gain": 0.0,
-   "ros_gain": 7.23,
-   "drop_id": "8110",
-   "bid": "$17 of $55",
-   "score": 9.57,
-   "bid_detail": {
-    "value": 28.9,
-    "horizon": 4,
-    "rivals": 4,
-    "teams": 11,
-    "rival_max_budget": 100,
-    "trending_adds": 385840,
-    "pct": 0.302
-   }
-  },
-  {
    "player_id": "4993",
    "weekly_gain": 1.41,
    "ros_gain": 6.64,
@@ -6044,23 +6027,6 @@
     "rival_max_budget": 100,
     "trending_adds": 96504,
     "pct": 0.354
-   }
-  },
-  {
-   "player_id": "11783",
-   "weekly_gain": 0.0,
-   "ros_gain": 6.49,
-   "drop_id": "8110",
-   "bid": "$13 of $55",
-   "score": 8.04,
-   "bid_detail": {
-    "value": 26.0,
-    "horizon": 4,
-    "rivals": 3,
-    "teams": 11,
-    "rival_max_budget": 100,
-    "trending_adds": 120240,
-    "pct": 0.242
    }
   },
   {
@@ -6129,6 +6095,40 @@
     "rival_max_budget": 100,
     "trending_adds": 122310,
     "pct": 0.196
+   }
+  },
+  {
+   "player_id": "8119",
+   "weekly_gain": 0.0,
+   "ros_gain": 4.75,
+   "drop_id": "8110",
+   "bid": "$11 of $55",
+   "score": 6.8,
+   "bid_detail": {
+    "value": 19.0,
+    "horizon": 4,
+    "rivals": 3,
+    "teams": 11,
+    "rival_max_budget": 100,
+    "trending_adds": 82569,
+    "pct": 0.195
+   }
+  },
+  {
+   "player_id": "13968",
+   "weekly_gain": 1.72,
+   "ros_gain": 9.67,
+   "drop_id": null,
+   "bid": "$11 of $55",
+   "score": 6.55,
+   "bid_detail": {
+    "value": 40.4,
+    "horizon": 4,
+    "rivals": 5,
+    "teams": 11,
+    "rival_max_budget": 100,
+    "trending_adds": 0,
+    "pct": 0.192
    }
   }
  ],

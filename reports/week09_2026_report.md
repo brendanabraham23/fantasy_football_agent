@@ -1,5 +1,5 @@
 # Brendobendo - Week 9, 2026
-_Refounders Football League   - generated Sun Nov 08 04:47 PM_
+_Refounders Football League   - generated Sun Nov 08 05:46 PM_
 
 ## Recommended lineup
 
@@ -76,16 +76,16 @@ Projected lineup total (adjusted): **127.7**
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cairo Santos | K | CHI | vs TB | 10.5 | 11.0 | +2.4 | +9.5 | 122479 | - | $17 of $55 |
+| Cairo Santos | K | CHI | vs TB | 10.7 | 11.0 | +2.7 | +9.5 | 122479 | - | $17 of $55 |
 | New Orleans Saints | DEF | NO | vs CLE | 8.8 | 8.5 | +1.5 | +8.3 | 228120 | - | $22 of $55 |
 | Tampa Bay Buccaneers | DEF | TB | @ CHI | 8.2 | 16.7 | +0.8 | +11.1 | 37675 | - | $12 of $55 |
-| Adonai Mitchell | WR | NYJ | @ KC | 9.4 | 13.6 | +0.0 | +7.2 | 385840 | Jake Ferguson | $17 of $55 |
 | Mike Gesicki | TE | CIN | @ ATL | 12.0 | 12.6 | +1.4 | +6.6 | 96504 | Jake Ferguson | $19 of $55 |
-| Ryan Flournoy | WR | DAL | @ IND | 10.8 | 13.7 | +0.0 | +6.5 | 120240 | Jake Ferguson | $13 of $55 |
 | Carson Wentz | QB | MIN | vs BUF | 13.1 | 0.0 | +0.0 | +4.7 | 192834 | Jake Ferguson | $10 of $55 |
 | Caleb Douglas | WR | MIA | vs DET | 11.3 | 14.7 | +0.0 | +7.0 | 57728 | Jake Ferguson | $13 of $55 |
 | Audric Estime | RB | NO | vs CLE | 8.0 | 7.9 | +0.0 | +3.4 | 281922 | Jake Ferguson | $11 of $55 |
 | Emmett Johnson | RB | KC | vs NYJ | 8.8 | 11.1 | +0.0 | +4.1 | 122310 | Jake Ferguson | $11 of $55 |
+| Jahan Dotson | WR | ATL | vs CIN | 9.7 | 10.3 | +0.0 | +4.8 | 82569 | Jake Ferguson | $11 of $55 |
+| Drew Stevens | K | WAS | vs LA | 9.8 | 11.0 | +1.7 | +9.7 | - | - | $11 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 

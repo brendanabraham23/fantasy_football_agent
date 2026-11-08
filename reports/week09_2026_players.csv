@@ -13,13 +13,13 @@ player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj
 8161,Malik Willis,QB,MIA,DET,True,False,,,21.95,26.43,2,32.0,32.0,1.49,22.0,"84F, wind 6mph",0.14,15,1.0,1.2,1.0,1.011,23.293999999999997,28.26,151998,,[],roster,,,
 9484,Tucker Kraft,TE,GB,NE,False,False,,,11.22,13.6,3,10.0,32.0,0.85,20.75,"47F, wind 7mph",0.042,15,1.0,0.884,1.0,1.003,11.934000000000001,10.58,0,TE,[],roster,,,
 DEN,Denver Broncos,DEF,DEN,CAR,False,False,,,7.24,6.67,3,,,,23.5,"66F, wind 9mph",0.0,0,1.0,1.039,1.0,1.0,7.068999999999999,7.34,0,DEF,[],roster,,,
-2020,Cairo Santos,K,CHI,TB,True,False,,,8.05,11.0,3,25.0,32.0,1.16,26.75,"47F, wind 8mph",0.0,0,1.0,1.174,1.0,1.0,8.934999999999999,10.49,122479,,[],waiver,2.44,9.53,$17 of $55
+2020,Cairo Santos,K,CHI,TB,True,False,,,8.05,11.0,3,25.0,32.0,1.16,26.75,"47F, wind 8mph",0.262,15,1.0,1.174,1.0,1.021,8.934999999999999,10.71,122479,,[],waiver,2.66,9.53,$17 of $55
 NO,New Orleans Saints,DEF,NO,CLE,True,False,,,8.14,8.5,2,,,,22.75,Indoors,0.0,0,1.0,1.067,1.0,1.0,8.248000000000001,8.8,228120,,[],waiver,1.46,8.32,$22 of $55
 TB,Tampa Bay Buccaneers,DEF,TB,CHI,False,False,,,5.61,16.67,3,,,,20.75,"47F, wind 8mph",0.0,0,1.0,0.913,1.0,1.0,8.928,8.15,37675,,[],waiver,0.81,11.14,$12 of $55
-11625,Adonai Mitchell,WR,NYJ,KC,False,False,,,10.26,13.6,2,2.0,32.0,0.79,19.5,"60F, wind 5mph",0.0,0,1.0,0.831,1.0,1.0,11.262,9.36,385840,,[],waiver,0.0,7.23,$17 of $55
 4993,Mike Gesicki,TE,CIN,ATL,False,False,,,10.08,12.6,2,17.0,32.0,0.99,27.75,Neutral site (Bernabeu) - check manually,0.042,15,1.0,1.103,1.0,1.003,10.835999999999999,11.99,96504,,[],waiver,1.41,6.64,$19 of $55
-11783,Ryan Flournoy,WR,DAL,IND,False,False,,,8.68,13.7,3,6.0,32.0,0.87,28.5,"56F, wind 12mph",0.064,15,1.0,1.052,1.0,1.005,10.186,10.77,120240,,[],waiver,0.0,6.49,$13 of $55
 3161,Carson Wentz,QB,MIN,BUF,True,False,,,18.75,0.0,2,23.0,32.0,1.11,20.25,Indoors,0.038,15,1.0,0.996,1.0,1.003,13.125,13.11,192834,,[],waiver,0.0,4.67,$10 of $55
 13296,Caleb Douglas,WR,MIA,DET,True,False,,,8.68,14.65,2,30.0,32.0,1.19,22.0,"84F, wind 6mph",0.0,15,1.0,1.076,1.0,1.0,10.471,11.27,57728,,[],waiver,0.0,6.96,$13 of $55
 11579,Audric Estime,RB,NO,CLE,True,False,,,8.37,7.9,1,15.0,32.0,0.95,22.75,Indoors,0.0,0,1.0,0.974,1.0,1.0,8.229,8.02,281922,,[],waiver,0.0,3.43,$11 of $55
 13337,Emmett Johnson,RB,KC,NYJ,True,False,,,6.43,11.13,3,18.0,32.0,0.98,29.0,"60F, wind 5mph",0.0,0,1.0,1.125,1.0,1.0,7.84,8.82,122310,,[],waiver,0.0,4.08,$11 of $55
+8119,Jahan Dotson,WR,ATL,CIN,True,False,,,8.62,10.27,3,19.0,32.0,1.04,24.75,Neutral site (Bernabeu) - check manually,0.0,0,1.0,1.064,1.0,1.0,9.114999999999998,9.7,82569,,[],waiver,0.0,4.75,$11 of $55
+13968,Drew Stevens,K,WAS,LA,True,False,,,8.34,11.0,2,28.0,32.0,1.2,21.5,"62F, wind 10mph",0.0,0,1.0,1.069,1.0,1.0,9.137999999999998,9.77,0,,[],waiver,1.72,9.67,$11 of $55
