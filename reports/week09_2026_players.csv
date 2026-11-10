@@ -1,25 +1,25 @@
 player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
-11584,Bucky Irving,RB,TB,CHI,False,False,,,17.51,17.3,3,3.0,32.0,0.8,20.5,,0.037,15,1.0,0.854,1.0,1.003,17.447,14.94,0,RB,[],roster,,,
-11646,Jalen Coker,WR,CAR,DEN,True,False,,,13.76,9.07,3,7.0,32.0,0.87,20.75,,-0.15,15,1.0,0.892,1.0,0.988,12.353,10.89,0,,[],roster,,,
-12501,Matthew Golden,WR,GB,NE,False,False,,,14.89,17.73,3,23.0,32.0,1.07,20.75,,0.372,15,1.0,0.987,1.0,1.03,15.742,16.0,0,WR,[],roster,,,
+11584,Bucky Irving,RB,TB,CHI,False,False,,,17.51,17.3,3,3.0,32.0,0.8,20.5,,-0.054,15,1.0,0.854,1.0,0.996,17.447,14.84,0,RB,[],roster,,,
+11646,Jalen Coker,WR,CAR,DEN,True,False,,,13.76,9.07,3,7.0,32.0,0.87,20.75,,-0.215,15,1.0,0.892,1.0,0.983,12.353,10.83,0,,[],roster,,,
+12501,Matthew Golden,WR,GB,NE,False,False,,,14.89,17.73,3,23.0,32.0,1.07,20.75,,0.317,15,1.0,0.987,1.0,1.025,15.742,15.93,0,WR,[],roster,,,
 12527,Ashton Jeanty,RB,LV,SF,False,False,,,12.29,15.9,3,21.0,32.0,1.04,21.5,,-0.0,15,1.0,0.99,1.0,1.0,13.372999999999998,13.24,0,FLEX,[],roster,,,
-13346,Denzel Boston,WR,CLE,NO,False,False,,,10.75,5.97,3,13.0,32.0,0.95,19.5,Indoors,-0.091,15,1.0,0.904,1.0,0.993,9.315999999999999,8.36,0,,[],roster,,,
-1479,Keenan Allen,WR,IND,DAL,True,False,,,11.36,12.0,3,26.0,32.0,1.13,23.5,,0.042,11,1.0,1.08,1.0,1.003,11.552,12.51,46908,WR,[],roster,,,
-2747,Jason Myers,K,SEA,ARI,True,False,,,8.75,5.33,3,18.0,32.0,1.07,24.0,,-0.097,8,1.0,1.061,1.0,0.992,7.724,8.13,0,K,[],roster,,,
-3163,Jared Goff,QB,DET,MIA,False,False,,,26.42,18.93,2,28.0,32.0,1.2,28.0,,0.136,15,1.0,1.2,1.0,1.011,24.173,29.33,0,QB,[],roster,,,
-8110,Jake Ferguson,TE,DAL,IND,False,False,Questionable,Knee,8.3,1.1,3,21.0,32.0,1.03,28.0,,-0.266,15,0.85,1.129,1.0,0.979,6.140000000000001,5.77,0,,['Questionable (Knee)'],roster,,,
-8138,James Cook III,RB,BUF,MIN,False,False,,,15.23,21.2,2,5.0,32.0,0.83,24.5,Indoors,0.246,15,1.0,0.948,1.0,1.02,17.021,16.46,0,RB,[],roster,,,
-8155,Breece Hall,RB,NYJ,KC,False,False,,,10.68,,0,13.0,32.0,0.91,19.0,,0.113,15,1.0,0.875,1.0,1.009,10.68,9.43,0,,[],roster,,,
-8161,Malik Willis,QB,MIA,DET,True,False,Questionable,Groin,21.95,26.43,2,32.0,32.0,1.49,21.5,,-0.136,15,0.85,1.2,1.0,0.989,23.293999999999997,23.5,104426,,['Questionable (Groin)'],roster,,,
+13346,Denzel Boston,WR,CLE,NO,False,False,,,10.75,5.97,3,13.0,32.0,0.95,19.5,Indoors,-0.067,15,1.0,0.904,1.0,0.995,9.315999999999999,8.38,0,,[],roster,,,
+1479,Keenan Allen,WR,IND,DAL,True,False,,,11.36,12.0,3,26.0,32.0,1.13,23.5,,-0.035,10,1.0,1.08,1.0,0.997,11.552,12.44,0,WR,[],roster,,,
+2747,Jason Myers,K,SEA,ARI,True,False,,,8.75,5.33,3,18.0,32.0,1.07,24.0,,-0.067,9,1.0,1.061,1.0,0.995,7.724,8.15,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,MIA,False,False,,,26.42,18.93,2,28.0,32.0,1.2,28.0,,0.114,15,1.0,1.2,1.0,1.009,24.173,29.27,0,QB,[],roster,,,
+8110,Jake Ferguson,TE,DAL,IND,False,False,Questionable,Knee,8.3,1.1,3,21.0,32.0,1.03,28.0,,-0.235,15,0.85,1.129,1.0,0.981,6.140000000000001,5.78,0,,['Questionable (Knee)'],roster,,,
+8138,James Cook III,RB,BUF,MIN,False,False,,,15.17,21.2,2,5.0,32.0,0.83,24.25,Indoors,0.272,15,1.0,0.943,1.0,1.022,16.979,16.36,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,KC,False,False,,,10.68,,0,13.0,32.0,0.91,19.0,,0.077,15,1.0,0.875,1.0,1.006,10.68,9.4,0,,[],roster,,,
+8161,Malik Willis,QB,MIA,DET,True,False,Questionable,Groin,21.95,26.43,2,32.0,32.0,1.49,21.5,,-0.227,15,0.85,1.2,1.0,0.982,23.293999999999997,23.33,91574,,['Questionable (Groin)'],roster,,,
 9484,Tucker Kraft,TE,GB,NE,False,False,,,11.28,13.6,3,10.0,32.0,0.85,20.75,,0.094,15,1.0,0.882,1.0,1.008,11.975999999999999,10.65,0,TE,[],roster,,,
 DEN,Denver Broncos,DEF,DEN,CAR,False,False,,,8.27,6.67,3,,,,23.75,,0.0,0,1.0,1.046,1.0,1.0,7.789999999999999,8.15,0,DEF,[],roster,,,
-2020,Cairo Santos,K,CHI,TB,True,False,,,8.08,11.0,3,25.0,32.0,1.16,27.0,,0.259,15,1.0,1.178,1.0,1.021,8.956,10.77,122423,,[],waiver,2.64,9.54,$17 of $55
-NO,New Orleans Saints,DEF,NO,CLE,True,False,,,8.27,8.5,2,,,,24.0,Indoors,0.0,0,1.0,1.073,1.0,1.0,8.338999999999999,8.95,185700,,[],waiver,0.8,8.38,$22 of $55
-TB,Tampa Bay Buccaneers,DEF,TB,CHI,False,False,,,5.58,16.67,3,,,,20.5,,0.0,0,1.0,0.909,1.0,1.0,8.907,8.1,69840,,[],waiver,0.0,11.12,$13 of $55
-4993,Mike Gesicki,TE,CIN,ATL,False,False,,,10.08,12.6,2,17.0,32.0,0.99,27.75,Indoors,0.101,14,1.0,1.102,1.0,1.008,10.835999999999999,12.04,44536,,[],waiver,1.39,6.64,$18 of $55
-13296,Caleb Douglas,WR,MIA,DET,True,False,,,8.89,14.65,2,30.0,32.0,1.19,21.5,,0.086,15,1.0,1.063,1.0,1.007,10.617999999999999,11.37,95280,,[],waiver,0.0,7.07,$14 of $55
-11579,Audric Estime,RB,NO,CLE,True,False,,,8.46,7.9,1,15.0,32.0,0.95,24.0,Indoors,0.0,0,1.0,1.0,1.0,1.0,8.292000000000002,8.29,549387,,[],waiver,0.0,3.48,$12 of $55
-3161,Carson Wentz,QB,MIN,BUF,True,False,,,19.25,0.0,2,23.0,32.0,1.11,21.0,Indoors,0.178,15,1.0,1.012,1.0,1.014,13.475,13.83,162486,,[],waiver,0.0,4.92,$10 of $55
-13968,Drew Stevens,K,WAS,LA,True,False,,,8.42,11.0,2,28.0,32.0,1.2,22.0,,0.0,0,1.0,1.08,1.0,1.0,9.193999999999999,9.93,0,,[],waiver,1.8,9.71,$12 of $55
-9756,Jordan Addison,WR,MIN,BUF,True,False,,,9.2,7.95,2,28.0,32.0,1.17,21.0,Indoors,0.0,0,1.0,1.041,1.0,1.0,8.825,9.19,96750,,[],waiver,0.0,3.87,$10 of $55
-12524,Shedeur Sanders,QB,CLE,NO,False,False,,,16.67,0.03,3,16.0,32.0,1.03,19.5,Indoors,-0.278,15,1.0,0.941,1.0,0.978,11.678,10.75,104136,,[],waiver,0.0,3.65,$8 of $55
+2020,Cairo Santos,K,CHI,TB,True,False,,,8.08,11.0,3,25.0,32.0,1.16,27.0,,0.259,15,1.0,1.178,1.0,1.021,8.956,10.77,113414,,[],waiver,2.62,9.54,$16 of $55
+NO,New Orleans Saints,DEF,NO,CLE,True,False,,,8.27,8.5,2,,,,24.0,Indoors,0.0,0,1.0,1.073,1.0,1.0,8.338999999999999,8.95,165925,,[],waiver,0.8,8.38,$21 of $55
+TB,Tampa Bay Buccaneers,DEF,TB,CHI,False,False,,,5.58,16.67,3,,,,20.5,,0.0,0,1.0,0.909,1.0,1.0,8.907,8.1,78310,,[],waiver,0.0,11.12,$13 of $55
+13296,Caleb Douglas,WR,MIA,DET,True,False,,,8.89,14.65,2,30.0,32.0,1.19,21.5,,0.031,15,1.0,1.063,1.0,1.002,10.617999999999999,11.31,119384,,[],waiver,0.0,7.07,$14 of $55
+11579,Audric Estime,RB,NO,CLE,True,False,,,8.46,7.9,1,15.0,32.0,0.95,24.0,Indoors,0.0,0,1.0,1.0,1.0,1.0,8.292000000000002,8.29,565896,,[],waiver,0.0,3.48,$12 of $55
+3161,Carson Wentz,QB,MIN,BUF,True,False,,,19.43,0.0,2,23.0,32.0,1.11,21.25,Indoors,0.166,15,1.0,1.018,1.0,1.013,13.600999999999999,14.03,160200,,[],waiver,0.0,5.01,$10 of $55
+13968,Drew Stevens,K,WAS,LA,True,False,,,8.42,11.0,2,28.0,32.0,1.2,22.0,,0.0,0,1.0,1.08,1.0,1.0,9.193999999999999,9.93,0,,[],waiver,1.78,9.71,$12 of $55
+12524,Shedeur Sanders,QB,CLE,NO,False,False,,,16.67,0.03,3,16.0,32.0,1.03,19.5,Indoors,0.1,15,1.0,0.941,1.0,1.008,11.678,11.08,118344,,[],waiver,0.0,3.65,$8 of $55
+9756,Jordan Addison,WR,MIN,BUF,True,False,,,9.47,7.95,2,28.0,32.0,1.17,21.25,Indoors,0.0,0,1.0,1.047,1.0,1.0,9.014,9.44,98901,,[],waiver,0.0,4.01,$10 of $55
+11565,J.J. McCarthy,QB,NYG,PHI,False,False,Questionable,Undisclosed,18.24,16.73,2,24.0,32.0,1.14,20.75,,0.006,15,0.85,1.021,1.0,1.0,17.787,15.44,0,,['Questionable (Undisclosed)'],waiver,0.0,12.79,$6 of $55
