@@ -36,6 +36,8 @@ def test_export_covers_every_ui_section(reports):
     assert {"1", "2", "KC", "20"} <= set(d["players"])            # roster, D/ST and waiver targets have pages
     assert d["players"]["1"]["history"] and d["players"]["1"]["eval"]
     assert d["scout_ids"]["1"] == "00-0001" and d["scout_ids"]["KC"] == "DEF-KC"
+    res = {p["player_id"]: p for p in d["results"]["players"]}
+    assert res["1"]["points"] == 12.5 and res["21"]["owner"] is None        # free agents are scored too
 
 
 def test_export_records_missing_sections_instead_of_failing(fake_world, tmp_path):

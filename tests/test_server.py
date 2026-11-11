@@ -312,3 +312,13 @@ def test_live_roster_drift(live_week, monkeypatch):
     r = c.get("/api/live/roster").json()
     assert [p["name"] for p in r["added"]] == ["Waiver Stud"] and [p["player_id"] for p in r["dropped"]] == ["10"]
     assert "20" in r["starters"]
+
+
+def test_results_scores_free_agents_in_league_scoring(live_week):
+    r = live_week.get("/api/results").json()
+    assert r["week"] == 5 and r["complete"] is False                         # LA@DET hasn't kicked off
+    by = {p["player_id"]: p for p in r["players"]}
+    assert by["1"]["points"] == 12.5 and by["1"]["owner"] == "Mine" and by["1"]["state"] == "live"
+    assert by["20"]["points"] == 6.0                                         # Sleeper's own total wins for rostered players
+    assert by["21"]["points"] == PROJ["21"] and by["21"]["owner"] is None    # free agent: stat line x league scoring
+    assert [p["points"] for p in r["players"]] == sorted((p["points"] for p in r["players"]), reverse=True)

@@ -5,6 +5,7 @@
 Every section is the JSON a UI endpoint returns, produced by calling the app in-process, so the export and the
 UI can't drift apart. On-demand pieces (waiver what-ifs, player pages) are precomputed for the players the UI
 would usually show: your roster, your opponent's, the waiver recommendations and the top of the waiver pool.
+`results` holds the week's actual points for every player who has played (free agents included), for post-mortems.
 """
 from __future__ import annotations
 
@@ -92,6 +93,7 @@ def build(username: str, team_name: str, league_id: str | None, week: int | None
         "summary": summary,
         "matchup": matchup,
         "roster": roster,
+        "results": get("/api/results"),
         "runs": get("/api/runs") or [],
         "news": get("/api/news"),
         "waivers": {"pool": {**(pool or {}), "players": pool_rows[: ecfg.get("pool_rows", 150)]}, "whatif": whatif},

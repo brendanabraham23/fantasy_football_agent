@@ -42,7 +42,7 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
 | `calibration.py` | Sleeper projection vs. recent/season-average/blend predictors against actual points: bias, MAE, RMSE, Spearman, slope, buckets, best blend weight. |
 | `scout.py` | Data file for the Scout artifact: per-player weekly log, usage, next matchup, injuries, baseline projection, merged pipeline view. nflverse only. |
-| `export.py` | Calls the UI app in-process (TestClient) and dumps summary, matchup, roster, runs, news, waiver pool + top what-ifs and player pages to `league.json`, plus a Sleeper id -> Scout id map. |
+| `export.py` | Calls the UI app in-process (TestClient) and dumps summary, matchup, roster, week results (actual points for every player, free agents included), runs, news, waiver pool + top what-ifs and player pages to `league.json`, plus a Sleeper id -> Scout id map. |
 | `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |
 | `hosting.py` | Hosted mode (`FFA_DATA_REPO` set): shallow clone of the `data` branch synced every `hosting.sync_minutes`; Run pipeline dispatches `predict.yml` via the GitHub API. |
 | `server.py` | FastAPI app: background run job, `/api/*` (summary, matchup, live roster sync, players, waivers pool/what-if, news, archived runs/compare), serves `ffa/web/`. |
