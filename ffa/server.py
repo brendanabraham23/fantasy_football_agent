@@ -473,6 +473,30 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
         return {**as_of_info(lv), "fetched_at": _now(), "refresh_seconds": None if lv.as_of else ttl,
                 "me": mine_t, "opponent": opp_t, "win_prob": None if win is None else round(win, 3), "swaps": swaps}
 
+    @app.get("/api/results")
+    def results(run: str | None = None):
+        """Actual points so far this week (or the archived run's week) for every player who has played, free
+        agents included: league scoring over Sleeper's weekly stats, Sleeper's own totals for rostered players."""
+        lv = live(run)
+        c, wk = lv.ctx, lv.ctx.week
+        try:
+            act = lv.actuals(wk)
+        except Exception as exc:
+            raise HTTPException(502, f"Couldn't load week {wk} stats from Sleeper: {exc}")
+        states = game_states(lv.schedule(), wk, now_et(), ucfg)
+        rows = []
+        for pid, pts in act.items():
+            p = c.players.get(pid) or {}
+            pos, team = p.get("position"), sleeper.norm_team(p.get("team"))
+            if pos not in c.fantasy_positions:
+                continue
+            rows.append({"player_id": pid, "name": player_name(p, pid), "position": pos, "team": team,
+                         "points": pts, "owner": lv.owner(pid), "state": (states.get(team) or {}).get("state")})
+        rows.sort(key=lambda r: r["points"], reverse=True)
+        games = {t: st["state"] for t, st in states.items()}
+        return {**as_of_info(lv), "fetched_at": _now(),
+                "complete": bool(games) and all(v == "final" for v in games.values()), "players": rows}
+
     @app.get("/api/live/roster")
     def live_roster():
         """Your roster and lineup as Sleeper has them right now, and how they drifted from the latest run."""

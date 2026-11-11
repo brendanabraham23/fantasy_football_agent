@@ -88,6 +88,7 @@ latest log line, and reloads the current tab when the run finishes.
 | `GET /api/run` | job status |
 | `GET /api/players/search?q=&limit=` | `[{player_id, name, position, team, owner}]`, fantasy positions only, prefix matches first |
 | `GET /api/players/{id}` | profile, owner, `history` per week (opp, actual, projected, key stats), this week's eval (`source: snapshot|live`), snapshot articles |
+| `GET /api/results?run=` | the week's actual points so far for every player who has played, free agents included (league scoring over Sleeper's weekly stats; Sleeper's own totals for rostered players) + `owner`, game `state`, and `complete` once every game is final |
 | `GET /api/waivers/pool` | every free agent at a fantasy position with a team: live eval + season points/games + trending adds |
 | `GET /api/waivers/whatif/{id}` | `{weekly_gain, ros_gain, drop, bid}` for adding that player (same math as `waivers.recommend`, no thresholds) |
 | `GET /api/news?run=` | scored players from the latest (or archived) snapshot with sentiment and articles |
