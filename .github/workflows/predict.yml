@@ -3,6 +3,7 @@
 # Pipeline schedule from docs/eval-loop-design.md §4.10 (UTC); the other entries only re-export live data
 # (scores, rosters, injuries). Scheduled runs only fire from the repo's default branch.
 # Repository variables: SLEEPER_USERNAME (required), SLEEPER_LEAGUE_ID (optional).
+# Secret: CLAUDE_CODE_OAUTH_TOKEN (optional, from `claude setup-token`) for LLM news scoring; VADER is used without it.
 name: predict
 
 on:
@@ -76,9 +77,14 @@ jobs:
             printf '# Generated reports\n\nWritten by the predict workflow; read by the hosted UI. Do not edit.\n' > data/README.md
           fi
 
+      - name: Install Claude Code (LLM news scoring; the pipeline falls back to VADER without it)
+        if: env.FULL == 'true'
+        run: npm install -g @anthropic-ai/claude-code || echo "::warning::Claude Code install failed; news will be scored with VADER"
+
       - name: Run pipeline
         if: env.FULL == 'true'
         env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           SLEEPER_USERNAME: ${{ vars.SLEEPER_USERNAME }}
           SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
           NEWS: ${{ github.event_name != 'workflow_dispatch' || inputs.news }}

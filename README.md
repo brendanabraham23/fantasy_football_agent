@@ -36,7 +36,7 @@ there, so every past run is kept. See `docs/ui-design.md`.
 | 1. League, rosters, scoring settings, FAAB budget | Sleeper API (official v1) | `sleeper.py` |
 | 2. Find Team Brendobendo | league users' `team_name`, fallback to your own roster | `sleeper.find_my_team` |
 | 3. News articles per player | Google News RSS (per player, last 7 days) + ESPN / CBS / PFT / Yahoo RSS | `news.py` |
-| 4. Sentiment score | VADER with a football lexicon + phrase rules ("ruled out", "full practice", "lost the job"...), recency-weighted, shrunk toward 0 when few articles | `news.py` |
+| 4. Sentiment score | Claude (via the Claude Code CLI) scores each headline's fantasy impact for that player against a fixed rubric, cached per headline; falls back to VADER with a football lexicon + phrase rules if the CLI isn't installed or logged in. Recency-weighted, shrunk toward 0 when few articles | `news.py`, `llm.py` |
 | 5a. Injury status | Sleeper player data (Questionable / Doubtful / Out / IR...) | `sleeper.py` |
 | 5b. Defense rankings | Fantasy points each defense allows per position this season, from nflverse weekly stats | `nflverse.py` |
 | 5c. Vegas implied team totals | nflverse schedule (spread + total) | `nflverse.py` |

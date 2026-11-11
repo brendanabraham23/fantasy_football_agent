@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, timezone
 import pandas as pd
 import pytest
 
-from ffa import news, nflverse, sleeper, weather
+from ffa import llm, news, nflverse, sleeper, weather
 
 NOW = datetime.now(timezone.utc)
 
@@ -84,3 +84,6 @@ def fake_world(monkeypatch):
         return []
     monkeypatch.setattr(news.NewsScorer, "player_articles", fake_articles)
     monkeypatch.setattr(news.NewsScorer, "generic_articles", lambda self: [])
+    monkeypatch.setattr(llm, "score_headlines", lambda *a, **k: None)   # no CLI in tests: VADER fallback
+    monkeypatch.setattr(llm, "load_cache", lambda: {})
+    monkeypatch.setattr(llm, "save_cache", lambda c, keep: None)

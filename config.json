@@ -24,6 +24,8 @@
     "shrinkage": 3,
     "max_articles_per_player": 15,
     "workers": 4,
+    "scorer": "llm",
+    "llm": {"model": "sonnet", "command": "claude", "workers": 5, "timeout": 300, "retries": 2, "cache_entries": 20000},
     "generic_feeds": [
       "https://www.espn.com/espn/rss/nfl/news",
       "https://www.cbssports.com/rss/headlines/nfl/",

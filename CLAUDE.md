@@ -34,7 +34,8 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `http.py` | Single `requests` session + on-disk cache (`~/.cache/ffa`, override with `FFA_CACHE_DIR`). All network goes through `http.get/get_json/get_text` with a `ttl`. |
 | `sleeper.py` | Sleeper v1 API (league, users, rosters, transactions) + undocumented `api.sleeper.com` projections/stats. `norm_team` maps Sleeper team codes to nflverse ones. |
 | `nflverse.py` | nflverse release CSVs: schedule/Vegas lines, weekly stats -> defense-vs-position ratings. |
-| `news.py` | Google News + generic NFL RSS -> VADER sentiment with football lexicon/phrase rules. |
+| `news.py` | Google News + generic NFL RSS -> per-headline fantasy-impact score from `llm.py` (`news.scorer: "llm"`), falling back to VADER with a football lexicon/phrase rules. Each article records its `scorer`. |
+| `llm.py` | Headline scoring via the Claude Code CLI (`claude -p`, rubric + JSON schema, one call per player), cached per headline in `~/.cache/ffa/llm_scores.json`. Returns None on any failure. |
 | `weather.py` | Open-Meteo forecast at stadium; domes and neutral sites skipped. |
 | `ranker.py` | `adj = base x injury x matchup x weather x sentiment`; lineup optimizer for the weekly report. |
 | `waivers.py` | What-if add of each free agent; weekly gain + ROS gain vs. weakest bench; FAAB bid. |
@@ -70,6 +71,7 @@ Design and page specs: `docs/ui-design.md`. Viewing an archived run rewinds live
 
 - `.github/workflows/predict.yml` runs the pipeline on the §4.10 schedule (and on dispatch) and commits
   `reports/` to the `data` branch. Needs repo variable `SLEEPER_USERNAME` (optional `SLEEPER_LEAGUE_ID`).
+  Optional secret `CLAUDE_CODE_OAUTH_TOKEN` (from `claude setup-token`) enables LLM news scoring; without it runs use VADER.
   Scheduled runs only fire from the default branch.
 - `.github/workflows/deploy-space.yml` pushes `ffa/`, `config.json`, `requirements.txt` and the `Dockerfile` to the
   Space in repo variable `HF_SPACE`, using secret `HF_TOKEN`.
