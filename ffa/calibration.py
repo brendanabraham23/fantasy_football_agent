@@ -8,7 +8,9 @@ For every player-week with a Sleeper projection, compares several predictors wit
     sleeper  Sleeper's weekly projection (what `base` starts from)
     recent   average of the player's last `recent_weeks` games before that week
     season_avg  season-to-date average before that week
-    base     the model's blend: weights.projection x sleeper + weights.recent_form x recent
+    usage    expected points from the targets and carries of those same games (RB/WR/TE, see `usage.py`)
+    base_points  the blend on points alone: weights.projection x sleeper + weights.recent_form x recent
+    base     the model's blend: the same, with recent form mixed with usage at usage.weight
 
 Metrics follow docs/eval-loop-design.md §4.5: bias (predicted - actual), MAE, RMSE, Spearman rank
 correlation within position-week, actual vs. predicted by projection bucket, plus the linear recalibration
@@ -22,15 +24,15 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from . import sleeper
+from . import sleeper, usage
 from .ranker import player_name
 
-PREDICTORS = ["sleeper", "recent", "season_avg", "base"]
+PREDICTORS = ["sleeper", "recent", "usage", "season_avg", "base_points", "base"]
 
 
 def collect(season: int, weeks: list[int], scoring: dict, rec_value: float, players: dict, cfg: dict) -> pd.DataFrame:
     """One row per projected player-week: predictors, actual points and whether he played."""
-    n_recent, w = cfg["recent_weeks"], cfg["weights"]
+    n_recent, w, ucfg = cfg["recent_weeks"], cfg["weights"], cfg.get("usage", {})
     stats = {}
 
     def week_stats(wk):
@@ -41,16 +43,18 @@ def collect(season: int, weeks: list[int], scoring: dict, rec_value: float, play
     def pts(line, pos):
         return sleeper.fantasy_points(line, scoring, rec_value, pos)
 
-    history: dict[str, list[tuple[int, float]]] = {}   # player -> [(week, points)] for games played
+    history: dict[str, list[tuple[int, float, dict]]] = {}   # player -> [(week, points, stat line)] for games played
     for wk in range(1, min(weeks)):
         for pid, line in week_stats(wk).items():
             pos = (players.get(pid) or {}).get("position")
             if pos in sleeper.FANTASY_POSITIONS and (line.get("gp", 1) or 0) > 0 and (v := pts(line, pos)) is not None:
-                history.setdefault(pid, []).append((wk, v))
+                history.setdefault(pid, []).append((wk, v, line))
 
     rows = []
     for wk in sorted(weeks):
         proj = sleeper.projections(season, wk)
+        coef = usage.coefficients({x: week_stats(x) for x in range(max(1, wk - n_recent), wk)}, players, scoring,
+                                  rec_value, ucfg) if ucfg.get("enabled") else {}
         actual_week = week_stats(wk)
         for pid, line in proj.items():
             p = players.get(pid) or {}
@@ -60,19 +64,25 @@ def collect(season: int, weeks: list[int], scoring: dict, rec_value: float, play
             sp = pts(line, pos)
             if not sp or sp <= 0:
                 continue
-            past = [v for _, v in history.get(pid, [])]
+            past = [v for _, v, _ in history.get(pid, [])]
             recent = float(np.mean(past[-n_recent:])) if past else None
             season_avg = float(np.mean(past)) if past else None
-            base = w["projection"] * sp + w["recent_form"] * recent if recent is not None else sp
+            base = base_points = w["projection"] * sp + w["recent_form"] * recent if recent is not None else sp
+            use = None
+            if past and pos in coef:
+                use = usage.expected([l for _, _, l in history[pid][-n_recent:]], coef[pos])[0]
+                u = ucfg.get("weight", 0.0)
+                base = w["projection"] * sp + w["recent_form"] * ((1 - u) * recent + u * use)
             got = actual_week.get(pid)
             played = bool(got) and (got.get("gp", 1) or 0) > 0
             rows.append({"season": season, "week": wk, "player_id": pid, "name": player_name(p, pid), "position": pos,
-                         "sleeper": round(sp, 2), "recent": recent, "season_avg": season_avg, "base": round(base, 2),
+                         "sleeper": round(sp, 2), "recent": recent, "season_avg": season_avg, "usage": use,
+                         "base_points": round(base_points, 2), "base": round(base, 2),
                          "actual": (pts(got, pos) or 0.0) if played else 0.0, "played": played})
         for pid, line in actual_week.items():   # this week becomes history for the next
             pos = (players.get(pid) or {}).get("position")
             if pos in sleeper.FANTASY_POSITIONS and (line.get("gp", 1) or 0) > 0 and (v := pts(line, pos)) is not None:
-                history.setdefault(pid, []).append((wk, v))
+                history.setdefault(pid, []).append((wk, v, line))
     return pd.DataFrame(rows)
 
 
@@ -150,6 +160,13 @@ def render(df: pd.DataFrame, cfg: dict, label: str) -> str:
     notes.append(f"Best projection weight in the base blend: **{w}** (MAE {mae}); config uses "
                  f"{cfg['weights']['projection']}.")
     lines += [f"- {n}" for n in notes] + [""]
+
+    used = pool.dropna(subset=["usage"]) if "usage" in pool else pool.iloc[:0]
+    if len(used):
+        lines += ["## Usage vs. points as recent form", "",
+                  f"Only the {len(used):,} rows with a usage estimate (RB/WR/TE with recent games), so the rows compare like "
+                  "with like. `usage` vs `recent` is the signal on its own; `base` vs `base_points` is its effect on the model.",
+                  "", _table(METRIC_HEAD, _metric_rows(used, ["recent", "usage", "base_points", "base"])), ""]
 
     lines += ["## By position (Sleeper projection vs. model base)", ""]
     rows = []

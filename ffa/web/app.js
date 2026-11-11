@@ -109,13 +109,15 @@ function multChips(e) {
 
 function whyPanel(e, weights) {
   const w = weights || { projection: 0.7, recent_form: 0.3 };
-  const baseNote = e.proj != null && e.recent_avg != null
-    ? `${w.projection}×${f1(e.proj)} + ${w.recent_form}×${f1(e.recent_avg)}`
-    : e.proj != null ? "projection only" : e.recent_avg != null ? "recent form only" : "no data";
+  const form = e.recent_form ?? e.recent_avg;
+  const baseNote = e.proj != null && form != null
+    ? `${w.projection}×${f1(e.proj)} + ${w.recent_form}×${f1(form)}`
+    : e.proj != null ? "projection only" : form != null ? "recent form only" : "no data";
   const step = (k, v, note, cls = "") => `<div class="step ${cls}" title="${esc(note || "")}"><div class="k">${k}</div><div class="v">${v}</div></div>`;
   const m = (k) => (e[k] > 1.0005 ? "up" : e[k] < 0.9995 ? "down" : "");
   const meta = [];
   if (e.def_rank) meta.push(`Opp defense vs ${esc(e.position)}: rank ${e.def_rank}/${e.def_teams} (${e.def_ratio}× avg allowed)`);
+  if (e.usage_pts != null) meta.push(`Recent usage: ${f1(e.targets_avg)} targets, ${f1(e.carries_avg)} carries a game, worth ${f1(e.usage_pts)} pts (scored ${f1(e.recent_avg)})`);
   if (e.implied != null) meta.push(`Implied team total: ${f1(e.implied)}`);
   if (e.weather) meta.push(`Weather: ${esc(e.weather)}`);
   if (e.n_articles) meta.push(`News: ${e.n_articles} articles, sentiment ${signed(e.sentiment, 2)}`);

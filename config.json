@@ -5,6 +5,7 @@
 
   "weights": {"projection": 0.7, "recent_form": 0.3},
   "recent_weeks": 3,
+  "usage": {"enabled": true, "weight": 0.75, "positions": ["RB", "WR", "TE"], "min_games": 40},
   "defense_lookback_weeks": null,
 
   "matchup_weight": 0.5,

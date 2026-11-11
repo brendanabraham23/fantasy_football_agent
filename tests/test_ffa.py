@@ -2,8 +2,10 @@
 from datetime import datetime, timezone
 
 import pandas as pd
+import pytest
 
 from ffa import news, nflverse, pipeline, ranker, report, sleeper, weather
+from conftest import PROJ, proj_line
 from ffa.ranker import PlayerEval
 
 NOW = datetime.now(timezone.utc)
@@ -134,3 +136,41 @@ def test_llm_scores_are_used_cached_and_fall_back(monkeypatch):
     sent = news.NewsScorer(cfg).score("Ashton Jeanty", fresh, "RB", "LV")
     assert sent.articles[0]["scorer"] == "vader" and sent.score < 0
     assert news.NewsScorer({}).score("Ashton Jeanty", arts).articles[0]["scorer"] == "vader"   # default stays offline
+
+
+def test_usage_coefficients_and_expected():
+    from ffa import usage
+    players = {str(i): {"position": "WR" if i % 2 else "RB"} for i in range(40)}
+    line = lambda i, wk: {"rec_tgt": (i + wk) % 9, "rush_att": (i * 3 + wk) % 14 if i % 2 == 0 else 0, "gp": 1}
+    recent = {wk: {pid: line(int(pid), wk) for pid in players} for wk in (1, 2, 3)}
+    for wk in recent.values():                      # WR: 1.8 a target; RB: 1.4 a target + 0.6 a carry
+        for pid, l in wk.items():
+            l["rush_yd"] = 10 * ((1.8 * l["rec_tgt"]) if players[pid]["position"] == "WR" else 1.4 * l["rec_tgt"] + 0.6 * l["rush_att"])
+    coef = usage.coefficients(recent, players, {"rush_yd": 0.1}, 0, {"positions": ["RB", "WR", "TE"], "min_games": 20})
+    assert coef["RB"] == pytest.approx((1.4, 0.6), abs=0.01) and coef["WR"][0] == pytest.approx(1.8, abs=0.01)
+    assert "TE" not in coef                          # no TE games: the signal is off for that position
+    assert usage.expected([{"rec_tgt": 10}, {"rec_tgt": 6, "rush_att": 2}], (1.5, 0.5)) == (12.5, 8.0, 1.0)
+    assert usage.coefficients(recent, players, {"rush_yd": 0.1}, 0, {"positions": ["RB"], "min_games": 500}) == {}
+
+
+def test_recent_form_follows_usage_not_points(fake_world, monkeypatch):
+    """Two receivers with the same recent points: the one earning targets gets the higher base."""
+    def stats(season, week):
+        out = {k: {**proj_line(v), "rec_tgt": 5, "rush_att": 0} for k, v in PROJ.items()}
+        out["5"] = {**proj_line(8), "rec_tgt": 11}       # Echo WR: heavy volume, modest points
+        out["6"] = {**proj_line(8), "rec_tgt": 2}        # Foxtrot WR: same points on two targets
+        return out
+    monkeypatch.setattr(sleeper, "stats", stats)
+    cfg = pipeline.load_config()
+    cfg["usage"] = {"enabled": True, "weight": 1.0, "positions": ["WR"], "min_games": 3}
+    res = pipeline.run("brendan", "Brendobendo", None, None, None, cfg, news=False, wx=False)
+    by = {e.player_id: e for e in res.roster}
+    hi, lo = by["5"], by["6"]
+    assert hi.recent_avg == lo.recent_avg == 8 and hi.targets_avg == 11 and lo.targets_avg == 2
+    assert hi.usage_pts > lo.usage_pts and hi.recent_form == hi.usage_pts
+    assert hi.base - 0.7 * hi.proj > lo.base - 0.7 * lo.proj
+    assert by["2"].usage_pts is None and by["2"].recent_form == by["2"].recent_avg   # RB not in positions: points only
+
+    cfg["usage"]["enabled"] = False
+    off = {e.player_id: e for e in pipeline.run("brendan", "Brendobendo", None, None, None, cfg, news=False, wx=False).roster}
+    assert off["5"].usage_pts is None and off["5"].base == pytest.approx(0.7 * off["5"].proj + 0.3 * 8)
