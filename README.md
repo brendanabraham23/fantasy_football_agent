@@ -55,10 +55,13 @@ it only installs on Python 3.10 or older. nflverse publishes the same kinds of d
 Everything is expressed in **adjusted fantasy points** in your league's own scoring:
 
 ```
-base = 0.7 x Sleeper projection + 0.3 x average of last 3 games
+base = 0.7 x Sleeper projection + 0.3 x recent form
 adj  = base x injury x matchup x weather x sentiment
 ```
 
+- **recent form**: for RB/WR/TE, 75% expected points from the last 3 games' targets and carries (league-wide
+  points per target and per carry) and 25% the points actually scored; other positions use points. See
+  `docs/usage-signal.md`.
 - **injury**: Questionable 0.85, Doubtful 0.25, Out/IR/Sus 0. A bye week counts as 0.
 - **matchup**: `1 + 0.5 x (defense's points allowed to this position / league average - 1)`, then
   multiplied by `1 + 0.5 x (team implied total / week average - 1)`. For DEF, the opponent's implied

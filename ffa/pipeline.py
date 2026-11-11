@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pandas as pd
 
-from . import nflverse, sleeper, waivers, weather
+from . import nflverse, sleeper, usage, waivers, weather
 from .news import NewsScorer
 from .ranker import Evaluator, PlayerEval, optimal_lineup
 
@@ -38,6 +38,7 @@ class Context:
     trending: dict
     users: list = field(default_factory=list)
     rosters: list = field(default_factory=list)
+    usage: dict = field(default_factory=dict)   # position -> (points per target, points per carry)
     _wx: dict = field(default_factory=dict)
 
     @property
@@ -119,8 +120,13 @@ def build_context(username: str, team_name: str, league_id: str | None = None, s
     _log(f"Defense ratings for {defense['opponent_team'].nunique() if not defense.empty else 0} teams, "
          f"{len(matchups) // 2} games this week")
 
+    ucfg = cfg.get("usage", {})
+    coef = usage.coefficients(recent, players, scoring, rec_value, ucfg) if ucfg.get("enabled") else {}
+    if ucfg.get("enabled"):
+        _log("Usage (pts per target, per carry): " + (", ".join(f"{p} {a}/{b}" for p, (a, b) in coef.items()) or "unavailable"))
+
     return Context(cfg, season, week, lg, my_roster, my_name, scoring, rec_value, players,
-                   projections, recent, defense, matchups, implied_avg, trending, users, rosters)
+                   projections, recent, defense, matchups, implied_avg, trending, users, rosters, coef)
 
 
 def run(username: str, team_name: str, league_id: str | None = None, season: int | None = None,

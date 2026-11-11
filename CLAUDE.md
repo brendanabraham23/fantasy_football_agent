@@ -36,8 +36,9 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `nflverse.py` | nflverse release CSVs: schedule/Vegas lines, weekly stats -> defense-vs-position ratings. |
 | `news.py` | Google News + generic NFL RSS -> per-headline fantasy-impact score from `llm.py` (`news.scorer: "llm"`), falling back to VADER with a football lexicon/phrase rules. Each article records its `scorer`. |
 | `llm.py` | Headline scoring via the Claude Code CLI (`claude -p`, rubric + JSON schema, one call per player), cached per headline in `~/.cache/ffa/llm_scores.json`. Returns None on any failure. |
+| `usage.py` | Usage-based recent form for RB/WR/TE: points per target and per carry fit on the recent weeks, then expected points from a player's volume. Backtest in `docs/usage-signal.md`. |
 | `weather.py` | Open-Meteo forecast at stadium; domes and neutral sites skipped. |
-| `ranker.py` | `adj = base x injury x matchup x weather x sentiment`; lineup optimizer for the weekly report. |
+| `ranker.py` | `adj = base x injury x matchup x weather x sentiment`, where base blends the projection with `recent_form` (recent points mixed with usage at `usage.weight`); lineup optimizer for the weekly report. |
 | `waivers.py` | What-if add of each free agent; weekly gain + ROS gain vs. weakest bench; FAAB bid. |
 | `lineup.py` | Hindsight best-lineup solver used by `ledger.py` (separate from `ranker.optimal_lineup`). |
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
