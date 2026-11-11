@@ -97,3 +97,40 @@ def test_bids_scale_with_value_and_competition():
     assert capped == 4 and detail["rivals"] == 1 and detail["rival_max_budget"] == 3
     late = Market(True, 100, 1, {}, {})                                  # last regular-season week: no ROS value
     assert suggest_bid(WCFG, late, cand, 0, 6)[0] == 1
+
+
+JEANTY = "Raiders Hoping Ashton Jeanty's Demotion Is 'Wake-Up Call' - Yahoo Sports"
+
+
+def test_vader_fallback_scores_the_headline_once_and_knows_demotion():
+    s = news.NewsScorer({})
+    a = news.Article(JEANTY, JEANTY, "Yahoo Sports", "", NOW)            # Google News repeats the title as summary
+    assert a.headline.endswith("'Wake-Up Call'") and a.scored_text == a.headline
+    assert s.score_article(a, "Ashton Jeanty") < 0                      # was +0.68
+    jr = news.Article("Michael Penix Jr. has worst outing of career", "", "x", "", NOW)
+    assert s.score_article(jr, "Michael Penix Jr.") < 0                 # "Jr." no longer ends the sentence
+
+
+def test_llm_scores_are_used_cached_and_fall_back(monkeypatch):
+    from ffa import llm
+    calls, store = [], {}
+    monkeypatch.setattr(llm, "load_cache", lambda: dict(store))
+    monkeypatch.setattr(llm, "save_cache", lambda c, keep: store.update(c))
+
+    def fake(player, pos, team, titles, cfg):
+        calls.append((player, pos, team, titles))
+        return [-0.5] * len(titles)
+    monkeypatch.setattr(llm, "score_headlines", fake)
+    arts = [news.Article(JEANTY, JEANTY, "Yahoo Sports", "", NOW)]
+    cfg = {"scorer": "llm", "llm": {"model": "sonnet"}}
+    sent = news.NewsScorer(cfg).score("Ashton Jeanty", arts, "RB", "LV")
+    assert sent.articles[0]["score"] == -0.5 and sent.articles[0]["scorer"] == "llm" and sent.score < 0
+    assert calls == [("Ashton Jeanty", "RB", "LV", ["Raiders Hoping Ashton Jeanty's Demotion Is 'Wake-Up Call'"])]
+    news.NewsScorer(cfg).score("Ashton Jeanty", arts, "RB", "LV")       # a later run reads the cache
+    assert len(calls) == 1
+
+    monkeypatch.setattr(llm, "score_headlines", lambda *a, **k: None)   # CLI missing or not logged in
+    fresh = [news.Article("Ashton Jeanty ruled out for Sunday", "", "x", "", NOW)]
+    sent = news.NewsScorer(cfg).score("Ashton Jeanty", fresh, "RB", "LV")
+    assert sent.articles[0]["scorer"] == "vader" and sent.score < 0
+    assert news.NewsScorer({}).score("Ashton Jeanty", arts).articles[0]["scorer"] == "vader"   # default stays offline

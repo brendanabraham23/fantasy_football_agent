@@ -146,7 +146,7 @@ def run(username: str, team_name: str, league_id: str | None = None, season: int
         scorer = NewsScorer(cfg["news"])
         targets = [e for e in roster + top_candidates if e.position != "DEF"]
         _log(f"Scoring news for {len(targets)} players...")
-        sentiments = scorer.for_players([e.name for e in targets])
+        sentiments = scorer.for_players([e.name for e in targets], {e.name: (e.position, e.team) for e in targets})
         for e in targets:
             ev.apply_sentiment(e, sentiments.get(e.name))
 

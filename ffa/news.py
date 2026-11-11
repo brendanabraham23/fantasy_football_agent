@@ -1,9 +1,10 @@
-"""News scraping (RSS) and football-aware sentiment scoring."""
+"""News scraping (RSS) and fantasy-impact scoring: an LLM by default (`llm.py`), football-tuned VADER as fallback."""
 from __future__ import annotations
 
 import html
 import math
 import re
+import threading
 import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
@@ -13,7 +14,7 @@ from urllib.parse import quote_plus
 import feedparser
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
-from . import http
+from . import http, llm
 
 GOOGLE_NEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
 
@@ -21,7 +22,7 @@ GOOGLE_NEWS = "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:e
 FOOTBALL_LEXICON = {
     "injured": -1.8, "injury": -1.4, "hamstring": -1.0, "ankle": -0.8, "knee": -0.9, "groin": -0.9,
     "concussion": -2.0, "questionable": -1.0, "doubtful": -2.2, "inactive": -2.0, "sidelined": -2.0,
-    "benched": -2.2, "demoted": -2.2, "suspended": -2.5, "suspension": -2.5, "fumble": -1.5,
+    "benched": -2.2, "demoted": -2.2, "demotion": -2.2, "suspended": -2.5, "suspension": -2.5, "fumble": -1.5,
     "fumbled": -1.5, "fumbles": -1.5, "interception": -1.2, "interceptions": -1.2, "sacked": -1.0,
     "drops": -1.0, "dropped": -1.0, "touchdown": 1.5, "touchdowns": 1.5, "healthy": 1.5,
     "cleared": 1.6, "activated": 1.3, "breakout": 2.0, "dominant": 2.0, "explosive": 1.5,
@@ -40,11 +41,12 @@ PHRASES = [
     (r"limited (practice|participant|in practice)", -0.2),
     (r"full(y)? (practice|participant|participated)|practiced in full|no injury designation", 0.4),
     (r"(expected|set|cleared|on track) to (play|return|start|suit up)|returns? to practice|off the injury report", 0.5),
-    (r"lost (his |the )?(starting )?(job|role)|losing (snaps|work)|split backfield|committee|benched|demoted", -0.4),
+    (r"lost (his |the )?(starting )?(job|role)|losing (snaps|work)|split backfield|committee|benched|demoted|demotion", -0.4),
     (r"career[- ]high|bell[- ]?cow|featured role|named (the )?starter|promoted|more snaps|target share|red[- ]zone (role|usage|work)", 0.3),
 ]
 
 SUFFIX = re.compile(r"\b(jr|sr|ii|iii|iv|v)\.?$", re.I)
+SENTENCE = re.compile(r"(?<![JS]r\.)(?<!vs\.)(?<!St\.)(?<=[.!?])\s+")  # don't split after Jr./Sr./vs./St.
 
 
 @dataclass
@@ -58,6 +60,19 @@ class Article:
     @property
     def text(self) -> str:
         return f"{self.title}. {self.summary}"
+
+    @property
+    def headline(self) -> str:
+        """Title without Google News' trailing " - Source"."""
+        tail = f" - {self.source}"
+        return self.title[: -len(tail)] if self.source and self.title.endswith(tail) else self.title
+
+    @property
+    def scored_text(self) -> str:
+        """Headline once: Google News summaries just repeat the title, which used to double every score."""
+        norm = lambda t: re.sub(r"\W+", "", t.lower())
+        dup = not self.summary or norm(self.headline) in norm(self.summary)
+        return self.headline if dup else f"{self.headline}. {self.summary}"
 
 
 @dataclass
@@ -95,6 +110,8 @@ class NewsScorer:
         self.vader = SentimentIntensityAnalyzer()
         self.vader.lexicon.update(FOOTBALL_LEXICON)
         self._generic: list[Article] | None = None
+        self._cache: dict[str, float] | None = None
+        self._cache_lock = threading.Lock()
 
     # -- fetching ----------------------------------------------------------------
     def generic_articles(self) -> list[Article]:
@@ -134,27 +151,51 @@ class NewsScorer:
     # -- scoring -----------------------------------------------------------------
     def score_article(self, article: Article, name: str) -> float:
         _, last = _name_parts(name)
-        sentences = re.split(r"(?<=[.!?])\s+", article.text)
-        focus = " ".join(s for s in sentences if last.lower() in s.lower()) or article.text
+        sentences = SENTENCE.split(article.scored_text)
+        focus = " ".join(s for s in sentences if last.lower() in s.lower()) or article.scored_text
         s = self.vader.polarity_scores(focus)["compound"]
         low = focus.lower()
         s += sum(w for pat, w in PHRASES if re.search(pat, low))
         return max(-1.0, min(1.0, s))
 
-    def score(self, name: str, articles: list[Article]) -> Sentiment:
+    def llm_scores(self, name: str, articles: list[Article], position: str | None = None,
+                   team: str | None = None) -> list[float] | None:
+        """Fantasy-impact score per article from the LLM, cached per headline. None means use VADER."""
+        lcfg = self.cfg.get("llm", {})
+        if self.cfg.get("scorer", "vader") != "llm" or not articles:
+            return None
+        model = lcfg.get("model", "sonnet")
+        keys = [llm.key(model, name, a.headline) for a in articles]
+        with self._cache_lock:
+            if self._cache is None:
+                self._cache = llm.load_cache()
+            todo = [i for i, k in enumerate(keys) if k not in self._cache]
+        if todo:
+            got = llm.score_headlines(name, position, team, [articles[i].headline for i in todo], lcfg)
+            if got is None:
+                return None
+            with self._cache_lock:
+                self._cache.update({keys[i]: s for i, s in zip(todo, got)})
+                llm.save_cache(self._cache, lcfg.get("cache_entries", 20000))
+        return [self._cache[k] for k in keys]
+
+    def score(self, name: str, articles: list[Article], position: str | None = None,
+              team: str | None = None) -> Sentiment:
         if not articles:
             return Sentiment()
+        per = self.llm_scores(name, articles, position, team)
+        scorer = "llm" if per is not None else "vader"
         half_life = self.cfg.get("half_life_days", 3)
         now = datetime.now(timezone.utc)
         num = den = 0.0
         scored, detail = [], []
-        for a in articles:
-            s = self.score_article(a, name)
+        for i, a in enumerate(articles):
+            s = per[i] if per is not None else self.score_article(a, name)
             age = (now - a.published).total_seconds() / 86400 if a.published else half_life
             w = math.exp(-math.log(2) * max(age, 0) / half_life)
             num, den = num + w * s, den + w
             scored.append((a.title, round(s, 2), a.link))
-            detail.append({"title": a.title, "score": round(s, 2), "source": a.source, "link": a.link,
+            detail.append({"title": a.title, "score": round(s, 2), "source": a.source, "link": a.link, "scorer": scorer,
                            "published": a.published.isoformat() if a.published else None})
         n = len(articles)
         k = self.cfg.get("shrinkage", 3)  # few articles -> pull toward neutral
@@ -162,8 +203,12 @@ class NewsScorer:
         top = sorted(scored, key=lambda t: abs(t[1]), reverse=True)[:3]
         return Sentiment(round(score, 3), n, top, detail)
 
-    def for_players(self, names: list[str]) -> dict[str, Sentiment]:
+    def for_players(self, names: list[str], info: dict[str, tuple] | None = None) -> dict[str, Sentiment]:
+        """`info` maps name -> (position, team), which the LLM scorer uses to tell players apart."""
         self.generic_articles()
+        info = info or {}
         with ThreadPoolExecutor(max_workers=self.cfg.get("workers", 4)) as pool:
             arts = dict(zip(names, pool.map(self.player_articles, names)))
-        return {n: self.score(n, a) for n, a in arts.items()}
+        with ThreadPoolExecutor(max_workers=self.cfg.get("llm", {}).get("workers", 5)) as pool:
+            sents = pool.map(lambda n: self.score(n, arts[n], *info.get(n, (None, None))), arts)
+            return dict(zip(arts, sents))

@@ -673,7 +673,7 @@ def create_app(username: str, team_name: str = "", league_id: str | None = None,
             raise HTTPException(404, f"Unknown player {pid}")
         name = player_name(p, pid)
         scorer = NewsScorer(cfg["news"])
-        sent = scorer.score(name, scorer.player_articles(name))
+        sent = scorer.score(name, scorer.player_articles(name), p.get("position"), sleeper.norm_team(p.get("team")))
         return {"player_id": pid, "name": name, "position": p.get("position"),
                 "team": sleeper.norm_team(p.get("team")), "sentiment": sent.score, "n_articles": sent.n_articles,
                 "mult_sentiment": round(1 + cfg["sentiment_weight"] * sent.score, 3), "articles": sent.articles}
