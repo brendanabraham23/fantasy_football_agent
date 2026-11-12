@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,,,True,,,0.0,24.5,3,,,,,,-0.011,15,0.0,1.0,1.0,0.999,7.35,0.0,0,,['BYE'],roster,,,
+11646,Jalen Coker,WR,CAR,NO,False,False,,,12.94,6.03,3,16.0,32.0,0.99,23.0,Indoors,-0.095,15,1.0,1.008,1.0,0.992,10.866999999999999,10.87,0,WR,[],roster,,,
+12501,Matthew Golden,WR,GB,MIN,True,False,,,15.29,21.07,3,3.0,32.0,0.8,22.25,"45F, wind 3mph",0.094,15,1.0,0.896,1.0,1.008,17.024,15.38,0,WR,[],roster,,,
+12527,Ashton Jeanty,RB,LV,SEA,True,False,,,11.94,12.97,3,14.0,32.0,0.93,17.0,Indoors,-0.078,15,1.0,0.848,1.0,0.994,12.248999999999999,10.32,0,FLEX,[],roster,,,
+13346,Denzel Boston,WR,CLE,HOU,True,False,Questionable,Toe,10.35,10.4,3,28.0,32.0,1.15,18.0,"47F, wind 11mph",0.013,15,0.85,0.969,1.0,1.001,10.364999999999998,8.55,0,,['Questionable (Toe)'],roster,,,
+1479,Keenan Allen,WR,SF,DAL,False,False,,,5.81,8.8,3,25.0,32.0,1.1,29.5,"50F, wind 11mph, rain 64%",-0.037,15,1.0,1.2,1.0,0.997,6.706999999999999,8.02,0,,[],roster,,,
+2747,Jason Myers,K,SEA,LV,False,False,,,8.67,5.0,3,11.0,32.0,0.93,23.5,Indoors,0.028,8,1.0,0.988,1.0,1.002,7.569,7.49,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,NE,True,False,,,24.77,14.95,3,17.0,32.0,1.06,27.0,Indoors,0.036,15,1.0,1.135,1.0,1.003,21.823999999999998,24.84,0,QB,[],roster,,,
+8110,Jake Ferguson,TE,DAL,SF,True,False,Out,Knee,0.0,3.37,3,18.0,32.0,0.99,26.0,"50F, wind 11mph, rain 64%",-0.086,15,0.0,1.074,1.0,0.993,1.011,0.0,0,,['Out (Knee)'],roster,,,
+8138,James Cook III,RB,BUF,NYJ,False,False,,,17.28,17.4,2,23.0,32.0,1.12,29.5,"47F, wind 13mph",-0.042,15,1.0,1.2,1.0,0.997,17.316,20.72,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,BUF,True,False,,,11.93,11.7,1,24.0,32.0,1.16,21.0,"47F, wind 13mph",-0.023,15,1.0,1.046,1.0,0.998,11.860999999999999,12.38,0,RB,[],roster,,,
+8161,Malik Willis,QB,MIA,IND,False,False,IR,Groin,0.0,19.32,3,24.0,32.0,1.11,17.5,"50F, wind 3mph",-0.094,15,0.0,0.939,1.0,0.992,5.796,0.0,0,,['IR (Groin)'],roster,,,
+9484,Tucker Kraft,TE,GB,MIN,True,False,,,10.75,11.33,3,1.0,32.0,0.67,22.25,"45F, wind 3mph",-0.0,15,1.0,0.832,1.0,1.0,10.924,9.09,0,TE,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,,,True,,,,5.0,3,,,,,,0.0,0,0.0,1.0,1.0,1.0,5.0,0.0,0,DEF,['BYE'],roster,,,
+WAS,Washington Commanders,DEF,WAS,NYG,False,False,,,6.47,10.5,2,,,,19.0,"48F, wind 10mph, rain 40%",0.0,0,1.0,1.021,1.0,1.0,7.679,7.84,140875,,[],waiver,7.84,8.48,$17 of $55
+BUF,Buffalo Bills,DEF,BUF,NYJ,False,False,,,6.82,15.5,2,,,,29.5,"47F, wind 13mph",0.0,0,1.0,1.032,1.0,1.0,9.424,9.73,0,,[],waiver,9.73,11.16,$10 of $55
+TB,Tampa Bay Buccaneers,DEF,TB,,,True,,,,18.33,3,,,,,,0.0,0,0.0,1.0,1.0,1.0,18.33,0.0,162780,,['BYE'],waiver,0.0,18.33,$17 of $55
+96,Aaron Rodgers,QB,PIT,CIN,False,False,,,23.53,11.9,2,16.0,32.0,1.05,23.0,"46F, wind 4mph",0.015,15,1.0,1.038,1.0,1.001,20.041,20.82,337852,,[],waiver,0.0,16.03,$23 of $55
+11579,Audric Estime,RB,NO,CAR,True,False,,,8.21,14.7,1,31.0,32.0,1.26,25.5,Indoors,0.042,15,1.0,1.2,1.0,1.003,10.157,12.22,924270,,[],waiver,1.9,9.77,$23 of $55
+4017,Deshaun Watson,QB,CLE,HOU,True,False,,,18.66,17.85,2,20.0,32.0,1.08,18.0,"47F, wind 11mph",0.062,15,1.0,0.937,1.0,1.005,18.417,17.34,177328,,[],waiver,0.0,16.57,$18 of $55
+2505,Darren Waller,TE,CAR,NO,False,False,,,8.73,12.37,3,26.0,32.0,1.19,23.0,Indoors,0.048,13,1.0,1.109,1.0,1.004,9.822,10.94,1116558,,[],waiver,1.85,8.87,$25 of $55
+12491,Corey Kiner,RB,NE,DET,False,False,,,11.77,5.53,3,2.0,32.0,0.81,24.5,Indoors,0.0,0,1.0,0.947,1.0,1.0,9.898,9.37,2868696,,[],waiver,0.0,6.96,$25 of $55
+1945,Chris Boswell,K,PIT,CIN,False,False,,,8.28,9.5,2,13.0,32.0,1.0,23.0,"46F, wind 4mph",0.0,0,1.0,1.013,1.0,1.0,8.645999999999999,8.76,180376,,[],waiver,1.27,8.89,$16 of $55
+5119,Jason Sanders,K,NYJ,BUF,True,False,,,7.3,11.33,3,7.0,32.0,0.81,21.0,"47F, wind 13mph",0.0,0,1.0,0.876,1.0,1.0,8.509,7.45,241315,,[],waiver,0.0,9.31,$16 of $55
