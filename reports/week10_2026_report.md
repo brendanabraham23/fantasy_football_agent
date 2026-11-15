@@ -1,19 +1,19 @@
 # Brendobendo - Week 10, 2026
-_Refounders Football League   - generated Sun Nov 15 08:36 PM_
+_Refounders Football League   - generated Sun Nov 15 08:47 PM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | QB | Jared Goff | QB | DET | vs NE | 24.8 | 14.9 | C (17/32) | 26.5 | Indoors | +0.03 (15) | - | **24.6** |
-| RB | James Cook III | RB | BUF | @ NYJ | 17.6 | 17.4 | B (23/32) | 29.5 | 48F, wind 11mph | +0.09 (15) | - | **21.2** |
-| RB | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 48F, wind 11mph | +0.03 (15) | - | **12.5** |
+| RB | James Cook III | RB | BUF | @ NYJ | 17.6 | 17.4 | B (23/32) | 29.5 | 50F, wind 11mph | +0.09 (15) | - | **21.2** |
+| RB | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 50F, wind 11mph | +0.03 (15) | - | **12.5** |
 | WR | Matthew Golden | WR | GB | vs MIN | 15.4 | 21.1 | F (3/32) | 22.5 | 47F, wind 2mph | +0.24 (15) | - | **15.7** |
 | WR | Jalen Coker | WR | CAR | @ NO | 13.2 | 6.0 | C (16/32) | 23.5 | Indoors | +0.05 (15) | - | **11.3** |
 | TE | Tucker Kraft | TE | GB | vs MIN | 10.8 | 11.3 | F (1/32) | 22.5 | 47F, wind 2mph | +0.06 (15) | - | **9.2** |
 | FLEX | Ashton Jeanty | RB | LV | vs SEA | 12.0 | 13.0 | C (14/32) | 17.0 | Indoors | +0.05 (15) | - | **10.5** |
 | K | Jason Myers | K | SEA | @ LV | 8.7 | 5.0 | D (11/32) | 23.5 | Indoors | +0.10 (7) | - | **7.5** |
-| DEF | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 48F, wind 11mph | +0.00 (0) | - | **9.7** |
+| DEF | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 50F, wind 11mph | +0.00 (0) | - | **9.7** |
 
 Projected lineup total (adjusted): **122.3**
 
@@ -38,8 +38,8 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | James Cook III | RB | BUF | @ NYJ | 17.6 | 17.4 | B (23/32) | 29.5 | 48F, wind 11mph | +0.09 (15) | - | **21.2** |
-| 2 | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 48F, wind 11mph | +0.03 (15) | - | **12.5** |
+| 1 | James Cook III | RB | BUF | @ NYJ | 17.6 | 17.4 | B (23/32) | 29.5 | 50F, wind 11mph | +0.09 (15) | - | **21.2** |
+| 2 | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 50F, wind 11mph | +0.03 (15) | - | **12.5** |
 | 3 | Ashton Jeanty | RB | LV | vs SEA | 12.0 | 13.0 | C (14/32) | 17.0 | Indoors | +0.05 (15) | - | **10.5** |
 | 4 | Bucky Irving | RB | TB | BYE | 0.0 | 24.5 | - (-) | - | - | -0.01 (14) | - | **0.0** |
 | 5 | Kyle Monangai | RB | CHI | BYE | 0.0 | - | - (-) | - | - | -0.20 (15) | Out | **0.0** |
@@ -51,7 +51,7 @@ Your current Sleeper lineup already matches the recommendation.
 | 1 | Matthew Golden | WR | GB | vs MIN | 15.4 | 21.1 | F (3/32) | 22.5 | 47F, wind 2mph | +0.24 (15) | - | **15.7** |
 | 2 | Jalen Coker | WR | CAR | @ NO | 13.2 | 6.0 | C (16/32) | 23.5 | Indoors | +0.05 (15) | - | **11.3** |
 | 3 | Denzel Boston | WR | CLE | vs HOU | 10.7 | 10.4 | A (28/32) | 18.0 | 46F, wind 13mph | +0.22 (15) | Questionable | **8.9** |
-| 4 | Keenan Allen | WR | SF | @ DAL | 6.4 | 8.8 | B (25/32) | 30.0 | 48F, wind 7mph, rain 12% | +0.05 (15) | - | **8.6** |
+| 4 | Keenan Allen | WR | SF | @ DAL | 6.4 | 8.8 | B (25/32) | 30.0 | 47F, wind 7mph | +0.05 (15) | - | **8.6** |
 
 ### TE
 
@@ -69,7 +69,7 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 48F, wind 11mph | +0.00 (0) | - | **9.7** |
+| 1 | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 50F, wind 11mph | +0.00 (0) | - | **9.7** |
 | 2 | Denver Broncos | DEF | DEN | BYE | - | 5.0 | - (-) | - | - | +0.00 (0) | - | **0.0** |
 
 _On IR/taxi: Malik Willis (IR)_
