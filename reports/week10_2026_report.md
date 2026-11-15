@@ -1,21 +1,21 @@
 # Brendobendo - Week 10, 2026
-_Refounders Football League   - generated Sun Nov 15 04:46 PM_
+_Refounders Football League   - generated Sun Nov 15 05:46 PM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | QB | Jared Goff | QB | DET | vs NE | 24.8 | 14.9 | C (17/32) | 26.5 | Indoors | -0.01 (15) | - | **24.5** |
-| RB | James Cook III | RB | BUF | @ NYJ | 17.7 | 17.4 | B (23/32) | 29.5 | 47F, wind 9mph | +0.11 (15) | - | **21.3** |
-| RB | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 47F, wind 9mph | +0.03 (15) | - | **12.4** |
-| WR | Matthew Golden | WR | GB | vs MIN | 15.3 | 21.1 | F (3/32) | 22.5 | 44F, wind 3mph | +0.18 (15) | - | **15.6** |
-| WR | Jalen Coker | WR | CAR | @ NO | 13.0 | 6.0 | C (16/32) | 23.5 | Indoors | +0.02 (15) | - | **11.2** |
-| TE | Tucker Kraft | TE | GB | vs MIN | 10.7 | 11.3 | F (1/32) | 22.5 | 44F, wind 3mph | -0.02 (15) | - | **9.1** |
+| RB | James Cook III | RB | BUF | @ NYJ | 17.7 | 17.4 | B (23/32) | 29.5 | 48F, wind 11mph | +0.11 (15) | - | **21.3** |
+| RB | Breece Hall | RB | NYJ | vs BUF | 12.0 | 11.7 | B (24/32) | 21.0 | 48F, wind 11mph | +0.03 (15) | - | **12.5** |
+| WR | Matthew Golden | WR | GB | vs MIN | 15.4 | 21.1 | F (3/32) | 22.5 | 44F, wind 3mph | +0.18 (15) | - | **15.7** |
+| WR | Jalen Coker | WR | CAR | @ NO | 13.2 | 6.0 | C (16/32) | 23.5 | Indoors | +0.02 (15) | - | **11.3** |
+| TE | Tucker Kraft | TE | GB | vs MIN | 10.8 | 11.3 | F (1/32) | 22.5 | 44F, wind 3mph | -0.02 (15) | - | **9.2** |
 | FLEX | Ashton Jeanty | RB | LV | vs SEA | 11.9 | 13.0 | C (14/32) | 17.0 | Indoors | +0.01 (15) | - | **10.4** |
 | K | Jason Myers | K | SEA | @ LV | 8.7 | 5.0 | D (11/32) | 23.5 | Indoors | +0.10 (7) | - | **7.5** |
-| DEF | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 47F, wind 9mph | +0.00 (0) | - | **9.7** |
+| DEF | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 48F, wind 11mph | +0.00 (0) | - | **9.7** |
 
-Projected lineup total (adjusted): **121.8**
+Projected lineup total (adjusted): **122.1**
 
 Your current Sleeper lineup already matches the recommendation.
 
@@ -38,8 +38,8 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | James Cook III | RB | BUF | @ NYJ | 17.7 | 17.4 | B (23/32) | 29.5 | 47F, wind 9mph | +0.11 (15) | - | **21.3** |
-| 2 | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 47F, wind 9mph | +0.03 (15) | - | **12.4** |
+| 1 | James Cook III | RB | BUF | @ NYJ | 17.7 | 17.4 | B (23/32) | 29.5 | 48F, wind 11mph | +0.11 (15) | - | **21.3** |
+| 2 | Breece Hall | RB | NYJ | vs BUF | 12.0 | 11.7 | B (24/32) | 21.0 | 48F, wind 11mph | +0.03 (15) | - | **12.5** |
 | 3 | Ashton Jeanty | RB | LV | vs SEA | 11.9 | 13.0 | C (14/32) | 17.0 | Indoors | +0.01 (15) | - | **10.4** |
 | 4 | Bucky Irving | RB | TB | BYE | 0.0 | 24.5 | - (-) | - | - | -0.01 (14) | - | **0.0** |
 | 5 | Kyle Monangai | RB | CHI | BYE | 0.0 | - | - (-) | - | - | -0.19 (15) | Out | **0.0** |
@@ -48,16 +48,16 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Matthew Golden | WR | GB | vs MIN | 15.3 | 21.1 | F (3/32) | 22.5 | 44F, wind 3mph | +0.18 (15) | - | **15.6** |
-| 2 | Jalen Coker | WR | CAR | @ NO | 13.0 | 6.0 | C (16/32) | 23.5 | Indoors | +0.02 (15) | - | **11.2** |
-| 3 | Denzel Boston | WR | CLE | vs HOU | 10.6 | 10.4 | A (28/32) | 18.0 | 46F, wind 12mph | +0.12 (15) | Questionable | **8.8** |
-| 4 | Keenan Allen | WR | SF | @ DAL | 6.4 | 8.8 | B (25/32) | 30.0 | 47F, wind 9mph | -0.03 (15) | - | **8.5** |
+| 1 | Matthew Golden | WR | GB | vs MIN | 15.4 | 21.1 | F (3/32) | 22.5 | 44F, wind 3mph | +0.18 (15) | - | **15.7** |
+| 2 | Jalen Coker | WR | CAR | @ NO | 13.2 | 6.0 | C (16/32) | 23.5 | Indoors | +0.02 (15) | - | **11.3** |
+| 3 | Denzel Boston | WR | CLE | vs HOU | 10.7 | 10.4 | A (28/32) | 18.0 | 46F, wind 12mph | +0.12 (15) | Questionable | **8.8** |
+| 4 | Keenan Allen | WR | SF | @ DAL | 6.4 | 8.8 | B (25/32) | 30.0 | 48F, wind 7mph, rain 12% | -0.03 (15) | - | **8.6** |
 
 ### TE
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Tucker Kraft | TE | GB | vs MIN | 10.7 | 11.3 | F (1/32) | 22.5 | 44F, wind 3mph | -0.02 (15) | - | **9.1** |
+| 1 | Tucker Kraft | TE | GB | vs MIN | 10.8 | 11.3 | F (1/32) | 22.5 | 44F, wind 3mph | -0.02 (15) | - | **9.2** |
 
 ### K
 
@@ -69,7 +69,7 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 47F, wind 9mph | +0.00 (0) | - | **9.7** |
+| 1 | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 48F, wind 11mph | +0.00 (0) | - | **9.7** |
 | 2 | Denver Broncos | DEF | DEN | BYE | - | 5.0 | - (-) | - | - | +0.00 (0) | - | **0.0** |
 
 _On IR/taxi: Malik Willis (IR)_
@@ -78,16 +78,16 @@ _On IR/taxi: Malik Willis (IR)_
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Darren Waller | TE | CAR | @ NO | 11.2 | 12.4 | +2.1 | +10.6 | 563805 | Kyle Monangai | $26 of $55 |
-| Deshaun Watson | QB | CLE | vs HOU | 17.7 | 17.9 | +0.0 | +18.5 | 61816 | Kyle Monangai | $17 of $55 |
-| Audric Estime | RB | NO | vs CAR | 12.1 | 14.7 | +1.6 | +11.4 | 66198 | Kyle Monangai | $19 of $55 |
-| Chimere Dike | WR | TEN | vs JAX | 8.1 | 9.1 | +0.0 | +8.8 | 965250 | Kyle Monangai | $19 of $55 |
-| Tampa Bay Buccaneers | DEF | TB | BYE | 0.0 | 18.3 | +0.0 | +13.3 | 79365 | Denver Broncos | $14 of $55 |
-| Caleb Douglas | WR | MIA | @ IND | 8.9 | 14.1 | +0.0 | +11.7 | 153648 | Kyle Monangai | $19 of $55 |
-| Mike Gesicki | TE | CIN | vs PIT | 10.2 | 9.4 | +1.1 | +9.6 | 125816 | Kyle Monangai | $22 of $55 |
-| Chris Rodriguez Jr. | RB | JAX | @ TEN | 10.3 | 12.0 | +0.0 | +9.9 | 291555 | Kyle Monangai | $20 of $55 |
-| Justice Hill | RB | BAL | vs LAC | 8.2 | 10.7 | +0.0 | +8.9 | 417141 | Kyle Monangai | $19 of $55 |
+| Darren Waller | TE | CAR | @ NO | 11.2 | 12.4 | +2.1 | +10.6 | 585531 | Kyle Monangai | $26 of $55 |
+| Deshaun Watson | QB | CLE | vs HOU | 17.8 | 17.9 | +0.0 | +18.5 | 67648 | Kyle Monangai | $17 of $55 |
+| Audric Estime | RB | NO | vs CAR | 11.9 | 14.7 | +1.5 | +11.3 | 67041 | Kyle Monangai | $19 of $55 |
+| Tampa Bay Buccaneers | DEF | TB | BYE | 0.0 | 18.3 | +0.0 | +13.3 | 83425 | Denver Broncos | $14 of $55 |
+| Caleb Douglas | WR | MIA | @ IND | 8.9 | 14.1 | +0.0 | +11.7 | 168392 | Kyle Monangai | $20 of $55 |
+| Mike Gesicki | TE | CIN | vs PIT | 10.2 | 9.4 | +1.1 | +9.6 | 135324 | Kyle Monangai | $22 of $55 |
+| Chris Rodriguez Jr. | RB | JAX | @ TEN | 10.3 | 12.0 | +0.0 | +9.9 | 311760 | Kyle Monangai | $20 of $55 |
+| Justice Hill | RB | BAL | vs LAC | 8.2 | 10.7 | +0.0 | +8.9 | 457299 | Kyle Monangai | $20 of $55 |
 | Drew Lock | QB | SEA | @ LV | 22.3 | 16.4 | +0.0 | +18.5 | - | Kyle Monangai | $8 of $55 |
+| Darnell Washington | TE | PIT | @ CIN | 9.0 | 9.9 | +0.0 | +8.7 | 106140 | Kyle Monangai | $21 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
