@@ -5,7 +5,7 @@
   "league_id": "1389327094277767168",
   "season": 2026,
   "week": 10,
-  "generated_at": "2026-11-15T20:47:02+00:00",
+  "generated_at": "2026-11-15T21:18:11+00:00",
   "options": {
    "news": true,
    "weather": true
@@ -2147,41 +2147,6 @@
    "ros_value": 8.54,
    "group": "candidate"
   },
-  "11783": {
-   "player_id": "11783",
-   "name": "Ryan Flournoy",
-   "position": "WR",
-   "team": "DAL",
-   "opp": "SF",
-   "is_home": true,
-   "on_bye": false,
-   "injury_status": null,
-   "injury_detail": null,
-   "proj": 8.88,
-   "recent_avg": 10.47,
-   "recent_games": 3,
-   "def_rank": 5,
-   "def_teams": 32,
-   "def_ratio": 0.86,
-   "implied": 25.5,
-   "weather": "47F, wind 7mph",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
-   "mult_injury": 1.0,
-   "mult_matchup": 0.995,
-   "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
-   "base": 9.357,
-   "adj": 9.31,
-   "trending_adds": 82512,
-   "slot": null,
-   "notes": [],
-   "matchup_grade": "F",
-   "ros_value": 9.68,
-   "group": "candidate"
-  },
   "9479": {
    "player_id": "9479",
    "name": "Darnell Washington",
@@ -2565,6 +2530,43 @@
    "notes": [],
    "matchup_grade": "B",
    "ros_value": 8.5,
+   "group": "candidate"
+  },
+  "7600": {
+   "player_id": "7600",
+   "name": "Pat Freiermuth",
+   "position": "TE",
+   "team": "PIT",
+   "opp": "CIN",
+   "is_home": false,
+   "on_bye": false,
+   "injury_status": "Questionable",
+   "injury_detail": "Illness",
+   "proj": 8.88,
+   "recent_avg": 7.8,
+   "recent_games": 2,
+   "def_rank": 25,
+   "def_teams": 32,
+   "def_ratio": 1.15,
+   "implied": 23.0,
+   "weather": "42F, wind 5mph",
+   "sentiment": 0.0,
+   "n_articles": 0,
+   "headlines": [],
+   "articles": [],
+   "mult_injury": 0.85,
+   "mult_matchup": 1.09,
+   "mult_weather": 1.0,
+   "mult_sentiment": 1.0,
+   "base": 8.556000000000001,
+   "adj": 7.93,
+   "trending_adds": 0,
+   "slot": null,
+   "notes": [
+    "Questionable (Illness)"
+   ],
+   "matchup_grade": "B",
+   "ros_value": 8.34,
    "group": "candidate"
   },
   "WAS": {
@@ -4745,8 +4747,8 @@
    "def_ratio": null,
    "implied": null,
    "weather": null,
-   "sentiment": -0.201,
-   "n_articles": 15,
+   "sentiment": -0.208,
+   "n_articles": 14,
    "headlines": [
     [
      "Kyle Monangai Injury: Inactive in Week 9 - RotoWire",
@@ -4876,20 +4878,12 @@
      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA0YzJudnpFNXNCS3IxS0p3UG9IU2JvYmZPcl9Yd1UxbXZSMHpyYzZERzd3b2pNdG1iLTRpempqMzRoc1NvTUJfSVNCMnQ5M0MwM244a3F6WU1FR3VNa3BHM2tRQjRqaG5CVmJJUmZJdU90WmpKbkE?oc=5",
      "scorer": "vader",
      "published": "2026-11-08T22:26:52+00:00"
-    },
-    {
-     "title": "Final Injury Report for Buccaneers-Bears: Will Emeka Egbuka, Kyle Monangai Play? - Yahoo Sports",
-     "score": 0.0,
-     "source": "Yahoo Sports",
-     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUDJnQ3BRNWZUZmp2NFVXRkZzcWdqaXV5MGVYWGR5RGlKTk1HZEpyTmZVWURfeVFoZjJZcVI4bVNIajl0M3RBbk9PZkdWbndDUzBiZWtPTjlxN3Yyc3lSc1J5S2hyWTlOR2RMSmJjMmNBMkJITlZQOTFKSHdWMjFVYURtTkJvWldEdU92azRR?oc=5",
-     "scorer": "vader",
-     "published": "2026-11-08T21:00:00+00:00"
     }
    ],
    "mult_injury": 0.0,
    "mult_matchup": 1.0,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.984,
+   "mult_sentiment": 0.983,
    "base": 0,
    "adj": 0.0,
    "trending_adds": 0,
@@ -6272,20 +6266,20 @@
    }
   },
   {
-   "player_id": "11783",
+   "player_id": "9479",
    "weekly_gain": 0.0,
-   "ros_gain": 9.68,
+   "ros_gain": 8.73,
    "drop_id": "12534",
-   "bid": "$18 of $55",
-   "score": 9.26,
+   "bid": "$21 of $55",
+   "score": 9.18,
    "bid_detail": {
-    "value": 38.7,
+    "value": 34.9,
     "horizon": 4,
-    "rivals": 5,
+    "rivals": 9,
     "teams": 11,
     "rival_max_budget": 100,
-    "trending_adds": 82512,
-    "pct": 0.319
+    "trending_adds": 122085,
+    "pct": 0.384
    }
   }
  ],

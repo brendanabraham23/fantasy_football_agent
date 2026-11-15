@@ -1,5 +1,5 @@
 # Brendobendo - Week 10, 2026
-_Refounders Football League   - generated Sun Nov 15 08:47 PM_
+_Refounders Football League   - generated Sun Nov 15 09:18 PM_
 
 ## Recommended lineup
 
@@ -42,7 +42,7 @@ Your current Sleeper lineup already matches the recommendation.
 | 2 | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 50F, wind 11mph | +0.03 (15) | - | **12.5** |
 | 3 | Ashton Jeanty | RB | LV | vs SEA | 12.0 | 13.0 | C (14/32) | 17.0 | Indoors | +0.05 (15) | - | **10.5** |
 | 4 | Bucky Irving | RB | TB | BYE | 0.0 | 24.5 | - (-) | - | - | -0.01 (14) | - | **0.0** |
-| 5 | Kyle Monangai | RB | CHI | BYE | 0.0 | - | - (-) | - | - | -0.20 (15) | Out | **0.0** |
+| 5 | Kyle Monangai | RB | CHI | BYE | 0.0 | - | - (-) | - | - | -0.21 (14) | Out | **0.0** |
 
 ### WR
 
@@ -87,7 +87,7 @@ _On IR/taxi: Malik Willis (IR)_
 | Justice Hill | RB | BAL | vs LAC | 8.2 | 10.7 | +0.0 | +8.9 | 519336 | Kyle Monangai | $20 of $55 |
 | Chris Rodriguez Jr. | RB | JAX | @ TEN | 10.2 | 12.0 | +0.0 | +9.9 | 317403 | Kyle Monangai | $20 of $55 |
 | Drew Lock | QB | SEA | @ LV | 22.6 | 16.4 | +0.0 | +18.6 | - | Kyle Monangai | $8 of $55 |
-| Ryan Flournoy | WR | DAL | vs SF | 9.3 | 10.5 | +0.0 | +9.7 | 82512 | Kyle Monangai | $18 of $55 |
+| Darnell Washington | TE | PIT | @ CIN | 9.0 | 9.9 | +0.0 | +8.7 | 122085 | Kyle Monangai | $21 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
@@ -103,7 +103,7 @@ _Lineup gain = change in this week's optimal lineup total. Value vs drop compare
 - [Denzel Boston Expected to play Sunday - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMikgFBVV95cUxPVURNQmxSSTBIelFiR0F4NkhiM3BzZ0xtcnBKQk9Lam43akxrbjhHT0pmbWFhUFB4bHhGd1Q2QUwtUVFIX2hUVUUxQ2R2QzhoZThWTmxaNlpjWGpkdHVITldBZDZXS3dkV1lZSjVOLW9yRC05VUdKVFRib19IbzBLN0pJOUpkQmVFdW1HbG5ma0pvUQ?oc=5) (+0.84)
 - [Browns' Denzel Boston: Expected to play Sunday - CBS Sports](https://news.google.com/rss/articles/CBMimAFBVV95cUxQZ3dpNlRrZVMtd2I1Y0FSWDRCSjhzTUhzWGZWeV93ZW1sSlBaZXBGTHRmb0FvdkZ4R1J1cmllbjh3M1FwUkk2UlRseFBLeTBuTzFSMC1qUXFmUG01angxbWt0RW50VWJDV053aUFTSHpGX0I4ZW96SlcxdmoxRDd5TDh1RDE3RTAxX3lsbHNHN25peC1lcHNXMg?oc=5) (+0.84)
 
-**Kyle Monangai** (-0.20)
+**Kyle Monangai** (-0.21)
 - [Kyle Monangai Injury: Inactive in Week 9 - RotoWire](https://news.google.com/rss/articles/CBMilAFBVV95cUxQbjhhVUhkcEhoVk1yNUQ1blVMSVBRLWVZdzJjc1lERzdoakx5bkllMDRZNm91SE5VdlIxRjBQLWtOUjVNdVhTTnJacTJ5T3B6MkMzZFNXYk5CbXZ2a1R1Yk9SRTZIVWMyTEVCR0owZVgtWmRXMU1nV0xlUXNGZmNPTDM3S1FvV3prVTBBWkJGSU5ZVnFD?oc=5) (-0.66)
 - [Kyle Monangai Not expected to return Sunday - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMimgFBVV95cUxONHlmTktvaXZCc18zYVVzTHU0d2ptVlJ2SjBNd1pVZUlHSTVEeGxTTW8yazZhTGt4M1JHR0lzRGE5WHBpclRpeWJ6N0IxYTBYOU9EQTM0dVJacEVGQURHT25tMk0zaWJKUmxlbGNuNHRKZFYzaThaeGY0RUc3VGNQZWVxVjBzbWEwWDBIMnNhMWgyaUM2RXJPd3VB?oc=5) (+0.50)
 - [Bears declare Kyle Monangai (thumb/toe) inactive - NBC Sports](https://news.google.com/rss/articles/CBMisgFBVV95cUxQamVVdVJwbUdpblpuS1VGWXJ5Wk5uVFE1WklfOW04dnNnTVJhbzJWcldyd1FRZ2s5TzNzeWd2NWkyc3RNa0hqM2ozT2ZvamtWREhtMkxMY29uTnNZT045aU9rdmloTkEzNGlxQTE1YWRsRU45bDRoWVVHVjBPUl9QWERHVWhCZmR4azhFTUVxQ0ZUX1hwSkJfeGI0Rm9FY0p0WFl1clZaZDBsRzhNcXJ0ODdB?oc=5) (-0.46)

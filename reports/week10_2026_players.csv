@@ -3,7 +3,7 @@ player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj
 11646,Jalen Coker,WR,CAR,NO,False,False,,,13.19,6.03,3,16.0,32.0,0.99,23.5,Indoors,0.047,15,1.0,1.02,1.0,1.004,11.041999999999998,11.31,0,WR,[],roster,,,
 12501,Matthew Golden,WR,GB,MIN,True,False,,,15.39,21.07,3,3.0,32.0,0.8,22.5,"47F, wind 2mph",0.237,15,1.0,0.903,1.0,1.019,17.094,15.73,0,WR,[],roster,,,
 12527,Ashton Jeanty,RB,LV,SEA,True,False,,,12.0,12.97,3,14.0,32.0,0.93,17.0,Indoors,0.051,15,1.0,0.849,1.0,1.004,12.290999999999999,10.48,0,FLEX,[],roster,,,
-12534,Kyle Monangai,RB,CHI,,,True,Out,Toe,0.0,,0,,,,,,-0.201,15,0.0,1.0,1.0,0.984,0.0,0.0,0,,"['BYE', 'Out (Toe)']",roster,,,
+12534,Kyle Monangai,RB,CHI,,,True,Out,Toe,0.0,,0,,,,,,-0.208,14,0.0,1.0,1.0,0.983,0.0,0.0,0,,"['BYE', 'Out (Toe)']",roster,,,
 13346,Denzel Boston,WR,CLE,HOU,True,False,Questionable,Toe,10.71,10.4,3,28.0,32.0,1.15,18.0,"46F, wind 13mph",0.219,15,0.85,0.97,1.0,1.018,10.617,8.91,0,,['Questionable (Toe)'],roster,,,
 1479,Keenan Allen,WR,SF,DAL,False,False,,,6.44,8.8,3,25.0,32.0,1.1,30.0,"47F, wind 7mph",0.052,15,1.0,1.2,1.0,1.004,7.148,8.61,0,,[],roster,,,
 2747,Jason Myers,K,SEA,LV,False,False,,,8.67,5.0,3,11.0,32.0,0.93,23.5,Indoors,0.105,7,1.0,0.99,1.0,1.008,7.569,7.55,0,K,[],roster,,,
@@ -22,4 +22,4 @@ TB,Tampa Bay Buccaneers,DEF,TB,,,True,,,,18.33,3,,,,,,0.0,0,0.0,1.0,1.0,1.0,18.3
 5995,Justice Hill,RB,BAL,LAC,True,False,,,7.23,10.67,3,21.0,32.0,1.03,21.5,"41F, wind 5mph",0.0,0,1.0,0.996,1.0,1.0,8.262,8.23,519336,,[],waiver,0.0,8.95,$20 of $55
 10219,Chris Rodriguez Jr.,RB,JAX,TEN,False,False,,,7.77,12.0,2,19.0,32.0,0.99,28.0,"56F, wind 5mph",0.085,15,1.0,1.121,1.0,1.007,9.038999999999998,10.2,317403,,[],waiver,0.0,9.88,$20 of $55
 5854,Drew Lock,QB,SEA,LV,False,False,,,20.87,16.35,1,30.0,32.0,1.24,23.5,Indoors,0.108,15,1.0,1.149,1.0,1.009,19.514,22.62,0,,[],waiver,0.0,18.61,$8 of $55
-11783,Ryan Flournoy,WR,DAL,SF,True,False,,,8.88,10.47,3,5.0,32.0,0.86,25.5,"47F, wind 7mph",0.0,0,1.0,0.995,1.0,1.0,9.357,9.31,82512,,[],waiver,0.0,9.68,$18 of $55
+9479,Darnell Washington,TE,PIT,CIN,False,False,,,7.56,9.9,2,25.0,32.0,1.15,23.0,"42F, wind 5mph",0.0,0,1.0,1.09,1.0,1.0,8.262,9.01,122085,,[],waiver,0.0,8.73,$21 of $55
