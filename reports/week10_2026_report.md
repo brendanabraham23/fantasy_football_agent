@@ -1,5 +1,5 @@
 # Brendobendo - Week 10, 2026
-_Refounders Football League   - generated Sun Nov 15 09:18 PM_
+_Refounders Football League   - generated Sun Nov 15 11:27 PM_
 
 ## Recommended lineup
 
@@ -12,7 +12,7 @@ _Refounders Football League   - generated Sun Nov 15 09:18 PM_
 | WR | Jalen Coker | WR | CAR | @ NO | 13.2 | 6.0 | C (16/32) | 23.5 | Indoors | +0.05 (15) | - | **11.3** |
 | TE | Tucker Kraft | TE | GB | vs MIN | 10.8 | 11.3 | F (1/32) | 22.5 | 47F, wind 2mph | +0.06 (15) | - | **9.2** |
 | FLEX | Ashton Jeanty | RB | LV | vs SEA | 12.0 | 13.0 | C (14/32) | 17.0 | Indoors | +0.05 (15) | - | **10.5** |
-| K | Jason Myers | K | SEA | @ LV | 8.7 | 5.0 | D (11/32) | 23.5 | Indoors | +0.10 (7) | - | **7.5** |
+| K | Jason Myers | K | SEA | @ LV | 8.7 | 5.0 | D (11/32) | 23.5 | Indoors | +0.11 (6) | - | **7.6** |
 | DEF | Buffalo Bills | DEF | BUF | @ NYJ | 6.8 | 15.5 | - (-) | 29.5 | 50F, wind 11mph | +0.00 (0) | - | **9.7** |
 
 Projected lineup total (adjusted): **122.3**
@@ -41,8 +41,8 @@ Your current Sleeper lineup already matches the recommendation.
 | 1 | James Cook III | RB | BUF | @ NYJ | 17.6 | 17.4 | B (23/32) | 29.5 | 50F, wind 11mph | +0.09 (15) | - | **21.2** |
 | 2 | Breece Hall | RB | NYJ | vs BUF | 11.9 | 11.7 | B (24/32) | 21.0 | 50F, wind 11mph | +0.03 (15) | - | **12.5** |
 | 3 | Ashton Jeanty | RB | LV | vs SEA | 12.0 | 13.0 | C (14/32) | 17.0 | Indoors | +0.05 (15) | - | **10.5** |
-| 4 | Bucky Irving | RB | TB | BYE | 0.0 | 24.5 | - (-) | - | - | -0.01 (14) | - | **0.0** |
-| 5 | Kyle Monangai | RB | CHI | BYE | 0.0 | - | - (-) | - | - | -0.21 (14) | Out | **0.0** |
+| 4 | Bucky Irving | RB | TB | BYE | 0.0 | 24.5 | - (-) | - | - | -0.01 (13) | - | **0.0** |
+| 5 | Kyle Monangai | RB | CHI | BYE | 0.0 | - | - (-) | - | - | -0.25 (12) | Out | **0.0** |
 
 ### WR
 
@@ -50,8 +50,8 @@ Your current Sleeper lineup already matches the recommendation.
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Matthew Golden | WR | GB | vs MIN | 15.4 | 21.1 | F (3/32) | 22.5 | 47F, wind 2mph | +0.24 (15) | - | **15.7** |
 | 2 | Jalen Coker | WR | CAR | @ NO | 13.2 | 6.0 | C (16/32) | 23.5 | Indoors | +0.05 (15) | - | **11.3** |
-| 3 | Denzel Boston | WR | CLE | vs HOU | 10.7 | 10.4 | A (28/32) | 18.0 | 46F, wind 13mph | +0.22 (15) | Questionable | **8.9** |
-| 4 | Keenan Allen | WR | SF | @ DAL | 6.4 | 8.8 | B (25/32) | 30.0 | 47F, wind 7mph | +0.05 (15) | - | **8.6** |
+| 3 | Keenan Allen | WR | SF | @ DAL | 7.0 | 8.8 | B (25/32) | 30.0 | 47F, wind 7mph | +0.05 (15) | - | **9.1** |
+| 4 | Denzel Boston | WR | CLE | vs HOU | 10.7 | 10.4 | A (28/32) | 18.0 | 46F, wind 13mph | +0.22 (15) | Questionable | **8.9** |
 
 ### TE
 
@@ -63,7 +63,7 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jason Myers | K | SEA | @ LV | 8.7 | 5.0 | D (11/32) | 23.5 | Indoors | +0.10 (7) | - | **7.5** |
+| 1 | Jason Myers | K | SEA | @ LV | 8.7 | 5.0 | D (11/32) | 23.5 | Indoors | +0.11 (6) | - | **7.6** |
 
 ### DEF
 
@@ -78,20 +78,25 @@ _On IR/taxi: Malik Willis (IR)_
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Darren Waller | TE | CAR | @ NO | 11.3 | 12.4 | +2.0 | +10.6 | 586602 | Kyle Monangai | $26 of $55 |
-| Deshaun Watson | QB | CLE | vs HOU | 17.7 | 17.9 | +0.0 | +18.5 | 73240 | Kyle Monangai | $17 of $55 |
-| Audric Estime | RB | NO | vs CAR | 11.9 | 14.7 | +1.4 | +11.3 | 64254 | Kyle Monangai | $19 of $55 |
-| Tampa Bay Buccaneers | DEF | TB | BYE | 0.0 | 18.3 | +0.0 | +13.3 | 94120 | Denver Broncos | $15 of $55 |
-| Caleb Douglas | WR | MIA | @ IND | 8.9 | 14.1 | +0.0 | +11.7 | 173096 | Kyle Monangai | $20 of $55 |
-| Mike Gesicki | TE | CIN | vs PIT | 10.2 | 9.4 | +1.0 | +9.6 | 150740 | Kyle Monangai | $24 of $55 |
-| Justice Hill | RB | BAL | vs LAC | 8.2 | 10.7 | +0.0 | +8.9 | 519336 | Kyle Monangai | $20 of $55 |
-| Chris Rodriguez Jr. | RB | JAX | @ TEN | 10.2 | 12.0 | +0.0 | +9.9 | 317403 | Kyle Monangai | $20 of $55 |
-| Drew Lock | QB | SEA | @ LV | 22.6 | 16.4 | +0.0 | +18.6 | - | Kyle Monangai | $8 of $55 |
-| Darnell Washington | TE | PIT | @ CIN | 9.0 | 9.9 | +0.0 | +8.7 | 122085 | Kyle Monangai | $21 of $55 |
+| Deshaun Watson | QB | CLE | vs HOU | 17.7 | 17.9 | +0.0 | +18.5 | 83168 | Kyle Monangai | $17 of $55 |
+| Darren Waller | TE | CAR | @ NO | 11.2 | 12.4 | +2.0 | +10.6 | 477549 | Kyle Monangai | $26 of $55 |
+| Tampa Bay Buccaneers | DEF | TB | BYE | 0.0 | 18.3 | +0.0 | +13.3 | 99580 | Denver Broncos | $15 of $55 |
+| Caleb Douglas | WR | MIA | @ IND | 8.9 | 14.1 | +0.0 | +11.7 | 173232 | Kyle Monangai | $20 of $55 |
+| Mike Gesicki | TE | CIN | vs PIT | 10.2 | 9.4 | +1.0 | +9.6 | 152220 | Kyle Monangai | $24 of $55 |
+| Justice Hill | RB | BAL | vs LAC | 8.2 | 10.7 | +0.0 | +8.9 | 555813 | Kyle Monangai | $20 of $55 |
+| Chris Rodriguez Jr. | RB | JAX | @ TEN | 10.2 | 12.0 | +0.0 | +9.9 | 304317 | Kyle Monangai | $20 of $55 |
+| Quentin Johnston | WR | LAC | @ BAL | 8.1 | 10.5 | +0.0 | +9.4 | 162267 | Kyle Monangai | $16 of $55 |
+| Darnell Washington | TE | PIT | @ CIN | 9.1 | 9.9 | +0.0 | +8.8 | 137265 | Kyle Monangai | $21 of $55 |
+| Drew Lock | QB | SEA | @ LV | 22.5 | 16.4 | +0.0 | +18.6 | - | Kyle Monangai | $8 of $55 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
 ## News driving sentiment
+
+**Kyle Monangai** (-0.25)
+- [Kyle Monangai Injury: Inactive in Week 9 - RotoWire](https://news.google.com/rss/articles/CBMilAFBVV95cUxQbjhhVUhkcEhoVk1yNUQ1blVMSVBRLWVZdzJjc1lERzdoakx5bkllMDRZNm91SE5VdlIxRjBQLWtOUjVNdVhTTnJacTJ5T3B6MkMzZFNXYk5CbXZ2a1R1Yk9SRTZIVWMyTEVCR0owZVgtWmRXMU1nV0xlUXNGZmNPTDM3S1FvV3prVTBBWkJGSU5ZVnFD?oc=5) (-0.66)
+- [Bears declare Kyle Monangai (thumb/toe) inactive - NBC Sports](https://news.google.com/rss/articles/CBMisgFBVV95cUxQamVVdVJwbUdpblpuS1VGWXJ5Wk5uVFE1WklfOW04dnNnTVJhbzJWcldyd1FRZ2s5TzNzeWd2NWkyc3RNa0hqM2ozT2ZvamtWREhtMkxMY29uTnNZT045aU9rdmloTkEzNGlxQTE1YWRsRU45bDRoWVVHVjBPUl9QWERHVWhCZmR4azhFTUVxQ0ZUX1hwSkJfeGI0Rm9FY0p0WFl1clZaZDBsRzhNcXJ0ODdB?oc=5) (-0.46)
+- [Kyle Monangai Inactive in Week 9 - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQYUY0djRvUXhuNUUtdDZmZkpiUXdlWXZtcERFVm0wOHRHOWEtQVBCbXQ0UGFEWEFWRS03dTlJRjdwa282SG5yanhJU0pLWDRNbDZXM191Q1lKMFQ3SlhzdmdMdzJKMHhaMlJ2eWNvT2hpblNrYVF4VXd0SGVNeE0xaUctam9sbWU3TVJF?oc=5) (-0.46)
 
 **Matthew Golden** (+0.24)
 - [Fourth-and-11 is no problem for Jordan Love and Matthew Golden on 12-yard sideline strike - NFL.com](https://news.google.com/rss/articles/CBMitwFBVV95cUxPSXFlTDU5dkpOZGhzVy1LVVBKRzdLbzlHTmtlNGxFRlJEaXotY2luWnpsR1ZJNDJzcUJsWDVYZlk5MXRKVzBTa0huTkRRMklYYmxCWmNKc0h0NkhvZHFsel9xV0pvMzR2d0U0NDZpZ0ZaOTZZNFZzSWhwT2dEY3NObjF1enp2aXJ6d3pYcU1XVHpodVVRSGlJR0hBUHpmdWs1Z2lmOUlTNTZyeWlTc1VXc1ZGRnN3M3c?oc=5) (+0.71)
@@ -103,12 +108,7 @@ _Lineup gain = change in this week's optimal lineup total. Value vs drop compare
 - [Denzel Boston Expected to play Sunday - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMikgFBVV95cUxPVURNQmxSSTBIelFiR0F4NkhiM3BzZ0xtcnBKQk9Lam43akxrbjhHT0pmbWFhUFB4bHhGd1Q2QUwtUVFIX2hUVUUxQ2R2QzhoZThWTmxaNlpjWGpkdHVITldBZDZXS3dkV1lZSjVOLW9yRC05VUdKVFRib19IbzBLN0pJOUpkQmVFdW1HbG5ma0pvUQ?oc=5) (+0.84)
 - [Browns' Denzel Boston: Expected to play Sunday - CBS Sports](https://news.google.com/rss/articles/CBMimAFBVV95cUxQZ3dpNlRrZVMtd2I1Y0FSWDRCSjhzTUhzWGZWeV93ZW1sSlBaZXBGTHRmb0FvdkZ4R1J1cmllbjh3M1FwUkk2UlRseFBLeTBuTzFSMC1qUXFmUG01angxbWt0RW50VWJDV053aUFTSHpGX0I4ZW96SlcxdmoxRDd5TDh1RDE3RTAxX3lsbHNHN25peC1lcHNXMg?oc=5) (+0.84)
 
-**Kyle Monangai** (-0.21)
-- [Kyle Monangai Injury: Inactive in Week 9 - RotoWire](https://news.google.com/rss/articles/CBMilAFBVV95cUxQbjhhVUhkcEhoVk1yNUQ1blVMSVBRLWVZdzJjc1lERzdoakx5bkllMDRZNm91SE5VdlIxRjBQLWtOUjVNdVhTTnJacTJ5T3B6MkMzZFNXYk5CbXZ2a1R1Yk9SRTZIVWMyTEVCR0owZVgtWmRXMU1nV0xlUXNGZmNPTDM3S1FvV3prVTBBWkJGSU5ZVnFD?oc=5) (-0.66)
-- [Kyle Monangai Not expected to return Sunday - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMimgFBVV95cUxONHlmTktvaXZCc18zYVVzTHU0d2ptVlJ2SjBNd1pVZUlHSTVEeGxTTW8yazZhTGt4M1JHR0lzRGE5WHBpclRpeWJ6N0IxYTBYOU9EQTM0dVJacEVGQURHT25tMk0zaWJKUmxlbGNuNHRKZFYzaThaeGY0RUc3VGNQZWVxVjBzbWEwWDBIMnNhMWgyaUM2RXJPd3VB?oc=5) (+0.50)
-- [Bears declare Kyle Monangai (thumb/toe) inactive - NBC Sports](https://news.google.com/rss/articles/CBMisgFBVV95cUxQamVVdVJwbUdpblpuS1VGWXJ5Wk5uVFE1WklfOW04dnNnTVJhbzJWcldyd1FRZ2s5TzNzeWd2NWkyc3RNa0hqM2ozT2ZvamtWREhtMkxMY29uTnNZT045aU9rdmloTkEzNGlxQTE1YWRsRU45bDRoWVVHVjBPUl9QWERHVWhCZmR4azhFTUVxQ0ZUX1hwSkJfeGI0Rm9FY0p0WFl1clZaZDBsRzhNcXJ0ODdB?oc=5) (-0.46)
-
-**Jason Myers** (+0.10)
+**Jason Myers** (+0.11)
 - [Seahawks special teams report: Jason Myers’ performance this season - Seahawks Wire](https://news.google.com/rss/articles/CBMi4AFBVV95cUxOd09IR3J6RzZtSDFsdnpUdW1fSTA1Nk12OE1MOWtrT19oWEZ1cVl0RDEzbWdpMEFvRno0OFpXQm9jblNNelllOTdhdFhhRl9fQzJOM1FqcjJxU1hzNUoxU1c1QUdRaGFDLTNQV3J4OG9BRWF5UGtCLXhoZTBCQmZsU0c5ZHVFTWhxZkhURmRyczdQTTZMMWtLdF9xenlUdjU2dTV5eXhpOUoyZGFBQjVXdlhySnBMaVB4Ukp6V00tdWpsOTZxU3dpcURyWWVvNEpBeWw3UzN6bXZ1REZBb0dyYw?oc=5) (+0.40)
 - [Seahawks increase their lead with Jason Myers 45-yard FG - NFL.com](https://news.google.com/rss/articles/CBMiiwFBVV95cUxObHlBejNVU0RTbVltMm9JYk5UNHNGZ29GQ1V1TnJkM2IwSVREYzFCdjFUNG84eHRsYmdYakdjUWNKeDZzWW10QTU3REpQRjdfZmxFZVFXQ1c1RFF3ejY5eFpXTmdobGZ5ajR5dEJJc3ZFT2NzVGJHLWxNZzlfOERfZWdOSWRHR3NMd2pz?oc=5) (+0.32)
 - [Jason Myers Week 10 Outlook for Fantasy Football (2026) - RotoBaller](https://news.google.com/rss/articles/CBMiswFBVV95cUxNR3o5akNoRmpWWlhHcEFNMVFsb09Qc3hZLWVMNTlmbjIyNkJmekk3eU9fQWh4dnlvUmwxOTJxV2NGRXk1RkM4MVZYaEtPZVI0UFhiREtYT1J0MWVnVndsamZRWFZNZmwyV01sSzB2ZnhJMGlhdkFSeGdoWG4xdUttcENKX190WDA5Y3h6eUp3TU5kcWg1ajM4LWYyMUpzcXo5cl9HdXlWU1g3Q3VQUFNCRzdINA?oc=5) (+0.00)
