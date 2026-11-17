@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,,,True,,,0.0,24.5,3,,,,,,-0.082,5,0.0,1.0,1.0,0.993,7.35,0.0,0,,['BYE'],roster,,,
+11646,Jalen Coker,WR,CAR,NO,False,False,,,13.19,6.03,3,16.0,32.0,0.99,23.5,Indoors,0.048,15,1.0,1.02,1.0,1.004,11.041999999999998,11.31,0,WR,[],roster,,,
+12501,Matthew Golden,WR,GB,MIN,True,False,,,15.39,21.07,3,3.0,32.0,0.8,22.5,,0.085,15,1.0,0.902,1.0,1.007,17.094,15.53,0,WR,[],roster,,,
+12527,Ashton Jeanty,RB,LV,SEA,True,False,,,12.0,12.97,3,14.0,32.0,0.93,17.0,Indoors,0.041,15,1.0,0.849,1.0,1.003,12.290999999999999,10.47,0,FLEX,[],roster,,,
+12534,Kyle Monangai,RB,CHI,,,True,Out,Toe,0.0,,0,,,,,,-0.039,15,0.0,1.0,1.0,0.997,0.0,0.0,148506,,"['BYE', 'Out (Toe)']",roster,,,
+13346,Denzel Boston,WR,CLE,HOU,True,False,,,10.71,10.4,3,28.0,32.0,1.15,18.0,,0.146,15,1.0,0.97,1.0,1.012,10.617,10.42,0,,[],roster,,,
+1479,Keenan Allen,WR,SF,DAL,False,False,,,7.01,8.8,3,25.0,32.0,1.1,29.5,Indoors,0.223,15,1.0,1.2,1.0,1.018,7.546999999999999,9.22,0,,[],roster,,,
+2747,Jason Myers,K,SEA,LV,False,False,,,8.67,5.0,3,11.0,32.0,0.93,23.5,Indoors,0.14,6,1.0,0.989,1.0,1.011,7.569,7.57,0,K,[],roster,,,
+3163,Jared Goff,QB,DET,NE,True,False,,,24.77,14.95,3,17.0,32.0,1.06,26.5,Indoors,0.071,15,1.0,1.124,1.0,1.006,21.823999999999998,24.68,0,QB,[],roster,,,
+8138,James Cook III,RB,BUF,NYJ,False,False,,,17.64,17.4,2,23.0,32.0,1.12,29.5,,0.301,15,1.0,1.2,1.0,1.024,17.567999999999998,21.59,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,BUF,True,False,,,11.95,11.7,1,24.0,32.0,1.16,21.0,,-0.01,15,1.0,1.046,1.0,0.999,11.874999999999998,12.41,0,RB,[],roster,,,
+9484,Tucker Kraft,TE,GB,MIN,True,False,,,10.77,11.33,3,1.0,32.0,0.67,22.5,,-0.026,15,1.0,0.837,1.0,0.998,10.937999999999999,9.14,0,TE,[],roster,,,
+BUF,Buffalo Bills,DEF,BUF,NYJ,False,False,,,6.77,15.5,2,,,,29.5,,0.0,0,1.0,1.031,1.0,1.0,9.389,9.68,139249,DEF,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,,,True,,,,5.0,3,,,,,,0.0,0,0.0,1.0,1.0,1.0,5.0,0.0,0,,['BYE'],roster,,,
+4017,Deshaun Watson,QB,CLE,HOU,True,False,,,19.21,17.85,2,20.0,32.0,1.08,18.0,,0.084,15,1.0,0.938,1.0,1.007,18.802,17.76,163152,,[],waiver,0.0,18.53,$19 of $55
+2505,Darren Waller,TE,CAR,NO,False,False,,,8.91,12.37,3,26.0,32.0,1.19,23.5,Indoors,0.024,15,1.0,1.122,1.0,1.002,9.948,11.18,179820,,[],waiver,2.04,10.64,$24 of $55
+TB,Tampa Bay Buccaneers,DEF,TB,,,True,,,,18.33,3,,,,,,0.0,0,0.0,1.0,1.0,1.0,18.33,0.0,210000,,['BYE'],waiver,0.0,13.33,$16 of $55
+10218,Xavier Hutchinson,WR,HOU,CLE,False,False,Questionable,Concussion,6.17,11.9,2,11.0,32.0,0.93,22.5,,0.0,0,0.85,0.967,1.0,1.0,7.888999999999999,6.48,1332520,,['Questionable (Concussion)'],waiver,0.0,9.04,$18 of $55
+13296,Caleb Douglas,WR,MIA,IND,False,False,,,9.25,14.1,3,10.0,32.0,0.92,16.5,Indoors,0.0,0,1.0,0.834,1.0,1.0,10.704999999999998,8.93,268072,,[],waiver,0.0,11.68,$21 of $55
+4993,Mike Gesicki,TE,CIN,PIT,True,False,,,9.78,9.43,3,13.0,32.0,0.92,27.0,,0.078,14,1.0,1.059,1.0,1.006,9.674999999999999,10.31,155912,,[],waiver,1.17,9.61,$24 of $55
+9482,Michael Mayer,TE,LV,SEA,True,False,,,6.08,7.07,3,9.0,32.0,0.79,17.0,Indoors,0.0,0,1.0,0.8,1.0,1.0,6.376999999999999,5.1,1551006,,[],waiver,0.0,6.58,$21 of $55
+9754,Quentin Johnston,WR,LAC,BAL,False,False,,,9.04,10.5,2,22.0,32.0,1.07,17.5,,0.0,0,1.0,0.922,1.0,1.0,9.478,8.74,279741,,[],waiver,0.0,9.77,$20 of $55
+5995,Justice Hill,RB,BAL,LAC,True,False,,,7.45,10.67,3,21.0,32.0,1.03,22.0,,0.0,0,1.0,1.006,1.0,1.0,8.416,8.47,375120,,[],waiver,0.0,9.06,$19 of $55
+13424,Seth McGowan,RB,IND,MIA,True,False,,,6.91,6.63,3,26.0,32.0,1.16,21.0,Indoors,0.0,0,1.0,1.046,1.0,1.0,6.826,7.14,868040,,[],waiver,0.0,6.77,$18 of $55
