@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 
 import pandas as pd
 
-from . import sleeper, weather
+from . import sleeper, usage, weather
 
 SLOT_ELIGIBILITY = {
     "QB": {"QB"}, "RB": {"RB"}, "WR": {"WR"}, "TE": {"TE"}, "K": {"K"}, "DEF": {"DEF"},
@@ -33,6 +33,10 @@ class PlayerEval:
     proj: float | None = None
     recent_avg: float | None = None
     recent_games: int = 0
+    usage_pts: float | None = None     # expected points per game from recent targets and carries
+    targets_avg: float | None = None
+    carries_avg: float | None = None
+    recent_form: float | None = None   # what the base blends with the projection: recent_avg mixed with usage_pts
     def_rank: int | None = None
     def_teams: int | None = None
     def_ratio: float | None = None
@@ -80,11 +84,16 @@ class Evaluator:
                        trending_adds=c.trending.get(pid, 0))
 
         e.proj = sleeper.fantasy_points(c.projections.get(pid), c.scoring, c.rec_value, pos)
-        games = [pts for wk in c.recent.values()
-                 if (line := wk.get(pid)) and (line.get("gp", 1) or 0) > 0
-                 and (pts := sleeper.fantasy_points(line, c.scoring, c.rec_value, pos)) is not None]
+        lines = [line for wk in c.recent.values() if (line := wk.get(pid)) and (line.get("gp", 1) or 0) > 0]
+        games = [pts for line in lines
+                 if (pts := sleeper.fantasy_points(line, c.scoring, c.rec_value, pos)) is not None]
         if games:
             e.recent_avg, e.recent_games = round(sum(games) / len(games), 2), len(games)
+            e.recent_form = e.recent_avg
+            if pos in c.usage:
+                e.usage_pts, e.targets_avg, e.carries_avg = usage.expected(lines, c.usage[pos])
+                u = cfg.get("usage", {}).get("weight", 0.0)
+                e.recent_form = round((1 - u) * e.recent_avg + u * e.usage_pts, 2)
 
         game = c.matchups.get(team)
         if team and not game:
@@ -95,10 +104,10 @@ class Evaluator:
 
         # base points: blend projection with recent form
         w = cfg["weights"]
-        if e.proj is not None and e.recent_avg is not None:
-            e.base = w["projection"] * e.proj + w["recent_form"] * e.recent_avg
+        if e.proj is not None and e.recent_form is not None:
+            e.base = w["projection"] * e.proj + w["recent_form"] * e.recent_form
         else:
-            e.base = e.proj if e.proj is not None else (e.recent_avg or 0.0)
+            e.base = e.proj if e.proj is not None else (e.recent_form or 0.0)
 
         # injury
         e.mult_injury = 0.0 if e.on_bye else cfg["injury_multipliers"].get(e.injury_status or "", 1.0)
