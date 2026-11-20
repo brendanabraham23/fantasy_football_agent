@@ -1,21 +1,21 @@
 # Brendobendo - Week 11, 2026
-_Refounders Football League   - generated Fri Nov 20 03:01 AM_
+_Refounders Football League   - generated Fri Nov 20 03:41 AM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| QB | Jared Goff | QB | DET | vs TB | 21.9 | 16.4 | F (3/32) | 25.8 | Indoors | -0.04 (1) | - | **18.4** |
+| QB | Jared Goff | QB | DET | vs TB | 21.9 | 16.4 | F (3/32) | 25.8 | Indoors | +0.06 (15) | - | **18.6** |
 | RB | James Cook III | RB | BUF | vs MIA | 19.1 | 18.8 | A (28/32) | 30.5 | 61F, wind 9mph | +0.25 (15) | - | **22.9** |
-| RB | Bucky Irving | RB | TB | @ DET | 17.1 | 24.8 | F (2/32) | 19.8 | Indoors | +0.00 (0) | - | **15.1** |
+| RB | Bucky Irving | RB | TB | @ DET | 17.1 | 24.8 | F (2/32) | 19.8 | Indoors | +0.11 (9) | - | **15.3** |
 | WR | Jalen Coker | WR | CAR | vs BAL | 12.7 | 5.5 | C (18/32) | 23.2 | 57F, wind 9mph | -0.11 (15) | - | **11.4** |
 | WR | Keenan Allen | WR | SF | vs MIN | 5.7 | 10.5 | F (5/32) | 25.0 | Neutral site (Estadio Banorte) - check manually | +0.09 (15) | - | **7.4** |
 | TE | Michael Mayer | TE | LV | @ DEN | 8.6 | 6.3 | A (30/32) | 15.0 | 46F, wind 4mph | +0.20 (15) | - | **8.3** |
-| FLEX | Breece Hall | RB | NYJ | @ LAC | 12.3 | 13.2 | B (21/32) | 19.2 | Indoors | +0.00 (0) | - | **12.2** |
+| FLEX | Breece Hall | RB | NYJ | @ LAC | 12.3 | 13.2 | B (21/32) | 19.2 | Indoors | +0.06 (15) | - | **12.3** |
 | K | Chase McLaughlin | K | TB | @ DET | 8.2 | 11.0 | F (1/32) | 19.8 | Indoors | +0.02 (8) | - | **7.2** |
 | DEF | Buffalo Bills | DEF | BUF | vs MIA | 9.0 | 14.7 | - (-) | 30.5 | 61F, wind 9mph | +0.00 (0) | - | **12.8** |
 
-Projected lineup total (adjusted): **115.8**
+Projected lineup total (adjusted): **116.1**
 
 Your current Sleeper lineup already matches the recommendation.
 
@@ -31,15 +31,15 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jared Goff | QB | DET | vs TB | 21.9 | 16.4 | F (3/32) | 25.8 | Indoors | -0.04 (1) | - | **18.4** |
+| 1 | Jared Goff | QB | DET | vs TB | 21.9 | 16.4 | F (3/32) | 25.8 | Indoors | +0.06 (15) | - | **18.6** |
 
 ### RB
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | James Cook III | RB | BUF | vs MIA | 19.1 | 18.8 | A (28/32) | 30.5 | 61F, wind 9mph | +0.25 (15) | - | **22.9** |
-| 2 | Bucky Irving | RB | TB | @ DET | 17.1 | 24.8 | F (2/32) | 19.8 | Indoors | +0.00 (0) | - | **15.1** |
-| 3 | Breece Hall | RB | NYJ | @ LAC | 12.3 | 13.2 | B (21/32) | 19.2 | Indoors | +0.00 (0) | - | **12.2** |
+| 2 | Bucky Irving | RB | TB | @ DET | 17.1 | 24.8 | F (2/32) | 19.8 | Indoors | +0.11 (9) | - | **15.3** |
+| 3 | Breece Hall | RB | NYJ | @ LAC | 12.3 | 13.2 | B (21/32) | 19.2 | Indoors | +0.06 (15) | - | **12.3** |
 | 4 | Ashton Jeanty | RB | LV | @ DEN | 11.9 | 9.2 | B (22/32) | 15.0 | 46F, wind 4mph | -0.14 (15) | - | **10.1** |
 
 ### WR
@@ -56,7 +56,7 @@ Your current Sleeper lineup already matches the recommendation.
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 1 | Michael Mayer | TE | LV | @ DEN | 8.6 | 6.3 | A (30/32) | 15.0 | 46F, wind 4mph | +0.20 (15) | - | **8.3** |
-| 2 | Tucker Kraft | TE | GB | BYE | 0.0 | 7.4 | - (-) | - | - | +0.00 (0) | - | **0.0** |
+| 2 | Tucker Kraft | TE | GB | BYE | 0.0 | 7.4 | - (-) | - | - | -0.11 (15) | - | **0.0** |
 
 ### K
 
@@ -77,14 +77,14 @@ _On IR/taxi: Malik Willis (IR)_
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cam Ward | QB | TEN | @ DAL | 27.3 | 29.4 | +8.9 | +21.8 | - | Tucker Kraft | $6 of $40 |
+| Cam Ward | QB | TEN | @ DAL | 27.3 | 29.4 | +8.8 | +21.8 | - | Tucker Kraft | $6 of $40 |
 | Cairo Santos | K | CHI | vs NO | 10.6 | 10.0 | +3.3 | +9.1 | 957418 | - | $13 of $40 |
 | Joey Slye | K | TEN | @ DAL | 10.4 | 13.5 | +3.2 | +10.7 | 199377 | - | $12 of $40 |
 | Xavier Hutchinson | WR | HOU | vs IND | 10.2 | 13.8 | +2.7 | +7.1 | 1886962 | Tucker Kraft | $11 of $40 |
 | Jason Sanders | K | NYJ | @ LAC | 9.4 | 14.7 | +2.1 | +10.9 | 239935 | - | $11 of $40 |
 | Mike Gesicki | TE | CIN | @ WAS | 9.8 | 7.5 | +1.5 | +4.6 | 161144 | Tucker Kraft | $10 of $40 |
 | Seth McGowan | RB | IND | @ HOU | 5.3 | 9.3 | +0.0 | +4.0 | 825624 | Tucker Kraft | $8 of $40 |
-| Joe Milton | QB | PHI | vs PIT | 10.4 | 7.4 | +0.0 | +7.5 | 114976 | Tucker Kraft | $7 of $40 |
+| Joe Milton | QB | PHI | vs PIT | 10.5 | 7.4 | +0.0 | +7.5 | 114976 | Tucker Kraft | $7 of $40 |
 | Fernando Mendoza | QB | LV | @ DEN | 10.0 | 5.1 | +0.0 | +6.3 | 198192 | Tucker Kraft | $7 of $40 |
 | Malik Washington | WR | MIA | @ BUF | 7.3 | 11.6 | +0.0 | +6.5 | 138272 | Tucker Kraft | $8 of $40 |
 
@@ -107,10 +107,20 @@ _Lineup gain = change in this week's optimal lineup total. Value vs drop compare
 - [Ashton Jeanty - Fantasy Football Fallers, Bust Candidates for Week 11 (2026)? - NFL News - RotoBaller](https://news.google.com/rss/articles/CBMitwFBVV95cUxPaWppNFJBYXp2WHNCT29HNWI1Qy1nSF9lTHYwTHhVOHNsNFhKVVJNRUhYTm1kRk1DV0NqQXluLTdfT0ZJYXpoNUh6UjhldnhpallrX0hRcDd1emFhN00wbXRhYkRCYkF1SFVtM1hSNFIxaWRiRkhkeFhCU2wxSnM3VkhvVTFxQ2cyOVNXSkF3RkZuZWlsTWZBY29WbWdBWFFoemR3SW5fQkJMV0J2ajg1YWlSTVVkR1k?oc=5) (-0.40)
 - [This Stat Points To Possible Permanent Role Change For Jeanty - Yahoo Sports](https://news.google.com/rss/articles/CBMijAFBVV95cUxPdy1TeHRGQTMwaS1rUm9hSHFZV1pKQmhPWi1jcVU2NDRHZ0tKMzBVUUQ2Y0RaMG5KTEZHajY2bm03b2pWVDJyd0hRSnMtVWdNYkEwWnNGY2FlN1VXZnJ6VWtYLV9GazNvTklqM2Mxcmp3SE1saUlpbTIzZ3YwLVdudFM4Mk5HbW9GVWxaag?oc=5) (-0.30)
 
+**Bucky Irving** (+0.11)
+- [Bucky Irving - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller](https://news.google.com/rss/articles/CBMirAFBVV95cUxOT2o3Yjh4RmF2Y2V6eGozdUtzOWY5YzZ6Uk1pZW1ock9PaHpEcGxfbk5SN1dBNEVuUkJQMklwWFNVM2hHa0l4RE9oaVdvVVdUUUlaV3pWYmh3MUt2a04ta0lDTXVKcFI0RWFsaC1iQkpQdVN2OU1wYmoxc3dGMmN5TjN3VUN2aHBNU3NuVkxkRjBzTi1CQlEtdnQwZmR6aGFqb0RhbEFkQW5SSVk4?oc=5) (+0.50)
+- [Bucky Irving is the Bucs' offensive MVP through first half of season - Yahoo Sports](https://news.google.com/rss/articles/CBMihwFBVV95cUxQWmI5dFRPa3JtQzRjWmxjSmkxT3FFUzI2UGZSczFkQjNMZmpfTDZ5b1owQnctbjRIcmJ1eTFTMm8teHRtRXU3VlFrczVncVpnUlVNQ3JuX1hmZ3JiWnItbHZKTzQwTG1acmRLQXktSWdvNUREd0VROGRsUDY4YzRlRE82OWlJZWM?oc=5) (+0.30)
+- [Bucky Irving Powers Ahead for TD | Falcons vs. Bucs Highlights - Tampa Bay Buccaneers](https://news.google.com/rss/articles/CBMijwFBVV95cUxPWldTQTJOTU1zWTlvdkVfckdNZ1M1UF9LTTF3S3pnclMyTG1hd295ZFh4alhmUnptVE9FYTNnbTkwN0tfY3UzNHZTS2ExNUlpM3pMWkVRYllqM2JZWlp1b05BTUVuQ1Q3X2ZrVHJ0bDBsaHJNWUozYWk0WUlmZl9FbjJfZ1FJUGtaSFVhTEJTWQ?oc=5) (+0.30)
+
 **Jalen Coker** (-0.11)
 - [Keenan Allen, Jalen Coker, and 6 Other Must-Sit Wide Receivers in Week 11 Fantasy Football - Sports Illustrated](https://news.google.com/rss/articles/CBMivgFBVV95cUxNVFlOWldCVTRjVUhvdm1KT3JsTWtNVTdsYk5UcGlYRlpPejNya2lqU1VqY0puUEl1RmxjYWdwOUNzck1OOXZ5U0NNMUppdlgxZGpSdUplQUk1QUJMWjNGX2VpS2ZiaWlxbmJjbXhUOTlnZktpS2RCN2RVNlMtWVR3N1QxUGYxM2k1Wk9vWmloZWRHd1BlSUpNQmd0cVMtcGlFREpXY0JrMUROOU5Zd0FGbmpCMkdBWkt0blF0S1Zn?oc=5) (-0.50)
 - [Jalen Coker - Fantasy Football Fallers, Bust Candidates for Week 11 (2026)? - NFL News - RotoBaller](https://news.google.com/rss/articles/CBMipAFBVV95cUxPTml0M0ktY2RpbmNOY2NaTC1pbmpKV2ZSTE5IbUcxRXlXemotUVpGOUtqdExueU8yYUhrRDRIdGtKbzNqeGdWYXJXaUJSemlvQWFqSWEyNUdQQjVSMEg2TjVtRF8zUUk3UDBHamlPS2tiNFVDaTdCSU5WSllMLXB3MFJfTlJ0R0JTMmpqS1RGTy1ZS3hGeVJmQlN0WUJhSnVaWEl4Zw?oc=5) (-0.40)
 - [Jalen Coker’s 0-Catch Frustration Explained by Routes Run for Panthers - Yahoo Sports](https://news.google.com/rss/articles/CBMihwFBVV95cUxOUkFRaDJPbDRQU3RhZlpaQ3VSVlZpdVRlSFktbXFEdmk2Sm5IZDMtemtld3c3OG44MDFrSnVBbUlaNzlLVHVMV2hKRnpSVUJ4Yjd5dmR5LWNLb3NUcG45RWRpcjdhZVpmVEk5c0lUNFp2NUVkMFAxTjBOaUFrMDBQbGk0WlR5UGc?oc=5) (-0.40)
+
+**Tucker Kraft** (-0.11)
+- [Why Has Tucker Kraft’s Role Shrunk? Insider Weighs In - Yahoo Sports](https://news.google.com/rss/articles/CBMigwFBVV95cUxNNVhxYjlEM2NFSUxQeXJRaDZWZU5QOU5fYjZmRUlicFBCWlcteHJLMW9sdmpnaTZUMzBlWkFROEFHWi1ma3RWZC01eHlEY1UxSENZeU9ZWXZzYzVRQjV2d2Z2T29PMmJDSVVNZ2FNd2Zuc29hblhMdVdnak0zSW5CLVlSYw?oc=5) (-0.40)
+- [Tucker Kraft doesn’t look right - Yahoo Sports](https://news.google.com/rss/articles/CBMif0FVX3lxTFBHSzRwb1p3Rjc0RlY5SjczV3lwYXZGT0xiSU5yOFdzS3ZXQVJfa1dpMzZjMDVveXNaNV90dzROV3ljM3dfME96QlpDcDUzVmkzVkNhaGtsX3l3YUhBczZwR21KYnNGRzBmYjlYMkVyTUx3c1FTLTBYWkF1LUZRUGs?oc=5) (-0.40)
+- [Kraft catches just one pass in loss to Vikings - NBC Sports](https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlBCTjBkSVJoVTc5Y00wUXJWMEpTMXBLSWlJQk9kOEluQ1NZR3RXVGl6NlRGQm15QUNlcEpoWWZLWlQ3ME1CYW10RzF6M3NsbFYxYkxDOThqRUJUYkpQOERDMGJ2UTVBMmpUQmVhcl92ZUViLVRteDRvbVFEVXpkOWVRYXZRYnh3RHBOUmg0dUNyOEdpaEg1alZzbzNyV3d6TU9SSHM0UHV3TUt0RlBzejl3?oc=5) (-0.30)
 
 **Keenan Allen** (+0.09)
 - [Keenan Allen, Jalen Coker, and 6 Other Must-Sit Wide Receivers in Week 11 Fantasy Football - Sports Illustrated](https://news.google.com/rss/articles/CBMivgFBVV95cUxNVFlOWldCVTRjVUhvdm1KT3JsTWtNVTdsYk5UcGlYRlpPejNya2lqU1VqY0puUEl1RmxjYWdwOUNzck1OOXZ5U0NNMUppdlgxZGpSdUplQUk1QUJMWjNGX2VpS2ZiaWlxbmJjbXhUOTlnZktpS2RCN2RVNlMtWVR3N1QxUGYxM2k1Wk9vWmloZWRHd1BlSUpNQmd0cVMtcGlFREpXY0JrMUROOU5Zd0FGbmpCMkdBWkt0blF0S1Zn?oc=5) (-0.50)
@@ -122,8 +132,15 @@ _Lineup gain = change in this week's optimal lineup total. Value vs drop compare
 - [NFL Week 11 Fantasy Football Rookie of the Year Watch: Denzel Boston & KC Concepcion Leads the Way - Sports Illustrated](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPWXZYN0NSd1NxNlgzVlc2b0p2b0ZvVUlDMHF4TmRYVFlFQW8yOXlRazUtaUVRcjlocDVuSDFMVVRkaG9XVlRBUnNEQUVBT3Bscm12c28tamt1cXBFRmpmRTk4NGduN0xRdklSOGxVSE95d2R6SmpWTnVJYjlBV3JWTW8zZ2dDTU1KVWZBdy1fTUFnNVBlaWxEbklMZUhVajZyTVdKMVFPMVdRWjNzSnJrRS0tc2JRNWFlVE9GNFlpYVl3bDdXd3pScmk0RVZaQ0J6NHc?oc=5) (+0.40)
 - [KC Concepcion Shares When He Knew Denzel Boston Was Special - Browns Nation](https://news.google.com/rss/articles/CBMikwFBVV95cUxOaDUxTE5CWjlRdkN3a0tYOUw2WFExazI4M1hxZUFVUWFoVXVVbUxvRDJIUXRGZHdVYk1tZ1hHMktTdWhQX2xCYXpzY0JteXh6U1BwQWtwMC1PU3prOWdSRUNhdUZ2MWhNam9kUTlfWEgyWW02TzhIYi0zTTN0bnF5Q1BFWlV6eW1lTExSazRfSEpLUTA?oc=5) (+0.10)
 
-**Jared Goff** (-0.04)
-- [It wouldn't shock me if ... for Week 11: New WR crashes OROY race, Jared Goff's pesky streak continues](https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-for-week-11-jared-goffs-tony-pollard/) (-0.15)
+**Breece Hall** (+0.06)
+- [Breece Hall - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller](https://news.google.com/rss/articles/CBMioAFBVV95cUxOaWR5QkNGZTlUT1lrMmEzUk9RUDRIZFhoWk5PWG9lOUF3ak96ejVreGFNbnpicUVOeUYtY3AtVmM5SE1oNnktZ3JwY0d1ay1FUVY2TG1ZMkpNbzFDbVk1Wko0UTdLbHRsVWdRT2xNSkR5X29aNWwyQmxZMFlyN0pJRHZFZEVydGJ6R09LcGtXNWo2STRPbFFRRXB4dXFZN0VI?oc=5) (+0.40)
+- [Breece Hall totals 108 scrimmage yards in Week 10 - Yahoo Sports](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSjYzZmlBeWc4Q19udEdfUXhTcmxDV2gtdWh3WWFQaEt2MnVDSS1DM092eWxaYl9uaGRrcFV3TzFwcmc5azFfYnZUWlVsTl9aTnpJVHNLc1ZpR0FRdHZuQkMzbjBJN3RIdWpCUXNBMV9nZVlORFM1Nk1WdldMOTBOOVI3ejVkNjNh?oc=5) (+0.30)
+- [Breece Hall Tops 100 scrimmage yards in Week 10 - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMinwFBVV95cUxNTXBPbFhpeV9jc1JDRDdJMnJEeFlya0dfX3Y4djRUalRvYkdBdC1MekxaaUNXNDVrVFhVaE1sQVktbml0TjF1WDFfS1JDc2FZVjhSUWNlV3ptUGVHM3RSUVZNbzdtSlgyMG9aV1I4LVZ4M0hSbXhZeHRLTGI4dVRPRmxUQ1JCU09HNmEtLTRnNDhRT1lqX1hwMU01U2c1M1U?oc=5) (+0.30)
+
+**Jared Goff** (+0.06)
+- [Jared Goff Tosses three TDs in Munich - Fantasy Footballers Podcast](https://news.google.com/rss/articles/CBMikgFBVV95cUxOWVdzS09IWEdLdGY2Vk1VMklNc2hDYXhmWlM2NzZEVzlvYUlqZEtaeHpLNDU3VEYyelNNbXo5NVdkeVd4ekZ6bEN4MzY4SV9JVVBzRUNOWS00X2R2elVSa2xrQTVNVEJPTzdhMXo3Z3FVVTBXU3BSYXNzMmVMd3ZGdGc2RGJNUDN1dkhDRzR6eXJoUQ?oc=5) (+0.60)
+- [Jared Goff's best throws from 303-yard, 3-TD game vs. Patriots in Munich Week 10 - Yahoo Sports](https://news.google.com/rss/articles/CBMif0FVX3lxTE5FY1Y2WUdveGtZRG5veUU4VWJvMVN4Sk5pMGxwZWdkYnBnVTlpMDU0RFRtb2RsbGJzeENKczJENEJsTFFYTnFIRWpDR1c5VDVuVzhJNWYxQ1dvZ19STC13NW84R2IxSy1ld1dSejhmVHppcFRaUmFyZTdubkVPY2c?oc=5) (+0.60)
+- [Jared Goff - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSmhtRGJqdklPNzU2ZlJOVklabFI3U0NZMzZ6QU5XajVJcDB2MngwWjB2YWtFV2dSUE53VXFBVm03LTd6UEJRVmpFQkJCSjFXX096Y1NOS0lZUG5WUUFxMHVrZVRYMDR0eVFJNlctUkhUa2w2QXRJQ2YtbThHZUlVM0pOSVU2TVRWbUd1Ul9WaDM0TDVjc0EwWDFMUW4?oc=5) (+0.40)
 
 **Matthew Golden** (+0.03)
 - [Is Matthew Golden Playing V.s Vikings? Why Packers WR Does Not Have a Target or Catch - Yahoo Sports](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQU3hPR2M4Mkc4VWQ0MDJ4cmlDZnd5OWhhc2diV0owWDFuRzFQNjd4THFmMW9MdDNjb1FhdnNOd1B4YV9KRWVOdUtORU9xcmtBQVdoVFpVOFVNczlZNGtrRi1BWF9LWVBVdDlHeUgwLUpGNXlnU1JJd3V2cTNjazJnVWN1cEJVWnhC?oc=5) (-0.50)

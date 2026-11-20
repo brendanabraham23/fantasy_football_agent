@@ -5,7 +5,7 @@
   "league_id": "1389327094277767168",
   "season": 2026,
   "week": 11,
-  "generated_at": "2026-11-20T03:01:50+00:00",
+  "generated_at": "2026-11-20T03:41:19+00:00",
   "options": {
    "news": true,
    "weather": true
@@ -635,21 +635,106 @@
    "def_ratio": 1.26,
    "implied": 19.75,
    "weather": "Indoors",
-   "sentiment": -0.044,
-   "n_articles": 2,
+   "sentiment": 0.078,
+   "n_articles": 15,
    "headlines": [
     [
-     "Baker Mayfield officially listed as limited in return to practice",
-     -0.2,
-     "https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/baker-mayfield-officially-listed-as-limited-in-return-to-practice"
+     "Buccaneers news: Baker Mayfield provides positive practice update ahead of Week 11 - ClutchPoints",
+     0.3,
+     "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcXdHcG92SUY5emowdmg3TGcxX1JTZ2JMT0diR19VTUk4aVVvSVNhTUdxOXN4NG9LS0R2V2RNNU4tejFKZ0FQaWJHdnFGUDNWWlJWcE9FWVZtUmJhbmh1ZFVhT2kyV2pKSkRiRlZCdDBva1BvOUcxVTRVNTl6dklYSTFBRERjLTlscnpLNVZJZ0VJZEpWc0R0ZjlsWnBNTVhFbzVib29JYllad0hXdXdEMWRNOEdHNkYyRUhEQllwcw?oc=5"
     ],
     [
-     "NFL Week 11 injury report: Latest update on Chiefs' Kenneth Walker III; Lions' Kerby Joseph practices fully",
-     0.0,
-     "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-chiefs-kenneth-walker-iii-lions-kerby-joseph/"
+     "Baker Mayfield is \u2018Practicing and Looks Fine\u2019 on Thursday - Yahoo Sports",
+     0.3,
+     "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOVNIUE9PYWtqc0xIdG16TjFIOUVYQUF2ZUpnXzMzLUREX2ZyaDluY2lTRS1yaFQtUFFqMVB6SkY2RmNWdTlab1RtMXRmQ2tudlAtYmN1RGZfWlJrNmg2cURXNk9LTEhJODdMQ2x3WkFLRlNHZ3A3YW5XS3VIR3lDU1F0aHk1Qm52SzQyTGJB?oc=5"
+    ],
+    [
+     "Mayfield (foot) returns to practice on Thursday - NBC Sports",
+     0.3,
+     "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXI5bmNybWdCWGxIMU9GSXV3bEdnNjNBU2ZOSGF5eGdETHhCakV5U0NmUWFrY2hpUTJNTTRpdUNpUWxuWkFZUy05aDFkc0VYSHkzNHBsWUdHS1hFaHo2ZjJEWWVjU2ktMEk1UGxCWExWeXotWnIxOFA0a2JtTVp0Umc4c24tOVlWOXQzM0VRdk5OUzBmcUNuLThrOVVieEFLel96SngxUFV4S1o0YVRyaQ?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Buccaneers QB Baker Mayfield says he feels ready to play against the Lions despite foot strain - The Washington Post",
+     "score": 0.2,
+     "source": "The Washington Post",
+     "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUVpWMnVqa3lHa2xDVFdEMjFrYVBQaEJwZWhqWHF2X3VGNkxCQmpCdG5pNFRwSlVwTktmVTloYjg1eUtuRUJGcTZBV3V5MDZrVFE2MlNueWNXVC1PWkI2bXZzekJfVmxBN25KajhQMkpvYU5TYW9rU3FYd0x1TDZDbGo2RHEzNkZlZVUyRUcxWTQ1dFIyVFNkVFd5WlQ5WkRZMXBCeVRWVEhKcXNHZ2loTnZtTGk3d2VOaU81UTNXcUpLbkk1SEdEMVpJR0s0OWJ1enMyYkln?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-20T03:06:34+00:00"
+    },
+    {
+     "title": "Buccaneers QB Baker Mayfield says he feels ready to play against the Lions despite foot strain - WV News",
+     "score": 0.2,
+     "source": "WV News",
+     "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPSG1yQU9fVkNPc01oYXVGSjV6OHBselRtLXIyVHhYVE1kN1Q0WmFnMmJGTEJiNlcxZlBtTDFYZy1tX2t5TUM3Qzk4U3NQcTdvUVc2QmM4dVgybXZKUFV6M2JnR3ZENDFsckRmN1hoQWxwbzR5Zzc0ZUg2OER6Q2RqSXV6WHppUDZzcDBhYVRxdjFNX3dYci1fcng1T2hIbzZ3dGEwSW1abDg4VHVNOU1LcGZkNGlGM1B4NFpOWkU1NzJ4UmllOGphY3hHNVVKNl9OYzMyd0hVNjFCczljb3ZWcHBFZ1EwSk55WDNTNHpyUTBtcjJPZ05RNURJNGEzbmtQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-20T02:50:39+00:00"
+    },
+    {
+     "title": "Buccaneers QB Baker Mayfield says he feels ready to play against the Lions despite foot strain - Corsicana Daily Sun",
+     "score": 0.2,
+     "source": "Corsicana Daily Sun",
+     "link": "https://news.google.com/rss/articles/CBMinwJBVV95cUxQOThWM09DeDNyaWtSMFRoV2pVM245QzBCVTNBRUFUb2VXNGJNZy1PWlVBTWpiMnhkb2QyTzRZTzJfZ0tMa0pmZ3d5LWtEaEt2ZzlPbW05cDh6ektERnBSN2RqSTgzdW5VSzZJSFJJVDc0WjlKM0o0U2JTMnJ4SUJzbzZhb0dTTGFJdFc1R09NS08xTnNBNk12d0JkQU5aMFpEUTc3YVp1WVdSRTNVem56UGJ6WTkzRlJrN0lueGRpUlBUWldOaVloaFB5aVJOdXl5YWwyNDBCVWMxV1QzRVAyS0lCbllKMDRnTXp2RHVOdGpmR2FVdVIwbWh0RW41ZWRaX2E1SVUzX2dmMTF1aE5IN0tkNGQ2ZVRjZVFVNHhMWQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-20T02:50:39+00:00"
+    },
+    {
+     "title": "Buccaneers news: Baker Mayfield provides positive practice update ahead of Week 11 - ClutchPoints",
+     "score": 0.3,
+     "source": "ClutchPoints",
+     "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNcXdHcG92SUY5emowdmg3TGcxX1JTZ2JMT0diR19VTUk4aVVvSVNhTUdxOXN4NG9LS0R2V2RNNU4tejFKZ0FQaWJHdnFGUDNWWlJWcE9FWVZtUmJhbmh1ZFVhT2kyV2pKSkRiRlZCdDBva1BvOUcxVTRVNTl6dklYSTFBRERjLTlscnpLNVZJZ0VJZEpWc0R0ZjlsWnBNTVhFbzVib29JYllad0hXdXdEMWRNOEdHNkYyRUhEQllwcw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-20T00:45:00+00:00"
+    },
+    {
+     "title": "NFC Notes: Baker Mayfield, Tetairoa McMillan, Buccaneers, Falcons, Panthers, Saints - NFLTradeRumors.co",
+     "score": 0.0,
+     "source": "NFLTradeRumors.co",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNLWdaNVhvOFhfdjZnYzFqOV8wbmYtNHRRWUw3WGU4MjZFRWRmV1hOS25iS3pLSV8yRFZPMFdoYUVwNmttOE53RFNLOW5aSHFIbUs4ckEzeDI2ZUl3ZGFlZGpHeGpnMmhicmlSWFUtVE11dUFGaFQ5dDd2Z3A3eXBhbnRleTNLZ1Nnd1NCNmE4a0tCZENoelcwNUJSM1BPZGwtVlVBNkVHaw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-20T00:30:22+00:00"
+    },
+    {
+     "title": "\u201cLimps will start again after his first pick\u201d \u201cTerrified to be benched\u201d: NFL fans mock Baker Mayfield over potential return vs. Lions - Sportskeeda",
+     "score": -0.1,
+     "source": "Sportskeeda",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUW5zdjJXeHVrQ0xpOWNabHdXNVltbndHSGtHVkRFa3dhVWJZcDNoUmFrLS0yX1pkVE81aXBDYzhjdnhSTlc2Z3p3WUhrWHBOZ2hVcVg2Ml9nNnlObG53WUZwM0hmSFJLVEVCN3k1azR0TmhxRjhhcUlZWXU1Ym8waFdveXNCd29qY3JhZDRCcWJYNEpzYWgxblliNm53X05UdC1uSGc2eVBtYVBNaTE2VVhNUDI4LV9jQXBWcjRPRXNQNkJuYlE2b3l4VWU1MXMtVUtv?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T22:40:00+00:00"
+    },
+    {
+     "title": "\u2018Tell Him To Stay Home,\u2019 \u2018So Tired of This\u2019 -- Buccaneers Fans Push Back on Baker Mayfield\u2019s Plan of Playing After Injury - Pro Football Network",
+     "score": -0.1,
+     "source": "Pro Football Network",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTUdOczJ2OGRVZTlSTUQ1MndOTzN2MUItUnNNVVNiaTJmZVQ3MHJyUklXbHl0ekt5dWVZWHlhc2huTk1Wd0hIOERyellCTFNGcDVOcGV2QXREZng1bjZRblpZMklUYWg1UWx3dGRCcnlxU2NkdGFYNFdDOHg5VjFVWnB5MUFpbmZXdkw3amJuSzVMOWlPQmc?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T22:00:45+00:00"
+    },
+    {
+     "title": "If Baker Mayfield can't play Sunday, Nov. 22, the Bucs will start undrafted rookie Jalon Daniels at QB See link below \u2b07\ufe0f \ud83d\udcf8 Kimberly P. Mitchell, Detroit Free Press - Facebook",
+     "score": -0.15,
+     "source": "Facebook",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNT3NtMDVDU3dqcGtQelAzeFNIeWR0cDFWN1ppUTVlT3N4MU1uOW5tXzk0dUZOWDRlcFItWERjcXFJRG9SWjA5WVFUZXRWNnMzYXlCbzNIejloRWZZTkV6dnpvWkd2LUxZRm1kQXJHU0p6NTlCLUFTb1F5SHUxX2RSRGM5NE1rVXJiRndPdFlZdENhTEdrMEx1ZFk5dU0xVDJPcmMyQ21BVDBta0Rmd2ZxOFV5YWI4bEJidmxSNDdBcllmY3hmU2dpOFpWODFzMXZMcEYzeUJKUFdvNTJmQmNr?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T22:00:33+00:00"
+    },
+    {
+     "title": "Baker Mayfield is \u2018Practicing and Looks Fine\u2019 on Thursday - Yahoo Sports",
+     "score": 0.3,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOVNIUE9PYWtqc0xIdG16TjFIOUVYQUF2ZUpnXzMzLUREX2ZyaDluY2lTRS1yaFQtUFFqMVB6SkY2RmNWdTlab1RtMXRmQ2tudlAtYmN1RGZfWlJrNmg2cURXNk9LTEhJODdMQ2x3WkFLRlNHZ3A3YW5XS3VIR3lDU1F0aHk1Qm52SzQyTGJB?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T22:00:28+00:00"
+    },
+    {
+     "title": "Baker Mayfield officially listed as limited in return to practice - Yahoo Sports",
+     "score": -0.2,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdC1MUHZPUHc4V3JxSG50ZGpBdmV3eFUtYjE1RWJuVXN3eDAwQlIwemRNazZTQ0Vta1V4c2xsUXRWc2h2VDM2NURyOURyNUpYWldJZC11Vl95RklWUkE5cnEyTl9FRThHM3RqbjBBNkNyTkNGNk1kdHY1V3NHWWFhNExnVnVfcVkyUkpGUjh2RlU2WUE?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T21:57:56+00:00"
+    },
     {
      "title": "Baker Mayfield officially listed as limited in return to practice",
      "score": -0.2,
@@ -659,20 +744,44 @@
      "published": "2026-11-19T21:57:56+00:00"
     },
     {
-     "title": "NFL Week 11 injury report: Latest update on Chiefs' Kenneth Walker III; Lions' Kerby Joseph practices fully",
-     "score": 0.0,
-     "source": "www.cbssports.com",
-     "link": "https://www.cbssports.com/nfl/news/nfl-week-11-injury-report-chiefs-kenneth-walker-iii-lions-kerby-joseph/",
+     "title": "Baker Mayfield Gives Injury Update, Latest Rumors on Bucs QB's Status vs. Lions - Bleacher Report",
+     "score": 0.15,
+     "source": "Bleacher Report",
+     "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWXlrd2huUDRJZG9GQnVITjU1MEhmUll6U0JEZmMxb0dIVkhfd3NDa3dYaXVNRjJwcnNOalF1Ym1FNGVJWnlqOU9oVXhlOGdpa2dlaTl3WWdheHl6aTlLakVIOXJXN2ZINFpHaExCX2NoUWZYcXpucjFjWVk1RlhjWEcwdmpCQmMyRDU4OHU2d3ZZYUxZXzRORzNhT3A3WTNqQUd0cWlmT2lkN1lQSkhkRFladXdBdjNZcFE?oc=5",
      "scorer": "llm",
-     "published": "2026-11-19T01:17:02+00:00"
+     "published": "2026-11-19T21:24:36+00:00"
+    },
+    {
+     "title": "Mayfield (foot) returns to practice on Thursday - NBC Sports",
+     "score": 0.3,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQbXI5bmNybWdCWGxIMU9GSXV3bEdnNjNBU2ZOSGF5eGdETHhCakV5U0NmUWFrY2hpUTJNTTRpdUNpUWxuWkFZUy05aDFkc0VYSHkzNHBsWUdHS1hFaHo2ZjJEWWVjU2ktMEk1UGxCWExWeXotWnIxOFA0a2JtTVp0Umc4c24tOVlWOXQzM0VRdk5OUzBmcUNuLThrOVVieEFLel96SngxUFV4S1o0YVRyaQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T20:50:23+00:00"
+    },
+    {
+     "title": "Bucs Get Encouraging Baker Mayfield Injury News at Thursday\u2019s Practice - Yahoo Sports",
+     "score": 0.3,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV3JuNkxUUV9YdHNwTmlqNlBfd1AycEFwelVURkJxM2FzMGZBSkJ6TC0xSV8xZklfV25fdUdYd2ZpdmNCMHFfeXd4RzNwUkZkS184Mi1jeV9RVno5bm5NY0ExTlR4SGJySV9oSWF4N3pkN242LVZzNlVaRFh4T2xraHl3YW1sUENGdHY0ZTRnNE0?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T20:26:37+00:00"
+    },
+    {
+     "title": "Bucs QB Baker Mayfield hopes to play Sunday despite foot injury: 'I feel ready' - ESPN",
+     "score": 0.2,
+     "source": "ESPN",
+     "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPblNaTEh4bGdqRDJhdHdlX1F0NVBDZzNPWnRseW9EM0VCTERLZ1NQU3JMMi1iWEhqM1lnUmdXSlQ3OUdXMVQ4US01a003dzFzRlJPYTk3OFRRRWdZdVpoeTlSQlBOelRTR2d4QlNCZmhmOWJPaHU1eEEya1VBQU12OEd1eGlCS05pZkhvMHRPM3JiTWE0Si1PaQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T20:02:00+00:00"
     }
    ],
    "mult_injury": 0.85,
    "mult_matchup": 1.057,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.996,
+   "mult_sentiment": 1.006,
    "base": 14.411,
-   "adj": 12.9,
+   "adj": 13.03,
    "trending_adds": 0,
    "slot": null,
    "notes": [
@@ -1512,16 +1621,153 @@
    "def_ratio": 0.87,
    "implied": 17.0,
    "weather": "57F, wind 9mph, rain 71%",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
+   "sentiment": 0.165,
+   "n_articles": 15,
+   "headlines": [
+    [
+     "Eagles name Joe Milton starting quarterback for Week 11 matchup against Steelers - Dailyfly News",
+     0.5,
+     "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRzlVdDM3cmZ5QW9EbHNfbDFHRGcwVmVpZHRDQTlSQUcwZWUtcGFiV1JIYlBFbVNmMnlqc2w0MnhPcjVjRnZNa2cyS0x0bllNcE5BbzBVaEFpSl9WLVpMMkVpSzlCOHBvbzhwQ3AyaGptSXVFSjRfZTZwUDgtWFotQm5MV3ZRUGhVeVdWeEZpZjJxSG5NZHNZWlRzUm9ZMnM5TUxwdjVTR3g2TTdUVTZUcDB5YzZvVHhh?oc=5"
+    ],
+    [
+     "Joe Milton announced as Eagles\u2019 Week 11 starter - NBC Sports",
+     0.5,
+     "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa2xZQ2Q1RWZhLUdvWmtsUXNyVEhpaVpnRlRuLXF1TU5MX0UwZi0wN3dSMFFOSUtwVElGZGNFWHpGTmFsY0xoQXBSOFM2MnNaNFlUWDdiRzZscGRzOHRDYmdpMURCRzZkY2M1ekp0TktVMnNqdUl0VW5uS096TkU0Q0NsVDlXcVFHeDIxb202QmpTbnlENEd4UFh0N0JGLVRJRHh5MFNTWU1VTFp5WUQwWDB3?oc=5"
+    ],
+    [
+     "Philadelphia Eagles head coach Nick Sirianni confirms quarterback Joe Milton will start in Week 11 - NFL.com",
+     0.5,
+     "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd1pIM0lFZDhfempmVXkyU3lGNFlaRXl4cVRmM2hwU2lGbFdaUXJyRDlhM0RrTjNYZzhJV0xweExtcGJYSTNZamE2djFrazBUNjQwc25ZTzJMZzl2MnJBU3FKQlBkb08yNmhfTGRPYmZWSkt1TDc3NHZXMnd4cHA4Z1kzVEJfMk9jN2c?oc=5"
+    ]
+   ],
+   "articles": [
+    {
+     "title": "Eagles\u2019 Joe Milton drops a bar on \u2018Mr. Rocket\u2019 nickname preference over \u2018Bazooka Joe\u2019 - ClutchPoints",
+     "score": 0.0,
+     "source": "ClutchPoints",
+     "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNdjlETFFGYXdzeUJQMjVndDBweS1fREVmOVluNWtXX3JTUHVDS2hhZHpUSkVXSENWSG5YN2RVbzZzSU41NWdTSm9oOFJ2Um9iWWhUSUhYbFJqVnlTcUFXLUFNV2FYRzVXNXFJM3o5eHRuNkdYOXZaa19oUDlzMTF2a1VCYS1tTjByRFYyZC1aRVk4a0xkSzNMZGEwYWNmb0FSNzJQLXFCT25tU1FHSERjQXZHTQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T23:26:36+00:00"
+    },
+    {
+     "title": "Joe Milton weighs in on \u201cBazooka Joe\u201d nickname and opens up about opportunity with Eagles - Yahoo Sports",
+     "score": 0.05,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcWtWWTNabU9GTkI0a1dfdU9JNnZ3a2NJQnhUUF82QUlSQ1BhZEs2RlFMTFV3N09CVWJ6YU9qX09BMFhvM01sV3BDTFBFbUctSUNINzd4U2VHY2o3aXNySXRES01ZUHlMaUNQTS1Vb0JpdTNOclBOZjk2QTdWdDZNQnB3?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T23:25:50+00:00"
+    },
+    {
+     "title": "Joe Milton Reacts to Potential Return of DeVonta Smith, Dontayvion Wicks for Eagles - Yahoo Sports",
+     "score": 0.2,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMkI1UmRCdUpDM2hCWldQOXF6aVRPWk02eWpFd28zSWJyTnZQRENGX0JlZUR6QmlxTzZ2R25yS0QwQVdZS1N6RWpIeUFzdUdvR29hVlNlZUFkSGVWSm9uNkcxWFgzb2Y4RXhpdWxUS0FwWHVwODVJUklSM3ZTeGN6QzRPNXpVREpseFpj?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T21:53:17+00:00"
+    },
+    {
+     "title": "Joe Milton Reveals Difference Between First Two Career Starts for Eagles - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNQmVDUUQ2dUVGdFZXdFNHcjJZLXhienhOYUtvWHBkeURWLWtKcExXMWpDa0Jlb3VFdll4aDBaUmp4VHUzTzhGS2RjLXNaVjZ2VHY4cXU2bHpJSFZJeERrVXp3RDA4NkVvR2ZJTHUzZGQ0YUd2UlNoRUU2ZlFnMW9TMHZlOHB5eDU5OUQzWlRRYw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T20:42:57+00:00"
+    },
+    {
+     "title": "Tanner McKee Injury Update After Eagles\u2019 Joe Milton Announcement - Heavy.com",
+     "score": 0.05,
+     "source": "Heavy.com",
+     "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMng4cDdCeEU4ajFRN1hxZkx2NW83VC1tb0tubF8tc2YwZ1VvVWNIbC1iaDN6bjJBSFEwd3RoTUxZQnNkWWpLUDBQY0dPY0pmUzBjQlJ6UUZrQzVLWWFWQWNvMDFxdzJhb1dVUHY0VnE1b1JwVmRRNjlGTmdaQmVuRHROVzRSOUgta0JkdmdycjNicGRkYjA1YzZMWGdjTG0zOTVYUjVad0JMOTg?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T18:05:12+00:00"
+    },
+    {
+     "title": "Eagles name Joe Milton starting quarterback for Week 11 matchup against Steelers - Dailyfly News",
+     "score": 0.5,
+     "source": "Dailyfly News",
+     "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRzlVdDM3cmZ5QW9EbHNfbDFHRGcwVmVpZHRDQTlSQUcwZWUtcGFiV1JIYlBFbVNmMnlqc2w0MnhPcjVjRnZNa2cyS0x0bllNcE5BbzBVaEFpSl9WLVpMMkVpSzlCOHBvbzhwQ3AyaGptSXVFSjRfZTZwUDgtWFotQm5MV3ZRUGhVeVdWeEZpZjJxSG5NZHNZWlRzUm9ZMnM5TUxwdjVTR3g2TTdUVTZUcDB5YzZvVHhh?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T11:15:24+00:00"
+    },
+    {
+     "title": "Joe Milton's New Nickname Comes With the Same Eagles Challenge - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNVUVpU0NHMERKX2ExdXo1MGVYRVcySlFMTjl5cEpuR0hsRmNTS3hiQzFFV25rU0ZkVG5xVXdxd1FMS0JaMXFRYl9KNlE1QVpCMU1Jdy0tRE5kQlN4ZWhJcEpNQU9PWUFFVEpKMHpTb093cG1LcTJ3T21vaFY4R3VBRlJGWmVDUGc?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T11:00:06+00:00"
+    },
+    {
+     "title": "Joe Milton announced as Eagles\u2019 Week 11 starter - NBC Sports",
+     "score": 0.5,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa2xZQ2Q1RWZhLUdvWmtsUXNyVEhpaVpnRlRuLXF1TU5MX0UwZi0wN3dSMFFOSUtwVElGZGNFWHpGTmFsY0xoQXBSOFM2MnNaNFlUWDdiRzZscGRzOHRDYmdpMURCRzZkY2M1ekp0TktVMnNqdUl0VW5uS096TkU0Q0NsVDlXcVFHeDIxb202QmpTbnlENEd4UFh0N0JGLVRJRHh5MFNTWU1VTFp5WUQwWDB3?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T10:04:06+00:00"
+    },
+    {
+     "title": "Nick Sirianni\u2019s QB decision after bye comes into focus after Joe Milton dud - ClutchPoints",
+     "score": -0.2,
+     "source": "ClutchPoints",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPY014SkYzZ3dRQVpZRVlSNGRRVmplMDdqd3pNUENGWk5hT0k4NXhnZmZOSGxfMTNwbkF3dUVXTTRHQk9JWkxNOVNlbnMxTWhwRXRvSDJJLXhJRG5jMHpYT3U1eEJOQjA5bEs2QlJSRUJzR2Q2d3ZZQlhxeU5ObU5BUGs1SFdRQTdrbXlaRnp0OU9iS3A1blVZbVQyR0Zaa0RBdW1BTTlxNlNodjByS3Vr?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T09:25:35+00:00"
+    },
+    {
+     "title": "Help is on the way for Joe Milton and the Eagles - Yahoo Sports",
+     "score": 0.25,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9pMHBoMlFIRG80ZUZiUi1SekNNX1VHVzV1cVNvek5wbGxOQVYxSndNeWpiY1BkQzRDQl9TQ3Rzc01jei1iR0k2NXRKY0xmeXdtTGF4cE45V0k4bUpBcUNJYjZUMml4eVRxSXRsSjNJRjdsVjNaYUtocWRVSGtzUQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T05:21:00+00:00"
+    },
+    {
+     "title": "Joe Milton III Retaining starting job - Fantasy Footballers Podcast",
+     "score": 0.4,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSm9zZV9uN0N4cWRYY0JLTGVBVlZYd0hCTXJPVTZSUjRfUW9LczRBRDlfQkt6bDZidDBubmFFMWM4SVlJblFCU2pISHlSNWFUaWJYa3B5ellqT3dJRnlySlpGNEprdWRTVTlTbURjbkg4WGNxbkpKUFVDalRHT3hHMnNPMGtIOHpiTl94OWtKWXBBZw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T23:48:09+00:00"
+    },
+    {
+     "title": "Joe Milton Reveals Preferred Nickname Highlighting Arm Strength Ahead of Eagles vs. Steelers - Bleacher Report",
+     "score": 0.0,
+     "source": "Bleacher Report",
+     "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNUjNBU0UzTHNMLUNKMXFGNzBwQ3F5LWRVbXA1eUR4eHN0YmVGNGUzTzlWazA4SDlROEpjZlBJSW5zb2ozdUh3RWRTWnNlT2k0RjRlSlhJaDRNVzVpUy13TlptaUZPRENzcmRZWm55TmV4UnNMZnBscTJUUEFKclZZLTFsZ0RrakJSQTRDeVFfZzNGZDNqSEtoalRudWJESk83YnZwd1pYUFFlYmxDUlVnWWhKVlMxRi1GZnoyck5yMFpEVXNwaF9HdGI5NkFkQQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T23:01:04+00:00"
+    },
+    {
+     "title": "Philadelphia Eagles head coach Nick Sirianni confirms quarterback Joe Milton will start in Week 11 - NFL.com",
+     "score": 0.5,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPd1pIM0lFZDhfempmVXkyU3lGNFlaRXl4cVRmM2hwU2lGbFdaUXJyRDlhM0RrTjNYZzhJV0xweExtcGJYSTNZamE2djFrazBUNjQwc25ZTzJMZzl2MnJBU3FKQlBkb08yNmhfTGRPYmZWSkt1TDc3NHZXMnd4cHA4Z1kzVEJfMk9jN2c?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T20:50:24+00:00"
+    },
+    {
+     "title": "Nick Sirianni confirms Joe Milton will start in Week 11 - Yahoo Sports",
+     "score": 0.5,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbnpxVk51OUxhdjhlNUVLZFVMT1MxalN6TUtQNVluMTlDclM2R0xDcGlNVzNYdUNsUUpqakpDeHRmVEpIVzFTS3FneVhqbVI4T0xadjdPWDJBRkhtcDh1NTVNbEpzN3R2TUx1a3ViUGdISHR2RnNLZ2FTRVBSdlQ4eVNHVnpHd1k?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T20:48:00+00:00"
+    },
+    {
+     "title": "Eagles\u2019 Nick Sirianni Reaffirms Commitment to Joe Milton, Sean Mannion - Athlon Sports",
+     "score": 0.4,
+     "source": "Athlon Sports",
+     "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQeFd5ZmUzRzlhN2RDOVFiWEE1X3VveVRUUTdWazZNU21xSENWNXRhQ2d3Z1g2d3Q2dkpEZXNYeEs1VV96MUJPYVZXX3RFUENhb05Rdmw2bU1DSG1OX1Rwb1VMc213empEbWxsSzN5ZmcybzdBZ0RmaS12STMxOEJlVUEzdTJ5amJsOVlkUFVvYzN3a2EyYWJhUHJINGdkZw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T20:37:19+00:00"
+    }
+   ],
    "mult_injury": 1.0,
    "mult_matchup": 0.818,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
+   "mult_sentiment": 1.013,
    "base": 12.704999999999998,
-   "adj": 10.39,
+   "adj": 10.53,
    "trending_adds": 114976,
    "slot": null,
    "notes": [],
@@ -3978,16 +4224,105 @@
    "def_ratio": 0.79,
    "implied": 19.75,
    "weather": "Indoors",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
+   "sentiment": 0.113,
+   "n_articles": 9,
+   "headlines": [
+    [
+     "Bucky Irving - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller",
+     0.5,
+     "https://news.google.com/rss/articles/CBMirAFBVV95cUxOT2o3Yjh4RmF2Y2V6eGozdUtzOWY5YzZ6Uk1pZW1ock9PaHpEcGxfbk5SN1dBNEVuUkJQMklwWFNVM2hHa0l4RE9oaVdvVVdUUUlaV3pWYmh3MUt2a04ta0lDTXVKcFI0RWFsaC1iQkpQdVN2OU1wYmoxc3dGMmN5TjN3VUN2aHBNU3NuVkxkRjBzTi1CQlEtdnQwZmR6aGFqb0RhbEFkQW5SSVk4?oc=5"
+    ],
+    [
+     "Bucky Irving is the Bucs' offensive MVP through first half of season - Yahoo Sports",
+     0.3,
+     "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWmI5dFRPa3JtQzRjWmxjSmkxT3FFUzI2UGZSczFkQjNMZmpfTDZ5b1owQnctbjRIcmJ1eTFTMm8teHRtRXU3VlFrczVncVpnUlVNQ3JuX1hmZ3JiWnItbHZKTzQwTG1acmRLQXktSWdvNUREd0VROGRsUDY4YzRlRE82OWlJZWM?oc=5"
+    ],
+    [
+     "Bucky Irving Powers Ahead for TD | Falcons vs. Bucs Highlights - Tampa Bay Buccaneers",
+     0.3,
+     "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWldTQTJOTU1zWTlvdkVfckdNZ1M1UF9LTTF3S3pnclMyTG1hd295ZFh4alhmUnptVE9FYTNnbTkwN0tfY3UzNHZTS2ExNUlpM3pMWkVRYllqM2JZWlp1b05BTUVuQ1Q3X2ZrVHJ0bDBsaHJNWUozYWk0WUlmZl9FbjJfZ1FJUGtaSFVhTEJTWQ?oc=5"
+    ]
+   ],
+   "articles": [
+    {
+     "title": "Bucky Irving is the Bucs' offensive MVP through first half of season - Yahoo Sports",
+     "score": 0.3,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQWmI5dFRPa3JtQzRjWmxjSmkxT3FFUzI2UGZSczFkQjNMZmpfTDZ5b1owQnctbjRIcmJ1eTFTMm8teHRtRXU3VlFrczVncVpnUlVNQ3JuX1hmZ3JiWnItbHZKTzQwTG1acmRLQXktSWdvNUREd0VROGRsUDY4YzRlRE82OWlJZWM?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T19:15:23+00:00"
+    },
+    {
+     "title": "Bucky Irving Powers Ahead for TD | Falcons vs. Bucs Highlights - Tampa Bay Buccaneers",
+     "score": 0.3,
+     "source": "Tampa Bay Buccaneers",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPWldTQTJOTU1zWTlvdkVfckdNZ1M1UF9LTTF3S3pnclMyTG1hd295ZFh4alhmUnptVE9FYTNnbTkwN0tfY3UzNHZTS2ExNUlpM3pMWkVRYllqM2JZWlp1b05BTUVuQ1Q3X2ZrVHJ0bDBsaHJNWUozYWk0WUlmZl9FbjJfZ1FJUGtaSFVhTEJTWQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T03:16:52+00:00"
+    },
+    {
+     "title": "Why Bucky Irving can overcome a tough matchup in Week 11 for fantasy - Yahoo Sports",
+     "score": 0.3,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPX0E0U1p3ZXppN1FWb0UtWHN6UTZxeW1ZTldrdUxwaXBKdm9iZFcyS2g1Ul9qVXUtOXpTUFZaOHFYcVlRcUUzUnZ1bTNXdzdWcFRzNjZtU0Ywc3hMOUx6RzdSQVRRa1p1T3p1T3BWMGZJS0xVS0VZV3hqQWNCc1dDdTVRbk1pT193NTJNb0VjSlpIa2ZoVUhwVFlkLXV3bUtIbDl4LWs0Smg0WEJhUDk4SGVPb3I?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T23:07:54+00:00"
+    },
+    {
+     "title": "RB Rankings Downgrades For Week 11 Fantasy Football: Bucky Irving & More - FantasyLife",
+     "score": -0.3,
+     "source": "FantasyLife",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOcTVlZUF6ZTQxcFlGbkY4VVB1UGdMT0toV2FBOVZaX3VRMF9ndC1JR0Jha1NfMV9qbUdFQzBrNXBMNXBxWUVMMmhQTlcxTWwyV3dyd0xJOThwV0taUFFXTklqb1FtYkhycWpvOGVSXzZhQURwaXdrSHFTWFp3aDRmd0lYZHFWLWg0Rm1rajFfUWM3ZjBsVXFpcTU5bWc?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T21:00:00+00:00"
+    },
+    {
+     "title": "Who Should I Start for Fantasy Football Week 11? Jaylen Waddle, Bam Knight, D'Andre Swift, Justice Hill, Bucky Irving, George Pickens, Derrick Henry, Rico Dowdle, Stefon Diggs - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxQLWlHaUVZUVYxUjhpTGxZOUpUMG5PR1lfOXlzVFV4ZVhlUW5waXd0aWo2X1gyWE41ZmlJLTBKSmR2SW42R1ZCRWxXSVZTWnR0MDBFeUpNV3g4TzRoTGZiRVlOSENObHFnb1ZrUEgzMXhzcXpET1JJdjhOQlZ6dHkySm9pWS1ENGdxYjNXODBnZGxIeG9FZ0ZlcEJjY3MwSGRzYnZPWE5tWGc4SzVNUUllcXA5NHRrb1RoQndha0s4SFFuRmpKV0E3b2RBcnhqa2k3elc4RTFfUGl6OVdxaVlZRFJnMW1kbWlLY3pIZ29hOFU5UUNWaFJ5WW9mUmNnRVF2M0xsT3JKYWF3bnQ0ZW52cA?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T19:35:39+00:00"
+    },
+    {
+     "title": "Bucky Irving remains among the NFL's top five rushers after Bucs bye - Buccaneers Wire",
+     "score": 0.3,
+     "source": "Buccaneers Wire",
+     "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRHhDd3E2ZnFUVVpaa3J0bXpXZmVHR2plR0Y0YXhIMlhONXlZRGkwYUVFOWFFLWtBeGJEc3lrbzd4QnNCaTJvVjFQRC1aX3NDSDFWZjR5QWhEU3dvbEY3RDFDRmthMW40ZXE2bTNfc2U2NTd2czVGUTVTUE1vTkc5bWg4X0JScDNxdWJJVVVMRG9CQWhWcTdMM2JQa1duSGtua25YRW83dHg3VGozZUxyN191bE9HLW9ZQzAwVm9uRVhlVmZpQVozYkQ0OURoSUk2VmdB?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T01:50:00+00:00"
+    },
+    {
+     "title": "Bucky Irving - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller",
+     "score": 0.5,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOT2o3Yjh4RmF2Y2V6eGozdUtzOWY5YzZ6Uk1pZW1ock9PaHpEcGxfbk5SN1dBNEVuUkJQMklwWFNVM2hHa0l4RE9oaVdvVVdUUUlaV3pWYmh3MUt2a04ta0lDTXVKcFI0RWFsaC1iQkpQdVN2OU1wYmoxc3dGMmN5TjN3VUN2aHBNU3NuVkxkRjBzTi1CQlEtdnQwZmR6aGFqb0RhbEFkQW5SSVk4?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T17:52:14+00:00"
+    },
+    {
+     "title": "Fantasy Football Injury Impacts on Emeka Egbuka and Bucky Irving with Baker Mayfield Questionable for Week 11 - Sports Illustrated",
+     "score": -0.1,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPcjFjak0tVVdwZ0h4M3dKWXlPWWlNdGhmTjczbklCVlRNaTdpNzhTWGhhbTI5MzVJMl9BNGhjNjUwNi1WWVRFWjFrWGJrTWJ1RkRUaXZONlpDREJqMkJWcWxGaEpEbmoyZzVLclRPYWtSTjZ1MU9zTjR1OE5GNk16RGlyX1R1WjFPOFhWYjRmN3Ryd3lZVFA1bHZZNFFobGUtcTVIRXhuVzdUNVdKMzBfTEVuUjcxMDM3cE5zVDNBVjAzWjIzeV9BLUZMaUo3c2VjcnEtMzd5Qm1mVFBtN3c?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T17:18:23+00:00"
+    },
+    {
+     "title": "Bucky Irving or Jalen Coker: Who Should I Start in Week 11? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQcEM1WXlKTmNsZTRfd2gydVNnQ1E1UlYzRldpM3VtWi1iaXlRQmtKZlFwLXZSVGk1VDJHazFHUm8wMnZ0Mk1Iem9mRHRKRmxnMk95cl9OVTI4ekxFUFhCNExRNDZsNF9aNzJqSEF4d1lMZmFodmZUSklidW5SanpNMTNCVnNuaHZyU1FjTk1EeWxaTDF0QzNfYWY0NkhwSlVWTDRoZFFQTV9BbnlYbVR1Mw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T20:00:09+00:00"
+    }
+   ],
    "mult_injury": 1.0,
    "mult_matchup": 0.837,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
+   "mult_sentiment": 1.009,
    "base": 18.073,
-   "adj": 15.13,
+   "adj": 15.26,
    "trending_adds": 0,
    "slot": "RB",
    "notes": [],
@@ -4877,16 +5212,50 @@
    "def_ratio": 0.71,
    "implied": 25.75,
    "weather": "Indoors",
-   "sentiment": -0.037,
-   "n_articles": 1,
+   "sentiment": 0.059,
+   "n_articles": 15,
    "headlines": [
     [
-     "It wouldn't shock me if ... for Week 11: New WR crashes OROY race, Jared Goff's pesky streak continues",
-     -0.15,
-     "https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-for-week-11-jared-goffs-tony-pollard/"
+     "Jared Goff Tosses three TDs in Munich - Fantasy Footballers Podcast",
+     0.6,
+     "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWVdzS09IWEdLdGY2Vk1VMklNc2hDYXhmWlM2NzZEVzlvYUlqZEtaeHpLNDU3VEYyelNNbXo5NVdkeVd4ekZ6bEN4MzY4SV9JVVBzRUNOWS00X2R2elVSa2xrQTVNVEJPTzdhMXo3Z3FVVTBXU3BSYXNzMmVMd3ZGdGc2RGJNUDN1dkhDRzR6eXJoUQ?oc=5"
+    ],
+    [
+     "Jared Goff's best throws from 303-yard, 3-TD game vs. Patriots in Munich Week 10 - Yahoo Sports",
+     0.6,
+     "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FY1Y2WUdveGtZRG5veUU4VWJvMVN4Sk5pMGxwZWdkYnBnVTlpMDU0RFRtb2RsbGJzeENKczJENEJsTFFYTnFIRWpDR1c5VDVuVzhJNWYxQ1dvZ19STC13NW84R2IxSy1ld1dSejhmVHppcFRaUmFyZTdubkVPY2c?oc=5"
+    ],
+    [
+     "Jared Goff - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller",
+     0.4,
+     "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSmhtRGJqdklPNzU2ZlJOVklabFI3U0NZMzZ6QU5XajVJcDB2MngwWjB2YWtFV2dSUE53VXFBVm03LTd6UEJRVmpFQkJCSjFXX096Y1NOS0lZUG5WUUFxMHVrZVRYMDR0eVFJNlctUkhUa2w2QXRJQ2YtbThHZUlVM0pOSVU2TVRWbUd1Ul9WaDM0TDVjc0EwWDFMUW4?oc=5"
     ]
    ],
    "articles": [
+    {
+     "title": "Jared Goff - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller",
+     "score": 0.4,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSmhtRGJqdklPNzU2ZlJOVklabFI3U0NZMzZ6QU5XajVJcDB2MngwWjB2YWtFV2dSUE53VXFBVm03LTd6UEJRVmpFQkJCSjFXX096Y1NOS0lZUG5WUUFxMHVrZVRYMDR0eVFJNlctUkhUa2w2QXRJQ2YtbThHZUlVM0pOSVU2TVRWbUd1Ul9WaDM0TDVjc0EwWDFMUW4?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T18:37:18+00:00"
+    },
+    {
+     "title": "NFL picks: Proven expert reveals best bets as Jared Goff faces tough Tampa Bay defense in Buccaneers-Lions - SportsLine",
+     "score": -0.15,
+     "source": "SportsLine",
+     "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOM21mQkNNb2pBeHVJcEdRLTBIQWNyTjFyRWYwcXdyVkxIVThrekg4SGlRM1dVZFQ3MTNqc0M5OHlvUnlrNlVFRWpqMHBoQWRqZEtYNm1FX1U0czdFbW9TRU96NThhZkpYZDRGR2x4RUpjeW0yVEp6NUZFQW1UVm1uQl9wYS0xazlTSW9JNTNHMGpIWjNXUnBpNEE0dF9YS0xpN0g4RXZ3S05uNGxaSnVWZFRrdkNnYVpOaWhHNl9ZalluZFQ5YWpsSm4ybmduOTE2dTRvejZZUEJvdw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T15:42:59+00:00"
+    },
+    {
+     "title": "Jared Goff: Jahmyr Gibbs is a special player, special guy, special teammate - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN3U0WXNwaXJjMUJqV09zdS1aam1mRmdnS243TWhZVjNDekw5Q2piM3lDZDV5bTJ3NU9raDRPSjdSelBiX3IzaHJxRmpEUWlEWXVDMHU1WW9ib2dVUExxaV9DVEloY3dZdllMRkNWMTAzeVZ6bS15NWw1Z1hkbVpneDFoalBQUTA?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T15:14:48+00:00"
+    },
     {
      "title": "It wouldn't shock me if ... for Week 11: New WR crashes OROY race, Jared Goff's pesky streak continues",
      "score": -0.15,
@@ -4894,14 +5263,102 @@
      "link": "https://www.cbssports.com/nfl/news/it-wouldnt-shock-me-if-for-week-11-jared-goffs-tony-pollard/",
      "scorer": "llm",
      "published": "2026-11-19T14:19:28+00:00"
+    },
+    {
+     "title": "It wouldn't shock me if ... for Week 11: New WR crashes OROY race, Jared Goff's pesky streak continues - CBS Sports",
+     "score": -0.15,
+     "source": "CBS Sports",
+     "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOX0pMbVZyWGJGVWxYWXBFME9NeDV5YmJwYXl0SE54UU5fcEFkUy1KQ0tKVVd6V2JVckRhVHlJRE1MSm9DdmdIVHBKeVdfWUlocUN5ZXQ1YW5mY253RjVuTnpvUWhhMzByUXFWSzM2aHdndlVDWVp6dEhsSElmbDEtc21XWVNna0VQYjQ0ejFBdUw3ejlDS2VzOVBkSQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T12:42:00+00:00"
+    },
+    {
+     "title": "Detroit Free Press. . Jared Goff said that he wishes well for Alex Anzalone \"every week but this one\" after Lions practice in Allen Park on Wednesday, Nov. 18. - Facebook",
+     "score": 0.0,
+     "source": "Facebook",
+     "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQdXdnSF9MWWdjVnh5RVRCSHpkQjNRVmRMc2hKVEZqWlVTeDRzdnJOS0RzXzNYd3ozOUZzZGF0T3ZRZmdIX3NxSG1YaUtWUWlKQUk3QUIyWFNERmNDN1A2NnVLUUp3YmhvMkdCTnBjYkhHSXV5Szk3QkZmMzdFMlVlZFpKeWo2SkhpSi1peHNaaVQwV2V6dXM5VEFwYnY1SUhYTFR5OWxqRFN0S3plVVJDVTdjTE5rY3JWd3JUTUM2Mm1na2hOeDE3Q2k4NHE5U0tjQVlMd2tqZmpUZmdjVXFTVw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T08:30:21+00:00"
+    },
+    {
+     "title": "Jared Goff Stats vs. Bucs: Career Stats & Game Logs - sports.betmgm.com",
+     "score": 0.0,
+     "source": "sports.betmgm.com",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPamtKT2h1RUtDMGVjYUEtX2lVTE8tcExJSGhKcGNzU3dva1oyNXRIQV91dVZVSU1FejNaQjVzX2N1TnhLZjhBM282clFwWlRWRDFCZ0l1MDlVYktvTkpBck4tZDB6WFFTaFR4cnNoYmtrdkpCR2NlX1lNT21RRGRkVUpiUkFOYXVLMjk5Sm4wMA?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T22:11:19+00:00"
+    },
+    {
+     "title": "The Detroit Lions are much better prepared to handle Aidan Hutchinson's injury this time, but they still need Jared Goff to be great. See link below \u2b07\ufe0f \ud83d\udcf8 Junfu Han, Detroit Free Press - Facebook",
+     "score": -0.1,
+     "source": "Facebook",
+     "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPdmZwRjJMRjBpME9XTndzUld4cmFDejRzYnZ6WWUwbEg1YS05WG8xNmFSeDVDTjZYaF8xTVFkU1dUcEhWRmV4OTZmV0plRVo4T1N1dS10OVJBSkJXOEw1TEhMQUI4MWZjLTZ4M2d3bWJuZDRkRlUxY25ibmJ1Q3Yya1BiSHZsZG5RS2RrZU5vdkJfUi1ibXlsQWJPSWdubWlDVG9WN0RoLXFma1ZHWHJNZzFkSks0ZXpwV19tTHVHS2h6UklocDhXVmNjQ1NwaGRVclFBOXh4a0FTcTdCUmtv?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T14:00:22+00:00"
+    },
+    {
+     "title": "Where Does Jared Goff Rank Among All 50 NFL Quarterbacks?! | Valenti Show - Audacy",
+     "score": 0.0,
+     "source": "Audacy",
+     "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcmxlWmhSMG1ySXBYaWdFWkJ2V0RQdTlPV2ZLeWpSbmZMQUhVRGxLOVMydVFZLTBtdjJLS3FPbTMzZFRYaGxUblpSNEFjZk5pT013UkVsNjVHQndSVERuU3hOUnVMRXJzWDNBU0hFTHBxN1gyLUN1MHROUUNLM1A5TWtSaVlOMXFLbElHX1d2eFpZNWh2X0NkVEZKcENIWFkzcVFhSE5PaTdGYzU3Nk5iZlF5dlpqQ0lKZVpr?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T20:30:03+00:00"
+    },
+    {
+     "title": "Jared Goff shares his appreciation for playing International NFL games - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZGtwaXlUblNvTEVGdWctaGlpQjloTTlvVHl4cmRfWjZUWGh1d2lxZ0RsMUZxSGdMVkVBOG16Z0J6SXlQUVUxU2tHOUJlakdPWkdOQkdLT0ZsRlNkRTlyT1paX0J6SGpLZ2YyX3liUjNZMHNKanlScWQzWTBRSC12VS04VW5DUkRPVUQ2WDJR?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T18:38:15+00:00"
+    },
+    {
+     "title": "Week 11 fantasy football QB start-sit: Goff, Nix, Purdy, Ward - The Big Lead",
+     "score": 0.15,
+     "source": "The Big Lead",
+     "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPak10TDJqcFlJeHRIWFg0T1duZEpiVl9xNmwzeGRlR05iNl90MFdzSXRJeF9uNVY0MGdaQmdrMkxLVVc0RTYwQm1JRHV2NUd6Y2xJZk5MLWRxVkpIeTZLcElMLVBQVlZYLTJ4OXFNT2FYRVdWV29QSjA3WFhUcmxsbVpORjZpcXZIa2x5cERyTTYyNk5lckR6a1N1UWxtRnVKY3pheHBESQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T17:49:54+00:00"
+    },
+    {
+     "title": "Jared Goff Tosses three TDs in Munich - Fantasy Footballers Podcast",
+     "score": 0.6,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWVdzS09IWEdLdGY2Vk1VMklNc2hDYXhmWlM2NzZEVzlvYUlqZEtaeHpLNDU3VEYyelNNbXo5NVdkeVd4ekZ6bEN4MzY4SV9JVVBzRUNOWS00X2R2elVSa2xrQTVNVEJPTzdhMXo3Z3FVVTBXU3BSYXNzMmVMd3ZGdGc2RGJNUDN1dkhDRzR6eXJoUQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T07:32:10+00:00"
+    },
+    {
+     "title": "Jared Goff's best throws from 303-yard, 3-TD game vs. Patriots in Munich Week 10 - Yahoo Sports",
+     "score": 0.6,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5FY1Y2WUdveGtZRG5veUU4VWJvMVN4Sk5pMGxwZWdkYnBnVTlpMDU0RFRtb2RsbGJzeENKczJENEJsTFFYTnFIRWpDR1c5VDVuVzhJNWYxQ1dvZ19STC13NW84R2IxSy1ld1dSejhmVHppcFRaUmFyZTdubkVPY2c?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T18:15:39+00:00"
+    },
+    {
+     "title": "Goff locates Gibbs for 50-yard catch and run against Patriots in Munich - NFL.com",
+     "score": 0.3,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPVFBDX2NTWXBFdzVYZkpLbHZ2TGQxT2hlV2xEem15elYzRUM3OFJBZm5RajVoUGtkQzMwc0VsUEZ5dXp5SzR0SXVPYnNyanNjT3ZKYlhqSXFCVUhZNDZOUlFybm5uMk9JY0M2dzZhUTl6UUJkdEVXOHR6Q0tESlJLV01Za2pyMTZBTTlyUFJ6T1k2MkFtb3Q3WFpGQjZFQUk?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T16:00:26+00:00"
+    },
+    {
+     "title": "Jared Goff connects with Amon-Ra St. Brown for 56-yard TD to give Lions early lead over Patriots | NFL Highlights - FOX Sports",
+     "score": 0.4,
+     "source": "FOX Sports",
+     "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5zY0tYWWF6ODU2MWJmbDVDcnRBUGlsbnNmczZxMElKaVM5aUwtdmRYdUI1VTB4UEgtUlFZMU1PNFUwNllKaDBaTlJvdEhHcWdwQ2NsZ05JZGJzanpqUmNrSXlHa3ZGS1ZyNGFXMHpB?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T15:06:42+00:00"
     }
    ],
    "mult_injury": 1.0,
    "mult_matchup": 0.913,
    "mult_weather": 1.0,
-   "mult_sentiment": 0.997,
+   "mult_sentiment": 1.005,
    "base": 20.235,
-   "adj": 18.42,
+   "adj": 18.57,
    "trending_adds": 0,
    "slot": "QB",
    "notes": [],
@@ -5227,16 +5684,153 @@
    "def_ratio": 1.04,
    "implied": 19.25,
    "weather": "Indoors",
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
+   "sentiment": 0.06,
+   "n_articles": 15,
+   "headlines": [
+    [
+     "Breece Hall - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller",
+     0.4,
+     "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaWR5QkNGZTlUT1lrMmEzUk9RUDRIZFhoWk5PWG9lOUF3ak96ejVreGFNbnpicUVOeUYtY3AtVmM5SE1oNnktZ3JwY0d1ay1FUVY2TG1ZMkpNbzFDbVk1Wko0UTdLbHRsVWdRT2xNSkR5X29aNWwyQmxZMFlyN0pJRHZFZEVydGJ6R09LcGtXNWo2STRPbFFRRXB4dXFZN0VI?oc=5"
+    ],
+    [
+     "Breece Hall totals 108 scrimmage yards in Week 10 - Yahoo Sports",
+     0.3,
+     "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSjYzZmlBeWc4Q19udEdfUXhTcmxDV2gtdWh3WWFQaEt2MnVDSS1DM092eWxaYl9uaGRrcFV3TzFwcmc5azFfYnZUWlVsTl9aTnpJVHNLc1ZpR0FRdHZuQkMzbjBJN3RIdWpCUXNBMV9nZVlORFM1Nk1WdldMOTBOOVI3ejVkNjNh?oc=5"
+    ],
+    [
+     "Breece Hall Tops 100 scrimmage yards in Week 10 - Fantasy Footballers Podcast",
+     0.3,
+     "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTXBPbFhpeV9jc1JDRDdJMnJEeFlya0dfX3Y4djRUalRvYkdBdC1MekxaaUNXNDVrVFhVaE1sQVktbml0TjF1WDFfS1JDc2FZVjhSUWNlV3ptUGVHM3RSUVZNbzdtSlgyMG9aV1I4LVZ4M0hSbXhZeHRLTGI4dVRPRmxUQ1JCU09HNmEtLTRnNDhRT1lqX1hwMU01U2c1M1U?oc=5"
+    ]
+   ],
+   "articles": [
+    {
+     "title": "Week 11 Fantasy Football Running Back Start \u2018Em, Sit \u2018Em: Jonathan Taylor vs. Breece Hall - Sports Illustrated",
+     "score": 0.0,
+     "source": "Sports Illustrated",
+     "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY1JMTDJZTlFRd0RvTV8xTkprc2ZuUjdzY3k3ZnJDbDh1TkVSOUlIdFZqVW9DYXcwQUU2N21Za2ZPWjNZMVdsX3U5ZHp4NTQzMHhuWVJzTFpaX24waW83VGtVLW1KbzBYT0tHOW0tS294OWF2SkJfbVhXdnQzZ0N4NHlHRGlfdjUxdk9TQXhJak8xd1FJcjNPTnJEZXFSZnU0S2ZhTU5MU2hXRVNqUnpKNWNOTllva3NmRnlkOVhsRDhxZEVQNERIa2hOV2o?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T14:14:49+00:00"
+    },
+    {
+     "title": "Breece Hall - FTN (For the Numbers)",
+     "score": 0.0,
+     "source": "FTN (For the Numbers)",
+     "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9XcUlzaFV3NktMOXFxZDlUczJhM19qSGR5ZFRZdGVtOWtJRWM2NjlTQXlKQTVIcjIwRWxJS2o1VllnUWRhT1U1aElsdDNnVk85SmtUeC0ta0M?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T05:51:04+00:00"
+    },
+    {
+     "title": "Jets Running Back Breece Hall Reacts After Significant Career News - Heavy.com",
+     "score": 0.05,
+     "source": "Heavy.com",
+     "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNSTBGQlYyQkxIWktvUjc4em4tSS12OWtwalh6MzJuVXR6cHUyc29BQ08xbXdaUlJ3X3JDUm5Hdm1mbEl1eENBdjFLRWhlTVdUeEEyT1RuZlk1dzZOSUFTU1hmOWY4MHlfTktFckFMR2ZHWXk1SHVhakpFS0wxZkdOSFNaOGczMGFPWnR4Tk1DSDB0Zw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T18:41:23+00:00"
+    },
+    {
+     "title": "Breece Hall or Cyrus Allen: Who Should I Start in Week 11? Fantasy Football - RotoBaller",
+     "score": 0.0,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNb3c0VXhZS1cwNVJ2R1R4ZHdxR2R1amxCeWNfeEdkYnJNdHZsYXkwWWtNci1ybHdpbE5GQ0RCUm0wMTdPci1KNEMzRXdRMzZPX20zekNOVzZCUHp4amxBUkg3Wi00VDk5WWVnZ2FJVlFOOG9PRzVWN1dnUEU4OTdwd3JubG5TWGZaTmpkVjk3bUZtSkdEX3A2T0trX1pMMFU1bTBCZXdTYW9wNGp4QmRN?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T16:49:30+00:00"
+    },
+    {
+     "title": "Breece Hall or Kaelon Black - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5hMGtPT3Frd05QSWNLOFVsak0zOF9sVjBpSk1ZblBuSnpWVGN4RVF3R240ODdwTEJwLVFQWlVCZ0RYOVVaR2hyS2tWZTBMUWV3a2lHMDBpU1IxU1dTOXhHcThsTGlYQ2tWUFo0RmRMSjdyakh6NjRjbnVR?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T16:32:03+00:00"
+    },
+    {
+     "title": "Breece Hall - Fantasy Football Risers, Breakouts for Week 11 (2026) - NFL News - RotoBaller",
+     "score": 0.4,
+     "source": "RotoBaller",
+     "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOaWR5QkNGZTlUT1lrMmEzUk9RUDRIZFhoWk5PWG9lOUF3ak96ejVreGFNbnpicUVOeUYtY3AtVmM5SE1oNnktZ3JwY0d1ay1FUVY2TG1ZMkpNbzFDbVk1Wko0UTdLbHRsVWdRT2xNSkR5X29aNWwyQmxZMFlyN0pJRHZFZEVydGJ6R09LcGtXNWo2STRPbFFRRXB4dXFZN0VI?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T15:20:21+00:00"
+    },
+    {
+     "title": "New York Jets Make Announcement on RB Breece Hall After Bills Loss - Yahoo Sports",
+     "score": 0.0,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeWlMOGVnWEtXTXBXUjEtcXA1bmJIbEYwcGlSTUJNYWw0QlY5ZWRNZkctMmpyOFlMTDZwMnVGN3hWbkFaMDZuU1RBb3FBMFI2Z2JSbnRaVW4zanhPMU55YVFJX0RoX1ozM2w3U3BlV2p1N096NFdpSkljMFlTMm1wOE5BSDBicVJ6?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T20:10:05+00:00"
+    },
+    {
+     "title": "Breece Hall or Tyler Shough - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBOYTF4ZFh5d3lRM2JmSTJKSGQ5NS05TWxIYk13a245dk5oQ2ZRbWxoYmk5dGRXUUw2V0ZSdkNFc0FsX2pFUEkyRUZZN0ZCUlc5Vkw3WnRDd1Jfb0ZNMUJZbVlsU041M0VTMXZlQ1Vtd2psaFBPN0x6ZW9B?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T16:57:57+00:00"
+    },
+    {
+     "title": "Breece Hall or Aaron Jones Sr. - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1KZ3RlMmVVaXRGWTNfY25YdUVBVDNvdE8zZXNMSk1BQTRHZEpqVEdZUUVyRWtpSmJadE5hcDBzRzEwLUY1NzJWNGNBdE55ejJYMTR6S1JPam5vNmh2bUVVNTFYZ1ZtN1B0Y1p1ajFxWHNlX3BZNWVSZVBOVV8?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T11:24:46+00:00"
+    },
+    {
+     "title": "Breece Hall totals 108 scrimmage yards in Week 10 - Yahoo Sports",
+     "score": 0.3,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPSjYzZmlBeWc4Q19udEdfUXhTcmxDV2gtdWh3WWFQaEt2MnVDSS1DM092eWxaYl9uaGRrcFV3TzFwcmc5azFfYnZUWlVsTl9aTnpJVHNLc1ZpR0FRdHZuQkMzbjBJN3RIdWpCUXNBMV9nZVlORFM1Nk1WdldMOTBOOVI3ejVkNjNh?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T01:03:00+00:00"
+    },
+    {
+     "title": "Breece Hall or Josh Jacobs | Who Should I Start Week 11 - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA4Sjl0cmZQN1E5YjR1MFloTEItRV9JamFodmFNTEtuRHlJUnphZjhnNTc2OEltRlFjdUdsR1gtczl3TlhUWGx2N0syam9pZDh3akZROEtWMUhQRkJCRG9KYTBLOEYyTjVJamZwem1oeFJUejRsSUEzbw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T00:27:36+00:00"
+    },
+    {
+     "title": "Cade Klubnik, Garrett Wilson and Breece Hall on NFL debut, Jets\u2019 offense in loss to Bills - BVM Sports",
+     "score": 0.0,
+     "source": "BVM Sports",
+     "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQY3REOHpLa0w5SXA2Rm5uRXRRdXBMM3BTNEhUazF0TkxHMkphSVllZ2h6NHlsYXJpQjRxLTJOSUlLRTliQ1JxdzViTk5jMVkzb21LQUpSVXExbkd4MW9DV09hUjRhd3UtNkEwZF9lSlhKek42b0Y1SnY1SEk1eXVadVFRb295UTZyVHh0bFhWeWUtOEFtNmpNZkV2ckdiQ0pjRVRDWllSbUJfVjdMLTVYLTlxMnRMcGZxUVIzeg?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T23:36:38+00:00"
+    },
+    {
+     "title": "Breece Hall Tops 100 scrimmage yards in Week 10 - Fantasy Footballers Podcast",
+     "score": 0.3,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNTXBPbFhpeV9jc1JDRDdJMnJEeFlya0dfX3Y4djRUalRvYkdBdC1MekxaaUNXNDVrVFhVaE1sQVktbml0TjF1WDFfS1JDc2FZVjhSUWNlV3ptUGVHM3RSUVZNbzdtSlgyMG9aV1I4LVZ4M0hSbXhZeHRLTGI4dVRPRmxUQ1JCU09HNmEtLTRnNDhRT1lqX1hwMU01U2c1M1U?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T22:13:13+00:00"
+    },
+    {
+     "title": "New York Jets running back Breece Hall takes quarterback Geno Smith's short pass 16 yards - NFL.com",
+     "score": 0.05,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZGpsTWtpb0plc0szYnF4UFg0RVhyNGNTRHR3enNrUUtfeURuLUlXdHVPZ0F2aVlKWmk3eFduSDc2TnR4dUFPMUdDdWlwNU9hRVRUM0xNQmczUndLMVhqZTFjTjJpdVhENWd4T2hqVmtRYWt6RHd1LU5pOWlhc2hGUUhQNA?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T18:52:07+00:00"
+    },
+    {
+     "title": "NFL picks: Breece Hall prop among SportsLine expert PropBetGuy's best bets for Week 10 of 2026 season - SportsLine",
+     "score": 0.1,
+     "source": "SportsLine",
+     "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPOGJRQUp4QXBrbWtxQVh5OXliRWhwamtOZjZ5WGQ0NTRNQXFXQ1NrcTdON0YzaDJUaHBkRkxjYkVVQ3Z1Y1FkY2ctR2F6SEUwZWhSUUNWNmhOMHlyVVMxTldUeGlvMmJyTEQ1eUQ3Y1JMNEJtOE84RkpFcVFBVWR2TmxJNkViZEdlel9naVlBNk1Dbm9sNEgyTTZYeWhYaU5OWTFRSnZDSDF6X3NRZVU1clEyNW5BdHBaR1dUSHIyeHRORTVReHA5UGV6N2xTWXVvd2c?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T15:55:34+00:00"
+    }
+   ],
    "mult_injury": 1.0,
    "mult_matchup": 0.943,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
+   "mult_sentiment": 1.005,
    "base": 12.958,
-   "adj": 12.22,
+   "adj": 12.28,
    "trending_adds": 0,
    "slot": "FLEX",
    "notes": [],
@@ -5442,14 +6036,151 @@
    "def_ratio": null,
    "implied": null,
    "weather": null,
-   "sentiment": 0.0,
-   "n_articles": 0,
-   "headlines": [],
-   "articles": [],
+   "sentiment": -0.11,
+   "n_articles": 15,
+   "headlines": [
+    [
+     "Why Has Tucker Kraft\u2019s Role Shrunk? Insider Weighs In - Yahoo Sports",
+     -0.4,
+     "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNVhxYjlEM2NFSUxQeXJRaDZWZU5QOU5fYjZmRUlicFBCWlcteHJLMW9sdmpnaTZUMzBlWkFROEFHWi1ma3RWZC01eHlEY1UxSENZeU9ZWXZzYzVRQjV2d2Z2T29PMmJDSVVNZ2FNd2Zuc29hblhMdVdnak0zSW5CLVlSYw?oc=5"
+    ],
+    [
+     "Tucker Kraft doesn\u2019t look right - Yahoo Sports",
+     -0.4,
+     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBHSzRwb1p3Rjc0RlY5SjczV3lwYXZGT0xiSU5yOFdzS3ZXQVJfa1dpMzZjMDVveXNaNV90dzROV3ljM3dfME96QlpDcDUzVmkzVkNhaGtsX3l3YUhBczZwR21KYnNGRzBmYjlYMkVyTUx3c1FTLTBYWkF1LUZRUGs?oc=5"
+    ],
+    [
+     "Kraft catches just one pass in loss to Vikings - NBC Sports",
+     -0.3,
+     "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlBCTjBkSVJoVTc5Y00wUXJWMEpTMXBLSWlJQk9kOEluQ1NZR3RXVGl6NlRGQm15QUNlcEpoWWZLWlQ3ME1CYW10RzF6M3NsbFYxYkxDOThqRUJUYkpQOERDMGJ2UTVBMmpUQmVhcl92ZUViLVRteDRvbVFEVXpkOWVRYXZRYnh3RHBOUmg0dUNyOEdpaEg1alZzbzNyV3d6TU9SSHM0UHV3TUt0RlBzejl3?oc=5"
+    ]
+   ],
+   "articles": [
+    {
+     "title": "Why Has Tucker Kraft\u2019s Role Shrunk? Insider Weighs In - Yahoo Sports",
+     "score": -0.4,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNVhxYjlEM2NFSUxQeXJRaDZWZU5QOU5fYjZmRUlicFBCWlcteHJLMW9sdmpnaTZUMzBlWkFROEFHWi1ma3RWZC01eHlEY1UxSENZeU9ZWXZzYzVRQjV2d2Z2T29PMmJDSVVNZ2FNd2Zuc29hblhMdVdnak0zSW5CLVlSYw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T18:13:15+00:00"
+    },
+    {
+     "title": "Tucker Kraft Fantasy Outlook & Stats - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9WeHR6NUQwNlJWMWJOYXVYWG8zX3VWc0hkb1VtTlhIQWMzdXNreE9iamJtRVRyaVFFOTAybFhSaGY2SF90aEJYS2x3OVJFc3B0MGRkNWFwbEFROEF1bWNFc0NZUEpoZw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-19T10:28:40+00:00"
+    },
+    {
+     "title": "Should I Trade (Half PPR) Emmett Johnson for Tucker Kraft (2026)? - FantasyPros",
+     "score": 0.0,
+     "source": "FantasyPros",
+     "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQRkY1V3RRb2poODhxRTZRNmYxeFZ5RUlvaGJpa0p1a1NCSlNPcGZFdERuUnBkdE03VmNldy0wYTdJeWZobnZGVEN2a0VINVlpd0MtRXVyY3FuYl8yQlpVZUVUY2ZaRHZORHZkRlU2U3ZVaEc0S1NQODFlTGlveUlzSVBLZEtPdzFsZFE?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T18:35:07+00:00"
+    },
+    {
+     "title": "Aaron Jones Sr. or Tucker Kraft | Who Should I Start Week 11 - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9sRzFnMHhTWG1vU0lJSUpPblZxRG9SYkVPR2tiR3huM3dqbVA5VnFkeEU2NWVPeGx0OGZFS296NUo0OEt6NWRhYWhFaUYxbzllaklrTVN6cHZFMWNlVkc4MkVWRFd4M19XWlBWZTV5NktRbi1BN0wwNVRIQlNaUQ?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-18T17:05:46+00:00"
+    },
+    {
+     "title": "Tucker Kraft doesn\u2019t look right - Yahoo Sports",
+     "score": -0.4,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBHSzRwb1p3Rjc0RlY5SjczV3lwYXZGT0xiSU5yOFdzS3ZXQVJfa1dpMzZjMDVveXNaNV90dzROV3ljM3dfME96QlpDcDUzVmkzVkNhaGtsX3l3YUhBczZwR21KYnNGRzBmYjlYMkVyTUx3c1FTLTBYWkF1LUZRUGs?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T23:49:40+00:00"
+    },
+    {
+     "title": "Top Week 11 Fantasy Football Buy-Low Targets: Kraft and Tate - SportsGrid",
+     "score": 0.15,
+     "source": "SportsGrid",
+     "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeUFXYVZPSy1vYmpQQ2E4dEQwbVRDMmZ0RXUxTUxaQ1pGVlVXblhKNGs4MWpSQmkwYzJwRTg1cTRDNk5KV2NCWGpISE5SdG5IcHJMOVlNdUxOVTBQRmtBRXFMa1BORFVZRFJwTkU4b1NucDBkLWRSUjBPLWtHV0FaWVR1Z19nb1ctMnU5OHFiSnpRd0VQWVllbXJjTFk?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T05:27:29+00:00"
+    },
+    {
+     "title": "The schedule should keep Tucker Kraft from total fantasy panic - Yahoo Sports",
+     "score": 0.05,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOTUFRc25XTGh1RTZDdHRlRWpqZVFyNnFzSVNOUmk2WmJXb21mUXIxNGZLNWRxREI3OEpQZGJYaklPMmtqTEpHT2JoU2JFWk1mek1ETFZDSzZneFJfbVRtSkpZbEE5YXhQTmRJNXB1M2NvNXpfN1FBSW9GMkJRdnN2eXBLZWY2ZWZ6QUNRUy1MbnZYX1RFeGk3Zjc0U3NFTWxlMU5BZm43NkF5TXdR?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-17T00:46:00+00:00"
+    },
+    {
+     "title": "Kraft catches just one pass in loss to Vikings - NBC Sports",
+     "score": -0.3,
+     "source": "NBC Sports",
+     "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSlBCTjBkSVJoVTc5Y00wUXJWMEpTMXBLSWlJQk9kOEluQ1NZR3RXVGl6NlRGQm15QUNlcEpoWWZLWlQ3ME1CYW10RzF6M3NsbFYxYkxDOThqRUJUYkpQOERDMGJ2UTVBMmpUQmVhcl92ZUViLVRteDRvbVFEVXpkOWVRYXZRYnh3RHBOUmg0dUNyOEdpaEg1alZzbzNyV3d6TU9SSHM0UHV3TUt0RlBzejl3?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T09:11:05+00:00"
+    },
+    {
+     "title": "Tucker Kraft Shut down by Minnesota - Fantasy Footballers Podcast",
+     "score": -0.3,
+     "source": "Fantasy Footballers Podcast",
+     "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPME83clp3bGxRZ09TNUEwRlZGSHE2SVZ3a0FrQ0VUQl9HTVY5Y1U0N2VCajRySk4xSExqdjJzS0VwSDloRllGVGhRczJFdlI5Wi1OY3cyUTRiNDhOQ1k5UEVpckJqVmpZUGZ5ejJacmRaaWdLU0c3d0Q0RW16bUp4NkRWd1N6bnptbmVqRWFSOA?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T07:32:10+00:00"
+    },
+    {
+     "title": "Tucker Kraft News: Shut down by Minnesota - RotoWire",
+     "score": -0.3,
+     "source": "RotoWire",
+     "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTUdpNklUSkF4TWpqNU9tYS11ZUVXbGljM0RrTlNfQVB2VlVQVnVGcGtZLVNHd2FIdE5UcmNBQm5TdVZKU01RWVdwNE9QTWxvRDJLNC1vNU0tTXMxSC1nejFpSENjQlpKcXlyaHZLS0JGTG96T2NWRlhZWXUzTU5mbDRBX21xZkJJZmg5TF9mcFo0RGtsdHc?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-16T00:53:08+00:00"
+    },
+    {
+     "title": "Tucker Kraft has quiet outing in Week 10 - Yahoo Sports",
+     "score": -0.15,
+     "source": "Yahoo Sports",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQRVNrcHQwQzU3STRPOUo4UHVERzNjcmFmY1RBekRYV2tqWnFNRHA5SC1xUHZDTU9xWWQxVHdnSHJHZGJDMkNCRHE2OWNFVTB4Y3hJX1E1RzR6VjJMU2JnTi12WC1ZWDg5SWRWdU9ldXpTdHhpVXpEbVY5MGZjMXROSzdwMWVRdw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T23:08:13+00:00"
+    },
+    {
+     "title": "Tucker Kraft quiet in Week 10 loss - FantasyPros",
+     "score": -0.15,
+     "source": "FantasyPros",
+     "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUkNWUzNnOU1uMFFzX1R4X2gwOEN0VEozWmwwb0w5Z05QRW94bTcxTkxiU1d1ZGNBaHJjNndnclVuUVdGeVpPNmcwVFZOZDh6aVp3bXhIVU9Yay1PLWN1MjRRWklxUDRzczJDc2Q4SVNtaDUxRDVfOW1jT19ReG52U0U0Q3BxUdIBiwFBVV95cUxPMjNmNkZBLWFWUUVZUjZrUVVHdzAtRVUzanZRMzNsaDJIdkFZdTRVb2NtNXZCal9lRkFFT3ZlcHVoT2s0UktXZElDWnkzMkViRWJXbGk0VUNqR3RBTE16TjlZXzh2VG5hd1BpSnYteXZ4NjBzQWNSclQ2SEgxZUxkUUVxenJ3dDFLRTQ0?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T23:00:44+00:00"
+    },
+    {
+     "title": "\u2018He\u2019s Just Not the Same This Year,\u2019 \u2018Has Not Been Playing Up to His New Contract\u2019 \u2014 Fans Join Ex-Packers QB in Pointing Tucker Kraft\u2019s Mistake vs. Vikings - Pro Football Network",
+     "score": -0.3,
+     "source": "Pro Football Network",
+     "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOQXgzWnJuaEU4dGJVSUx4aklVS0JkY1hzeUhsVk5XOV9GVmdnMG5pUUdfQmFoaDFiT0t1azZlcV83bEI5R3Jyd0pISkx5elZ4YkFpQ0lyc0RzT2lxUGhSczlkVnJUU0VkWW5WalFEUkVTSzR5Y085NG9rVm9TbDQ2OXlkcw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T21:54:17+00:00"
+    },
+    {
+     "title": "Green Bay Packers quarterback Jordan Love darts tight end Tucker Kraft for an 18-yard gain up the seam - NFL.com",
+     "score": 0.15,
+     "source": "NFL.com",
+     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNNXFSdnJHY3VRZUtRekVXVmdmX2sxMUJUSnNEejJJbjNQQjZJaVFpbE5IYTFzcUZlWWd4enFzV3NBVG4xSXNjYTBaQmpkaWtKRHo0TlRSZVpVYjZtczZuZzctdVlhdk1HVlF3X1ptQXZrRXVBSXVtTzVWRzdsbDNDQw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T20:30:27+00:00"
+    },
+    {
+     "title": "Mike Gesicki or Tucker Kraft - FantasySP",
+     "score": 0.0,
+     "source": "FantasySP",
+     "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1ReEdNOW5OcENfNE9CS2QxZ0xHNmNWTW5RMXV0VGkza0JnaFBDanNmc3poNzBSaUZaS2VnaTZnOHp0MDhSdjRsdDc4cVFMOTFCbHRNTWdjeW5lY2ZXVTR1Z2tFSEZqWC1Tb21GQmItX284aFVVclg1aThIcw?oc=5",
+     "scorer": "llm",
+     "published": "2026-11-15T19:51:10+00:00"
+    }
+   ],
    "mult_injury": 0.0,
    "mult_matchup": 1.0,
    "mult_weather": 1.0,
-   "mult_sentiment": 1.0,
+   "mult_sentiment": 0.991,
    "base": 2.49,
    "adj": 0.0,
    "trending_adds": 0,
@@ -5543,13 +6274,13 @@
  "waiver_recs": [
   {
    "player_id": "12522",
-   "weekly_gain": 8.92,
+   "weekly_gain": 8.77,
    "ros_gain": 21.76,
    "drop_id": "9484",
    "bid": "$6 of $40",
-   "score": 19.8,
+   "score": 19.65,
    "bid_detail": {
-    "value": 74.2,
+    "value": 74.0,
     "horizon": 3,
     "rivals": 1,
     "teams": 11,
@@ -5721,13 +6452,6 @@
   "13346",
   "9484"
  ],
- "total": 115.8,
- "warnings": [
-  "[warn] news failed for Bucky Irving: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Bucky+Irving%22+NFL+when%3A7d&hl=en-US&gl=US&ceid=US:en",
-  "[warn] news failed for Jared Goff: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Jared+Goff%22+NFL+when%3A7d&hl=en-US&gl=US&ceid=US:en",
-  "[warn] news failed for Breece Hall: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Breece+Hall%22+NFL+when%3A7d&hl=en-US&gl=US&ceid=US:en",
-  "[warn] news failed for Tucker Kraft: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Tucker+Kraft%22+NFL+when%3A7d&hl=en-US&gl=US&ceid=US:en",
-  "[warn] news failed for Baker Mayfield: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Baker+Mayfield%22+NFL+when%3A7d&hl=en-US&gl=US&ceid=US:en",
-  "[warn] news failed for Joe Milton: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Joe+Milton%22+NFL+when%3A7d&hl=en-US&gl=US&ceid=US:en"
- ]
+ "total": 116.14,
+ "warnings": []
 }
