@@ -1,0 +1,17 @@
+{
+ "HTTPError: 406 Client Error: Not Acceptable ": 6,
+ "HTTPError: 429 Client Error: Too Many Requests ": 18,
+ "HTTPError: 402 Client Error: Payment Required ": 53,
+ "HTTPError: 403 Client Error: Forbidden ": 294,
+ "ReadTimeout: HTTPSConnectionPool(host='www.wthr.com', port=443): Read timed out.": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.wcnc.com', port=443): Read timed out.": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.sacbee.com', port=443): Read timed ou": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.kansas.com', port=443): Read timed ou": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.kansascity.com', port=443): Read time": 1,
+ "HTTPError: 404 Client Error: Not Found ": 9,
+ "ReadTimeout: HTTPSConnectionPool(host='www.miamiherald.com', port=443): Read tim": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.dunkelindex.com', port=443): Read tim": 2,
+ "ReadTimeout: HTTPSConnectionPool(host='www.thv11.com', port=443): Read timed out": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.kare11.com', port=443): Read timed ou": 1,
+ "ReadTimeout: HTTPSConnectionPool(host='www.cbs19.tv', port=443): Read timed out.": 1
+}
