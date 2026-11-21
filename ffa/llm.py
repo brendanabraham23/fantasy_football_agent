@@ -66,9 +66,9 @@ def key(model: str, player: str, title: str) -> str:
     return "|".join((model, player.lower(), re.sub(r"\W+", "", title.lower())))
 
 
-def _call(cmd: str, model: str, prompt: str, timeout: int) -> dict:
+def _call(cmd: str, model: str, prompt: str, timeout: int, system: str = SYSTEM, schema: dict = SCHEMA) -> dict:
     p = subprocess.run([cmd, "-p", "--model", model, "--tools", "", "--strict-mcp-config", "--setting-sources", "",
-                        "--system-prompt", SYSTEM, "--output-format", "json", "--json-schema", json.dumps(SCHEMA)],
+                        "--system-prompt", system, "--output-format", "json", "--json-schema", json.dumps(schema)],
                        input=prompt, capture_output=True, text=True, timeout=timeout, cwd=str(http.CACHE_DIR))
     res = json.loads(p.stdout)
     if res.get("is_error"):

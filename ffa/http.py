@@ -35,6 +35,19 @@ def get(url: str, params=None, ttl: int = 0, timeout: int = 20) -> bytes:
     return resp.content
 
 
+def post(url: str, data, headers: dict | None = None, ttl: int = 0, timeout: int = 20) -> bytes:
+    """POST form data. If ttl > 0, responses are cached on disk (keyed by url + body) for ttl seconds."""
+    path = _cache_path("POST " + url + json.dumps(data, sort_keys=True, default=str))
+    if ttl and path.exists() and time.time() - path.stat().st_mtime < ttl:
+        return path.read_bytes()
+    resp = _session.post(url, data=data, headers=headers, timeout=timeout)
+    resp.raise_for_status()
+    if ttl:
+        CACHE_DIR.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(resp.content)
+    return resp.content
+
+
 def get_json(url: str, params=None, ttl: int = 0, timeout: int = 20):
     return json.loads(get(url, params=params, ttl=ttl, timeout=timeout) or b"null")
 

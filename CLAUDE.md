@@ -17,6 +17,7 @@ python -m ffa ui --username USER       # local web UI at http://127.0.0.1:8000
 python -m ffa calibrate [--username USER] [--seasons 2025,2026] [--weeks 1-4]  # -> reports/calibration/
 python -m ffa scout-data               # -> reports/scout/data.json for the Scout artifact (nflverse + latest run)
 python -m ffa export --username USER   # -> reports/league.json: every UI endpoint's JSON, for Scout
+python -m ffa narratives --username USER [--weeks 6-10] [--archive DIR]  # -> reports/narratives/ (docs/narratives.md)
 ```
 
 `username` is blank in `config.json`, so live runs need `--username` (ask the user for it).
@@ -43,6 +44,7 @@ plus a per-run copy of snapshot/report/CSV in `reports/archive/<timestamp>_weekN
 | `lineup.py` | Hindsight best-lineup solver used by `ledger.py` (separate from `ranker.optimal_lineup`). |
 | `ledger.py` | Values each transaction as (best lineup with move) - (best lineup with move undone), per week held. |
 | `calibration.py` | Sleeper projection vs. recent/season-average/blend predictors against actual points: bias, MAE, RMSE, Spearman, slope, buckets, best blend weight. |
+| `narratives.py` | Backtest of expert calls in article bodies: archived pre-kickoff articles -> Google News link decode -> trafilatura text -> per-player excerpt -> Claude reads each call's lean -> fit vs actual points. Workflow `narratives.yml` (manual). Details in `docs/narratives.md`. |
 | `scout.py` | Data file for the Scout artifact: per-player weekly log, usage, next matchup, injuries, baseline projection, merged pipeline view. nflverse only. |
 | `export.py` | Calls the UI app in-process (TestClient) and dumps summary, matchup, roster, week results (actual points for every player, free agents included), runs, news, waiver pool + top what-ifs and player pages to `league.json`, plus a Sleeper id -> Scout id map. |
 | `snapshot.py` | `Result` -> JSON snapshot for the UI; `capture()` tees stdout to collect run logs and `[warn]` lines. |

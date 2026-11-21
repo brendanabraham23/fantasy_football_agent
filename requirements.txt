@@ -3,6 +3,7 @@ pandas>=2.0
 scipy>=1.10
 feedparser>=6.0
 vaderSentiment>=3.3.2
+trafilatura>=2.0
 pytest>=7.0
 fastapi>=0.110
 uvicorn>=0.29

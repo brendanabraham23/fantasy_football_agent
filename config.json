@@ -55,6 +55,22 @@
 
   "eval": {"max_adds": 3},
 
+  "narratives": {
+    "weeks": "6-10",
+    "max_articles_per_player": 15,
+    "skip_titles": ["News, (Rankings|Stats)", "Rankings, Projections", "Stats,? (and |& )?News", "Outlook & Stats", "Stats, Props", "Player Profile",
+                    "Fantasy (Football )?(Profile|Outlook) \\|", "Game Logs?", "Career Stats"],
+    "fetch_workers": 3,
+    "delay": 0.5,
+    "cache_days": 30,
+    "excerpt_chars": 1500,
+    "min_pre": 1.0,
+    "min_abs_lean": 0.0,
+    "bootstrap": 4000,
+    "weights": [0, 0.04, 0.08, 0.15, 0.25, 0.5],
+    "llm": {"model": "sonnet", "command": "claude", "workers": 5, "timeout": 300, "retries": 2}
+  },
+
   "archive_dir": "archive",
 
   "export": {"pool_rows": 150, "whatif_top": 40},
