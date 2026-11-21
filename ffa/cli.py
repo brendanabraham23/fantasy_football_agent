@@ -4,6 +4,7 @@
     python -m ffa ledger --username <sleeper_username>   # transaction ledger
     python -m ffa ui --username <sleeper_username>       # local web UI
     python -m ffa calibrate [--seasons 2025,2026]        # projection calibration report
+    python -m ffa narratives --username <u> [--weeks 6-10]  # backtest expert calls in archived articles
 """
 from __future__ import annotations
 
@@ -58,6 +59,32 @@ def calibrate_main(argv) -> int:
                               args.league_id or cfg.get("league_id"), args.ppr)
     print(md.read_text())
     print(f"\nSaved {md} and {csv}")
+    return 0
+
+
+def narratives_main(argv) -> int:
+    ap = argparse.ArgumentParser(prog="python -m ffa narratives",
+                                 description="Backtest the expert calls inside archived news articles against actual points")
+    ap.add_argument("--username", help="Sleeper username (league scoring)")
+    ap.add_argument("--team-name")
+    ap.add_argument("--league-id")
+    ap.add_argument("--season", type=int)
+    ap.add_argument("--weeks", help="Range like 6-10 (default from config narratives.weeks)")
+    ap.add_argument("--archive", help="Archived runs folder (default <out>/archive)")
+    ap.add_argument("--config")
+    ap.add_argument("--out", default="reports")
+    args = ap.parse_args(argv)
+    cfg = pipeline.load_config(args.config)
+    username = args.username or cfg.get("username")
+    if not username:
+        ap.error("--username is required (or set 'username' in config.json)")
+    from . import narratives
+    lo, _, hi = (args.weeks or cfg.get("narratives", {}).get("weeks", "1-18")).partition("-")
+    md = narratives.run(username, args.team_name or cfg.get("team_name", ""), args.league_id or cfg.get("league_id"),
+                        args.season, list(range(int(lo), int(hi or lo) + 1)),
+                        args.archive or f"{args.out}/{cfg.get('archive_dir', 'archive')}", cfg, args.out)
+    print(md.read_text())
+    print(f"\nSaved {md.parent}/")
     return 0
 
 
@@ -136,6 +163,8 @@ def main(argv=None) -> int:
         return ui_main(argv[1:])
     if argv and argv[0] == "calibrate":
         return calibrate_main(argv[1:])
+    if argv and argv[0] == "narratives":
+        return narratives_main(argv[1:])
     if argv and argv[0] == "scout-data":
         return scout_main(argv[1:])
     if argv and argv[0] == "export":

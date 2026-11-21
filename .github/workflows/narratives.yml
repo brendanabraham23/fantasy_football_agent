@@ -1,0 +1,88 @@
+# One-off backtest: fetch the articles behind archived runs' headlines, have Claude read each article's call on the
+# player, and test those calls against actual points (ffa/narratives.py, docs/narratives.md).
+# Writes reports/narratives/ to the `data` branch. Manual only. It doesn't share predict's concurrency group (a long
+# run there would cancel queued predict runs); instead it re-clones `data` just before committing.
+# Repository variables: SLEEPER_USERNAME (required), SLEEPER_LEAGUE_ID (optional).
+# Secret: CLAUDE_CODE_OAUTH_TOKEN (required here: the article reads are the point of the run).
+name: narratives backtest
+
+on:
+  workflow_dispatch:
+    inputs:
+      weeks:
+        description: NFL weeks to backtest, e.g. 6-10 (blank = config narratives.weeks)
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: narratives
+  cancel-in-progress: false
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - run: npm install -g @anthropic-ai/claude-code
+
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/ffa
+          key: ffa-narratives-${{ github.run_id }}
+          restore-keys: ffa-narratives-
+
+      - name: Check out the data branch
+        env:
+          URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: git clone -q --depth 1 --branch data "$URL" data
+
+      - name: Run backtest
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          SLEEPER_USERNAME: ${{ vars.SLEEPER_USERNAME }}
+          SLEEPER_LEAGUE_ID: ${{ vars.SLEEPER_LEAGUE_ID }}
+          WEEKS: ${{ inputs.weeks }}
+        run: |
+          test -n "$SLEEPER_USERNAME" || { echo "::error::Set the SLEEPER_USERNAME repository variable"; exit 1; }
+          test -n "$CLAUDE_CODE_OAUTH_TOKEN" || { echo "::error::Set the CLAUDE_CODE_OAUTH_TOKEN secret"; exit 1; }
+          args=(--username "$SLEEPER_USERNAME" --out data/reports)
+          [ -n "$SLEEPER_LEAGUE_ID" ] && args+=(--league-id "$SLEEPER_LEAGUE_ID")
+          [ -n "$WEEKS" ] && args+=(--weeks "$WEEKS")
+          python -m ffa narratives "${args[@]}"
+          cat data/reports/narratives/narratives.md >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: narratives
+          path: data/reports/narratives/
+
+      - name: Commit to the data branch
+        env:
+          URL: https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git
+        run: |
+          for attempt in 1 2 3; do
+            rm -rf fresh && git clone -q --depth 1 --branch data "$URL" fresh
+            mkdir -p fresh/reports && rm -rf fresh/reports/narratives && cp -r data/reports/narratives fresh/reports/
+            cd fresh
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add reports/narratives
+            git diff --cached --quiet && { echo "No changes"; exit 0; }
+            git commit -qm "Narrative backtest $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push -q origin HEAD:data && exit 0
+            cd ..; sleep 20
+          done
+          exit 1
