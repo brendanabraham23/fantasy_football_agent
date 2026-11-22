@@ -1,5 +1,5 @@
 # Brendobendo - Week 11, 2026
-_Refounders Football League   - generated Sun Nov 22 09:17 PM_
+_Refounders Football League   - generated Sun Nov 22 10:03 PM_
 
 ## Recommended lineup
 
@@ -78,15 +78,15 @@ _On IR/taxi: Malik Willis (IR)_
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Cam Ward | QB | TEN | @ DAL | 27.7 | 29.4 | +8.7 | +21.8 | - | Tucker Kraft | $6 of $40 |
-| Joey Slye | K | TEN | @ DAL | 10.6 | 13.5 | +3.1 | +10.7 | 103941 | - | $11 of $40 |
-| Cairo Santos | K | CHI | vs NO | 10.5 | 10.0 | +3.1 | +9.0 | 235977 | - | $11 of $40 |
-| Jason Sanders | K | NYJ | @ LAC | 9.7 | 14.7 | +2.3 | +11.0 | 105165 | - | $10 of $40 |
+| Joey Slye | K | TEN | @ DAL | 10.6 | 13.5 | +3.1 | +10.7 | 103464 | - | $11 of $40 |
+| Cairo Santos | K | CHI | vs NO | 10.5 | 10.0 | +3.1 | +9.0 | 231140 | - | $11 of $40 |
+| Jason Sanders | K | NYJ | @ LAC | 9.7 | 14.7 | +2.3 | +11.0 | 107350 | - | $10 of $40 |
 | Justin Herbert | QB | LAC | vs NYJ | 20.4 | 14.1 | +1.5 | +14.2 | - | Tucker Kraft | $5 of $40 |
-| Darren Waller | TE | CAR | vs BAL | 7.5 | 9.8 | +0.0 | +5.6 | 183555 | Tucker Kraft | $11 of $40 |
-| Fernando Mendoza | QB | LV | @ DEN | 10.1 | 5.1 | +0.0 | +6.4 | 109968 | Tucker Kraft | $7 of $40 |
-| Gunnar Helm | TE | TEN | @ DAL | 8.9 | 10.4 | +0.0 | +5.5 | 127519 | Tucker Kraft | $11 of $40 |
-| Mike Gesicki | TE | CIN | @ WAS | 10.0 | 7.5 | +0.0 | +4.7 | 146092 | Tucker Kraft | $10 of $40 |
-| Samaje Perine | RB | CIN | @ WAS | 8.4 | 7.0 | +0.0 | +3.6 | 169540 | Tucker Kraft | $7 of $40 |
+| Darren Waller | TE | CAR | vs BAL | 7.5 | 9.8 | +0.0 | +5.6 | 182088 | Tucker Kraft | $11 of $40 |
+| Fernando Mendoza | QB | LV | @ DEN | 10.1 | 5.1 | +0.0 | +6.4 | 113120 | Tucker Kraft | $7 of $40 |
+| Gunnar Helm | TE | TEN | @ DAL | 8.9 | 10.4 | +0.0 | +5.5 | 124754 | Tucker Kraft | $11 of $40 |
+| Mike Gesicki | TE | CIN | @ WAS | 10.0 | 7.5 | +0.0 | +4.7 | 154408 | Tucker Kraft | $10 of $40 |
+| Samaje Perine | RB | CIN | @ WAS | 8.4 | 7.0 | +0.0 | +3.6 | 173772 | Tucker Kraft | $7 of $40 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
