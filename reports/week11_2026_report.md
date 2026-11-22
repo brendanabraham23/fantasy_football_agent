@@ -1,21 +1,21 @@
 # Brendobendo - Week 11, 2026
-_Refounders Football League   - generated Sun Nov 22 04:46 PM_
+_Refounders Football League   - generated Sun Nov 22 05:46 PM_
 
 ## Recommended lineup
 
 | Slot | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | QB | Jared Goff | QB | DET | vs TB | 22.4 | 16.4 | F (3/32) | 25.5 | Indoors | -0.11 (15) | - | **18.5** |
-| RB | James Cook III | RB | BUF | vs MIA | 19.1 | 18.8 | A (28/32) | 30.5 | 67F, wind 12mph | +0.25 (15) | - | **22.9** |
+| RB | James Cook III | RB | BUF | vs MIA | 19.4 | 18.8 | A (28/32) | 30.5 | 67F, wind 11mph | +0.25 (15) | - | **23.1** |
 | RB | Bucky Irving | RB | TB | @ DET | 18.4 | 24.8 | F (2/32) | 22.0 | Indoors | +0.10 (15) | - | **16.9** |
-| WR | Jalen Coker | WR | CAR | vs BAL | 12.9 | 5.5 | C (18/32) | 23.2 | 59F, wind 6mph, rain 14% | -0.07 (15) | - | **11.6** |
+| WR | Jalen Coker | WR | CAR | vs BAL | 12.9 | 5.5 | C (18/32) | 23.2 | 59F, wind 8mph | -0.07 (15) | - | **11.6** |
 | WR | Keenan Allen | WR | SF | vs MIN | 5.6 | 10.5 | F (5/32) | 25.0 | Neutral site (Estadio Banorte) - check manually | +0.12 (15) | - | **7.4** |
-| TE | Michael Mayer | TE | LV | @ DEN | 8.5 | 6.3 | A (30/32) | 15.0 | 38F, wind 7mph | +0.20 (15) | - | **8.3** |
-| FLEX | Breece Hall | RB | NYJ | @ LAC | 13.8 | 13.2 | B (21/32) | 19.2 | Indoors | +0.04 (15) | - | **13.2** |
+| TE | Michael Mayer | TE | LV | @ DEN | 11.1 | 6.3 | A (30/32) | 15.0 | 40F, wind 6mph | +0.20 (15) | - | **10.1** |
+| FLEX | Breece Hall | RB | NYJ | @ LAC | 13.9 | 13.2 | B (21/32) | 19.2 | Indoors | +0.04 (15) | - | **13.3** |
 | K | Chase McLaughlin | K | TB | @ DET | 8.6 | 11.0 | F (1/32) | 22.0 | Indoors | +0.01 (5) | - | **7.5** |
-| DEF | Buffalo Bills | DEF | BUF | vs MIA | 9.0 | 14.7 | - (-) | 30.5 | 67F, wind 12mph | +0.00 (0) | - | **12.8** |
+| DEF | Buffalo Bills | DEF | BUF | vs MIA | 9.0 | 14.7 | - (-) | 30.5 | 67F, wind 11mph | +0.00 (0) | - | **12.8** |
 
-Projected lineup total (adjusted): **118.9**
+Projected lineup total (adjusted): **121.1**
 
 Your current Sleeper lineup already matches the recommendation.
 
@@ -37,16 +37,16 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | James Cook III | RB | BUF | vs MIA | 19.1 | 18.8 | A (28/32) | 30.5 | 67F, wind 12mph | +0.25 (15) | - | **22.9** |
+| 1 | James Cook III | RB | BUF | vs MIA | 19.4 | 18.8 | A (28/32) | 30.5 | 67F, wind 11mph | +0.25 (15) | - | **23.1** |
 | 2 | Bucky Irving | RB | TB | @ DET | 18.4 | 24.8 | F (2/32) | 22.0 | Indoors | +0.10 (15) | - | **16.9** |
-| 3 | Breece Hall | RB | NYJ | @ LAC | 13.8 | 13.2 | B (21/32) | 19.2 | Indoors | +0.04 (15) | - | **13.2** |
-| 4 | Ashton Jeanty | RB | LV | @ DEN | 12.0 | 9.2 | B (22/32) | 15.0 | 38F, wind 7mph | -0.05 (15) | - | **10.2** |
+| 3 | Breece Hall | RB | NYJ | @ LAC | 13.9 | 13.2 | B (21/32) | 19.2 | Indoors | +0.04 (15) | - | **13.3** |
+| 4 | Ashton Jeanty | RB | LV | @ DEN | 12.2 | 9.2 | B (22/32) | 15.0 | 40F, wind 6mph | -0.05 (15) | - | **10.3** |
 
 ### WR
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Jalen Coker | WR | CAR | vs BAL | 12.9 | 5.5 | C (18/32) | 23.2 | 59F, wind 6mph, rain 14% | -0.07 (15) | - | **11.6** |
+| 1 | Jalen Coker | WR | CAR | vs BAL | 12.9 | 5.5 | C (18/32) | 23.2 | 59F, wind 8mph | -0.07 (15) | - | **11.6** |
 | 2 | Keenan Allen | WR | SF | vs MIN | 5.6 | 10.5 | F (5/32) | 25.0 | Neutral site (Estadio Banorte) - check manually | +0.12 (15) | - | **7.4** |
 | 3 | Matthew Golden | WR | GB | BYE | 0.0 | 21.8 | - (-) | - | - | +0.01 (15) | - | **0.0** |
 | 4 | Denzel Boston | WR | CLE | BYE | 0.0 | 9.4 | - (-) | - | - | +0.08 (15) | - | **0.0** |
@@ -55,7 +55,7 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Michael Mayer | TE | LV | @ DEN | 8.5 | 6.3 | A (30/32) | 15.0 | 38F, wind 7mph | +0.20 (15) | - | **8.3** |
+| 1 | Michael Mayer | TE | LV | @ DEN | 11.1 | 6.3 | A (30/32) | 15.0 | 40F, wind 6mph | +0.20 (15) | - | **10.1** |
 | 2 | Tucker Kraft | TE | GB | BYE | 0.0 | 7.4 | - (-) | - | - | -0.08 (15) | - | **0.0** |
 
 ### K
@@ -68,8 +68,8 @@ Your current Sleeper lineup already matches the recommendation.
 
 | # | Player | Pos | Team | Opp | Proj | Recent | Matchup (def rank) | Implied | Weather | Sentiment (n) | Injury | Adj pts |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-| 1 | Buffalo Bills | DEF | BUF | vs MIA | 9.0 | 14.7 | - (-) | 30.5 | 67F, wind 12mph | +0.00 (0) | - | **12.8** |
-| 2 | Denver Broncos | DEF | DEN | vs LV | 8.7 | 5.5 | - (-) | 25.5 | 38F, wind 7mph | +0.00 (0) | - | **9.0** |
+| 1 | Buffalo Bills | DEF | BUF | vs MIA | 9.0 | 14.7 | - (-) | 30.5 | 67F, wind 11mph | +0.00 (0) | - | **12.8** |
+| 2 | Denver Broncos | DEF | DEN | vs LV | 8.8 | 5.5 | - (-) | 25.5 | 40F, wind 6mph | +0.00 (0) | - | **9.1** |
 
 _On IR/taxi: Malik Willis (IR)_
 
@@ -77,16 +77,16 @@ _On IR/taxi: Malik Willis (IR)_
 
 | Player | Pos | Team | Opp | Adj pts | Recent | Lineup gain (wk) | Value vs drop | Adds (48h) | Suggested drop | Bid |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Cam Ward | QB | TEN | @ DAL | 27.3 | 29.4 | +8.8 | +21.7 | - | Tucker Kraft | $6 of $40 |
-| Cairo Santos | K | CHI | vs NO | 10.5 | 10.0 | +3.1 | +9.0 | 199241 | - | $11 of $40 |
-| Joey Slye | K | TEN | @ DAL | 10.4 | 13.5 | +3.0 | +10.7 | 75006 | - | $11 of $40 |
-| Jason Sanders | K | NYJ | @ LAC | 9.5 | 14.7 | +2.0 | +10.9 | 73190 | - | $9 of $40 |
-| Mike Gesicki | TE | CIN | @ WAS | 10.0 | 7.5 | +1.7 | +4.7 | 80620 | Tucker Kraft | $10 of $40 |
-| Justin Herbert | QB | LAC | vs NYJ | 19.7 | 14.1 | +1.2 | +14.0 | - | Tucker Kraft | $5 of $40 |
-| Gunnar Helm | TE | TEN | @ DAL | 8.8 | 10.4 | +0.5 | +5.4 | 95662 | Tucker Kraft | $10 of $40 |
-| Darren Waller | TE | CAR | vs BAL | 7.5 | 9.8 | +0.0 | +5.6 | 113148 | Tucker Kraft | $10 of $40 |
-| Fernando Mendoza | QB | LV | @ DEN | 10.1 | 5.1 | +0.0 | +6.3 | 78360 | Tucker Kraft | $6 of $40 |
-| Joe Milton | QB | PHI | vs PIT | 10.5 | 7.4 | +0.0 | +7.5 | 35812 | Tucker Kraft | $6 of $40 |
+| Cam Ward | QB | TEN | @ DAL | 27.5 | 29.4 | +9.0 | +21.8 | - | Tucker Kraft | $6 of $40 |
+| Cairo Santos | K | CHI | vs NO | 10.5 | 10.0 | +3.1 | +9.0 | 229859 | - | $11 of $40 |
+| Joey Slye | K | TEN | @ DAL | 10.4 | 13.5 | +3.0 | +10.7 | 93969 | - | $11 of $40 |
+| Jason Sanders | K | NYJ | @ LAC | 9.5 | 14.7 | +2.1 | +11.0 | 80225 | - | $9 of $40 |
+| Justin Herbert | QB | LAC | vs NYJ | 19.9 | 14.1 | +1.4 | +14.1 | - | Tucker Kraft | $5 of $40 |
+| Darren Waller | TE | CAR | vs BAL | 7.5 | 9.8 | +0.0 | +5.6 | 165690 | Tucker Kraft | $11 of $40 |
+| Fernando Mendoza | QB | LV | @ DEN | 10.4 | 5.1 | +0.0 | +6.6 | 89592 | Tucker Kraft | $7 of $40 |
+| Gunnar Helm | TE | TEN | @ DAL | 8.8 | 10.4 | +0.0 | +5.5 | 123900 | Tucker Kraft | $11 of $40 |
+| Malik Washington | WR | MIA | @ BUF | 7.4 | 11.6 | +0.0 | +6.6 | 45640 | Tucker Kraft | $7 of $40 |
+| Mike Gesicki | TE | CIN | @ WAS | 10.0 | 7.5 | +0.0 | +4.7 | 102652 | Tucker Kraft | $10 of $40 |
 
 _Lineup gain = change in this week's optimal lineup total. Value vs drop compares the average of projection and recent form against the suggested drop._
 
