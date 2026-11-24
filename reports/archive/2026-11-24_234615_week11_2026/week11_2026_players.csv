@@ -1,0 +1,25 @@
+player_id,name,position,team,opp,is_home,on_bye,injury_status,injury_detail,proj,recent_avg,recent_games,usage_pts,targets_avg,carries_avg,recent_form,def_rank,def_teams,def_ratio,implied,weather,sentiment,n_articles,mult_injury,mult_matchup,mult_weather,mult_sentiment,base,adj,trending_adds,slot,notes,group,weekly_gain,ros_gain,bid
+11584,Bucky Irving,RB,TB,DET,False,False,,,18.39,24.75,2,18.75,2.5,23.5,20.25,2.0,32.0,0.79,22.5,Indoors,0.184,15,1.0,0.889,1.0,1.015,18.948,17.1,0,RB,[],roster,,,
+11646,Jalen Coker,WR,CAR,BAL,True,False,Questionable,Undisclosed,12.92,5.5,3,9.03,4.7,0.7,8.15,18.0,32.0,1.01,23.5,,-0.012,15,0.85,1.02,1.0,0.999,11.488999999999999,9.95,0,WR,['Questionable (Undisclosed)'],roster,,,
+12501,Matthew Golden,WR,GB,,,True,,,0.0,21.77,3,18.59,10.7,0.0,19.38,,,,,,0.004,15,0.0,1.0,1.0,1.0,5.813999999999999,0.0,0,,['BYE'],roster,,,
+12527,Ashton Jeanty,RB,LV,DEN,False,False,,,12.66,9.23,3,11.95,5.0,5.7,11.27,22.0,32.0,1.09,15.0,,0.301,15,1.0,0.866,1.0,1.024,12.243,10.86,0,,[],roster,,,
+13346,Denzel Boston,WR,CLE,,,True,Questionable,Toe,0.0,9.37,3,12.2,7.0,0.0,11.49,,,,,,-0.085,15,0.0,1.0,1.0,0.993,3.447,0.0,0,,"['BYE', 'Questionable (Toe)']",roster,,,
+1479,Keenan Allen,WR,SF,MIN,True,False,,,5.61,10.47,3,12.78,7.3,0.0,12.2,5.0,32.0,0.83,24.5,Neutral site (Estadio Banorte) - check manually,0.065,15,1.0,0.949,1.0,1.005,7.587,7.24,0,WR,[],roster,,,
+3163,Jared Goff,QB,DET,TB,True,False,,,22.37,16.42,3,,,,16.42,3.0,32.0,0.71,26.0,Indoors,0.115,15,1.0,0.914,1.0,1.009,20.585,18.98,0,QB,[],roster,,,
+6650,Chase McLaughlin,K,TB,DET,False,False,,,8.58,11.0,2,,,,11.0,1.0,32.0,0.59,22.5,Indoors,0.016,9,1.0,0.8,1.0,1.001,9.306,7.45,49904,K,[],roster,,,
+8138,James Cook III,RB,BUF,MIA,True,False,,,19.63,18.83,3,17.23,1.7,23.3,17.63,28.0,32.0,1.15,31.0,,0.24,15,1.0,1.2,1.0,1.019,19.029999999999998,23.27,0,RB,[],roster,,,
+8155,Breece Hall,RB,NYJ,LAC,False,False,,,13.86,13.25,2,14.79,4.0,13.0,14.4,21.0,32.0,1.04,20.25,Indoors,0.135,15,1.0,0.962,1.0,1.011,14.021999999999998,13.64,0,FLEX,[],roster,,,
+9482,Michael Mayer,TE,LV,DEN,False,False,,,11.05,6.27,3,7.5,4.0,0.3,7.19,30.0,32.0,1.42,15.0,,-0.077,15,1.0,1.003,1.0,0.994,9.892,9.86,0,TE,[],roster,,,
+9484,Tucker Kraft,TE,GB,,,True,,,0.0,7.37,3,8.61,4.3,0.7,8.3,,,,,,-0.028,11,0.0,1.0,1.0,0.998,2.49,0.0,0,,['BYE'],roster,,,
+BUF,Buffalo Bills,DEF,BUF,MIA,True,False,,,9.04,14.67,3,,,,14.67,,,,31.0,,0.0,0,1.0,1.182,1.0,1.0,10.729,12.68,0,DEF,[],roster,,,
+DEN,Denver Broncos,DEF,DEN,LV,True,False,,,8.79,5.5,2,,,,5.5,,,,26.5,,0.0,0,1.0,1.171,1.0,1.0,7.802999999999999,9.14,0,,[],roster,,,
+12522,Cam Ward,QB,TEN,DAL,False,False,,,21.62,29.38,2,,,,29.38,30.0,32.0,1.23,24.0,Indoors,0.102,15,1.0,1.144,1.0,1.008,23.948,27.62,0,,[],waiver,8.64,21.82,$7 of $40
+5119,Jason Sanders,K,NYJ,LAC,False,False,,,7.28,14.67,3,,,,14.67,24.0,32.0,1.15,20.25,Indoors,0.165,9,1.0,1.014,1.0,1.013,9.497,9.76,102775,,[],waiver,2.31,10.97,$10 of $40
+11565,J.J. McCarthy,QB,NYG,JAX,True,False,,,17.24,15.3,2,,,,15.3,5.0,32.0,0.8,19.75,,0.003,15,1.0,0.839,1.0,1.0,16.657999999999998,13.98,43335,,[],waiver,0.0,12.58,$8 of $40
+10218,Xavier Hutchinson,WR,HOU,IND,True,False,,,7.68,13.85,2,12.2,7.0,0.0,12.61,11.0,32.0,0.95,28.5,,-0.039,15,1.0,1.096,1.0,0.997,9.158999999999999,10.01,42427,,[],waiver,2.77,7.08,$8 of $40
+13968,Drew Stevens,K,WAS,CIN,True,False,,,8.15,10.0,3,,,,10.0,13.0,32.0,0.96,24.25,,0.0,0,1.0,1.011,1.0,1.0,8.705,8.8,48390,,[],waiver,1.35,9.07,$9 of $40
+13269,Fernando Mendoza,QB,LV,DEN,False,False,,,15.0,5.12,3,,,,5.12,15.0,32.0,1.02,15.0,,0.097,15,1.0,0.837,1.0,1.008,12.036,10.15,321504,,[],waiver,0.0,6.38,$7 of $40
+10219,Chris Rodriguez Jr.,RB,JAX,NYG,False,False,,,5.81,8.17,3,5.81,1.0,6.7,6.4,5.0,32.0,0.85,25.75,,0.0,0,1.0,0.984,1.0,1.0,5.986999999999999,5.89,1294479,,[],waiver,0.0,3.31,$6 of $40
+6528,Joey Slye,K,TEN,DAL,False,False,,,7.92,13.5,2,,,,13.5,22.0,32.0,1.13,24.0,Indoors,0.123,9,1.0,1.092,1.0,1.01,9.594,10.58,0,,[],waiver,3.13,10.71,$6 of $40
+13301,Antonio Williams,WR,WAS,CIN,True,False,,,8.29,9.37,3,8.71,5.0,0.0,8.88,9.0,32.0,0.93,24.25,,0.0,0,1.0,0.995,1.0,1.0,8.466999999999999,8.42,102040,,[],waiver,1.18,5.14,$7 of $40
+4017,Deshaun Watson,QB,CLE,,,True,,,0.0,19.45,2,,,,19.45,,,,,,0.0,0,0.0,1.0,1.0,1.0,5.835,0.0,211392,,['BYE'],waiver,0.0,6.04,$7 of $40
